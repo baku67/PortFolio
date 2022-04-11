@@ -21,6 +21,9 @@
 
         <!-- ScriptJS -->
         <script type="text/javascript" src="{{ URL::asset('js/script.js') }}"></script>
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
         
         <style>
@@ -36,10 +39,9 @@
 
 
 
-
-
     <body>
 
+        <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
         <div style="width:100%;">
             <h1 style="margin-left:4%; color:#ef3b2d;">Portfolio <span style="color:#E7E8F2; position:relative; top:7px;">&#9642;</span></h1>
             </br>
@@ -64,7 +66,7 @@
 
 
         <!-- Contenu (load JS) -->
-        <div>
+        <div id="pageContainer">
 
         </div>
 
