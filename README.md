@@ -62,3 +62,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Lancement du projet
+
+Prerequis: Docker Compose
+
+lancer le projet depuis Docker (windows)
+
+Depuis WSL2 (Ubuntu): cd Laravel_Portfolio/project
+puis
+./vendor/bin/sail up
+127.0.0.1
