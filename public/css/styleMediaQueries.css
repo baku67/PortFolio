@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+
+    #pageContainer {
+        background-image: url('img/header_blue.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px !important;
+        margin: 0% 5% !important;
+    }
+
+    /* CHANGER LE GRID pour que les elements soit sur une seule colonne */
+    .gridContainer {
+        gap: 0px 20px !important; 
+    }
+    /* Fin grid CV */
+
+
+
+}

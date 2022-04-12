@@ -10,8 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <!-- <link rel="shortcut icon" href="{{ asset('img/photo.jpg') }}"> -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/styleMediaQueries.css') }}" />
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -45,7 +45,7 @@
         <div style="width:100%;">
             <h1 style="margin-left:4%; color:#ef3b2d;">Portfolio <span style="color:#E7E8F2; position:relative; top:7px;">&#9642;</span></h1>
             </br>
-            <h2 style="margin-left:6%; color:#ef3b2d;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
+            <h2 style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
         </div>
 
         <!-- Menu -->
@@ -65,8 +65,74 @@
         <div id="traitHeader"></div>
 
 
-        <!-- Contenu (load JS) -->
+
+
+
+
+
+
+        <!-- Contenu Page -->
         <div id="pageContainer">
+
+            <h2 class="pageTitle">Mon CV</h2>
+
+            </br>
+
+            <div class="gridContainer" style="color:#E7E8F2;">
+
+                <div class="formations">
+                    <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Formations <span class="highlightSpan">/&#x3e;</span></p>
+                    <ul>
+                        <li>
+                            2020-2022: <span class="highlightSpan">BTS SIO - Option SLAM</span> (Solutions Logicielles et Applications Métiers)
+                            </br>
+                            <span class="highlightSpan">Alternance</span> chez Europe Tech Group (Haguenau)
+                        </li>
+                        <div class="separateurListe light"></div>
+                        <li>2019-2020: Volontaire en service civique (Pôle numérique du centre socio-culturel de l'Escale)</li>
+                        <div class="separateurListe light"></div>
+                        <li>2017-2018: L1 Maths-Informatiques (Faculté de Strasbourg)</li>
+                        <div class="separateurListe light"></div>
+                        <li>2015: Baccalauréat général Scientifique (Lycée Kléber, Strasbourg)</li>
+                        <div class="separateurListe light"></div>
+                    </ul>
+                </div>
+
+                <div class="hobbys">
+                    <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Hobbies <span class="highlightSpan">/&#x3e;</span></p>
+                    <ul>
+                        <li>Test1</li>
+                        <li>Test2</li>
+                        <li>Test3</li>
+                        <li>Test4</li>
+                    </ul>
+                </div>
+
+                <div class="langages">
+                    <!-- Remettre une grid ici -->
+                </div>
+
+                <div class="outils">
+                    <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Outils <span class="highlightSpan">/&#x3e;</span></p>
+                    <ul>
+                        <li>Test1</li>
+                        <li>Test2</li>
+                        <li>Test3</li>
+                        <li>Test4</li>
+                    </ul>
+                </div>
+
+                <div class="langues">
+                    <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Langues et Atouts <span class="highlightSpan">/&#x3e;</span></p>
+                    <ul>
+                        <li>Test1</li>
+                        <li>Test2</li>
+                        <li>Test3</li>
+                        <li>Test4</li>
+                    </ul>
+                </div>
+
+            </div>
 
         </div>
 

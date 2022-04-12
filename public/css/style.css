@@ -3,11 +3,198 @@ body {
     background-color: #171923;
 }
 
+ul {
+    list-style: none;
+}
+li::before {
+    content: "•";
+    color: #ef3b2d;
+    display:inline-block;
+    width:1em;
+    margin-left:-1em;
+}
+
+/* Grid CV */
+.gridContainer {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 180px; 
+    grid-template-areas: 
+    "formations hobbys"
+    "langages langages"
+    "outils langues"; 
+}
+.formations { grid-area: formations; }
+.hobbys { grid-area: hobbys; }
+.langages { grid-area: langages; }
+.outils { grid-area: outils; }
+.langues { grid-area: langues; }
+/* Fin grid CV */
+
+
+
+
+
+/* Traits (WIP: traitFaded) */
+/* .separateurListe {
+    height: 1px;
+    width: 100%;
+    background-color: #ef3b2d;
+    margin-bottom: 15px;
+    margin-top: 10px;
+} */
+
+.separateurListe {
+	opacity: 1;
+	width: 100%;
+	margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+
+	height: 1px;
+	background: #171923;
+	background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%);
+}
+.separateurListe.light {
+opacity: 1;
+width: 100%;
+text-align: center;
+
+background: #ef3b2d;
+background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formations {
+    position: relative;
+    opacity: 0;
+
+    animation-name: fadeInFormation;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.hobbys {
+    position: relative;
+    opacity: 0;
+
+    animation-name: fadeInHobbys;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+.langages {
+    position: relative;
+    opacity: 0;
+
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.outils {
+    position: relative;
+    opacity: 0;
+
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+.langues {
+    position: relative;
+    opacity: 0;
+
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFormation {
+    from {
+        left: -500px;
+        opacity: 0;
+
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInHobbys {
+    from {
+        right: -500px;
+        opacity: 0;
+
+    }
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
 .selected {
-    color:#ef3b2d;
-    text-decoration:underline;
-    text-underline-position:under;
-    text-decoration-color:#E7E8F2;
+    color: #ef3b2d;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #E7E8F2;
+}
+
+.highlightSpan {
+    color: #ef3b2d;
+    font-weight: bold;
+}
+
+.pageSectionTitle {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.pageTitle {
+    color:#E7E8F2;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #ef3b2d;
+    -moz-text-decoration-color: #ef3b2d;
+
+    text-align:right;
+    font-size: 1.7em;
 }
 
 
@@ -22,6 +209,16 @@ body {
     to {
         opacity: 1;
     }
+}
+
+
+/* Header Projet PC */
+#pageContainer {
+    background-image: url('img/header_blue.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:400px;
+    margin:0% 10%;
 }
 
 

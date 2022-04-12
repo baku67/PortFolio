@@ -45,7 +45,7 @@
         <div style="width:100%;">
             <h1 style="margin-left:4%; color:#ef3b2d;">Portfolio <span style="color:#E7E8F2; position:relative; top:7px;">&#9642;</span></h1>
             </br>
-            <h2 style="margin-left:6%; color:#ef3b2d;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
+            <h2 style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
         </div>
 
         <!-- Menu -->
