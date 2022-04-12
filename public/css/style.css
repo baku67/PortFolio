@@ -272,6 +272,41 @@ li::before {
 
 
 
+.lienBJJ {
+    line-height:0; 
+    position:relative; 
+    bottom:25px; 
+    color:#E7E8F2; 
+    text-align:center; 
+    font-size:1.7em; 
+    opacity:0.6;
+}
+.lienBJJ a:hover {
+    /* color: #ef3b2d; */
+    animation-name: linkColor;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes linkColor {
+    from {
+        color:#E7E8F2; 
+    }
+    to {
+        color: #ef3b2d;
+    }
+}
+
+.redirectionPng {
+    width: 26px;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+
+
+
+
+
 
 
 
