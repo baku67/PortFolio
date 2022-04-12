@@ -77,31 +77,34 @@
 
                     <!-- Paragraphe qui fadeIn phrase par phrase?  -->
 
-                    <!-- Couleur chevron: gris ?
+
+                    <!-- 
+                    Couleur chevron: gris #808080
                     Couleur tag: bleu foncé #569cd6
                     Couleur attributes: bleu clair #9cdcfe
                     Couleur values: orange clair #ef3b2d
-                    Couleur text: blanc peps #E7E8F2 -->
+                    Couleur text: blanc peps #E7E8F2 
+                    Couleurs égales (color base) = #d4d4d4 
+                    -->
 
                     <!-- Indentations &nbspc; ou margin-left ? -->
-                    <p>&#x3c;header&#x3e;</p>
+                    <p><span class="pChevrons">&#x3c;</span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
                     <br>
-                    <p>&#x3c;title id="title"&#x3e;BlackJack Jo'&#x3c;/title&#x3e;</p>
-                    <p>&#x3c;link rel="icon" href="Images/favicon.png"&#x3e;</p>
-                    <p>&#x3c;meta charset="UTF-8"&#x3e;</p>
-                    <p>&#x3c;meta name="description" content="Application de BlackJack en ligne"&#x3e;</p>
-                    <p>&#x3c;meta name="keywords" content="Blackjack, Jeu, Cartes"&#x3e;</p>
+                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">title</span><span class="pAttributes"> id</span>=<span class="pValues">"title"</span><span class="pChevrons">&#x3e;</span><span class="pText" style="font-size:1.8em !important;">BlackJack Jo'</span><span class="pChevrons">&#x3c;/</span><span class="pTags">title</span><span class="pChevrons">&#x3e;</span></p>
+                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">link</span><span class="pAttributes"> rel</span>=<span class="pValues">"icon" </span><span class="pAttributes">href</span>=<span class="pValues">"Images/favicon.png"</span><span class="pChevrons">&#x3e;</span></p>
+                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> charset</span>=<span class="pValues">"UTF-8"</span><span class="pChevrons">&#x3e;</span></p>
+                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"description" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText">Application de BlackJack en ligne</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>
+                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"keywords" </span><span class="pAttributes">content</span>=<span class="pValues">"Blackjack, Jeu, Cartes"</span><span class="pChevrons">&#x3e;</span></p>
                     <br>
-                    <p>&#x3c;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-                        type="text/javascript"&#x3e;&#x3c;/script&#x3e;</p>
+                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">script</span><span class="pAttributes"> src</span>=<span class="pValues">"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span>
+                        <br><span class="pAttributes">type</span>=<span class="pValues">"text/javascript"</span><span class="pChevrons">&#x3e;</span><span class="pChevrons">&#x3c;/</span><span class="pTags">script</span><span class="pChevrons">&#x3e;</span></p>
                     <!-- Saut de ligne dans le paragraphe? -->
-                    <p>&#x3c;script src="text/javascript" src="scriptJouer.js"&#x3e;&#x3c;/script&#x3e;</p>
-                    <p>&#x3c;meta name="author" content="Basile Kuntz"&#x3e;</p>
-                    <p>&#x3c;link rel="stylesheet" href="css/style.css" id="stylesheet_1"&#x3e;</p>
+                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">script</span><span class="pAttributes"> src</span>=<span class="pValues">"text/javascript" </span><span class="pAttributes">src</span>=<span class="pValues">"scriptJouer.js"</span><span class="pChevrons">&#x3e;</span><span class="pChevrons">&#x3c;/</span><span class="pTags">script</span><span class="pChevrons">&#x3e;</span></p>
+                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"author" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText">Basile Kuntz</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>
+                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">link</span><span class="pAttributes"> rel</span>=<span class="pValues">"stylesheet" </span><span class="pAttributes">href</span>=<span class="pValues">"css/style.css" </span><span class="pAttributes">id</span>=<span class="pValues">"stylesheet_1"</span><span class="pChevrons">&#x3e;</span></p>
                     <br>
-                    <p>&#x3c;/header&#x3e;</p>
+                    <p><span class="pChevrons">&#x3c;/</span></span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
 
-                    <!-- <img src="img/header_blue.png"> -->
                 </div>
             </div>
 
