@@ -2,3 +2,34 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: #171923;
 }
+
+.selected {
+    color:#ef3b2d;
+    text-decoration:underline;
+    text-underline-position:under;
+    text-decoration-color:#E7E8F2;
+}
+
+
+.menuButton:hover {
+    animation-name: hoverMenuButton;
+    animation-duration: 1.5s;
+}
+@keyframes hoverMenuButton {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+#traitHeader {
+    height:1px;
+    width:100%;
+    background-color:#E7E8F2;
+    opacity:0.2;
+}

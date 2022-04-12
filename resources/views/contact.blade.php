@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>PortFolio - CV</title>
+        <title>PortFolio - Contact</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -53,11 +53,11 @@
             <p style="color:#E7E8F2;">
                 <a id="accueilMenu" class="menuButton" href="/">Acceuil</a> 
                 &nbsp; 
-                <a id="cvMenu" class="menuButton selected" href="/cv">C.V.</a> 
+                <a id="cvMenu" class="menuButton" href="/cv">C.V.</a> 
                 &nbsp; 
                 <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
                 &nbsp; 
-                <a id="contactMenu" class="menuButton" href="/contact">Contact</a>
+                <a id="contactMenu" class="menuButton selected" href="/contact">Contact</a>
             </p>
         </div>
 

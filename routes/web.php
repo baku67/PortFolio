@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// });
+
+
 
 Route::get('/', function () {
     return view('accueil');
@@ -23,4 +25,12 @@ Route::get('/', function () {
 
 Route::get('/cv', function () {
     return view('cv');
+});
+
+Route::get('/projets', function () {
+    return view('projets');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
 });
