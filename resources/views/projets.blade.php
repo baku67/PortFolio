@@ -66,11 +66,21 @@
         <div id="traitHeader"></div>
 
 
-        <!-- Contenu (load JS) -->
-        <!-- Sur PC: gros margin coté (pour pas prendre trop de place verticale) -->
+        <!-- Pas de Header ici (ou alors superposé en couleur négative? sur le backgroundCode, qui fait office de header) -->
         <div id="pageContainer">
 
-            <!-- <h2 style="text-align:center; color:#E7E8F2;">Projet personnel</h2> -->
+            <div class="gridProjetHeaderContainer">
+                <div class="iframe">
+                    <iframe src="https://www.blackjackjo.com" style="margin: 60px auto 60px auto;"width="360" height="740"></iframe>
+                </div>
+                <div class="header">
+                    <!-- Paragraphe qui fadeIn  -->
+                    <p>&#x3c;header&#x3e;</p>
+                    <!-- <img src="img/header_blue.png"> -->
+                </div>
+            </div>
+
+
 
         </div>
 

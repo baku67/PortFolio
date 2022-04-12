@@ -31,6 +31,8 @@ li::before {
     "formations hobbys"
     "langages langages"
     "outils langues"; 
+
+    margin-top: 30px;
 }
 .formations { grid-area: formations; }
 .hobbys { grid-area: hobbys; }
@@ -41,6 +43,12 @@ li::before {
 
 
 
+.paragraphe {
+    color: #E7E8F2;
+    font-size: 1.2em;
+    text-align: justify;
+
+}
 
 
 /* Traits (WIP: traitFaded) */
@@ -75,12 +83,12 @@ li::before {
 	background: -webkit-linear-gradient(left, #ef3b2d 0%, #171923 100%);
 }
 .separateurListe.light {
-opacity: 1;
-width: 100%;
-text-align: center;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
 
-background: #ef3b2d;
-background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%);
+    background: #ef3b2d;
+    background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%);
 }
 
 
@@ -191,7 +199,7 @@ background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%)
     color: #ef3b2d;
     text-decoration: underline;
     text-underline-position: under;
-    text-decoration-color: #E7E8F2;
+    text-decoration-color: rgba(231, 232, 242, 0.3);
 }
 
 .highlightSpan {
@@ -206,13 +214,21 @@ background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%)
 
 .pageTitle {
     color:#E7E8F2;
+    opacity: 0;
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #ef3b2d;
     -moz-text-decoration-color: #ef3b2d;
 
     text-align:right;
-    font-size: 1.7em;
+    font-size: 2.3em;
+
+    margin-top:40px;
+
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -248,3 +264,18 @@ background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%)
     background-color:#E7E8F2;
     opacity:0.2;
 }
+
+
+
+
+/* Grid iframe + header (PROJET) */
+.gridProjetHeaderContainer {
+    display: grid; 
+    grid-template-columns: 0.7fr 1.3fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "iframe header"; 
+}
+.iframe { grid-area: iframe; }
+.header { grid-area: header; }
