@@ -1,7 +1,6 @@
 @media only screen and (max-width: 600px) {
 
     #pageContainer {
-        background-image: url('img/header_blue.png');
         background-size: cover;
         background-repeat: no-repeat;
         height: 200px !important;

@@ -248,7 +248,6 @@ li::before {
 
 /* Header Projet PC */
 #pageContainer {
-    background-image: url('img/header_blue.png');
     background-size:cover;
     background-repeat:no-repeat;
     height:400px;
@@ -293,34 +292,45 @@ li::before {
 
 
 /* classes headerProjet */
+
 .header {
     color: #d4d4d4;
     position: relative;
     margin: auto auto;
+    padding-left: 15px;
+    /* line-height: 100%; */
+
 }
 
 .indented {
     margin-left: 50px;
 }
 
+
 .pChevrons {
     color: #808080;
     font-family: Consolas;
+    opacity: 0.7;
 }
 .pTags {
     color: #569cd6;
     font-family: Consolas;
+    opacity: 0.7;
 }
 .pAttributes {
     color: #9cdcfe;
     font-family: Consolas;
+    opacity: 0.7;
 }
 .pValues {
     color: #ef3b2d;
     font-family: Consolas;
+    opacity: 0.7;
 }
 .pText {
     color: #E7E8F2;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-family: Century Gothic;
+    opacity: 0.9;
+    font-weight: bold;
 }
