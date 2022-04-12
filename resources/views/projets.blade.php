@@ -75,10 +75,12 @@
         <div id="pageContainer">
 
             <div class="gridProjetHeaderContainer">
+
                 <div class="iframe">
+                    <div id="boutonMockup"></div>
                     <!-- Ajouter un effet Mockup smartphone usniquement en CSS !!  -->
-                    <iframe src="https://www.blackjackjo.com" style="margin: 60px auto 60px auto; border:2px solid #ef3b2d; padding: 17px 4px 25px 4px; border-radius:5px"width="360" height="740"></iframe>
-                    <p class="lienBJJ"><a class="test" href="https://www.blackjackjo.com">www.blackjackjo.com</a><img src="img/redirectionOrange.png" class="redirectionPng"></p>
+                    <iframe src="https://www.blackjackjo.com" class="iframeElem"></iframe>
+                    <p class="lienBJJ"><a class="test" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                 </div>
                 <div class="header">
 

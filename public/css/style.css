@@ -266,7 +266,18 @@ li::before {
 
 
 
+#boutonMockup{
+    /* background: #f00; */
+    width: 23px;
+    height: 23px;
+    border: 2px solid #ef3b2d;
+    border-radius: 50%;
+    opacity: 0.7;
 
+    position:relative;
+    top: 735px;
+    margin: 0 auto;
+}
 
 
 
@@ -275,7 +286,7 @@ li::before {
 .lienBJJ {
     line-height:0; 
     position:relative; 
-    bottom:25px; 
+    bottom:7px; 
     color:#E7E8F2; 
     text-align:center; 
     font-size:1.7em; 
@@ -299,7 +310,7 @@ li::before {
 .redirectionPng {
     width: 26px;
     position: relative;
-    top: 2px;
+    top: 4px;
     margin-left: 5px;
 }
 
@@ -325,6 +336,10 @@ li::before {
     grid-area: iframe; 
     text-align: justify; 
     width: 364px;
+
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 }
 .iframe iframe {
     display: block;
@@ -332,6 +347,18 @@ li::before {
 }
 .header { grid-area: header; }
 
+
+
+.iframeElem {
+    /* position: relative;
+    top: 50px; */
+    margin: 60px auto 60px auto; 
+    border: 2px solid #ef3b2d; 
+    padding: 17px 4px 32px 4px; 
+    border-radius: 7px;
+    width: 360px;
+    height: 740px;
+}
 
 
 /* classes headerProjet */
