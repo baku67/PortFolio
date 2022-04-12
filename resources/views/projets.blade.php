@@ -78,6 +78,7 @@
                 <div class="iframe">
                     <!-- Ajouter un effet Mockup smartphone usniquement en CSS !!  -->
                     <iframe src="https://www.blackjackjo.com" style="margin: 60px auto 60px auto; border:2px solid #ef3b2d; padding:4px; border-radius:5px"width="360" height="740"></iframe>
+                    <p style="line-height:0; position:relative; bottom:25px; color:#E7E8F2; text-align:center; font-size:1.7em; opacity:0.6;"><a href="https://www.blackjackjo.com">www.blackjackjo.com</a></p>
                 </div>
                 <div class="header">
 
@@ -86,7 +87,7 @@
                     <!-- Indentations &nbspc; ou margin-left ? -->
                     <p><span class="pChevrons">&#x3c;</span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
                     <br>
-                    <p class="indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">title</span><span class="pAttributes"> id</span>=<span class="pValues">"title"</span><span class="pChevrons">&#x3e;</span><span class="pText" style="font-size:4em !important;">BlackJack Jo'</span><span class="pChevrons">&#x3c;/</span><span class="pTags">title</span><span class="pChevrons">&#x3e;</span></p>
+                    <p class="indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">title</span><span class="pAttributes"> id</span>=<span class="pValues">"title"</span><span class="pChevrons">&#x3e;</span><span class="pText" style="font-size:3.6em !important;">BlackJack Jo'</span><span class="pChevrons">&#x3c;/</span><span class="pTags">title</span><span class="pChevrons">&#x3e;</span></p>
                     <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">link</span><span class="pAttributes"> rel</span>=<span class="pValues">"icon" </span><span class="pAttributes">href</span>=<span class="pValues">"Images/favicon.png"</span><span class="pChevrons">&#x3e;</span></p>
                     <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> charset</span>=<span class="pValues">"UTF-8"</span><span class="pChevrons">&#x3e;</span></p>
                     <p class="indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"description" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText">Application de BlackJack en ligne</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>

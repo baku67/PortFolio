@@ -286,7 +286,15 @@ li::before {
     grid-template-areas: 
       "iframe header"; 
 }
-.iframe { grid-area: iframe; }
+.iframe { 
+    grid-area: iframe; 
+    text-align: justify; 
+    width: 364px;
+}
+.iframe iframe {
+    display: block;
+    margin: 0 auto;
+}
 .header { grid-area: header; }
 
 
