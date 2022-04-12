@@ -101,15 +101,25 @@
                 <div class="hobbys">
                     <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Hobbies <span class="highlightSpan">/&#x3e;</span></p>
                     <ul>
-                        <li>Test1</li>
-                        <li>Test2</li>
-                        <li>Test3</li>
-                        <li>Test4</li>
+                        <li>Plongée sous-marine (Niveau Rescue/Deep diver)</li>
+                        <div class="separateurListe2"></div>
+                        <li>Photographie sous-marine ("Coup de coeur de la rédaction", Plongée Magazine)</li>
+                        <div class="separateurListe2"></div>
+                        <li>Scoutisme, Camping, Randonnée</li>
+                        <div class="separateurListe2"></div>
+                        <li>Dessin crayon, retouches numériques</li>
+                        <div class="separateurListe2"></div>
+                        <li>Bénévolat (Croix-Rouge, Décibulles)</li>
+                        <div class="separateurListe2"></div>
+                        <li>Jeux vidéos</li>
+                        <div class="separateurListe2"></div>
                     </ul>
                 </div>
 
                 <div class="langages">
                     <!-- Remettre une grid ici -->
+                    <p class="pageSectionTitle" style="text-align: center;"><span class="highlightSpan">&#x3c;</span> Compétences <span class="highlightSpan">/&#x3e;</span></p>
+
                 </div>
 
                 <div class="outils">
