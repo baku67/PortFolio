@@ -692,3 +692,194 @@ li::before {
         opacity: 1;
     }
 }
+
+.shape {
+    background-color:#ef3b2d;
+    position: relative;
+    top:1%;
+    height: 200px;
+    width: 50px;
+    clip-path: polygon(51% 36%, 56% 25%, 56% 100%, 51% 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VEILLE */
+
+.veilleTitle {
+    color:#e2e8f0; 
+    font-size:3.5em;
+    opacity:0;
+
+    animation: fadeIn 1.4s ease 0.3s normal forwards running;
+}
+
+.carreTitre {
+    color:#ef3b2d; 
+    position:relative; 
+    top: 15px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease 0.9s normal forwards running;
+}
+
+.barreVeilleSouligne {
+    height:6px; 
+    width:515px; 
+    background-color:#e2e8f0; 
+    position:relative; 
+    bottom:64px;
+
+    margin-bottom: 70px;
+
+    right: 700px;
+    animation: barreVeilleSouligne 1s ease 0s normal forwards running;
+}
+@keyframes barreVeilleSouligne {
+    from {
+        right: 1000px;
+        background-color:#e2e8f0;
+    }
+    to {
+        right: 0px;
+        background-color:rgba(239, 59, 45, 0.9);
+    }
+}
+
+    /* Grid Veille */
+    .sectionsGridContainer {
+        color: #e2e8f0;
+
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 50px 50px; 
+        grid-template-areas: 
+          "sectionSites sectionTips"
+          "Autres ."; 
+      }
+      .sectionSites { 
+          grid-area: sectionSites; 
+        }
+      .sectionTips { 
+          grid-area: sectionTips; 
+          border-left: 1px solid rgba(239, 59, 45, 0.3);
+          padding-left: 35px;
+        }
+      .Autres { grid-area: Autres; }
+
+
+.sectionSitesTitle {
+    color: #ef3b2d;
+}
+.sectionTipsTitle {
+    color: #ef3b2d;
+}
+.sectionAutresTitle {
+    color: #ef3b2d;
+}
+
+.veilleLignes {
+    padding: 4px 0px 4px 30px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+}
+.veilleLignesLiens {
+    position: relative;
+    float: right;
+    color: #e2e8f0;
+    text-decoration: none;
+}
+.veilleLignesLiens:hover {
+    animation: lienCouleurSwitch 1s ease 0s normal forwards running;
+}
+@keyframes lienCouleurSwitch {
+    from {
+        color: #e2e8f0;
+    }
+    to {
+        color: #ef3b2d;
+    }
+}
+
+
+/* Grid ligneVeille (description + lien) */
+.veilleLignes {
+    list-style: none;
+
+    display: grid; 
+    grid-template-columns: 1.2fr 0.8fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 15px; 
+    grid-template-areas: 
+      "veilleLignesDesc veilleLignesLiens"; 
+  }
+  .veilleLignesLiens { 
+      grid-area: veilleLignesLiens; 
+
+      position: relative;
+      margin: auto 0px;
+    }
+  .veilleLignesDesc { 
+      grid-area: veilleLignesDesc; 
+    }
+
+
+    li.veilleLignes::before {
+        content: "";
+
+    }
+
+
+.veilleLigneAjout {
+    position:relative; 
+    text-align:center; 
+    border-radius:3px; 
+    background-color:rgba(20,201,151,0.07); 
+    border:1px solid rgba(20,201,151,0.8);
+}
+li.veilleLigneAjout::before {
+    content: "";
+
+}
+
+
+
+
+
+
+

@@ -64,5 +64,67 @@
 
         
 
+
         <div id="pageContainer">
+
+
+            <p class="veilleTitle"> Veille technologique <span class="carreTitre">▪</span> </p>
+            <!-- Ajouter effet glissade from gauche to droite (mais qui se genere depuis le debut du titre pas de l'écran :/ ) -->
+            <div class="barreVeilleSouligne"></div>
+
+
+            <div class="sectionsGridContainer">
+
+                <div class="sectionSites">
+                    <h3 class="sectionSitesTitle">Outils en ligne</h3>
+                    <!-- <input type="text"> -->
+                    <ul>
+                        <!-- Ligne 1: Input de recherche -->
+                        <li class="veilleLignes" style="margin-bottom:5px; padding:0px 0px 0px 30px; !important; border:1px solid rgba(239, 59, 45, 0.8); background-color:rgba(239, 59, 45, 0.05);"><p class="veilleLignesDesc" style="margin-block-start:0.5em;margin-block-end:0.5em;"><input type="text"></p><a class="veilleLignesLiens" href="">Rechercher</a></li>
+                        <!-- Bouton d'ajout "Nom - adresse - truc.com (ou regex?), réduire le bouton 1/4 ligne recherche (sur le coté droit) -->
+                        <li class="veilleLigneAjout"><button style="background-color:rgba(255,255,255,0); color:#ef3b2d; font-weight:bold;">+</button></li>
+
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Grid Generator</p><a class="veilleLignesLiens" href="https://grid.layoutit.com" target="blank">grid.layoutit.com</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Favicon Letter Generator</p><a class="veilleLignesLiens" href="https://favicon.io/favicon-generator/" target="blank">favicon.io</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">CSS gradient Generator</p><a class="veilleLignesLiens" href="https://cssgradient.io" target="blank">cssgradient.io</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">PNG transparency</p><a class="veilleLignesLiens" href="https://onlinepngtools.com/create-transparent-png" target="blank">onlinepngtools.com</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Color replacement</p><a class="veilleLignesLiens" href="https://www4.lunapic.com/editor/?action=replace-color" target="blank">lunapic.com</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Pixlr (photoshop Free)</p><a class="veilleLignesLiens" href="https://pixlr.com/fr/" target="blank">pixlr.com</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">PNG compressor</p><a class="veilleLignesLiens" href="https://compresspng.com" target="blank">compresspng.com</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Edition/Création Gifs</p><a class="veilleLignesLiens" href="https://ezgif.com/maker" target="blank">ezgif.com</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">CSS polygone draw</p><a class="veilleLignesLiens" href="https://bennettfeely.com/clippy/" target="blank">bennettfeely.com</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Responsive test</p><a class="veilleLignesLiens" href="https://responsivetesttool.com" target="blank">responsivetesttool.com</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Mockups maker</p><a class="veilleLignesLiens" href="https://mockuphone.com/device" target="blank">mockuphone.com</a></li>                            
+                    </ul>
+                </div>
+
+                <div class="sectionTips">
+                    <h3 class="sectionTipsTitle">Tips Code</h3>
+                    <ul>
+                        <li class="veilleLignes">autre exemple</li>
+                        <li class="veilleLignes">Exemple de site1 wwwtrubvildulechouette.com</li>
+                        <li class="veilleLignes"></li>
+                        <li class="veilleLignes"></li>
+                        <li class="veilleLignes"></li>
+                        <li class="veilleLignes"></li>
+                        <li class="veilleLignes"></li>
+                    </ul>
+                </div>
+
+                <div class="Autres">
+                    <h3 class="sectionAutresTitle">Autres</h3>
+                    <ul>
+                        <li class="veilleLignes"></li>
+                        <li class="veilleLignes"></li>
+                        <li class="veilleLignes"></li>
+                        <li class="veilleLignes"></li>
+                        <li class="veilleLignes"></li>
+                        <li class="veilleLignes"></li>
+                        <li class="veilleLignes"></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
         </div>
