@@ -264,6 +264,72 @@ li::before {
     opacity:0.2;
 }
 
+.traitSeparateurProjet {
+    height:1px;
+    width:65%;
+    background-color:#E7E8F2;
+    opacity:0.2;
+    margin: 80px auto 30px auto;
+}
+
+.documentationHeader {
+    margin-top:50px; 
+    color:#E7E8F2;
+}
+.documentationTitle {
+    text-align:center; 
+    margin:0 auto; 
+    font-size:2em
+}
+.chevronOrange {
+    opacity:0.6; 
+    color:#ef3b2d;
+}
+.documentationButtons {
+    text-align:center; 
+    margin:40px auto; 
+    font-size:1.7em;
+}
+.buttonSelected {
+    padding: 10px 30px; 
+    border-top: 3px solid rgba(239, 59, 45, 0.9);
+    border-bottom: 3px solid rgba(239, 59, 45, 0.9); 
+    border-right: 1px solid rgba(231, 232, 242, 0.02);
+    border-left: 1px solid rgba(231, 232, 242, 0.02);
+    border-radius:5px;
+}
+.buttonNonSelected {
+    opacity: 0.4;
+    padding: 10px 30px; 
+    border-top:1px solid rgba(231, 232, 242, 0.4);
+    border-bottom:1px solid rgba(231, 232, 242, 0.4); 
+    border-right: 1px solid rgba(231, 232, 242, 0.02);
+    border-left: 1px solid rgba(231, 232, 242, 0.02);
+    border-radius:5px;
+}
+.buttonNonSelected:hover {
+    animation-name: fadeInButtonDocu;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+@keyframes fadeInButtonDocu {
+    from {
+        opacity: 0.4;
+        border-top:1px solid rgba(231, 232, 242, 0.4);
+        border-bottom:1px solid rgba(231, 232, 242, 0.4); 
+        padding: 10px 30px;   
+        border-radius:5px;  
+    }
+    to {
+        opacity: 1;
+        border-top:2px solid rgba(231, 232, 242, 0.6);
+        border-bottom:2px solid rgba(231, 232, 242, 0.6);
+        padding: 14px 30px; 
+        border-radius:8px;
+    }
+}
+
 
 
 #boutonMockup{

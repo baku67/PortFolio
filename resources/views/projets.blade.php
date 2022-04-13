@@ -25,6 +25,7 @@
 
         <!-- JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="{{ asset('js/app.js') }}"></script> -->
         
         
         <style>
@@ -42,28 +43,32 @@
 
     <body>
 
-        <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
-        <div style="width:100%;">
-            <h1 style="margin-left:4%; color:#ef3b2d;">Portfolio <span style="color:#E7E8F2; position:relative; top:7px;">&#9642;</span></h1>
-            </br>
-            <h2 style="margin-left:6%; color:#ef3b2d;  font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
+        <!-- Header  -->
+        <div>
+            <!-- <div style="width:100%;"> -->
+                <h1 style="color:#ef3b2d; line-height:0; margin: 25px 0px 25px 4%;">Portfolio <span style="color:#E7E8F2; position:relative; top:7px;">&#9642;</span></h1>
+                <!-- </br>
+                <h2 style="margin-left:6%; color:#ef3b2d;  font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2> -->
+            <!-- </div> -->
+
+            <!-- Menu -->
+            <div id="NavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
+                <p style="color:#E7E8F2;">
+                    <a id="accueilMenu" class="menuButton" href="/">Acceuil</a> 
+                    &nbsp; 
+                    <a id="cvMenu" class="menuButton" href="/cv">C.V.</a> 
+                    &nbsp; 
+                    <a id="projetsMenu" class="menuButton selected" href="/projets">Projet</a> 
+                    &nbsp; 
+                    <a id="contactMenu" class="menuButton" href="/contact">Contact</a>
+                </p>
+            </div>
+
+            <!-- Trait séparateur -->
+            <div id="traitHeader"></div>
         </div>
 
-        <!-- Menu -->
-        <div id="NavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
-            <p style="color:#E7E8F2;">
-                <a id="accueilMenu" class="menuButton" href="/">Acceuil</a> 
-                &nbsp; 
-                <a id="cvMenu" class="menuButton" href="/cv">C.V.</a> 
-                &nbsp; 
-                <a id="projetsMenu" class="menuButton selected" href="/projets">Projet</a> 
-                &nbsp; 
-                <a id="contactMenu" class="menuButton" href="/contact">Contact</a>
-            </p>
-        </div>
-
-        <!-- Trait séparateur -->
-        <div id="traitHeader"></div>
+        
 
 
 
@@ -80,7 +85,7 @@
                     <div id="boutonMockup"></div>
                     <!-- Ajouter un effet Mockup smartphone usniquement en CSS !!  -->
                     <iframe src="https://www.blackjackjo.com" class="iframeElem"></iframe>
-                    <p class="lienBJJ"><a class="test" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                    <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                 </div>
                 <div class="header">
 
@@ -105,6 +110,22 @@
                     <p><span class="pChevrons">&#x3c;/</span></span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
 
                 </div>
+
+            </div>
+
+
+            <div class="traitSeparateurProjet"></div>
+
+
+            <!-- Boutons toggle DocUtilisateur/DocTechnique -->
+            <div class="documentationHeader">
+                <h2 class="documentationTitle"><span class="chevronOrange">&#x3c;</span> Documentation <span class="chevronOrange">/&#x3e;</span></h2>
+                <p class="documentationButtons"><span id="toggleUtilisateur" class="buttonSelected">Utilisateur</span> &nbsp;&nbsp; <span id="toggleTechnique" class="buttonNonSelected">Technique</span></p>
+            </div>
+
+
+            <!-- Contenu loadJS Documentation -->
+            <div id="docuLoadContainer" style="height: 700px;"> 
             </div>
 
 
