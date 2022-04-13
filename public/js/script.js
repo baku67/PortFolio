@@ -2,11 +2,12 @@
 window.onload = function() {
 
 
-    // $("#accueilMenu").click(function() {
-    //     $("#pageContainer").load("accueil.php");
-    // })
+    // Documentation initialisée sur Utilisateur
+    $(document).ready(function() {
+        $('#docuLoadContainer').load("views/docUtilisateur.html");
+    })
 
-
+    // Load et Styles boutons toggle Documentation User/Tech
     $("#toggleUtilisateur").click(function() {
         document.getElementById("toggleTechnique").classList.remove("buttonSelected");
         document.getElementById("toggleTechnique").classList.add("buttonNonSelected");
@@ -15,8 +16,7 @@ window.onload = function() {
         document.getElementById("toggleUtilisateur").classList.add("buttonSelected");
 
         $(document).ready(function() {
-            alert('dedans');
-            $('#docuLoadContainer').load("ressources/loads/docUtilisateur.html");
+            $('#docuLoadContainer').load("views/docUtilisateur.html");
         })
     })
 
@@ -28,8 +28,7 @@ window.onload = function() {
         document.getElementById("toggleTechnique").classList.add("buttonSelected");
 
         $(document).ready(function() {
-            alert('dedans');
-            $('#docuLoadContainer').load("ressources/loads/docTechnique.html");
+            $('#docuLoadContainer').load("views/docTechnique.html");
         })
     })
 

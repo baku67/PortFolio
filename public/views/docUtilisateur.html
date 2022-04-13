@@ -1,0 +1,36 @@
+<h2 style="font-size:1.5em; margin: 80px auto 0 auto; text-align:center;">Bienvenue sur la documentation <span style="color:rgba(239, 59, 45, 1);">Utilisateur</span> de BlackJackJo' !</h2>
+<!-- <p style="font-size:1em; margin: 80px auto 0 auto; text-align:center; position:relative; bottom:70px;">Le but de cette documentation est d'expliquer le principe du jeu ainsi que le fonctionnement général de l'application.</p> -->
+
+<br>
+
+<!-- Avec des container/collapse ? -->
+<p class="sousTitreUnderligned">But du jeu</p>
+<p style="text-align: justify;"> &nbsp;&nbsp;&nbsp; Après avoir reçu deux cartes, le joueur tire des cartes pour s’approcher de la valeur 21 sans la dépasser. Le but du joueur est de battre le croupier en obtenant un total de points supérieur à celui-ci ou en voyant ce dernier dépasser 21. Le croupier s'arrète de piocher lorsqu'il a atteint 17. Le joueur joue contre le croupier, qui représente la banque, ou le casino, et non contre les autres joueurs.</p>
+
+<br>
+
+<p class="sousTitreUnderligned">Valeurs des cartes</p>
+<ul>
+    <li>Cartes de 2 à 10: Valeur nominale</li>
+    <li>Figures (Valets,Dames,Rois): Valeur de 10</li>
+    <li>As: Valeur de 1 ou 11 selon l'avantage</li>
+</ul>
+
+<br>
+
+<p class="sousTitreUnderligned">Déroulement d'une partie</p>
+<p style="text-align: justify;"> &nbsp;&nbsp;&nbsp; Le joueur commence par placer sa mise (maximum 100). La banque distribue ensuite 2 cartes visibles pour le joueur ainsi qu'une carte visible et une carte cachée pour le croupier. 
+    Le joueur a ensuite le choix entre 3 actions: Hit (piocher), Stand (se coucher), et Double (doubler la mise).
+    Lorsqu'il Hit, le joueur reçoit une carte et peut continuer à choisir s'il ne BUST pas (ne dépasse pas 21). Lorsqu'il Stand, le joueur se couche et la phase du croupier se lance. Si le joueur Double, il double sa mise et reçoit une carte puis Stand directement, ce qui lance la phase du croupier.
+    Puis, si le joueur n'a pas BUST, la phase du croupier se lance: Tant que celui-ci n'a pas atteint 17, il pioche une carte supplémentaire. S'il dépasse 21, il BUST comme le joueur. S'il s'arrète entre 17 et 21 (inclus), les cores du joueur et du croupier sont comparés et le plus élevé gagne ("PUSH" si égalité).
+    Lorsqu'un As est tiré, sa valeur peut changer dynamiquement entre 1 et 11. Il s'adapte pour être avantageux pour la personne qui le pioche. C'est à dire que tant que le score ne dépasse pas 21, sa valeur vaut 11 et si le score dépasse 21, sa valeur s'adapte en ne valant plus que 1 et empêchant ainsi de BUST.
+    Si le joueur obtient 21 avec 2 cartes (1 AS + 1 Figure), la partie s'arrète et il gagne +2X sa mise.
+</p>
+
+<br>
+
+<p class="sousTitreUnderligned">Compte et Historique</p>
+<p style="text-align: justify;"> &nbsp;&nbsp;&nbsp; Les utilisateurs du site ont la possibilité de jouer en mode "invité", sans compte, ce qui leur permet de jouer et tester le jeu. Ils disposent de 100 crédits qui se réinitialisent au simple rafraichissement de la page.
+Ils peuvent également créer un compte ce qui leurs permettra d'accéder à leur historique des dernières parties jouées, leur ratio de Victoires/Défaites, et leur permettra d'être affiché sur le Classement des joueurs présent sur l'accueil. Les joueurs inscrits reçoivent 200 crédits de bienvenue.
+</p>
+

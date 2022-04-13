@@ -189,7 +189,12 @@ li::before {
 }
 
 
-
+.sousTitreUnderligned {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #ef3b2d;
+    text-decoration-thickness: 4px;
+}
 
 
 
@@ -199,7 +204,7 @@ li::before {
     color: #ef3b2d;
     text-decoration: underline;
     text-underline-position: under;
-    text-decoration-color: rgba(231, 232, 242, 0.3);
+    text-decoration-color: rgba(231, 232, 242, 0.5);
 }
 
 .highlightSpan {
@@ -294,8 +299,8 @@ li::before {
     padding: 10px 30px; 
     border-top: 3px solid rgba(239, 59, 45, 0.9);
     border-bottom: 3px solid rgba(239, 59, 45, 0.9); 
-    border-right: 1px solid rgba(231, 232, 242, 0.02);
-    border-left: 1px solid rgba(231, 232, 242, 0.02);
+    /* border-right: 1px solid rgba(231, 232, 242, 0.02);
+    border-left: 1px solid rgba(231, 232, 242, 0.02); */
     border-radius:5px;
 }
 .buttonNonSelected {
@@ -303,8 +308,8 @@ li::before {
     padding: 10px 30px; 
     border-top:1px solid rgba(231, 232, 242, 0.4);
     border-bottom:1px solid rgba(231, 232, 242, 0.4); 
-    border-right: 1px solid rgba(231, 232, 242, 0.02);
-    border-left: 1px solid rgba(231, 232, 242, 0.02);
+    /* border-right: 1px solid rgba(231, 232, 242, 0.02);
+    border-left: 1px solid rgba(231, 232, 242, 0.02); */
     border-radius:5px;
 }
 .buttonNonSelected:hover {
@@ -333,15 +338,97 @@ li::before {
 
 
 #boutonMockup{
-    /* background: #f00; */
+    /* Bouton accueil */
     width: 23px;
     height: 23px;
+    border: 2px solid #ef3b2d;
+    background-color:rgba(239, 59, 45, 0.1);
+    border-radius: 50%;
+    opacity: 0.7;
+
+    position:relative;
+    top: 831px;
+    margin: 0 auto;
+}
+#boutonMockup2{
+    /* Caméra */
+    width: 7px;
+    height: 7px;
+    background-color: #ef3b2d;
     border: 2px solid #ef3b2d;
     border-radius: 50%;
     opacity: 0.7;
 
     position:relative;
-    top: 735px;
+    top: 104px;
+    margin: 0 auto;
+}
+#boutonMockup3{
+    /* On/Off */
+    width: 4px;
+    height: 30px;
+    background-color: #ef3b2d;
+    border: 2px solid #ef3b2d;
+    opacity: 0.8;
+    margin-left:40px;
+
+    position:relative;
+    left: 180px;
+    top: 300px;
+    margin: 0 auto;
+}
+#bouton3Container {
+    /* width: 4px;
+    height: 30px;
+
+    margin-left:40px;
+
+    position:relative;
+    left: 180px;
+    top: 300px;
+    margin: 0 auto; */
+}
+#boutonMockup3:hover {
+    animation-name: boutonMockup;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes boutonMockup {
+    from {
+        opacity: 0.8;
+        width: 4px;
+        left: 180px;
+    }
+    to {
+        opacity: 1;
+        width: 20px;
+        left: 195px;
+    }
+}
+#boutonMockup4{
+    /* Vol+ */
+    width: 4px;
+    height: 30px;
+    background-color: #ef3b2d;
+    border: 2px solid #ef3b2d;
+    opacity: 0.8;
+
+    position:relative;
+    left: 180px;
+    top: 170px;
+    margin: 0 auto;
+}
+#boutonMockup5{
+    /* Vol- */
+    width: 4px;
+    height: 30px;
+    background-color: #ef3b2d;
+    border: 2px solid #ef3b2d;
+    opacity: 0.8;
+
+    position:relative;
+    left: 180px;
+    top: 172px;
     margin: 0 auto;
 }
 
@@ -470,3 +557,26 @@ li::before {
     opacity: 0.9;
     font-weight: bold;
 }
+
+
+
+
+/* Grid aperçu documents  */
+.gridDocuments {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 7px; 
+    grid-template-areas: 
+      "dicoDonees casUtil diagClasses schemaPartie"; 
+  }
+  .dicoDonees { grid-area: dicoDonees; }
+  .casUtil { grid-area: casUtil; }
+  .diagClasses { grid-area: diagClasses; }
+  .schemaPartie { grid-area: schemaPartie; }
+
+  .imgDocuVignettes {
+      width: 180px;
+      height: 100px;
+      border-radius: 10px;
+  }
