@@ -11,6 +11,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/styleMediaQueries.css') }}" />
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -53,6 +54,8 @@
                 &nbsp; 
                 <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
                 &nbsp; 
+                <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
+                &nbsp;
                 <a id="contactMenu" class="menuButton" href="/contact">Contact</a>
             </p>
         </div>

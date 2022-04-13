@@ -56,6 +56,8 @@
                 <a id="cvMenu" class="menuButton" href="/cv">C.V.</a> 
                 &nbsp; 
                 <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
+                &nbsp;
+                <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
                 &nbsp; 
                 <a id="contactMenu" class="menuButton selected" href="/contact">Contact</a>
             </p>

@@ -33,12 +33,6 @@
 
 
 
-
-
-
-
-
-
     <body>
 
         <!-- Header  -->
@@ -56,9 +50,9 @@
                     &nbsp; 
                     <a id="cvMenu" class="menuButton" href="/cv">C.V.</a> 
                     &nbsp; 
-                    <a id="projetsMenu" class="menuButton selected" href="/projets">Projet</a> 
+                    <a id="projetsMenu" class="menuButton" href="/projets">Projet</a> 
                     &nbsp; 
-                    <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
+                    <a id="veilleMenu" class="menuButton selected" href="/veille">Veille</a> 
                     &nbsp;
                     <a id="contactMenu" class="menuButton" href="/contact">Contact</a>
                 </p>
@@ -70,74 +64,5 @@
 
         
 
-
-
-
-
-
-
-
         <div id="pageContainer">
-
-            <div class="gridProjetHeaderContainer">
-
-                <div class="iframe">
-                    <div id="boutonMockup"></div>
-                    <div id="boutonMockup2"></div>
-                    <div id="bouton3Container"><div id="boutonMockup3"></div></div>
-                    <div id="boutonMockup4"></div>
-                    <div id="boutonMockup5"></div>
-                    <!-- Ajouter un effet Mockup smartphone usniquement en CSS !!  -->
-                    <iframe src="https://www.blackjackjo.com" class="iframeElem"></iframe>
-                    <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
-                </div>
-                <div class="header">
-
-                    <!-- Paragraphe qui fadeIn phrase par phrase?  -->
-
-                    <!-- Indentations &nbspc; ou margin-left ? -->
-                    <p><span class="pChevrons">&#x3c;</span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
-                    
-                    <p class="indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">title</span><span class="pAttributes"> id</span>=<span class="pValues">"title"</span><span class="pChevrons">&#x3e;</span><span class="pText" style="font-size:3.6em !important;">BlackJack Jo'</span><span class="pChevrons">&#x3c;/</span><span class="pTags">title</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">link</span><span class="pAttributes"> rel</span>=<span class="pValues">"icon" </span><span class="pAttributes">href</span>=<span class="pValues">"Images/favicon.png"</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> charset</span>=<span class="pValues">"UTF-8"</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"description" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText">Application de BlackJack en ligne</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"keywords" </span><span class="pAttributes">content</span>=<span class="pValues">"Blackjack, Jeu, Cartes"</span><span class="pChevrons">&#x3e;</span></p>
-                    <br>
-                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">script</span><span class="pAttributes"> src</span>=<span class="pValues">"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span>
-                        <br><span class="pAttributes">type</span>=<span class="pValues">"text/javascript"</span><span class="pChevrons">&#x3e;</span><span class="pChevrons">&#x3c;/</span><span class="pTags">script</span><span class="pChevrons">&#x3e;</span></p>
-                    <!-- Saut de ligne dans le paragraphe? -->
-                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">script</span><span class="pAttributes"> src</span>=<span class="pValues">"text/javascript" </span><span class="pAttributes">src</span>=<span class="pValues">"scriptJouer.js"</span><span class="pChevrons">&#x3e;</span><span class="pChevrons">&#x3c;/</span><span class="pTags">script</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"author" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText">Basile Kuntz</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="indented"><span class="pChevrons">&#x3c;</span><span class="pTags">link</span><span class="pAttributes"> rel</span>=<span class="pValues">"stylesheet" </span><span class="pAttributes">href</span>=<span class="pValues">"css/style.css" </span><span class="pAttributes">id</span>=<span class="pValues">"stylesheet_1"</span><span class="pChevrons">&#x3e;</span></p>
-                    
-                    <p><span class="pChevrons">&#x3c;/</span></span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
-
-                </div>
-
-            </div>
-
-
-            <div class="traitSeparateurProjet"></div>
-
-
-            <!-- Boutons toggle DocUtilisateur/DocTechnique -->
-            <div class="documentationHeader">
-                <h2 class="documentationTitle"><span class="chevronOrange">&#x3c;</span> Documentation <span class="chevronOrange">/&#x3e;</span></h2>
-                <p class="documentationButtons"><span id="toggleUtilisateur" class="buttonSelected">Utilisateur</span> &nbsp;&nbsp; <span id="toggleTechnique" class="buttonNonSelected">Technique</span></p>
-            </div>
-
-
-            <!-- Contenu loadJS Documentation -->
-            <div id="docuLoadContainer" style="color:#e2e8f0; margin: 0 15%; padding-bottom:100px; height: 1000px;" > 
-            </div>
-
-
-
         </div>
-
-        
-
-    </body>
-
-</html>

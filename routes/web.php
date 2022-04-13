@@ -31,6 +31,10 @@ Route::get('/projets', function () {
     return view('projets');
 });
 
+Route::get('/veille', function () {
+    return view('veille');
+});
+
 Route::get('/contact', function () {
     return view('contact');
 });

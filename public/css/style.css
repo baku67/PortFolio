@@ -194,6 +194,9 @@ li::before {
     text-underline-position: under;
     text-decoration-color: #ef3b2d;
     text-decoration-thickness: 4px;
+
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 
@@ -563,20 +566,61 @@ li::before {
 
 /* Grid aperçu documents  */
 .gridDocuments {
+    text-align: center;
+
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr; 
     gap: 0px 7px; 
     grid-template-areas: 
       "dicoDonees casUtil diagClasses schemaPartie"; 
-  }
-  .dicoDonees { grid-area: dicoDonees; }
-  .casUtil { grid-area: casUtil; }
-  .diagClasses { grid-area: diagClasses; }
-  .schemaPartie { grid-area: schemaPartie; }
+}
+.dicoDonees { grid-area: dicoDonees; }
+.casUtil { grid-area: casUtil; }
+.diagClasses { grid-area: diagClasses; }
+.schemaPartie { grid-area: schemaPartie; }
 
-  .imgDocuVignettes {
-      width: 180px;
-      height: 100px;
-      border-radius: 10px;
-  }
+.imgDocuVignettes {
+    width: 180px;
+    height: 100px;
+    border-radius: 9px;
+    border: 5px solid rgba(239, 59, 45, 0.2);
+}
+
+/* GRID git (regularitée et aperçu gitkraken) */
+.gridGit {
+    text-align: center;
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 15px; 
+    grid-template-areas: 
+      "regulariteGit apercuGitKraken"; 
+}
+.regulariteGit { grid-area: regulariteGit; }
+.apercuGitKraken { grid-area: apercuGitKraken; }
+
+.imgGitVignettes {
+    width: 410px;
+    height: 170px;
+    border-radius: 9px;
+    border: 5px solid rgba(239, 59, 45, 0.1);
+}
+
+
+/* GRID responsive (phone, pc, tablet) */
+.gridResponsive {
+    text-align: center;
+
+    display: grid; 
+    grid-template-columns: 0.9fr 1.1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "pcResp pcResp"
+      "phoneResp tabletResp";
+}
+.phoneResp { grid-area: phoneResp; }
+.tabletResp { grid-area: tabletResp; }
+.pcResp { grid-area: pcResp; }
