@@ -522,6 +522,9 @@ li::before {
       "iframe description";
 }
 .iframe { 
+    position: relative;
+    bottom: 250px;
+
     grid-area: iframe; 
     text-align: justify; 
     width: 364px;
@@ -530,7 +533,7 @@ li::before {
     animation-name: fadeIn;
     animation-duration: 1.5s;
     /* FadeIn synchro avec le .pText3 ("Basile Kuntz") */
-    animation-delay: 2.4s;
+    animation-delay: 2.2s;
     animation-fill-mode: forwards;
 }
 .iframe iframe {
@@ -561,7 +564,9 @@ li::before {
     margin: auto auto;
     padding-left: 15px;
 
-    bottom: 60px;
+    bottom: 30px;
+
+    /* Remplacé par ligneParLigne */
     /* opacity: 0;
 
     animation-name: fadeInHeaderProjet;
@@ -812,50 +817,50 @@ li::before {
 /* Projet Header fadeIn ligne par ligne:  */
 .headerLine1 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 1s normal forwards running;
+    animation: ligneParLigne 0.5s ease 0.8s normal forwards running;
 }
 .headerLine2 {
     opacity: 0;
     /* animation: ligneParLigne 2.5s ease 0.65s normal forwards running; */
-    animation: ligneParLigne 0.5s ease 1.15s normal forwards running;
+    animation: ligneParLigne 0.5s ease 0.95s normal forwards running;
 }
 .headerLine3 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 1.3s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.1s normal forwards running;
 }
 .headerLine4 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 1.45s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.25s normal forwards running;
 }
 .headerLine5 {
     opacity: 0;
     /* animation: ligneParLigne 2.5s ease 1.1s normal forwards running; */
-    animation: ligneParLigne 0.5s ease 1.60s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.40s normal forwards running;
 }
 .headerLine6 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 1.75s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.55s normal forwards running;
 }
 .headerLine7 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 1.90s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.70s normal forwards running;
 }
 .headerLine8 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 2.1s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.9s normal forwards running;
 }
 .headerLine9 {
     opacity: 0;
     /* animation: ligneParLigne 2.5s ease 1.6s normal forwards running; */
-    animation: ligneParLigne 0.5s ease 2.25s normal forwards running;
+    animation: ligneParLigne 0.5s ease 2.05s normal forwards running;
 }
 .headerLine10 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 2.40s normal forwards running;
+    animation: ligneParLigne 0.5s ease 2.20s normal forwards running;
 }
 .headerLine11 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 2.55s normal forwards running;
+    animation: ligneParLigne 0.5s ease 2.35s normal forwards running;
 }
 @keyframes ligneParLigne {
     from {
@@ -922,10 +927,14 @@ li::before {
     animation: fadeIn 1.4s ease 0.3s normal forwards running;
 }
 .projetTitle {
+    text-align: center;
     color:#e2e8f0; 
     font-size:3.5em;
     opacity:0;
     margin-block-end: 0em;
+
+    position: relative;
+    /* right: 65px; */
 
     animation: fadeIn 1.4s ease 0.3s normal forwards running;
 }
@@ -937,13 +946,13 @@ li::before {
     opacity: 0;
 
     /* Delai adapté au fadeIn du .sectionsGridContainer   /!\ (effet à adapter) */
-    animation: fadeIn 0.8s ease 0.9s normal forwards running, orangeToWhite 0.8s ease 0.9s normal forwards running;
+    animation: fadeIn 0.8s ease 0.9s normal forwards running, whiteToOrange 0.8s ease 0.9s normal forwards running;
 }
 .carreTitreProjet {
     /* Cas particulier sur Projet: Le point fadeIn est synchro avec le fadeIn <iframe> */
-    animation: fadeIn 0.8s ease 2.5s normal forwards running, orangeToWhite 0.8s ease 2.5s normal forwards running !important;
+    animation: fadeIn 0.8s ease 2.2s normal forwards running, whiteToOrange 0.8s ease 2.5s normal forwards running !important;
 }
-@keyframes orangeToWhite {
+@keyframes whiteToOrange {
     from {
         color:#E7E8F2;
     }
@@ -966,14 +975,15 @@ li::before {
     animation: barreVeilleSouligne 1s ease 0s normal forwards running;
 }
 .barreProjetSouligne {
-    height:6px; 
-    width:275px; 
+    height:11px; 
+    width:274px; 
     background-color:#e2e8f0; 
     position:relative; 
-    bottom:14px;
+    bottom:21px;
 
-    right: 700px;
-    animation: barreVeilleSouligne 1s ease 0s normal forwards running;
+    text-align: right;
+    right: 1000px;
+    animation: barreProjetSouligne 1s ease 0s normal forwards running;
 }
 @keyframes barreVeilleSouligne {
     from {
@@ -982,6 +992,16 @@ li::before {
     }
     to {
         right: 0px;
+        background-color:rgba(239, 59, 45, 0.9);
+    }
+}
+@keyframes barreProjetSouligne {
+    from {
+        right: 1000px;
+        background-color:#e2e8f0;
+    }
+    to {
+        right: -531px;
         background-color:rgba(239, 59, 45, 0.9);
     }
 }
