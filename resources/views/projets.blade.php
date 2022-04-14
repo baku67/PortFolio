@@ -44,7 +44,7 @@
         <!-- Header  -->
         <div>
             <!-- <div style="width:100%;"> -->
-                <h1 style="color:#ef3b2d; line-height:0; margin: 25px 0px 25px 4%;">Portfolio <span style="color:#E7E8F2; position:relative; top:7px;">&#9642;</span></h1>
+                <h1 style="color:#ef3b2d; line-height:0; margin: 25px 0px 25px 4%;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
                 <!-- </br>
                 <h2 style="margin-left:6%; color:#ef3b2d;  font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2> -->
             <!-- </div> -->
@@ -124,16 +124,29 @@
                 </div>
 
                 <div class="description">
-                    <p> &nbsp;&nbsp;&nbsp; BlackJackJo' est une application web développée durant ma deuxième année de BTS SIO. Elle permet à l'utilisateur de jouer au Blackjack contre le croupier et comporte un système de compte facultatif. L'idée de base vient d'un ami fan de Blackjack. A la recherche d'une idée ambitieuse pour apprendre le javascript, je m'en suis inspiré. Je ne connaissais rien au BlackJack et n'aime pas réellement les jeux d'argent, c'est pourquoi j'ai voulu créer une alternative/substitution sans argent réel. L'idée originale était un simple compteur de cartes permettant d'orienter les choix lors d'une partie sur un Casino par exemple, mais le projet a vite manqué de potentitiel, donc je me suis mis à codé ce jeu. </p>
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BlackJackJo' est une application web développée durant ma deuxième année de BTS SIO. Elle permet à l'utilisateur de jouer au Blackjack contre le croupier et comporte un système de compte facultatif. L'idée de base vient d'un ami fan de Blackjack. A la recherche d'une idée ambitieuse pour apprendre le javascript, je m'en suis inspiré. Je ne connaissais rien au BlackJack et n'aime pas réellement les jeux d'argent, c'est pourquoi j'ai voulu créer une alternative/substitution sans argent réel. L'idée originale était un simple compteur de cartes permettant d'orienter les choix lors d'une partie sur un Casino par exemple, mais le projet a vite manqué de potentitiel, donc je me suis mis à codé ce jeu. </p>
                 </div>
 
             </div>
 
 
 
-
+            <!-- Tentative polygones stylés -->
             <!-- <div class="shape"></div> -->
 
+
+            <!-- Disclaimer -->
+            <div class="disclaimerContainer" style="margin-top: 50px; text-align:center; position:relative; color:rgba(191, 4, 38, 0.9); padding: 5px 0; border:1px solid rgba(239, 59, 45, 0.2); border-radius: 10px;">
+
+                    <div style="display:inline-flex;">
+                        <img src="img/attention.png" style="width:50px;height:50px; margin-right:15px; position:relative; top: 4px;"/>
+                        <p class="highlightSpan" style="font-size:113%;">Attention</p>
+                    </div>
+                    <p>L'affichage du projet sur <span style="font-weight:bold;">Firefox</span> n'est actuellement pas supporté. (Effet zoom)<br>Le système de connexion et d'inscription n'est pas disponible sur l'aperçu, merci d'utiliser le lien.</p>
+
+
+            </div>
+            <!-- Fin Disclaimer -->
 
 
 
