@@ -97,6 +97,8 @@
                     <iframe src="https://www.blackjackjo.com" class="iframeElem"></iframe>
                     <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                 </div>
+
+
                 <div class="header">
 
                     <!-- Paragraphe qui fadeIn phrase par phrase?  -->
@@ -117,8 +119,12 @@
                     <p class="headerLine9 indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"author" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText pText3">Basile Kuntz</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>
                     <p class="headerLine10 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">link</span><span class="pAttributes"> rel</span>=<span class="pValues">"stylesheet" </span><span class="pAttributes">href</span>=<span class="pValues">"css/style.css" </span><span class="pAttributes">id</span>=<span class="pValues">"stylesheet_1"</span><span class="pChevrons">&#x3e;</span></p>
                     
-                    <p class="headerLine11"><span class="pChevrons">&#x3c;/</span></span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
+                    <p class="headerLine11" style="line-height: 1.9em;"><span class="pChevrons">&#x3c;/</span></span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
 
+                </div>
+
+                <div class="description">
+                    <p> &nbsp;&nbsp;&nbsp; BlackJackJo' est une application web développée durant ma deuxième année de BTS SIO. Elle permet à l'utilisateur de jouer au Blackjack contre le croupier et comporte un système de compte facultatif. L'idée de base vient d'un ami fan de Blackjack. A la recherche d'une idée ambitieuse pour apprendre le javascript, je m'en suis inspiré. Je ne connaissais rien au BlackJack et n'aime pas réellement les jeux d'argent, c'est pourquoi j'ai voulu créer une alternative/substitution sans argent réel. L'idée originale était un simple compteur de cartes permettant d'orienter les choix lors d'une partie sur un Casino par exemple, mais le projet a vite manqué de potentitiel, donc je me suis mis à codé ce jeu. </p>
                 </div>
 
             </div>
