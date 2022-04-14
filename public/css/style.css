@@ -497,7 +497,7 @@ li::before {
     animation-name: fadeIn;
     animation-duration: 1.5s;
     /* FadeIn synchro avec le .pText3 ("Basile Kuntz") */
-    animation-delay: 1.9s;
+    animation-delay: 2.4s;
     animation-fill-mode: forwards;
 }
 .iframe iframe {
@@ -725,50 +725,50 @@ li::before {
 /* Projet Header fadeIn ligne par ligne:  */
 .headerLine1 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 0.5s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1s normal forwards running;
 }
 .headerLine2 {
     opacity: 0;
     /* animation: ligneParLigne 2.5s ease 0.65s normal forwards running; */
-    animation: ligneParLigne 0.5s ease 0.65s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.15s normal forwards running;
 }
 .headerLine3 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 0.8s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.3s normal forwards running;
 }
 .headerLine4 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 0.95s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.45s normal forwards running;
 }
 .headerLine5 {
     opacity: 0;
     /* animation: ligneParLigne 2.5s ease 1.1s normal forwards running; */
-    animation: ligneParLigne 0.5s ease 1.1s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.60s normal forwards running;
 }
 .headerLine6 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 1.25s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.75s normal forwards running;
 }
 .headerLine7 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 1.3s normal forwards running;
+    animation: ligneParLigne 0.5s ease 1.90s normal forwards running;
 }
 .headerLine8 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 1.45s normal forwards running;
+    animation: ligneParLigne 0.5s ease 2.1s normal forwards running;
 }
 .headerLine9 {
     opacity: 0;
     /* animation: ligneParLigne 2.5s ease 1.6s normal forwards running; */
-    animation: ligneParLigne 0.5s ease 1.6s normal forwards running;
+    animation: ligneParLigne 0.5s ease 2.25s normal forwards running;
 }
 .headerLine10 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 1.75s normal forwards running;
+    animation: ligneParLigne 0.5s ease 2.40s normal forwards running;
 }
 .headerLine11 {
     opacity: 0;
-    animation: ligneParLigne 0.5s ease 1.9s normal forwards running;
+    animation: ligneParLigne 0.5s ease 2.55s normal forwards running;
 }
 @keyframes ligneParLigne {
     from {
@@ -850,8 +850,21 @@ li::before {
     opacity: 0;
 
     /* Delai adapté au fadeIn du .sectionsGridContainer   /!\ (effet à adapter) */
-    animation: fadeIn 0.8s ease 0.9s normal forwards running;
+    animation: fadeIn 0.8s ease 0.9s normal forwards running, orangeToWhite 0.8s ease 0.9s normal forwards running;
 }
+.carreTitreProjet {
+    /* Cas particulier sur Projet: Le point fadeIn est synchro avec le fadeIn <iframe> */
+    animation: fadeIn 0.8s ease 2.5s normal forwards running, orangeToWhite 0.8s ease 2.5s normal forwards running !important;
+}
+@keyframes orangeToWhite {
+    from {
+        color:#E7E8F2;
+    }
+    to {
+        color:#ef3b2d;
+    }
+}
+
 
 .barreVeilleSouligne {
     height:6px; 

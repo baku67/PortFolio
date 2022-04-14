@@ -79,7 +79,7 @@
         <div id="pageContainer">
 
 
-            <p class="projetTitle">Mon Projet <span class="carreTitre">▪</span> </p>
+            <p class="projetTitle">Mon Projet <span class="carreTitre carreTitreProjet">▪</span> </p>
             <!-- Ajouter effet glissade from gauche to droite (mais qui se genere depuis le debut du titre pas de l'écran :/ ) -->
             <div class="barreProjetSouligne"></div>
 
