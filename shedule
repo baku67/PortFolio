@@ -25,3 +25,24 @@ Faire les 3 Mockups pour section Responsive de la doc Technique (en CSS), affich
 Rajouter la description de l'application sous le header (ajouter ligne sur 2 eme colonne GRID)
 
 Veille: section "Outils en ligne"
+
+
+
+
+img Docu/Git onClick = modal zoomImg
+cherrypick le style/anim du titreVeille
+
+au lieu du fadeIn plus long sur les lignes 2, 5 et 9: mettre un fadeIn delayed+/duration+ only sur les text (oui oui oui) !!!
+-> le fait que ce soit la ligne entiere qui soit décalée fait bizarre, alors que le fadeIn sur l'opacity des text garde les elements en place etc...
+
+Faire les Mockups Pc, Tablet, phone (fun)
+
+Projet: Flèche "fun,courbé" en mode "c'est jouable!" incliné orange pointant vers le iFrame, en dessous de header
+
+
+
+
+carré fadeColour Veille + projet // delay contenu projet sur le pop du carré comme veille // Description aapli sous headerProjet // Disposition titreProjet+titreVeille (trop d'espace)
+Projet: Titre, point+Contenu(header puis iframe puis description sous header)
+
+bouton accueil Mockup = refresh iframe / reload url
