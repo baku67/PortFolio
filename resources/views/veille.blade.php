@@ -65,7 +65,7 @@
         <div id="pageContainer">
 
 
-            <p class="veilleTitle"> Veille technologique <span class="carreTitre">▪</span> </p>
+            <p class="veilleTitle"> Veille technologique <span class="carreTitre carreTitreVeille">▪</span> </p>
             <!-- Ajouter effet glissade from gauche to droite (mais qui se genere depuis le debut du titre pas de l'écran :/ ) -->
             <div class="barreVeilleSouligne"></div>
 
@@ -81,7 +81,7 @@
                         <!-- Bouton d'ajout "Nom - adresse - truc.com (ou regex?), réduire le bouton 1/4 ligne recherche (sur le coté droit) -->
                         <li class="veilleLigneAjout"><button style="background-color:rgba(255,255,255,0); color:#ef3b2d; font-weight:bold;"><span style="font-size: 2.8em;">+</span> <span style="color:#e2e8f0; margin:auto 0; font-size:1.6em; position:relative; bottom:6px;">&nbsp;Ajouter un outil&nbsp;</span> <span style="font-size: 2.8em;">+</span></button></li>
 
-                        <li class="veilleLignes"><p class="veilleLignesDesc">Grid Generator</p><a class="veilleLignesLiens" href="https://grid.layoutit.com" target="blank">grid.layoutit.com</a></li>
+                        <a href="https://grid.layoutit.com"><li class="veilleLignes"><p class="veilleLignesDesc">Grid Generator</p><a class="veilleLignesLiens" href="https://grid.layoutit.com" target="blank">grid.layoutit.com</a></li></a>
                         <li class="veilleLignes"><p class="veilleLignesDesc">Favicon Letter Generator</p><a class="veilleLignesLiens" href="https://favicon.io/favicon-generator/" target="blank">favicon.io</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">CSS gradient Generator</p><a class="veilleLignesLiens" href="https://cssgradient.io" target="blank">cssgradient.io</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">PNG transparency</p><a class="veilleLignesLiens" href="https://onlinepngtools.com/create-transparent-png" target="blank">onlinepngtools.com</a></li>
@@ -109,6 +109,8 @@
                         <li class="veilleLignes"><p class="veilleLignesDesc">Trigger CSS anim on scroll</p><a class="veilleLignesLiens" href="https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/" target="blank">Go</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">Select element inside &#x3c;iframe&#x3e;</p><a class="veilleLignesLiens" href="https://www.codegrepper.com/code-examples/javascript/Get+element+inside+iframe+jQuery" target="blank">Go</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">Select element inside &#x3c;iframe&#x3e; 2</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/25098021/securityerror-blocked-a-frame-with-origin-from-accessing-a-cross-origin-frame" target="blank">Go</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Select element inside &#x3c;iframe&#x3e; 3</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/9393532/cross-domain-iframe-issue/9393545#9393545" target="blank">Go</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">News API !</p><a class="veilleLignesLiens" href="https://newsapi.org/docs/get-started#search" target="blank">Go</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">JavaScript closures</p><a class="veilleLignesLiens" href="https://www.w3schools.com/js/js_function_closures.asp" target="blank">Go</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">Javascript global var</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/26328654/is-it-possible-to-change-js-variable-value-from-browser-console" target="blank">Go</a></li>
                     </ul>

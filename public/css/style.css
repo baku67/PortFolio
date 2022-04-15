@@ -15,10 +15,10 @@ input[type=text] {
     padding: 5px 15px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #ef3b2d;
+    border: 1px solid rgba(239, 59, 45, 0.7);
     border-radius: 4px;
     background-color:#171923;
-    caret-color: #ef3b2d;
+    caret-color: rgba(239, 59, 45, 1);
 }
 
 
@@ -58,7 +58,7 @@ li::before {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
-    gap: 80px 180px; 
+    gap: 0px 180px; 
     grid-template-areas: 
     "formations hobbys"
     "langages langages"
@@ -995,6 +995,10 @@ li::before {
     /* Delai adapté au fadeIn du .sectionsGridContainer   /!\ (effet à adapter) */
     animation: fadeIn 0.8s ease 0.9s normal forwards running, whiteToOrange 0.8s ease 0.9s normal forwards running;
 }
+.carreTitreVeille {
+    /* Synchro avec .sectionSitesTitle et .sectionTipsTitle */
+    animation: fadeIn 0.8s ease 0.9s normal forwards running, whiteToOrange 0.8s ease 1.6s normal forwards running, whiteToOrange 0.8s ease 2.7s normal forwards running !important;
+}
 .carreTitreProjet {
     /* Cas particulier sur Projet: Le point fadeIn est synchro avec le fadeIn <iframe> */
     animation: fadeIn 0.8s ease 2.2s normal forwards running, whiteToOrange 1s ease 2.4s normal forwards running !important;
@@ -1227,24 +1231,70 @@ li::before {
       }
       .sectionSites { 
           grid-area: sectionSites; 
+
+          opacity: 0;
+          position: relative;
+          right: 400px;
+          bottom: 20px;
+          animation: sectionSitesSlide 1.5s ease 1.8s normal forwards running;
+        }
+        @keyframes sectionSitesSlide {
+            from {
+                opacity: 0;
+                right: 400px;
+            }
+            to {
+                opacity: 1;
+                right: 0px;
+            }
         }
       .sectionTips { 
           grid-area: sectionTips; 
-          border-left: 1px solid rgba(239, 59, 45, 0.3);
-          padding-left: 35px;
+          border-left: 1px solid rgba(239, 59, 45, 0);
+          padding-left: 50px;
+          margin-left: 30px;
 
           position: relative;
           bottom: 140px;
           left: 100px;
+
+          opacity: 0;
+          position: relative;
+          left: 400px;
+          animation: sectionTipsSlide 1.4s ease 1s normal forwards running, borderDelayed 0.5s ease 3s normal forwards running;
+        }
+        @keyframes sectionTipsSlide {
+            from {
+                opacity: 0;
+                left: 400px;
+            }
+            to {
+                opacity: 1;
+                left: 0px;
+            }
+        }
+        @keyframes borderDelayed {
+            from {
+                border-left: 1px solid rgba(239, 59, 45, 0);
+            }
+            to {
+                border-left: 1px solid rgba(239, 59, 45, 0.4);
+            }
         }
       .Autres { grid-area: Autres; }
 
 
 .sectionSitesTitle {
+    font-size: 140%;
     color: #ef3b2d;
+    /* Synchro avec .carreTitreVeille */
+    animation: whiteToOrange 0.8s ease 2.7s normal forwards running;
 }
 .sectionTipsTitle {
+    font-size: 140%;
     color: #ef3b2d;
+    /* Synchro avec .carreTitreVeille */
+    animation: whiteToOrange 0.8s ease 1.6s normal forwards running;
 }
 .sectionAutresTitle {
     color: #ef3b2d;
@@ -1252,8 +1302,10 @@ li::before {
 
 .veilleLignes {
     padding: 0px 0px 0px 30px;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 6px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    /* border-radius: 6px; */
 }
 .veilleLignesLiens {
     position: relative;

@@ -78,6 +78,8 @@ window.onload = function() {
     // var elmnt = iframe.contentWindow.document.getElementById("header");
     // elmnt.style.background = "red !important";
 
+    // const frame = document.getElementById('your-frame-id');
+    // frame.contentWindow.postMessage(/*any variable or object here*/, 'http://your-second-site.com');
 
 
 
