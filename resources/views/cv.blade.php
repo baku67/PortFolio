@@ -122,6 +122,37 @@
                     <!-- Remettre une grid ici -->
                     <p class="pageSectionTitle" style="text-align: center;"><span class="highlightSpan">&#x3c;</span> Compétences <span class="highlightSpan">/&#x3e;</span></p>
 
+                
+                    <!-- HTML5, CSS3, JavaScript, PHP, BDD, SQL, Wordpress, Laravel(opacity:0.5), React(opacity:0.2),  -->
+                    <div class="gridCompetences">
+                        <div class="carreCompetences grid-html5">
+                            <img src="img/competences/html5.png">
+                            <br>
+                            <p class="textCompetences">HTML5</p>
+                        </div>
+                        <div class="carreCompetences grid-css3">
+                            <img src="img/competences/css3.png">
+                            <p class="textCompetences">CSS3</p>
+                        </div>
+                        <div class="carreCompetences grid-javascript">
+                            <img src="img/competences/javascript.png">
+                            <p class="textCompetences">JavaScript</p>
+                        </div>
+                        <div class="carreCompetences grid-php">
+                            <img src="img/competences/php.png">
+                            <p class="textCompetences">PHP</p>
+                        </div>
+                        <div class="carreCompetences grid-bdd">
+                            <img src="img/competences/sql.png">
+                            <p class="textCompetences">SQL</p>
+                        </div>
+                        <div class="carreCompetences grid-sql">
+                            <!-- <img src="img/competences/bdd.png"> -->
+                            <img src="img/competences/bdd2.png">
+                            <p class="textCompetences">BDD</p>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="outils">

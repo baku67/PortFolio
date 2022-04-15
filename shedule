@@ -1,7 +1,12 @@
+Veille: slide element de droite/gauche vers milieu + opacity (+point flash a chaque section qui finit de se deplacer)
+
+
 Mettre le fadeInScroll sur le header aussi (mais plus bref et select la globalité (ou pas?) du header), pour quand on reScroll vers le haut le faire pop joliment
 
 Faire fadeIn le contenu du disclaimer une fois qu'il est bien en place
 
+
+WIP iframe selector pour DarkMode (voir site avec workaround dans le js)
 
 TraitSouligner zindex sous le titre projet
 

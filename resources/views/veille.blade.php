@@ -92,21 +92,25 @@
                         <li class="veilleLignes"><p class="veilleLignesDesc">CSS polygone draw</p><a class="veilleLignesLiens" href="https://bennettfeely.com/clippy/" target="blank">bennettfeely.com</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">Responsive test</p><a class="veilleLignesLiens" href="https://responsivetesttool.com" target="blank">responsivetesttool.com</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">Mockups maker</p><a class="veilleLignesLiens" href="https://mockuphone.com/device" target="blank">mockuphone.com</a></li>                            
-                        <li class="veilleLignes"><p class="veilleLignesDesc">PNG bank (2/jour)</p><a class="veilleLignesLiens" href="https://pngtree.com" target="blank">pngtree.com</a></li>                            
-                
+                        <li class="veilleLignes"><p class="veilleLignesDesc">PNG bank (2/jour)</p><a class="veilleLignesLiens" href="https://pngtree.com" target="blank">pngtree.com</a></li>  
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Resize multiple img</p><a class="veilleLignesLiens" href="https://www.iloveimg.com/resize-image" target="blank">iloveimg.com</a></li>                            
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Compress multiple img</p><a class="veilleLignesLiens" href="https://www.iloveimg.com/compress-image" target="blank">iloveimg.com</a></li>                            
+                        
                     </ul>
                 </div>
 
                 <div class="sectionTips">
-                    <h3 class="sectionTipsTitle">Tips Code</h3>
+                    <h3 class="sectionTipsTitle">Tips</h3>
                     <ul>
-                        <li class="veilleLignes">autre exemple</li>
-                        <li class="veilleLignes">Exemple de site1 wwwtrubvildulechouette.com</li>
-                        <li class="veilleLignes"></li>
-                        <li class="veilleLignes"></li>
-                        <li class="veilleLignes"></li>
-                        <li class="veilleLignes"></li>
-                        <li class="veilleLignes"></li>
+                    <li class="veilleLignes" style="margin-bottom:5px; padding:0px 0px 0px 30px; !important; border:1px solid rgba(239, 59, 45, 0.8); background-color:rgba(239, 59, 45, 0.05);"><p class="veilleLignesDesc" style="margin-block-start:0.5em;margin-block-end:0.5em;"><input style="color:white;" type="text"></p><a class="veilleLignesLiens" href="">Rechercher</a></li>
+                        <!-- Bouton d'ajout "Nom - adresse - truc.com (ou regex?), réduire le bouton 1/4 ligne recherche (sur le coté droit) -->
+                        <li class="veilleLigneAjout"><button style="background-color:rgba(255,255,255,0); color:#ef3b2d; font-weight:bold;"><span style="font-size: 2.8em;">+</span> <span style="color:#e2e8f0; margin:auto 0; font-size:1.6em; position:relative; bottom:6px;">&nbsp;Ajouter un tip&nbsp;</span> <span style="font-size: 2.8em;">+</span></button></li>
+
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Trigger CSS anim on scroll</p><a class="veilleLignesLiens" href="https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/" target="blank">Go</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Select element inside &#x3c;iframe&#x3e;</p><a class="veilleLignesLiens" href="https://www.codegrepper.com/code-examples/javascript/Get+element+inside+iframe+jQuery" target="blank">Go</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Select element inside &#x3c;iframe&#x3e; 2</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/25098021/securityerror-blocked-a-frame-with-origin-from-accessing-a-cross-origin-frame" target="blank">Go</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">JavaScript closures</p><a class="veilleLignesLiens" href="https://www.w3schools.com/js/js_function_closures.asp" target="blank">Go</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Javascript global var</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/26328654/is-it-possible-to-change-js-variable-value-from-browser-console" target="blank">Go</a></li>
                     </ul>
                 </div>
 
