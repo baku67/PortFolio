@@ -77,7 +77,7 @@
                     <!-- <input type="text"> -->
                     <ul>
                         <!-- Ligne 1: Input de recherche -->
-                        <li class="veilleLignes" style="margin-bottom:5px; padding:0px 0px 0px 30px; !important; border:1px solid rgba(239, 59, 45, 0.8); background-color:rgba(239, 59, 45, 0.05);"><p class="veilleLignesDesc" style="margin-block-start:0.5em;margin-block-end:0.5em;"><input type="text"></p><a class="veilleLignesLiens" href="">Rechercher</a></li>
+                        <li class="veilleLignes" style="margin-bottom:5px; padding:0px 0px 0px 30px; !important; border:1px solid rgba(239, 59, 45, 0.8); background-color:rgba(239, 59, 45, 0.05);"><p class="veilleLignesDesc" style="margin-block-start:0.5em;margin-block-end:0.5em;"><input style="color:white;" type="text"></p><a class="veilleLignesLiens" href="">Rechercher</a></li>
                         <!-- Bouton d'ajout "Nom - adresse - truc.com (ou regex?), réduire le bouton 1/4 ligne recherche (sur le coté droit) -->
                         <li class="veilleLigneAjout"><button style="background-color:rgba(255,255,255,0); color:#ef3b2d; font-weight:bold;"><span style="font-size: 2.8em;">+</span> <span style="color:#e2e8f0; margin:auto 0; font-size:1.6em; position:relative; bottom:6px;">&nbsp;Ajouter un outil&nbsp;</span> <span style="font-size: 2.8em;">+</span></button></li>
 

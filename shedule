@@ -1,10 +1,14 @@
-enlever le header sur projet (la NavBarre reste)
+Mettre le fadeInScroll sur le header aussi (mais plus bref et select la globalité (ou pas?) du header), pour quand on reScroll vers le haut le faire pop joliment
 
-effet Mockeup Galaxy8+ sur le iframe
+Faire fadeIn le contenu du disclaimer une fois qu'il est bien en place
 
-les fadeIn dans Projet (dont 'phrase par phrase' header)
 
-Mots importants dans Déroulement et But en highlightOrange 
+TraitSouligner zindex sous le titre projet
+
+lien sous iframe centré/justifier par rapport à description
+
+Projet, le fadeIn Opacity sur le <iframe> "rogne" l'animation gradientSlide, c'est dommage 
+
 
 Mettre le point en blanc dans les favicons
 

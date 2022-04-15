@@ -305,7 +305,7 @@ li::before {
 }
 
 .traitSeparateurProjet {
-    height:2px;
+    height:1px;
     width:95%;
     background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%);
     opacity:0.5;
@@ -313,7 +313,8 @@ li::before {
 }
 
 .documentationHeader {
-    margin-top:50px; 
+    opacity: 0;
+    margin-top: 50px; 
     color:#E7E8F2;
 }
 .documentationTitle {
@@ -960,6 +961,156 @@ li::before {
         color:#ef3b2d;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#docuLoadContainer {
+    opacity: 0;
+    color: #e2e8f0; 
+    margin: 0 15%; 
+    padding-bottom: 100px; 
+    height: 1000px;
+}
+/* Classe ajoutée avec l'observer (au moment ou l'element est visible) */
+.docuLoadContainer {
+    animation: fadeInOnScroll 2s ease 0.3s normal forwards running;
+}
+@keyframes fadeInOnScroll {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+.documentationHeaderFadeInScroll {
+    animation: fadeInOnScroll 2s ease 0.1s normal forwards running;
+}
+
+
+.disclaimerContainer {
+    opacity: 0;
+    width: 2px;
+    margin-top: 50px; 
+    text-align:center; 
+    position:relative; 
+    color:rgba(191, 4, 38, 0.9); 
+    padding: 5px 0; 
+    border:1px solid rgba(239, 59, 45, 0.2); 
+    border-radius: 10px;
+}
+.disclaimerContainerStyleScroll {
+    animation: styleOnScroll 1s ease-in-out 0.1s normal forwards running, clignotementDisclaimer 2.1s ease-in-out 1s infinite;
+}
+@keyframes styleOnScroll {
+    from{
+        width: 2px;
+        opacity: 0;
+        border:0px solid rgba(239, 59, 45, 0); 
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+        /* border opacity from 0.1 to 0.3,  repeat infinite delayed apres pop */
+        border: 3px solid rgba(255, 19, 1, 0.1); 
+    }
+}
+@keyframes  clignotementDisclaimer {
+    0% {
+        border: 3px solid rgba(255, 19, 1, 0.1); 
+    }
+    50% {
+        border: 3px solid rgba(255, 19, 1, 0.3); 
+    }
+    100% {
+        border: 3px solid rgba(255, 19, 1, 0.1); 
+    }
+}
+
+#disclaimerContenuWrapper {
+    opacity: 0;
+    animation: fadeIn 1s ease 1.5s normal forwards running;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .barreVeilleSouligne {

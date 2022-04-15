@@ -91,7 +91,7 @@
                     <div id="boutonMockup4"></div>
                     <div id="boutonMockup5"></div>
                     <!-- Ajouter un effet Mockup smartphone usniquement en CSS !!  -->
-                    <iframe src="https://www.blackjackjo.com" class="iframeElem"></iframe>
+                    <iframe src="https://www.blackjackjo.com" class="iframeElem" id="iframeElement"></iframe>
                     <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                 </div>
 
@@ -133,14 +133,16 @@
 
 
             <!-- Disclaimer -->
-            <div class="disclaimerContainer" style="margin-top: 50px; text-align:center; position:relative; color:rgba(191, 4, 38, 0.9); padding: 5px 0; border:1px solid rgba(239, 59, 45, 0.2); border-radius: 10px;">
+            <div id="disclaimerContainerElem" class="disclaimerContainer">
 
+
+                <div id="disclaimerContenuWrapper">
                     <div style="display:inline-flex;">
                         <img src="img/attention.png" style="width:50px;height:50px; margin-right:15px; position:relative; top: 4px;"/>
                         <p class="highlightSpan" style="font-size:113%;">Attention</p>
                     </div>
                     <p>L'affichage du projet sur <span style="font-weight:bold;">Firefox</span> n'est actuellement pas supporté. (Effet zoom)<br>Le système de connexion et d'inscription n'est pas disponible sur l'aperçu, merci d'utiliser le lien.</p>
-
+                </div>
 
             </div>
             <!-- Fin Disclaimer -->
@@ -151,15 +153,17 @@
 
 
             <!-- Boutons toggle DocUtilisateur/DocTechnique -->
-            <div class="documentationHeader">
+            <div id="documentationHeaderElem" class="documentationHeader">
                 <h2 class="documentationTitle"><span class="chevronOrange">&#x3c;</span> Documentation <span class="chevronOrange">/&#x3e;</span></h2>
                 <p class="documentationButtons"><span id="toggleUtilisateur" class="buttonSelected">Utilisateur</span> &nbsp;&nbsp; <span id="toggleTechnique" class="buttonNonSelected">Technique</span></p>
             </div>
 
 
             <!-- Contenu loadJS Documentation -->
-            <div id="docuLoadContainer" style="color:#e2e8f0; margin: 0 15%; padding-bottom:100px; height: 1000px;" > 
-            </div>
+            <div id="docuLoadContainer-wrapper">
+                <div id="docuLoadContainer"> 
+                </div>
+            <div>
 
 
 
