@@ -76,7 +76,7 @@ window.onload = function() {
 
 
 
-    // ***PROJET FUN: DARK MODE 
+    // ***PROJET FUN: DARK MODE sur le contenu de l'iframe
     // -> Select les elements dans le iframe (balckjackjo.com) pour adapter le style à la charte graphique du portfolio, avec le boutonPhone onclick qui switch avec les vrais couleurs du site)
     // Normalement pas possible pour question de sécurité (MAIS Workaround si on est proprio des 2 sites! avec un systeme d'envoi de messages j'ai pas compris: https://stackoverflow.com/questions/25098021/securityerror-blocked-a-frame-with-origin-from-accessing-a-cross-origin-frame)
     // var iframe = document.getElementById("iframeElement");
@@ -88,8 +88,24 @@ window.onload = function() {
     // frame.contentWindow.postMessage(/*any variable or object here*/, 'http://your-second-site.com');
 
 
+    // Solution: postMessage() 
+
+      // var iframeWin = document.getElementById("iframeElement").contentWindow,
+      //     form = document.getElementById("the-form"),
+      //     myMessage = document.getElementById("my-message");
+
+      // myMessage.select(); 
+
+      // form.onsubmit = function () {
+      //     iframeWin.postMessage(myMessage.value, "http://portfolio.basilek.ovh");
+      //     return false;
+      // };
 
 
+    // Autre méthode plus simple: https://stackoverflow.com/questions/27269406/change-style-of-an-element-inside-iframe-cross-domain-i-own-the-second-domain
+    
+    
+    document.getElementById('iframeElement').contentWindow.postMessage('changeStyle', 'http://www.portfolio.basilek.ovh'); 
 
 
 
@@ -133,9 +149,9 @@ window.onload = function() {
           if (entry.isIntersecting) {
             // Add the animation class
             elem.classList.add('docuLoadContainer');
-            return;
+            // return;
           }
-          elem.classList.remove('docuLoadContainer');
+          // elem.classList.remove('docuLoadContainer');
         });
       });
     // Tell the observer which elements to track

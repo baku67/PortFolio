@@ -62,7 +62,7 @@
             </div>
 
             <!-- Trait séparateur -->
-            <!-- <div id="traitHeader"></div> -->
+            <div id="traitHeader" class="traitHeaderProjet"></div>
         </div>
 
         
@@ -92,6 +92,10 @@
                     <div id="boutonMockup5"></div>
                     <!-- Ajouter un effet Mockup smartphone usniquement en CSS !!  -->
                     <iframe src="https://www.blackjackjo.com" class="iframeElem" id="iframeElement"></iframe>
+                    <!-- <form id="the-form" action="">
+                        Dark Mode: <input id="my-message" type="text">
+                        <input type="submit">
+                    </form> -->
                     <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                 </div>
 
@@ -108,7 +112,6 @@
                     <p class="headerLine4 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> charset</span>=<span class="pValues">"UTF-8"</span><span class="pChevrons">&#x3e;</span></p>
                     <p class="headerLine5 indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"description" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText pText2">Application de BlackJack en ligne</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>
                     <p class="headerLine6 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"keywords" </span><span class="pAttributes">content</span>=<span class="pValues">"Blackjack, Jeu, Cartes"</span><span class="pChevrons">&#x3e;</span></p>
-                    <br>
                     <p class="headerLine7 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">script</span><span class="pAttributes"> src</span>=<span class="pValues">"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span>
                         <br><span class="pAttributes">type</span>=<span class="pValues">"text/javascript"</span><span class="pChevrons">&#x3e;</span><span class="pChevrons">&#x3c;/</span><span class="pTags">script</span><span class="pChevrons">&#x3e;</span></p>
                     <!-- Saut de ligne dans le paragraphe? -->

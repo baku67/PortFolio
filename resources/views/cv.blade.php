@@ -49,7 +49,7 @@
         </div>
 
         <!-- Menu -->
-        <div id="NavBarContainer" style="">
+        <div id="NavBarContainer" style="position: absolute; top: 0%; right: 0%; margin-right: 2%;">
             <p id="menuLigneCv" style="color:#E7E8F2;">
                 <a id="accueilMenu" class="menuButton" href="/">Acceuil</a> 
                 &nbsp; 
@@ -64,7 +64,7 @@
         </div>
 
         <!-- Trait séparateur -->
-        <!-- <div id="traitHeader"></div> -->
+        <div id="traitHeader"></div>
 
 
 
@@ -76,7 +76,7 @@
         <!-- Contenu Page -->
         <div id="pageContainer">
 
-            <h2 class="pageTitle cvTitle">Mon CV</h2>
+            <h2 class="pageTitle cvTitle">Mon <span style="letter-spacing:4px;">CV</span></h2>
 
             </br>
 
@@ -135,7 +135,7 @@
                             <p class="textCompetences">CSS3</p>
                         </div>
                         <div class="carreCompetences grid-javascript">
-                            <img class="imgCompetences" src="img/competences/javascript.png">
+                            <img class="imgCompetences exeptionJs" src="img/competences/javascript.png">
                             <p class="textCompetences">JavaScript</p>
                         </div>
                         <div class="carreCompetences grid-php">

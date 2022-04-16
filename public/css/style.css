@@ -43,10 +43,10 @@ li::before {
 
 
 
-.cvTitle {
+/* .cvTitle {
     margin-top: 12px !important;
     margin-right: 4px;
-}
+} */
 
 
 
@@ -233,6 +233,9 @@ li::before {
     animation-fill-mode: forwards;
 }
 
+.exeptionJs {
+    height: 101px !important;
+}
 
 
 .imgDisclaimer {
@@ -800,14 +803,15 @@ li::before {
 
 /* Grid aperçu documents  */
 .gridDocuments {
-    text-align: center;
+    justify-content: center;
 
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 7px; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 15px 7px; 
     grid-template-areas: 
-      "dicoDonees casUtil diagClasses schemaPartie"; 
+      "dicoDonees casUtil" 
+      "diagClasses schemaPartie"; 
 }
 .dicoDonees { grid-area: dicoDonees; }
 .casUtil { grid-area: casUtil; }
@@ -815,8 +819,8 @@ li::before {
 .schemaPartie { grid-area: schemaPartie; }
 
 .imgDocuVignettes {
-    width: 180px;
-    height: 100px;
+    width: 290px;
+    height: 200px;
     border-radius: 7px;
     padding: 3px;
     border: 1px solid rgba(239, 59, 45, 0.4);
@@ -1216,7 +1220,7 @@ li::before {
     position:relative; 
     bottom:13px;
 
-    text-align: right;
+    /* text-align: right; */
     right: 1000px;
     animation: barreProjetSouligne 1s ease 0s normal forwards running;
 }

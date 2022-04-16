@@ -118,7 +118,10 @@
                         <li class="veilleLignes"><p class="veilleLignesDesc">API (voir intégration à la moitié)</p><a class="veilleLignesLiens" href="https://snipcart.com/blog/integrating-apis-introduction" target="blank">Go</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">CSS on iframe</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/583753/using-css-to-affect-div-style-inside-iframe" target="blank">Go</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">iframe postMessage() cross-domain</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/41060958/edit-the-css-of-a-cross-domain-iframe-that-is-inside-an-internal-iframe" target="blank">Go</a></li>
-                           
+                            <li class="veilleLignes"><p class="veilleLignesDesc">iframe postMessage() cross-domain (simplifié + doc)</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/27269406/change-style-of-an-element-inside-iframe-cross-domain-i-own-the-second-domain" target="blank">Go</a></li>
+    
+                            
+                            
                         
 
                     
