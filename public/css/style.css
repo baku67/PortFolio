@@ -228,6 +228,30 @@ li::before {
 
 
 
+.imgDisclaimer {
+    width: 25px;
+    position: relative;
+    top: 3px;
+}
+#disclaimerContenuWrapper {
+    opacity: 0;
+}
+.disclaimerContenuWrapper {
+    animation: fadeInSpe 1s ease 0.8s normal forwards running !important;
+}
+@keyframes fadeInSpe {
+    from {
+        color: white;
+        opacity: 0;
+    }
+    to {
+        color: rgba(191, 4, 38, 1);
+        opacity: 1;
+    }
+}
+
+
+
 
 @keyframes fadeIn {
     from {
@@ -1131,11 +1155,6 @@ li::before {
     100% {
         border: 3px solid rgba(255, 19, 1, 0.1); 
     }
-}
-
-#disclaimerContenuWrapper {
-    opacity: 0;
-    animation: fadeIn 1s ease 1.5s normal forwards running;
 }
 
 

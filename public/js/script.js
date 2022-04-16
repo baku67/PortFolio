@@ -36,7 +36,13 @@ window.onload = function() {
     })
 
 
+    document.getElementById("alertDisclaimer1").addEventListener("click", function() {
+        alert("J'ai fais l'erreur d'utiliser la propriété zoom sur le <body> au tout début du projet car je le trouvais globalement trop zoomé, et n'y ai plus porté attention par la suite. Il s'est ensuite avéré que cette propriété n'est pas reconnue sur Firefox, et il n'y a pas d'alternative qui fonctionne. Il faudra réduire toutes les mesures manuellement.");
+    })
 
+    document.getElementById("alertDisclaimer2").addEventListener("click", function() {
+        alert("Les cookies de session de l'<iframe> (aperçu du site depuis le portfolio), ne sont pas partagés pour l'instant.");
+    })
 
 
 
@@ -170,6 +176,24 @@ window.onload = function() {
     
     // Tell the observer which elements to track
     observerDisclaimer.observe(document.querySelector('#disclaimerContainerElem'));
+
+
+
+    const observerFirefox = new IntersectionObserver(entries => {
+        // Loop over the entries
+        entries.forEach(entry => {
+          // If the element is visible
+          if (entry.isIntersecting) {
+            // Add the animation class
+            entry.target.classList.add('disclaimerContenuWrapper');
+            return;
+          }
+        //   entry.target.classList.remove('disclaimerContainerStyleScroll');
+        });
+      });
+    
+    // Tell the observer which elements to track
+    observerFirefox.observe(document.querySelector('#disclaimerContenuWrapper'));
 
 
 

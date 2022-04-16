@@ -140,12 +140,16 @@
             <div id="disclaimerContainerElem" class="disclaimerContainer">
 
 
-                <div id="disclaimerContenuWrapper">
+                <div>
                     <div style="display:inline-flex;">
                         <img src="img/attention.png" style="width:50px;height:50px; margin-right:15px; position:relative; top: 4px;"/>
                         <p class="highlightSpan" style="font-size:113%;">Attention</p>
                     </div>
-                    <p>L'affichage du projet sur <span style="font-weight:bold;">Firefox</span> n'est actuellement pas supporté. (Effet zoom)<br>Le système de connexion et d'inscription n'est pas disponible sur l'aperçu, merci d'utiliser le lien.</p>
+                    <div id="disclaimerContenuWrapper">
+                        <p style="margin-block-end: 0em;">L'affichage du projet sur <span style="font-weight:bold;">Firefox</span> n'est actuellement pas supporté (Effet Zoom). <em id="alertDisclaimer1" style="font-size: 90%;">Voir plus</em>&nbsp;&nbsp;&nbsp;<img class="imgDisclaimer" src="img/firefox.png"/></p>
+                        <br>
+                        <p style="margin-block-start: 0em;">Le système de connexion et d'inscription n'est pas disponible sur l'aperçu du site ci-dessus, merci d'utiliser le lien.  <em id="alertDisclaimer2" style="font-size: 90%;">Voir plus</em>&nbsp;&nbsp;&nbsp;<img class="imgDisclaimer" src="img/userBarred.png"/></p>
+                    </div>
                 </div>
 
             </div>

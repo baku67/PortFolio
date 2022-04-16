@@ -25,7 +25,24 @@
     #disclaimerContenuWrapper {
         margin: 0 20px;
     }
+    #disclaimerContainerElem {
+        position: relative;
+        bottom: 240px;
+    }
 
+    #documentationHeaderElem {
+        position: relative;
+        bottom: 320px;
+    }
+
+    #boutonMockup {
+        top: 620px !important;
+    }
+    #boutonMockup2 {
+        position: relative;
+        top: -17px !important;
+        /* top:0; */
+    }
 
 
     .gridProjetHeaderContainer {
@@ -39,16 +56,24 @@
           "description"; 
     }
     .header { grid-area: header; 
-    font-size: 45%;
-    position: relative;
-    left: -15px;
+        font-size: 45%;
+        position: relative;
+        left: -15px;
+        margin: 12% 8% 0% 5%;
     }
-    .iframe { grid-area: iframe; }
-    .description { grid-area: description; }
+    .iframe {
+        grid-area: iframe;
+        bottom: 273px !important;
+    }
+    .description { 
+        grid-area: description; 
+        position: relative;
+        bottom: 270px;
+    }
 
 
     .headerLine5 {
-        line-height: 170%;
+        line-height: 180% !important;
     }
 
 
@@ -92,6 +117,14 @@
     }
 
 
+    .traitSeparateurProjet {
+        position: relative;
+        bottom: 300px;
+    }
+    #docuLoadContainer-wrapper {
+        position: relative;
+        bottom: 300px;
+    }
 
 
     .iframe {
@@ -118,10 +151,15 @@
     .selected {
         color: #171923;
         font-weight: bold;
+        text-decoration-color: #171923;
+        text-underline-offset: 1px;
+        text-decoration-thickness: 8px;
     }
 
     #menuLigne {
-        margin-left: 15px;
+        margin-left: 17px;
+        padding: 3px;
+        margin-top: 28px !important;
     }
     
 
