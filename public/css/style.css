@@ -445,7 +445,7 @@ li::before {
 #boutonMockup3{
     /* On/Off */
     width: 4px;
-    height: 30px;
+    height: 40px;
     background-color: #ef3b2d;
     border: 2px solid #ef3b2d;
     opacity: 0.8;
@@ -453,7 +453,7 @@ li::before {
 
     position:relative;
     left: 180px;
-    top: 300px;
+    top: 340px;
     margin: 0 auto;
 }
 /* #bouton3Container {
@@ -487,27 +487,27 @@ li::before {
 #boutonMockup4{
     /* Vol+ */
     width: 4px;
-    height: 30px;
+    height: 40px;
     background-color: #ef3b2d;
     border: 2px solid #ef3b2d;
     opacity: 0.8;
 
     position:relative;
     left: 180px;
-    top: 170px;
+    top: 190px;
     margin: 0 auto;
 }
 #boutonMockup5{
     /* Vol- */
     width: 4px;
-    height: 30px;
+    height: 40px;
     background-color: #ef3b2d;
     border: 2px solid #ef3b2d;
     opacity: 0.8;
 
     position:relative;
     left: 180px;
-    top: 172px;
+    top: 192px;
     margin: 0 auto;
 }
 
@@ -560,7 +560,7 @@ li::before {
 .gridProjetHeaderContainer {
     display: grid; 
     grid-template-columns: 0.7fr 1.3fr; 
-    grid-template-rows: 1fr; 
+    grid-template-rows: 1.3fr 0.7fr; 
     gap: 100px 40px; 
     grid-template-areas: 
       "iframe header"
@@ -598,6 +598,9 @@ li::before {
     border-radius: 7px;
     width: 360px;
     height: 740px;
+
+    position: relative;
+    bottom: 30px;
 }
 
 
@@ -607,7 +610,9 @@ li::before {
     color: #d4d4d4;
     position: relative;
     margin: auto auto;
+    /* Attention: MediaQueries .iframe right:15px à adapter (pour fix le decalage) */
     padding-left: 15px;
+
     padding-bottom:10px;
 
     /* bottom: 30px; */
@@ -685,7 +690,7 @@ li::before {
 
 
 .indented {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 

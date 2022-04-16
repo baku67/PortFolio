@@ -164,7 +164,7 @@ window.onload = function() {
             entry.target.classList.add('disclaimerContainerStyleScroll');
             return;
           }
-          entry.target.classList.remove('disclaimerContainerStyleScroll');
+        //   entry.target.classList.remove('disclaimerContainerStyleScroll');
         });
       });
     

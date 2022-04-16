@@ -1,6 +1,9 @@
 Veille: slide element de droite/gauche vers milieu + opacity (+point flash a chaque section qui finit de se deplacer)
 + News API: https://newsapi.org/docs/get-started#search
 
+Requete API news
+https://newsapi.org/v2/everything?q=Javascript&from=2022-04-15&sortBy=popularity&language=fr&apiKey=API_KEY
+
 
 Mettre le fadeInScroll sur le header aussi (mais plus bref et select la globalité (ou pas?) du header), pour quand on reScroll vers le haut le faire pop joliment
 

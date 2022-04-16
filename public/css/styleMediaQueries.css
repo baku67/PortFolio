@@ -15,4 +15,174 @@
 
 
 
+    #toggleTechnique {
+        position: relative;
+        top: 40px;
+        right: 10px;    
+    }
+
+
+    #disclaimerContenuWrapper {
+        margin: 0 20px;
+    }
+
+
+
+    .gridProjetHeaderContainer {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 2fr 0.8fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "header"
+          "iframe"
+          "description"; 
+    }
+    .header { grid-area: header; 
+    font-size: 45%;
+    position: relative;
+    left: -15px;
+    }
+    .iframe { grid-area: iframe; }
+    .description { grid-area: description; }
+
+
+    .headerLine5 {
+        line-height: 170%;
+    }
+
+
+
+    @keyframes borderDelayed {
+        from {
+            border-left: 1px solid rgba(239, 59, 45, 0);
+        }
+        to {
+            border-left: 1px solid rgba(239, 59, 45, 0);
+        }
+    }
+
+    .sectionsGridContainer {
+        color: #e2e8f0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 110px 50px;
+        grid-template-areas:
+            "sectionSites"
+            "sectionTips"
+            "Autres"
+            ".";
+        opacity: 0;
+        animation: fadeIn 0.5s ease 0.85s normal forwards running;
+    }
+    .sectionTips {
+        padding-left: 0px;
+        margin-left: 0px;
+        border: 0px;
+    }
+    .sectionSites {
+        position: relative;
+        bottom: 100px;
+    }
+
+
+    .respPasIndent {
+        padding-inline-start: 10px !important;
+    }
+
+
+
+
+    .iframe {
+        margin: auto;
+        /* Pour compenser le margin-left du header qui décale tout le grid */
+        right: 15px;
+    }
+    .iframeElem {
+        width: 323px;
+        height: 650px;
+    }
+
+
+    #NavBarContainer {
+        width: 100%;
+        background-color: #ed3b2d;
+        margin-right: 0% !important;
+
+        top: 7% !important;
+
+        position: relative !important;
+    }
+
+    .selected {
+        color: #171923;
+        font-weight: bold;
+    }
+
+    #menuLigne {
+        margin-left: 15px;
+    }
+    
+
+    .projetTitle {
+        font-size: 2.5em;
+        /* top: 40px; */
+    }
+    .veilleTitle {
+        font-size: 2.5em;
+        line-height: 1em;
+        position: relative;
+        bottom: 25px !important;
+    }
+
+
+
+    .barreProjetSouligne {
+        width: 198px !important;
+        bottom: 4px !important;
+        animation: barreProjetSouligne 1s ease 0s normal forwards running !important;
+    }
+    .barreVeilleSouligne {
+        width: 257px;
+    }
+    @keyframes barreProjetSouligne {
+        from {
+            right: 1000px;
+            background-color: #e2e8f0;
+            height: 15px;
+        }
+        to {
+            right: -85px;
+            background-color: rgba(239, 59, 45, 0.9);
+            height: 8px;
+        }
+    }
+
+    #boutonMockup4 {
+        height: 0px !important;
+        width: 0px !important;
+
+        position: absolute;
+        opacity: 0;
+    }
+    #boutonMockup5 {
+        height: 0px !important;
+        width: 0px !important;
+
+        position: absolute;
+        opacity: 0;
+
+    }
+    #boutonMockup3 {
+        height: 0px !important;
+        width: 0px !important;
+
+        position: absolute;
+        opacity: 0;
+
+    }
+
+
+
 }

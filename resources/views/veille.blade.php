@@ -42,7 +42,7 @@
 
             <!-- Menu -->
             <div id="NavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
-                <p style="color:#E7E8F2;">
+                <p id="menuLigne" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Acceuil</a> 
                     &nbsp; 
                     <a id="cvMenu" class="menuButton" href="/cv">C.V.</a> 
@@ -75,7 +75,7 @@
                 <div class="sectionSites">
                     <h3 class="sectionSitesTitle">Outils en ligne</h3>
                     <!-- <input type="text"> -->
-                    <ul>
+                    <ul class="respPasIndent">
                         <!-- Ligne 1: Input de recherche -->
                         <li class="veilleLignes" style="margin-bottom:5px; padding:0px 0px 0px 30px; !important; border:1px solid rgba(239, 59, 45, 0.8); background-color:rgba(239, 59, 45, 0.05);"><p class="veilleLignesDesc" style="margin-block-start:0.5em;margin-block-end:0.5em;"><input style="color:white;" type="text"></p><a class="veilleLignesLiens" href="">Rechercher</a></li>
                         <!-- Bouton d'ajout "Nom - adresse - truc.com (ou regex?), réduire le bouton 1/4 ligne recherche (sur le coté droit) -->
@@ -101,7 +101,7 @@
 
                 <div class="sectionTips">
                     <h3 class="sectionTipsTitle">Tips</h3>
-                    <ul>
+                    <ul class="respPasIndent">
                     <li class="veilleLignes" style="margin-bottom:5px; padding:0px 0px 0px 30px; !important; border:1px solid rgba(239, 59, 45, 0.8); background-color:rgba(239, 59, 45, 0.05);"><p class="veilleLignesDesc" style="margin-block-start:0.5em;margin-block-end:0.5em;"><input style="color:white;" type="text"></p><a class="veilleLignesLiens" href="">Rechercher</a></li>
                         <!-- Bouton d'ajout "Nom - adresse - truc.com (ou regex?), réduire le bouton 1/4 ligne recherche (sur le coté droit) -->
                         <li class="veilleLigneAjout"><button style="background-color:rgba(255,255,255,0); color:#ef3b2d; font-weight:bold;"><span style="font-size: 2.8em;">+</span> <span style="color:#e2e8f0; margin:auto 0; font-size:1.6em; position:relative; bottom:6px;">&nbsp;Ajouter un tip&nbsp;</span> <span style="font-size: 2.8em;">+</span></button></li>
@@ -113,12 +113,17 @@
                         <li class="veilleLignes"><p class="veilleLignesDesc">News API !</p><a class="veilleLignesLiens" href="https://newsapi.org/docs/get-started#search" target="blank">Go</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">JavaScript closures</p><a class="veilleLignesLiens" href="https://www.w3schools.com/js/js_function_closures.asp" target="blank">Go</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">Javascript global var</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/26328654/is-it-possible-to-change-js-variable-value-from-browser-console" target="blank">Go</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Tuto APIs</p><a class="veilleLignesLiens" href="https://blog.hubspot.com/website/api-calls" target="blank">Go</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Laravel API tuto</p><a class="veilleLignesLiens" href="https://laravel.com/docs/7.x/http-client" target="blank">Go</a></li>
+                        <li class="veilleLignes"><p class="veilleLignesDesc">API (voir intégration à la moitié)</p><a class="veilleLignesLiens" href="https://snipcart.com/blog/integrating-apis-introduction" target="blank">Go</a></li>
+
+                    
                     </ul>
                 </div>
 
                 <div class="Autres">
                     <h3 class="sectionAutresTitle">Autres</h3>
-                    <ul>
+                    <ul class="respPasIndent">
                         <li class="veilleLignes"></li>
                         <li class="veilleLignes"></li>
                         <li class="veilleLignes"></li>
