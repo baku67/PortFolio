@@ -40,14 +40,14 @@
 
         <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
         <div style="width:100%;">
-            <h1 style="margin-left:4%; color:#ef3b2d;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
+            <h1 id="portfolioTitle" style="margin-left:4%; color:#ef3b2d; margin-block-start:0.1em;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
             </br>
-            <h2 style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
+            <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
         </div>
 
         <!-- Menu -->
         <div id="NavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
-            <p style="color:#E7E8F2;">
+            <p id="menuLigneCv" style="color:#E7E8F2;">
                 <a id="accueilMenu" class="menuButton selected" href="/">Acceuil</a> 
                 &nbsp; 
                 <a id="cvMenu" class="menuButton" href="/cv">C.V.</a> 
@@ -61,7 +61,7 @@
         </div>
 
         <!-- Trait séparateur -->
-        <div id="traitHeader"></div>
+        <!-- <div id="traitHeader"></div> -->
 
 
         <!-- Contenu (load JS) -->
@@ -72,15 +72,7 @@
             </br>
 
             <div>
-                <p class="paragraphe">&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum molestie dolor id elementum. In placerat turpis ante, non varius ligula dignissim ac. Pellentesque luctus euismod magna, posuere cursus ex fermentum vel. In congue, enim vel consectetur feugiat, nisl nibh aliquam sem, quis iaculis enim sem et quam. Etiam non urna non purus egestas ultrices. In placerat odio at erat auctor viverra. Nunc ut dictum mi. Duis ac pharetra tellus. Pellentesque mattis pellentesque urna, cursus viverra enim fermentum ac. Nunc in fermentum libero. Aliquam ac interdum augue. Etiam vel augue neque. Aliquam molestie sapien mattis magna scelerisque finibus eu sit amet neque. Nulla vulputate magna sit amet hendrerit volutpat. Suspendisse eu nisi in metus laoreet egestas eget at turpis. Etiam maximus tellus ex, sit amet lobortis ligula viverra vitae.
-
-                Aenean ac interdum enim. Maecenas efficitur iaculis nisl, non scelerisque eros feugiat id. Duis eget massa porttitor, lobortis sem ut, feugiat eros. Fusce ex nisi, suscipit auctor leo quis, aliquam aliquet leo. Donec luctus, mi sit amet efficitur bibendum, nibh tellus ullamcorper purus, et ornare ex est nec augue. Vivamus fermentum fermentum nisi sed facilisis. Ut rhoncus lorem id tortor cursus cursus. Sed non dolor semper, efficitur velit quis, sollicitudin lectus. Aenean eu magna non tellus vehicula volutpat at a tellus. Morbi faucibus tincidunt nunc, nec consequat metus ultrices quis. Integer luctus nunc vitae ipsum consequat dictum. Praesent scelerisque fringilla augue, ut aliquet elit placerat vel. Proin ut diam sit amet nibh ullamcorper aliquam. Nunc varius felis ac lacus semper gravida. Nulla at condimentum dui.
-
-                In a vehicula eros. Etiam elementum suscipit dolor id euismod. Phasellus nibh odio, convallis vel fermentum in, pretium quis dui. Cras luctus augue non tincidunt pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam arcu nisi, imperdiet ut erat vitae, tempor maximus mauris. Fusce tincidunt magna vitae tellus elementum tristique. Proin malesuada at elit in lacinia. Etiam nec quam tincidunt, ornare ante nec, venenatis sapien. Aenean gravida turpis nec justo vestibulum varius. Fusce accumsan fermentum nulla, faucibus lacinia nisi. Pellentesque at lacus lectus. Proin sed imperdiet tellus.
-
-                Aliquam pulvinar efficitur lorem non vulputate. Donec molestie suscipit dictum. Etiam pulvinar arcu congue, aliquet magna ut, convallis dui. Aenean quis eros ac nisl placerat ultrices euismod in massa. Cras vitae egestas purus. Pellentesque eros erat, dapibus et dui sit amet, placerat mollis orci. Vestibulum at augue lacinia, bibendum magna vitae, commodo diam. Curabitur consequat massa sapien, at gravida nisl venenatis volutpat. Suspendisse eu molestie ligula. Quisque cursus ipsum vel tellus congue sollicitudin. In varius finibus arcu, quis sagittis est mattis non. Etiam imperdiet libero id risus mollis, at dapibus tortor consequat. Donec in dui urna. Aenean blandit feugiat diam, vel suscipit augue lacinia ut. Pellentesque dapibus non purus ut vehicula.
-
-                Phasellus a ipsum ut mauris molestie vestibulum eget nec nisl. Fusce cursus, arcu in auctor gravida, massa nibh pharetra erat, vel tempus risus lacus euismod ligula. Phasellus auctor orci nec quam placerat, ut pellentesque lorem imperdiet. Donec dapibus interdum vulputate. Suspendisse luctus neque euismod quam posuere consequat. In hac habitasse platea dictumst. Donec vehicula faucibus nisi, at volutpat diam aliquet vel. Praesent facilisis turpis velit. Morbi id enim sit amet tellus venenatis malesuada in ut lectus. Morbi commodo diam diam, at fringilla enim gravida eget. Aliquam maximus libero quis diam dapibus cursus. Nam tempus orci et suscipit tincidunt.
+                <p class="paragraphe">&nbsp;&nbsp;bonzour toa :3
                 </p>
             </div>
 

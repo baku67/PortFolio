@@ -62,7 +62,7 @@
             </div>
 
             <!-- Trait séparateur -->
-            <div id="traitHeader"></div>
+            <!-- <div id="traitHeader"></div> -->
         </div>
 
         

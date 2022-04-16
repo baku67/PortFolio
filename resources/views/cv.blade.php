@@ -43,14 +43,14 @@
 
         <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
         <div style="width:100%;">
-            <h1 style="margin-left:4%; color:#ef3b2d;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
+            <h1 id="portfolioTitle" style="margin-left:4%; color:#ef3b2d; margin-block-start:0.1em;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
             </br>
-            <h2 style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
+            <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
         </div>
 
         <!-- Menu -->
-        <div id="NavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
-            <p style="color:#E7E8F2;">
+        <div id="NavBarContainer" style="">
+            <p id="menuLigneCv" style="color:#E7E8F2;">
                 <a id="accueilMenu" class="menuButton" href="/">Acceuil</a> 
                 &nbsp; 
                 <a id="cvMenu" class="menuButton selected" href="/cv">C.V.</a> 
@@ -64,7 +64,7 @@
         </div>
 
         <!-- Trait séparateur -->
-        <div id="traitHeader"></div>
+        <!-- <div id="traitHeader"></div> -->
 
 
 
@@ -76,7 +76,7 @@
         <!-- Contenu Page -->
         <div id="pageContainer">
 
-            <h2 class="pageTitle">Mon CV</h2>
+            <h2 class="pageTitle cvTitle">Mon CV</h2>
 
             </br>
 
@@ -96,7 +96,7 @@
                         <li>2017-2018: L1 Maths-Informatiques (Faculté de Strasbourg)</li>
                         <div class="separateurListe light"></div>
                         <li>2015: Baccalauréat général Scientifique (Lycée Kléber, Strasbourg)</li>
-                        <div class="separateurListe light"></div>
+                        <!-- <div class="separateurListe light"></div> -->
                     </ul>
                 </div>
 
@@ -126,29 +126,29 @@
                     <!-- HTML5, CSS3, JavaScript, PHP, BDD, SQL, Wordpress, Laravel(opacity:0.5), React(opacity:0.2),  -->
                     <div class="gridCompetences">
                         <div class="carreCompetences grid-html5">
-                            <img src="img/competences/html5.png">
+                            <img class="imgCompetences" src="img/competences/html5.png">
                             <br>
                             <p class="textCompetences">HTML5</p>
                         </div>
                         <div class="carreCompetences grid-css3">
-                            <img src="img/competences/css3.png">
+                            <img class="imgCompetences" src="img/competences/css3.png">
                             <p class="textCompetences">CSS3</p>
                         </div>
                         <div class="carreCompetences grid-javascript">
-                            <img src="img/competences/javascript.png">
+                            <img class="imgCompetences" src="img/competences/javascript.png">
                             <p class="textCompetences">JavaScript</p>
                         </div>
                         <div class="carreCompetences grid-php">
-                            <img src="img/competences/php.png">
+                            <img class="imgCompetences" src="img/competences/php.png">
                             <p class="textCompetences">PHP</p>
                         </div>
                         <div class="carreCompetences grid-bdd">
-                            <img src="img/competences/sql.png">
+                            <img class="imgCompetences" src="img/competences/sql.png">
                             <p class="textCompetences">SQL</p>
                         </div>
                         <div class="carreCompetences grid-sql">
                             <!-- <img src="img/competences/bdd.png"> -->
-                            <img src="img/competences/bdd2.png">
+                            <img class="imgCompetences" src="img/competences/bdd2.png">
                             <p class="textCompetences">BDD</p>
                         </div>
                     </div>
