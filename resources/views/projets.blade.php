@@ -72,9 +72,9 @@
 
 
 
-
         <div id="pageContainer">
 
+        <!-- <div class="iframeWrapper"> -->
 
             <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mon Projet </p>
             <!-- Ajouter effet glissade from gauche to droite (mais qui se genere depuis le debut du titre pas de l'écran :/ ) -->
@@ -90,8 +90,15 @@
                     <div id="bouton3Container"><div id="boutonMockup3"></div></div>
                     <div id="boutonMockup4"></div>
                     <div id="boutonMockup5"></div>
-                    <!-- Ajouter un effet Mockup smartphone usniquement en CSS !!  -->
+
+                    <!-- Wrapper pour effet de reflet superposé  -->
+                    <!-- <div class="iframeWrapper">
+                    </div> -->
+                    <!-- <iframe src="https://www.blackjackjo.com" style="position:absolute; z-index:0;" class="iframeElem" id="iframeElement"></iframe> -->
+                
                     <iframe src="https://www.blackjackjo.com" class="iframeElem" id="iframeElement"></iframe>
+
+                    
                     <!-- <form id="the-form" action="">
                         Dark Mode: <input id="my-message" type="text">
                         <input type="submit">

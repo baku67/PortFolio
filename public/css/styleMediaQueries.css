@@ -1,5 +1,21 @@
 @media only screen and (max-width: 600px) {
 
+    body {
+        background: linear-gradient(56deg, rgba(23,25,35,1) 0%, rgba(29,36,47,1) 41%, rgba(34,46,58,1) 50%, rgba(23,25,35,0.9943339884782038) 75%, rgba(23,25,35,0.9943339884782038) 99%);
+        background-size: 1200% 1200%;
+        animation: gradientAnimProjet 2s ease 0s normal forwards running;
+    }
+    @keyframes gradientAnimProjet {
+        from {
+            background-position: 15% 10%;
+        }
+        to {
+            background-position: 80% 30%;
+        }
+    }
+
+
+
     #pageContainer {
         background-size: cover;
         background-repeat: no-repeat;
@@ -60,7 +76,7 @@
         font-size: 45%;
         position: relative;
         left: -29px;
-        margin: 12% 8% 0% 5%;
+        margin: 12% 0% 0% 5%;
     }
     .iframe {
         grid-area: iframe;
@@ -166,7 +182,7 @@
 
     #NavBarContainer {
         width: 100%;
-        background-color: #ed3b2d;
+        background-color: #b92f25;
         margin-right: 0% !important;
 
         /* top: 7% !important; */
@@ -205,6 +221,15 @@
         line-height: 1em;
         position: relative;
         bottom: 25px !important;
+    }
+
+
+    .imgGitVignettes {
+        width: 265px;
+        height: 125px;
+        border-radius: 9px;
+        padding: 4px;
+        border: 1px solid rgba(239, 59, 45, 0.4);
     }
 
 
@@ -363,7 +388,7 @@
 
     /* GRID DIAGRAMMES DOC TECH */
     .gridDocuments {
-        justify-content: center;
+        text-align: center;
     
         display: grid; 
         grid-template-columns: 1fr; 
@@ -387,10 +412,26 @@
         display: grid; 
         grid-template-columns: 1fr; 
         grid-template-rows: 1fr 1fr; 
-        gap: 0px 15px; 
+        gap: 25px 0px; 
         grid-template-areas: 
         "regulariteGit"
         "apercuGitKraken"; 
     }
 
+
+
+
+
+
+
+
+
+    .bienvenueDoc {
+        height:0px;
+        width:0px;
+        margin: 0 !important;
+        opacity: 0;
+        margin-block-start:0em !important;
+        margin-block-end: 0em !important;
+    }
 }
