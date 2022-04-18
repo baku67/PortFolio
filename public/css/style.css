@@ -27,7 +27,26 @@ body {
 }
 
 
-
+.documentWrapper {
+    z-index:1;
+    position: relative;
+}
+/* .imgDocuVignettes {
+    z-index: 0;
+} */
+.documentWrapper:hover {
+    background-color: #ef3b2d;
+    animation: backgroundAnim 0.9s ease 0s normal forwards running;
+    border-radius: 5px;
+}
+@keyframes backgroundAnim {
+    from {
+        background-color:#171923a3;
+    }
+    to {
+        background-color: #ef3b2d;
+    }
+}
 
 
 
@@ -343,6 +362,7 @@ li::before {
 
 
 .imgDisclaimer {
+    opacity: 0.85;
     width: 25px;
     position: relative;
     top: 3px;
@@ -917,10 +937,10 @@ li::before {
       "dicoDonees casUtil" 
       "diagClasses schemaPartie"; 
 }
-.dicoDonees { grid-area: dicoDonees; }
-.casUtil { grid-area: casUtil; }
-.diagClasses { grid-area: diagClasses; }
-.schemaPartie { grid-area: schemaPartie; }
+.dicoDonnees { grid-area: dicoDonees; position:relative; top:3px;}
+.casUtil { grid-area: casUtil; position:relative; top:3px;}
+.diagClasses { grid-area: diagClasses; position:relative; top:3px;}
+.schemaPartie { grid-area: schemaPartie; position:relative; top:3px;}
 
 .imgDocuVignettes {
     width: 290px;
@@ -930,6 +950,7 @@ li::before {
     border: 1px solid rgba(239, 59, 45, 0.4);
 }
 .imgDocuVignettes:hover {
+    border-radius: 7px;
     animation: borderDocuHover 0.2s ease 0s normal forwards running;
 }
 @keyframes borderDocuHover {
@@ -940,7 +961,7 @@ li::before {
     }
     to {
         /* padding plus élevé (pour effet stroke) OU moins élevé (pour compenser le border et garder l'img fixe) */
-        padding: 4px;
+        /* padding: 4px; */
         border: 2px solid rgba(239, 59, 45, 0.6);    
     }
 }

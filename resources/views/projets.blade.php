@@ -156,9 +156,9 @@
                         <p class="highlightSpan" style="font-size:113%;">Attention</p>
                     </div>
                     <div id="disclaimerContenuWrapper">
-                        <p style="margin-block-end: 0em;">L'affichage du projet sur <span style="font-weight:bold;">Firefox</span> n'est actuellement pas supporté (Effet Zoom). <em id="alertDisclaimer1" style="font-size: 90%;">Voir plus</em>&nbsp;&nbsp;&nbsp;<img class="imgDisclaimer" src="img/firefox.png"/></p>
+                        <p style="margin-block-end: 0em;"><img class="imgDisclaimer" src="img/firefox.png"/>&nbsp;&nbsp;&nbsp;L'affichage du projet sur <span style="font-weight:bold;">Firefox</span> n'est actuellement pas supporté (Effet Zoom). <em id="alertDisclaimer1" style="font-size: 70%; cursor:pointer;">Voir plus</em></p>
                         <br>
-                        <p style="margin-block-start: 0em;">Le système de connexion et d'inscription n'est pas disponible sur l'aperçu du site ci-dessus, merci d'utiliser le lien.  <em id="alertDisclaimer2" style="font-size: 90%;">Voir plus</em>&nbsp;&nbsp;&nbsp;<img class="imgDisclaimer" src="img/userBarred.png"/></p>
+                        <p style="margin-block-start: 0em;"><img class="imgDisclaimer" src="img/userBarred.png"/>&nbsp;&nbsp;&nbsp;Le système de connexion et d'inscription n'est pas disponible sur l'aperçu du site ci-dessus, merci d'utiliser le lien.  <em id="alertDisclaimer2" style="font-size: 70%; cursor:pointer;">Voir plus</em></p>
                     </div>
                 </div>
 

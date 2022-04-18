@@ -102,10 +102,22 @@ window.onload = function() {
       // };
 
 
+
+
+
     // Autre méthode plus simple: https://stackoverflow.com/questions/27269406/change-style-of-an-element-inside-iframe-cross-domain-i-own-the-second-domain
     
+    iFrame = document.getElementById("iframeElement")
+
+    iFrame.onload = function(){
+      //Send a message immediately after iframe is loaded
+      // iFrame.contentWindow.postMessage('changeStyle', 'http://www.portfolio.basilek.ovh'); 
+      iFrame.contentWindow.postMessage('changeStyle', '*'); 
+
+    }
+
     
-    document.getElementById('iframeElement').contentWindow.postMessage('changeStyle', 'http://www.portfolio.basilek.ovh'); 
+
 
 
 
