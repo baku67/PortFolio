@@ -95,9 +95,13 @@
                         <li class="veilleLignes"><p class="veilleLignesDesc">PNG bank (2/jour)</p><a class="veilleLignesLiens" href="https://pngtree.com" target="blank">pngtree.com</a></li>  
                         <li class="veilleLignes"><p class="veilleLignesDesc">Resize multiple img</p><a class="veilleLignesLiens" href="https://www.iloveimg.com/resize-image" target="blank">iloveimg.com</a></li>                            
                         <li class="veilleLignes"><p class="veilleLignesDesc">Compress multiple img</p><a class="veilleLignesLiens" href="https://www.iloveimg.com/compress-image" target="blank">iloveimg.com</a></li>                            
-                        
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Multiple JPG to PNG</p><a class="veilleLignesLiens" href="https://jpg2png.com" target="blank">jpg2png.com</a></li>  
+                        <li class="veilleLignes"><p class="veilleLignesDesc">Compress multiple img phase 2</p><a class="veilleLignesLiens" href="https://tinyjpg.com " target="blank">tinyjpg.com</a></li>                            
+
+                                                 
                     </ul>
                 </div>
+
 
                 <div class="sectionTips">
                     <h3 class="sectionTipsTitle">Tips</h3>
@@ -119,7 +123,12 @@
                         <li class="veilleLignes"><p class="veilleLignesDesc">CSS on iframe</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/583753/using-css-to-affect-div-style-inside-iframe" target="blank">Go</a></li>
                         <li class="veilleLignes"><p class="veilleLignesDesc">iframe postMessage() cross-domain</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/41060958/edit-the-css-of-a-cross-domain-iframe-that-is-inside-an-internal-iframe" target="blank">Go</a></li>
                             <li class="veilleLignes"><p class="veilleLignesDesc">iframe postMessage() cross-domain (simplifié + doc)</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/27269406/change-style-of-an-element-inside-iframe-cross-domain-i-own-the-second-domain" target="blank">Go</a></li>
-    
+                            <li class="veilleLignes"><p class="veilleLignesDesc">img:hover Blur effect +</p><a class="veilleLignesLiens" href="https://webdesign.tutsplus.com/tutorials/create-a-css-grid-image-gallery-with-blur-effect-and-interaction-media-queries--cms-32287" target="blank">Go</a></li>
+                            <li class="veilleLignes"><p class="veilleLignesDesc">Mosaic Images CSS</p><a class="veilleLignesLiens" href="https://stackoverflow.com/questions/22221333/mosaic-of-images-html-css" target="blank">Go</a></li>
+                            <li class="veilleLignes"><p class="veilleLignesDesc">CSS/JS effet loupe</p><a class="veilleLignesLiens" href="https://codepen.io/mstaniuk/pen/MjywrE" target="blank">Go</a></li>
+
+                            
+                            
                             
                             
                         

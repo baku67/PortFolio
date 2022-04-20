@@ -73,6 +73,11 @@
 
             <div class="accueilGrid">
 
+
+                <div>
+                    <img class="imgAccueil" src="img/moi4.jpg" style=""/>
+                </div>
+
                 <p class="paragrapheAccueil" >
                     <span style="margin-left: 10px; font-size: 120%;">Bonjour </span>
                     <br><br>
@@ -87,18 +92,39 @@
                     En entreprise, j'ai pu découvrir et m'acclimater à l'univers professionnel du métier tout en effectuant un travail de support client, HotFix, et développement.
                 
                     <br><br>
-                    &nbsp;&nbsp;&nbsp;A part tout ça, je suis également passionné de plongée et de photographie sous-marine. J'aime beaucoup la photogrpahie macroscopique car elle consiste à chercher patiemment dans les petits détails et pendant parfois un certain temps, pour prendre une bonne photo. Il faut également être assez calme, posé et observateur pour ne pas effrayer les bêtes, ce qui correspond plutôt bien avec mon tempérament. Tout au long de mes vacances, j'ai passé plusieurs niveaux de plongée avec le système américain PADI (OpenWater, Advanced, Nitrox, Deep, Rescue) ainsi que des stages de photographie sous-marine et "terrestre" . 
+                    &nbsp;&nbsp;&nbsp;A part tout ça, je suis également passionné de plongée et de photographie sous-marine. J'aime beaucoup la photogrpahie macroscopique car elle consiste à chercher patiemment dans les petits détails et pendant parfois un certain temps pour pouvoir prendre de bonnes photos. Il faut également être assez calme, posé et observateur pour ne pas effrayer les bêtes, ce qui correspond plutôt bien avec mon tempérament. Tout au long de mes vacances, j'ai passé plusieurs niveaux de plongée avec le système américain PADI (OpenWater, Advanced, Nitrox, Deep, Rescue) ainsi que des stages de photographie sous-marine et "terrestre" . 
                     Je suis également assez doué avec un crayon et j'ai de bonnes notions en retouches et éditions numériques. Mon métier rêvé, quand j'étais petit et "moyen-grand", était artiste de rue car je passait mon temps à dessiner. 
-                    Désormais, mon but est d'alier la création, le design graphique et le développement web.
-
-
-                    Mes photos:
-                
+                    Désormais, mon but est d'alier la création, le design graphique et le développement web.                
                 </p>
 
-                <img class="imgAccueil" src="img/moi2.jpg"/>
+            </div>
 
+            <br><br><br><br><br><br>
+
+            <div class="galerieDiv">
+
+                <h3 style="font-size:170%; text-align:center;">Galerie: </h3>
+
+                <br>
                 <div class="galerieAccueil">
+                    <div class="location-listing" style="margin:auto; position:relative; z-index:0;">
+                        <p class="loupesGalerie">loupe</p>
+                        <img class="photosGallerie photo1" src="img/galerie/1_preview.jpg"/>
+                    </div>
+                    <img class="photosGallerie photo2" src="img/galerie/2_preview.jpg"/>
+                    <img class="photosGallerie photo3" src="img/galerie/3_preview.jpg"/>
+                    <img class="photosGallerie photo4" src="img/galerie/4_preview.jpg"/>
+                    <img class="photosGallerie photo5" src="img/galerie/5_preview.jpg"/>
+                    <img class="photosGallerie photo6" src="img/galerie/6_preview.jpg"/>
+                    <img class="photosGallerie photo7" src="img/galerie/7_preview.jpg"/>
+                    <img class="photosGallerie photo8" src="img/galerie/8_preview.jpg"/>
+                    <img class="photosGallerie photo9" src="img/galerie/9_preview.jpg"/>
+                    <img class="photosGallerie photo10" src="img/galerie/10_preview.jpg"/>
+                    <img class="photosGallerie photo11" src=""/>
+                    <img class="photosGallerie photo12" src=""/>
+                    <img class="photosGallerie photo13" src=""/>
+                    <img class="photosGallerie photo14" src=""/>
+                    <img class="photosGallerie photo15" src=""/>
 
                 </div>
 

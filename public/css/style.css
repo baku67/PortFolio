@@ -1215,31 +1215,128 @@ li::before {
 
 
 
-.accueilGrid {
-    display: grid; 
-    grid-template-columns: 1.5fr 0.5fr; 
-    grid-template-rows: 1.3fr 0.7fr; 
-    gap: 0px 50px; 
-    grid-template-areas: 
-    "paragrapheAccueil imgAccueil"
-    "galerieAccueil galerieAccueil";
-}
+
 .paragrapheAccueil { 
-    grid-area: paragrapheAccueil;
     text-align: justify;
     color: #E7E8F2;
     margin: 0 20px;
 }
+
 .imgAccueil { 
-    grid-area: imgAccueil;
-    position: relative;
-    top: 45px;
-    margin-left: 30px;
-    width: 200px;
-    border-radius: 5px;
-    
+    float:right;
+    width: 180px;
+    border-radius: 4px;
+    margin: 45px 30px 15px 45px;
+
+    border: 3px solid rgba(239, 59, 45, 0.5);
+    padding: 4px;
+
+    vertical-align: middle;
+
 }
-.galerieAccueil { grid-area: galerieAccueil; }
+
+
+
+
+.galerieAccueil {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 10px 0px; 
+    grid-template-areas: 
+      "photo1 photo2 photo3"
+      "photo4 photo5 photo6"
+      "photo7 photo8 photo9"
+      "photo10 photo11 photo12"; 
+}
+.photo1 { grid-area: photo1; }
+.photo2 { grid-area: photo2; }
+.photo3 { grid-area: photo3; }
+.photo4 { grid-area: photo4; }
+.photo5 { grid-area: photo5; }
+.photo6 { grid-area: photo6; }
+.photo7 { grid-area: photo7; }
+.photo8 { grid-area: photo8; }
+.photo9 { grid-area: photo9; }
+.photo10 { grid-area: photo10; }
+.photo11 { grid-area: photo11; }
+.photo12 { grid-area: photo12; }
+
+.galerieDiv { 
+    text-align: justify;
+    color: #E7E8F2;
+    margin: 0 20px;
+}
+.photosGallerie {
+    width: 300px;
+    margin: auto;
+    border-radius: 2px;
+    filter: blur(0px);
+}
+.photosGallerie:hover {
+    /* width: 500px; */
+    cursor: pointer;
+
+    animation: imgBlur 0.4s ease 0s normal forwards;
+}
+@keyframes imgBlur { 
+    from {
+        opacity: 1;
+        filter: blur(0px);
+    }
+    to {
+        opacity: 0.8;
+        filter: blur(2px);
+    }
+}
+
+
+.loupesGalerie {
+    opacity: 1;
+    transition: opacity .4s;
+
+    position:absolute; 
+    z-index:1; 
+    font-size:2em; 
+    font-weight:bold; 
+    top:0; 
+    left:0; 
+    height:100%; 
+    width: 100%; 
+    margin-block-start:0em; 
+    margin-block-end:0em; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+}
+.photosGallerie:hover .loupesGalerie {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
