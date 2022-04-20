@@ -180,10 +180,19 @@
     }
 
 
+
+
+
+
+
+
+
     #NavBarContainer {
         width: 100%;
         background-color: #b92f25;
         margin-right: 0% !important;
+        border-radius: 0px !important;
+        padding: 0px;
 
         /* top: 7% !important; */
 
@@ -202,6 +211,9 @@
         margin-left: 17px;
         padding: 3px;
         margin-top: 28px !important;
+        
+        margin-block-start: 0em;
+        margin-block-end: 0em;
     }
     #menuLigneCv {
         margin-left: 17px;
@@ -326,6 +338,22 @@
         "langues"; 
 
         margin-top: 30px;
+    }
+
+
+
+    .docAdminGrid {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 15px 0px; 
+        grid-template-areas: 
+        "adminHistorique"
+        "adminUserList"
+        "adminLogs"; 
+    }
+    .textAdminDoc {
+        /* margin-block-end: 0em; */
     }
 
 

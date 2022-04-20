@@ -51,7 +51,7 @@
         <!-- Menu -->
         <div id="NavBarContainer" style="position: absolute; top: 0%; right: 0%; margin-right: 2%;">
             <p id="menuLigneCv" style="color:#E7E8F2;">
-                <a id="accueilMenu" class="menuButton" href="/">Acceuil</a> 
+                <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                 &nbsp; 
                 <a id="cvMenu" class="menuButton selected" href="/cv">C.V.</a> 
                 &nbsp; 
@@ -158,21 +158,24 @@
                 <div class="outils">
                     <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Outils <span class="highlightSpan">/&#x3e;</span></p>
                     <ul>
-                        <li>Test1</li>
-                        <li>Test2</li>
-                        <li>Test3</li>
-                        <li>Test4</li>
+                        <li>Visual Studio / Code</li>
+                        <li>Git, GitHub, GitLab, GitKraken</li>
+                        <li>WSL2 (Ubuntu)</li>
+                        <li>Photoshop / pixlr.com</li>
+                        <li>Suite Office</li>
                     </ul>
                 </div>
 
                 <div class="langues">
                     <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Langues et Atouts <span class="highlightSpan">/&#x3e;</span></p>
                     <ul>
-                        <li>Test1</li>
-                        <li>Test2</li>
-                        <li>Test3</li>
-                        <li>Test4</li>
+                        <li>Anglais (B2)</li>
+                        <li>Allemand(C2)</li>
+                        <li>Chinois</li>
                     </ul>
+                    
+                    <p>Curieux, Souci du détail</p>
+
                 </div>
 
             </div>

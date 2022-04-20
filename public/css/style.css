@@ -472,6 +472,9 @@ li::before {
     animation-fill-mode: forwards;
 }
 
+#NavBarContainer {
+    z-index: 1;
+}
 
 .menuButton:hover {
     animation-name: hoverMenuButton;
@@ -1212,14 +1215,64 @@ li::before {
 
 
 
+.accueilGrid {
+    display: grid; 
+    grid-template-columns: 1.5fr 0.5fr; 
+    grid-template-rows: 1.3fr 0.7fr; 
+    gap: 0px 50px; 
+    grid-template-areas: 
+    "paragrapheAccueil imgAccueil"
+    "galerieAccueil galerieAccueil";
+}
+.paragrapheAccueil { 
+    grid-area: paragrapheAccueil;
+    text-align: justify;
+    color: #E7E8F2;
+    margin: 0 20px;
+}
+.imgAccueil { 
+    grid-area: imgAccueil;
+    position: relative;
+    top: 45px;
+    margin-left: 30px;
+    width: 200px;
+    border-radius: 5px;
+    
+}
+.galerieAccueil { grid-area: galerieAccueil; }
 
 
 
 
 
+.docAdminGrid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 15px; 
+    grid-template-areas: 
+    "adminHistorique adminUserList adminLogs"; 
+}
+.adminHistorique { grid-area: adminHistorique; }
+.adminUserList { grid-area: adminUserList; }
+.adminLogs { grid-area: adminLogs; }
 
 
 
+.imgAdminDoc {
+    height: 420px;
+    width: 218px;
+
+    border-radius: 6px;
+    border: 1px solid #e7392c;
+    padding: 9px 3px 17px 3px;
+
+}
+
+.textAdminDoc {
+    font-size: 90%;
+    width: 218px;
+}
 
 
 
@@ -1231,8 +1284,8 @@ li::before {
     opacity: 0;
     color: #e2e8f0; 
     margin: 0 15%; 
-    padding-bottom: 100px; 
-    height: 1000px;
+    /* padding-bottom: 100px;  */
+    /* height: 1300px; */
 }
 /* Classe ajoutée avec l'observer (au moment ou l'element est visible) */
 .docuLoadContainer {
