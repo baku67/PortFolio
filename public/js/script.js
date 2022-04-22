@@ -13,18 +13,18 @@ window.onload = function() {
         // ***  MODALS GALERIE (Accueil)
         var modalImageGallerie = document.getElementById("myModal");
 
-        // Probleme: censé chopser le src du <img> mais onclick sur la divContainer 
         var img = document.getElementById("myImg");
-
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
 
         img.onclick = function() {
           modalImageGallerie.style.display = "block";
-          // Fonctionne et permet de choper le src pour chauqye élément (mais je vouais que le modal affiche la version HD)
+          // Fonctionne et permet de choper le src pour chauqye élément (mais je voulais que le modal affiche la version HD)
           // modalImg.src = this.getElementsByClassName('imageGalerie')[0].src;
           modalImg.src = "img/galerie/1.JPG";
           captionText.innerHTML = document.getElementsByClassName('imageGalerie')[0].alt;
+          // Fix pour le clickWindow
+          captionText.style.height = 'auto';
         }
 
         var span = document.getElementsByClassName("close")[0];
@@ -32,7 +32,6 @@ window.onload = function() {
         span.onclick = function() {
           modalImageGallerie.style.display = "none";
         }
-
 
         // click fenetre = close modal        
         window.onclick = function(event) {
@@ -122,9 +121,8 @@ window.onload = function() {
 
 
 
-
-
-
+    // Code included inside $( window ).on( "load", function() { ... }) will run once the entire page (images or iframes), not just the DOM (" window.onload = function({}) "), is ready.
+    $( window ).on( "load", function() {
 
     // ***PROJET FUN: DARK MODE sur le contenu de l'iframe
     // -> Select les elements dans le iframe (balckjackjo.com) pour adapter le style à la charte graphique du portfolio, avec le boutonPhone onclick qui switch avec les vrais couleurs du site)
@@ -166,7 +164,7 @@ window.onload = function() {
 
     }
 
-    
+  })
 
 
 

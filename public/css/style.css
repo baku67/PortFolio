@@ -194,7 +194,7 @@ li::before {
 }
 .formations { 
     grid-area: formations;
-    bottom: 50px; 
+    /* bottom: 50px;  */
     text-align: justify;
     margin-right: 20px;
 }
@@ -262,6 +262,8 @@ li::before {
 /* *** GRID COMPETENCES */
 .gridCompetences {  
     margin: 0 auto 30px auto;
+    /* margin: 0 15% 30px 15%; */
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -1353,6 +1355,7 @@ li::before {
     border-radius: 4px;
     /* border: 2px solid rgba(239, 59, 45, 0.3); */
 }
+
 
 #caption {
     margin: auto;

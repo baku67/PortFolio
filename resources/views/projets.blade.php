@@ -131,7 +131,7 @@
                 </div>
 
                 <div class="description">
-                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BlackJackJo' est une application web développée durant ma deuxième année de BTS SIO. Elle permet à l'utilisateur de jouer au Blackjack contre le croupier et comporte un système de compte facultatif. L'idée de base vient d'un ami fan de Blackjack. A la recherche d'une idée ambitieuse pour apprendre le javascript, je m'en suis inspiré. Je ne connaissais rien au BlackJack et n'aime pas réellement les jeux d'argent, c'est pourquoi j'ai voulu créer une alternative/substitution sans argent réel. L'idée originale était un simple compteur de cartes permettant d'orienter les choix lors d'une partie sur un Casino par exemple, mais le projet a vite manqué de potentitiel, donc je me suis mis à codé ce jeu. </p>
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BlackJackJo' est une application web développée durant ma deuxième année de BTS SIO. Elle permet à l'utilisateur de jouer au Blackjack contre le croupier, et comporte un système de connexion facultatif. L'idée de base vient d'un ami d'enfance fan de Blackjack. A la recherche d'une idée pour apprendre le javascript, je m'en suis inspiré. Je ne connaissais rien au BlackJack et n'aime pas réellement les jeux d'argent, c'est pourquoi j'ai voulu créer une alternative/substitution sans argent réel. L'idée originale était un simple compteur de cartes permettant d'orienter les choix lors d'une partie sur un Casino par exemple, mais le projet a vite manqué de potentitiel, donc je me suis mis à codé le jeu en lui-même. </p>
                 </div>
 
                 <!-- <div class="lienBJJcontainer">
