@@ -473,7 +473,8 @@ li::before {
 }
 
 #NavBarContainer {
-    z-index: 1;
+    /*  Au dessus de la galerie */
+    z-index: 2;
 }
 
 .menuButton:hover {
@@ -1225,6 +1226,7 @@ li::before {
 .imgAccueil { 
     float:right;
     width: 180px;
+    height: 180px;
     border-radius: 4px;
     margin: 45px 30px 15px 45px;
 
@@ -1263,6 +1265,7 @@ li::before {
 .photo12 { grid-area: photo12; }
 
 .galerieDiv { 
+    padding-bottom:100px;
     text-align: justify;
     color: #E7E8F2;
     margin: 0 20px;
@@ -1329,8 +1332,9 @@ li::before {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    padding-top: 100px;
+    /* z-index:3 important cas il y a deja le z-index du hover Gallerie sur 1 et la Barre de navigation en 2 */
+    z-index: 3;
+    padding-top: 80px;
     left: 0;
     right: 0;
     width: 100%;
@@ -1343,15 +1347,18 @@ li::before {
 .modal-image {
     margin: auto;
     display: block;
-    width: 85%;
-    max-width: 700px;
+    width: 90%;
+    max-width: 800px;
+
+    border-radius: 4px;
+    /* border: 2px solid rgba(239, 59, 45, 0.3); */
 }
 
 #caption {
     margin: auto;
     display: block;
-    width: 85%;
-    max-width: 700px;
+    width: 90%;
+    max-width: 800px;
     text-align: center;
     color: #ccc;
     padding: 10px 0;

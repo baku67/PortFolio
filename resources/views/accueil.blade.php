@@ -38,6 +38,16 @@
 
     <body>
 
+        <!-- MODALS GALERIE -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-image" id="img01">
+            <div id="caption"></div>
+        </div>
+        <!-- Fin modal -->
+
+
+
         <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
         <div style="width:100%;">
             <h1 id="portfolioTitle" style="margin-left:4%; color:#ef3b2d; margin-block-start:0.1em;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
@@ -61,7 +71,7 @@
         </div>
 
         <!-- Trait séparateur -->
-        <!-- <div id="traitHeader"></div> -->
+        <div id="traitHeader"></div>
 
 
         <!-- Contenu (load JS) -->
@@ -103,7 +113,7 @@
 
             <div class="galerieDiv">
 
-                <h3 style="font-size:170%; text-align:center;">Galerie: </h3>
+                <h3 style="font-size:170%; text-align:center; text-decoration:underline; text-underline-position:under; text-decoration-color:#ef3b2d;">Galerie: </h3>
 
                 <br>
                 <div class="galerieAccueil">
@@ -111,7 +121,7 @@
                     <article id="myImg" class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
                         <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo1 location-image">
-                                <img alt="poti poisson" style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/1_preview.jpg"/>
+                                <img alt="Poti poisson" class="imageGalerie" style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/1_preview.jpg"/>
                         </div>
                     </article>
 
@@ -130,7 +140,7 @@
                     </article>
 
                     <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom<p>
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo4 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/4_preview.jpg"/>
                         </div>
@@ -221,14 +231,6 @@
 
 
 
-
-        <!-- MODALS GALERIE -->
-
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-image" id="img01">
-            <div id="caption"></div>
-        </div>
 
         
 

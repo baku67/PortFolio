@@ -2,14 +2,16 @@
 window.onload = function() {
 
 
-    // Documentation initialisée sur Utilisateur
     $(document).ready(function() {
 
+        // Documentation initialisée sur Utilisateur
         $('#docuLoadContainer').load("views/docUtilisateur.html");
 
 
-        // *************************  MODALS GALERIE
-        var modal = document.getElementById("myModal");
+
+
+        // ***  MODALS GALERIE (Accueil)
+        var modalImageGallerie = document.getElementById("myModal");
 
         // Probleme: censé chopser le src du <img> mais onclick sur la divContainer 
         var img = document.getElementById("myImg");
@@ -18,20 +20,46 @@ window.onload = function() {
         var captionText = document.getElementById("caption");
 
         img.onclick = function() {
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
+          modalImageGallerie.style.display = "block";
+          // Fonctionne et permet de choper le src pour chauqye élément (mais je vouais que le modal affiche la version HD)
+          // modalImg.src = this.getElementsByClassName('imageGalerie')[0].src;
+          modalImg.src = "img/galerie/1.JPG";
+          captionText.innerHTML = document.getElementsByClassName('imageGalerie')[0].alt;
         }
 
         var span = document.getElementsByClassName("close")[0];
 
         span.onclick = function() {
-          modal.style.display = "none";
+          modalImageGallerie.style.display = "none";
         }
 
 
-    
+        // click fenetre = close modal        
+        window.onclick = function(event) {
+          if (event.target == modalImageGallerie) {
+            modalImageGallerie.style.display = "none";
+          }
+        }
+
+        //***  Fin modals Galerie
+
+
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // Load et Styles boutons toggle Documentation User/Tech
     $("#toggleUtilisateur").click(function() {
