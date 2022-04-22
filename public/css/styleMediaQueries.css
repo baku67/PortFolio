@@ -530,7 +530,10 @@
         font-size:1em;
     }
 
-
+    
+    .modal-image {
+        width: 100%;
+    }
 
 
 

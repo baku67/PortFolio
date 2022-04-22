@@ -108,123 +108,108 @@
                 <br>
                 <div class="galerieAccueil">
 
-                    <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <article id="myImg" class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo1 location-image">
-                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/1_preview.jpg"/>
-                            </a>
+                                <img alt="poti poisson" style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/1_preview.jpg"/>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo2 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/2_preview.jpg"/>
-                            </a>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo3 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/3_preview.jpg"/>
-                            </a>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom<p>
                         <div class="photosGallerie photo4 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/4_preview.jpg"/>
-                            </a>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo5 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/5_preview.jpg"/>
-                            </a>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo6 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/6_preview.jpg"/>
-                            </a>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo7 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/7_preview.jpg"/>
-                            </a>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo8 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/8_preview.jpg"/>
-                            </a>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo9 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/9_preview.jpg"/>
-                            </a>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo10 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/10_preview.jpg"/>
-                            </a>
                         </div>
                     </article>
 
-                    <!-- <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <!-- <article class="location-listing" style="margin:auto; position:relative;  cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo11 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src=""/>
-                            </a>
                         </div>
                     </article> -->
 
-                    <!-- <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <!-- <article class="location-listing" style="margin:auto; position:relative;  cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo12 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src=""/>
-                            </a>
                         </div>
                     </article> -->
 
-                    <!-- <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <!-- <article class="location-listing" style="margin:auto; position:relative;  cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo13 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src=""/>
-                            </a>
                         </div>
                     </article> -->
 
-                    <!-- <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <!-- <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo14 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src=""/>
-                            </a>
                         </div>
                     </article> -->
 
-                    <!-- <article class="location-listing" style="margin:auto; position:relative;">
-                        <a class="loupesGalerie" href="#">Zoom</a>
+                    <!-- <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                        <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo15 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src=""/>
-                            </a>
                         </div>
                     </article> -->
 
@@ -232,6 +217,17 @@
 
             </div>
 
+        </div>
+
+
+
+
+        <!-- MODALS GALERIE -->
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-image" id="img01">
+            <div id="caption"></div>
         </div>
 
         

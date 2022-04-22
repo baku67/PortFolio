@@ -4,7 +4,30 @@ window.onload = function() {
 
     // Documentation initialisée sur Utilisateur
     $(document).ready(function() {
+
         $('#docuLoadContainer').load("views/docUtilisateur.html");
+
+
+        // *************************  MODALS GALERIE
+        var modal = document.getElementById("myModal");
+
+        // Probleme: censé chopser le src du <img> mais onclick sur la divContainer 
+        var img = document.getElementById("myImg");
+
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function() {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
 
 
     
@@ -43,7 +66,6 @@ window.onload = function() {
     document.getElementById("alertDisclaimer2").addEventListener("click", function() {
         alert("Les cookies de session de l'<iframe> (aperçu du site depuis le portfolio), ne sont pas partagés pour l'instant.");
     })
-
 
 
 
@@ -117,7 +139,6 @@ window.onload = function() {
     }
 
     
-
 
 
 
