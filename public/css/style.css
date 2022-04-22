@@ -1292,26 +1292,39 @@ li::before {
 
 
 .loupesGalerie {
-    opacity: 1;
+    opacity: 0;
     transition: opacity .4s;
 
     position:absolute; 
-    z-index:1; 
-    font-size:2em; 
+    font-size:2.5em; 
     font-weight:bold; 
     top:0; 
     left:0; 
-    height:100%; 
+    height: 100%; 
     width: 100%; 
     margin-block-start:0em; 
     margin-block-end:0em; 
+
+    color:rgba(242, 228, 227, 0.9);
+    background: rgba(14, 20, 140, 0.4);
+
+    z-index: 1;
+
     display:flex; 
     align-items:center; 
     justify-content:center; 
 }
-.photosGallerie:hover .loupesGalerie {
+.location-listing:hover .loupesGalerie {
     opacity: 1;
 }
+
+.location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+  }
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
 
 
 

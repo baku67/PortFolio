@@ -81,18 +81,18 @@
                 <p class="paragrapheAccueil" >
                     <span style="margin-left: 10px; font-size: 120%;">Bonjour </span>
                     <br><br>
-                    &nbsp;&nbsp;&nbsp;Je m'appelle Basile, jai 25 ans et je suis actuellement en 2ème année de BTS SIO - option SLAM (Solutions Soligicielles et métiers) à la CCI de Strasbourg.
+                    &nbsp;&nbsp;&nbsp;Je m'appelle Basile, jai 25 ans et je suis actuellement en 2ème année de BTS SIO - option SLAM (Solutions Logicielles et Applications Métiers) à la CCI de Strasbourg.
                      J'éffectue cette formation en alternance dans la société Europe Tech Group, basée à Haguenau, qui développe et vends ses solutions de gestion à des entreprises de portage salarial notamment. 
 
                     <br><br>
                     &nbsp;&nbsp;&nbsp;Je me suis lancé dans le developpement Web au moment du premier confinement, pendant mon Service civique au pôle numérique de l'Escale il y a 2 ans. 
-                    J'avais coder un simple site vitrine d'un bar fictif pour me familiariser avec les premiers langages HTML et CSS et j'ai très vite abandonner les jeux vidéos 
+                    J'avais coder un simple site vitrine d'un bar fictif pour me familiariser avec les premiers langages HTML et CSS et j'ai très vite abandonné les jeux vidéos 
                     pour ne faire que ça par la suite. J'aime particulièrement passer du temps sur le front-end pour rendre le site visuellement agréable tout en simplfiant son utilisation.
-                    Durant ma formation, j'ai consolider ces aquis et découvert les langages JavaScript, Php et React au travers de divers projets, mais aussi aquis une méthode de travail plus rigoureuse et efficace. 
+                    Durant ma formation, j'ai consolider ces acquis et découvert les langages JavaScript, Php et React au travers de divers projets, mais aussi aquis une méthode de travail plus rigoureuse et efficace. 
                     En entreprise, j'ai pu découvrir et m'acclimater à l'univers professionnel du métier tout en effectuant un travail de support client, HotFix, et développement.
                 
                     <br><br>
-                    &nbsp;&nbsp;&nbsp;A part tout ça, je suis également passionné de plongée et de photographie sous-marine. J'aime beaucoup la photogrpahie macroscopique car elle consiste à chercher patiemment dans les petits détails et pendant parfois un certain temps pour pouvoir prendre de bonnes photos. Il faut également être assez calme, posé et observateur pour ne pas effrayer les bêtes, ce qui correspond plutôt bien avec mon tempérament. Tout au long de mes vacances, j'ai passé plusieurs niveaux de plongée avec le système américain PADI (OpenWater, Advanced, Nitrox, Deep, Rescue) ainsi que des stages de photographie sous-marine et "terrestre" . 
+                    &nbsp;&nbsp;&nbsp;A part tout ça, je suis également passionné de plongée et de photographie sous-marine. J'aime beaucoup la photographie macroscopique car elle consiste à chercher patiemment dans les petits détails et pendant parfois un certain temps pour pouvoir prendre de bonnes photos. Il faut également être assez calme, posé et observateur pour ne pas effrayer les bêtes, ce qui correspond plutôt bien avec mon tempérament. Tout au long de mes vacances, j'ai passé plusieurs niveaux de plongée avec le système américain PADI (OpenWater, Advanced, Nitrox, Deep, Rescue) ainsi que des stages de photographie sous-marine et "terrestre" . 
                     Je suis également assez doué avec un crayon et j'ai de bonnes notions en retouches et éditions numériques. Mon métier rêvé, quand j'étais petit et "moyen-grand", était artiste de rue car je passait mon temps à dessiner. 
                     Désormais, mon but est d'alier la création, le design graphique et le développement web.                
                 </p>
@@ -107,24 +107,126 @@
 
                 <br>
                 <div class="galerieAccueil">
-                    <div class="location-listing" style="margin:auto; position:relative; z-index:0;">
-                        <p class="loupesGalerie">loupe</p>
-                        <img class="photosGallerie photo1" src="img/galerie/1_preview.jpg"/>
-                    </div>
-                    <img class="photosGallerie photo2" src="img/galerie/2_preview.jpg"/>
-                    <img class="photosGallerie photo3" src="img/galerie/3_preview.jpg"/>
-                    <img class="photosGallerie photo4" src="img/galerie/4_preview.jpg"/>
-                    <img class="photosGallerie photo5" src="img/galerie/5_preview.jpg"/>
-                    <img class="photosGallerie photo6" src="img/galerie/6_preview.jpg"/>
-                    <img class="photosGallerie photo7" src="img/galerie/7_preview.jpg"/>
-                    <img class="photosGallerie photo8" src="img/galerie/8_preview.jpg"/>
-                    <img class="photosGallerie photo9" src="img/galerie/9_preview.jpg"/>
-                    <img class="photosGallerie photo10" src="img/galerie/10_preview.jpg"/>
-                    <img class="photosGallerie photo11" src=""/>
-                    <img class="photosGallerie photo12" src=""/>
-                    <img class="photosGallerie photo13" src=""/>
-                    <img class="photosGallerie photo14" src=""/>
-                    <img class="photosGallerie photo15" src=""/>
+
+                    <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo1 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/1_preview.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo2 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/2_preview.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo3 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/3_preview.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo4 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/4_preview.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo5 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/5_preview.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo6 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/6_preview.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo7 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/7_preview.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo8 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/8_preview.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo9 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/9_preview.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo10 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/10_preview.jpg"/>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo11 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src=""/>
+                            </a>
+                        </div>
+                    </article> -->
+
+                    <!-- <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo12 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src=""/>
+                            </a>
+                        </div>
+                    </article> -->
+
+                    <!-- <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo13 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src=""/>
+                            </a>
+                        </div>
+                    </article> -->
+
+                    <!-- <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo14 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src=""/>
+                            </a>
+                        </div>
+                    </article> -->
+
+                    <!-- <article class="location-listing" style="margin:auto; position:relative;">
+                        <a class="loupesGalerie" href="#">Zoom</a>
+                        <div class="photosGallerie photo15 location-image">
+                                <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src=""/>
+                            </a>
+                        </div>
+                    </article> -->
 
                 </div>
 
