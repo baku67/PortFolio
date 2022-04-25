@@ -1245,13 +1245,28 @@ li::before {
 .galerieAccueil {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 10px 0px; 
     grid-template-areas: 
       "photo1 photo2 photo3"
       "photo4 photo5 photo6"
       "photo7 photo8 photo9"
-      "photo10 photo11 photo12"; 
+      "photo10 photo11 photo12" 
+      "photo13 photo14 photo15"
+      "photo16 photo17 photo18"
+      "photo19 photo20 photo21"
+      "photo22 photo23 photo24" 
+      "photo25 photo26 photo27"
+      "photo28 photo29 photo30"
+      "photo31 photo32 photo33"
+      "photo34 photo35 photo36" 
+      "photo37 photo38 photo39"
+      "photo40 photo41 photo42"
+      "photo43 photo44 photo45"
+      "photo46 photo47 photo48" 
+      "photo49 photo50 photo51"
+      "photo52 photo53 photo54"
+      "photo55 photo56 photo57"; 
 }
 .photo1 { grid-area: photo1; }
 .photo2 { grid-area: photo2; }
@@ -1265,6 +1280,53 @@ li::before {
 .photo10 { grid-area: photo10; }
 .photo11 { grid-area: photo11; }
 .photo12 { grid-area: photo12; }
+.photo13 { grid-area: photo13; }
+.photo14 { grid-area: photo14; }
+.photo15 { grid-area: photo15; }
+.photo16 { grid-area: photo16; }
+.photo17 { grid-area: photo17; }
+.photo18 { grid-area: photo18; }
+.photo19 { grid-area: photo19; }
+.photo20 { grid-area: photo20; }
+.photo21 { grid-area: photo21; }
+.photo22 { grid-area: photo22; }
+.photo23 { grid-area: photo23; }
+.photo24 { grid-area: photo24; }
+.photo25 { grid-area: photo25; }
+.photo26 { grid-area: photo26; }
+.photo27 { grid-area: photo27; }
+.photo28 { grid-area: photo28; }
+.photo29 { grid-area: photo29; }
+.photo30 { grid-area: photo30; }
+.photo31 { grid-area: photo31; }
+.photo32 { grid-area: photo32; }
+.photo33 { grid-area: photo33; }
+.photo34 { grid-area: photo34; }
+.photo35 { grid-area: photo35; }
+.photo36 { grid-area: photo36; }
+.photo37 { grid-area: photo37; }
+.photo38 { grid-area: photo38; }
+.photo39 { grid-area: photo39; }
+.photo40 { grid-area: photo40; }
+.photo41 { grid-area: photo41; }
+.photo42 { grid-area: photo42; }
+.photo43 { grid-area: photo43; }
+.photo44 { grid-area: photo44; }
+.photo45 { grid-area: photo45; }
+.photo46 { grid-area: photo46; }
+.photo47 { grid-area: photo47; }
+.photo48 { grid-area: photo48; }
+.photo49 { grid-area: photo49; }
+.photo50 { grid-area: photo50; }
+.photo51 { grid-area: photo51; }
+.photo52 { grid-area: photo52; }
+.photo53 { grid-area: photo53; }
+.photo54 { grid-area: photo54; }
+.photo55 { grid-area: photo55; }
+.photo56 { grid-area: photo56; }
+.photo57 { grid-area: photo57; }
+
+
 
 .galerieDiv { 
     padding-bottom:100px;
