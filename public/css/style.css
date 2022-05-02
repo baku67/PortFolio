@@ -381,7 +381,7 @@ li::before {
         opacity: 0;
     }
     to {
-        color: rgba(191, 4, 38, 1);
+        color: rgba(255, 17, 60, 1);
         opacity: 1;
     }
 }

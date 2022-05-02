@@ -43,12 +43,16 @@
     }
     #disclaimerContainerElem {
         position: relative;
-        bottom: 240px;
+        /* bottom: 240px; */
     }
 
     #documentationHeaderElem {
         position: relative;
-        bottom: 320px;
+        /* bottom: 320px; */
+    }
+
+    .documentationButtons {
+        margin: 60px auto;
     }
 
     #boutonMockup {
@@ -80,12 +84,12 @@
     }
     .iframe {
         grid-area: iframe;
-        bottom: 273px !important;
+        bottom: 160px !important;
     }
     .description { 
         grid-area: description; 
         position: relative;
-        bottom: 270px;
+        /* bottom: 270px; */
     }
 
 
@@ -161,11 +165,17 @@
 
     .traitSeparateurProjet {
         position: relative;
-        bottom: 300px;
+        /* bottom: 300px; */
     }
     #docuLoadContainer-wrapper {
         position: relative;
-        bottom: 300px;
+        /* bottom: 300px; */
+    }
+
+    .paragrapheDescriptionProjet {
+        /* margin-block-start: 1em;
+        margin-block-end: 1em; */
+        margin: 2em 20px 0 0;
     }
 
 

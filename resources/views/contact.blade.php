@@ -64,11 +64,13 @@
         </div>
 
         <!-- Trait séparateur -->
-        <!-- <div id="traitHeader"></div> -->
+        <div id="traitHeader"></div>
 
 
         <!-- Contenu (load JS) -->
         <div id="pageContainer">
+
+            <p style="color: white;">E-mail: basile08@hotmail.fr</p>
 
         </div>
 
