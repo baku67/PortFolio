@@ -2,30 +2,77 @@
 window.onload = function() {
 
 
+
+
     $(document).ready(function() {
 
-        // Documentation initialisée sur Utilisateur
-        $('#docuLoadContainer').load("views/docUtilisateur.html");
 
 
 
 
         // ***  MODALS GALERIE (Accueil)
         var modalImageGallerie = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImage");
 
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
+        // var img = document.getElementById("myImg");
+
+        //WIP
+        let images = document.getElementsByClassName("images");
+        console.log("images[] = " + JSON.stringify(images));
+        console.log("images.length: " + images.length);
+        
+
+        for (var i = 0; i < images.length; i++) {
+
+            console.log("image[i]: " + JSON.stringify(images[i]));
+          
+            images[i].addEventListener("click", function() {
+
+              modalImageGallerie.style.display = "block";
+              modalImg.src = "img/galerie/" + (i+1).toString() + ".JPG";
+
+              // renvoie bien "img/galerie/5.JPG"
+              console.log("img/galerie/" + (i+1).toString() + ".JPG");
+
+            })
+
+            // images[i].onclick = function() {
+
+            //   modalImageGallerie.style.display = "block";
+            //   modalImg.src = "img/galerie/" + (i+1).toString() + ".JPG";
+
+            //   // renvoie bien "img/galerie/5.JPG"
+            //   console.log("img/galerie/" + (i+1).toString() + ".JPG");
+
+            // }
+
+        }
+
+
+        
+
+
+
         var captionText = document.getElementById("caption");
 
-        img.onclick = function() {
-          modalImageGallerie.style.display = "block";
-          // Fonctionne et permet de choper le src pour chauqye élément (mais je voulais que le modal affiche la version HD)
-          // modalImg.src = this.getElementsByClassName('imageGalerie')[0].src;
-          modalImg.src = "img/galerie/1.JPG";
-          captionText.innerHTML = document.getElementsByClassName('imageGalerie')[0].alt;
-          // Fix pour le clickWindow
-          captionText.style.height = 'auto';
-        }
+        // images.onclick = function() {
+        //   console.log("testClick sur element de larray");
+
+        //   modalImageGallerie.style.display = "block";
+        //   // Fonctionne et permet de choper le src pour chauqye élément (mais je voulais que le modal affiche la version HD)
+        //   // modalImg.src = this.getElementsByClassName('imageGalerie')[0].src;
+
+        //   // for (var i = 1; i < images.length; i++) {
+        //   //   modalImg.src = "img/galerie/" + i.toString() + ".JPG";
+        //   // }
+        //   // modalImg.src = "img/galerie/1.JPG";
+
+        //   captionText.innerHTML = document.getElementsByClassName('imageGalerie')[0].alt;
+        //   // Fix pour le clickWindow
+        //   captionText.style.height = 'auto';
+        // }
+
+        // Pour chaque element de la liste (boucle for), ajouter levenement avec var interpolation
 
         var span = document.getElementsByClassName("close")[0];
 
@@ -56,7 +103,8 @@ window.onload = function() {
 
 
 
-
+    // Documentation initialisée sur Utilisateur
+    $('#docuLoadContainer').load("views/docUtilisateur.html");
 
 
 

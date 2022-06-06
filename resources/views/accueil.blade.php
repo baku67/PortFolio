@@ -41,7 +41,7 @@
         <!-- MODALS GALERIE -->
         <div id="myModal" class="modal">
             <span class="close">&times;</span>
-            <img class="modal-image" id="img01">
+            <img class="modal-image" id="modalImage">
             <div id="caption"></div>
         </div>
         <!-- Fin modal -->
@@ -86,7 +86,7 @@
 
                 <div>
                     <!-- <img class="imgAccueil" src=""/> -->
-                    <img class="imgAccueil" src="img/moi4.jpg"/>
+                    <img class="imgAccueil" src="img/moi2.jpg"/>
 
                 </div>
 
@@ -120,28 +120,28 @@
                 <br>
                 <div class="galerieAccueil">
 
-                    <article id="myImg" class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                    <article id="" class="location-listing images" style="margin:auto; position:relative; cursor:pointer;">
                         <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo1 location-image">
-                                <img alt="Poti poisson" class="imageGalerie" style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/1_preview.jpg"/>
+                                <img alt="Poti poisson" class="" style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/1_preview.jpg"/>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                    <article class="location-listing images" style="margin:auto; position:relative; cursor:pointer;">
                         <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo2 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/2_preview.jpg"/>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                    <article class="location-listing images" style="margin:auto; position:relative; cursor:pointer;">
                         <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo3 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/3_preview.jpg"/>
                         </div>
                     </article>
 
-                    <article class="location-listing" style="margin:auto; position:relative; cursor:pointer;">
+                    <article class="location-listing images" style="margin:auto; position:relative; cursor:pointer;">
                         <p class="loupesGalerie">Zoom</p>
                         <div class="photosGallerie photo4 location-image">
                                 <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/4_preview.jpg"/>

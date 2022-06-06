@@ -169,12 +169,12 @@
                 <div class="langues">
                     <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Langues et Atouts <span class="highlightSpan">/&#x3e;</span></p>
                     <ul>
-                        <li>Anglais (B2)</li>
-                        <li>Allemand(C2)</li>
-                        <li>Chinois</li>
+                        <li>Anglais (intermédiaire)</li>
+                        <li>Allemand (débutant)</li>
+                        <li>Chinois (débutant)</li>
                     </ul>
                     
-                    <p>Curieux, Souci du détail</p>
+                    <!-- <p>Curieux, Souci du détail</p> -->
 
                 </div>
 
