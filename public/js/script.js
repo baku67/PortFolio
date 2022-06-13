@@ -1,89 +1,91 @@
-
 window.onload = function() {
-
-
 
 
     $(document).ready(function() {
 
 
 
-
-
-        // ***  MODALS GALERIE (Accueil)
-        var modalImageGallerie = document.getElementById("myModal");
-        var modalImg = document.getElementById("modalImage");
-
-        // var img = document.getElementById("myImg");
-
-        //WIP
-        let images = document.getElementsByClassName("images");
-        console.log("images[] = " + JSON.stringify(images));
-        console.log("images.length: " + images.length);
         
+        // Modal Gallerie
+        let modalImageGallerie = document.getElementById('myModal');
+        let modalImg = document.getElementById("modalImage");
+        let captionText = document.getElementById("caption");
 
-        for (var i = 0; i < images.length; i++) {
+        let arrowNext = document.getElementById("arrowNext");
+        let arrowPrevious = document.getElementById("arrowPrevious");
 
-            console.log("image[i]: " + JSON.stringify(images[i]));
-          
-            images[i].addEventListener("click", function() {
+        let articles = $(".images"); 
 
-              modalImageGallerie.style.display = "block";
-              modalImg.src = "img/galerie/" + (i+1).toString() + ".JPG";
 
-              // renvoie bien "img/galerie/5.JPG"
-              console.log("img/galerie/" + (i+1).toString() + ".JPG");
-
-            })
-
-            // images[i].onclick = function() {
-
-            //   modalImageGallerie.style.display = "block";
-            //   modalImg.src = "img/galerie/" + (i+1).toString() + ".JPG";
-
-            //   // renvoie bien "img/galerie/5.JPG"
-            //   console.log("img/galerie/" + (i+1).toString() + ".JPG");
-
-            // }
-
+        // Plutot mettre un toggle pour que ce soit répétable et voir pour hover "zoom-out" (important car usage unique)
+        modalImg.onclick = function() {
+          modalImg.style.maxWidth = "1200px";
+          modalImg.onclick = function() {
+            modalImg.style.maxWidth = "900px";
+          }
         }
 
 
+        articles.click(function() {
+
+          var intTemp = parseInt(this.getAttribute('alt'));
+
+          modalImg.src = "img/galerie/" + this.getAttribute('alt') + ".jpg";
+
+          modalImageGallerie.style.display = "block";
+          arrowNext.style.display = "block";
+          arrowPrevious.style.display = "block";
+
+          captionText.innerHTML = this.getAttribute('def');
+
+          if (intTemp == 1) {
+            arrowPrevious.style.opacity = 0.1;
+            arrowPrevious.style.cursor = "default";
+          }
+
+          arrowNext.onclick = function() {
+            intTemp++;
+            modalImg.src = "img/galerie/" + (intTemp) + ".jpg";
+            arrowPrevious.style.opacity = 1;
+            arrowPrevious.style.cursor = "pointer";
+
+          }
+
+          arrowPrevious.onclick = function() {
+            if (intTemp > 1) {
+              intTemp--;
+              modalImg.src = "img/galerie/" + (intTemp) + ".jpg";
+              arrowPrevious.style.opacity = 1;
+
+              if (intTemp == 1) {
+                arrowPrevious.style.opacity = 0.1;
+                arrowPrevious.style.cursor = "default";
+              }
+            }
+            else {
+              arrowPrevious.style.opacity = 0.1;
+              arrowPrevious.style.cursor = "default";
+            }
+          }
+
+        })    
         
 
-
-
-        var captionText = document.getElementById("caption");
-
-        // images.onclick = function() {
-        //   console.log("testClick sur element de larray");
-
-        //   modalImageGallerie.style.display = "block";
-        //   // Fonctionne et permet de choper le src pour chauqye élément (mais je voulais que le modal affiche la version HD)
-        //   // modalImg.src = this.getElementsByClassName('imageGalerie')[0].src;
-
-        //   // for (var i = 1; i < images.length; i++) {
-        //   //   modalImg.src = "img/galerie/" + i.toString() + ".JPG";
-        //   // }
-        //   // modalImg.src = "img/galerie/1.JPG";
-
-        //   captionText.innerHTML = document.getElementsByClassName('imageGalerie')[0].alt;
-        //   // Fix pour le clickWindow
-        //   captionText.style.height = 'auto';
-        // }
-
-        // Pour chaque element de la liste (boucle for), ajouter levenement avec var interpolation
 
         var span = document.getElementsByClassName("close")[0];
 
         span.onclick = function() {
           modalImageGallerie.style.display = "none";
+          arrowNext.style.display = "none";
+          arrowPrevious.style.display = "none";
         }
 
-        // click fenetre = close modal        
+
         window.onclick = function(event) {
           if (event.target == modalImageGallerie) {
             modalImageGallerie.style.display = "none";
+            arrowNext.style.display = "none";
+            arrowPrevious.style.display = "none";
           }
         }
 
