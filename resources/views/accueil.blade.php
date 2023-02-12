@@ -39,23 +39,10 @@
     <body>
 
         <!-- MODALS GALERIE -->
-        <div id="myModal" class="modal">
+        <!-- <div id="myModal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-image" id="modalImage">
             <div id="caption"></div>
-
-
-            <!-- WIP alignement -->
-            <!-- <div>
-                <div id="arrowPrevious" style="font-size: 5em; color: white; z-index: 0; width: 50px;">
-                    <
-                </div> 
-                <img class="modal-image" id="modalImage">
-                <div id="arrowNext" style="font-size: 5em; color: white; z-index: 0; width: 50px;">
-                    >
-                </div>
-            </div>  -->
-            <!-- Fin WIP -->
 
             <div id="arrowPrevious">
                 <
@@ -63,7 +50,7 @@
             <div id="arrowNext">
                 >
             </div> 
-        </div>
+        </div> -->
         <!-- Fin modal -->
 
 
@@ -80,13 +67,13 @@
             <p id="menuLigneCv" style="color:#E7E8F2;">
                 <a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> 
                 &nbsp; 
-                <a id="cvMenu" class="menuButton" href="/cv">C.V.</a> 
+                <a id="cvMenu" class="menuButton" href="/cv">Mon parcours</a> 
                 &nbsp; 
-                <a id="projetsMenu" class="menuButton" href="/projets">Projet</a> 
+                <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
                 &nbsp; 
-                <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
-                &nbsp;
-                <a id="contactMenu" class="menuButton" href="/contact">Contact</a>
+                <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
+                &nbsp; -->
+                <a id="contactMenu" class="menuButton" href="/contact">Loisirs</a>
             </p>
         </div>
 
@@ -113,10 +100,9 @@
                 <p class="paragrapheAccueil" >
                     <span style="margin-left: 10px; font-size: 120%;">Bonjour, </span>
                     <br><br>
-                    &nbsp;&nbsp;&nbsp;Je m'appelle Basile, jai 25 ans et je suis actuellement en 2ème année de BTS SIO - option SLAM (Solutions Logicielles et Applications Métiers) à la CCI de Strasbourg.
-                     J'éffectue cette formation en alternance dans la société Europe Tech Group, basée à Haguenau, qui développe et vend ses solutions de gestion à des entreprises de portage salarial. 
+                    &nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis mauris in mi dapibus tristique. Cras sit amet aliquet ante. Phasellus efficitur congue venenatis. Mauris gravida egestas porttitor. Pellentesque et risus convallis ligula feugiat tincidunt eleifend id ante. Duis a condimentum neque, nec semper metus. 
 
-                    <br><br>
+                    <!-- <br><br>
                     &nbsp;&nbsp;&nbsp;Je me suis lancé dans le developpement Web au moment du premier confinement, pendant mon Service civique au pôle numérique de l'Escale il y a 2 ans. 
                     J'avais codé un simple site vitrine pour un bar fictif afin de me familiariser avec les premiers langages HTML et CSS et j'ai très vite abandonné les jeux vidéos 
                     pour ne faire que ça par la suite. J'aime particulièrement passer du temps sur le front-end pour rendre le site visuellement agréable tout en simplifiant son utilisation.
@@ -126,14 +112,20 @@
                     <br><br>
                     &nbsp;&nbsp;&nbsp;À part tout ça, je suis également passionné de plongée et de photographie sous-marine. J'aime beaucoup la photographie macroscopique car elle consiste à chercher patiemment dans les petits détails et pendant parfois un certain temps pour pouvoir prendre de bonnes photos. Il faut également être assez calme, posé et observateur pour ne pas effrayer les bêtes, ce qui correspond plutôt bien avec mon tempérament. Tout au long de mes vacances, j'ai passé plusieurs niveaux de plongée avec le système américain PADI (OpenWater, Advanced, Nitrox, Deep, Rescue) ainsi que des stages de photographie sous-marine et "terrestre" . 
                     Je suis également assez doué avec un crayon et j'ai de bonnes notions en retouches et éditions numériques. Mon métier rêvé, quand j'étais petit et "moyen-grand", était artiste de rue car je passait mon temps à dessiner. 
-                    Désormais, mon but est d'alier la création, le design graphique et le développement web.                
+                    Désormais, mon but est d'alier la création, le design graphique et le développement web.                 -->
                 </p>
 
             </div>
 
+
+            </br>
+
+            <p style="color: white;">E-mail: <span style="color:#ef3b2d;">basile08@hotmail.fr</span></p>
+
+
             <br><br><br><br><br><br>
 
-            <div class="galerieDiv">
+            <!-- <div class="galerieDiv">
 
                 <h3 style="font-size:170%; text-align:center; text-decoration:underline; text-underline-position:under; text-decoration-color:#ef3b2d;">Galerie: </h3>
 
@@ -562,9 +554,9 @@
 
                     
 
-                </div>
+                </div> -->
 
-            </div>
+            <!-- </div> -->
 
         </div>
 

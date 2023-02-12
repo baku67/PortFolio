@@ -51,13 +51,13 @@
                 <p id="menuLigne" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                     &nbsp; 
-                    <a id="cvMenu" class="menuButton" href="/cv">C.V.</a> 
+                    <a id="cvMenu" class="menuButton" href="/cv">Mon parcours</a> 
                     &nbsp; 
-                    <a id="projetsMenu" class="menuButton selected" href="/projets">Projet</a> 
+                    <a id="projetsMenu" class="menuButton selected" href="/projets">Projets</a> 
                     &nbsp; 
-                    <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
-                    &nbsp;
-                    <a id="contactMenu" class="menuButton" href="/contact">Contact</a>
+                    <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
+                    &nbsp; -->
+                    <a id="contactMenu" class="menuButton" href="/contact">Loisirs</a>
                 </p>
             </div>
 
@@ -76,7 +76,10 @@
 
         <!-- <div class="iframeWrapper"> -->
 
-            <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mon Projet </p>
+            <!-- <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets <span id="project1Button" class="switchProjectButton buttonProjectActif">1</span><span id="project2Button" class="switchProjectButton">2</span></p> -->
+            <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets </p>
+
+            
             <!-- Ajouter effet glissade from gauche to droite (mais qui se genere depuis le debut du titre pas de l'écran :/ ) -->
             <div class="barreProjetSouligne"></div>
 
@@ -84,27 +87,7 @@
 
             <div class="gridProjetHeaderContainer">
 
-                <div class="iframe">
-                    <div id="boutonMockup"></div>
-                    <div id="boutonMockup2"></div>
-                    <div id="bouton3Container"><div id="boutonMockup3"></div></div>
-                    <div id="boutonMockup4"></div>
-                    <div id="boutonMockup5"></div>
-
-                    <!-- Wrapper pour effet de reflet superposé  -->
-                    <!-- <div class="iframeWrapper">
-                    </div> -->
-                    <!-- <iframe src="https://www.blackjackjo.com" style="position:absolute; z-index:0;" class="iframeElem" id="iframeElement"></iframe> -->
                 
-                    <iframe src="https://www.blackjackjo.com" class="iframeElem" id="iframeElement"></iframe>
-
-                    
-                    <!-- <form id="the-form" action="">
-                        Dark Mode: <input id="my-message" type="text">
-                        <input type="submit">
-                    </form> -->
-                    <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
-                </div>
 
 
                 <div class="header">
@@ -130,8 +113,31 @@
 
                 </div>
 
+
+                <div class="iframe">
+                    <div id="boutonMockup"></div>
+                    <div id="boutonMockup2"></div>
+                    <div id="bouton3Container"><div id="boutonMockup3"></div></div>
+                    <div id="boutonMockup4"></div>
+                    <div id="boutonMockup5"></div>
+
+                    <!-- Wrapper pour effet de reflet superposé  -->
+                    <!-- <div class="iframeWrapper">
+                    </div> -->
+                    <!-- <iframe src="https://www.blackjackjo.com" style="position:absolute; z-index:0;" class="iframeElem" id="iframeElement"></iframe> -->
+                
+                    <iframe src="https://www.blackjackjo.com" class="iframeElem" id="iframeElement"></iframe>
+
+                    
+                    <!-- <form id="the-form" action="">
+                        Dark Mode: <input id="my-message" type="text">
+                        <input type="submit">
+                    </form> -->
+                    <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                </div>
+
                 <div class="description">
-                    <p class="paragrapheDescriptionProjet"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BlackJackJo' est une application web développée durant ma deuxième année de BTS SIO. Elle permet à l'utilisateur de jouer au Blackjack contre le croupier, et comporte un système de connexion facultatif. L'idée de base vient d'un ami d'enfance fan de Blackjack et comme j'étais à la recherche d'une idée pour apprendre le javascript, je m'en suis inspiré pour progresser. Je ne connaissais rien au BlackJack et n'aime pas vraiment les jeux d'argent, c'est pourquoi j'ai voulu créer une alternative/substitution sans argent réel mais avec un suivi de progresion. </p>
+                    <p class="paragrapheDescriptionProjet"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BlackJackJo' est un mon premier projet de développement web. Il s'agit d'une application web permettant à l'utilisateur de jouer au BlackJack seul contre un croupier. Elle comporte un système de compte permettant de garder les gains, sauvegarder les préférences utilisateurs, accéder à l'historique des parties, se classer par rapport aux autres utilisateurs,... Il est aussi possible de jouer en mode "Invité" juste pour tester. Les utilisateurs connectés reçoivent de l'XP selon les résultats de la partie, le streakWin, et les mises en jeu, et gagne des niveaux et des crédits. Le streakWin augmente vos gains d'XP, il augmente de 1 lorsque vous gagnez et baisse de 2 lorsque vous perdez.   </p>
                 </div>
 
                 <!-- <div class="lienBJJcontainer">

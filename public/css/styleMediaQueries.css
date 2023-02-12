@@ -2,6 +2,8 @@
 
     body {
         background: linear-gradient(56deg, rgba(23,25,35,1) 0%, rgba(29,36,47,1) 41%, rgba(34,46,58,1) 50%, rgba(23,25,35,0.9943339884782038) 75%, rgba(23,25,35,0.9943339884782038) 99%);
+        /* background: linear-gradient(56deg, rgba(23,25,35,1) 0%, rgba(29,36,47,1) 41%, rgba(54, 139, 150, 0.6) 50%, rgba(23,25,35,0.9943339884782038) 75%, rgba(23,25,35,0.9943339884782038) 99%); */
+
         background-size: 1200% 1200%;
         animation: gradientAnimProjet 2s ease 0s normal forwards running;
     }
@@ -65,19 +67,52 @@
     }
 
 
+
+    .switchProjectButton {
+        border: 2px solid rgb(240 248 255 / 1%);
+        border-radius: 50px;
+        padding: 0px 18px;
+    
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+    .switchProjectButton:hover {
+        border: 2px solid rgba(240, 255, 255, 0.05);
+    }
+    
+    .buttonProjectActif {
+        border: 2px solid rgb(239 59 45 / 2%);
+        color: rgb(242 58 43 / 55%);
+    
+        cursor: default;
+    }
+    .buttonProjectActif:hover {
+        border: 2px solid rgb(239 59 45 / 5%);
+        color: rgb(242 58 43 / 55%);
+    }
+
+
+
+
+
+
+
+
     .gridProjetHeaderContainer {
         display: grid; 
         grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 2fr 0.8fr; 
+        grid-template-rows: 0.9fr 2fr 0.8fr; 
         gap: 0px 0px; 
         grid-template-areas: 
           "header"
           "iframe"
           "description"; 
+        overflow-wrap: anywhere;
     }
     .header { 
         grid-area: header; 
-        font-size: 45%;
+        /* font-size: 45%; */
+        font-size: 57%;
         position: relative;
         left: -29px;
         margin: 12% 0% 0% 5%;
@@ -244,6 +279,14 @@
         position: relative;
         bottom: 25px !important;
     }
+    .galerieTitle {
+        font-size: 2.5em;
+        line-height: 1em;
+        position: relative;
+        bottom: 10px !important;
+
+        margin-block-end: 0em !important;
+    }
 
 
     .imgGitVignettes {
@@ -263,6 +306,11 @@
     }
     .barreVeilleSouligne {
         width: 257px;
+    }
+    .barreGalerieSouligne {
+        width: 128px;
+        bottom: 8px;
+        margin-bottom: 30px;
     }
     @keyframes barreProjetSouligne {
         from {
@@ -307,7 +355,9 @@
 
 
 
-
+#messageGalerie {
+    font-size: 0.85em;
+}
 
 
 

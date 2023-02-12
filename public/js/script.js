@@ -1,98 +1,98 @@
 window.onload = function() {
 
 
-    $(document).ready(function() {
+    // $(document).ready(function() {
 
 
 
         
-        // Modal Gallerie
-        let modalImageGallerie = document.getElementById('myModal');
-        let modalImg = document.getElementById("modalImage");
-        let captionText = document.getElementById("caption");
+    //     // Modal Gallerie
+    //     let modalImageGallerie = document.getElementById('myModal');
+    //     let modalImg = document.getElementById("modalImage");
+    //     let captionText = document.getElementById("caption");
 
-        let arrowNext = document.getElementById("arrowNext");
-        let arrowPrevious = document.getElementById("arrowPrevious");
+    //     let arrowNext = document.getElementById("arrowNext");
+    //     let arrowPrevious = document.getElementById("arrowPrevious");
 
-        let articles = $(".images"); 
-
-
-        // Plutot mettre un toggle pour que ce soit répétable et voir pour hover "zoom-out" (important car usage unique)
-        modalImg.onclick = function() {
-          modalImg.style.maxWidth = "1200px";
-          modalImg.onclick = function() {
-            modalImg.style.maxWidth = "900px";
-          }
-        }
+    //     let articles = $(".images"); 
 
 
-        articles.click(function() {
+    //     // Plutot mettre un toggle pour que ce soit répétable et voir pour hover "zoom-out" (important car usage unique)
+    //     modalImg.onclick = function() {
+    //       modalImg.style.maxWidth = "1200px";
+    //       modalImg.onclick = function() {
+    //         modalImg.style.maxWidth = "900px";
+    //       }
+    //     }
 
-          var intTemp = parseInt(this.getAttribute('alt'));
 
-          modalImg.src = "img/galerie/" + this.getAttribute('alt') + ".jpg";
+    //     articles.click(function() {
 
-          modalImageGallerie.style.display = "block";
-          arrowNext.style.display = "block";
-          arrowPrevious.style.display = "block";
+    //       var intTemp = parseInt(this.getAttribute('alt'));
 
-          captionText.innerHTML = this.getAttribute('def');
+    //       modalImg.src = "img/galerie/" + this.getAttribute('alt') + ".jpg";
 
-          if (intTemp == 1) {
-            arrowPrevious.style.opacity = 0.1;
-            arrowPrevious.style.cursor = "default";
-          }
+    //       modalImageGallerie.style.display = "block";
+    //       arrowNext.style.display = "block";
+    //       arrowPrevious.style.display = "block";
 
-          arrowNext.onclick = function() {
-            intTemp++;
-            modalImg.src = "img/galerie/" + (intTemp) + ".jpg";
-            arrowPrevious.style.opacity = 1;
-            arrowPrevious.style.cursor = "pointer";
+    //       captionText.innerHTML = this.getAttribute('def');
 
-          }
+    //       if (intTemp == 1) {
+    //         arrowPrevious.style.opacity = 0.1;
+    //         arrowPrevious.style.cursor = "default";
+    //       }
 
-          arrowPrevious.onclick = function() {
-            if (intTemp > 1) {
-              intTemp--;
-              modalImg.src = "img/galerie/" + (intTemp) + ".jpg";
-              arrowPrevious.style.opacity = 1;
+    //       arrowNext.onclick = function() {
+    //         intTemp++;
+    //         modalImg.src = "img/galerie/" + (intTemp) + ".jpg";
+    //         arrowPrevious.style.opacity = 1;
+    //         arrowPrevious.style.cursor = "pointer";
 
-              if (intTemp == 1) {
-                arrowPrevious.style.opacity = 0.1;
-                arrowPrevious.style.cursor = "default";
-              }
-            }
-            else {
-              arrowPrevious.style.opacity = 0.1;
-              arrowPrevious.style.cursor = "default";
-            }
-          }
+    //       }
 
-        })    
+    //       arrowPrevious.onclick = function() {
+    //         if (intTemp > 1) {
+    //           intTemp--;
+    //           modalImg.src = "img/galerie/" + (intTemp) + ".jpg";
+    //           arrowPrevious.style.opacity = 1;
+
+    //           if (intTemp == 1) {
+    //             arrowPrevious.style.opacity = 0.1;
+    //             arrowPrevious.style.cursor = "default";
+    //           }
+    //         }
+    //         else {
+    //           arrowPrevious.style.opacity = 0.1;
+    //           arrowPrevious.style.cursor = "default";
+    //         }
+    //       }
+
+    //     })    
         
 
 
-        var span = document.getElementsByClassName("close")[0];
+    //     var span = document.getElementsByClassName("close")[0];
 
-        span.onclick = function() {
-          modalImageGallerie.style.display = "none";
-          arrowNext.style.display = "none";
-          arrowPrevious.style.display = "none";
-        }
-
-
-        window.onclick = function(event) {
-          if (event.target == modalImageGallerie) {
-            modalImageGallerie.style.display = "none";
-            arrowNext.style.display = "none";
-            arrowPrevious.style.display = "none";
-          }
-        }
-
-        //***  Fin modals Galerie
+    //     span.onclick = function() {
+    //       modalImageGallerie.style.display = "none";
+    //       arrowNext.style.display = "none";
+    //       arrowPrevious.style.display = "none";
+    //     }
 
 
-    })
+    //     window.onclick = function(event) {
+    //       if (event.target == modalImageGallerie) {
+    //         modalImageGallerie.style.display = "none";
+    //         arrowNext.style.display = "none";
+    //         arrowPrevious.style.display = "none";
+    //       }
+    //     }
+
+    //     //***  Fin modals Galerie
+
+
+    // })
 
 
 

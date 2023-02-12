@@ -53,13 +53,13 @@
             <p id="menuLigneCv" style="color:#E7E8F2;">
                 <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                 &nbsp; 
-                <a id="cvMenu" class="menuButton selected" href="/cv">C.V.</a> 
+                <a id="cvMenu" class="menuButton selected" href="/cv">Mon parcours</a> 
                 &nbsp; 
-                <a id="projetsMenu" class="menuButton" href="/projets">Projet</a> 
+                <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
                 &nbsp; 
-                <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
-                &nbsp;
-                <a id="contactMenu" class="menuButton" href="/contact">Contact</a>
+                <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
+                &nbsp; -->
+                <a id="contactMenu" class="menuButton" href="/contact">Loisirs</a>
             </p>
         </div>
 
@@ -76,7 +76,11 @@
         <!-- Contenu Page -->
         <div id="pageContainer">
 
-            <h2 class="pageTitle cvTitle">Mon <span style="letter-spacing:4px;">CV</span></h2>
+            <h2 class="pageTitle cvTitle">Mon &nbsp;<span style="letter-spacing:1px;">parcours</span></h2>
+
+            <!-- </br>
+
+            <p style="color: white;">E-mail: <span style="color:#ef3b2d;">basile08@hotmail.fr</span></p> -->
 
             </br>
 
@@ -113,7 +117,7 @@
                         <div class="separateurListe2"></div>
                         <li>Bénévolat (Croix-Rouge, Décibulles)</li>
                         <div class="separateurListe2"></div>
-                        <li>Jeux vidéos</li>
+                        <li>Découverte de jeux vidéos</li>
                         <div class="separateurListe2"></div>
                     </ul>
                 </div>
