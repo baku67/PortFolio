@@ -90,6 +90,10 @@
                     <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Formations <span class="highlightSpan">/&#x3e;</span></p>
                     <ul>
                         <li>
+                            2023: <span class="highlightSpan">Formation "Développeur web et web mobile"</span> à Elan Formation
+                        </li>
+                        <div class="separateurListe light"></div>
+                        <li>
                             2020-2022: <span class="highlightSpan">BTS SIO - Option SLAM</span> (Solutions Logicielles et Applications Métiers)
                             </br>
                             <span class="highlightSpan">Alternance</span> chez Europe Tech Group (Haguenau)
@@ -97,8 +101,8 @@
                         <div class="separateurListe light"></div>
                         <li>2019-2020: Volontaire en service civique (Pôle numérique du centre socio-culturel de l'Escale)</li>
                         <div class="separateurListe light"></div>
-                        <li>2017-2018: L1 Maths-Informatiques (Faculté de Strasbourg)</li>
-                        <div class="separateurListe light"></div>
+                        <!-- <li>2017-2018: L1 Maths-Informatiques (Faculté de Strasbourg)</li>
+                        <div class="separateurListe light"></div> -->
                         <li>2015: Baccalauréat général Scientifique (Lycée Kléber, Strasbourg)</li>
                         <!-- <div class="separateurListe light"></div> -->
                     </ul>
@@ -166,7 +170,7 @@
                         <li>Git, GitHub, GitLab, GitKraken</li>
                         <li>WSL2 (Ubuntu)</li>
                         <li>Photoshop / pixlr.com</li>
-                        <li>Suite Office</li>
+                        <li>Suite Office, Teams</li>
                     </ul>
                 </div>
 

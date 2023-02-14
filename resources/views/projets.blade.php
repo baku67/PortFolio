@@ -21,7 +21,7 @@
         <link rel="manifest" href="img/favicon/site.webmanifest">
 
         <!-- ScriptJS -->
-        <script src="{{ asset('js/script.js') }}"></script>
+        <script src="{{ asset('js/scriptProjet.js') }}"></script>
 
         <!-- JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
