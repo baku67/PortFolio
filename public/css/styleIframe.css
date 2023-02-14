@@ -1,0 +1,426 @@
+body {
+    /* Sacramento */
+    
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+
+
+.main {
+    text-align: center; 
+    /* Anim background SUNFLOWER */
+    background-size: 200%;
+
+
+    /* background: rgb(17,18,63);
+    background: -moz-linear-gradient(59deg, rgba(17,18,63,1) 69%, rgba(255,186,49,0.24833683473389356) 100%);
+    background: -webkit-linear-gradient(59deg, rgba(17,18,63,1) 69%, rgba(255,186,49,0.24833683473389356) 100%);
+    background: linear-gradient(59deg, rgba(17,18,63,1) 69%, rgba(255,186,49,0.24833683473389356) 100%); */
+
+    /* animation: bgSunflower 3s 0.7s normal forwards ease-in-out;  */
+    }
+    /* @keyframes bgSunflower {
+      from {
+        background-position: 0%;
+        background-size: 200%;
+      }
+      to {
+        background-position: 100%;
+        background-size: 200%;
+
+        
+      }
+    } */
+  
+  .main-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .main-logo1 {
+      width: 347px;
+      height: 363px;
+      animation: App-logo-spin infinite 50s linear;
+      
+    }
+    .main-logo2 {
+      
+      animation: App-logo-spin2 infinite 78s linear;
+    }
+  }
+
+  #gna {
+    color: #ffba31;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    position: absolute;
+    top: 20%;
+
+    font-size: 0em;
+    opacity: 0;
+    animation: fadeIn 0.7s 3s forwards ease-in; 
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      font-size: 0em;
+    }
+    to {
+      opacity: 0.9;
+      font-size: 1.3em;
+    }
+  }
+  
+  
+  .logo-Container {
+    width: 347px;
+    height: 372px;
+  
+    position: relative;
+  }
+  .logo-image {
+    position: absolute;
+  }
+  
+  .title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 150%;
+  
+    /* font-family: 'Amatic SC', cursive;
+    letter-spacing: 9px; */
+  
+    letter-spacing: 5px;
+  
+    /* font-family: 'Poiret One', cursive;
+    letter-spacing: 6px; */
+  
+      /* font-family: 'Lato', sans-serif;  
+    letter-spacing: 3px; */
+  
+    /* font-family: 'Zen Loop', cursive;
+    letter-spacing: 6px; */
+  
+      /* font-family: 'Ms Madi', cursive;
+    letter-spacing: 6px; */
+  
+    font-weight: 200;
+  }
+  
+  .main-header {
+    /* background-color: #11123f; */
+
+
+    /* background-color: #282c34; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+  }
+  @keyframes backgroundSlide {
+    from {
+
+    }
+    to {
+
+    }
+  }
+  
+  .main-link {
+    text-decoration: none;
+    color: #c59941;
+  }
+  .haikuLink {
+    text-decoration: none;
+    color: #41b9c5;
+  }
+  .haikuLink:hover {
+    animation: linkHover1 0.4s ease 0s normal forwards running;
+  }
+  @keyframes linkHover1 {
+    from {
+      color: #41b9c5;
+    }
+    to {
+      color: #b6eff4;
+    }
+  }
+  .main-link:hover {
+    animation: linkHover2 0.4s ease 0s normal forwards running;
+  }
+  @keyframes linkHover2 {
+    from {
+      color: #c59941;
+    }
+    to {
+      color: #fdf99e;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes App-logo-spin2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+
+  /* SINON fade In une image from bottom to top avec un mask au dessus https://stackoverflow.com/questions/21621837/fading-an-image-from-top-to-bottom */
+
+  .box {
+    --mask:
+    radial-gradient(45.22px at calc(100% + 40.00px) 50%,#0000 calc(99% - 1px),#000 calc(101% - 1px) 99%,#0000 101%) calc(50% - 10.5px + .5px) calc(50% - 40px)/ 21px 80px  repeat-y,
+    radial-gradient(45.22px at -40px 50%,#0000 calc(99% - 1px),#000 calc(101% - 1px) 99%,#0000 101%) calc(50% + 10.5px) 50%/21px 80px  repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+
+    position: absolute;
+    bottom: 50px;
+    height: 0px;
+    width: 100px;
+
+    /* Transition durant l'anim de la couleur (from green -> jaune, avec fadePng en bas de la tige, Idee: flash final) */
+    /* background-color: #16eb67; */
+    background: rgb(22,235,103);
+    background: -moz-linear-gradient(180deg, rgba(22,235,103,1) 85%, rgba(22,235,103,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(22,235,103,1) 85%, rgba(22,235,103,0) 100%);
+    background: linear-gradient(180deg, rgba(22,235,103,1) 85%, rgba(22,235,103,0) 100%);
+    
+    animation: pousse1 3s 0.7s normal forwards ease-in-out;
+  }
+
+    /*  https://css-generators.com/wavy-shapes/ */
+    /* (from 1 / 40 to 6 / 40) (input range au max)*/
+    @keyframes pousse1 {
+      0% {
+          --mask:
+          radial-gradient(89.94px at calc(100% + 80.00px) 50%,#0000 calc(99% - 1px),#000 calc(101% - 1px) 99%,#0000 101%) calc(50% - 20.5px + .5px) calc(50% - 80px)/ 41px 160px  repeat-y,
+          radial-gradient(89.94px at -80px 50%,#0000 calc(99% - 1px),#000 calc(101% - 1px) 99%,#0000 101%) calc(50% + 20.5px) 50%/41px 160px  repeat-y;
+          -webkit-mask: var(--mask);
+                mask: var(--mask);
+
+          /* background-color: #16eb67; */
+          /* Pour le fadePNG en bas de la tige: ATTENTION LA TRANSIOTION DE COULEUR NEST PLUS SMOOTH A CAUSE DU GRADIENT PNG */
+          background: rgb(22,235,103);
+          background: -moz-linear-gradient(180deg, rgba(22,235,103,1) 85%, rgba(22,235,103,0) 100%);
+          background: -webkit-linear-gradient(180deg, rgba(22,235,103,1) 85%, rgba(22,235,103,0) 100%);
+          background: linear-gradient(180deg, rgba(22,235,103,1) 85%, rgba(22,235,103,0) 100%);
+
+          height: 0px;
+      }
+      20% {
+          --mask:
+          radial-gradient(90.44px at calc(100% + 80.00px) 50%,#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) calc(50% - 21px + .5px) calc(50% - 80px)/ 42px 160px  repeat-y,
+          radial-gradient(90.44px at -80px 50%,#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) calc(50% + 21px) 50%/42px 160px  repeat-y;
+          -webkit-mask: var(--mask);
+                mask: var(--mask);
+      }
+      40% {
+          --mask:
+          radial-gradient(90.94px at calc(100% + 80.00px) 50%,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 21.5px + .5px) calc(50% - 80px)/ 43px 160px  repeat-y,
+          radial-gradient(90.94px at -80px 50%,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% + 21.5px) 50%/43px 160px  repeat-y;
+          -webkit-mask: var(--mask);
+                mask: var(--mask);
+      }
+      60% {
+          --mask:
+          radial-gradient(91.44px at calc(100% + 80.00px) 50%,#0000 calc(99% - 4px),#000 calc(101% - 4px) 99%,#0000 101%) calc(50% - 22px + .5px) calc(50% - 80px)/ 44px 160px  repeat-y,
+          radial-gradient(91.44px at -80px 50%,#0000 calc(99% - 4px),#000 calc(101% - 4px) 99%,#0000 101%) calc(50% + 22px) 50%/44px 160px  repeat-y;
+          -webkit-mask: var(--mask);
+                mask: var(--mask);
+
+          /* Temporisation du changement de couleur (OK) */
+          /* background-color: #16eb67; */
+          /* Pour le fadePNG en bas de la tige: ATTENTION LA TRANSIOTION DE COULEUR NEST PLUS SMOOTH A CAUSE DU GRADIENT PNG */
+          background: rgb(22,235,103);
+          background: -moz-linear-gradient(180deg, rgba(22,235,103,1) 85%, rgba(22,235,103,0) 100%);
+          background: -webkit-linear-gradient(180deg, rgba(22,235,103,1) 85%, rgba(22,235,103,0) 100%);
+          background: linear-gradient(180deg, rgba(22,235,103,1) 85%, rgba(22,235,103,0) 100%);
+      }
+      80% {
+          --mask:
+          radial-gradient(91.94px at calc(100% + 80.00px) 50%,#0000 calc(99% - 5px),#000 calc(101% - 5px) 99%,#0000 101%) calc(50% - 22.5px + .5px) calc(50% - 80px)/ 45px 160px  repeat-y,
+          radial-gradient(91.94px at -80px 50%,#0000 calc(99% - 5px),#000 calc(101% - 5px) 99%,#0000 101%) calc(50% + 22.5px) 50%/45px 160px  repeat-y;
+          -webkit-mask: var(--mask);
+                mask: var(--mask);
+
+          /* Temporisation du changement de couleur (OK) */
+          /* background-color: #16eb67; */
+      }
+      100% {
+          --mask:
+          radial-gradient(92.44px at calc(100% + 80.00px) 50%,#0000 calc(99% - 6px),#000 calc(101% - 6px) 99%,#0000 101%) calc(50% - 23px + .5px) calc(50% - 80px)/ 46px 160px  repeat-y,
+          radial-gradient(92.44px at -80px 50%,#0000 calc(99% - 6px),#000 calc(101% - 6px) 99%,#0000 101%) calc(50% + 23px) 50%/46px 160px  repeat-y;
+          -webkit-mask: var(--mask);
+                mask: var(--mask);
+
+          /* background-color: #ffba31; */
+          /* Pour le fadePNG en bas de la tige: ATTENTION LA TRANSITION DE COULEUR NEST PLUS SMOOTH A CAUSE DU GRADIENT PNG */
+          /* Plus fadeGreen au dessus du transparency */
+          background: rgb(255,186,49);
+          background: -moz-linear-gradient(180deg, rgba(255,186,49,1) 50%, rgba(146,209,74,1) 85%, rgba(22,235,103,0) 100%);
+          background: -webkit-linear-gradient(180deg, rgba(255,186,49,1) 50%, rgba(146,209,74,1) 85%, rgba(22,235,103,0) 100%);
+          background: linear-gradient(180deg, rgba(255,186,49,1) 50%, rgba(146,209,74,1) 85%, rgba(22,235,103,0) 100%);
+
+          height: 42%;
+      }
+    
+    }
+
+
+    #leafRight {
+      position: absolute;
+      bottom: 4%;
+      width: 0px;
+      opacity: 0;
+
+      animation: leafPousse1 3s 0.7s normal forwards ease-in-out;
+    }
+    @keyframes leafPousse1 {
+      0% {
+        bottom: 4%;
+        width: 0px;
+        opacity: 0;
+      }
+      100% {
+        transform: translate(62px, 7px);
+        width: 90px;
+        opacity: 1;
+      }
+    }
+
+
+    /* NE PAS SUPPRIMER **********************/
+    /* LEAF de gauche: ANIM ROTATE STYLEE */
+    /* #leafLeft {
+      position: absolute;
+      bottom: 4%;
+      width: 0px;
+      opacity: 0;
+
+      transform: rotateZ('279deg');
+
+      animation: leafPousse2 4s 1.5s normal forwards ease-in-out;
+    }
+    @keyframes leafPousse2 {
+      0% {
+        bottom: 4%;
+        width: 0px;
+        opacity: 0;
+      }
+      100% {
+        transform: rotateZ(279deg) translate(26px, -69px);
+        width: 112px;
+        opacity: 1;
+      }
+    } */
+
+    /* LEAF de gauche: SANS ANIM ROTATE: */
+    #leafLeft {
+      position: absolute;
+      bottom: 4%;
+      width: 0px;
+      opacity: 0;
+
+      transform: rotateZ(279deg);
+
+      animation: leafPousse2 3s 0.7s normal forwards ease-in-out;
+    }
+    @keyframes leafPousse2 {
+      0% {
+        bottom: 4%;
+        width: 0px;
+        opacity: 0;
+      }
+      100% {
+        width: 136px;
+        opacity: 1;
+        transform: rotateZ(279deg) translate(21px, -82px);
+
+      }
+    }
+
+
+
+    #sunflower {
+      position: absolute;
+      /* Fleur qui suit la tige: pas beau */
+      /* bottom: 5%; */
+
+      width: 0px;
+      opacity: 0;
+
+      animation: sunflower 3s 0.7s normal forwards ease-in-out;
+    }
+    @keyframes sunflower {
+      0% {
+        /* Fleur qui suit la tige: pas beau */
+        /* bottom: 5%; */
+
+        width: 0;
+        opacity: 0;
+      }
+      100% {
+        /* Fleur qui suit la tige: pas beau */
+        /* bottom: 39%; */
+
+        opacity: 1;
+        width: 220px;
+        transform: rotate(120deg);
+      }
+    }
+
+
+
+
+
+
+
+
+    #smile {
+      position: relative;
+
+      /* width: 0px; */
+      width: 135px;
+      opacity: 0;
+      right: 9px;
+
+      animation: fadeInSmile 0.7s 3s normal forwards ease-in-out;
+    }
+    @keyframes fadeInSmile {
+      from {
+        /* width: 0px; */
+        opacity: 0;
+      }
+      to {
+        /* width: 135px; */
+        opacity: 1;
+      }
+    }
+
+  
+  

@@ -651,12 +651,28 @@
 
         position: fixed;
         top: 30%;
+        z-index: -5;
 
 
-        animation: move 6000ms 1000ms infinite ease;
+        animation: move 6500ms 1500ms infinite ease;
         width: 80px;
         height: 80px;
 
+    }
+
+
+    #motion-demo2 {
+        /* https://yqnn.github.io/svg-path-editor/ */
+        offset-path: path("M 248 -160 C -84 114 470 603 30 872");
+        position: fixed;
+
+        top: -5%;
+
+
+        animation: move2 13500ms 2000ms infinite ease-out;
+        width: 200px;
+        height: 200px;
+    
     }
 
     /* Faire la meme un peu modifié et devant les photos */

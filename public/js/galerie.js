@@ -28,10 +28,10 @@ window.onload = function() {
 
     // One-liner pour proc quand all img chargées 
     Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
-      console.log('images finished loading');
       // alert('chargé');
 
-      // Mettre un fadeOut et decoup un timeOut sur l'appartion des images
+      document.getElementById('motion-demo').style.display = "block";
+      document.getElementById('motion-demo2').style.display = "block";
       document.getElementById('spinnerDiv').remove();
     });
 

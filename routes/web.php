@@ -38,3 +38,7 @@ Route::get('/veille', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/iframe', function () {
+    return view('iframe');
+});
