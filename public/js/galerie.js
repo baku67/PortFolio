@@ -4,17 +4,29 @@ window.onload = function() {
 
     // Apparition des articles
     let articles = document.querySelectorAll("article");
+    let articlesImg = document.querySelectorAll("img");
+    var nbr = 0;
+    
 
     articles.forEach((element, i) => {
         setTimeout(function() {
             element.classList.add("galeriePhotoFadeIn");
         }, i * 40)
+
     })
     // Fin apparition
 
+    // Compteur d'image chargées (HS: tout proc à la fin)
+    // articlesImg.forEach(element => {
+    //   if ((element.complete) && (element.naturalHeight !== 0)) {
+    //     nbr += 1;
+    //     console.log(nbr);
+    //   }
+    // });
 
 
-    // One-liner pour proc quand all img chargées
+
+    // One-liner pour proc quand all img chargées 
     Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
       console.log('images finished loading');
       // alert('chargé');

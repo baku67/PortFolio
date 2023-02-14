@@ -120,7 +120,10 @@
 
             <!-- Spinner pendant le charegement des images -->
             <!-- <img src="img/spinner.png" id="spinnerImg" alt="chargement en cours"> -->
+            <!-- https://loading.io/css/ -->
             <div id="spinnerDiv" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            <!-- Test anim poisson -->
+            <div id="motion-demo" class="poisson"></div>
 
             <!-- <h3 style="font-size:170%; text-align:center; text-decoration:underline; text-underline-position:under; text-decoration-color:#ef3b2d;">Galerie: </h3> -->
             <!-- <br> -->

@@ -6,6 +6,7 @@
 
         background-size: 1200% 1200%;
         animation: gradientAnimProjet 2s ease 0s normal forwards running;
+        /* width: 100vh; */
     }
     @keyframes gradientAnimProjet {
         from {
@@ -21,7 +22,8 @@
     #pageContainer {
         background-size: cover;
         background-repeat: no-repeat;
-        height: 200px !important;
+        /* height: 200px !important; */
+        height: fit-content;
         margin: 0% 5% !important;
     }
 
@@ -314,7 +316,7 @@
         width: 257px;
     }
     .barreGalerieSouligne {
-        width: 128px;
+        width: 122px;
         bottom: 8px;
         margin-bottom: 30px;
     }

@@ -193,7 +193,7 @@
 
             <!-- Contenu loadJS Documentation -->
             <div id="docuLoadContainer-wrapper">
-                <div id="docuLoadContainer" style="padding-bottom: 50px;"> 
+                <div id="docuLoadContainer" class="paddingBottom"> 
                 </div>
             <div>
 

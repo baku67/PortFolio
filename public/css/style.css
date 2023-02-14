@@ -494,7 +494,8 @@ li::before {
 #pageContainer {
     background-size:cover;
     background-repeat:no-repeat;
-    height:400px;
+    /* height:400px; */
+    height: fit-content;
     margin:0% 10%;
 }
 
@@ -1942,7 +1943,7 @@ li.veilleLigneAjout::before {
 
 
 
-
+/* https://loading.io/css/ */
 .lds-ring {
     display: inline-block;
     /* position: */
@@ -2003,6 +2004,32 @@ li.veilleLigneAjout::before {
 
 
 
+  .paddingBottom {
+    padding-bottom: 50px;
+  }
 
 
 
+  #motion-demo {
+    offset-path: path("M20,20 C20,100 200,0 200,100");
+    animation: move 3000ms infinite alternate ease-in-out;
+    width: 80px;
+    height: 80px;
+
+    /* background: cyan; */
+    content:url("/img/poisson_red.png");
+    transform: rotateY('180deg');
+  }
+  
+  @keyframes move {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
+
+  /* div.poisson::before {
+    content:url("/img/poisson_red.png");
+  } */
