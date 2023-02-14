@@ -201,6 +201,7 @@
     .traitSeparateurProjet {
         position: relative;
         /* bottom: 300px; */
+        margin: 80px auto 80px auto;
     }
     #docuLoadContainer-wrapper {
         position: relative;
@@ -268,10 +269,15 @@
         margin-block-end: 0em;
     }
     
+    #titleCv {
+        margin-block-start: 0.7em;
+        margin-block-end: 0.7em;
+    }
 
     .projetTitle {
         font-size: 2.3em;
         /* top: 40px; */
+        margin-block-start:0.7em;
     }
     .veilleTitle {
         font-size: 2.5em;
@@ -300,7 +306,7 @@
 
 
     .barreProjetSouligne {
-        width: 182px !important;
+        width: 188px !important;
         bottom: 4px !important;
         animation: barreProjetSouligne 1s ease 0s normal forwards running !important;
     }
@@ -319,7 +325,8 @@
             height: 15px;
         }
         to {
-            right: -85px;
+            /* right: -85px; */
+            right: -79px;
             background-color: rgba(239, 59, 45, 0.9);
             height: 8px;
         }
@@ -624,7 +631,14 @@
 
 
 
-
+    .lds-ring {
+        width: 80px;
+        height: 80px;
+    }
+    .lds-ring div {
+        width: 64px;
+        height: 64px;    
+    }
 
 
 

@@ -44,11 +44,19 @@
         <!-- Header  -->
         <div>
                 
-            <h1 style="color:#ef3b2d; line-height:0; margin: 25px 0px 25px 4%;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
+            <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
+            <div style="width:100%;">
+                <h1 id="portfolioTitle" style="margin-left:4%; color:#ef3b2d; margin-block-start:0.1em;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
+                </br>
+                <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
+            </div>
+
+            <!-- Ancien header  -->
+            <!-- <h1 style="color:#ef3b2d; line-height:0; margin: 25px 0px 25px 4%;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1> -->
 
             <!-- Menu -->
             <div id="NavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
-                <p id="menuLigne" style="color:#E7E8F2;">
+                <p id="menuLigneCv" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                     &nbsp; 
                     <a id="cvMenu" class="menuButton" href="/cv">Mon parcours</a> 
@@ -185,7 +193,7 @@
 
             <!-- Contenu loadJS Documentation -->
             <div id="docuLoadContainer-wrapper">
-                <div id="docuLoadContainer"> 
+                <div id="docuLoadContainer" style="padding-bottom: 50px;"> 
                 </div>
             <div>
 

@@ -108,7 +108,6 @@
             <h3 class="galerieTitle"> Loisirs <span class="carreTitre carreTitreVeille">▪</span></h3>
             <div class="barreGalerieSouligne"></div>
 
-            </br>
             <h4 id="photographieTitle">Photographie</h4>
 
 
@@ -118,6 +117,10 @@
 
 
         <div class="galerieDiv">
+
+            <!-- Spinner pendant le charegement des images -->
+            <!-- <img src="img/spinner.png" id="spinnerImg" alt="chargement en cours"> -->
+            <div id="spinnerDiv" class="lds-ring"><div></div><div></div><div></div><div></div></div>
 
             <!-- <h3 style="font-size:170%; text-align:center; text-decoration:underline; text-underline-position:under; text-decoration-color:#ef3b2d;">Galerie: </h3> -->
             <!-- <br> -->

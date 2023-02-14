@@ -1719,7 +1719,7 @@ li::before {
 }
 .barreProjetSouligne {
     height:15px; 
-    width:274px; 
+    width:293px; 
     background-color:#e2e8f0; 
     position:relative; 
     bottom:13px;
@@ -1748,7 +1748,7 @@ li::before {
     }
     to {
         /* right: -531px; */
-        right: -50%;
+        right: -51%;
         transform: translateX(-47%);
         background-color:#ef3b2d;
         height:8px; 
@@ -1940,6 +1940,66 @@ li.veilleLigneAjout::before {
 
 }
 
+
+
+
+.lds-ring {
+    display: inline-block;
+    /* position: */
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 160px;
+    height: 160px;
+
+    /* FadeIn */
+    opacity: 0;
+    animation: fadeInSpinner 0.5s 2s normal forwards ease;
+  }
+  @keyframes fadeInSpinner {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.8;
+    }
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+
+    width: 128px;
+    height: 128px;
+
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #ef3b2d transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 
 

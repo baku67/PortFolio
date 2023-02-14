@@ -76,7 +76,7 @@
         <!-- Contenu Page -->
         <div id="pageContainer">
 
-            <h2 class="pageTitle cvTitle">Mon &nbsp;<span style="letter-spacing:1px;">parcours</span></h2>
+            <h2 id="titleCv" class="pageTitle cvTitle">Mon &nbsp;<span style="letter-spacing:1px;">parcours</span></h2>
 
             <!-- </br>
 
@@ -89,12 +89,10 @@
                 <div class="formations">
                     <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Formations <span class="highlightSpan">/&#x3e;</span></p>
                     <ul>
-                        <li>
-                            2023: <span class="highlightSpan">Formation "Développeur web et web mobile"</span> à Elan Formation
+                        <li>2023: <span class="highlightSpan">Formation "Développeur web et web mobile"</span> à Elan Formation
                         </li>
                         <div class="separateurListe light"></div>
-                        <li>
-                            2020-2022: <span class="highlightSpan">BTS SIO - Option SLAM</span> (Solutions Logicielles et Applications Métiers)
+                        <li>2020-2022: <span class="highlightSpan">BTS SIO - Option SLAM</span> (Solutions Logicielles et Applications Métiers)
                             </br>
                             <span class="highlightSpan">Alternance</span> chez Europe Tech Group (Haguenau)
                         </li>
