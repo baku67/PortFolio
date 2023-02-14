@@ -645,6 +645,44 @@
 
 
 
+    #motion-demo {
+        /* https://yqnn.github.io/svg-path-editor/ */
+        offset-path: path("M -79 5 C 70 132 381 -20 491 82");
+
+        position: fixed;
+        top: 30%;
+
+
+        animation: move 6000ms 1000ms infinite ease;
+        width: 80px;
+        height: 80px;
+
+    }
+
+    /* Faire la meme un peu modifié et devant les photos */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
