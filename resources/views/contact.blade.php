@@ -80,7 +80,7 @@
         <!-- Header  -->
         <div>
                 
-            <h1 style="color:#ef3b2d; line-height:0; margin: 25px 0px 25px 4%;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
+            <h1 style="color:#ef3b2d; line-height:0; margin: 29px 0px 25px 4%;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
 
             <!-- Menu -->
             <div id="NavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
@@ -125,6 +125,8 @@
             <!-- Test anim poisson -->
             <div id="motion-demo"></div>
             <div id="motion-demo2"></div>
+            <div id="motion-demo3a"></div> 
+            <div id="motion-demo3b"></div> 
 
 
             <!-- <h3 style="font-size:170%; text-align:center; text-decoration:underline; text-underline-position:under; text-decoration-color:#ef3b2d;">Galerie: </h3> -->
