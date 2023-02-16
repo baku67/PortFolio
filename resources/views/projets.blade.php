@@ -82,8 +82,6 @@
 
         <div id="pageContainer">
 
-        <!-- <div class="iframeWrapper"> -->
-
             <!-- <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets <span id="project1Button" class="switchProjectButton buttonProjectActif">1</span><span id="project2Button" class="switchProjectButton">2</span></p> -->
             <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets </p>
 
@@ -200,8 +198,10 @@
 
 
         </div>
-
         
+
+        <footer>www.portfolio.basilek.ovh</footer>
+
 
     </body>
 

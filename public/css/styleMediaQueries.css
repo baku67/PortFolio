@@ -567,10 +567,11 @@
 
 
     .galerieAccueil {
+        justify-content: center;
         display: grid; 
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-        gap: 6px 2px; 
+        gap: 20px 20px; 
         grid-template-areas: 
           "photo1 photo2"
           "photo3 photo4"
@@ -675,7 +676,9 @@
 
     /* Faire la meme un peu modifié et devant les photos */
 
-
+    #motion-demo3a {
+        offset-path: path("M -76 920 C 189 703 170 119 354 -59");
+    }
 
 
 

@@ -46,27 +46,65 @@ body {
 }
 
 
+footer {
+    padding: 15px 0;
+    background-color: #161a24;
+    color: #565973;
+    font-size: 0.9em;
+    text-align: center;
+
+    opacity: 0;
+    /* Juste pour eviter le pop puis decalage lors du chargement du form(qui est un api) */
+    animation: fadeIn 0.1s 0.5s forwards;
+}
+
+
+
+
+
+input:not(.plezi-submit-btn), textarea {
+    background-color: #1b1f2a !important;
+    border: 1px solid #ef3b2d !important;
+    color: #E7E8F2 !important;
+}
+textarea:focus, input:focus{  
+    outline: 1px solid #ef3b2d !important;;
+}
+
+.plezi-submit-btn {
+    transition: all 0.5s;
+}
+.plezi-submit-btn:hover {
+    background-color: #161a24 !important;
+    color: #ef3b2d !important;
+    border: 1px solid rgba(239, 59, 45, 0.5) !important;
+}
 
 
 #plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643 {
     opacity: 0;
     background-color: #1b1f2a !important;
     border-radius: 5px;
-    margin-top: 45px;
+    margin-top: 45px !important;
 
     border-top: 1px solid rgba(239, 59, 45, 0.6);
     border-bottom: 1px solid rgba(239, 59, 45, 0.6);
-
+    /* height: 0px; */
+    overflow: scroll;
+    font-family: 'Nunito', sans-serif;
 }
+
 .fadeInForm {
-    animation: fadeInForm 0.5s 0s ease-in forwards;
+    animation: fadeInForm 1s 0s ease-in forwards;
 }
 @keyframes fadeInForm {
     from {
         opacity: 0;
+        /* height: 0px; */
     }
     to {
         opacity: 1;
+        /* height: auto; */
     }
 }
 
@@ -80,11 +118,13 @@ body {
     padding: 10px 15px;
     border: 1px solid #ef3b2d;
     border-radius: 3px;
+    cursor: pointer;
 
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 #contactButton:hover {
-
+    background-color: #ef3b2d;
+    color: black;
 }
 
 
@@ -550,7 +590,7 @@ li::before {
     background-repeat:no-repeat;
     /* height:400px; */
     height: fit-content;
-    margin:0% 10%;
+    margin:0% 20%;
 }
 
 
@@ -1354,10 +1394,11 @@ li::before {
 
 
 .galerieAccueil {
+    justify-content: center;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    gap: 10px 0px; 
+    gap: 20px 20px; 
     grid-template-areas: 
       "photo1 photo2 photo3"
       "photo4 photo5 photo6"
@@ -2187,10 +2228,12 @@ li.veilleLigneAjout::before {
 
   /*  ANIMS JELLYFISHEEESSS (Le "saut" marche: possibilité de rajouter encore des etapes juste pour le rotateX qui fait l'effet de *BwOoPBwoOp*) */
   /* En vrai mettre des saut tout les 2% juste pour le rotateX pour plus de **BwOoPBwoOp**BwOoPBwoOp* */
+  /* rotateX = height (le bwoop) */
   #motion-demo3a {
     display: none;
     /* https://yqnn.github.io/svg-path-editor/ */
-    offset-path: path("M -76 920 C 189 703 207 72 434 -45");
+    offset-path: path("M -76 920 C 189 703 321 105 580 -22");
+    offset-rotate: auto;
     position: fixed;
 
     /* C'est à cause du top:5% que le path svg commence en haut */
@@ -2198,8 +2241,8 @@ li.veilleLigneAjout::before {
     z-index: -5;
 
     animation: move3a 30000ms 5000ms infinite linear;
-    width: 35px;
-    height: 65px;
+    width: 65px;
+    /* height: 65px; */
 
     content:url("/img/jellyfish.png");
     opacity: 0;
@@ -2209,6 +2252,7 @@ li.veilleLigneAjout::before {
     display: none;
     /* https://yqnn.github.io/svg-path-editor/ */
     offset-path: path("M -76 920 C 189 703 207 72 434 -45");
+    offset-rotate: auto;
     position: fixed;
 
     /* C'est à cause du top:5% que le path svg commence en haut */
@@ -2232,104 +2276,104 @@ li.veilleLigneAjout::before {
         offset-distance: 0%;
         opacity: 0;
         transform: rotateZ(75deg) rotateX(1deg);
-        width: 45px;
+        width: 65px;
     }
     5% {
         transform: rotateZ(75deg) rotateX(40deg);
-        width: 65px;
+        width: 85px;
     }
     11% {
-        opacity: 0.4;
+        opacity: 0.5;
         transform: rotateZ(75deg) rotateX(1deg);
-        width: 45px;
+        width: 65px;
 
     }
     16% {
         transform: rotateZ(75deg) rotateX(40deg);
-        width: 65px;
+        width: 85px;
 
     }
     22% {
-        opacity: 0.3;
+        opacity: 0.4;
         transform: rotateZ(75deg) rotateX(1deg);
-        width: 45px;
+        width: 65px;
 
     }
     27% {
         transform: rotateZ(75deg) rotateX(40deg);
-        width: 65px;
+        width: 85px;
 
     }
     33% {
-        opacity: 0.4;
+        opacity: 0.5;
         transform: rotateZ(75deg) rotateX(1deg);
-        width: 45px;
+        width: 65px;
 
     }
     38% {
         transform: rotateZ(75deg) rotateX(40deg);
-        width: 65px;
+        width: 85px;
 
     }
     44% {
-        opacity: 0.3;
+        opacity: 0.4;
         transform: rotateZ(75deg) rotateX(1deg);
-        width: 45px;
+        width: 65px;
 
     }
     49% {
         transform: rotateZ(75deg) rotateX(40deg);
-        width: 65px;
+        width: 85px;
 
     }
     55% {
-        opacity: 0.4;
+        opacity: 0.5;
         transform: rotateZ(75deg) rotateX(1deg);
-        width: 45px;
+        width: 65px;
 
     }
     60% {
         transform: rotateZ(75deg) rotateX(40deg);
-        width: 65px;
+        width: 85px;
 
     }
     66% {
-        opacity: 0.3;
+        opacity: 0.4;
         transform: rotateZ(75deg) rotateX(1deg);
-        width: 45px;
+        width: 65px;
 
     }
     71% {
         transform: rotateZ(75deg) rotateX(40deg);
-        width: 65px;
+        width: 85px;
 
     }
     77% {
-        opacity: 0.4;
+        opacity: 0.5;
         transform: rotateZ(75deg) rotateX(1deg);
-        width: 45px;
+        width: 65px;
 
     }
     82% {
         transform: rotateZ(75deg) rotateX(40deg);
-        width: 65px;
+        width: 85px;
 
     }
     88% {
-        opacity: 0.3;
+        opacity: 0.4;
         transform: rotateZ(75deg) rotateX(1deg);
-        width: 45px;
+        width: 65px;
 
     }
     93% {
         transform: rotateZ(75deg) rotateX(40deg);
-        width: 65px;
+        width: 85px;
 
     }
     100% {
-        opacity: 0.1;
+        opacity: 0.2;
         transform: rotateZ(75deg) rotateX(1deg);
-        width: 45px;
+        width: 65px;
 
         offset-distance: 100%;
     }
@@ -2339,69 +2383,106 @@ li.veilleLigneAjout::before {
         offset-distance: 0%;
         opacity: 0;
         transform: rotateZ(75deg) rotateX(1deg);
+        width: 45px;
     }
     5% {
         transform: rotateZ(75deg) rotateX(40deg);
+        width: 35px;
+
     }
     11% {
-        opacity: 0.3;
+        opacity: 0.4;
         transform: rotateZ(75deg) rotateX(1deg);
+        width: 45px;
+
     }
     16% {
         transform: rotateZ(75deg) rotateX(40deg);
+        width: 35px;
+
     }
     22% {
-        opacity: 0.15;
+        opacity: 0.25;
         transform: rotateZ(75deg) rotateX(1deg);
+        width: 45px;
+
     }
     27% {
         transform: rotateZ(75deg) rotateX(40deg);
+        width: 35px;
+
     }
     33% {
-        opacity: 0.3;
+        opacity: 0.4;
         transform: rotateZ(75deg) rotateX(1deg);
+        width: 45px;
+
     }
     38% {
         transform: rotateZ(75deg) rotateX(40deg);
+        width: 35px;
+
     }
     44% {
-        opacity: 0.15;
+        opacity: 0.25;
         transform: rotateZ(75deg) rotateX(1deg);
+        width: 45px;
+
     }
     49% {
         transform: rotateZ(75deg) rotateX(40deg);
+        width: 35px;
+
     }
     55% {
-        opacity: 0.3;
+        opacity: 0.4;
         transform: rotateZ(75deg) rotateX(1deg);
+        width: 45px;
+
     }
     60% {
         transform: rotateZ(75deg) rotateX(40deg);
+        width: 35px;
+
     }
     66% {
-        opacity: 0.15;
+        opacity: 0.25;
         transform: rotateZ(75deg) rotateX(1deg);
+        width: 45px;
+
     }
     71% {
         transform: rotateZ(75deg) rotateX(40deg);
+        width: 35px;
+
     }
     77% {
-        opacity: 0.3;
+        opacity: 0.4;
         transform: rotateZ(75deg) rotateX(1deg);
+        width: 45px;
+
     }
     82% {
         transform: rotateZ(75deg) rotateX(40deg);
+        width: 35px;
+
     }
     88% {
-        opacity: 0.15;
+        opacity: 0.25;
         transform: rotateZ(75deg) rotateX(1deg);
+        width: 45px;
+
     }
     93% {
         transform: rotateZ(75deg) rotateX(40deg);
+        width: 35px;
+
     }
     100% {
-        opacity: 0.1;
+        opacity: 0.2;
         transform: rotateZ(75deg) rotateX(1deg);
+        width: 45px;
+
         offset-distance: 100%;
     }
   }

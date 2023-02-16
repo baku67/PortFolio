@@ -94,16 +94,15 @@
 
             <!-- form https://enjoy.plezi.co -->
             <button id="contactButton">Me contacter</button>
-            <div id="contactFormContainer">
-                <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
-                <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>    
-            </div>
-            
+            <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
+            <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>            
             <br><br>
 
 
 
         </div>
+        
+        <footer>www.portfolio.basilek.ovh</footer>
 
     </body>
 
