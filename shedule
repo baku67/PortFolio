@@ -1,6 +1,3 @@
-Test anim Poisson while spinnerLoad galerie: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Motion_Path
-Mettre un content avec img ?
-
 Ajouter une page avec l'anim(Sunflower) et l'appeler dans iframe dans Loisir en dessous de photographie (section animation) !!!!! 
 Meilleur présentation du projet (jauge, exp, lvl): Maj screenshots, light=>darMode stylé, 
 Ajout footer simple (bg darker)
@@ -12,7 +9,32 @@ Rajouter tout les palier d'anim bwoPbwopbwop (pour le papa et le bébé)
 
 Délire:
     Observeur: quand on arrive sur la partie photo de plongé: proc background avec plusieurs layers d'effets de rayon de soleil from top (entrelacés, etc..) Bon chance
-    + Banc de poisson
+    + Banc de poisson !!! (massif et deplacement en mode "essaim", copier coller et juste changer le top et right offset)
+
+
+
+Formulaire de contact en bas de acceuil (bouton load form "me contacter")
+
+Anim avion en papier Path SVG looping (lors click bouton contactez moi (qui proc le form))
+Anim plutot quand on envoi (moins de visibilité :/) ou les 2
+
+
+portfolio PC accueil font-size + aligner (mobile et PC) cadre photo au coin du texte
+
+
+footer
+raie plus lente
+
+enlever les declencheur poisson script sauf pour le rapideTitle
+
+idée du alow sur le point du i (mettre le i en span et attaché un relative anim allow qui monte apres le pop title) + reflet https://freefrontend.com/css-water-effects/
+
+Pinner chargement modal (premier proc et la suivante/précédente)
+
+
+
+
+
 
 
 
