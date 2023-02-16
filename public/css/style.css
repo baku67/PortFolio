@@ -1398,7 +1398,7 @@ li::before {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    gap: 20px 20px; 
+    gap: 15px 25px; 
     grid-template-areas: 
       "photo1 photo2 photo3"
       "photo4 photo5 photo6"
@@ -1487,6 +1487,8 @@ li::before {
     margin: 0 20px;
 }
 .photosGallerie {
+    /* opacity: 1; */
+    display: block;
     width: 300px;
     margin: auto;
     border-radius: 2px;
@@ -1753,6 +1755,9 @@ li::before {
 
 
 #photographieTitle {
+    /* Clickable pour opacity 0/1 des images (voir l'aquarium) temporaire: deplacer dans un vrai bouton */
+    cursor: pointer;
+
     color: #ef3b2d;
     text-align: center;
     font-size: 2.5em;
