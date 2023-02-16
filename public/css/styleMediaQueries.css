@@ -484,8 +484,8 @@
         margin: 30px 10px 10px 18px;
         opacity: 1;
 
-        border: 2px solid rgba(239, 59, 45, 0.7);
-        padding: 3px;
+        border: 1px solid rgba(239, 59, 45, 0.7);
+        padding: 2px;
     }
 
 
@@ -668,8 +668,6 @@
 
         top: -5%;
 
-
-        animation: move2 13500ms 2000ms infinite ease-out;
         width: 200px;
         height: 200px;
     
