@@ -4,10 +4,10 @@ window.onload = function() {
   document.getElementById("photographieTitle").addEventListener("click", function() {
     document.querySelectorAll(".photosGallerie").forEach(function(elem) {
       if (elem.style.display == "block") {
-        elem.style.opacity = "none";
+        elem.style.display = "none";
       }
       else {
-        elem.style.opacity = "block";
+        elem.style.display = "block";
       }
     });
   })

@@ -78,13 +78,13 @@
 
 
         <!-- Header  -->
-        <div>
+        <div class="testHeader">
                 
-            <h1 style="color:#ef3b2d; line-height:0; margin: 29px 0px 25px 4%;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
+            <h1 class="testH1">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
 
             <!-- Menu -->
-            <div id="NavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
-                <p id="menuLigne" style="color:#E7E8F2;">
+            <div id="NavBarContainer" class="testNavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
+                <p id="menuLigne" class="testMenuLigne" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                     &nbsp; 
                     <a id="cvMenu" class="menuButton" href="/cv">Mon parcours</a> 

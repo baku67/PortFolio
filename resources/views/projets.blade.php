@@ -83,11 +83,11 @@
         <div id="pageContainer">
 
             <!-- <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets <span id="project1Button" class="switchProjectButton buttonProjectActif">1</span><span id="project2Button" class="switchProjectButton">2</span></p> -->
-            <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets </p>
+            <p class="projetTitle testProjetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets </p>
 
             
             <!-- Ajouter effet glissade from gauche to droite (mais qui se genere depuis le debut du titre pas de l'écran :/ ) -->
-            <div class="barreProjetSouligne"></div>
+            <div class="barreProjetSouligne testBarreProjetSouligne"></div>
 
 
 
