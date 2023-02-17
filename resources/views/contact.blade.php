@@ -136,70 +136,70 @@
 
                 <article class="location-listing images" alt="1" def="Poti poasson" style="margin:auto; position:relative; cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo1 location-image">
+                    <div class="photosGallerie photo1 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/1_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="2" style="margin:auto; position:relative; cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo2 location-image">
+                    <div class="photosGallerie photo2 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/2_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="3" style="margin:auto; position:relative; cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo3 location-image">
+                    <div class="photosGallerie photo3 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/3_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="4" style="margin:auto; position:relative; cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo4 location-image">
+                    <div class="photosGallerie photo4 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/4_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="5" style="margin:auto; position:relative; cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo5 location-image">
+                    <div class="photosGallerie photo5 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/5_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="6" style="margin:auto; position:relative; cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo6 location-image">
+                    <div class="photosGallerie photo6 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/6_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="7" style="margin:auto; position:relative; cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo7 location-image">
+                    <div class="photosGallerie photo7 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/7_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="8" style="margin:auto; position:relative; cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo8 location-image">
+                    <div class="photosGallerie photo8 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/8_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="9" style="margin:auto; position:relative; cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo9 location-image">
+                    <div class="photosGallerie photo9 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/9_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="10" style="margin:auto; position:relative; cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo10 location-image">
+                    <div class="photosGallerie photo10 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/10_preview.jpg"/>
                     </div>
                 </article>
@@ -225,321 +225,321 @@
 
                 <article class="location-listing images" alt="11" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo11 location-image">
+                    <div class="photosGallerie photo11 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/11_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="12" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo12 location-image">
+                    <div class="photosGallerie photo12 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/12_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="13" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo13 location-image">
+                    <div class="photosGallerie photo13 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/13_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="14" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo14 location-image">
+                    <div class="photosGallerie photo14 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/14_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="15" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo15 location-image">
+                    <div class="photosGallerie photo15 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/15_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="16" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo16 location-image">
+                    <div class="photosGallerie photo16 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/16_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="17" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo17 location-image">
+                    <div class="photosGallerie photo17 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/17_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="18" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo18 location-image">
+                    <div class="photosGallerie photo18 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/18_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="19" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo19 location-image">
+                    <div class="photosGallerie photo19 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/19_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="20" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo20 location-image">
+                    <div class="photosGallerie photo20 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/20_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="21" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo21 location-image">
+                    <div class="photosGallerie photo21 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/21_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="22" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo22 location-image">
+                    <div class="photosGallerie photo22 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/22_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="23" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo23 location-image">
+                    <div class="photosGallerie photo23 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/23_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="24" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo24 location-image">
+                    <div class="photosGallerie photo24 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/24_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="25" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo25 location-image">
+                    <div class="photosGallerie photo25 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/25_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="26" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo26 location-image">
+                    <div class="photosGallerie photo26 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/26_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="27" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo27 location-image">
+                    <div class="photosGallerie photo27 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/27_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="28" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo28 location-image">
+                    <div class="photosGallerie photo28 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/28_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="29" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo29 location-image">
+                    <div class="photosGallerie photo29 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/29_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="30" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo30 location-image">
+                    <div class="photosGallerie photo30 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/30_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="31" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo31 location-image">
+                    <div class="photosGallerie photo31 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/31_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="32" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo32 location-image">
+                    <div class="photosGallerie photo32 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/32_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="33" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo33 location-image">
+                    <div class="photosGallerie photo33 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/33_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="34" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo34 location-image">
+                    <div class="photosGallerie photo34 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/34_preview.jpg"/>
                     </div>
                 </article>
                 <article class="location-listing images" alt="35" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo35 location-image">
+                    <div class="photosGallerie photo35 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/35_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="36" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo36 location-image">
+                    <div class="photosGallerie photo36 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/36_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="37" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo37 location-image">
+                    <div class="photosGallerie photo37 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/37_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="38" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo38 location-image">
+                    <div class="photosGallerie photo38 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/38_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="39" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo39 location-image">
+                    <div class="photosGallerie photo39 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/39_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="40" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo40 location-image">
+                    <div class="photosGallerie photo40 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/40_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="41" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo41 location-image">
+                    <div class="photosGallerie photo41 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/41_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="42" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo42 location-image">
+                    <div class="photosGallerie photo42 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/42_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="43" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo43 location-image">
+                    <div class="photosGallerie photo43 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/43_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="44" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo44 location-image">
+                    <div class="photosGallerie photo44 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/44_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="45" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo45 location-image">
+                    <div class="photosGallerie photo45 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/45_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="46" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo46 location-image">
+                    <div class="photosGallerie photo46 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/46_preview.jpg"/>
                     </div>
                 </article>
                 
                 <article class="location-listing images" alt="47" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo47 location-image">
+                    <div class="photosGallerie photo47 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/47_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="48" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo48 location-image">
+                    <div class="photosGallerie photo48 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/48_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="49" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo49 location-image">
+                    <div class="photosGallerie photo49 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/49_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="50" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo50 location-image">
+                    <div class="photosGallerie photo50 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/50_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="51" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo51 location-image">
+                    <div class="photosGallerie photo51 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/51_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="52" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo52 location-image">
+                    <div class="photosGallerie photo52 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/52_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="53" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo53 location-image">
+                    <div class="photosGallerie photo53 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/53_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="54" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo54 location-image">
+                    <div class="photosGallerie photo54 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/54_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="55" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo55 location-image">
+                    <div class="photosGallerie photo55 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/55_preview.jpg"/>
                     </div>
                 </article>
 
                 <article class="location-listing images" alt="56" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo56 location-image">
+                    <div class="photosGallerie photo56 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/56_preview.jpg"/>
                     </div>
                 </article>
@@ -547,7 +547,7 @@
                 
                 <article class="location-listing images" alt="57" style="margin:auto; position:relative;  cursor:pointer;">
                     <p class="loupesGalerie">Zoom</p>
-                    <div class="photosGallerie photo57 location-image">
+                    <div class="photosGallerie photo57 location-image" style="display:block;">
                             <img style="width:100%; height:auto; margin:auto; vertical-align:middle; border-radius:3px;" src="img/galerie/57_preview.jpg"/>
                     </div>
                 </article>
