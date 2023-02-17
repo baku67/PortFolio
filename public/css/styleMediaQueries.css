@@ -1,5 +1,9 @@
 @media only screen and (max-width: 600px) {
 
+    * {
+    -webkit-tap-highlight-color: transparent;
+    }
+
     body {
         background: linear-gradient(56deg, rgba(23,25,35,1) 0%, rgba(29,36,47,1) 41%, rgba(34,46,58,1) 50%, rgba(23,25,35,0.9943339884782038) 75%, rgba(23,25,35,0.9943339884782038) 99%);
         /* background: linear-gradient(56deg, rgba(23,25,35,1) 0%, rgba(29,36,47,1) 41%, rgba(54, 139, 150, 0.6) 50%, rgba(23,25,35,0.9943339884782038) 75%, rgba(23,25,35,0.9943339884782038) 99%); */
@@ -242,7 +246,13 @@
         text-align: center !important;
     }
 
-
+    .modal {
+        padding-top: 95px;
+    }
+    .close {
+        top: 82px;
+        right: 12px;
+    }
 
 
     #NavBarContainer {
@@ -262,7 +272,7 @@
         font-weight: bold;
         text-decoration-color: #171923;
         text-underline-offset: 1px;
-        text-decoration-thickness: 8px;
+        text-decoration-thickness: 4px;
     }
 
     #menuLigne {
