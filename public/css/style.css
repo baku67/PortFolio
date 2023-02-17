@@ -2235,7 +2235,7 @@ li.veilleLigneAjout::before {
     top: -5%;
     z-index: -5;
 
-    animation: move2 19000ms 2000ms infinite linear;
+    animation: move2 18000ms 2000ms infinite linear;
     width: 400px;
     height: 400px;
 
@@ -2544,6 +2544,65 @@ li.veilleLigneAjout::before {
   }
 
 
+  /* Raie manta */
+  #motion-demo_whaleShark {
+    display: none;
+    /* https://yqnn.github.io/svg-path-editor/ */
+    /* offset-path: path("M -65 176 A 1 1 0 0 0 -88 -451"); */
+    offset-path: path("M -283 488 C 342 153 217 -360 -205 -555");
+    
+
+    offset-rotate: auto;
+
+    position: fixed;
+
+    /* top: -5%; */
+    z-index: -5;
+
+    animation: moveWhaleShark 28000ms 8s infinite linear;
+    width: 600px;
+    height: 600px;
+
+    /* background: cyan; */
+    content:url("/img/whaleSharkDotted.png");
+    opacity: 0;
+    transform: rotateZ(105deg);
+  }
+  
+  @keyframes moveWhaleShark {
+    0% {
+        offset-distance: 0%;
+        opacity: 0;
+    }
+    11% {
+        opacity: 0.40;
+    }
+    22% {
+        opacity: 0.2;
+    }
+    33% {
+        opacity: 0.40;
+    }
+    44% {
+        opacity: 0.2;
+    }
+    55% {
+        opacity: 0.40;
+    }
+    66% {
+        opacity: 0.2;
+    }
+    77% {
+        opacity: 0.40;
+    }
+    88% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.1;
+        offset-distance: 100%;
+    }
+  }
 
 
 

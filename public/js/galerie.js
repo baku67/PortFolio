@@ -45,6 +45,8 @@ window.onload = function() {
       document.getElementById('motion-demo2').style.display = "block";
       document.getElementById('motion-demo3a').style.display = "block";
       document.getElementById('motion-demo3b').style.display = "block";
+      document.getElementById('motion-demo_whaleShark').style.display = "block";
+
 
 
       document.getElementById('spinnerDiv').remove();
