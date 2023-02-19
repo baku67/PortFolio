@@ -2256,6 +2256,7 @@ li.veilleLigneAjout::before {
   /* Raie manta */
   #motion-demo2 {
     display: none;
+    filter: blur(2px);
     /* https://yqnn.github.io/svg-path-editor/ */
     offset-path: path("M 248 -160 C -84 114 470 603 30 872");
     offset-rotate: auto;
@@ -2574,63 +2575,72 @@ li.veilleLigneAjout::before {
   }
 
 
-  /* Raie manta */
+  /* WhaleShark */
   #motion-demo_whaleShark {
     display: none;
+    filter: blur(3px);
     /* https://yqnn.github.io/svg-path-editor/ */
     /* offset-path: path("M -65 176 A 1 1 0 0 0 -88 -451"); */
-    offset-path: path("M -283 488 C 342 153 217 -360 -205 -555");
+    /* offset-path: path("M -283 488 C 342 153 217 -360 -205 -555"); */
     
 
     offset-rotate: auto;
 
     position: fixed;
 
-    /* top: -5%; */
+    /* Modif Path:  */
+    top: 10%;
+    offset-path: path("M -270 -108 C 100 349 557 46 600 -108");
+
+
     z-index: -5;
 
-    animation: moveWhaleShark 32000ms 5s infinite linear;
+    animation: moveWhaleShark 30000ms 5s infinite linear;
     width: 600px;
     height: 600px;
 
     /* background: cyan; */
     content:url("/img/whaleSharkDotted.png");
     opacity: 0;
-    transform: rotateZ(105deg);
+    transform: rotateZ(98deg);
   }
   
   @keyframes moveWhaleShark {
     0% {
         offset-distance: 0%;
         opacity: 0;
+        filter: blur(3px);
     }
     11% {
-        opacity: 0.40;
+        opacity: 0.25;
     }
     22% {
         opacity: 0.2;
     }
     33% {
-        opacity: 0.40;
+        opacity: 0.25;
     }
     44% {
         opacity: 0.2;
     }
     55% {
-        opacity: 0.40;
+        opacity: 0.25;
     }
     66% {
         opacity: 0.2;
     }
     77% {
-        opacity: 0.40;
+        opacity: 0.25;
     }
     88% {
         opacity: 0.2;
+        filter: blur(3px);
     }
     100% {
         opacity: 0.1;
         offset-distance: 100%;
+        filter: blur(7px);
+
     }
   }
 
