@@ -4,17 +4,34 @@ window.onload = function() {
   document.getElementById("photographieTitle").addEventListener("click", function() {
     document.querySelectorAll(".photosGallerie").forEach(function(elem) {
       if (elem.style.display == "block") {
-        elem.style.display = "none";
+        elem.classList.remove("fadeIn");
+        elem.classList.add("fadeOut");
+        setTimeout(function() {
+          elem.style.display = "none";
+          elem.classList.remove("fadeOut");
+        }, 500)
       }
       else {
-        elem.style.display = "block";
+        elem.classList.remove("fadeOut");
+
+          elem.style.display = "block";
+          elem.classList.add("fadeIn");
+          setTimeout(function() {
+            elem.classList.remove("fadeIn");
+          })
       }
     });
     msgHd = document.getElementById("messageGalerie");
     if (msgHd.style.display == "block") {
-      msgHd.style.display = "none";
+      msgHd.classList.remove("fadeInHd");
+      msgHd.classList.add("fadeOut");
+      setTimeout(function() {
+        msgHd.style.display = "none";
+      }, 500)
     }
     else if (msgHd.style.display == "none") {
+      msgHd.classList.remove("fadeOut");
+      msgHd.classList.add("fadeInHd");
       msgHd.style.display = "block";
     }
   })
@@ -52,6 +69,10 @@ window.onload = function() {
       document.getElementById('motion-demo3a').style.display = "block";
       document.getElementById('motion-demo3b').style.display = "block";
       document.getElementById('motion-demo_whaleShark').style.display = "block";
+      document.getElementById('motion-demo_tortoise').style.display = "block";
+      // document.getElementById('motion-demoBubble1').style.display = "block";
+
+
 
       document.getElementById("messageGalerie").classList.add("fadeInHd");
 
@@ -65,7 +86,7 @@ window.onload = function() {
 
 
 
-    
+
 
     // Modal onClick
     $(document).ready(function() {
