@@ -45,6 +45,11 @@
         right: 10px;    
     }
 
+    .disclaimerContainer {
+        width:65% !important;
+        margin: 0px auto 0 auto;
+    }
+
 
     #disclaimerContenuWrapper {
         margin: 0 20px;

@@ -164,7 +164,9 @@
 
                     <div>
                         <div style="display:inline-flex;">
+                            <!-- <img src="img/attention.png" style="width:50px;height:50px; margin-right:15px; position:relative; top: 4px;"/> -->
                             <img src="img/attention.png" style="width:50px;height:50px; margin-right:15px; position:relative; top: 4px;"/>
+
                             <p class="highlightSpan" style="font-size:113%;">Attention</p>
                         </div>
                         <div id="disclaimerContenuWrapper">

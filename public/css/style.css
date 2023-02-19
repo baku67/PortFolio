@@ -611,7 +611,7 @@ li::before {
     background-repeat:no-repeat;
     /* height:400px; */
     height: fit-content;
-    margin:0% 20%;
+    margin:0% 10%;
 }
 
 
@@ -1775,7 +1775,6 @@ li::before {
 
 .disclaimerContainer {
     opacity: 0;
-    width: 2px;
     margin-top: 50px; 
     text-align:center; 
     position:relative; 
@@ -1785,6 +1784,9 @@ li::before {
     border-radius: 10px;
 
     font-size: 110%;
+
+    width:65% !important;
+    margin: 50px auto 0 auto;
 }
 .disclaimerContainerStyleScroll {
     animation: styleOnScroll 1s ease-in-out 0.1s normal forwards running, clignotementDisclaimer 2.1s ease-in-out 1s infinite;
