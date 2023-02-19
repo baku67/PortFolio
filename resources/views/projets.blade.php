@@ -82,124 +82,125 @@
 
         <div id="pageContainer">
 
-            <!-- <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets <span id="project1Button" class="switchProjectButton buttonProjectActif">1</span><span id="project2Button" class="switchProjectButton">2</span></p> -->
-            <p class="projetTitle testProjetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets </p>
-
-            
-            <!-- Ajouter effet glissade from gauche to droite (mais qui se genere depuis le debut du titre pas de l'écran :/ ) -->
-            <div class="barreProjetSouligne testBarreProjetSouligne"></div>
-
-
-
-            <div class="gridProjetHeaderContainer">
+                <!-- <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets <span id="project1Button" class="switchProjectButton buttonProjectActif">1</span><span id="project2Button" class="switchProjectButton">2</span></p> -->
+                <p class="projetTitle testProjetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets </p>
 
                 
+                <!-- Ajouter effet glissade from gauche to droite (mais qui se genere depuis le debut du titre pas de l'écran :/ ) -->
+                <div class="barreProjetSouligne testBarreProjetSouligne"></div>
 
 
-                <div class="header">
 
-                    <!-- Paragraphe qui fadeIn phrase par phrase?  -->
+                <div class="gridProjetHeaderContainer">
 
-                    <!-- Indentations &nbspc; ou margin-left ? -->
-                    <p class="headerLine1"><span class="pChevrons">&#x3c;</span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
                     
-                    <p class="headerLine2 indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">title</span><span class="pAttributes"> id</span>=<span class="pValues">"title"</span><span class="pChevrons">&#x3e;</span><span class="pText pText1" style="font-size:3.6em !important;">BlackJack Jo'</span><span class="pChevrons">&#x3c;/</span><span class="pTags">title</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="headerLine3 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">link</span><span class="pAttributes"> rel</span>=<span class="pValues">"icon" </span><span class="pAttributes">href</span>=<span class="pValues">"Images/favicon.png"</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="headerLine4 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> charset</span>=<span class="pValues">"UTF-8"</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="headerLine5 indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"description" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText pText2">Application de BlackJack en ligne</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="headerLine6 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"keywords" </span><span class="pAttributes">content</span>=<span class="pValues">"Blackjack, Jeu, Cartes"</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="headerLine7 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">script</span><span class="pAttributes"> src</span>=<span class="pValues">"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span>
-                        <br><span class="pAttributes">type</span>=<span class="pValues">"text/javascript"</span><span class="pChevrons">&#x3e;</span><span class="pChevrons">&#x3c;/</span><span class="pTags">script</span><span class="pChevrons">&#x3e;</span></p>
-                    <!-- Saut de ligne dans le paragraphe? -->
-                    <p class="headerLine8 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">script</span><span class="pAttributes"> src</span>=<span class="pValues">"text/javascript" </span><span class="pAttributes">src</span>=<span class="pValues">"scriptJouer.js"</span><span class="pChevrons">&#x3e;</span><span class="pChevrons">&#x3c;/</span><span class="pTags">script</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="headerLine9 indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"author" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText pText3">Basile Kuntz</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>
-                    <p class="headerLine10 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">link</span><span class="pAttributes"> rel</span>=<span class="pValues">"stylesheet" </span><span class="pAttributes">href</span>=<span class="pValues">"css/style.css" </span><span class="pAttributes">id</span>=<span class="pValues">"stylesheet_1"</span><span class="pChevrons">&#x3e;</span></p>
+
+
+                    <div class="header">
+
+                        <!-- Paragraphe qui fadeIn phrase par phrase?  -->
+
+                        <!-- Indentations &nbspc; ou margin-left ? -->
+                        <p class="headerLine1"><span class="pChevrons">&#x3c;</span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
+                        
+                        <p class="headerLine2 indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">title</span><span class="pAttributes"> id</span>=<span class="pValues">"title"</span><span class="pChevrons">&#x3e;</span><span class="pText pText1" style="font-size:3.6em !important;">BlackJack Jo'</span><span class="pChevrons">&#x3c;/</span><span class="pTags">title</span><span class="pChevrons">&#x3e;</span></p>
+                        <p class="headerLine3 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">link</span><span class="pAttributes"> rel</span>=<span class="pValues">"icon" </span><span class="pAttributes">href</span>=<span class="pValues">"Images/favicon.png"</span><span class="pChevrons">&#x3e;</span></p>
+                        <p class="headerLine4 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> charset</span>=<span class="pValues">"UTF-8"</span><span class="pChevrons">&#x3e;</span></p>
+                        <p class="headerLine5 indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"description" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText pText2">Application de BlackJack en ligne</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>
+                        <p class="headerLine6 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"keywords" </span><span class="pAttributes">content</span>=<span class="pValues">"Blackjack, Jeu, Cartes"</span><span class="pChevrons">&#x3e;</span></p>
+                        <p class="headerLine7 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">script</span><span class="pAttributes"> src</span>=<span class="pValues">"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span>
+                            <br><span class="pAttributes">type</span>=<span class="pValues">"text/javascript"</span><span class="pChevrons">&#x3e;</span><span class="pChevrons">&#x3c;/</span><span class="pTags">script</span><span class="pChevrons">&#x3e;</span></p>
+                        <!-- Saut de ligne dans le paragraphe? -->
+                        <p class="headerLine8 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">script</span><span class="pAttributes"> src</span>=<span class="pValues">"text/javascript" </span><span class="pAttributes">src</span>=<span class="pValues">"scriptJouer.js"</span><span class="pChevrons">&#x3e;</span><span class="pChevrons">&#x3c;/</span><span class="pTags">script</span><span class="pChevrons">&#x3e;</span></p>
+                        <p class="headerLine9 indented" style="line-height:60%;"><span class="pChevrons">&#x3c;</span><span class="pTags">meta</span><span class="pAttributes"> name</span>=<span class="pValues">"author" </span><span class="pAttributes">content</span>=<span class="pValues">"</span><span class="pText pText3">Basile Kuntz</span><span class="pValues">"</span><span class="pChevrons">&#x3e;</span></p>
+                        <p class="headerLine10 indented"><span class="pChevrons">&#x3c;</span><span class="pTags">link</span><span class="pAttributes"> rel</span>=<span class="pValues">"stylesheet" </span><span class="pAttributes">href</span>=<span class="pValues">"css/style.css" </span><span class="pAttributes">id</span>=<span class="pValues">"stylesheet_1"</span><span class="pChevrons">&#x3e;</span></p>
+                        
+                        <p class="headerLine11" style="line-height: 1.9em;"><span class="pChevrons">&#x3c;/</span></span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
+
+                    </div>
+
+
+                    <div class="iframe">
+                        <div id="boutonMockup"></div>
+                        <div id="boutonMockup2"></div>
+                        <div id="bouton3Container"><div id="boutonMockup3"></div></div>
+                        <div id="boutonMockup4"></div>
+                        <div id="boutonMockup5"></div>
+
+                        <!-- Wrapper pour effet de reflet superposé  -->
+                        <!-- <div class="iframeWrapper">
+                        </div> -->
+                        <!-- <iframe src="https://www.blackjackjo.com" style="position:absolute; z-index:0;" class="iframeElem" id="iframeElement"></iframe> -->
                     
-                    <p class="headerLine11" style="line-height: 1.9em;"><span class="pChevrons">&#x3c;/</span></span><span class="pTags">head</span><span class="pChevrons">&#x3e;</span></p>
+                        <iframe src="https://www.blackjackjo.com" class="iframeElem" id="iframeElement"></iframe>
 
-                </div>
+                        
+                        <!-- <form id="the-form" action="">
+                            Dark Mode: <input id="my-message" type="text">
+                            <input type="submit">
+                        </form> -->
+                        <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                    </div>
 
+                    <div class="description">
+                        <p class="paragrapheDescriptionProjet"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BlackJackJo' est un mon premier projet de développement web. Il s'agit d'une application web permettant à l'utilisateur de jouer au BlackJack seul contre un croupier. Elle comporte un système de compte permettant de garder les gains, sauvegarder les préférences utilisateurs, accéder à l'historique des parties, se classer par rapport aux autres utilisateurs,... Il est aussi possible de jouer en mode "Invité" juste pour tester. Les utilisateurs connectés reçoivent de l'XP selon les résultats de la partie, le streakWin, et les mises en jeu, et gagne des niveaux et des crédits. Le streakWin augmente vos gains d'XP, il augmente de 1 lorsque vous gagnez et baisse de 2 lorsque vous perdez.   </p>
+                    </div>
 
-                <div class="iframe">
-                    <div id="boutonMockup"></div>
-                    <div id="boutonMockup2"></div>
-                    <div id="bouton3Container"><div id="boutonMockup3"></div></div>
-                    <div id="boutonMockup4"></div>
-                    <div id="boutonMockup5"></div>
-
-                    <!-- Wrapper pour effet de reflet superposé  -->
-                    <!-- <div class="iframeWrapper">
+                    <!-- <div class="lienBJJcontainer">
+                        <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                     </div> -->
-                    <!-- <iframe src="https://www.blackjackjo.com" style="position:absolute; z-index:0;" class="iframeElem" id="iframeElement"></iframe> -->
-                
-                    <iframe src="https://www.blackjackjo.com" class="iframeElem" id="iframeElement"></iframe>
 
-                    
-                    <!-- <form id="the-form" action="">
-                        Dark Mode: <input id="my-message" type="text">
-                        <input type="submit">
-                    </form> -->
-                    <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                 </div>
 
-                <div class="description">
-                    <p class="paragrapheDescriptionProjet"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BlackJackJo' est un mon premier projet de développement web. Il s'agit d'une application web permettant à l'utilisateur de jouer au BlackJack seul contre un croupier. Elle comporte un système de compte permettant de garder les gains, sauvegarder les préférences utilisateurs, accéder à l'historique des parties, se classer par rapport aux autres utilisateurs,... Il est aussi possible de jouer en mode "Invité" juste pour tester. Les utilisateurs connectés reçoivent de l'XP selon les résultats de la partie, le streakWin, et les mises en jeu, et gagne des niveaux et des crédits. Le streakWin augmente vos gains d'XP, il augmente de 1 lorsque vous gagnez et baisse de 2 lorsque vous perdez.   </p>
-                </div>
-
-                <!-- <div class="lienBJJcontainer">
-                    <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
-                </div> -->
-
-            </div>
 
 
-
-            <!-- Tentative polygones stylés -->
-            <!-- <div class="shape"></div> -->
-
-
-            <!-- Disclaimer -->
-            <div id="disclaimerContainerElem" class="disclaimerContainer">
+                <!-- Tentative polygones stylés -->
+                <!-- <div class="shape"></div> -->
 
 
-                <div>
-                    <div style="display:inline-flex;">
-                        <img src="img/attention.png" style="width:50px;height:50px; margin-right:15px; position:relative; top: 4px;"/>
-                        <p class="highlightSpan" style="font-size:113%;">Attention</p>
+                <!-- Disclaimer -->
+                <div id="disclaimerContainerElem" class="disclaimerContainer">
+
+
+                    <div>
+                        <div style="display:inline-flex;">
+                            <img src="img/attention.png" style="width:50px;height:50px; margin-right:15px; position:relative; top: 4px;"/>
+                            <p class="highlightSpan" style="font-size:113%;">Attention</p>
+                        </div>
+                        <div id="disclaimerContenuWrapper">
+                            <p style="margin-block-end: 0em;"><img class="imgDisclaimer" src="img/firefox.png"/>&nbsp;&nbsp;&nbsp;L'affichage du projet sur <span style="font-weight:bold;">Firefox</span> n'est actuellement pas supporté (Effet Zoom). <em id="alertDisclaimer1" style="font-size: 70%; cursor:pointer;">Voir plus</em></p>
+                            <br>
+                            <p style="margin-block-start: 0em;"><img class="imgDisclaimer" src="img/userBarred.png"/>&nbsp;&nbsp;&nbsp;Le système de connexion et d'inscription n'est pas disponible sur l'aperçu du site ci-dessus, merci d'utiliser le lien.  <em id="alertDisclaimer2" style="font-size: 70%; cursor:pointer;">Voir plus</em></p>
+                        </div>
                     </div>
-                    <div id="disclaimerContenuWrapper">
-                        <p style="margin-block-end: 0em;"><img class="imgDisclaimer" src="img/firefox.png"/>&nbsp;&nbsp;&nbsp;L'affichage du projet sur <span style="font-weight:bold;">Firefox</span> n'est actuellement pas supporté (Effet Zoom). <em id="alertDisclaimer1" style="font-size: 70%; cursor:pointer;">Voir plus</em></p>
-                        <br>
-                        <p style="margin-block-start: 0em;"><img class="imgDisclaimer" src="img/userBarred.png"/>&nbsp;&nbsp;&nbsp;Le système de connexion et d'inscription n'est pas disponible sur l'aperçu du site ci-dessus, merci d'utiliser le lien.  <em id="alertDisclaimer2" style="font-size: 70%; cursor:pointer;">Voir plus</em></p>
+
+                </div>
+                <!-- Fin Disclaimer -->
+
+
+
+                <div class="traitSeparateurProjet"></div>
+
+
+                <!-- Boutons toggle DocUtilisateur/DocTechnique -->
+                <div id="documentationHeaderElem" class="documentationHeader">
+                    <h2 class="documentationTitle"><span class="chevronOrange">&#x3c;</span> Documentation <span class="chevronOrange">/&#x3e;</span></h2>
+                    <p class="documentationButtons"><span id="toggleUtilisateur" class="buttonSelected">Utilisateur</span> &nbsp;&nbsp; <span id="toggleTechnique" class="buttonNonSelected">Technique</span></p>
+                </div>
+
+
+                <!-- Contenu loadJS Documentation -->
+                <div id="docuLoadContainer-wrapper">
+                    <div id="docuLoadContainer" class="paddingBottom"> 
                     </div>
                 </div>
 
+
+
             </div>
-            <!-- Fin Disclaimer -->
-
-
-
-            <div class="traitSeparateurProjet"></div>
-
-
-            <!-- Boutons toggle DocUtilisateur/DocTechnique -->
-            <div id="documentationHeaderElem" class="documentationHeader">
-                <h2 class="documentationTitle"><span class="chevronOrange">&#x3c;</span> Documentation <span class="chevronOrange">/&#x3e;</span></h2>
-                <p class="documentationButtons"><span id="toggleUtilisateur" class="buttonSelected">Utilisateur</span> &nbsp;&nbsp; <span id="toggleTechnique" class="buttonNonSelected">Technique</span></p>
-            </div>
-
-
-            <!-- Contenu loadJS Documentation -->
-            <div id="docuLoadContainer-wrapper">
-                <div id="docuLoadContainer" class="paddingBottom"> 
-                </div>
-            <div>
-
-
-
-        </div>
         
 
+        </div>
         <footer>www.portfolio.basilek.ovh</footer>
 
 

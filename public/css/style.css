@@ -60,6 +60,10 @@ footer {
     opacity: 0;
     /* Juste pour eviter le pop puis decalage lors du chargement du form(qui est un api) */
     animation: fadeIn 0.1s 0.5s forwards;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 
