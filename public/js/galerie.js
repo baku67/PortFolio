@@ -1,6 +1,6 @@
 window.onload = function() {
 
-
+  // Mettre des fadeIn et fadeOut
   document.getElementById("photographieTitle").addEventListener("click", function() {
     document.querySelectorAll(".photosGallerie").forEach(function(elem) {
       if (elem.style.display == "block") {
@@ -10,6 +10,13 @@ window.onload = function() {
         elem.style.display = "block";
       }
     });
+    msgHd = document.getElementById("messageGalerie");
+    if (msgHd.style.display == "block") {
+      msgHd.style.display = "none";
+    }
+    else if (msgHd.style.display == "none") {
+      msgHd.style.display = "block";
+    }
   })
 
 
@@ -35,9 +42,6 @@ window.onload = function() {
     //   }
     // });
 
-    // Fade In du message loadingLong au bout de 3s et remove en dessous
-    // Mettre au dessus/en dessous du loadSpinner
-
 
     // One-liner pour proc quand all img chargées 
     Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
@@ -51,8 +55,6 @@ window.onload = function() {
 
       document.getElementById("messageGalerie").classList.add("fadeInHd");
 
-
-
       document.getElementById('spinnerDiv').remove();
       document.getElementById('messageLoadingLong').remove();
     });
@@ -61,6 +63,9 @@ window.onload = function() {
 
 
 
+
+
+    
 
     // Modal onClick
     $(document).ready(function() {

@@ -110,7 +110,7 @@
 
             <h4 id="photographieTitle">Photographie</h4>
 
-            <p id="messageGalerie"> Cliquez sur une image pour voir la version <span style="color:rgb(239 59 45 / 80%); font-weight:bold;">HD<span> </p>
+            <p id="messageGalerie" style="display:block"> Cliquez sur une image pour voir la version <span style="color:rgb(239 59 45 / 80%); font-weight:bold;">HD<span> </p>
 
 
             <div class="galerieDiv">

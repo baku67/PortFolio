@@ -846,10 +846,11 @@ li::before {
 .iframe { 
     position: relative;
     /* bottom: 250px; */
+    text-align: center;
 
     grid-area: iframe; 
     text-align: justify; 
-    width: 364px;
+    width: 355px;
     opacity: 0;
 
     animation-name: fadeIn;
@@ -1225,6 +1226,7 @@ li::before {
 
 
 #messageGalerie {
+    display: block;
     color: rgb(226 232 240 / 40%);
     text-align: center;
     font-style: oblique;
