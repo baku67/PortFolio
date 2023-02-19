@@ -22,7 +22,7 @@ window.onload = function() {
     articles.forEach((element, i) => {
         setTimeout(function() {
             element.classList.add("galeriePhotoFadeIn");
-        }, i * 40)
+        }, i * 70)
 
     })
     // Fin apparition
@@ -35,6 +35,8 @@ window.onload = function() {
     //   }
     // });
 
+    // Fade In du message loadingLong au bout de 3s et remove en dessous
+    // Mettre au dessus/en dessous du loadSpinner
 
 
     // One-liner pour proc quand all img chargées 
@@ -47,9 +49,12 @@ window.onload = function() {
       document.getElementById('motion-demo3b').style.display = "block";
       document.getElementById('motion-demo_whaleShark').style.display = "block";
 
+      document.getElementById("messageGalerie").classList.add("fadeInHd");
+
 
 
       document.getElementById('spinnerDiv').remove();
+      document.getElementById('messageLoadingLong').remove();
     });
 
 

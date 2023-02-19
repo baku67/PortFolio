@@ -102,7 +102,7 @@
 
         </div>
         
-        <footer>www.portfolio.basilek.ovh</footer>
+        <footer class="footerAccueil">www.portfolio.basilek.ovh</footer>
 
     </body>
 

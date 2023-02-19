@@ -112,20 +112,21 @@
 
             <p id="messageGalerie"> Cliquez sur une image pour voir la version <span style="color:rgb(239 59 45 / 80%); font-weight:bold;">HD<span> </p>
 
-            <p id="messageLoadingLong"> Le chargement peut un peu long...</p>
 
             <div class="galerieDiv">
-
                 <!-- Spinner pendant le charegement des images -->
                 <!-- <img src="img/spinner.png" id="spinnerImg" alt="chargement en cours"> -->
                 <!-- https://loading.io/css/ -->
                 <div id="spinnerDiv" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                <p id="messageLoadingLong"> Le chargement peut être un peu long...</p>
+                
                 <!-- Test anim poisson -->
                 <div id="motion-demo"></div>
                 <div id="motion-demo2"></div>
                 <div id="motion-demo3a"></div> 
                 <div id="motion-demo3b"></div> 
                 <div id="motion-demo_whaleShark"></div> 
+
 
                 <!-- <h3 style="font-size:170%; text-align:center; text-decoration:underline; text-underline-position:under; text-decoration-color:#ef3b2d;">Galerie: </h3> -->
                 <!-- <br> -->
