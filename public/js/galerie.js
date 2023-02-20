@@ -115,6 +115,10 @@ window.onload = function() {
       document.getElementById('motion-demo3c').style.display = "block";
       document.getElementById('motion-demo_whaleShark').style.display = "block";
       document.getElementById('motion-demo_tortoise').style.display = "block";
+
+      // Temporaire: faire comme rapid (proc l'elem avec interval pour avoir du delai entre)
+      document.getElementById('motion-demo_whalePc').style.display = "block";
+
       setTimeout(function() {
         document.getElementById('motion-demo_shark1').style.display = "block";
       }, 2000);

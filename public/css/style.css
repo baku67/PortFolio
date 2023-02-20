@@ -3126,6 +3126,55 @@ li.veilleLigneAjout::before {
 
 
 
+    /* Whale rotate (pas de path) */ 
+    /* FAIRE LA MEME mais avec diametre de rotate enorme (refaire PNG) et taille poisson plus grande (POUR PC) */
+    #motion-demo_whalePc {
+        display: none;
+        filter: blur(200px);    
+        position: fixed;
+    
+        /* Mobile (effet rotate dans le coin en haut à droite) */
+        /* top: 0%;
+        right: 0%; */
+        bottom: 15%;
+        /* right: 35%; */
+        z-index: -20;
+    
+        animation: moveWhale 60000ms infinite linear;
+        width: 1300px;
+        height: 1300px;
+    
+        content:url("/img/whalePC_red_rotate.png");
+        opacity: 0;
+        transform: rotateZ(-100deg);
+    }
+    @keyframes moveWhale {
+        0% {
+            filter: blur(200px);    
+
+            opacity: 0;
+            transform: rotateZ(-100deg);
+        }
+        25% {
+            filter: blur(8px);    
+            opacity: 0.08;
+        }
+        75% {
+            filter: blur(8px);    
+            opacity: 0.08;
+        }
+        100% {
+            filter: blur(200px);    
+            opacity: 0;
+            transform: rotateZ(150deg);
+        }
+    }
+
+
+
+
+
+
 
 
 
