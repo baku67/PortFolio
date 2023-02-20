@@ -2346,7 +2346,7 @@ li.veilleLigneAjout::before {
     top: 3%;
     z-index: -5;
 
-    animation: move3b 31000ms 5000ms infinite cubic-bezier(0.52, 0.23, 0.34, 0.72);
+    animation: move3b 30000ms 5000ms infinite cubic-bezier(0.52, 0.23, 0.34, 0.72);
     width: 55px;
     height: 80px;
 
@@ -2541,7 +2541,7 @@ li.veilleLigneAjout::before {
 
     }
     6% {
-        offset-distance: 6%;
+        /* offset-distance: 6%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2559,7 +2559,7 @@ li.veilleLigneAjout::before {
 
     }
     12% {
-        offset-distance: 12%;
+        /* offset-distance: 12%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2577,7 +2577,7 @@ li.veilleLigneAjout::before {
 
     }
     18% {
-        offset-distance: 18%;
+        /* offset-distance: 18%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2595,7 +2595,7 @@ li.veilleLigneAjout::before {
 
     }
     24% {
-        offset-distance: 24%;
+        /* offset-distance: 24%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2613,7 +2613,7 @@ li.veilleLigneAjout::before {
 
     }
     30% {
-        offset-distance: 30%;
+        /* offset-distance: 30%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2631,7 +2631,7 @@ li.veilleLigneAjout::before {
 
     }
     36% {
-        offset-distance: 36%;
+        /* offset-distance: 36%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2649,7 +2649,7 @@ li.veilleLigneAjout::before {
 
     }
     42% {
-        offset-distance: 42%;
+        /* offset-distance: 42%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2667,7 +2667,7 @@ li.veilleLigneAjout::before {
 
     }
     48% {
-        offset-distance: 48%;
+        /* offset-distance: 48%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2685,7 +2685,7 @@ li.veilleLigneAjout::before {
 
     }
     54% {
-        offset-distance: 54%;
+        /* offset-distance: 54%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2703,7 +2703,7 @@ li.veilleLigneAjout::before {
 
     }
     60% {
-        offset-distance: 60%;
+        /* offset-distance: 60%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2721,7 +2721,7 @@ li.veilleLigneAjout::before {
 
     }
     66% {
-        offset-distance: 66%;
+        /* offset-distance: 66%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2739,7 +2739,7 @@ li.veilleLigneAjout::before {
 
     }
     72% {
-        offset-distance: 72%;
+        /* offset-distance: 72%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2757,7 +2757,7 @@ li.veilleLigneAjout::before {
 
     }
     78% {
-        offset-distance: 78%;
+        /* offset-distance: 78%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2775,7 +2775,7 @@ li.veilleLigneAjout::before {
 
     }
     84% {
-        offset-distance: 84%;
+        /* offset-distance: 84%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2793,7 +2793,7 @@ li.veilleLigneAjout::before {
 
     }
     90% {
-        offset-distance: 90%;
+        /* offset-distance: 90%; */
 
         transform: rotateZ(75deg);
         width: 25px;
@@ -2811,7 +2811,7 @@ li.veilleLigneAjout::before {
 
     }
     96% {
-        offset-distance: 96%;
+        /* offset-distance: 96%; */
 
         transform: rotateZ(75deg);
         width: 25px;
