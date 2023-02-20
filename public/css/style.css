@@ -2895,8 +2895,8 @@ li.veilleLigneAjout::before {
         z-index: -5;
     
         animation: moveTortoise 11500ms 2000ms infinite linear;
-        width: 40px;
-        height: 40px;
+        width: 0px;
+        height: 0px;
     
         /* background: cyan; */
         content:url("/img/tortoise_red.png");
@@ -2909,8 +2909,8 @@ li.veilleLigneAjout::before {
             offset-distance: 0%;
             opacity: 0;
             filter: blur(7px);
-            width: 50px;
-            height: 50px;
+            width: 0px;
+            height: 0px;
 
         }
         10% {
