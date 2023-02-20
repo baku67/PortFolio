@@ -2881,6 +2881,7 @@ li.veilleLigneAjout::before {
 
 
 
+    /*  Tortue, turtle */
     #motion-demo_tortoise {
         display: none;
         filter: blur(5px);
@@ -2925,6 +2926,49 @@ li.veilleLigneAjout::before {
             width: 200px;
             height: 200px;
     
+        }
+    }
+
+
+
+    /* RAPID poisson esturgeon */
+    #motion-demo_rapid {
+        display: none;
+        filter: blur(2px);
+        /* https://yqnn.github.io/svg-path-editor/ */
+        offset-path: path("M 802 -40 C 430 65 98 182 -159 297");
+        offset-rotate: auto;
+    
+        position: fixed;
+    
+        top: 10%;
+        z-index: -5;
+    
+        /* animation: moveRapid 1300ms 3000ms 1 linear; */
+        animation: moveRapid 1450ms 1 linear;
+
+        width: 230px;
+        height: 120px;
+    
+        /* background: cyan; */
+        content:url("/img/rapid_red.png");
+        opacity: 0;
+        transform: rotateZ(172deg);
+    }
+    @keyframes moveRapid {
+        0% {
+            offset-distance: 0%;
+            opacity: 0;
+        }
+        5% {
+            opacity: 0.65;
+        }
+        95% {
+            opacity: 0.65;
+        }
+        100% {
+            opacity: 0;
+            offset-distance: 100%;
         }
     }
 

@@ -70,6 +70,20 @@ window.onload = function() {
       document.getElementById('motion-demo3b').style.display = "block";
       document.getElementById('motion-demo_whaleShark').style.display = "block";
       document.getElementById('motion-demo_tortoise').style.display = "block";
+
+      // Poisson rapide delai: 
+      poissonRapide = document.createElement("div");
+      poissonRapide.id = "motion-demo_rapid";
+      poissonRapide.style.display = "block";
+
+      // document.getElementById('motion-demo_rapid').style.display = "block";
+      setInterval(function() {
+        if (document.getElementById('motion-demo_rapid') != null ) {
+          document.getElementById('motion-demo_rapid').remove();
+        }
+        document.getElementById("aquarium").append(poissonRapide);
+      }, 9500)
+
       // document.getElementById('motion-demoBubble1').style.display = "block";
 
 

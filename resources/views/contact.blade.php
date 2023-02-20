@@ -120,13 +120,16 @@
                 <div id="spinnerDiv" class="lds-ring"><div></div><div></div><div></div><div></div></div>
                 <p id="messageLoadingLong"> Le chargement peut être un peu long...</p>
                 
-                <!-- Test anim poisson -->
-                <div id="motion-demo"></div>
-                <div id="motion-demo2"></div>
-                <div id="motion-demo3a"></div> 
-                <div id="motion-demo3b"></div> 
-                <div id="motion-demo_whaleShark"></div> 
-                <div id="motion-demo_tortoise"></div> 
+                <div id="aquarium">
+                    <!-- Test anim poisson -->
+                    <div id="motion-demo"></div>
+                    <div id="motion-demo2"></div>
+                    <div id="motion-demo3a"></div> 
+                    <div id="motion-demo3b"></div> 
+                    <div id="motion-demo_whaleShark"></div> 
+                    <div id="motion-demo_tortoise"></div> 
+                    <!-- <div id="motion-demo_rapid"></div>  -->
+                </div>
 
                 <!-- Bulles -->
                 <!-- <div id="motion-demoBubble1" ></div> -->
