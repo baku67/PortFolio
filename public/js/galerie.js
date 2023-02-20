@@ -1,4 +1,42 @@
+// setTimeout(function() {
+//   document.getElementById('motion-demo').style.display = "block";
+//   document.getElementById('motion-demo2').style.display = "block";
+//   document.getElementById('motion-demo3a').style.display = "block";
+//   document.getElementById('motion-demo3b').style.display = "block";
+//   document.getElementById('motion-demo3c').style.display = "block";
+//   document.getElementById('motion-demo_whaleShark').style.display = "block";
+//   document.getElementById('motion-demo_tortoise').style.display = "block";
+//   setTimeout(function() {
+//     document.getElementById('motion-demo_shark1').style.display = "block";
+//   }, 2000);
+
+//   // Poisson rapide delai: 
+//   poissonRapide = document.createElement("div");
+//   poissonRapide.id = "motion-demo_rapid";
+//   poissonRapide.style.display = "block";
+
+//   // document.getElementById('motion-demo_rapid').style.display = "block";
+//   setInterval(function() {
+//     if (document.getElementById('motion-demo_rapid') != null ) {
+//       document.getElementById('motion-demo_rapid').remove();
+//     }
+//     document.getElementById("aquarium").append(poissonRapide);
+//   }, 9500)
+
+//   // document.getElementById('motion-demoBubble1').style.display = "block";
+
+// }, 1000)
+
+
+
+
+
+
+
+
+
 window.onload = function() {
+
 
   // Mettre des fadeIn et fadeOut
   document.getElementById("photographieTitle").addEventListener("click", function() {
@@ -60,25 +98,32 @@ window.onload = function() {
     // });
 
 
+
+
+
+
+
     // One-liner pour proc quand all img chargées 
     Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
-      // alert('chargé');
 
+      // ***** Activer pour proc des poissons seulement quand img chargées
+      // **************************************************************
       document.getElementById('motion-demo').style.display = "block";
       document.getElementById('motion-demo2').style.display = "block";
       document.getElementById('motion-demo3a').style.display = "block";
       document.getElementById('motion-demo3b').style.display = "block";
+      document.getElementById('motion-demo3c').style.display = "block";
       document.getElementById('motion-demo_whaleShark').style.display = "block";
       document.getElementById('motion-demo_tortoise').style.display = "block";
       setTimeout(function() {
         document.getElementById('motion-demo_shark1').style.display = "block";
       }, 2000);
-
+  
       // Poisson rapide delai: 
       poissonRapide = document.createElement("div");
       poissonRapide.id = "motion-demo_rapid";
       poissonRapide.style.display = "block";
-
+  
       // document.getElementById('motion-demo_rapid').style.display = "block";
       setInterval(function() {
         if (document.getElementById('motion-demo_rapid') != null ) {
@@ -86,9 +131,8 @@ window.onload = function() {
         }
         document.getElementById("aquarium").append(poissonRapide);
       }, 9500)
-
       // document.getElementById('motion-demoBubble1').style.display = "block";
-
+      // FIN
 
 
       document.getElementById("messageGalerie").classList.add("fadeInHd");

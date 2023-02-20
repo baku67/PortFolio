@@ -108,7 +108,7 @@
             <h3 class="galerieTitle"> Loisirs <span class="carreTitre carreTitreVeille">▪</span></h3>
             <div class="barreGalerieSouligne"></div>
 
-            <h4 id="photographieTitle">Photographie</h4>
+            <h4 id="photographieTitle" style="-webkit-box-reflect:below -5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.4, transparent), to(white));">Photographie</h4>
 
             <p id="messageGalerie" style="display:block"> Cliquez sur une image pour voir la version <span style="color:rgb(239 59 45 / 80%); font-weight:bold;">HD<span> </p>
 
@@ -126,6 +126,7 @@
                     <div id="motion-demo2"></div>
                     <div id="motion-demo3a"></div> 
                     <div id="motion-demo3b"></div> 
+                    <div id="motion-demo3c"></div> 
                     <div id="motion-demo_whaleShark"></div> 
                     <div id="motion-demo_tortoise"></div> 
                     <div id="motion-demo_shark1"></div> 
