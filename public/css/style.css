@@ -3175,6 +3175,88 @@ li.veilleLigneAjout::before {
 
 
 
+    #coral1 {
+        display: none;
+        filter: blur(4px);    
+        position: fixed;
+    
+        /* Mobile (effet rotate dans le coin en haut à droite) */
+        /* top: 0%;
+        right: 0%; */
+        bottom: -13%;
+        right: -2%;
+        z-index: -20;
+    
+        /* animation: moveCoral1 60000ms infinite linear; */
+        width: 350px;
+        height: 350px;
+    
+        content:url("/img/coral1_red.png");
+        opacity: 0.5;
+        transform: rotateZ(0deg) rotateX(0deg);
+
+        animation: moveCoral1 5s infinite ease;
+    }
+    @keyframes moveCoral1 {
+        0% {
+            height: 350px;
+            width: 350px;
+        }
+        50% {
+            height: 315px;
+            width: 350px;
+        }
+        100% {
+            height: 350px;
+            width: 350px;
+        }
+    }
+
+
+
+    #coral2 {
+        display: none;
+        filter: blur(1px);    
+        position: fixed;
+    
+        /* Mobile (effet rotate dans le coin en haut à droite) */
+        /* top: 0%;
+        right: 0%; */
+        bottom: -7%;
+        right: -2%;
+        z-index: -20;
+    
+        /* animation: moveCoral1 60000ms infinite linear; */
+        width: 200px;
+        height: 200px;
+    
+        content:url("/img/coral2_red.png");
+        opacity: 0.8;
+        transform: rotateZ(0deg) rotateX(0deg);
+
+        animation: moveCoral2 5s infinite ease;
+    }
+    @keyframes moveCoral2 {
+        0% {
+            height: 200px;
+            width: 200px;
+        }
+        50% {
+            height: 180px;
+            width: 200px;
+        }
+        100% {
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+
+
+
+
+
+
 
 
 

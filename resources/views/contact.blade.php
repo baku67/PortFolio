@@ -132,6 +132,9 @@
                     <div id="motion-demo_shark1"></div> 
 
                     <div id="motion-demo_whalePc"></div> 
+
+                    <div id="coral1"></div> 
+                    <div id="coral2"></div>
                     <!-- <div id="motion-demo_rapid"></div>  -->
                 </div>
 
