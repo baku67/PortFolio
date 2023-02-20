@@ -70,6 +70,9 @@ window.onload = function() {
       document.getElementById('motion-demo3b').style.display = "block";
       document.getElementById('motion-demo_whaleShark').style.display = "block";
       document.getElementById('motion-demo_tortoise').style.display = "block";
+      setTimeout(function() {
+        document.getElementById('motion-demo_shark1').style.display = "block";
+      }, 2000);
 
       // Poisson rapide delai: 
       poissonRapide = document.createElement("div");

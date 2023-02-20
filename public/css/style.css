@@ -202,7 +202,7 @@ textarea:focus, input:focus{
     text-align: center;
     font-style: oblique;
     opacity: 0;
-    animation: fadeInMessageGalerie 0.5s 5s ease forwards;
+    animation: fadeInMessageGalerie 0.5s 5.5s ease forwards;
 }
 
 
@@ -2247,7 +2247,7 @@ li.veilleLigneAjout::before {
         transform: rotateY(180deg);
     }
     100% {
-        opacity: 0.8;
+        opacity: 0;
         offset-distance: 100%;
         transform: rotateY(140deg);
     }
@@ -2327,7 +2327,7 @@ li.veilleLigneAjout::before {
     top: -5%;
     z-index: -5;
 
-    animation: move3a 30000ms 5000ms infinite linear;
+    animation: move3a 30000ms 5000ms infinite cubic-bezier(0.52, 0.23, 0.34, 0.72);
     width: 65px;
     /* height: 65px; */
 
@@ -2346,7 +2346,7 @@ li.veilleLigneAjout::before {
     top: 3%;
     z-index: -5;
 
-    animation: move3b 31000ms 5000ms infinite linear;
+    animation: move3b 31000ms 5000ms infinite cubic-bezier(0.52, 0.23, 0.34, 0.72);
     width: 55px;
     height: 80px;
 
@@ -2367,39 +2367,49 @@ li.veilleLigneAjout::before {
         height: 80px;
     }
     5% {
+        offset-distance: 5%;
+
         transform: rotateZ(75deg);
         width: 90px;
         height: 45px;
     }
     11% {
+        /* offset-distance: 11%; */
+
         opacity: 0.5;
         transform: rotateZ(75deg);
         width: 55px;
         height: 80px;
 
-
     }
     16% {
+        offset-distance: 16%;
+
         transform: rotateZ(75deg);
         width: 90px;
         height: 45px;
 
     }
     22% {
+        /* offset-distance: 22%; */
+
         opacity: 0.4;
         transform: rotateZ(75deg);
         width: 55px;
         height: 80px;
 
-
     }
     27% {
+        offset-distance: 27%;
+
         transform: rotateZ(75deg);
         width: 90px;
         height: 45px;
 
     }
     33% {
+        /* offset-distance: 33%; */
+
         opacity: 0.5;
         transform: rotateZ(75deg);
         width: 55px;
@@ -2408,12 +2418,16 @@ li.veilleLigneAjout::before {
 
     }
     38% {
+        offset-distance: 38%;
+
         transform: rotateZ(75deg);
         width: 90px;
         height: 45px;
 
     }
     44% {
+        /* offset-distance: 44%; */
+
         opacity: 0.4;
         transform: rotateZ(75deg);
         width: 55px;
@@ -2422,12 +2436,16 @@ li.veilleLigneAjout::before {
 
     }
     49% {
+        offset-distance: 49%;
+
         transform: rotateZ(75deg);
         width: 90px;
         height: 45px;
 
     }
     55% {
+        /* offset-distance: 55%; */
+
         opacity: 0.5;
         transform: rotateZ(75deg);
         width: 55px;
@@ -2436,12 +2454,16 @@ li.veilleLigneAjout::before {
 
     }
     60% {
+        offset-distance: 60%;
+
         transform: rotateZ(75deg);
         width: 90px;
         height: 45px;
 
     }
     66% {
+        /* offset-distance: 66%; */
+
         opacity: 0.4;
         transform: rotateZ(75deg);
         width: 55px;
@@ -2449,12 +2471,16 @@ li.veilleLigneAjout::before {
 
     }
     71% {
+        offset-distance: 71%;
+
         transform: rotateZ(75deg);
         width: 90px;
         height: 45px;
 
     }
     77% {
+        /* offset-distance: 77%; */
+
         opacity: 0.5;
         transform: rotateZ(75deg);
         width: 55px;
@@ -2462,12 +2488,16 @@ li.veilleLigneAjout::before {
 
     }
     82% {
+        offset-distance: 82%;
+
         transform: rotateZ(75deg);
         width: 90px;
         height: 45px;
 
     }
     88% {
+        /* offset-distance: 88%; */
+
         opacity: 0.4;
         transform: rotateZ(75deg);
         width: 55px;
@@ -2475,6 +2505,8 @@ li.veilleLigneAjout::before {
 
     }
     93% {
+        offset-distance: 93%;
+
         transform: rotateZ(75deg);
         width: 90px;
         height: 45px;
@@ -2500,6 +2532,8 @@ li.veilleLigneAjout::before {
         opacity: 0.5;
     }
     3% {
+        offset-distance: 3%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2507,6 +2541,8 @@ li.veilleLigneAjout::before {
 
     }
     6% {
+        offset-distance: 6%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2514,6 +2550,8 @@ li.veilleLigneAjout::before {
 
     }
     9% {
+        offset-distance: 9%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2521,6 +2559,8 @@ li.veilleLigneAjout::before {
 
     }
     12% {
+        offset-distance: 12%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2528,6 +2568,8 @@ li.veilleLigneAjout::before {
 
     }
     15% {
+        offset-distance: 15%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2535,6 +2577,8 @@ li.veilleLigneAjout::before {
 
     }
     18% {
+        offset-distance: 18%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2542,6 +2586,8 @@ li.veilleLigneAjout::before {
 
     }
     21% {
+        offset-distance: 21%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2549,6 +2595,8 @@ li.veilleLigneAjout::before {
 
     }
     24% {
+        offset-distance: 24%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2556,6 +2604,8 @@ li.veilleLigneAjout::before {
 
     }
     27% {
+        offset-distance: 27%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2563,6 +2613,8 @@ li.veilleLigneAjout::before {
 
     }
     30% {
+        offset-distance: 30%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2570,6 +2622,8 @@ li.veilleLigneAjout::before {
 
     }
     33% {
+        offset-distance: 33%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2577,6 +2631,8 @@ li.veilleLigneAjout::before {
 
     }
     36% {
+        offset-distance: 36%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2584,6 +2640,8 @@ li.veilleLigneAjout::before {
 
     }
     39% {
+        offset-distance: 39%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2591,6 +2649,8 @@ li.veilleLigneAjout::before {
 
     }
     42% {
+        offset-distance: 42%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2598,6 +2658,8 @@ li.veilleLigneAjout::before {
 
     }
     45% {
+        offset-distance: 45%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2605,6 +2667,8 @@ li.veilleLigneAjout::before {
 
     }
     48% {
+        offset-distance: 48%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2612,6 +2676,8 @@ li.veilleLigneAjout::before {
 
     }
     51% {
+        offset-distance: 51%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2619,6 +2685,8 @@ li.veilleLigneAjout::before {
 
     }
     54% {
+        offset-distance: 54%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2626,6 +2694,8 @@ li.veilleLigneAjout::before {
 
     }
     57% {
+        offset-distance: 57%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2633,6 +2703,8 @@ li.veilleLigneAjout::before {
 
     }
     60% {
+        offset-distance: 60%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2640,6 +2712,8 @@ li.veilleLigneAjout::before {
 
     }
     63% {
+        offset-distance: 63%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2647,6 +2721,8 @@ li.veilleLigneAjout::before {
 
     }
     66% {
+        offset-distance: 66%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2654,6 +2730,8 @@ li.veilleLigneAjout::before {
 
     }
     69% {
+        offset-distance: 69%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2661,6 +2739,8 @@ li.veilleLigneAjout::before {
 
     }
     72% {
+        offset-distance: 72%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2668,6 +2748,8 @@ li.veilleLigneAjout::before {
 
     }
     75% {
+        offset-distance: 75%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2675,6 +2757,8 @@ li.veilleLigneAjout::before {
 
     }
     78% {
+        offset-distance: 78%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2682,6 +2766,8 @@ li.veilleLigneAjout::before {
 
     }
     81% {
+        offset-distance: 81%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2689,6 +2775,8 @@ li.veilleLigneAjout::before {
 
     }
     84% {
+        offset-distance: 84%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2696,6 +2784,8 @@ li.veilleLigneAjout::before {
 
     }
     87% {
+        offset-distance: 87%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2703,6 +2793,8 @@ li.veilleLigneAjout::before {
 
     }
     90% {
+        offset-distance: 90%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2710,6 +2802,8 @@ li.veilleLigneAjout::before {
 
     }
     93% {
+        offset-distance: 93%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2717,6 +2811,8 @@ li.veilleLigneAjout::before {
 
     }
     96% {
+        offset-distance: 96%;
+
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
@@ -2724,6 +2820,8 @@ li.veilleLigneAjout::before {
 
     }
     99% {
+        offset-distance: 99%;
+
         transform: rotateZ(75deg);
         width: 60px;
         height: 25px;
@@ -2731,12 +2829,12 @@ li.veilleLigneAjout::before {
 
     }
     100% {
+        offset-distance: 100%;
+
         transform: rotateZ(75deg);
         width: 20px;
         height: 25px;
         opacity: 0.5;
-
-        offset-distance: 100%;
     }
   }
 
@@ -2759,7 +2857,7 @@ li.veilleLigneAjout::before {
     offset-path: path("M -270 -108 C 100 349 557 46 527 -124");
 
 
-    z-index: -5;
+    z-index: -10;
 
     animation: moveWhaleShark 30000ms 5s infinite linear;
     width: 600px;
@@ -2892,9 +2990,9 @@ li.veilleLigneAjout::before {
         position: fixed;
     
         top: -5%;
-        z-index: -5;
+        z-index: -2;
     
-        animation: moveTortoise 11500ms 2000ms infinite linear;
+        animation: moveTortoise 13500ms 2000ms infinite ease-in;
         width: 0px;
         height: 0px;
     
@@ -2917,11 +3015,12 @@ li.veilleLigneAjout::before {
             opacity: 0.4;
         }
         90% {
-            opacity: 0.9;
+            filter: blur(0px);
+            opacity: 0.7;
         }
         100% {
             offset-distance: 100%;
-            opacity: 0;
+            opacity: 0.8;
             filter: blur(0px);
             width: 200px;
             height: 200px;
@@ -2936,7 +3035,10 @@ li.veilleLigneAjout::before {
         display: none;
         filter: blur(2px);
         /* https://yqnn.github.io/svg-path-editor/ */
-        offset-path: path("M 802 -40 C 430 65 98 182 -159 297");
+        /* From droite to gauche, trait */
+        /* offset-path: path("M 802 -40 C 430 65 98 182 -159 297"); */
+        offset-path: path("M 726 322 C 398 445 98 182 -375 -111");
+        
         offset-rotate: auto;
     
         position: fixed;
@@ -2945,7 +3047,7 @@ li.veilleLigneAjout::before {
         z-index: -5;
     
         /* animation: moveRapid 1300ms 3000ms 1 linear; */
-        animation: moveRapid 1450ms 1 linear;
+        animation: moveRapid 1650ms 1 cubic-bezier(1,.66,.51,.98);
 
         width: 230px;
         height: 120px;
@@ -2960,10 +3062,10 @@ li.veilleLigneAjout::before {
             offset-distance: 0%;
             opacity: 0;
         }
-        5% {
+        20% {
             opacity: 0.65;
         }
-        95% {
+        80% {
             opacity: 0.65;
         }
         100% {
@@ -2975,6 +3077,47 @@ li.veilleLigneAjout::before {
 
 
 
+
+
+
+    /* Shark rotate (pas de path) */ 
+    /* FAIRE LA MEME mais avec diametre de rotate enorme (refaire PNG) et taille poisson plus grande (POUR PC) */
+    #motion-demo_shark1 {
+        display: none;
+        filter: blur(2px);    
+        position: fixed;
+    
+        /* Mobile (effet rotate dans le coin en haut à droite) */
+        /* top: 0%;
+        right: 0%; */
+        bottom: 82%;
+        left: 60%;
+        z-index: -2;
+    
+        animation: moveShark1test 7000ms infinite linear;
+        width: 230px;
+        height: 230px;
+    
+        content:url("/img/shark1_red_rotate.png");
+        opacity: 0;
+        transform: rotateZ(46deg) rotateX(180deg);
+    }
+    @keyframes moveShark1test {
+        0% {
+            opacity: 0;
+            transform: rotateZ(0deg) rotateX(180deg);
+        }
+        30% {
+            opacity: 0.5;
+        }
+        70% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 0;
+            transform: rotateZ(360deg) rotateX(180deg);
+        }
+    }
 
 
 
