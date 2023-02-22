@@ -70,7 +70,7 @@
         <!-- Contenu (load JS) -->
         <div id="pageContainer">
 
-            <h2 class="pageTitle">Présentation</h2>
+            <h2 class="pageTitle">Bienvenue sur mon portfolio</h2>
             </br>
 
             <div class="accueilGrid">
@@ -82,9 +82,9 @@
                 </div>
 
                 <p class="paragrapheAccueil" >
-                    <span style="margin-left: 5px; font-size: 130%;">Bienvenue, </span>
-                    <br><br>
-                    &nbsp;&nbsp;&nbsp;Je suis Basile KUNTZ, un jeune en pleine formation de développeur web et web mobile au centre Elan Formation de Strasbourg. Je cherche actuellement à mettre à profit mes compétences et à m'améliorer dans le cadre d'un stage professionel et j’ai pour ambition de vous montrer de quoi je suis capable et de m'améliorer constemment.
+                    <!-- <span style="margin-left: 5px; font-size: 130%;">Bienvenue, </span>
+                    <br><br> -->
+                    &nbsp;&nbsp;&nbsp;&nbsp;Je suis Basile KUNTZ, un jeune en pleine form(e)ation de développeur web et web mobile au centre Elan Formation de Strasbourg. Je cherche actuellement à mettre à profit mes compétences et à m'améliorer dans le cadre d'un stage professionel et j’ai pour ambition de vous montrer de quoi je suis capable et de m'améliorer continuellement.
                     J’apprécie les choses simples de la vie, ma personnalité et ma créativité parleront d’elles-même. 
                     Donner vie à un site web, c’est surprenant, motivant, beau, captivant, fascinant, prenant… et ça j’adore ! 
                     <br>Et si on se rencontrait pour discuter de votre projet ? 
