@@ -126,20 +126,34 @@ window.onload = function() {
       poissonRapide.id = "motion-demo_rapid";
       poissonRapide.style.display = "block";
 
-      // poissonRapide2 = document.createElement("div");
-      // poissonRapide2.id = "motion-demo_rapid2";
-      // poissonRapide2.style.display = "block";
+      poissonRapide2 = document.createElement("div");
+      poissonRapide2.id = "motion-demo_rapid2";
+      poissonRapide2.style.display = "block";
 
-      // poissonRapide3 = document.createElement("div");
-      // poissonRapide3.id = "motion-demo_rapid3";
-      // poissonRapide3.style.display = "block";
+      poissonRapide3 = document.createElement("div");
+      poissonRapide3.id = "motion-demo_rapid3";
+      poissonRapide3.style.display = "block";
 
       setInterval(function() {
         if (document.getElementById('motion-demo_rapid') != null ) {
           document.getElementById('motion-demo_rapid').remove();
         }
         document.getElementById("aquarium").append(poissonRapide);
-      }, 9500)
+      }, 9000)
+
+      setInterval(function() {
+        if (document.getElementById('motion-demo_rapid2') != null ) {
+          document.getElementById('motion-demo_rapid2').remove();
+        }
+        document.getElementById("aquarium").append(poissonRapide2);
+      }, 9000)
+
+      setInterval(function() {
+        if (document.getElementById('motion-demo_rapid3') != null ) {
+          document.getElementById('motion-demo_rapid3').remove();
+        }
+        document.getElementById("aquarium").append(poissonRapide3);
+      }, 9000)
       // FIN
 
 

@@ -22,6 +22,15 @@
     }
 
 
+    .close {
+        top: 15px;
+        right: 35px;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+
     #menuLigneCv {
         font-size: 1em;
     }
@@ -774,6 +783,34 @@
             width: 200px;
         }
     }
+
+
+
+    #motion-demo_rapid {
+        width: 230px;
+        height: 120px;
+
+        offset-path: path("M 357 311 C 40 308 98 182 -302 -201");
+        animation: moveRapid 1650ms 1 cubic-bezier(1,.66,.51,.98);
+
+    }
+    #motion-demo_rapid2 {
+        width: 200px;
+        height: 107px;
+
+        offset-path: path("M 357 311 C 57 267 286 195 -302 -201");
+        animation: moveRapid 1650ms 450ms 1 cubic-bezier(1,.66,.51,.98);
+
+    }
+    #motion-demo_rapid3 {
+        width: 150px;
+        height: 80px;
+
+        offset-path: path("M 357 311 C 104 263 201 92 -444 -93");
+        animation: moveRapid 1650ms 250ms 1 cubic-bezier(1,.66,.51,.98);
+
+    }
+
 
 
 

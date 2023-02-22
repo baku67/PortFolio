@@ -1685,10 +1685,10 @@ li::before {
 
 .close {
     position: absolute;
-    top: 15px;
+    top: 37px;
     right: 35px;
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 5em;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -3042,8 +3042,8 @@ li.veilleLigneAjout::before {
     }
 
 
-
-    /* RAPID poisson esturgeon */
+    /* ESPADONS */
+    /* RAPID poisson esturgeon  */
     #motion-demo_rapid {
         display: none;
         filter: blur(2px);
@@ -3086,6 +3086,80 @@ li.veilleLigneAjout::before {
             offset-distance: 100%;
         }
     }
+
+
+
+    #motion-demo_rapid2 {
+        display: none;
+        filter: blur(2px);
+        /* https://yqnn.github.io/svg-path-editor/ */
+        /* From droite to gauche, trait */
+        /* offset-path: path("M 802 -40 C 430 65 98 182 -159 297"); */
+        offset-path: path("M 726 322 C 398 445 203 104 -434 65");
+        
+        offset-rotate: auto;
+    
+        position: fixed;
+    
+        top: 10%;
+        z-index: -5;
+    
+        /* animation: moveRapid 1300ms 3000ms 1 linear; */
+        animation: moveRapid 1650ms 500ms 1 cubic-bezier(1,.66,.51,.98);
+
+        width: 200px;
+        height: 107px;
+    
+        /* background: cyan; */
+        content:url("/img/rapid_red.png");
+        opacity: 0;
+        transform: rotateZ(172deg);
+    }
+
+    
+    #motion-demo_rapid3 {
+        display: none;
+        filter: blur(2px);
+        /* https://yqnn.github.io/svg-path-editor/ */
+        /* From droite to gauche, trait */
+        /* offset-path: path("M 802 -40 C 430 65 98 182 -159 297"); */
+        offset-path: path("M 726 322 C 581 356 256 340 -213 -183");
+        
+        offset-rotate: auto;
+    
+        position: fixed;
+    
+        top: 10%;
+        z-index: -5;
+    
+        /* animation: moveRapid 1300ms 3000ms 1 linear; */
+        animation: moveRapid 1650ms 300ms 1 cubic-bezier(1,.66,.51,.98);
+
+        width: 150px;
+        height: 80px;
+    
+        /* background: cyan; */
+        content:url("/img/rapid_red.png");
+        opacity: 0;
+        transform: rotateZ(172deg);
+    }
+    /* @keyframes moveRapid2 {
+        0% {
+            offset-distance: 0%;
+            opacity: 0;
+        }
+        20% {
+            opacity: 0.65;
+        }
+        80% {
+            opacity: 0.65;
+        }
+        100% {
+            opacity: 0;
+            offset-distance: 100%;
+        }
+    } */
+
 
 
 
