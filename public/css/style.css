@@ -1853,6 +1853,8 @@ li::before {
 
     opacity: 0;
     animation: fadeInPhotographieTitle 0.5s 1.1s ease-in forwards;
+
+    margin-block-start: 0;
 }
 @keyframes fadeInPhotographieTitle {
     from {
@@ -2992,6 +2994,14 @@ li.veilleLigneAjout::before {
 
 
 
+
+
+
+
+
+
+
+
     /*  Tortue, turtle */
     #motion-demo_tortoise {
         display: none;
@@ -3042,15 +3052,23 @@ li.veilleLigneAjout::before {
     }
 
 
+
+
+
+
+
+
+
+
+
     /* ESPADONS */
     /* RAPID poisson esturgeon  */
     #motion-demo_rapid {
         display: none;
-        filter: blur(2px);
         /* https://yqnn.github.io/svg-path-editor/ */
         /* From droite to gauche, trait */
         /* offset-path: path("M 802 -40 C 430 65 98 182 -159 297"); */
-        offset-path: path("M 726 322 C 398 445 98 182 -375 -111");
+        offset-path: path("M 1323 383 C 960 461 377 333 -302 -201");
         
         offset-rotate: auto;
     
@@ -3060,7 +3078,7 @@ li.veilleLigneAjout::before {
         z-index: -5;
     
         /* animation: moveRapid 1300ms 3000ms 1 linear; */
-        animation: moveRapid 1650ms 1 cubic-bezier(1,.66,.51,.98);
+        animation: moveRapid 1850ms 1 cubic-bezier(1,.66,.51,.98);
 
         width: 230px;
         height: 120px;
@@ -3069,33 +3087,16 @@ li.veilleLigneAjout::before {
         content:url("/img/rapid_red.png");
         opacity: 0;
         transform: rotateZ(172deg);
-    }
-    @keyframes moveRapid {
-        0% {
-            offset-distance: 0%;
-            opacity: 0;
-        }
-        20% {
-            opacity: 0.65;
-        }
-        80% {
-            opacity: 0.65;
-        }
-        100% {
-            opacity: 0;
-            offset-distance: 100%;
-        }
-    }
 
-
+        filter: invert(0%) blur(0px);
+    }
 
     #motion-demo_rapid2 {
         display: none;
-        filter: blur(2px);
         /* https://yqnn.github.io/svg-path-editor/ */
         /* From droite to gauche, trait */
         /* offset-path: path("M 802 -40 C 430 65 98 182 -159 297"); */
-        offset-path: path("M 726 322 C 398 445 203 104 -434 65");
+        offset-path: path("M 1323 383 C 696 580 524 136 -302 -201");
         
         offset-rotate: auto;
     
@@ -3105,7 +3106,7 @@ li.veilleLigneAjout::before {
         z-index: -5;
     
         /* animation: moveRapid 1300ms 3000ms 1 linear; */
-        animation: moveRapid 1650ms 500ms 1 cubic-bezier(1,.66,.51,.98);
+        animation: moveRapid 1850ms 520ms 1 cubic-bezier(1,.66,.51,.98);
 
         width: 200px;
         height: 107px;
@@ -3114,16 +3115,17 @@ li.veilleLigneAjout::before {
         content:url("/img/rapid_red.png");
         opacity: 0;
         transform: rotateZ(172deg);
+
+        filter: invert(0%) blur(0px);
     }
 
     
     #motion-demo_rapid3 {
         display: none;
-        filter: blur(2px);
         /* https://yqnn.github.io/svg-path-editor/ */
         /* From droite to gauche, trait */
         /* offset-path: path("M 802 -40 C 430 65 98 182 -159 297"); */
-        offset-path: path("M 726 322 C 581 356 256 340 -213 -183");
+        offset-path: path("M 1323 383 C 840 327 722 12 -492 -110");
         
         offset-rotate: auto;
     
@@ -3133,7 +3135,7 @@ li.veilleLigneAjout::before {
         z-index: -5;
     
         /* animation: moveRapid 1300ms 3000ms 1 linear; */
-        animation: moveRapid 1650ms 300ms 1 cubic-bezier(1,.66,.51,.98);
+        animation: moveRapid 1850ms 310ms 1 cubic-bezier(1,.66,.51,.98);
 
         width: 150px;
         height: 80px;
@@ -3142,23 +3144,60 @@ li.veilleLigneAjout::before {
         content:url("/img/rapid_red.png");
         opacity: 0;
         transform: rotateZ(172deg);
+
+        filter: invert(0%) blur(0px);
     }
-    /* @keyframes moveRapid2 {
+
+
+    @keyframes moveRapid {
         0% {
             offset-distance: 0%;
             opacity: 0;
+            filter: invert(0%) blur(0px);
         }
         20% {
-            opacity: 0.65;
+            opacity: 0.5;
+            filter: invert(0%) blur(0px);
+        }
+        30% {
+            opacity: 0.3;
+            filter: invert(22%) blur(1px);
+        }
+        40% {
+            opacity: 0.5;
+            filter: invert(0%) blur(1px);
+        }
+        50% {
+            opacity: 0.3;
+            filter: invert(22%) blur(2px);
+        }
+        60% {
+            opacity: 0.5;
+            filter: invert(0%) blur(3px);
+        } 
+        70% {
+            opacity: 0.3;
+            filter: invert(22%) blur(4px);
         }
         80% {
-            opacity: 0.65;
+            opacity: 0.5;
+            filter: invert(0%) blur(4px);
         }
         100% {
             opacity: 0;
+            filter: invert(22%) blur(6px);
             offset-distance: 100%;
         }
-    } */
+    }
+
+
+
+
+
+
+
+
+
 
 
 

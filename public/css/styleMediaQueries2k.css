@@ -37,30 +37,35 @@
         margin-block-start: 0;
     }
 
-    /* .close {
-        top: 37px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 5em;
-        font-weight: bold;
-        transition: 0.3s;
-    } */
+    #messageGalerie {
+        font-size: 1.4em;
+        margin-block-start: 0;
+    }
+    #messageLoadingLong {
+        font-size: 1.4em;
+    }
+
+
+
+
 
     #motion-demo_rapid {
-        offset-path: path("M 357 311 C 40 308 98 182 -302 -201");
-        animation: moveRapid 1650ms 1 cubic-bezier(1,.66,.51,.98);
+        offset-path: path("M 1323 383 C 960 461 377 333 -302 -201");
+        animation: moveRapid 1850ms 1 cubic-bezier(1,.66,.51,.98);
 
     }
     #motion-demo_rapid2 {
-        offset-path: path("M 357 311 C 57 267 286 195 -302 -201");
-        animation: moveRapid 1650ms 450ms 1 cubic-bezier(1,.66,.51,.98);
+        offset-path: path("M 1323 383 C 696 580 524 136 -302 -201");
+        animation: moveRapid 1850ms 450ms 1 cubic-bezier(1,.66,.51,.98);
 
     }
     #motion-demo_rapid3 {
-        offset-path: path("M 357 311 C 104 263 201 92 -444 -93");
-        animation: moveRapid 1650ms 250ms 1 cubic-bezier(1,.66,.51,.98);
+        offset-path: path("M 1323 383 C 840 327 722 12 -492 -110");
+        animation: moveRapid 1850ms 250ms 1 cubic-bezier(1,.66,.51,.98);
 
     }
+
+
 
 
 }
