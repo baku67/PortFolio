@@ -1,0 +1,40 @@
+@media only screen and (min-width: 1300px) {
+    .paragrapheAccueil {
+        font-size: 2em;
+    }
+
+    #menuLigneCv {
+        font-size: 1.35em;
+    }
+
+    #portfolioTitle {
+        font-size: 2.2em;
+        margin-block-start: 0.2em;
+        margin-block-end: 0;
+    }
+
+    .imgAccueil { 
+        width: 180px;
+        height: 195px;
+
+        margin: 45px 30px 15px 112px;
+    }
+
+    #portfolioSousTitre {
+        font-size: 1.3em;
+    }
+
+    #contactButton {
+        font-size: 1.8em;
+    }
+
+    .pageTitle {
+        font-size: 2.4em;
+    }
+
+    #photographieTitle {
+        font-size: 3.7em;
+        margin-block-start: 0;
+    }
+
+}

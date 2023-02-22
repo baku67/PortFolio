@@ -12,6 +12,7 @@
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
         <link rel="stylesheet" type="text/css" href="{{ asset('css/styleMediaQueries.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/styleMediaQueries2k.css') }}" />
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -77,7 +78,7 @@
 
 
                 <div>
-                    <img class="imgAccueil" src="img/moi2.jpg"/>
+                    <img class="imgAccueil" src="img/basile.png"/>
 
                 </div>
 

@@ -123,6 +123,7 @@ textarea:focus, input:focus{
 }
 
 #contactButton {
+    font-family: 'Nunito', sans-serif;
     display: flex;
     margin:0 auto;
     font-size: 1.3em;
@@ -1393,7 +1394,16 @@ li::before {
 
 
 
+#menuLigneCv {
+    font-size: 1.2em;
+}
 
+
+#portfolioTitle {
+    font-size: 2em;
+    margin-block-start: 0.2em;
+    margin-block-end: 0;
+}
 
 
 .paragrapheAccueil { 
@@ -1401,14 +1411,15 @@ li::before {
     color: #E7E8F2;
     margin: 0px 20px 50px 20px;
     
+    font-size: 1.5em;
 }
 
 .imgAccueil { 
     float:right;
-    width: 180px;
-    height: 180px;
+    width: 161px;
+    height: 169px;
     border-radius: 4px;
-    margin: 45px 30px 15px 45px;
+    margin: 45px 30px 15px 68px;
 
     border: 2px solid rgba(239, 59, 45, 0.5);
     padding: 4px;
@@ -1838,7 +1849,7 @@ li::before {
 
     color: #ef3b2d;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
 
     opacity: 0;
     animation: fadeInPhotographieTitle 0.5s 1.1s ease-in forwards;
@@ -1891,7 +1902,7 @@ li::before {
     position:relative; 
     bottom:64px;
 
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
 
     right: 700px;
     animation: barreVeilleSouligne 1s ease 0s normal forwards running;

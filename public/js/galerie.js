@@ -103,11 +103,9 @@ window.onload = function() {
 
 
 
-    // One-liner pour proc quand all img chargées 
+    // One-liner pour display les animation poissons quand all img chargées 
     Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
 
-      // ***** Activer pour proc des poissons seulement quand img chargées
-      // **************************************************************
       document.getElementById('motion-demo').style.display = "block";
       document.getElementById('motion-demo2').style.display = "block";
       document.getElementById('motion-demo3a').style.display = "block";
@@ -117,29 +115,31 @@ window.onload = function() {
       document.getElementById('motion-demo_tortoise').style.display = "block";
       document.getElementById('coral1').style.display = "block";
       document.getElementById('coral2').style.display = "block";
-
-
-
-      // Temporaire: faire comme rapid (proc l'elem avec interval pour avoir du delai entre)
       document.getElementById('motion-demo_whalePc').style.display = "block";
-
+      // document.getElementById('motion-demoBubble1').style.display = "block";
       setTimeout(function() {
         document.getElementById('motion-demo_shark1').style.display = "block";
       }, 2000);
   
-      // Poisson rapide delai: 
+      // Espadon interval (à appliquer à toutes les anims pour temporiser et ajouter de la faune): 
       poissonRapide = document.createElement("div");
       poissonRapide.id = "motion-demo_rapid";
       poissonRapide.style.display = "block";
-  
-      // document.getElementById('motion-demo_rapid').style.display = "block";
+
+      // poissonRapide2 = document.createElement("div");
+      // poissonRapide2.id = "motion-demo_rapid2";
+      // poissonRapide2.style.display = "block";
+
+      // poissonRapide3 = document.createElement("div");
+      // poissonRapide3.id = "motion-demo_rapid3";
+      // poissonRapide3.style.display = "block";
+
       setInterval(function() {
         if (document.getElementById('motion-demo_rapid') != null ) {
           document.getElementById('motion-demo_rapid').remove();
         }
         document.getElementById("aquarium").append(poissonRapide);
       }, 9500)
-      // document.getElementById('motion-demoBubble1').style.display = "block";
       // FIN
 
 

@@ -12,6 +12,7 @@
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
         <link rel="stylesheet" type="text/css" href="{{ asset('css/styleMediaQueries.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/styleMediaQueries2k.css') }}" />
 
 
         <!-- Favicon -->
