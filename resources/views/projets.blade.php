@@ -48,7 +48,7 @@
             <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
             <div style="width:100%;">
                 <h1 class="testH1" style="color:#ef3b2d; margin-block-start:0.1em;"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
-                </br>
+                <span  id="lineBreakMobile"></br></span>
                 <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
             </div>
 
@@ -56,7 +56,7 @@
             <!-- <h1 style="color:#ef3b2d; line-height:0; margin: 25px 0px 25px 4%;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1> -->
 
             <!-- Menu -->
-            <div id="NavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
+            <div id="NavBarContainer">
                 <p id="menuLigneCv" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                     &nbsp; 

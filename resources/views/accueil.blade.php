@@ -49,7 +49,7 @@
         </div>
 
         <!-- Menu -->
-        <div id="NavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
+        <div id="NavBarContainer">
             <p id="menuLigneCv" style="color:#E7E8F2;">
                 <a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> 
                 &nbsp; 

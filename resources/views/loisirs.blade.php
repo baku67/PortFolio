@@ -84,7 +84,7 @@
             <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
 
             <!-- Menu -->
-            <div id="NavBarContainer" class="testNavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
+            <div id="NavBarContainer">
                 <p id="menuLigneCv" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                     &nbsp; 

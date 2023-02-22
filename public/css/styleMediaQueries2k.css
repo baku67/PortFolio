@@ -49,7 +49,7 @@
 
 
     .letterO {
-        width: 30px;
+        width: 32px;
         position: relative;
         top: 2px;
     
@@ -88,12 +88,26 @@
     .testH1 {
         font-size: 2.9em;
     }
+    #NavBarContainer {
+        top: 25px;
+    }
     .testNavBarContainer {
         margin-bottom: 0em;
         top:7px;
     }
 
 
+    #pageContainer {
+        background-size:cover;
+        background-repeat:no-repeat;
+        height: fit-content;
+        margin:0% 10%;
+    }
+
+
+    /* .header {
+        width: auto;
+    } */
 
 
 }
