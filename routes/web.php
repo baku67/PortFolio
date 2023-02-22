@@ -35,8 +35,8 @@ Route::get('/veille', function () {
     return view('veille');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/loisirs', function () {
+    return view('loisirs');
 });
 
 Route::get('/iframe', function () {

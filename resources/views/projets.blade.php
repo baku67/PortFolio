@@ -66,7 +66,7 @@
                     &nbsp; 
                     <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
                     &nbsp; -->
-                    <a id="contactMenu" class="menuButton" href="/contact">Loisirs</a>
+                    <a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a>
                 </p>
             </div>
 
