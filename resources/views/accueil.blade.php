@@ -43,9 +43,9 @@
 
         <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
         <div style="width:100%;">
-            <h1 class="testH1" style="color:#ef3b2d; margin-block-start:0.1em;"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
-            </br>
-            <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
+            <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
+            <span  id="lineBreakMobile"></br></span>
+            <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> En formation</span><span id="status2"> En recherche de stage</span></span></h2>
         </div>
 
         <!-- Menu -->
@@ -83,7 +83,7 @@
                 </div>
 
                 <p class="paragrapheAccueil" >
-                    <span style="margin-left: 5px; font-size: 130%;">Bonjour, </span>
+                    <span style="margin-left: 5px; font-size: 130%;">Bienvenue, </span>
                     <br><br>
                     &nbsp;&nbsp;&nbsp;Je suis développeur web avec une appétence pour le front-end et recherche actuellement une entreprise pour effectuer un stage dans le cadre de ma formation "Développeur web et web mobile" 
                 </p>

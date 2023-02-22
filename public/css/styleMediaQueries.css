@@ -166,7 +166,10 @@
     #lineBreakMobile {
         display: block;
     }
-
+    #lineBreakMobileStatus {
+        display: block;
+        height: 0;
+    }
 
 
     .gridProjetHeaderContainer {
@@ -186,7 +189,7 @@
         font-size: 57%;
         position: relative;
         left: -29px;
-        margin: 12% 0% 0% 5%;
+        margin: 3% 0% 0% 5%;
     }
     .iframe {
         grid-area: iframe;
@@ -298,8 +301,12 @@
 
 
 
+    .pageTitle {
+        text-decoration-thickness: 3px;
+    }
 
     .testH1 {
+        font-size: 2em;
         padding: 6px 0px 0px 3%;
     }
     /* HYPER IMPORTANT ICI: */
@@ -1011,7 +1018,7 @@
     
         content:url("/img/shark1_red_rotate.png");
         opacity: 0;
-        transform: rotateZ(46deg) rotateX(180deg);
+        transform: rotateZ(0deg) rotateX(180deg);
     }
     @keyframes moveShark1test {
         0% {

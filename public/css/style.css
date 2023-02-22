@@ -1,3 +1,9 @@
+* {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
 html {
     /* background: linear-gradient(56deg, rgba(23,25,35,1) 0%, rgba(29,36,47,1) 41%, rgba(34,46,58,1) 50%, rgba(23,25,35,0.9943339884782038) 75%, rgba(23,25,35,0.9943339884782038) 99%);
     background-size: 800% 800%;
@@ -596,9 +602,10 @@ li::before {
 }
 
 .pageTitle {
+    text-decoration-thickness: 5px;
     color:#E7E8F2;
     opacity: 0;
-    text-decoration: underline;
+    text-decoration-line: underline;
     text-underline-position: under;
     text-decoration-color: #ef3b2d;
     -moz-text-decoration-color: #ef3b2d;
@@ -621,7 +628,7 @@ li::before {
     margin-right:2%;
 
     z-index: 2;
-    top: 18px;
+    top: 26px;
 }
 
 .menuButton:hover {
@@ -917,6 +924,9 @@ li::before {
 }
 
 #lineBreakMobile {
+    display: none;
+}
+#lineBreakMobileStatus {
     display: none;
 }
 
@@ -1478,6 +1488,8 @@ li::before {
 
 /* Fix du Header Dégueulasse (seulement sur loisirs) ET VOIR MEDIA QUERIES */
 .testH1 {
+    font-size: 2.4em;
+
     color: #ef3b2d;
     /* line-height: 0; */
     padding: 21px 0px 16px 3%;
@@ -1996,6 +2008,7 @@ li::before {
     animation: barreVeilleSouligne 1s ease 0s normal forwards running;
 }
 .barreGalerieSouligne {
+    border-radius: 2px;
     height:15px; 
     width:163px; 
     background-color:#e2e8f0; 
@@ -2008,6 +2021,7 @@ li::before {
     animation: barreVeilleSouligne 1s ease 0s normal forwards running;
 }
 .barreProjetSouligne {
+    border-radius: 2px;
     height:15px; 
     width:288px; 
     background-color:#e2e8f0; 
@@ -3337,12 +3351,12 @@ li.veilleLigneAjout::before {
     
         content:url("/img/shark1_red_rotate.png");
         opacity: 0;
-        transform: rotateZ(46deg) rotateX(180deg);
+        transform: rotateZ(100deg) rotateX(180deg);
     }
     @keyframes moveShark1test {
         0% {
             opacity: 0;
-            transform: rotateZ(70deg) rotateX(180deg);
+            transform: rotateZ(100deg) rotateX(180deg);
         }
         40% {
             opacity: 0.4;
@@ -3352,7 +3366,7 @@ li.veilleLigneAjout::before {
         }
         100% {
             opacity: 0;
-            transform: rotateZ(360deg) rotateX(180deg);
+            transform: rotateZ(370deg) rotateX(180deg);
         }
     }
 
@@ -3587,3 +3601,79 @@ li.veilleLigneAjout::before {
     justify-content: center;
     margin: 0 auto;
   }
+
+
+
+
+  #status {
+    letter-spacing: 2px; 
+    font-size:85%; 
+    opacity:0.8; 
+    margin-left: 8px;
+
+    border: 2px solid rgba(239, 59, 45, 0.4);
+    background-color: rgba(239, 59, 45, 0.1);
+    padding: 3px 7px;
+    border-radius: 4px; 
+
+    animation: blinkeringStatus 2s infinite forwards linear;
+  }
+  @keyframes blinkeringStatus {
+    0% {
+        border: 2px solid rgba(239, 59, 45, 0.4);
+        background-color: rgba(239, 59, 45, 0.1);
+
+    }
+    33% {
+        border: 2px solid rgba(239, 59, 45, 0.9);
+        background-color: rgba(239, 59, 45, 0.3);
+
+    }
+    66% {
+        border: 2px solid rgba(239, 59, 45, 0.9);
+        background-color: rgba(239, 59, 45, 0.3);
+
+    }
+    100%{
+        border: 2px solid rgba(239, 59, 45, 0.4);
+        background-color: rgba(239, 59, 45, 0.1);
+
+    }
+  }
+
+  #status2 {
+    letter-spacing: 2px; 
+    font-size:85%; 
+    opacity:0.8; 
+    margin-left: 8px;
+
+    border: 2px solid rgba(0, 255, 213, 0.4);
+    background-color: rgba(0, 255, 213, 0.1);
+    padding: 3px 7px;
+    border-radius: 4px; 
+
+    animation: blinkeringStatus2 2s infinite forwards linear;
+  }
+  @keyframes blinkeringStatus2 {
+    0% {
+        border: 2px solid rgba(0, 255, 213, 0.4);
+        background-color: rgba(0, 255, 213, 0.1);
+    
+    }
+    33% {
+        border: 2px solid rgba(0, 255, 213, 0.8);
+        background-color: rgba(0, 255, 213, 0.2);
+
+    }
+    66% {
+        border: 2px solid rgba(0, 255, 213, 0.8);
+        background-color: rgba(0, 255, 213, 0.2);
+
+    }
+    100%{
+        border: 2px solid rgba(0, 255, 213, 0.4);
+        background-color: rgba(0, 255, 213, 0.1);
+    
+    }
+  }
+

@@ -45,6 +45,7 @@
     }
     #messageLoadingLong {
         font-size: 1.4em;
+        margin-bottom: 15px;
     }
 
 
@@ -86,10 +87,10 @@
 
     /* à rename: */
     .testH1 {
-        font-size: 2.9em;
+        font-size: 2.9em !important;
     }
     #NavBarContainer {
-        top: 25px;
+        top: 29px;
     }
     .testNavBarContainer {
         margin-bottom: 0em;
@@ -105,9 +106,9 @@
     }
 
 
-    /* .header {
-        width: auto;
-    } */
+    .gridProjetHeaderContainer {
+        grid-template-columns: 0.7fr 10fr; 
+    }
 
 
 }

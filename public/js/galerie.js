@@ -1,3 +1,4 @@
+//********* Tentative d'affichage de tout les poyssons pendant(avant) le chargement :
 // setTimeout(function() {
 //   document.getElementById('motion-demo').style.display = "block";
 //   document.getElementById('motion-demo2').style.display = "block";
@@ -22,14 +23,12 @@
 //     }
 //     document.getElementById("aquarium").append(poissonRapide);
 //   }, 9500)
-
 //   // document.getElementById('motion-demoBubble1').style.display = "block";
-
 // }, 1000)
 
 
 
-    // Reprocs de l'anim rotate des "O" dans title (delai initial puis interval entre les procs de l'anim)
+    // Reprocs de l'anim rotate des "O" dans title Loisirs:"Photographie" (delai initial puis interval entre les procs de l'anim)
     setTimeout(function() {
       let array = document.querySelectorAll(".letterO");
 
@@ -134,6 +133,18 @@ window.onload = function() {
       setTimeout(function() {
         document.getElementById('motion-demo_shark1').style.display = "block";
       }, 2000);
+
+      // Interval proc Shark/Requin(rotate haut-droite) interval :
+      sharkCorner = document.createElement("div");
+      sharkCorner.id = "motion-demo_shark1";
+      sharkCorner.style.display = "block";
+      setInterval(function() {
+        if (document.getElementById('motion-demo_shark1') != null ) {
+          document.getElementById('motion-demo_shark1').remove();
+        }
+        document.getElementById("aquarium").append(sharkCorner);
+      }, 15000)
+
   
       // Espadon interval (à appliquer à toutes les anims pour temporiser et ajouter de la faune): 
       poissonRapide = document.createElement("div");
