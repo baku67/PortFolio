@@ -1875,17 +1875,20 @@ li::before {
 .letterO {
     width: 25px;
     transform: rotateZ(0deg);
-    filter: blur(7px);
+    filter: blur(0px);
     margin: 0 2px;
 
     animation: lensRotate 1.2s 1.2s forwards ease-in-out;
 }
 @keyframes lensRotate {
-    from {
-        filter: blur(7px);
+    0% {
+        filter: blur(0px);
         transform: rotateZ(0deg);
     }
-    to {
+    20% {
+        filter: blur(7px);
+    }
+    100% {
         filter: blur(0px);
         transform: rotateZ(360deg);
     }

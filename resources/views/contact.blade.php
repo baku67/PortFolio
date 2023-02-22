@@ -85,7 +85,7 @@
 
             <!-- Menu -->
             <div id="NavBarContainer" class="testNavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
-                <p id="menuLigne" class="testMenuLigne" style="color:#E7E8F2;">
+                <p id="menuLigneCv" class="testMenuLigne" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                     &nbsp; 
                     <a id="cvMenu" class="menuButton" href="/cv">Mon parcours</a> 
