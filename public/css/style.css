@@ -1299,6 +1299,8 @@ li::before {
     opacity:0;
 
     animation: fadeIn 1.4s ease 0.3s normal forwards running;
+
+    margin-block-start: 0;
 }
 .projetTitle {
     text-align: center;

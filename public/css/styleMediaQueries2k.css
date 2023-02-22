@@ -50,6 +50,10 @@
         width: 30px;
     }
 
+    #galerieTitle {
+        margin-block-start: 0.6em;
+    }
+
 
 
     #motion-demo2 {

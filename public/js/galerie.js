@@ -29,6 +29,19 @@
 
 
 
+    // Reprocs de l'anim rotate des "O" dans title (delai initial puis interval entre les procs de l'anim)
+    setTimeout(function() {
+      let array = document.querySelectorAll(".letterO");
+
+      setInterval(function() {
+        array.forEach((element) => {
+          element.classList.add("lettersOanimProc");
+          setTimeout(function() {
+            element.classList.remove("lettersOanimProc");
+          }, 3000)
+        })  
+      }, 5000)
+    }, 2500)
 
 
 
@@ -99,19 +112,6 @@ window.onload = function() {
 
 
 
-    // Reprocs de l'anim rotate des "O" dans title (delai initial puis interval entre les procs de l'anim)
-    setTimeout(function() {
-      let array = document.querySelectorAll(".letterO");
-
-      setInterval(function() {
-        array.forEach((element) => {
-          element.classList.add("lettersOanimProc");
-          setTimeout(function() {
-            element.classList.remove("lettersOanimProc");
-          }, 3000)
-        })  
-      }, 5000)
-    }, 1000)
 
 
 
