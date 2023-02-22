@@ -1013,7 +1013,10 @@
 
 
     .letterO {
-        width: 21px;
+        width: 22px;
+        position: relative;
+        top: 1px;
+    
     }
 
 

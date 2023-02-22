@@ -48,6 +48,9 @@
 
     .letterO {
         width: 30px;
+        position: relative;
+        top: 2px;
+    
     }
 
     #galerieTitle {
