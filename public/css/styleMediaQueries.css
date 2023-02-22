@@ -789,6 +789,73 @@
         }
     }
 
+    #coral3 {
+        opacity: 0.4;
+        content:url("/img/coral1_blue.png");
+
+        width: 320px;
+        height: 320px;
+    }
+    @keyframes moveCoral3 {
+        0% {
+            width: 320px;
+            height: 320px;
+            }
+        50% {
+            width: 320px;
+            height: 290px;
+            }
+        100% {
+            width: 320px;
+            height: 320px;
+            }
+    }
+
+    #coral4 {
+        display: none;
+        filter: blur(3px);    
+        position: fixed;
+    
+        /* Mobile (effet rotate dans le coin en haut à droite) */
+        /* top: 0%;
+        right: 0%; */
+        top: 0%;
+        left: -5%;
+        z-index: -80;
+
+    
+        /* animation: moveCoral1 60000ms infinite linear; */
+        width: 150px;
+        height: 150px;
+    
+        content:url("/img/coral1_blue.png");
+        opacity: 0.2;
+        transform: rotateY(181deg) rotateZ(15deg) rotateX(182deg);
+        animation: moveCoral4 8s infinite ease;
+    }
+    @keyframes moveCoral4 {
+        0% {
+            width: 150px;
+            height: 150px;
+            }
+        50% {
+            width: 150px;
+            height: 130px;
+            }
+        100% {
+            width: 150px;
+            height: 150px;
+            }
+    }
+
+
+
+
+
+
+
+
+
 
 
     #motion-demo_rapid {

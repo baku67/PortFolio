@@ -2220,6 +2220,8 @@ li.veilleLigneAjout::before {
     content:url("/img/poisson_red.png");
     opacity: 0;
     transform: rotateY(180deg);
+
+    filter:invert(0%);
   }
   
   @keyframes move {
@@ -2227,43 +2229,54 @@ li.veilleLigneAjout::before {
         offset-distance: 0%;
         opacity: 0;
         transform: rotateY(180deg);
+        filter:invert(0%);
     }
     11% {
-        opacity: 0.8;
+        opacity: 0.7;
         transform: rotateY(140deg);
+        filter:invert(5%);
     }
     22% {
-        opacity: 0.4;
+        opacity: 0.3;
         transform: rotateY(180deg);
+        filter:invert(0%);
     }
     33% {
-        opacity: 0.8;
+        opacity: 0.7;
         transform: rotateY(210deg);
+        filter:invert(5%);
     }
     44% {
-        opacity: 0.4;
+        opacity: 0.3;
         transform: rotateY(180deg);
+        filter:invert(0%);
     }
     55% {
-        opacity: 0.8;
+        opacity: 0.7;
         transform: rotateY(140deg);
+        filter:invert(5%);
     }
     66% {
-        opacity: 0.4;
+        opacity: 0.3;
         transform: rotateY(180deg);
+        filter:invert(0%);
     }
     77% {
-        opacity: 0.8;
+        opacity: 0.7;
         transform: rotateY(210deg);
+        filter:invert(5%);
     }
     88% {
-        opacity: 0.4;
+        opacity: 0.3;
         transform: rotateY(180deg);
+        filter:invert(0%);
     }
     100% {
         opacity: 0;
         offset-distance: 100%;
         transform: rotateY(140deg);
+        filter:invert(5%);
+
     }
   }
 
@@ -3336,9 +3349,6 @@ li.veilleLigneAjout::before {
             width: 350px;
         }
     }
-
-
-
     #coral2 {
         display: none;
         filter: blur(2px);    
@@ -3375,6 +3385,90 @@ li.veilleLigneAjout::before {
             width: 200px;
         }
     }
+
+
+
+    #coral3 {
+        display: none;
+        filter: blur(8px);    
+        position: fixed;
+    
+        /* Mobile (effet rotate dans le coin en haut à droite) */
+        /* top: 0%;
+        right: 0%; */
+        bottom: -7%;
+        right: -2%;
+        z-index: -80;
+
+    
+        /* animation: moveCoral1 60000ms infinite linear; */
+        width: 400px;
+        height: 400px;
+    
+        content:url("/img/coral2_red.png");
+        opacity: 0.2;
+        transform: rotateY(180deg) rotateZ(0deg) rotateX(0deg);
+
+        animation: moveCoral3 8s infinite ease-in-out;
+    }
+    @keyframes moveCoral3 {
+        0% {
+            width: 400px;
+            height: 400px;
+            }
+        50% {
+            width: 400px;
+            height: 350px;
+            }
+        100% {
+            width: 400px;
+            height: 400px;
+            }
+    }
+
+
+
+
+
+
+    #coral4 {
+        display: none;
+        filter: blur(7px);    
+        position: fixed;
+    
+        /* Mobile (effet rotate dans le coin en haut à droite) */
+        /* top: 0%;
+        right: 0%; */
+        top: -15%;
+        left: -5%;
+        z-index: -80;
+
+    
+        /* animation: moveCoral1 60000ms infinite linear; */
+        width: 300px;
+        height: 300px;
+    
+        content:url("/img/coral1_blue.png");
+        opacity: 0.2;
+        transform: rotateY(181deg) rotateZ(15deg) rotateX(182deg);
+        animation: moveCoral4 8s infinite ease-in-out;
+    }
+    @keyframes moveCoral4 {
+        0% {
+            width: 300px;
+            height: 300px;
+            }
+        50% {
+            width: 300px;
+            height: 280px;
+            }
+        100% {
+            width: 300px;
+            height: 300px;
+            }
+    }
+
+
 
 
 

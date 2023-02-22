@@ -115,6 +115,8 @@ window.onload = function() {
       document.getElementById('motion-demo_tortoise').style.display = "block";
       document.getElementById('coral1').style.display = "block";
       document.getElementById('coral2').style.display = "block";
+      document.getElementById('coral3').style.display = "block";
+      document.getElementById('coral4').style.display = "block";
       document.getElementById('motion-demo_whalePc').style.display = "block";
       // document.getElementById('motion-demoBubble1').style.display = "block";
       setTimeout(function() {

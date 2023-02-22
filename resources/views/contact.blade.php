@@ -139,6 +139,9 @@
                     <div id="coral2"></div>
 
                     <div id="coral3"></div> 
+
+                    <div id="coral4"></div> 
+
                     <!-- <div id="motion-demo_rapid"></div>  -->
                 </div>
 
