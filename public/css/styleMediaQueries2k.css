@@ -9,7 +9,7 @@
 
     #portfolioTitle {
         font-size: 2.2em;
-        margin-block-start: 0.2em;
+        margin-block-start: 0.5em;
         margin-block-end: 0;
     }
 
@@ -35,6 +35,8 @@
     #photographieTitle {
         font-size: 3.7em;
         margin-block-start: 0;
+
+        -webkit-box-reflect: below -12px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
     }
 
     #messageGalerie {
@@ -80,6 +82,15 @@
         offset-path: path("M 1323 383 C 840 327 722 12 -492 -110");
         animation: moveRapid 1850ms 250ms 1 cubic-bezier(1,.66,.51,.98);
 
+    }
+
+    /* à rename: */
+    .testH1 {
+        font-size: 2.9em;
+    }
+    .testNavBarContainer {
+        margin-bottom: 0em;
+        top:7px;
     }
 
 

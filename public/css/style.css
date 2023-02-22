@@ -591,6 +591,7 @@ li::before {
 #NavBarContainer {
     /*  Au dessus de la galerie */
     z-index: 2;
+    top: 18px;
 }
 
 .menuButton:hover {
@@ -1404,7 +1405,7 @@ li::before {
 
 #portfolioTitle {
     font-size: 2em;
-    margin-block-start: 0.2em;
+    margin-block-start: 0.5em;
     margin-block-end: 0;
 }
 
@@ -1458,6 +1459,8 @@ li::before {
     align-self: flex-end;
     display: flex;
     margin-bottom: 18px;
+
+
 }
 
 /* PROJET */
@@ -1475,7 +1478,7 @@ li::before {
     }
     to {
         /* right: -50%; */
-        right: 0px;
+        right: -18px;
         margin: 0px auto 60px auto;
         background-color:#ef3b2d;
         height:8px; 
@@ -1864,6 +1867,8 @@ li::before {
     animation: fadeInPhotographieTitle 0.5s 1.1s ease-in forwards;
 
     margin-block-start: 0;
+
+    -webkit-box-reflect:below -5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
 }
 @keyframes fadeInPhotographieTitle {
     from {
@@ -1950,7 +1955,7 @@ li::before {
 }
 .barreGalerieSouligne {
     height:15px; 
-    width:168px; 
+    width:163px; 
     background-color:#e2e8f0; 
     position:relative; 
     bottom:64px;
@@ -1962,7 +1967,7 @@ li::before {
 }
 .barreProjetSouligne {
     height:15px; 
-    width:293px; 
+    width:288px; 
     background-color:#e2e8f0; 
     position:relative; 
     bottom:13px;
@@ -1979,7 +1984,7 @@ li::before {
         height: 15px;
     }
     to {
-        right: 0px;
+        right: -5px;
         background-color:rgba(239, 59, 45, 0.9);
         height: 6px;
     }

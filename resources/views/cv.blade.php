@@ -44,7 +44,7 @@
 
         <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
         <div style="width:100%;">
-            <h1 id="portfolioTitle" style="margin-left:4%; color:#ef3b2d; margin-block-start:0.1em;">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
+            <h1 class="testH1" style="color:#ef3b2d; margin-block-start:0.1em;"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
             </br>
             <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web</span></h2>
         </div>
@@ -54,7 +54,7 @@
             <p id="menuLigneCv" style="color:#E7E8F2;">
                 <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                 &nbsp; 
-                <a id="cvMenu" class="menuButton selected" href="/cv">Mon parcours</a> 
+                <a id="cvMenu" class="menuButton selected" href="/cv">Mon CV</a> 
                 &nbsp; 
                 <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
                 &nbsp; 
@@ -77,7 +77,7 @@
         <!-- Contenu Page -->
         <div id="pageContainer">
 
-            <h2 id="titleCv" class="pageTitle cvTitle">Mon &nbsp;<span style="letter-spacing:1px;">parcours</span></h2>
+            <h2 id="titleCv" class="pageTitle cvTitle">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></h2>
 
             <!-- </br>
 

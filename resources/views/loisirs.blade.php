@@ -81,14 +81,14 @@
         <!-- Header  -->
         <div class="testHeader">
                 
-            <h1 class="testH1">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></h1>
+            <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
 
             <!-- Menu -->
             <div id="NavBarContainer" class="testNavBarContainer" style="position:absolute; top:0%; right:0%; margin-right:2%;">
                 <p id="menuLigneCv" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                     &nbsp; 
-                    <a id="cvMenu" class="menuButton" href="/cv">Mon parcours</a> 
+                    <a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> 
                     &nbsp; 
                     <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
                     &nbsp; 
@@ -109,7 +109,7 @@
             <h3 class="galerieTitle"> Loisirs <span class="carreTitre carreTitreVeille">▪</span></h3>
             <div class="barreGalerieSouligne"></div>
 
-            <h4 id="photographieTitle" style="-webkit-box-reflect:below -5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.4, transparent), to(white));"><span id="photoTitlePart1">Ph<img src="img/letterO_red2.png" class="letterO"/>t<img src="img/letterO_red2.png" class="letterO"/></span><span id="photoTitlePart2">graphie</span></h4>
+            <h4 id="photographieTitle"><span id="photoTitlePart1">Ph<img src="img/letterO_red2.png" class="letterO"/>t<img src="img/letterO_red2.png" class="letterO"/></span><span id="photoTitlePart2">graphie</span></h4>
 
             <p id="messageGalerie" style="display:block"> Cliquez sur une image pour voir la version <span style="color:rgb(239 59 45 / 80%); font-weight:bold;">HD<span> </p>
 

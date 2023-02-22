@@ -47,9 +47,11 @@
 
     #photographieTitle {
         font-size: 2.5em;
+        -webkit-box-reflect: below -9px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
         /* opacity: 0;
 
         animation: flickeringTitle 1.5s 0.25s forwards !important; */
+
     }
     @keyframes flickeringTitle {
         0% {
@@ -246,7 +248,7 @@
 
     #portfolioTitle {
         margin-block-end: 0;
-        /* margin-block-start: 0; */
+        margin-block-start: 0.2em !important;
     }
     #portfolioSousTitre {
         margin-block-end: 0;
@@ -324,6 +326,8 @@
         padding: 0px;
 
         /* top: 7% !important; */
+        top: 0px;
+
 
         position: relative !important;
     }
@@ -390,7 +394,7 @@
 
 
     .barreProjetSouligne {
-        width: 188px !important;
+        width: 200px !important;
         bottom: 4px !important;
         animation: barreProjetSouligne 1s ease 0s normal forwards running !important;
     }
@@ -398,10 +402,25 @@
         width: 257px;
     }
     .barreGalerieSouligne {
-        width: 122px;
+        width: 116px;
         bottom: 8px;
         margin-bottom: 30px;
+
+        animation: barreVeilleSouligne 1s ease 0s normal forwards running;
     }
+    @keyframes barreVeilleSouligne {
+        from {
+            right: 1000px;
+            background-color:#e2e8f0;
+            height: 15px;
+        }
+        to {
+            right: -3px;
+            background-color:rgba(239, 59, 45, 0.9);
+            height: 6px;
+        }
+    }
+    
     @keyframes barreProjetSouligne {
         from {
             right: 1000px;
@@ -409,8 +428,7 @@
             height: 15px;
         }
         to {
-            /* right: -85px; */
-            right: -79px;
+            right: -73px;
             background-color: rgba(239, 59, 45, 0.9);
             height: 8px;
         }
