@@ -1839,7 +1839,13 @@ li::before {
 
 
 
-
+.imgGalleries {
+    width:100%; 
+    height:auto; 
+    margin:auto; 
+    vertical-align:middle; 
+    border-radius:10px;
+}
 
 
 
@@ -1863,6 +1869,45 @@ li::before {
     }
     to {
         opacity: 1;
+    }
+}
+
+.letterO {
+    width: 25px;
+    transform: rotateZ(0deg);
+    filter: blur(7px);
+    margin: 0 2px;
+
+    animation: lensRotate 1.2s 1.2s forwards ease-in-out;
+}
+@keyframes lensRotate {
+    from {
+        filter: blur(7px);
+        transform: rotateZ(0deg);
+    }
+    to {
+        filter: blur(0px);
+        transform: rotateZ(360deg);
+    }
+}
+.lettersOanimProc {
+    width: 25px;
+    margin: 0 2px;
+    filter: blur(0px) !important;
+    transform: rotateZ(0deg);
+    animation: lensRotateProc 1.2s 0s forwards linear !important;
+}
+@keyframes lensRotateProc {
+    0% {
+        filter: blur(0px);
+        transform: rotateZ(0deg);
+    }
+    50% {
+        filter: blur(7px);
+    }
+    100% {
+        filter: blur(0px);
+        transform: rotateZ(360deg);
     }
 }
 
@@ -3224,19 +3269,19 @@ li.veilleLigneAjout::before {
     /* FAIRE LA MEME mais avec diametre de rotate enorme (refaire PNG) et taille poisson plus grande (POUR PC) */
     #motion-demo_shark1 {
         display: none;
-        filter: blur(2px);    
+        filter: blur(3px);    
         position: fixed;
     
         /* Mobile (effet rotate dans le coin en haut à droite) */
         /* top: 0%;
         right: 0%; */
-        bottom: 82%;
-        left: 60%;
+        top: -10%;
+        right: -5%;  
         z-index: -2;
     
-        animation: moveShark1test 7000ms infinite linear;
-        width: 230px;
-        height: 230px;
+        animation: moveShark1test 8000ms infinite linear;
+        width: 330px;
+        height: 330px;
     
         content:url("/img/shark1_red_rotate.png");
         opacity: 0;
@@ -3245,13 +3290,13 @@ li.veilleLigneAjout::before {
     @keyframes moveShark1test {
         0% {
             opacity: 0;
-            transform: rotateZ(0deg) rotateX(180deg);
+            transform: rotateZ(70deg) rotateX(180deg);
         }
-        30% {
-            opacity: 0.5;
+        40% {
+            opacity: 0.4;
         }
         70% {
-            opacity: 0.5;
+            opacity: 0.4;
         }
         100% {
             opacity: 0;

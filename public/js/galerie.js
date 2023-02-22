@@ -159,6 +159,22 @@ window.onload = function() {
       // FIN
 
 
+      // Reprocs de l'anim rotate des "O" dans title (delai initial puis interval entre les procs de l'anim)
+      setTimeout(function() {
+        let array = document.querySelectorAll(".letterO");
+
+        setInterval(function() {
+          array.forEach((element) => {
+            element.classList.add("lettersOanimProc");
+            setTimeout(function() {
+              element.classList.remove("lettersOanimProc");
+            }, 4000)
+          })  
+        }, 8000)
+      }, 2000)
+
+
+
       document.getElementById("messageGalerie").classList.add("fadeInHd");
 
       document.getElementById('spinnerDiv').remove();
