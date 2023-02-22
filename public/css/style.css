@@ -2281,8 +2281,8 @@ li.veilleLigneAjout::before {
     z-index: -5;
 
     animation: move2 18000ms 2000ms infinite linear;
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
 
     /* background: cyan; */
     content:url("/img/poisson4_red2.png");
