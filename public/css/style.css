@@ -96,7 +96,8 @@ footer.footerAccueil {
     opacity: 0;
     /* Juste pour eviter le pop puis decalage lors du chargement du form(qui est un api) */
     animation: fadeIn 0.2s 0.5s forwards;
-    position: absolute !important;
+    /* position: absolute !important; */
+    position: relative;
 
 }
 
@@ -1473,9 +1474,10 @@ li::before {
 .imgAccueil { 
     float:right;
     width: 161px;
-    height: 169px;
+    height: 173px;
     border-radius: 4px;
-    margin: 45px 30px 15px 68px;
+    /* margin: 45px 30px 15px 68px; */
+    margin: 20px 30px 15px 49px;
 
     border: 2px solid rgba(239, 59, 45, 0.5);
     padding: 4px;
@@ -3661,13 +3663,13 @@ li.veilleLigneAjout::before {
     
     }
     33% {
-        border: 2px solid rgba(0, 255, 213, 0.8);
-        background-color: rgba(0, 255, 213, 0.2);
+        border: 2px solid rgba(0, 255, 213, 1);
+        background-color: rgba(0, 255, 213, 0.3);
 
     }
     66% {
-        border: 2px solid rgba(0, 255, 213, 0.8);
-        background-color: rgba(0, 255, 213, 0.2);
+        border: 2px solid rgba(0, 255, 213, 1);
+        background-color: rgba(0, 255, 213, 0.3);
 
     }
     100%{

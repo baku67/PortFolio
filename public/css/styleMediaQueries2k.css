@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1300px) {
     .paragrapheAccueil {
-        font-size: 2em;
+        font-size: 1.7em;
     }
 
     #menuLigneCv {
@@ -14,10 +14,13 @@
     }
 
     .imgAccueil { 
-        width: 180px;
+        /* width: 180px;
         height: 195px;
+        margin: 45px 30px 35px 112px; */
 
-        margin: 45px 30px 15px 112px;
+        width: 194px;
+        height: 213px;
+        margin: 5px 30px 37px 56px;
     }
 
     #portfolioSousTitre {

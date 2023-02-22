@@ -71,7 +71,6 @@
         <div id="pageContainer">
 
             <h2 class="pageTitle">Présentation</h2>
-
             </br>
 
             <div class="accueilGrid">
@@ -85,7 +84,10 @@
                 <p class="paragrapheAccueil" >
                     <span style="margin-left: 5px; font-size: 130%;">Bienvenue, </span>
                     <br><br>
-                    &nbsp;&nbsp;&nbsp;Je suis développeur web avec une appétence pour le front-end et recherche actuellement une entreprise pour effectuer un stage dans le cadre de ma formation "Développeur web et web mobile" 
+                    &nbsp;&nbsp;&nbsp;Je suis Basile KUNTZ, un jeune en pleine formation de développeur web et web mobile au centre Elan Formation de Strasbourg. Je cherche actuellement à mettre à profit mes compétences et à m'améliorer dans le cadre d'un stage professionel et j’ai pour ambition de vous montrer de quoi je suis capable et de m'améliorer constemment.
+                    J’apprécie les choses simples de la vie, ma personnalité et ma créativité parleront d’elles-même. 
+                    Donner vie à un site web, c’est surprenant, motivant, beau, captivant, fascinant, prenant… et ça j’adore ! 
+                    <br>Et si on se rencontrait pour discuter de votre projet ? 
                 </p>
 
             </div>
