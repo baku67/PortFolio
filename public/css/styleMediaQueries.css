@@ -743,6 +743,9 @@
         height: 250px;
     
         animation: moveCoral1 5s infinite ease;
+
+        content:url("/img/coral1_red.png");
+
     }
     @keyframes moveCoral1 {
         0% {
@@ -760,6 +763,8 @@
     }
 
     #coral2 {
+        filter: blur(1px);    
+
         bottom: -7%;
         right: -2%;
         z-index: -20;

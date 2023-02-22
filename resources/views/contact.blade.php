@@ -118,8 +118,9 @@
                 <!-- Spinner pendant le charegement des images -->
                 <!-- <img src="img/spinner.png" id="spinnerImg" alt="chargement en cours"> -->
                 <!-- https://loading.io/css/ -->
-                <div id="spinnerDiv" class="lds-ring"><div></div><div></div><div></div><div></div></div>
                 <p id="messageLoadingLong"> Le chargement peut être un peu long...</p>
+
+                <div id="spinnerDiv" class="lds-ring"><div></div><div></div><div></div><div></div></div>
                 
                 <div id="aquarium">
                     <!-- Test anim poisson -->
@@ -136,6 +137,8 @@
 
                     <div id="coral1"></div> 
                     <div id="coral2"></div>
+
+                    <div id="coral3"></div> 
                     <!-- <div id="motion-demo_rapid"></div>  -->
                 </div>
 

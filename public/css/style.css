@@ -199,6 +199,7 @@ textarea:focus, input:focus{
 
 
 #messageLoadingLong {
+    opacity: 2.5em;
     color: rgb(226 232 240 / 40%);
     text-align: center;
     font-style: oblique;
@@ -2142,7 +2143,7 @@ li.veilleLigneAjout::before {
     position: relative;
     line-height: 0px;
     bottom: 25%;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     left: 50%;
     transform: translateX(-50%);
 
@@ -3315,7 +3316,7 @@ li.veilleLigneAjout::before {
         width: 350px;
         height: 350px;
     
-        content:url("/img/coral1_red.png");
+        content:url("/img/coral1_blue.png");
         opacity: 0.5;
         transform: rotateZ(0deg) rotateX(0deg);
 
@@ -3340,7 +3341,7 @@ li.veilleLigneAjout::before {
 
     #coral2 {
         display: none;
-        filter: blur(1px);    
+        filter: blur(2px);    
         position: fixed;
     
         /* Mobile (effet rotate dans le coin en haut à droite) */
