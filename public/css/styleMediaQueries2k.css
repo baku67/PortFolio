@@ -39,7 +39,7 @@
         font-size: 3.7em;
         margin-block-start: 0;
 
-        -webkit-box-reflect: below -12px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+        -webkit-box-reflect: below 7px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
     }
 
     #messageGalerie {
@@ -113,5 +113,7 @@
         grid-template-columns: 0.7fr 10fr; 
     }
 
-
+    footer.footerAccueil {
+        position: absolute;
+    }
 }
