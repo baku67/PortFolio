@@ -32,15 +32,15 @@
     setTimeout(function() {
       let array = document.querySelectorAll(".letterO");
 
-      document.getElementById("letterIpoint").classList.remove("letterIpointAnim");
-
+      
+      // document.getElementById("letterIpoint").classList.remove("letterIpointAnim");
 
       setInterval(function() {
         // Interval du flash titre
-        document.getElementById("letterIpoint").classList.add("letterIpointAnim");
-        setTimeout(function() {
-          document.getElementById("letterIpoint").classList.remove("letterIpointAnim");
-        }, 3000)
+        // document.getElementById("letterIpoint").classList.add("letterIpointAnim");
+        // setTimeout(function() {
+        //   document.getElementById("letterIpoint").classList.remove("letterIpointAnim");
+        // }, 3000)
 
         // Interval des cameraLens rotate/blurr titre
         array.forEach((element) => {
@@ -50,6 +50,18 @@
           }, 3000)
         })  
       }, 5000)
+
+      // Interval flash Rectangle
+      // setInterval(function() {
+      //   document.getElementById("flashRectangle").classList.add("flashRectangleAnim");
+      //   setTimeout(function() {
+      //     document.getElementById("flashRectangle").classList.remove("flashRectangleAnim");
+      //   }, 500)
+    
+      // }, 5500)
+  
+  
+
     }, 2500)
 
 
@@ -57,7 +69,11 @@
 
 
 
+
+
 window.onload = function() {
+
+
 
 
   // Mettre des fadeIn et fadeOut

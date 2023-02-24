@@ -623,6 +623,7 @@
 
 
 
+
     /* GRID git (regularitée et aperçu gitkraken) */
     .gridGit {
         justify-content: center;
@@ -1068,11 +1069,17 @@
         -webkit-mask: var(--mask);
                 mask: var(--mask);
 
-        background: rgb(17,18,63);
+
+        /* background: rgb(17,18,63);
         background: -moz-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%);
         background: -webkit-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%);
-        background: linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%);
-    
+        background: linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%); */
+        background: rgb(17,18,63);
+        background: -moz-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(45,187,239,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(45,187,239,1) 100%);
+        background: linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(45,187,239,1) 100%);
+
+
         animation: fadeInWave 1.5s 1s forwards ease-out;
     
     }
@@ -1106,6 +1113,9 @@
         right: 18px;
         font-size: 2em;
     }
+    /* .letterIpointAnim {
+        animation: blinkingFlash 0.4s 4.1s linear forwards;
+    } */
 
 
     #inspirationContainer {
