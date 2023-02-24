@@ -32,14 +32,14 @@
     setTimeout(function() {
       let array = document.querySelectorAll(".letterO");
 
-      
-      // document.getElementById("letterIpoint").classList.remove("letterIpointAnim");
+
+      // document.getElementById("flashPoint").classList.remove("flashPointAnim");
 
       setInterval(function() {
         // Interval du flash titre
-        // document.getElementById("letterIpoint").classList.add("letterIpointAnim");
+        // document.getElementById("flashPoint").classList.add("flashPointAnim");
         // setTimeout(function() {
-        //   document.getElementById("letterIpoint").classList.remove("letterIpointAnim");
+        //   document.getElementById("flashPoint").classList.remove("flashPointAnim");
         // }, 3000)
 
         // Interval des cameraLens rotate/blurr titre

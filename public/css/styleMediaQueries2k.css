@@ -163,7 +163,7 @@
     }
 
 
-    #letterIpoint {
+    #flashPoint {
         position: absolute;
         line-height: 0;
         /* top: 8%;
@@ -177,7 +177,7 @@
         right: 9px;
         font-size: 10em;
     }
-    .letterIpointAnim {
+    .flashPointAnim {
         animation: blinkingFlash 0.3s 1.8s linear forwards;
     }
     @keyframes blinkingFlash {
@@ -200,12 +200,165 @@
     }
     
 
+    #flashPoint2 {
+        position: absolute;
+        line-height: 0;
+        color: rgb(255, 255, 255);
+    
+        opacity: 0;
+    
+        filter: blur(150px);
+    
+        top: -60px;
+        right: -10px;
+    
+        width: 75%;
+        height: 75%;
+    
+        animation: blinkingFlash2 0.4s 3s linear forwards;
+    }
+    @keyframes blinkingFlash2 {
+        0% {
+            opacity: 0;
+            filter: blur(150px);
+        }
+        48% {
+            opacity: 1;
+            filter: blur(10px);
+        }
+        52% {
+            opacity: 1;
+            filter: blur(10px);
+        }
+        100% {
+            opacity: 0;
+            filter: blur(150px);
+        }
+    }
+    .flashPoint2Anim {
+        /* animation: blinkingFlash2 0.4s 4.1s linear forwards; */
+    }
+    
 
 
 
 
 
+    #photoBar {
+        position: absolute;
+        /* line-height: 0; */
+        opacity: 1;
+        height: 0px;
+    
+        width: 7px;
+        background-color: #ef3b2d;
+        right: 71px;
+        z-index: 500;
+        top: -6px;
+        /* transform: rotateZ(180deg); */
+        border-radius: 5px;
+        animation: photoBarGrow 0.4s 1.5s forwards ease, photoBarShrink 0.4s 3.8s forwards ease;
+    }
+    @keyframes photoBarGrow {
+        from {
+            height: 0px; 
+    
+        }
+        to {
+            height: 66px;
+    
+        }
+    }
+    @keyframes photoBarShrink {
+        from {
+            height: 66px;
+    
+        }
+        to {
+            height: 0px;
+    
+        }
+    }
 
+
+
+
+
+    #flashRectangle {
+        position: absolute;
+        background-color: rgba(255,255,255,0.1);
+        /* width: 51px;
+        height: 30px; */
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        margin: 15px auto;
+    
+        border: 4px solid #ef3b2d;
+        border-radius: 3px;
+        top: -52px;
+        right: 32px;
+        z-index: 999;
+    
+        animation: fadeInFlashRectangleWidth 0.3s 2s forwards ease-in-out, fadeInFlashRectangleHeight 0.3s 2.3s forwards ease-in-out, flashRectangle 0.4s 2.9s ease-in-out forwards, fadeOutHeight 0.3s 3.2s forwards ease-in-out, fadeOutWidth 0.3s 3.6s forwards ease-in-out;
+    }
+    @keyframes fadeInFlashRectangleWidth {
+        0% {
+            opacity: 0;
+            width: 1px;
+        }
+        100% {
+            opacity: 1;
+            width: 85px;
+        }
+    }
+    @keyframes fadeInFlashRectangleHeight {
+        0% {
+            height: 1px;
+            margin: 15px auto;
+        }
+        100% {
+            height: 50px;
+            margin: 0px auto;
+        }
+    }
+    @keyframes flashRectangle {
+        0% {
+            background-color: rgba(255,255,255,0.1);
+        }
+        49% {
+            background-color: rgba(255,255,255,1);
+        }
+        51% {
+            background-color: rgba(255,255,255,1);
+        }
+        100% {
+            background-color: rgba(255,255,255,0.1);
+        }
+    }
+    @keyframes fadeOutHeight {
+        0% {
+            height: 50px;
+            margin: 0px auto;
+        }
+        100% {
+            height: 1px;
+            margin: 15px auto;
+        }
+    }
+    
+    @keyframes fadeOutWidth {
+        0% {
+            opacity: 1;
+            width: 85px;
+        }
+        100% {
+            opacity: 0;
+            width: 1px;
+        }
+    }
+    
+    
 
 
 

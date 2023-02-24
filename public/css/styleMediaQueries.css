@@ -1099,7 +1099,7 @@
     }
 
 
-    #letterIpoint {
+    #flashPoint {
         position: absolute;
         line-height: 0;
         /* top: 8%;
@@ -1113,7 +1113,7 @@
         right: 18px;
         font-size: 2em;
     }
-    /* .letterIpointAnim {
+    /* .flashPointAnim {
         animation: blinkingFlash 0.4s 4.1s linear forwards;
     } */
 

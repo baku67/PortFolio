@@ -42,7 +42,7 @@ body {
     /* opacity: 0; */
     animation: gradientAnimProjet 2s ease 0s normal forwards running;
 }
-body:not(#letterIpointCache) {
+body:not(#flashPointCache) {
     filter: drop-shadow(2px 4px 6px black);
 
 }
@@ -1373,7 +1373,7 @@ li::before {
     margin-block-start: 0;
 }
 .projetTitle {
-    filter: drop-shadow(7px 9px 2px black);
+    /* filter: drop-shadow(7px 9px 2px black); */
     text-align: center;
     color:#e2e8f0; 
     font-size:3.5em;
@@ -2040,7 +2040,7 @@ li::before {
     animation: barreVeilleSouligne 1s ease 0s normal forwards running;
 }
 .barreProjetSouligne {
-    filter: drop-shadow(7px 9px 2px black);
+    /* filter: drop-shadow(7px 9px 2px black); */
     border-radius: 2px;
     height:15px; 
     width:288px; 
@@ -3740,7 +3740,7 @@ li.veilleLigneAjout::before {
 #letterI {
     
 }
-#letterIpoint {
+#flashPoint {
     position: absolute;
     line-height: 0;
     /* top: 8%;
@@ -3750,13 +3750,13 @@ li.veilleLigneAjout::before {
 
     filter: blur(100px);
 
-    top: -13%;
+    top: -230px;
     right: 21px;
     font-size: 15em;
     animation: blinkingFlash 0.4s 3s linear forwards;
 
 }
-.letterIpointAnim {
+.flashPointAnim {
     /* animation: blinkingFlash 0.4s 4.1s linear forwards; */
 }
 @keyframes blinkingFlash {
@@ -3777,6 +3777,51 @@ li.veilleLigneAjout::before {
         filter: blur(100px);
     }
 }
+
+
+#flashPoint2 {
+    position: absolute;
+    line-height: 0;
+    color: rgb(255, 255, 255);
+
+    opacity: 0;
+
+    filter: blur(150px);
+
+    top: -60px;
+    right: -10px;
+
+    width: 75%;
+    height: 75%;
+
+    animation: blinkingFlash2 0.4s 3s linear forwards;
+}
+@keyframes blinkingFlash2 {
+    0% {
+        opacity: 0;
+        filter: blur(150px);
+    }
+    48% {
+        opacity: 1;
+        filter: blur(10px);
+    }
+    52% {
+        opacity: 1;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 0;
+        filter: blur(150px);
+    }
+}
+.flashPoint2Anim {
+    /* animation: blinkingFlash2 0.4s 4.1s linear forwards; */
+}
+
+
+
+
+
 
 .wave {
     display: block;
@@ -3874,11 +3919,10 @@ li.veilleLigneAjout::before {
     opacity: 1;
     height: 0px;
 
-    width: 7px;
+    width: 6px;
     background-color: #ef3b2d;
-    right: 71px;
+    right: 57px;
     z-index: 500;
-    top: -6px;
     /* transform: rotateZ(180deg); */
     border-radius: 5px;
     animation: photoBarGrow 0.4s 1.5s forwards ease, photoBarShrink 0.4s 3.8s forwards ease;
@@ -3889,13 +3933,13 @@ li.veilleLigneAjout::before {
 
     }
     to {
-        height: 66px;
+        height: 50px;
 
     }
 }
 @keyframes photoBarShrink {
     from {
-        height: 66px;
+        height: 50px;
 
     }
     to {
@@ -3904,7 +3948,7 @@ li.veilleLigneAjout::before {
     }
 }
 
-#letterIpointCache {
+#flashPointCache {
     position: absolute;
     line-height: 0;
     /* top: 8%;
@@ -3933,7 +3977,7 @@ li.veilleLigneAjout::before {
     border: 4px solid #ef3b2d;
     border-radius: 3px;
     top: -52px;
-    right: 32px;
+    right: 20px;
     z-index: 999;
 
     animation: fadeInFlashRectangleWidth 0.3s 2s forwards ease-in-out, fadeInFlashRectangleHeight 0.3s 2.3s forwards ease-in-out, flashRectangle 0.4s 2.9s ease-in-out forwards, fadeOutHeight 0.3s 3.2s forwards ease-in-out, fadeOutWidth 0.3s 3.6s forwards ease-in-out;
