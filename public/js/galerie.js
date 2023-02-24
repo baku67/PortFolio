@@ -32,7 +32,17 @@
     setTimeout(function() {
       let array = document.querySelectorAll(".letterO");
 
+      document.getElementById("letterIpoint").classList.remove("letterIpointAnim");
+
+
       setInterval(function() {
+        // Interval du flash titre
+        document.getElementById("letterIpoint").classList.add("letterIpointAnim");
+        setTimeout(function() {
+          document.getElementById("letterIpoint").classList.remove("letterIpointAnim");
+        }, 3000)
+
+        // Interval des cameraLens rotate/blurr titre
         array.forEach((element) => {
           element.classList.add("lettersOanimProc");
           setTimeout(function() {

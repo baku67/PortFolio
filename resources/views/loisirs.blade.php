@@ -109,7 +109,8 @@
             <h3 class="galerieTitle"> Loisirs <span class="carreTitre carreTitreVeille">▪</span></h3>
             <div class="barreGalerieSouligne"></div>
 
-            <h4 id="photographieTitle"><span id="photoTitlePart1">Ph<img src="img/letterO_red2.png" class="letterO"/>t<img src="img/letterO_red2.png" class="letterO"/></span><span id="photoTitlePart2">graph<span id="letterIandPoint">i<span id="letterIpoint">.</span></span>e</span></h4>
+            <h4 id="photographieTitle"><span id="photoTitlePart1">Ph<img src="img/letterO_red2.png" class="letterO"/>t<img src="img/letterO_red2.png" class="letterO"/></span><span id="photoTitlePart2">graph<span id="letterIandPoint">i<span id="letterIpoint" class="letterIpointAnim">.</span></span>e</span></h4>
+            <!-- Wave generateur: https://css-generators.com/wavy-shapes/ -->
             <div class="wave"></div>
 
             <p id="messageGalerie" style="display:block"> Cliquez sur une image pour voir la version <span style="color:rgb(239 59 45 / 80%); font-weight:bold;">HD<span> </p>

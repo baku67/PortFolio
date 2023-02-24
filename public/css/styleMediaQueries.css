@@ -47,7 +47,7 @@
 
     #photographieTitle {
         font-size: 2.5em;
-        -webkit-box-reflect: below -9px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+        -webkit-box-reflect: below -4px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
         /* opacity: 0;
 
         animation: flickeringTitle 1.5s 0.25s forwards !important; */
@@ -371,6 +371,7 @@
     }
 
     .projetTitle {
+        filter: drop-shadow(4px 4px 3px black);
         font-size: 4.3em;
         /* top: 40px; */
         margin-block-start:0.7em;
@@ -403,6 +404,8 @@
 
 
     .barreProjetSouligne {
+        filter: drop-shadow(4px 4px 3px black);
+
         width: 200px !important;
         bottom: 4px !important;
         animation: barreProjetSouligne 1s ease 0s normal forwards running !important;
@@ -1048,11 +1051,68 @@
 
 
     
+    .wave {
+        display: block;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        /* background: #ef3b2d; */
+    
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-4.8em);
+    
+        --mask:
+            radial-gradient(33.54px at 50% 45.00px,#000 99%,#0000 101%) calc(50% - 30px) 0/60px 100%,
+            radial-gradient(33.54px at 50% -30px,#0000 99%,#000 101%) 50% 15px/60px 100% repeat-x;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+
+        background: rgb(17,18,63);
+        background: -moz-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%);
+        background: linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%);
+    
+        animation: fadeInWave 1.5s 1s forwards ease-out;
+    
+    }
+    @keyframes fadeInWave {
+        from {
+            opacity: 0;
+            height: 0px;
+            width: 0;
+    
+        }
+        to {
+            opacity: 1;
+            height: 25px;
+            width: 256px;
+            
+        }
+    }
 
 
+    #letterIpoint {
+        position: absolute;
+        line-height: 0;
+        /* top: 8%;
+        right: 33px; */
+        color: rgb(255, 255, 255);
+        opacity: 0;
+    
+        filter: blur(100px);
+    
+        top: -13%;
+        right: 18px;
+        font-size: 2em;
+    }
 
 
-
+    #inspirationContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
 
 
 
