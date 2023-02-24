@@ -1176,7 +1176,7 @@
         opacity: 0;
         margin: 15px auto;
     
-        border: 2px solid #ef3b2d;
+        border: 3px solid #ef3b2d;
         border-radius: 3px;
         top: -36px;
         right: 21px;
@@ -1206,16 +1206,20 @@
     }
     @keyframes flashRectangle {
         0% {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255,255,255,0);
+            border: 3px solid #ef3b2d;
         }
         49% {
             background-color: rgba(255,255,255,1);
+            border: 1px solid rgba(255, 205, 201, 1);
         }
         51% {
             background-color: rgba(255,255,255,1);
+            border: 1px solid rgba(240, 126, 117, 1);
         }
         100% {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255,255,255,0);
+            border: 3px solid #ef3b2d;
         }
     }
     @keyframes fadeOutHeight {

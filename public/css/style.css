@@ -4005,15 +4005,19 @@ li.veilleLigneAjout::before {
 @keyframes flashRectangle {
     0% {
         background-color: rgba(255,255,255,0.1);
+        border: 4px solid #ef3b2d;
     }
     49% {
         background-color: rgba(255,255,255,1);
+        border: 2px solid rgba(255, 205, 201, 1);
     }
     51% {
         background-color: rgba(255,255,255,1);
+        border: 2px solid rgba(255, 205, 201, 1);
     }
     100% {
         background-color: rgba(255,255,255,0.1);
+        border: 4px solid #ef3b2d;
     }
 }
 @keyframes fadeOutHeight {
