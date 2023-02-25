@@ -1166,6 +1166,55 @@
 
 
 
+    #scubaDiver {
+        display: none;
+        /* https://yqnn.github.io/svg-path-editor/ */
+        /* From droite to gauche, trait */
+        /* offset-path: path("M 802 -40 C 430 65 98 182 -159 297"); */
+        /* offset-path: path("M 0 63 L 27 14"); */
+        
+        /* offset-rotate: auto; */
+    
+        position: absolute;
+
+        right: -52px;
+        bottom: -80px;
+    
+        /* top: -5%; */
+        z-index: -999;
+    
+        /* animation: moveRapid 1300ms 3000ms 1 linear; */
+        animation: moveScuba 18000ms 1200ms infinite linear, floatScuba 5s 0s infinite forwards ease-in-out;
+
+        width: 90px;
+        /* height: 160px; */
+    
+        /* background: cyan; */
+        content:url("/img/scuba3_red.png");
+        opacity: 0;
+        /* transform: rotateZ(172deg); */
+
+        transform: rotateZ(47deg) rotateY(181deg);
+        filter: invert(0%) blur(10px);
+    }
+    @keyframes floatScuba {
+        0% {
+            bottom: -50px;
+
+        }
+        50% {
+            bottom: -57px;
+
+        }
+        100% {
+            bottom: -50px;
+
+        }
+    }
+
+
+
+
     #flashRectangle {
         position: absolute;
         background-color: rgba(255,255,255,0.1);
