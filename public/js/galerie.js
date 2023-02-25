@@ -155,6 +155,10 @@ window.onload = function() {
       document.getElementById('coral3').style.display = "block";
       document.getElementById('coral4').style.display = "block";
       document.getElementById('motion-demo_whalePc').style.display = "block";
+      // document.getElementById('motion-demo_whale2Pc').style.display = "block";
+      document.getElementById('scubaDiver').style.display = "block";
+
+
       // document.getElementById('motion-demoBubble1').style.display = "block";
       setTimeout(function() {
         document.getElementById('motion-demo_shark1').style.display = "block";

@@ -1134,9 +1134,9 @@
 
         top: -3px;
     
-        width: 5px;
+        width: 6px;
         background-color: #ef3b2d;
-        right: 48px;
+        right: 47px;
         z-index: 500;
         /* transform: rotateZ(180deg); */
         border-radius: 5px;
@@ -1148,13 +1148,13 @@
     
         }
         to {
-            height: 40px;
+            height: 43px;
     
         }
     }
     @keyframes photoBarShrink {
         from {
-            height: 40px;
+            height: 43px;
     
         }
         to {

@@ -109,7 +109,7 @@
             <h3 class="galerieTitle"> Loisirs <span class="carreTitre carreTitreVeille">▪</span></h3>
             <div class="barreGalerieSouligne"></div>
 
-            <h4 id="photographieTitle"><span id="photoTitlePart1">Ph<img src="img/letterO_red2.png" class="letterO"/>t<img src="img/letterO_red2.png" class="letterO"/></span><span id="photoTitlePart2">graph<span id="letterIandPoint">i<span id="flashPoint" class="flashPointAnim">.</span><span id="flashPoint2" class="flashPoint2Anim"></span><span id="photoBar"></span><span id="flashRectangle"></span></span>e</span></h4>
+            <h4 id="photographieTitle"><span id="photoTitlePart1">Ph<img src="img/letterO_red2.png" class="letterO"/>t<img src="img/letterO_red2.png" class="letterO"/></span><span id="photoTitlePart2">graph<span id="letterIandPoint">i<div id="scubaDiver"></div><span id="flashPoint" class="flashPointAnim">.</span><span id="flashPoint2" class="flashPoint2Anim"></span><span id="photoBar"></span><span id="flashRectangle"></span></span>e</span></h4>
             <!-- Wave generateur: https://css-generators.com/wavy-shapes/ -->
             <div class="wave"></div>
 
@@ -135,7 +135,11 @@
                     <div id="motion-demo_tortoise"></div> 
                     <div id="motion-demo_shark1"></div> 
 
+                    <!-- <div id="motion-demo_whale2Pc"></div>  -->
+
                     <div id="motion-demo_whalePc"></div> 
+
+                    <!-- <div id="scubaDiver"></div>  -->
 
                     <div id="coral1"></div> 
                     <div id="coral2"></div>
