@@ -42,6 +42,10 @@
 
 
     .imgGalleries {
+        width:100%; 
+        height:auto; 
+        margin:auto; 
+        vertical-align:middle; 
         border-radius:3px;
     }
 
