@@ -64,6 +64,66 @@
     }
 
 
+    #motion-demo3a {
+        display: none;
+        /* https://yqnn.github.io/svg-path-editor/ */
+        offset-path: path("M -173 983 C 189 703 321 105 580 -22");
+        offset-rotate: auto;
+        position: fixed;
+    
+        /* C'est à cause du top:5% que le path svg commence en haut */
+        top: -5%;
+        z-index: -5;
+    
+        animation: move3a 30000ms 1000ms infinite cubic-bezier(0.52, 0.23, 0.34, 0.72);
+        width: 65px;
+        /* height: 65px; */
+    
+        content:url("/img/jellyfish.png");
+        opacity: 0;
+        transform: rotateZ(75deg);
+    }
+    #motion-demo3b {
+        display: none;
+        /* https://yqnn.github.io/svg-path-editor/ */
+        offset-path: path("M -209 979 C 189 703 207 72 434 -45");
+        offset-rotate: auto;
+        position: fixed;
+    
+        /* C'est à cause du top:5% que le path svg commence en haut */
+        top: 3%;
+        z-index: -5;
+    
+        animation: move3b 30000ms 1000ms infinite cubic-bezier(0.52, 0.23, 0.34, 0.72);
+        width: 55px;
+        height: 80px;
+    
+        content:url("/img/jellyfish.png");
+        opacity: 0;
+        transform: rotateZ(75deg);
+      }
+      #motion-demo3c {
+        display: none;
+        /* https://yqnn.github.io/svg-path-editor/ */
+        offset-path: path("M -66 669 C 164 477 134 100 275 -53");
+        offset-rotate: auto;
+        position: fixed;
+    
+        /* C'est à cause du top:5% que le path svg commence en haut */
+        top: 3%;
+        z-index: -5;
+    
+        animation: move3b 31000ms 1050ms infinite cubic-bezier(0.52, 0.23, 0.34, 0.72);
+        width: 55px;
+        height: 80px;
+    
+        content:url("/img/jellyfish.png");
+        opacity: 0;
+        transform: rotateZ(75deg);
+      }
+    
+    
+
 
     #motion-demo {
         display: none;
