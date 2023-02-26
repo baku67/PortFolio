@@ -43,7 +43,7 @@
 
 
 
-    <body>
+    <body class="bodyLoisir">
 
         <!-- MODALS GALERIE -->
         <div id="myModal" class="modal">

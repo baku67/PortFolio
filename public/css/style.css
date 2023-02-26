@@ -458,7 +458,7 @@ li::before {
       margin: auto auto;
   }
   .textCompetences {
-      color: #171923;
+      color: #E7E8F2;
       font-size: large;
       font-weight: bold;
   }
@@ -4096,6 +4096,24 @@ li.veilleLigneAjout::before {
     right: 26px;
     font-size: 2em;
     z-index: 5;
+}
+
+.bodyLoisir {
+    animation: contrastEffect 0.4s 2.9s ease-in-out forwards;
+}
+@keyframes contrastEffect {
+    0% {
+         filter: grayscale(0.);
+    }
+    49% {
+        filter: grayscale(0.9);
+    }
+    51% {
+        filter: grayscale(0.9);
+    }
+    100% {
+        filter: grayscale(0.);
+    }
 }
 
 #flashRectangle {
