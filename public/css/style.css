@@ -43,7 +43,9 @@ body {
     animation: gradientAnimProjet 2s ease 0s normal forwards running;
 }
 body:not(#flashPointCache) {
+    /* filter: drop-shadow(2px 4px 6px black) brightness(0); */
     filter: drop-shadow(2px 4px 6px black);
+
 
 }
 @keyframes gradientAnimProjet {
@@ -4103,16 +4105,18 @@ li.veilleLigneAjout::before {
 }
 @keyframes contrastEffect {
     0% {
-         filter: grayscale(0.);
+        filter: grayscale(0.);
     }
-    49% {
-        filter: grayscale(0.9);
+    50% {
+        /* filter: grayscale(0.9) brightness(1); */
+        filter: grayscale(1);
     }
-    51% {
-        filter: grayscale(0.9);
+    57% {
+        /* filter: grayscale(0.9) brightness(1); */
+        filter: grayscale(1);
     }
     100% {
-        filter: grayscale(0.);
+        filter: drop-shadow(2px 4px 6px black);
     }
 }
 
