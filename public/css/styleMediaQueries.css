@@ -1213,6 +1213,56 @@
     }
 
 
+    #motion-demo_tortoise {
+        display: none;
+        filter: blur(5px);
+        /* https://yqnn.github.io/svg-path-editor/ */
+        offset-path: path("M 866 595 C 524 494 155 241 -124 71");
+        offset-rotate: auto;
+    
+        position: fixed;
+    
+        top: -5%;
+        z-index: -2;
+    
+        animation: moveTortoise 13500ms 2000ms infinite ease-in;
+        width: 0px;
+        height: 0px;
+    
+        /* background: cyan; */
+        content:url("/img/tortoise_red.png");
+        opacity: 0;
+        transform: rotateZ(178deg);
+    
+    }
+    @keyframes moveTortoise {
+        0% {
+            offset-distance: 0%;
+            opacity: 0;
+            filter: blur(7px);
+            width: 0px;
+            height: 0px;
+
+        }
+        10% {
+            opacity: 0.4;
+        }
+        90% {
+            filter: blur(0px);
+            opacity: 0.6;
+        }
+        100% {
+            offset-distance: 100%;
+            opacity: 0.7;
+            filter: blur(0px);
+            width: 170px;
+            height: 170px;
+    
+        }
+    }
+
+
+
     #photoTitlePart1 {
         position: relative;
         top: -60px;

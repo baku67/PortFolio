@@ -112,6 +112,8 @@ footer.footerAccueil {
     z-index: -100;
     background-color: rgba(22, 26, 36, 0.2);
     color: #a1a4c0;
+    position: relative !important;
+    bottom: 0%;
 }
 
 
@@ -2340,13 +2342,14 @@ li.veilleLigneAjout::before {
   #motion-demo {
     display: none;
     /* https://yqnn.github.io/svg-path-editor/ */
-    offset-path: path("M -79 5 C 70 132 381 -20 491 82");
+    offset-path: path("M -79 5 C 159 113 593 -33 1089 80");
+    top: 40%;
     offset-rotate: auto;
     position: fixed;
 
     animation: move 6500ms 1500ms infinite ease;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
 
     /* background: cyan; */
     content:url("/img/poisson_red.png");
@@ -3153,7 +3156,7 @@ li.veilleLigneAjout::before {
         display: none;
         filter: blur(5px);
         /* https://yqnn.github.io/svg-path-editor/ */
-        offset-path: path("M 866 595 C 524 494 155 241 -124 71");
+        offset-path: path("M 866 595 C 524 494 155 241 -188 29");
         offset-rotate: auto;
     
         position: fixed;
@@ -4034,6 +4037,10 @@ li.veilleLigneAjout::before {
 
     position: relative;
     /* right: 6%; */
+}
+#changeQuotation:hover {
+    background-color: #ef3b2d;
+    color: #1b1f2a;
 }
 
 .imgAccueil {
