@@ -1213,6 +1213,21 @@
     }
 
 
+    #photoTitlePart1 {
+        position: relative;
+        top: -60px;
+        opacity: 0;
+        animation: fadeInPhoto1 0.7s 0.75s 1 ease-out forwards;
+      }
+      #photoTitlePart2 {
+        position: relative;
+        top: 60px;
+        opacity: 0;
+        animation: fadeInPhoto2 0.7s 1.25s 1 ease-out forwards;
+      }
+    
+
+
 
 
     #flashRectangle {

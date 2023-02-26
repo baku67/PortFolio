@@ -115,6 +115,7 @@
 
     footer.footerAccueil {
         position: absolute;
+        bottom: auto;
     }
 
 

@@ -104,6 +104,7 @@ footer.footerAccueil {
     animation: fadeIn 0.2s 0.5s forwards;
     /* position: absolute !important; */
     position: relative;
+    bottom: auto;
 
 }
 
@@ -3491,7 +3492,7 @@ li.veilleLigneAjout::before {
         right: -5%;  
         z-index: -2;
     
-        animation: moveShark1test 8000ms infinite linear;
+        animation: moveShark1test 8000ms 1 linear;
         width: 330px;
         height: 330px;
     
