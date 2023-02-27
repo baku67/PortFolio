@@ -103,15 +103,23 @@
                     <button id="changeQuotation">Changer</button>
                 </div>
 
-                <!-- LightBulb Ampoule SVG -->
-                <svg class="lightBulbContainer" style="height:245px; position:relative; margin:25px;">
+                <!-- LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/) -->
+                <svg class="lightBulbContainer">
                     <path 
                         id="lightBulbPath"
                         class="svg1" 
-                        d="M 311 6 C -39 6 -84 426 185 523 C 207 535 242 553 247 610 L 245 686 C 300 701 332 703 378 688 L 378 613 C 385 558 425 544 446 527 C 674 435 662 6 311 7"
-
+                        d="M 344 11 C -14 10 -70 407 185 533 C 207 545 247 556 247 606 L 247 642 C 235 663 236 677 247 696 C 236 712 236 727 247 745 C 237 761 238 777 247 792 C 295 808 390 812 450 793 C 459 780 458 760 450 745 C 460 728 459 709 450 695 C 459 679 458 658 449 642 L 448 606 C 446 552 492 541 514 530 C 754 408 708 9 344 11"
                     />
                 </svg>
+                    <!-- Save previous:  -->
+                    <!-- <svg class="lightBulbContainer" style="height:245px; position:relative; margin:25px;">
+                        <path 
+                            id="lightBulbPath"
+                            class="svg1" 
+                            d="M 311 6 C -39 6 -84 426 185 523 C 207 535 242 553 247 610 L 245 686 C 300 701 332 703 378 688 L 378 613 C 385 558 425 544 446 527 C 674 435 662 6 311 7"
+
+                        />
+                    </svg> -->
             </div>
 
 

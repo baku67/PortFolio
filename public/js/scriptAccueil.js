@@ -14,7 +14,7 @@ window.onload = function() {
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 2s ease-in-out, stroke 0.4s linear, stroke-width 0.4s linear';
+    'stroke-dashoffset 3s ease, stroke 0.4s linear, stroke-width 0.4s linear';
   // Go!
   path.style.strokeDashoffset = '0';
   // Apres fin dessin, "transition" est utlisée pour le :hover
