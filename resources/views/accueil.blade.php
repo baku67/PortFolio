@@ -96,9 +96,9 @@
                     <img class="quote1" src="img/quote1.png" />
                     <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
                     <quote style="position:relative;"><span id="quoteContent">There are three responses to a piece of design — yes, no, and WOW! Wow is the one to aim for. – Milton Glaser</span></quote>
-                    <button id="changeQuotation">Changer</button>
                     <img class="quote2" src="img/quote2.png" />
                 </div>
+                <button id="changeQuotation">Changer</button>
             </div>
 
             </br>

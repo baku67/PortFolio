@@ -20,9 +20,30 @@ window.onload = function() {
     "Java is to JavaScript what car is to Carpet. – Chris Heilmann",
   ]
 
+  actualIndex = 1;
+
   document.getElementById("changeQuotation").addEventListener("click", function() {
-    let chosenQuote = quotes[Math.floor(Math.random()*quotes.length)];
-    document.getElementById("quoteContent").innerText = chosenQuote;
+    let index = Math.floor(Math.random()*quotes.length)
+
+    if (index != actualIndex) {
+      var chosenQuote = quotes[index];
+      actualIndex = index;
+    }
+    else {
+      while (index == actualIndex) {
+        index = Math.floor(Math.random()*quotes.length)
+      }
+      var chosenQuote = quotes[index];
+      actualIndex = index;
+    }
+
+    document.getElementById("quoteContent").classList.remove("fadeInQuote");
+    document.getElementById("quoteContent").classList.add("fadeOutQuote");
+    setTimeout(function() {
+      document.getElementById("quoteContent").classList.remove("fadeOutQuote");
+      document.getElementById("quoteContent").innerText = chosenQuote;
+      document.getElementById("quoteContent").classList.add("fadeInQuote");
+    }, 251)
   })
 
 

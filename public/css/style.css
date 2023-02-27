@@ -68,6 +68,9 @@ body:not(#flashPointCache) {
 
 
 
+
+
+
 .documentWrapper {
     z-index:1;
     position: relative;
@@ -549,6 +552,13 @@ li::before {
     }
 }
 
+
+.fadeInQuote {
+    animation: fadeIn 0.25s 0s 1 forwards linear;
+}
+.fadeOutQuote {
+    animation: fadeOut 0.25s 0s 1 forwards linear;
+}
 
 
 
