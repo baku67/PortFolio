@@ -91,7 +91,7 @@
 
             </br>
 
-            <div style="display:inline-flex;">
+            <div id="citationAndLightBulbWrapper">
                 <div id="inspirationContainer">
                     <h3 id="inspirationTitle">Inspirations:</h3>
                     <div style="position:relative;">

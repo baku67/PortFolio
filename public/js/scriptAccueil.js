@@ -58,7 +58,7 @@ window.onload = function() {
     path3.style.strokeDashoffset = length3;
     path3.getBoundingClientRect();
     path3.style.transition = path3.style.WebkitTransition =
-      'stroke-dashoffset 2.3s 1s ease, stroke 0.4s linear, stroke-width 0.4s linear';
+      'stroke-dashoffset 2.3s 1s ease, stroke 0.4s 0.4s linear, stroke-width 0.4s 0.4s linear';
     path3.style.strokeDashoffset = '0';
 
 

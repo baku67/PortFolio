@@ -221,6 +221,10 @@ body:not(#flashPointCache) {
 
 
 
+#citationAndLightBulbWrapper {
+    display:inline-flex;
+}
+
 
 
 
