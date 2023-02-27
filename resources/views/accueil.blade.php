@@ -93,7 +93,7 @@
             <div id="inspirationContainer">
                 <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
                 <h3 style="color:#ef3b2d;">Inspirations:</h3>
-                <quote style="position:relative;"><img class="quote1" src="img/quote1.png" /><span style="position: relative; z-index:999; font-size:1.5em; opacity:0.8; font-style:italic;">There are three responses to a piece of design — yes, no, and WOW! Wow is the one to aim for.</span><img class="quote2" src="img/quote2.png" /> – Milton Glaser</quote>
+                <quote style="position:relative;"><img class="quote1" src="img/quote1.png" /><span id="quoteContent">There are three responses to a piece of design — yes, no, and WOW! Wow is the one to aim for. – Milton Glaser</span><img class="quote2" src="img/quote2.png" /></quote>
                 <button id="changeQuotation">Changer</button>
             </div>
 

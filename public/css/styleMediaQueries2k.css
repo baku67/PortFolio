@@ -387,7 +387,9 @@
     }
 
     footer.footerAccueil {
-        position: absolute;
+        /* position: absolute;
+        bottom: 0; */
+        position: fixed;
         bottom: auto;
     }
 

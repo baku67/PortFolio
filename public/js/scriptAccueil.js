@@ -12,5 +12,19 @@ window.onload = function() {
   })
 
 
+  let quotes = [
+    "Digital design is like painting, except the paint never dries. - Neville Brody",
+    "There are three responses to a piece of design — yes, no, and WOW! Wow is the one to aim for. – Milton Glaser",
+    "Writing the first 90 percent of a computer program takes 90 percent of the time. The remaining ten percent also takes 90 percent of the time and the final touches also take 90 percent of the time. – N.J. Rubenking",
+    "Software and cathedrals are much the same — first we build them, then we pray. - Simon Harrer",
+    "Java is to JavaScript what car is to Carpet. – Chris Heilmann",
+  ]
+
+  document.getElementById("changeQuotation").addEventListener("click", function() {
+    let chosenQuote = quotes[Math.floor(Math.random()*quotes.length)];
+    document.getElementById("quoteContent").innerText = chosenQuote;
+  })
+
+
 
 }
