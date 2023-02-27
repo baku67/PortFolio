@@ -104,13 +104,22 @@
                 </div>
 
                 <!-- LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/) -->
-                <svg class="lightBulbContainer">
-                    <path 
-                        id="lightBulbPath"
-                        class="svg1" 
-                        d="M 344 11 C -14 10 -70 407 185 533 C 207 545 247 556 247 606 L 247 642 C 235 663 236 677 247 696 C 236 712 236 727 247 745 C 237 761 238 777 247 792 C 295 808 390 812 450 793 C 459 780 458 760 450 745 C 460 728 459 709 450 695 C 459 679 458 658 449 642 L 448 606 C 446 552 492 541 514 530 C 754 408 708 9 344 11"
-                    />
-                </svg>
+                <div class="lightBulbWrapperDiv">
+                    <svg class="lightBulbContainer">
+                        <path 
+                            id="lightBulbPath"
+                            d="M 344 11 C -14 10 -70 407 185 533 C 207 545 247 556 247 606 L 247 642 C 235 663 236 677 247 696 C 236 712 236 727 247 745 C 237 761 238 777 247 792 C 295 808 390 812 450 793 C 459 780 458 760 450 745 C 460 728 459 709 450 695 C 459 679 458 658 449 642 L 448 606 C 446 552 492 541 514 530 C 754 408 708 9 344 11"
+                        />
+                    </svg>
+
+                    <!-- Calque 1 -->
+                    <svg class="lightBulbContainer2">
+                        <path 
+                            id="lightBulbPath2"
+                            d="M 294 605 L 295 603 M 295 603 C 293 536 305 335 287 196 Q 277 122 251 196 Q 228 274 342 275 Q 440 273 420 197 Q 392 117 375 197 C 358 334 383.6667 466 388 604"
+                        />
+                    </svg>
+                </div>
                     <!-- Save previous:  -->
                     <!-- <svg class="lightBulbContainer" style="height:245px; position:relative; margin:25px;">
                         <path 

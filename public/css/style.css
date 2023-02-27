@@ -65,6 +65,21 @@ body:not(#flashPointCache) {
     }
 }
 
+
+/* Container du lightbulb (relativ) et des calques (absolute) */
+.lightBulbWrapperDiv {
+    height: 250px;
+    position: relative;
+    margin: 50px;
+    width: 205px;
+    margin: 0 auto;
+    
+    transition: all 0.4s;
+}
+
+
+
+/* LightBulb (relativ) */
 /* https://jakearchibald.com/2013/animated-line-drawing-svg/ */
 #lightBulbPath {
     opacity: 0.7;
@@ -84,21 +99,49 @@ body:not(#flashPointCache) {
     position: relative;
     margin: 50px;
     width: 205px;
+    margin: 0 auto;
     
     transition: all 0.4s;
 }
-.lightBulbContainer:hover {
+.lightBulbWrapperDiv:hover {
     cursor: pointer;
 }
-.lightBulbContainer #lightBulbPath {
+.lightBulbWrapperDiv #lightBulbPath {
     transition: all 0.4s;
 }
-.lightBulbContainer:hover #lightBulbPath, .lightBulbContainer.hover #lightBulbPath {
+.lightBulbWrapperDiv:hover #lightBulbPath, .lightBulbWrapperDiv.hover #lightBulbPath {
     stroke: rgb(0, 255, 213);
     stroke-width: 6; 
     opacity: 1;
-
 }
+
+
+
+/* Calque 1 */
+.lightBulbContainer2 {
+    height: 250px;
+    position: absolute;
+    margin: 50px;
+    width: 205px;
+    margin: 0 auto;
+    bottom: 0px;
+    
+    transition: all 0.4s;
+}
+
+#lightBulbPath2 {
+    opacity: 0.7;
+    transform:scale(0.3); 
+    fill: none; 
+    stroke: #ef3b2d; 
+    stroke-width: 15; 
+    stroke-linecap: round; 
+    stroke-linejoin:  miter; 
+    stroke-miterlimit: 4;
+
+    transition: stroke 0.4s;
+}
+
 
 
 
