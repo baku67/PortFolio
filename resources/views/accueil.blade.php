@@ -112,23 +112,27 @@
                         />
                     </svg>
 
-                    <!-- Calque 1 -->
+                    <!-- Calque 1 (fils de cuivre) -->
                     <svg class="lightBulbContainer2">
                         <path 
                             id="lightBulbPath2"
                             d="M 294 605 L 295 603 M 295 603 C 293 536 305 335 287 196 Q 277 122 251 196 Q 228 274 342 275 Q 440 273 420 197 Q 392 117 375 197 C 358 334 383.6667 466 388 604"
                         />
                     </svg>
-                </div>
-                    <!-- Save previous:  -->
-                    <!-- <svg class="lightBulbContainer" style="height:245px; position:relative; margin:25px;">
-                        <path 
-                            id="lightBulbPath"
-                            class="svg1" 
-                            d="M 311 6 C -39 6 -84 426 185 523 C 207 535 242 553 247 610 L 245 686 C 300 701 332 703 378 688 L 378 613 C 385 558 425 544 446 527 C 674 435 662 6 311 7"
 
+                    <!-- Calque 2 (Halo lumière) -->
+                    <div class="lightBulbContainer3">
+                    </div>
+
+                    <!-- Calque 3 (effet vis) -->
+                    <svg class="lightBulbContainer4">
+                        <path 
+                            id="lightBulbPath4"
+                            d="M 265 641 L 267 642 M 267 642 C 314 661 370 661 411 649 Q 448 638 411 633 Q 249 622 270 686 Q 276 710 397 705 Q 410 705 421 701 Q 449 691 412 685 Q 247 676 269 736 Q 277 758 403 754 Q 417 752 422 750 Q 449 740 413 734 Q 246 727 272 750"
                         />
-                    </svg> -->
+                    </svg>
+                </div>
+
             </div>
 
 

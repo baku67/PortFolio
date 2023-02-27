@@ -117,18 +117,7 @@ body:not(#flashPointCache) {
 
 
 
-/* Calque 1 */
-.lightBulbContainer2 {
-    height: 250px;
-    position: absolute;
-    margin: 50px;
-    width: 205px;
-    margin: 0 auto;
-    bottom: 0px;
-    
-    transition: all 0.4s;
-}
-
+/* Calque 1 (fils de cuivre) */
 #lightBulbPath2 {
     opacity: 0.7;
     transform:scale(0.3); 
@@ -141,6 +130,96 @@ body:not(#flashPointCache) {
 
     transition: stroke 0.4s;
 }
+
+.lightBulbContainer2 {
+    position: absolute;
+    height: 250px;
+    margin: 50px;
+    width: 205px;
+    margin: 0 auto;
+    bottom: 0px;
+    
+    transition: all 0.4s;
+}
+
+.lightBulbWrapperDiv:hover {
+    cursor: pointer;
+}
+.lightBulbWrapperDiv #lightBulbPath2 {
+    transition: all 0.4s;
+}
+.lightBulbWrapperDiv:hover #lightBulbPath2, .lightBulbWrapperDiv.hover #lightBulbPath2 {
+    stroke: rgb(0, 255, 213);
+    stroke-width: 6; 
+    opacity: 1;
+}
+
+
+
+
+/* Calque 2 (Halo) */
+.lightBulbContainer3 {
+    position: absolute;
+    height: 260px;
+    width: 210px;
+    margin: 50px;
+    margin: 0 auto;
+    bottom: 35px;
+
+    opacity: 0;
+    transition: all 1.5s;
+
+    /* Halo Cyan: */
+    /* background: rgb(0,255,213);
+    background: -moz-radial-gradient(circle, rgba(0,255,213,1) 0%, rgba(17,18,63,0) 53%);
+    background: -webkit-radial-gradient(circle, rgba(0,255,213,1) 0%, rgba(17,18,63,0) 53%);
+    background: radial-gradient(circle, rgba(0,255,213,1) 0%, rgba(17,18,63,0) 53%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffd5",endColorstr="#11123f",GradientType=1); */
+
+    /* Halo Jaune: */
+    background: rgb(255,253,0);
+    background: -moz-radial-gradient(circle, rgba(255,253,0,1) 0%, rgba(17,18,63,0) 53%);
+    background: -webkit-radial-gradient(circle, rgba(255,253,0,1) 0%, rgba(17,18,63,0) 53%);
+    background: radial-gradient(circle, rgba(255,253,0,1) 0%, rgba(17,18,63,0) 53%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffd00",endColorstr="#11123f",GradientType=1);
+}
+.lightBulbWrapperDiv:hover .lightBulbContainer3, .lightBulbWrapperDiv.hover .lightBulbContainer3 {
+    opacity: 0.7;
+}
+
+
+
+
+/* Calque 3 (effet Vis) */
+#lightBulbPath4 {
+    opacity: 0.7;
+    transform:scale(0.3); 
+    fill: none; 
+    stroke: #ef3b2d; 
+    stroke-width: 15; 
+    stroke-linecap: round; 
+    stroke-linejoin:  miter; 
+    stroke-miterlimit: 4;
+
+    transition: stroke 0.4s;
+}
+.lightBulbContainer4 {
+    position: absolute;
+    height: 250px;
+    margin: 50px;
+    width: 205px;
+    margin: 0 auto;
+    bottom: 0px;
+    
+    transition: all 0.4s;
+}
+.lightBulbWrapperDiv:hover #lightBulbPath4, .lightBulbWrapperDiv.hover #lightBulbPath4 {
+    stroke: rgb(0, 255, 213);
+    stroke-width: 6; 
+    opacity: 1;
+}
+
+
 
 
 
