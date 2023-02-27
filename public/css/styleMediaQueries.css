@@ -38,6 +38,7 @@
 
     .paragrapheAccueil { 
         font-size: 1.05em;
+        margin-bottom: 20px !important;
     }
 
 
@@ -482,6 +483,7 @@
     flex-direction: column-reverse;
 }
 .lightBulbWrapperDiv {
+    transform: scale(0.7);
     margin: 20px auto;
 }
 
@@ -1149,6 +1151,7 @@
     #inspirationContainer {
         width: 90%;
         margin: 0 auto;
+        margin-top: 20px;
     }
     
 
