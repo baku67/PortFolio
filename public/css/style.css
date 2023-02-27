@@ -66,8 +66,31 @@ body:not(#flashPointCache) {
 }
 
 
+#lightBulbPath {
+    transform:scale(0.3); 
+    fill: none; 
+    stroke: #ef3b2d; 
+    stroke-width: 7; 
+    stroke-linecap: round; 
+    stroke-linejoin:  miter; 
+    stroke-miterlimit: 4;
 
+    transition: stroke 0.5s;
+}
 
+.lightBulbContainer {
+    transition: all 0.5s;
+}
+.lightBulbContainer:hover {
+    cursor: pointer;
+}
+.lightBulbContainer #lightBulbPath {
+    transition: all 0.5s;
+}
+.lightBulbContainer:hover #lightBulbPath, .lightBulbContainer.hover #lightBulbPath {
+    stroke: rgb(0, 255, 213);
+    stroke-width: 15; 
+}
 
 
 

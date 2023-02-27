@@ -88,18 +88,32 @@
 
             </div>
 
+
             </br>
 
-            <div id="inspirationContainer">
-                <h3 id="inspirationTitle">Inspirations:</h3>
-                <div style="position:relative;">
-                    <img class="quote1" src="img/quote1.png" />
-                    <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
-                    <quote style="position:relative;"><span id="quoteContent">There are three responses to a piece of design — yes, no, and WOW! Wow is the one to aim for. – Milton Glaser</span></quote>
-                    <img class="quote2" src="img/quote2.png" />
+            <div style="display:inline-flex;">
+                <div id="inspirationContainer">
+                    <h3 id="inspirationTitle">Inspirations:</h3>
+                    <div style="position:relative;">
+                        <img class="quote1" src="img/quote1.png" />
+                        <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
+                        <quote style="position:relative;"><span id="quoteContent">There are three responses to a piece of design — yes, no, and WOW! Wow is the one to aim for. – Milton Glaser</span></quote>
+                        <img class="quote2" src="img/quote2.png" />
+                    </div>
+                    <button id="changeQuotation">Changer</button>
                 </div>
-                <button id="changeQuotation">Changer</button>
+
+                <!-- LightBulb Ampoule SVG -->
+                <svg class="lightBulbContainer" style="height:245px; position:relative; margin:25px;">
+                    <path 
+                        id="lightBulbPath"
+                        class="svg1" 
+                        d="M 311 6 C -39 6 -84 426 185 523 C 207 535 242 553 247 610 L 245 686 C 300 701 332 703 378 688 L 378 613 C 385 558 425 544 446 527 C 674 435 662 6 311 7"
+
+                    />
+                </svg>
             </div>
+
 
             </br>
 
