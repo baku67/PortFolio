@@ -488,11 +488,31 @@
 
 
 
+#quoteContent {
+    position: relative; 
+    z-index:999; 
+    font-size:1.1em; 
+    opacity:0.8; 
+    font-style:italic;
+}
+
+#inspirationTitle {
+    color:#ef3b2d;
+    font-size: 1.3em;
+}
 
 
 
 
-
+.quote1, .quote2 {
+    position: relative;
+    opacity: 0.3;
+    width: 70px;
+}
+.quote2 {
+    position: absolute !important;
+    /* right: 5%; */
+}
     
 
 

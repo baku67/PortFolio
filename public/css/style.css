@@ -73,6 +73,11 @@ body:not(#flashPointCache) {
     font-style:italic;
 }
 
+#inspirationTitle {
+    color:#ef3b2d;
+    font-size: 1.5em;
+}
+
 
 .documentWrapper {
     z-index:1;
@@ -4008,12 +4013,14 @@ li.veilleLigneAjout::before {
 
 
 .quote1, .quote2 {
-    position: absolute;
+    position: relative;
     opacity: 0.3;
     width: 100px;
 }
 .quote2 {
-    right: 5%;
+    position: absolute !important;
+    margin-left: 10px;
+    /* right: 5%; */
 }
 
 #inspirationContainer {
