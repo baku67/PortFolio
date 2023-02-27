@@ -43,7 +43,7 @@ window.onload = function() {
       document.getElementById("quoteContent").classList.remove("fadeOutQuote");
       document.getElementById("quoteContent").innerText = chosenQuote;
       document.getElementById("quoteContent").classList.add("fadeInQuote");
-    }, 251)
+    }, 351)
   })
 
 

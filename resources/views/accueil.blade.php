@@ -73,7 +73,7 @@
 
 
                 <div>
-                    <img class="imgAccueil" src="img/basile.png"/>
+                    <img class="imgAccueil" src="img/basile_compressed.png"/>
 
                 </div>
 

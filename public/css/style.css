@@ -554,10 +554,10 @@ li::before {
 
 
 .fadeInQuote {
-    animation: fadeIn 0.25s 0s 1 forwards linear;
+    animation: fadeIn 0.35s 0s 1 forwards linear;
 }
 .fadeOutQuote {
-    animation: fadeOut 0.25s 0s 1 forwards linear;
+    animation: fadeOut 0.35s 0s 1 forwards linear;
 }
 
 
