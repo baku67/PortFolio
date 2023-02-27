@@ -65,18 +65,7 @@ body:not(#flashPointCache) {
     }
 }
 
-#quoteContent {
-    position: relative; 
-    z-index:999; 
-    font-size:1.5em; 
-    opacity:0.8; 
-    font-style:italic;
-}
 
-#inspirationTitle {
-    color:#ef3b2d;
-    font-size: 1.5em;
-}
 
 
 .documentWrapper {
@@ -4013,17 +4002,22 @@ li.veilleLigneAjout::before {
 
 
 .quote1, .quote2 {
-    position: relative;
+    position: absolute;
     opacity: 0.3;
     width: 100px;
 }
+.quote1 {
+    top: 0%;
+    left: 0%;
+}
 .quote2 {
-    position: absolute !important;
-    margin-left: 10px;
-    /* right: 5%; */
+    bottom: 0%;
+    right: 0%;
+    margin-right: 25px;
 }
 
 #inspirationContainer {
+    position: relative;
     width: 60%;
     margin-bottom:50px; 
     color:#e2e8f0;
@@ -4034,6 +4028,25 @@ li.veilleLigneAjout::before {
     border-bottom-right-radius: 10px;
     border-bottom-style: double;
 }
+
+#quoteContent {
+    position: relative; 
+    z-index:999; 
+    font-size:1.5em; 
+    opacity:0.8; 
+    font-style:italic;
+
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#inspirationTitle {
+    color:#ef3b2d;
+    font-size: 1.5em;
+}
+
 #changeQuotation{
     font-family: 'Nunito', sans-serif;
     display: flex;

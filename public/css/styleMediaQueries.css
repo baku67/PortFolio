@@ -489,11 +489,9 @@
 
 
 #quoteContent {
-    position: relative; 
-    z-index:999; 
     font-size:1.1em; 
-    opacity:0.8; 
-    font-style:italic;
+
+    left: 15px;
 }
 
 #inspirationTitle {
@@ -505,7 +503,6 @@
 
 
 .quote1, .quote2 {
-    position: relative;
     opacity: 0.3;
     width: 70px;
 }
