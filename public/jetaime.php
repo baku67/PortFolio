@@ -260,7 +260,7 @@
             opacity: 0;
             width: 325px;
             height: 325px;
-            transform: translate(155px, -142px);
+            transform: scale(1.8) translate(85px, -78px);
 
             background: rgb(239,45,112);
             background: -moz-radial-gradient(circle, rgba(239,45,112,0.9458158263305322) 0%, rgba(0,9,29,0) 36%);
@@ -268,6 +268,21 @@
             background: radial-gradient(circle, rgba(239,45,112,0.9458158263305322) 0%, rgba(0,9,29,0) 36%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ef2d70",endColorstr="#00091d",GradientType=1);
 
+            transition: all 0.7s;
+        }
+
+        .heartBackground2 {
+            position: absolute;
+            opacity: 0;
+            width: 325px;
+            height: 325px;
+            transform: scale(0.4) translate(127px, -332px);
+
+            background: rgb(45,227,239);
+            background: -moz-radial-gradient(circle, rgba(45,227,239,1) 0%, rgba(0,9,29,0) 36%);
+            background: -webkit-radial-gradient(circle, rgba(45,227,239,1) 0%, rgba(0,9,29,0) 36%);
+            background: radial-gradient(circle, rgba(45,227,239,1) 0%, rgba(0,9,29,0) 36%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2de3ef",endColorstr="#00091d",GradientType=1);
             transition: all 0.7s;
         }
 
@@ -353,7 +368,7 @@
         body:hover {
             cursor: pointer;
 
-            background-color: #001f3f;
+            background-color: #041833;
         }
 
         body #heartPath {
@@ -367,18 +382,31 @@
         }
 
         body:hover .heartBackground {
-
+            z-index: -99;
             opacity: 0.8;
+
+        }
+
+        body:hover .heartBackground2 {
+            z-index: -99;
+            opacity: 0.5;
 
         }
 
         body:hover #heartLetterIpath {
 
-            opacity: 1;
+            opacity: 0.85;
             stroke-width: 15;
 
         }
 
+
+        @media only screen and (max-width: 600px) {
+
+            .heartBackground {
+                width: 110px !important
+            }
+        }
 
 
 
@@ -452,6 +480,7 @@
                             d="M 63 107 C 47 87 34 74 22 63 C -1 44 5 16 23 10 C 57 0 63 37 64 39 C 65 37 69 0 100 9 C 121 15 125 44 106 61 C 90 75 75 90 63 107"
                         />
                 </svg>
+                <div class="heartBackground2"></div>
 
 
             </div>
