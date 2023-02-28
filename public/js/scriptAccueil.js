@@ -20,6 +20,22 @@ window.onload = function() {
     // observerDocumentations.observe(document.querySelector('#docuLoadContainer-wrapper'));
 
 
+    // Poisson autour du lightBulb interval entre passe devant et passe derriere: 
+    // poissonLightBulb = document.createElement("div");
+    // poissonLightBulb.id = "poissonAcueil1";
+
+    // setInterval(function() {
+    //   if (document.getElementById('poissonAcueil1') != null ) {
+    //     document.getElementById('poissonAcueil1').remove();
+    //   }
+    //   document.getElementById("lightBulbWrapperDiv").append(poissonLightBulb);
+    // }, 10500)
+
+
+          
+
+
+
   // Ajouter un observer onIntoView => Proc 
     // LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/)
     var path = document.querySelector('.lightBulbContainer path');
@@ -61,16 +77,16 @@ window.onload = function() {
       'stroke-dashoffset 2.3s 1s ease, stroke 0.4s 0.4s linear, stroke-width 0.4s 0.4s linear';
     path3.style.strokeDashoffset = '0';
 
-      // Calque 4 (Hover Me text SVG)
-      var path4 = document.querySelector('.lightBulbContainer5 path');
-      var length4 = path4.getTotalLength();
-      path4.style.transition = path4.style.WebkitTransition = 'none';
-      path4.style.strokeDasharray = length4 + ' ' + length4;
-      path4.style.strokeDashoffset = length4;
-      path4.getBoundingClientRect();
-      path4.style.transition = path4.style.WebkitTransition =
-        'stroke-dashoffset 3s 2.5s ease, stroke 0.4s linear, stroke-width 0.4s linear';
-      path4.style.strokeDashoffset = '0';
+    // Calque 4 (Hover Me text SVG)
+    var path4 = document.querySelector('.lightBulbContainer5 path');
+    var length4 = path4.getTotalLength();
+    path4.style.transition = path4.style.WebkitTransition = 'none';
+    path4.style.strokeDasharray = length4 + ' ' + length4;
+    path4.style.strokeDashoffset = length4;
+    path4.getBoundingClientRect();
+    path4.style.transition = path4.style.WebkitTransition =
+      'stroke-dashoffset 3s 2.5s ease, stroke 0.4s linear, stroke-width 0.4s linear';
+    path4.style.strokeDashoffset = '0';
 
 
 
