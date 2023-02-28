@@ -123,6 +123,8 @@ body:not(#flashPointCache) {
 
 
 
+
+
 /* Calque 1 (fils de cuivre) */
 #lightBulbPath2 {
     opacity: 0.7;
@@ -2566,6 +2568,63 @@ li.veilleLigneAjout::before {
   .paddingBottom {
     padding-bottom: 50px;
   }
+
+
+
+  #poissonAcueil1 {
+    /* display: none; */
+    /* https://yqnn.github.io/svg-path-editor/ */
+    offset-path: path("M -20 -2 C 56 25 138 22 231 -2");
+    top: 25%;
+    offset-rotate: auto;
+    position: absolute;
+
+    animation: poissonAcueil1 10500ms 1500ms infinite linear;
+    width: 53px;
+    height: 53px;
+
+    /* background: cyan; */
+    content:url("/img/poisson_red.png");
+    opacity: 0;
+    transform: rotateY(180deg);
+
+    /* filter: brightness(0.85) drop-shadow(0px 0px 0px black); */
+    transition: filter 0.7s linear;
+  }
+  
+  @keyframes poissonAcueil1 {
+    0% {
+        offset-distance: 0%;
+        opacity: 0;
+        transform: rotateY(100deg);
+    }
+    15% {
+        offset-distance: 15%;
+        opacity: 0.7;
+        transform: rotateY(120deg);
+    }
+    50% {
+        opacity: 0.7;
+        transform: rotateY(180deg);
+    }
+    85% {
+        offset-distance: 85%;
+        opacity: 0.7;
+        transform: rotateY(110deg);
+    }
+    100% {
+        opacity: 0;
+        offset-distance: 100%;
+        transform: rotateY(90deg);
+
+    }
+  }
+.lightBulbWrapperDiv:hover #poissonAcueil1, .lightBulbWrapperDiv.hover #poissonAcueil1 {
+    filter: brightness(0.1) drop-shadow(2px 4px 6px black);
+    opacity: 1 !important;
+
+}
+
 
 
 
