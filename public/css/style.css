@@ -2578,7 +2578,7 @@ li.veilleLigneAjout::before {
 
     /* TEST Anims en 2 temps avec JS et interval */
     .poissonAcueil1AnimFront {
-        offset-path: path("M -20 -2 C 56 25 138 22 231 -2");
+        offset-path: path("M -20 -2 C 52 10 136 11 231 -2");
         top: 25%;
         position: absolute;
     
@@ -2594,7 +2594,7 @@ li.veilleLigneAjout::before {
         transition: filter 0.7s linear;
     }
     .poissonAcueil1AnimBack {
-        offset-path: path("M 232 1 C 155 -16 43 -15 -28 0");
+        offset-path: path("M 232 1 C 152 -11 42 -10 -28 0");
         top: 24%;
         position: absolute;
 
