@@ -104,7 +104,7 @@
                 </div>
 
                 <!-- LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/) -->
-                <div class="lightBulbWrapperDiv">
+                <div id="lightBulbWrapperDiv" class="lightBulbWrapperDiv">
                     <svg class="lightBulbContainer">
                         <path 
                             id="lightBulbPath"
@@ -141,8 +141,8 @@
                         />
                     </svg>
 
-                    <!-- Poisson qui passe devant -->
-                    <div id="poissonAcueil1"></div>
+                    <!-- Poisson qui passe devant: popé depuis JS avec intervals -->
+                    <!-- <div id="poissonAcueil1"></div> -->
 
                 </div>
 

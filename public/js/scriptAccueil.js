@@ -21,15 +21,42 @@ window.onload = function() {
 
 
     // Poisson autour du lightBulb interval entre passe devant et passe derriere: 
-    // poissonLightBulb = document.createElement("div");
-    // poissonLightBulb.id = "poissonAcueil1";
+    poissonLightBulb = document.createElement("div");
+    poissonLightBulb.id = "poissonAcueil1";
+    poissonLightBulb.classList.add("poissonAcueil1AnimFront");
 
-    // setInterval(function() {
-    //   if (document.getElementById('poissonAcueil1') != null ) {
-    //     document.getElementById('poissonAcueil1').remove();
-    //   }
-    //   document.getElementById("lightBulbWrapperDiv").append(poissonLightBulb);
-    // }, 10500)
+    // Poisson ajouté à la main dès le début (le setInterval donne delai de premier pop :/)
+    document.getElementById("lightBulbWrapperDiv").append(poissonLightBulb);
+    setTimeout(function() {
+      document.getElementById("poissonAcueil1").classList.remove("poissonAcueil1AnimFront");
+      document.getElementById("poissonAcueil1").classList.add("poissonAcueil1AnimBack");
+    }, 6001)
+    setTimeout(function() {
+      document.getElementById("poissonAcueil1").classList.remove("poissonAcueil1AnimBack");
+      document.getElementById("poissonAcueil1").remove();
+    }, 12000);
+
+    // Interval de repop: 
+    setInterval(function() {
+
+      if (document.getElementById("poissonAcueil1") !== null) {
+        poissonLightBulb.classList.remove("poissonAcueil1AnimFront");
+      }
+
+      document.getElementById("lightBulbWrapperDiv").append(poissonLightBulb);
+      document.getElementById("poissonAcueil1").classList.add("poissonAcueil1AnimFront");
+
+      setTimeout(function() {
+        poissonLightBulb.classList.remove("poissonAcueil1AnimFront");
+        poissonLightBulb.classList.add("poissonAcueil1AnimBack");
+      }, 6001);
+
+      setTimeout(function() {
+        poissonLightBulb.classList.remove("poissonAcueil1AnimBack");
+        document.getElementById('poissonAcueil1').remove();
+      }, 12002)
+
+    }, 12150)
 
 
           
