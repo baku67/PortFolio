@@ -2653,12 +2653,12 @@ li.veilleLigneAjout::before {
         0% {
             offset-distance: 0%;
             opacity: 0;
-            transform: rotateY(130deg);
+            transform: rotateY(110deg);
         }
         7% {
             offset-distance: 7%;
             opacity: 0.7;
-            transform: rotateY(140deg);
+            transform: rotateY(130deg);
         } 
         50% {
             offset-distance: 50%;
@@ -2680,12 +2680,12 @@ li.veilleLigneAjout::before {
         0% {
             offset-distance: 0%;
             opacity: 0;
-            transform: rotateX(180deg) rotateY(180deg);
+            transform: rotateX(180deg) rotateY(100deg);
         }
         7% {
             offset-distance: 7%;
             opacity: 0;
-            transform: rotateX(180deg) rotateY(180deg);
+            transform: rotateX(180deg) rotateY(120deg);
         } 
         50% {
             offset-distance: 50%;
@@ -2695,12 +2695,12 @@ li.veilleLigneAjout::before {
         93% {
             offset-distance: 93%;
             opacity: 0;
-            transform: rotateX(180deg) rotateY(150deg);
+            transform: rotateX(180deg) rotateY(120deg);
         }
         100% {
             offset-distance: 100%;
             opacity: 0;
-            transform: rotateX(180deg) rotateY(120deg);
+            transform: rotateX(180deg) rotateY(90deg);
         }
     }
 
