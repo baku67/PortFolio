@@ -41,6 +41,11 @@ body {
 
     /* opacity: 0; */
     animation: gradientAnimProjet 2s ease 0s normal forwards running;
+
+    /* Pour footer */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 body:not(#flashPointCache) {
     /* filter: drop-shadow(2px 4px 6px black) brightness(0); */
@@ -66,6 +71,9 @@ body:not(#flashPointCache) {
 }
 
 
+main {
+    flex:1; /* 4 */
+}
 
 
 
@@ -78,9 +86,11 @@ body:not(#flashPointCache) {
     position: relative;
     /* margin: 50px; */
     width: 205px;
-    margin: 0 61px;
+    margin: 0 61px 0 0;
     
     transition: all 0.4s;
+
+    bottom: -5px;
 }
 
 
@@ -284,6 +294,9 @@ body:not(#flashPointCache) {
 
 #citationAndLightBulbWrapper {
     display:inline-flex;
+    flex-direction: row-reverse;
+
+    margin-bottom: 50px;
 }
 
 
@@ -319,8 +332,8 @@ footer {
     text-align: center;
 
 
-    position: relative;
-    bottom: 0%;
+    /* position: relative; */
+    /* bottom: 0%; */
     width: 100%;
 }
 footer.footerAccueil {
@@ -328,8 +341,8 @@ footer.footerAccueil {
     /* Juste pour eviter le pop puis decalage lors du chargement du form(qui est un api) */
     animation: fadeIn 0.2s 0.5s forwards;
     /* position: absolute !important; */
-    position: relative;
-    bottom: auto;
+    /* position: relative; */
+    /* bottom: auto; */
 
 }
 
@@ -337,8 +350,8 @@ footer.footerAccueil {
     z-index: -100;
     background-color: rgba(22, 26, 36, 0.2);
     color: #a1a4c0;
-    position: relative !important;
-    bottom: 0%;
+    /* position: relative !important; */
+    /* bottom: 0%; */
 }
 
 
@@ -401,9 +414,11 @@ textarea:focus, input:focus{
     color:#ef3b2d;
     background-color: #1b1f2a;
     padding: 10px 15px;
-    border: 1px solid #ef3b2d;
+    border: 1px solid rgb(239 59 45 / 60%);
     border-radius: 3px;
     cursor: pointer;
+
+    margin-bottom: 30px;
 
     transition: all 0.5s;
 }
@@ -906,10 +921,11 @@ li::before {
 
 
 #traitHeader {
-    height:1px;
-    width:100%;
-    background-color:#E7E8F2;
-    opacity:0.2;
+    height: 2px;
+    width: 100%;
+    background-color: #E7E8F2;
+    opacity: 0.6;
+    background-color: #ef3b2d;
 }
 
 .traitSeparateurProjet {
@@ -1718,9 +1734,9 @@ li::before {
 .paragrapheAccueil { 
     text-align: justify;
     color: #E7E8F2;
-    margin: 0px 20px 50px 20px;
+    margin: 0px 20px 12px 20px;
     
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .imgAccueil { 
@@ -1878,6 +1894,8 @@ li::before {
 .photo55 { grid-area: photo55; }
 .photo56 { grid-area: photo56; }
 .photo57 { grid-area: photo57; }
+
+
 
 
 
@@ -4357,6 +4375,7 @@ li.veilleLigneAjout::before {
 }
 
 #inspirationContainer {
+    transform: scale(0.9);
     position: relative;
     /* width: 60%; */
     margin-bottom:50px; 
@@ -4366,7 +4385,7 @@ li.veilleLigneAjout::before {
     border-right: 2px solid rgba(239, 59, 45, 0.5);
     padding-bottom: 20px;
     border-bottom-right-radius: 10px;
-    border-bottom-style: double;
+    /* border-bottom-style: double; */
 }
 
 #quoteContent {
@@ -4376,7 +4395,7 @@ li.veilleLigneAjout::before {
     opacity:0.8; 
     font-style:italic;
 
-    display: flex;
+    display: block;
     width: 60%;
     margin: 0 auto;
     text-align: justify;
@@ -4391,22 +4410,20 @@ li.veilleLigneAjout::before {
     font-family: 'Nunito', sans-serif;
     display: flex;
     margin: 10px;
-    font-size: 1em;
+    font-size: 2em;
     /* margin-top: 42px; */
     color: #ef3b2d;
     background-color: #1b1f2a;
-    padding: 7px 11px;
+    padding: 11px 15px;
     /* border: 1px solid #ef3b2d; */
-    border-bottom: 3px solid rgba(239, 59, 45, 0.5);
-    border-right: 1px solid rgba(239, 59, 45, 0.5);
     border-bottom-right-radius: 5px;
-
+    opacity: 0.7;
+    border: 1px solid rgb(239 59 45 / 60%);
     border-radius: 3px;
     cursor: pointer;
     transition: all 0.5s;
-
     position: relative;
-    /* right: 6%; */
+    left: 10px;
 }
 #changeQuotation:hover {
     background-color: #ef3b2d;

@@ -13,6 +13,9 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
         <link rel="stylesheet" type="text/css" href="{{ asset('css/styleMediaQueries.css') }}" />
         <link rel="stylesheet" type="text/css" href="{{ asset('css/styleMediaQueries2k.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style4k.css') }}" />
+
+        <script src="https://kit.fontawesome.com/698848973e.js" crossorigin="anonymous"></script>
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -35,36 +38,37 @@
 
 
 
-    <body>
+    <body id="body">
 
-        <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
-        <div style="width:100%;">
-            <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
-            <span  id="lineBreakMobile"></br></span>
-            <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> En formation</span><span id="status2"> En recherche de stage</span></span></h2>
-        </div>
+        <!-- Header -->
+        <header>
+            <div style="width:100%;">
+                <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
+                <span  id="lineBreakMobile"></br></span>
+                <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> En formation</span><span id="status2"> En recherche de stage</span></span></h2>
+            </div>
 
-        <!-- Menu -->
-        <div id="NavBarContainer">
-            <p id="menuLigneCv" style="color:#E7E8F2;">
-                <a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> 
-                &nbsp; 
-                <a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> 
-                &nbsp; 
-                <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
-                &nbsp; 
-                <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
-                &nbsp; -->
-                <a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a>
-            </p>
-        </div>
+            <!-- NavBarre -->
+            <div id="NavBarContainer">
+                <p id="menuLigneCv" style="color:#E7E8F2;">
+                    <a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> 
+                    &nbsp; 
+                    <a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> 
+                    &nbsp; 
+                    <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
+                    &nbsp; 
+                    <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
+                    &nbsp; -->
+                    <a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a>
+                </p>
+            </div>
 
-        <!-- Trait séparateur -->
-        <div id="traitHeader"></div>
+            <!-- Trait séparateur -->
+            <div id="traitHeader"></div>
+        <header>
 
 
-        <!-- Contenu (load JS) -->
-        <div id="pageContainer">
+        <main id="pageContainer">
 
             <h2 class="pageTitle">Bienvenue sur mon portfolio</h2>
             </br>
@@ -91,74 +95,78 @@
 
             </br>
 
-            <div id="citationAndLightBulbWrapper">
-                <div id="inspirationContainer">
-                    <h3 id="inspirationTitle">Inspirations:</h3>
-                    <div style="position:relative;">
-                        <img class="quote1" src="img/quote1.png" />
-                        <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
-                        <quote style="position:relative;"><span id="quoteContent">There are three responses to a piece of design — yes, no, and WOW! Wow is the one to aim for. – Milton Glaser</span></quote>
-                        <img class="quote2" src="img/quote2.png" />
-                    </div>
-                    <button id="changeQuotation">Changer</button>
-                </div>
+            <div id="contactDiv">
 
-                <!-- LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/) -->
-                <div id="lightBulbWrapperDiv" class="lightBulbWrapperDiv">
-                    <svg class="lightBulbContainer">
-                        <path 
-                            id="lightBulbPath"
-                            d="M 344 11 C -14 10 -70 407 185 533 C 207 545 247 556 247 606 L 247 642 C 235 663 236 677 247 696 C 236 712 236 727 247 745 C 237 761 238 777 247 792 C 295 808 390 812 450 793 C 459 780 458 760 450 745 C 460 728 459 709 450 695 C 459 679 458 658 449 642 L 448 606 C 446 552 492 541 514 530 C 754 408 708 9 344 11"
-                        />
-                    </svg>
-
-                    <!-- Calque 1 (fils de cuivre) -->
-                    <svg class="lightBulbContainer2">
-                        <path 
-                            id="lightBulbPath2"
-                            d="M 294 605 L 295 603 M 295 603 C 293 536 305 335 287 196 Q 277 122 251 196 Q 228 274 342 275 Q 440 273 420 197 Q 392 117 375 197 C 358 334 383.6667 466 388 604"
-                        />
-                    </svg>
-
-                    <!-- Calque 2 (Halo lumière) -->
-                    <div class="lightBulbContainer3">
+                <div id="citationAndLightBulbWrapper">
+                    <div id="inspirationContainer">
+                        <h3 id="inspirationTitle">Inspirations:</h3>
+                        <div style="position:relative;">
+                            <img class="quote1" src="img/quote1.png" />
+                            <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
+                            <quote style="position:relative;"><span id="quoteContent">Digital design is like painting, except the paint never dries. <span style="color:#ef3b2d;">- Neville Brody</span></span></quote>
+                            <img class="quote2" src="img/quote2.png" />
+                        </div>
+                        <button id="changeQuotation"><i class="fa-solid fa-rotate"></i></button>
                     </div>
 
-                    <!-- Calque 3 (effet vis) -->
-                    <svg class="lightBulbContainer4">
-                        <path 
-                            id="lightBulbPath4"
-                            d="M 265 641 L 267 642 M 267 642 C 314 661 370 661 411 649 Q 448 638 411 633 Q 249 622 270 686 Q 276 710 397 705 Q 410 705 421 701 Q 449 691 412 685 Q 247 676 269 736 Q 277 758 403 754 Q 417 752 422 750 Q 449 740 413 734 Q 246 727 272 750"
-                        />
-                    </svg>
+                    <!-- LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/) -->
+                    <div id="lightBulbWrapperDiv" class="lightBulbWrapperDiv">
+                        <svg class="lightBulbContainer">
+                            <path 
+                                id="lightBulbPath"
+                                d="M 344 11 C -14 10 -70 407 185 533 C 207 545 247 556 247 606 L 247 642 C 235 663 236 677 247 696 C 236 712 236 727 247 745 C 237 761 238 777 247 792 C 295 808 390 812 450 793 C 459 780 458 760 450 745 C 460 728 459 709 450 695 C 459 679 458 658 449 642 L 448 606 C 446 552 492 541 514 530 C 754 408 708 9 344 11"
+                            />
+                        </svg>
 
-                    
-                    <!-- Calque 4 (Hover me text SVG) -->
-                    <svg class="lightBulbContainer5">
-                        <path 
-                            id="lightBulbPath5"
-                            d="M 163.2212 793.6805 L 163.134 792.6843 M 139.2637 703.4251 L 163.134 792.6843 Q 146.9962 745.9128 173.0716 745.6392 Q 197.9764 743.4603 181.5772 693.7002 L 200.205 780.4067 C 204.2891 804.141 207.7144 728.5549 239.6798 726.7621 C 280.1751 719.2039 288.4306 767.6688 246.8518 774.3179 C 210.9017 776.4594 206.7182 728.642 245.5698 725.2429 Q 285.3679 709.7152 293.6983 736.0895 Q 321.4043 788.8757 319.2507 729.8387 C 321.7539 712.5548 359.8829 735.3182 385.8215 722.0069 Q 407.2523 703.067 379.6578 697.4506 Q 349.249 694.0881 343.5952 732.7279 Q 338.8504 770.2844 416.1553 747.46 C 425.9429 744.596 428.3964 715.2706 431.4599 692.9185 C 441.9448 698.0241 453.2516 701.0502 470.5355 703.5533 Q 454.1475 757.1857 485.4156 747.4234 C 518 733 505 765 403 788 Q 350 802 396 825 C 416 835 412 818.3333 433 796 Q 447 783 455 798 C 458 805 453 821.3333 452 833 C 455 805 460 797 464 793 Q 472 787 478 798 C 485 813 478 827 490 832 C 504 836 490 811 535 810 C 555 810 540 788 519 793 C 490 803 501 858 541 829"
-                        />
-                    </svg>
+                        <!-- Calque 1 (fils de cuivre) -->
+                        <svg class="lightBulbContainer2">
+                            <path 
+                                id="lightBulbPath2"
+                                d="M 294 605 L 295 603 M 295 603 C 293 536 305 335 287 196 Q 277 122 251 196 Q 228 274 342 275 Q 440 273 420 197 Q 392 117 375 197 C 358 334 383.6667 466 388 604"
+                            />
+                        </svg>
 
-                    <!-- Poisson qui passe devant: popé depuis JS avec intervals -->
-                    <!-- <div id="poissonAcueil1"></div> -->
+                        <!-- Calque 2 (Halo lumière) -->
+                        <div class="lightBulbContainer3">
+                        </div>
+
+                        <!-- Calque 3 (effet vis) -->
+                        <svg class="lightBulbContainer4">
+                            <path 
+                                id="lightBulbPath4"
+                                d="M 265 641 L 267 642 M 267 642 C 314 661 370 661 411 649 Q 448 638 411 633 Q 249 622 270 686 Q 276 710 397 705 Q 410 705 421 701 Q 449 691 412 685 Q 247 676 269 736 Q 277 758 403 754 Q 417 752 422 750 Q 449 740 413 734 Q 246 727 272 750"
+                            />
+                        </svg>
+
+                        
+                        <!-- Calque 4 (Hover me text SVG) -->
+                        <svg class="lightBulbContainer5">
+                            <path 
+                                id="lightBulbPath5"
+                                d="M 163.2212 793.6805 L 163.134 792.6843 M 139.2637 703.4251 L 163.134 792.6843 Q 146.9962 745.9128 173.0716 745.6392 Q 197.9764 743.4603 181.5772 693.7002 L 200.205 780.4067 C 204.2891 804.141 207.7144 728.5549 239.6798 726.7621 C 280.1751 719.2039 288.4306 767.6688 246.8518 774.3179 C 210.9017 776.4594 206.7182 728.642 245.5698 725.2429 Q 285.3679 709.7152 293.6983 736.0895 Q 321.4043 788.8757 319.2507 729.8387 C 321.7539 712.5548 359.8829 735.3182 385.8215 722.0069 Q 407.2523 703.067 379.6578 697.4506 Q 349.249 694.0881 343.5952 732.7279 Q 338.8504 770.2844 416.1553 747.46 C 425.9429 744.596 428.3964 715.2706 431.4599 692.9185 C 441.9448 698.0241 453.2516 701.0502 470.5355 703.5533 Q 454.1475 757.1857 485.4156 747.4234 C 518 733 505 765 403 788 Q 350 802 396 825 C 416 835 412 818.3333 433 796 Q 447 783 455 798 C 458 805 453 821.3333 452 833 C 455 805 460 797 464 793 Q 472 787 478 798 C 485 813 478 827 490 832 C 504 836 490 811 535 810 C 555 810 540 788 519 793 C 490 803 501 858 541 829"
+                            />
+                        </svg>
+
+                        <!-- Poisson qui passe devant: popé depuis JS avec intervals -->
+                        <!-- <div id="poissonAcueil1"></div> -->
+
+                    </div>
 
                 </div>
+
+
+                </br>
+
+
+                <!-- form https://enjoy.plezi.co -->
+                <button id="contactButton">Me contacter</button>
+                <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
+                <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>            
 
             </div>
 
 
-            </br>
-
-            <!-- form https://enjoy.plezi.co -->
-            <button id="contactButton">Me contacter</button>
-            <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
-            <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>            
-            <br><br>
-
-
-        </div>
+        </main>
         
         <footer class="footerAccueil">www.portfolio.basilek.ovh</footer>
 
