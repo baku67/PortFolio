@@ -13,11 +13,23 @@ window.onload = function() {
     //         elem.classList.add('docuLoadContainer');
     //         // return;
     //       }
-    //       // elem.classList.remove('docuLoadContainer');
     //     });
     //   });
     // // Tell the observer which elements to track
     // observerDocumentations.observe(document.querySelector('#docuLoadContainer-wrapper'));
+
+
+
+    // FadeIn du text Présentation:
+    setTimeout(function() {
+      document.querySelectorAll(".accueilWord").forEach((elem, i) => {
+        setTimeout(() => {
+          elem.classList.add("fadeInWordPresentation");
+        }, i * 100);
+      });
+    }, 350)
+
+
 
 
     // Poisson autour du lightBulb interval entre passe devant et passe derriere: 
@@ -62,58 +74,72 @@ window.onload = function() {
           
 
 
+    // Observeur pour lancer le "drawing" de l'ampoule onScrollView
+    const observerDocumentationHeader = new IntersectionObserver(entries => {
+      // Loop over the entries
+      entries.forEach(entry => {
+        // If the element is visible
+        if (entry.isIntersecting) {
 
-  // Ajouter un observer onIntoView => Proc 
-    // LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/)
-    var path = document.querySelector('.lightBulbContainer path');
-    var length = path.getTotalLength();
-    // Clear any previous transition
-    path.style.transition = path.style.WebkitTransition = 'none';
-    // Set up the starting positions
-    path.style.strokeDasharray = length + ' ' + length;
-    path.style.strokeDashoffset = length;
-    // Trigger a layout so styles are calculated & the browser
-    // picks up the starting position before animating
-    path.getBoundingClientRect();
-    // Define our transition (+EFFET de delai sur le hover pour allumage en 2 temps:)
-    path.style.transition = path.style.WebkitTransition =
-      'stroke-dashoffset 3s ease, stroke 0.4s 0.4s linear, stroke-width 0.4s 0.4s linear';
-    // Go!
-    path.style.strokeDashoffset = '0';
+          var path = document.querySelector('.lightBulbContainer path');
+          var length = path.getTotalLength();
+          // Clear any previous transition
+          path.style.transition = path.style.WebkitTransition = 'none';
+          // Set up the starting positions
+          path.style.strokeDasharray = length + ' ' + length;
+          path.style.strokeDashoffset = length;
+          // Trigger a layout so styles are calculated & the browser
+          // picks up the starting position before animating
+          path.getBoundingClientRect();
+          // Define our transition (+EFFET de delai sur le hover pour allumage en 2 temps:)
+          path.style.transition = path.style.WebkitTransition =
+            'stroke-dashoffset 3s ease, stroke 0.4s 0.4s linear, stroke-width 0.4s 0.4s linear';
+          // Go!
+          path.style.strokeDashoffset = '0';
+      
+      
+          // Calque 1 (fils de cuivre)
+          var path2 = document.querySelector('.lightBulbContainer2 path');
+          var length2 = path2.getTotalLength();
+          path2.style.transition = path2.style.WebkitTransition = 'none';
+          path2.style.strokeDasharray = length2 + ' ' + length2;
+          path2.style.strokeDashoffset = length2;
+          path2.getBoundingClientRect();
+          path2.style.transition = path2.style.WebkitTransition =
+            'stroke-dashoffset 3s 0.5s ease, stroke 0.4s linear, stroke-width 0.4s linear';
+          path2.style.strokeDashoffset = '0';
+      
+          // Calque 3 (effet Vis)
+          var path3 = document.querySelector('.lightBulbContainer4 path');
+          var length3 = path3.getTotalLength();
+          path3.style.transition = path3.style.WebkitTransition = 'none';
+          path3.style.strokeDasharray = length3 + ' ' + length3;
+          path3.style.strokeDashoffset = length3;
+          path3.getBoundingClientRect();
+          path3.style.transition = path3.style.WebkitTransition =
+            'stroke-dashoffset 2.3s 1s ease, stroke 0.4s 0.4s linear, stroke-width 0.4s 0.4s linear';
+          path3.style.strokeDashoffset = '0';
+      
+          // Calque 4 (Hover Me text SVG)
+          var path4 = document.querySelector('.lightBulbContainer5 path');
+          var length4 = path4.getTotalLength();
+          path4.style.transition = path4.style.WebkitTransition = 'none';
+          path4.style.strokeDasharray = length4 + ' ' + length4;
+          path4.style.strokeDashoffset = length4;
+          path4.getBoundingClientRect();
+          path4.style.transition = path4.style.WebkitTransition =
+            'stroke-dashoffset 3s 2.5s ease, stroke 0.4s linear, stroke-width 0.4s linear';
+          path4.style.strokeDashoffset = '0';
+      
+          return;
+        }
+      });
+    });
+  
+  // Tell the observer which elements to track
+  observerDocumentationHeader.observe(document.querySelector('#inspirationTitle'));
 
 
-    // Calque 1 (fils de cuivre)
-    var path2 = document.querySelector('.lightBulbContainer2 path');
-    var length2 = path2.getTotalLength();
-    path2.style.transition = path2.style.WebkitTransition = 'none';
-    path2.style.strokeDasharray = length2 + ' ' + length2;
-    path2.style.strokeDashoffset = length2;
-    path2.getBoundingClientRect();
-    path2.style.transition = path2.style.WebkitTransition =
-      'stroke-dashoffset 3s 0.5s ease, stroke 0.4s linear, stroke-width 0.4s linear';
-    path2.style.strokeDashoffset = '0';
-
-    // Calque 3 (effet Vis)
-    var path3 = document.querySelector('.lightBulbContainer4 path');
-    var length3 = path3.getTotalLength();
-    path3.style.transition = path3.style.WebkitTransition = 'none';
-    path3.style.strokeDasharray = length3 + ' ' + length3;
-    path3.style.strokeDashoffset = length3;
-    path3.getBoundingClientRect();
-    path3.style.transition = path3.style.WebkitTransition =
-      'stroke-dashoffset 2.3s 1s ease, stroke 0.4s 0.4s linear, stroke-width 0.4s 0.4s linear';
-    path3.style.strokeDashoffset = '0';
-
-    // Calque 4 (Hover Me text SVG)
-    var path4 = document.querySelector('.lightBulbContainer5 path');
-    var length4 = path4.getTotalLength();
-    path4.style.transition = path4.style.WebkitTransition = 'none';
-    path4.style.strokeDasharray = length4 + ' ' + length4;
-    path4.style.strokeDashoffset = length4;
-    path4.getBoundingClientRect();
-    path4.style.transition = path4.style.WebkitTransition =
-      'stroke-dashoffset 3s 2.5s ease, stroke 0.4s linear, stroke-width 0.4s linear';
-    path4.style.strokeDashoffset = '0';
 
 
 

@@ -195,10 +195,10 @@
                         </div>
                     </article>
 
-                    <article class="location-listing images" alt="6" style="margin:auto; position:relative; cursor:pointer;">
+                    <article class="location-listing images" alt="11" style="margin:auto; position:relative; cursor:pointer;">
                         <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo6 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/6_preview.jpg"/>
+                        <div class="photosGallerie photo11 location-image" style="display:block;">
+                                <img class="imgGalleries" src="img/galerie/11_preview.jpg"/>
                         </div>
                     </article>
 
@@ -249,10 +249,10 @@
 
 
 
-                    <article class="location-listing images" alt="11" style="margin:auto; position:relative;  cursor:pointer;">
+                    <article class="location-listing images" alt="6" style="margin:auto; position:relative;  cursor:pointer;">
                         <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo11 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/11_preview.jpg"/>
+                        <div class="photosGallerie photo6 location-image" style="display:block;">
+                                <img class="imgGalleries" src="img/galerie/6_preview.jpg"/>
                         </div>
                     </article>
 

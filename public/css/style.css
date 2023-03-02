@@ -296,7 +296,7 @@ main {
     display:inline-flex;
     flex-direction: row-reverse;
 
-    margin-bottom: 50px;
+    margin-bottom: 16px;
 }
 
 
@@ -418,7 +418,7 @@ textarea:focus, input:focus{
     border-radius: 3px;
     cursor: pointer;
 
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 
     transition: all 0.5s;
 }
@@ -1740,18 +1740,38 @@ li::before {
 }
 
 .imgAccueil { 
+    opacity: 0;
+
     float:right;
     width: 161px;
     height: 173px;
-    border-radius: 4px;
-    /* margin: 45px 30px 15px 68px; */
     margin: 20px 30px 15px 49px;
 
     border: 2px solid rgba(239, 59, 45, 0.5);
     padding: 4px;
 
     vertical-align: middle;
+    border-radius: 4px solid rgba(239, 59, 45, 0.5);
+    position: relative;
+    right: -250px;
+    filter: blur(5px) grayscale(1);
 
+    animation: imgAccueilFadeIn 2s 1.5s ease forwards;
+}
+
+
+
+@keyframes imgAccueilFadeIn {
+    from {
+        opacity: 0;
+        right: -250px;
+        filter: blur(5px) grayscale(1);
+    }
+    to {
+        opacity: 1;
+        right: 0px;
+        filter: blur(0px) grayscale(0);
+    }
 }
 
 
@@ -4430,9 +4450,6 @@ li.veilleLigneAjout::before {
     color: #1b1f2a;
 }
 
-.imgAccueil {
-    border-radius: 4px solid rgba(239, 59, 45, 0.5);
-}
 
 #photoBar {
     position: absolute;
@@ -4604,5 +4621,29 @@ li.veilleLigneAjout::before {
     100% {
         opacity: 0;
         background-color: rgba(255,255,255,0.1);
+    }
+}
+
+
+.accueilWord {
+    opacity: 0;
+    position: relative;
+    bottom: 15px;
+    filter: blur(7px);
+}
+
+.fadeInWordPresentation {
+    animation: fadeInWordPresentation 0.5s 0s ease forwards;
+}
+@keyframes fadeInWordPresentation {
+    from {
+        opacity: 0;
+        bottom: 15px;
+        filter: blur(7px);
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+        filter: blur(0px);
     }
 }

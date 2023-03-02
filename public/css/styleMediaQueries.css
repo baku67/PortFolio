@@ -104,8 +104,8 @@
     #changeQuotation{
 
         font-family: 'Nunito', sans-serif;
-        display: flex;
-        margin: 10px;
+        /* display: flex;
+        margin: 10px; */
         font-size: 1.4em;
         /* margin-top: 42px; */
         color: #ef3b2d;
@@ -119,9 +119,10 @@
         cursor: pointer;
         transition: all 0.5s;
         position: relative;
-        right: 6%;
-        float: right;
-        /* text-align: right; 
+        /* right: 6%;
+        float: right; */
+        /* text-align: right; */
+        left:0px;
     }
     
 
@@ -1196,6 +1197,8 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 20px;
+        border-bottom: 3px solid rgba(239, 59, 45, 0.7);
+        border-right: 1px solid rgba(239, 59, 45, 0.7);
     }
     
 
