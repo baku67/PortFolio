@@ -71,16 +71,43 @@ window.onload = function() {
     }, 12150)
 
 
+    // Rectangle photo SVG drawing
+    var pathRec = document.querySelector('.rectangleSvg path');
+    var lengthRec = pathRec.getTotalLength();
+    // Clear any previous transition
+    pathRec.style.transition = pathRec.style.WebkitTransition = 'none';
+    // Set up the starting positions
+    pathRec.style.strokeDasharray = lengthRec + ' ' + lengthRec;
+    pathRec.style.strokeDashoffset = lengthRec;
+    // Trigger a layout so styles are calculated & the browser
+    // picks up the starting position before animating
+    pathRec.getBoundingClientRect();
+    // Define our transition
+    pathRec.style.transition = pathRec.style.WebkitTransition =
+      'stroke-dashoffset 3s ease';
+    // Go!
+    document.getElementById("rectangleSvg").style.opacity = "1";
+    pathRec.style.strokeDashoffset = '0';
+
           
 
 
-    // Observeur pour lancer le "drawing" de l'ampoule onScrollView
+    // Observeur pour lancer le "drawing" de l'ampoule onScrollView et le fadeIn citation
     const observerDocumentationHeader = new IntersectionObserver(entries => {
       // Loop over the entries
       entries.forEach(entry => {
         // If the element is visible
         if (entry.isIntersecting) {
 
+          document.getElementById("lightBulbWrapperDiv").style.opacity = "1";
+          // FadeIn Citation:
+          document.getElementById("inspirationContainer").classList.add("fadeInCitation")
+          setTimeout(function() {
+            document.getElementById("inspirationContainer").style.opacity = "1";
+            document.getElementById("inspirationContainer").classList.remove("fadeInCitation")
+          }, 1005)
+
+          //** Anim Ampoule SVG drawing */
           var path = document.querySelector('.lightBulbContainer path');
           var length = path.getTotalLength();
           // Clear any previous transition
@@ -143,8 +170,20 @@ window.onload = function() {
 
 
 
-
-
+  const observerContactButton = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        document.getElementById("contactButton").classList.add("fadeInForm")
+        setTimeout(function() {
+          document.getElementById("contactButton").style.opacity = "1";
+          document.getElementById("contactButton").classList.remove("fadeInForm")
+        }, 1005)
+      }
+    })
+  })
+  observerContactButton.observe(document.querySelector('#contactButton'));
 
 
 

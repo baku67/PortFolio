@@ -82,6 +82,8 @@ main {
 
 /* Container du lightbulb (relativ) et des calques (absolute) */
 .lightBulbWrapperDiv {
+    opacity: 0;
+
     height: 250px;
     position: relative;
     /* margin: 50px; */
@@ -91,6 +93,27 @@ main {
     transition: all 0.4s;
 
     bottom: -5px;
+}
+
+
+/* Rectangle photo Accueil */
+#rectangleSvgPath {
+    opacity: 0.9;
+    transform: scale(0.67);
+    fill: none; 
+    stroke: #ef3b2d; 
+    stroke-width: 3; 
+    stroke-linecap: round; 
+    stroke-linejoin:  miter; 
+    stroke-miterlimit: 4;
+}
+.rectangleSvg {
+    opacity: 0;
+    height: 200px;
+
+    position: absolute;
+    right: -95px;
+    /* height: -webkit-fill-available; */
 }
 
 
@@ -287,14 +310,41 @@ main {
     box-shadow: 2px 0px 2px #fffd00;
 } */
 
+#inspirationContainer {
+    transition: all 0.7s;
+}
+#lightBulbWrapperDiv:hover + #inspirationContainer h3 {
+    transition: all 0.7s;
+}
 
+#lightBulbWrapperDiv:hover + #inspirationContainer {
+    color: rgba(7, 255, 223, 0.5);
+    border-bottom: 5px solid rgba(7, 255, 223, 0.7);
+    border-right: 2px solid rgba(7, 255, 223, 0.7);
+    
+    animation: glowText 2s infinite ease;
+}
+@keyframes glowText {
+    0% {
+        color: rgba(7, 255, 223, 0.5);
+    }
+    50% {
+        color: rgba(7, 255, 223, 1);
+    }
+    100% {
+        color: rgba(7, 255, 223, 0.5);
+    }
+}
 
+#lightBulbWrapperDiv:hover + #inspirationContainer h3 {
+    color: rgba(7, 255, 223, 1);
+}
 
 
 
 #citationAndLightBulbWrapper {
     display:inline-flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 
     margin-bottom: 16px;
 }
@@ -405,7 +455,22 @@ textarea:focus, input:focus{
     }
 }
 
+.fadeInCitation {
+    animation: fadeInCitation 1s 0s ease-in forwards;
+}
+@keyframes fadeInCitation {
+    from {
+        opacity: 0;
+        /* height: 0px; */
+    }
+    to {
+        opacity: 1;
+        /* height: auto; */
+    }
+}
+
 #contactButton {
+    opacity: 0;
     font-family: 'Nunito', sans-serif;
     display: flex;
     margin:0 auto;
@@ -1747,20 +1812,20 @@ li::before {
     height: 173px;
     margin: 20px 30px 15px 49px;
 
-    border: 2px solid rgba(239, 59, 45, 0.5);
+    /* border: 2px solid rgba(239, 59, 45, 0.5); */
     padding: 4px;
 
     vertical-align: middle;
     border-radius: 4px solid rgba(239, 59, 45, 0.5);
     position: relative;
-    right: -250px;
+    /* right: -250px; */
     filter: blur(5px) grayscale(1);
 
-    animation: imgAccueilFadeIn 2s 1.5s ease forwards;
+    animation: imgAccueilFadeIn 2s 1.8s ease forwards;
 }
 
 
-
+/* 
 @keyframes imgAccueilFadeIn {
     from {
         opacity: 0;
@@ -1772,7 +1837,18 @@ li::before {
         right: 0px;
         filter: blur(0px) grayscale(0);
     }
+} */
+@keyframes imgAccueilFadeIn {
+    from {
+        opacity: 0;
+        filter: blur(5px) grayscale(1);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px) grayscale(0);
+    }
 }
+
 
 
 
@@ -2717,6 +2793,69 @@ li.veilleLigneAjout::before {
     filter: blur(1px) brightness(0.2) !important;
     opacity: 1 !important;
 }
+
+  /* Raie Accueil */
+  #raieAccueil1 {
+    filter: blur(2px);
+    /* https://yqnn.github.io/svg-path-editor/ */
+    offset-path: path("M 135 -145 C -63 446 460 690 1062 864");
+    offset-rotate: auto;
+
+    position: fixed;
+
+    top: -5%;
+    z-index: -5;
+
+    animation: raieAccueil1 20000ms 2000ms infinite linear;
+    width: 200px;
+    height: 200px;
+
+    /* background: cyan; */
+    content:url("/img/raieAccueil1.png");
+    opacity: 0;
+    transform: rotateZ(9deg) rotateX(180deg);
+  }
+  
+  @keyframes raieAccueil1 {
+    0% {
+        transform: rotateZ(9deg) rotateX(180deg);
+        offset-distance: 0%;
+        opacity: 0;
+    }
+    11% {
+        opacity: 0.3;
+    }
+    22% {
+        opacity: 0.3;
+        transform: rotateZ(9deg) rotateX(180deg);
+    }
+    33% {
+        opacity: 0.3;
+    }
+    44% {
+        opacity: 0.3;
+    }
+    55% {
+        transform: rotateZ(9deg) rotateX(130deg);
+        opacity: 0.3;
+    }
+    66% {
+        opacity: 0.3;
+    }
+    77% {
+        transform: rotateZ(9deg) rotateX(120deg);
+        opacity: 0.3;
+    }
+    88% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: rotateZ(9deg) rotateX(110deg);
+        opacity: 0.1;
+        offset-distance: 100%;
+    }
+  }
+
 
 
 
@@ -4406,6 +4545,7 @@ li.veilleLigneAjout::before {
     padding-bottom: 20px;
     border-bottom-right-radius: 10px;
     /* border-bottom-style: double; */
+    opacity: 0;
 }
 
 #quoteContent {
@@ -4433,7 +4573,7 @@ li.veilleLigneAjout::before {
     font-size: 2em;
     /* margin-top: 42px; */
     color: #ef3b2d;
-    background-color: #1b1f2a;
+    background-color: rgba(27, 31, 42, 0.5);
     padding: 11px 15px;
     /* border: 1px solid #ef3b2d; */
     border-bottom-right-radius: 5px;

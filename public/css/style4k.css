@@ -10,4 +10,8 @@
             position: absolute;
     }
 
+    #pageContainer {
+        margin: 0% 30%;
+    }
+
 }

@@ -40,6 +40,9 @@
 
     <body id="body">
 
+        <!-- Raie -->
+        <div id="raieAccueil1"></div>
+
         <!-- Header -->
         <header>
             <div style="width:100%;">
@@ -76,8 +79,16 @@
             <div class="accueilGrid">
 
 
-                <div>
+                <div style="position:relative;">
                     <img class="imgAccueil" src="img/basile_compressed.png"/>
+
+                    <svg id="rectangleSvg" class="rectangleSvg">
+                        <path 
+                            id="rectangleSvgPath"
+                            d="M 24.277 33.197 L 259.153 31.78 L 259.153 286.031 L 24.75 286.977 L 24.277 33.67"
+                            fill-opacity="0"
+                            />
+                    </svg>
 
                 </div>
 
@@ -98,16 +109,7 @@
             <div id="contactDiv">
 
                 <div id="citationAndLightBulbWrapper">
-                    <div id="inspirationContainer">
-                        <h3 id="inspirationTitle">Inspirations:</h3>
-                        <div style="position:relative;">
-                            <img class="quote1" src="img/quote1.png" />
-                            <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
-                            <quote style="position:relative;"><span id="quoteContent">Digital design is like painting, except the paint never dries. <span style="color:#ef3b2d;">- Neville Brody</span></span></quote>
-                            <img class="quote2" src="img/quote2.png" />
-                        </div>
-                        <button id="changeQuotation"><i class="fa-solid fa-rotate"></i></button>
-                    </div>
+                    
 
                     <!-- LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/) -->
                     <div id="lightBulbWrapperDiv" class="lightBulbWrapperDiv">
@@ -150,6 +152,17 @@
                         <!-- Poisson qui passe devant: popé depuis JS avec intervals -->
                         <!-- <div id="poissonAcueil1"></div> -->
 
+                    </div>
+
+                    <div id="inspirationContainer">
+                        <h3 id="inspirationTitle">Inspirations:</h3>
+                        <div style="position:relative;">
+                            <img class="quote1" src="img/quote1.png" />
+                            <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
+                            <quote style="position:relative;"><span id="quoteContent">Digital design is like painting, except the paint never dries. <span style="color:#ef3b2d;">- Neville Brody</span></span></quote>
+                            <img class="quote2" src="img/quote2.png" />
+                        </div>
+                        <button id="changeQuotation"><i class="fa-solid fa-rotate"></i></button>
                     </div>
 
                 </div>

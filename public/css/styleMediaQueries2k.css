@@ -73,6 +73,33 @@
 
     }
 
+    /* Rectangle photo Accueil */
+    #rectangleSvgPath {
+        opacity: 0.9;
+        transform: scale(0.83);
+        fill: none; 
+        stroke: #ef3b2d; 
+        stroke-width: 3; 
+        stroke-linecap: round; 
+        stroke-linejoin:  miter; 
+        stroke-miterlimit: 4;
+    }
+    .rectangleSvg {
+        opacity: 0;
+        height: 250px;
+
+        position: absolute;
+        right: -56px;
+        top: -40px;
+        /* height: -webkit-fill-available; */
+    }
+
+      /* Raie Accueil */
+    #raieAccueil1 {
+        offset-path: path("M 135 -145 C -63 446 460 690 1498.172 855.958");
+    }
+
+
     .pageTitle {
         font-size: 2.4em;
     }
