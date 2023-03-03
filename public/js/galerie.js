@@ -252,11 +252,29 @@ window.onload = function() {
         }
 
 
+        // Détection si mobile pour imageHD moins lourde
+        var mobileAttribute = "";
+        var mobileDetection;
+         if (navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)) {
+            mobileDetection = true ;
+            mobileAttribute = "mobile"
+         } else {
+            mobileDetection = false ;
+            mobileAttribute = ""
+         }
+
+
         articles.click(function() {
 
           var intTemp = parseInt(this.getAttribute('alt'));
 
-          modalImg.src = "img/galerie/" + this.getAttribute('alt') + ".jpg";
+          modalImg.src = "img/galerie/" + this.getAttribute('alt') + (mobileAttribute) + ".jpg";
 
           modalImageGallerie.style.display = "block";
           arrowNext.style.display = "block";
@@ -271,7 +289,7 @@ window.onload = function() {
 
           arrowNext.onclick = function() {
             intTemp++;
-            modalImg.src = "img/galerie/" + (intTemp) + ".jpg";
+            modalImg.src = "img/galerie/" + (intTemp) + (mobileAttribute) + ".jpg";
             arrowPrevious.style.opacity = 1;
             arrowPrevious.style.cursor = "pointer";
 
@@ -280,7 +298,7 @@ window.onload = function() {
           arrowPrevious.onclick = function() {
             if (intTemp > 1) {
               intTemp--;
-              modalImg.src = "img/galerie/" + (intTemp) + ".jpg";
+              modalImg.src = "img/galerie/" + (intTemp) + (mobileAttribute) + ".jpg";
               arrowPrevious.style.opacity = 1;
 
               if (intTemp == 1) {
