@@ -330,6 +330,26 @@
     }
 
 
+    /* Rectangle photo Accueil */
+    #rectangleSvgPath {
+        opacity: 0.9;
+        transform: scale(0.43);
+        fill: none; 
+        stroke: #ef3b2d; 
+        stroke-width: 3; 
+        stroke-linecap: round; 
+        stroke-linejoin:  miter; 
+        stroke-miterlimit: 4;
+    }
+    .rectangleSvg {
+        opacity: 0;
+        height: 250px;
+
+        position: absolute;
+        right: -180px;
+        top: -10px;
+        /* height: -webkit-fill-available; */
+    }
 
 
     #contactDiv {
@@ -664,16 +684,25 @@
 
 
     .imgAccueil {
+        opacity: 0;
         width: 100px;
         height: 110px;
         margin: 3px 10px 10px 18px;
-        opacity: 1;
 
-        border: 1px solid rgba(239, 59, 45, 0.7);
+        /* border: 1px solid rgba(239, 59, 45, 0.7); */
         padding: 2px;
+        animation: imgAccueilFadeIn 2s 1.8s ease forwards;
+
     }
 
-
+    #lightBulbWrapperDiv:hover + #inspirationContainer {
+        color: rgba(7, 255, 223, 0.5);
+        border-bottom: 3px solid rgba(7, 255, 223, 0.7);
+        border-right: 1px solid rgba(7, 255, 223, 0.7);
+        
+        animation: glowText 2s infinite ease;
+    }
+    
 
 
 

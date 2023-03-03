@@ -85,7 +85,7 @@
                     <svg id="rectangleSvg" class="rectangleSvg">
                         <path 
                             id="rectangleSvgPath"
-                            d="M 24.277 33.197 L 259.153 31.78 L 259.153 286.031 L 24.75 286.977 L 24.277 33.67"
+                            d="M 23.83 31.59 L 259.153 31.78 L 259.153 286.031 L 24.75 286.977 L 23.83 31.825"
                             fill-opacity="0"
                             />
                     </svg>
