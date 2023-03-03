@@ -1367,20 +1367,53 @@
     }
 
 
+    .bodyLoisir {
+        animation: contrastEffect 0.4s 4.9s ease-in-out forwards;
+    }
+  
+
+
+    #photoBar {
+        animation: photoBarGrow 0.4s 3.5s forwards ease, photoBarShrink 0.4s 5.8s forwards ease;
+    }
+
+    
+
+
+
+    #flashPoint {
+        animation: blinkingFlash 0.4s 5s linear forwards;
+    
+    }
+    .flashPointAnim {
+        /* animation: blinkingFlash 0.4s 4.1s linear forwards; */
+    }
+    
+
+
+    #flashPoint2 {    
+        animation: blinkingFlash2 0.4s 5s linear forwards;
+    }
+    .flashPoint2Anim {
+        /* animation: blinkingFlash2 0.4s 4.1s linear forwards; */
+    }
+
+
 
     #photoTitlePart1 {
         position: relative;
         top: -60px;
         opacity: 0;
-        animation: fadeInPhoto1 0.7s 0.75s 1 ease-out forwards;
+        animation: fadeInPhoto1 0.7s 2.75s 1 ease-out forwards;
       }
       #photoTitlePart2 {
         position: relative;
         top: 60px;
         opacity: 0;
-        animation: fadeInPhoto2 0.7s 1.25s 1 ease-out forwards;
+        animation: fadeInPhoto2 0.7s 3.25s 1 ease-out forwards;
       }
     
+
 
 
 
@@ -1401,7 +1434,7 @@
         right: 21px;
         z-index: 999;
     
-        animation: fadeInFlashRectangleWidth 0.3s 2s forwards ease-in-out, fadeInFlashRectangleHeight 0.3s 2.3s forwards ease-in-out, flashRectangle 0.4s 2.9s ease-in-out forwards, fadeOutHeight 0.3s 3.2s forwards ease-in-out, fadeOutWidth 0.3s 3.6s forwards ease-in-out;
+        animation: fadeInFlashRectangleWidth 0.3s 4s forwards ease-in-out, fadeInFlashRectangleHeight 0.3s 4.3s forwards ease-in-out, flashRectangle 0.4s 4.9s ease-in-out forwards, fadeOutHeight 0.3s 5.2s forwards ease-in-out, fadeOutWidth 0.3s 5.6s forwards ease-in-out;
     }
     @keyframes fadeInFlashRectangleWidth {
         0% {
@@ -1466,44 +1499,6 @@
 
 
 
-    #flashPoint2 {
-        position: absolute;
-        line-height: 0;
-        background-color: rgb(255, 255, 255);
-    
-        opacity: 0;
-    
-        filter: blur(150px);
-    
-        top: -40px;
-        right: -10px;
-    
-        width: 75%;
-        height: 75%;
-    
-        animation: blinkingFlash2 0.4s 3s linear forwards;
-    }
-    @keyframes blinkingFlash2 {
-        0% {
-            opacity: 0;
-            filter: blur(150px);
-        }
-        48% {
-            opacity: 1;
-            filter: blur(10px);
-        }
-        52% {
-            opacity: 1;
-            filter: blur(10px);
-        }
-        100% {
-            opacity: 0;
-            filter: blur(150px);
-        }
-    }
-    .flashPoint2Anim {
-        /* animation: blinkingFlash2 0.4s 4.1s linear forwards; */
-    }
     
 
 
