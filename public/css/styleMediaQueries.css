@@ -332,7 +332,7 @@
 
     /* Rectangle photo Accueil */
     #rectangleSvgPath {
-        opacity: 0.9;
+        opacity: 0.7;
         transform: scale(0.43);
         fill: none; 
         stroke: #ef3b2d; 
@@ -1122,38 +1122,38 @@
     /* Requin corner haut-droit  */
     #motion-demo_shark1 {
         display: none;
-        filter: blur(2px);    
+        filter: blur(3px);    
         position: fixed;
     
         /* Mobile (effet rotate dans le coin en haut à droite) */
         /* top: 0%;
         right: 0%; */
-        bottom: 82%;
-        left: 60%;
+        top: -10%;
+        right: -15%;  
         z-index: -2;
     
-        animation: moveShark1test 7000ms infinite linear;
-        width: 230px;
-        height: 230px;
+        animation: moveShark1test 8000ms 1 linear;
+        width: 235px;
+        height: 235px;
     
         content:url("/img/shark1_red_rotate.png");
         opacity: 0;
-        transform: rotateZ(0deg) rotateX(180deg);
+        transform: rotateZ(100deg) rotateX(180deg);
     }
     @keyframes moveShark1test {
         0% {
             opacity: 0;
-            transform: rotateZ(0deg) rotateX(180deg);
+            transform: rotateZ(100deg) rotateX(180deg);
         }
-        30% {
-            opacity: 0.5;
+        40% {
+            opacity: 0.4;
         }
         70% {
-            opacity: 0.5;
+            opacity: 0.4;
         }
         100% {
             opacity: 0;
-            transform: rotateZ(360deg) rotateX(180deg);
+            transform: rotateZ(370deg) rotateX(180deg);
         }
     }
 

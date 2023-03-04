@@ -20,7 +20,7 @@
     
         offset-path: path("M 135 -145 C 209.106 906.334 1441.201 613.459 3191.72 801.977");
 
-        animation: raieAccueil1 19500ms 2000ms infinite linear;
+        animation: raieAccueil1 23500ms 2000ms infinite linear;
 
     }
     @keyframes raieAccueil1 {
@@ -42,25 +42,25 @@
             transform: rotateZ(9deg) rotateX(145deg);
         }
         33% {
-            transform: rotateZ(9deg) rotateX(135deg);
+            transform: rotateZ(9deg) rotateX(127deg);
 
             opacity: 0.25;
         }
         44% {
             opacity: 0.25;
-            transform: rotateZ(9deg) rotateX(125deg);
+            transform: rotateZ(9deg) rotateX(117deg);
 
         }
         55% {
             opacity: 0.25;
-            transform: rotateZ(9deg) rotateX(125deg);
+            transform: rotateZ(9deg) rotateX(112deg);
         }
         66% {
             opacity: 0.25;
         }
         77% {
             opacity: 0.25;
-            transform: rotateZ(9deg) rotateX(125deg);
+            transform: rotateZ(9deg) rotateX(110deg);
 
         }
         88% {

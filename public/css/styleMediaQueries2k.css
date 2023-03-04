@@ -32,7 +32,8 @@
     }
 
     .galerieDiv {
-        margin: 0 251px;
+        /* margin: 0 251px; */
+        margin: 0 10px;
     }
 
     
@@ -75,7 +76,7 @@
 
     /* Rectangle photo Accueil */
     #rectangleSvgPath {
-        opacity: 0.9;
+        opacity: 0.7;
         transform: scale(0.83);
         fill: none; 
         stroke: #ef3b2d; 
@@ -96,10 +97,51 @@
 
       /* Raie Accueil */
     #raieAccueil1 {
-        offset-path: path("M 135 -145 C -63 446 460 690 1498.172 855.958");
+        offset-path: path("M 135 -145 C 96.677 474.67 642.748 898.15 2381.245 708.698");
 
         animation: raieAccueil1 30000ms 2000ms infinite linear;
     }
+
+    @keyframes raieAccueil1 {
+        0% {
+            transform: rotateZ(9deg) rotateX(180deg);
+            offset-distance: 0%;
+            opacity: 0;
+        }
+        11% {
+            opacity: 0.3;
+        }
+        22% {
+            opacity: 0.3;
+        }
+        33% {
+            transform: rotateZ(9deg) rotateX(125deg);
+
+            opacity: 0.3;
+        }
+        44% {
+            opacity: 0.3;
+        }
+        55% {
+            opacity: 0.3;
+        }
+        66% {
+            opacity: 0.3;
+        }
+        77% {
+            transform: rotateZ(9deg) rotateX(115deg);
+            opacity: 0.3;
+        }
+        88% {
+            opacity: 0.3;
+        }
+        100% {
+            transform: rotateZ(9deg) rotateX(110deg);
+            opacity: 0.1;
+            offset-distance: 100%;
+        }
+      }
+    
 
 
     .pageTitle {
@@ -109,7 +151,7 @@
     .photosGallerie {
         /* opacity: 1; */
         display: block;
-        width: 330px;
+        width: 255px;
         margin: auto;
         border-radius: 2px;
         filter: blur(0px);
@@ -430,7 +472,7 @@
         background-size:cover;
         background-repeat:no-repeat;
         height: fit-content;
-        margin:0% 10%;
+        margin:0% 12%;
     }
 
 

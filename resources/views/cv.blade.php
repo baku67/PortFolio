@@ -43,30 +43,32 @@
 
     <body>
 
-        <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
-        <div style="width:100%;">
-            <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
-            <span  id="lineBreakMobile"></br></span>
-            <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> En formation</span><span id="status2"> En recherche de stage</span></span></h2>
-        </div>
+        <!-- Header -->
+        <header>
+            <div style="width:100%;">
+                <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
+                <span  id="lineBreakMobile"></br></span>
+                <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d; font-size:1.2em;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> En formation</span><span id="status2"> En recherche de stage</span></span></h2>
+            </div>
 
-        <!-- Menu -->
-        <div id="NavBarContainer">
-            <p id="menuLigneCv" style="color:#E7E8F2;">
-                <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
-                &nbsp; 
-                <a id="cvMenu" class="menuButton selected" href="/cv">Mon CV</a> 
-                &nbsp; 
-                <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
-                &nbsp; 
-                <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
-                &nbsp; -->
-                <a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a>
-            </p>
-        </div>
+            <!-- NavBarre -->
+            <div id="NavBarContainer">
+                <p id="menuLigneCv" style="color:#E7E8F2;">
+                    <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
+                    &nbsp; 
+                    <a id="cvMenu" class="menuButton selected" href="/cv">Mon CV</a> 
+                    &nbsp; 
+                    <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
+                    &nbsp; 
+                    <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
+                    &nbsp; -->
+                    <a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a>
+                </p>
+            </div>
 
-        <!-- Trait séparateur -->
-        <div id="traitHeader"></div>
+            <!-- Trait séparateur -->
+            <div id="traitHeader"></div>
+        </header>
 
 
 

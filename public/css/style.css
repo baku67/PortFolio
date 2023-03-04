@@ -100,7 +100,7 @@ main {
 
 /* Rectangle photo Accueil */
 #rectangleSvgPath {
-    opacity: 0.8;
+    opacity: 0.7;
     transform: scale(0.67);
     fill: none; 
     stroke: #ef3b2d; 
@@ -981,7 +981,7 @@ li::before {
     background-repeat:no-repeat;
     /* height:400px; */
     height: fit-content;
-    margin:0% 5%;
+    margin:0% 12%;
 }
 
 
@@ -1821,7 +1821,7 @@ li::before {
     /* right: -250px; */
     filter: blur(5px) grayscale(1);
 
-    animation: imgAccueilFadeIn 3s 1.9s ease forwards;
+    animation: imgAccueilFadeIn 2s 2.3s ease forwards;
 }
 
 
@@ -2006,7 +2006,7 @@ li::before {
 .photosGallerie {
     /* opacity: 1; */
     display: block;
-    width: 300px;
+    width: 250px;
     margin: auto;
     border-radius: 2px;
     filter: blur(0px);
@@ -4109,13 +4109,13 @@ li.veilleLigneAjout::before {
         /* Mobile (effet rotate dans le coin en haut à droite) */
         /* top: 0%;
         right: 0%; */
-        top: -10%;
-        right: -5%;  
+        top: -18%;
+        right: -8%;  
         z-index: -2;
     
         animation: moveShark1test 8000ms 1 linear;
-        width: 330px;
-        height: 330px;
+        width: 310px;
+        height: 310px;
     
         content:url("/img/shark1_red_rotate.png");
         opacity: 0;
