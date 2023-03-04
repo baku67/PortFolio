@@ -478,6 +478,8 @@
 
     .gridProjetHeaderContainer {
         grid-template-columns: 0.7fr 10fr; 
+        gap: 100px 75px; 
+
     }
 
     footer.footerAccueil {

@@ -765,7 +765,7 @@ li::before {
       margin: auto auto;
   }
   .textCompetences {
-      color: #E7E8F2;
+      color: #a8a8a8;
       font-size: large;
       font-weight: bold;
   }
@@ -974,6 +974,9 @@ li::before {
     }
 }
 
+#projectHeaderCodeWrapper {
+    font-size: 80%;
+}
 
 /* Header Projet PC */
 #pageContainer {
@@ -981,7 +984,7 @@ li::before {
     background-repeat:no-repeat;
     /* height:400px; */
     height: fit-content;
-    margin:0% 12%;
+    margin:0% 6%;
 }
 
 

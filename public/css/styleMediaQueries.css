@@ -359,11 +359,13 @@
 
 
     .pageTitle {
-        text-decoration-thickness: 3px;
+        text-decoration-thickness: 5px;
 
         margin-block-start: 0.7em;
         margin-block-end: 0.3em;
         font-size: 2em;
+
+        text-decoration-color: rgb(239 59 45 / 92%);
     }
 
     .testH1 {
