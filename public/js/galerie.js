@@ -113,12 +113,11 @@ window.onload = function() {
   })
 
 
-    // Apparition des articles
+    //**  Apparition FadeIn successif des photos
     let articles = document.querySelectorAll("article");
     let articlesImg = document.querySelectorAll("img");
     var nbr = 0;
-    
-
+  
     articles.forEach((element, i) => {
         setTimeout(function() {
             element.classList.add("galeriePhotoFadeIn");
@@ -126,6 +125,13 @@ window.onload = function() {
 
     })
     // Fin apparition
+
+    //** Test Apparition sans fadeIn successif (ça ram sur mobile pour ça?)
+    // articles.forEach((element, i) => {
+    //         element.classList.add("galeriePhotoFadeIn");
+    // })
+
+
 
     // Compteur d'image chargées (HS: tout proc à la fin)
     // articlesImg.forEach(element => {
@@ -158,6 +164,7 @@ window.onload = function() {
       document.getElementById('scubaDiverFlash').style.display = "block";
       // document.getElementById('motion-demo_whale2Pc').style.display = "block";
       document.getElementById('scubaDiver').style.display = "block";
+      // document.getElementById("aquarium").classList.add("aquariumScubaFlash");
 
 
       // document.getElementById('motion-demoBubble1').style.display = "block";

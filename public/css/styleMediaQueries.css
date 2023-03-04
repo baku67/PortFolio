@@ -684,6 +684,7 @@
 
 
     .imgAccueil {
+
         opacity: 0;
         width: 100px;
         height: 110px;
@@ -694,6 +695,19 @@
         animation: imgAccueilFadeIn 2s 1.8s ease forwards;
 
     }
+    @keyframes imgAccueilFadeIn {
+        from {
+            border-radius: 50px;
+            opacity: 0;
+            filter: blur(10px) grayscale(1);
+        }
+        to {
+            border-radius: 8px;
+            opacity: 1;
+            filter: blur(0px) grayscale(0);
+        }
+    }
+    
 
     #lightBulbWrapperDiv:hover + #inspirationContainer {
         color: rgba(7, 255, 223, 0.5);
@@ -871,8 +885,8 @@
 
 
         animation: move 6500ms 1500ms infinite ease;
-        width: 80px;
-        height: 80px;
+        width: 63px;
+        height: 63px;
 
     }
 
@@ -1289,7 +1303,7 @@
         z-index: -999;
     
         /* animation: moveRapid 1300ms 3000ms 1 linear; */
-        animation: moveScuba 18000ms 1200ms infinite linear, floatScuba 5s 0s infinite forwards ease-in-out;
+        animation: fadeScuba 18000ms 1200ms infinite linear, floatScuba 5s 0s infinite forwards ease-in-out;
 
         width: 90px;
         /* height: 160px; */
@@ -1315,6 +1329,21 @@
             bottom: -50px;
 
         }
+    }
+
+
+    #raieAccueil1 {
+        width: 160px;
+        height: 160px;
+        offset-path: path("M 135 -145 C -84.891 667.473 441.62 619.849 714.136 1069.632");
+    }
+
+    #scubaDiverFlash {
+        width: 40px;
+        height: 40px;
+        right: -32px;
+        top: 38px;
+        animation: scubaFlashProc 18000ms 1200ms infinite linear, floatScubaFlash 5s 0s infinite forwards ease-in-out;
     }
 
 

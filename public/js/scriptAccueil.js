@@ -28,6 +28,24 @@ window.onload = function() {
         }, i * 100);
       });
     }, 350)
+    // Fin
+
+
+
+
+    // Interval Raie Accueil:
+    poissonAccueil1 = document.createElement("div");
+    poissonAccueil1.id = "raieAccueil1";
+    poissonAccueil1.style.display = "block";
+
+    setInterval(function() {
+      if (document.getElementById('raieAccueil1') != null ) {
+        document.getElementById('raieAccueil1').remove();
+      }
+      document.getElementById("body").append(poissonAccueil1);
+    }, 25000)
+    // Fin interval
+
 
 
 
@@ -72,22 +90,24 @@ window.onload = function() {
 
 
     // Rectangle photo SVG drawing
-    var pathRec = document.querySelector('.rectangleSvg path');
-    var lengthRec = pathRec.getTotalLength();
-    // Clear any previous transition
-    pathRec.style.transition = pathRec.style.WebkitTransition = 'none';
-    // Set up the starting positions
-    pathRec.style.strokeDasharray = lengthRec + ' ' + lengthRec;
-    pathRec.style.strokeDashoffset = lengthRec;
-    // Trigger a layout so styles are calculated & the browser
-    // picks up the starting position before animating
-    pathRec.getBoundingClientRect();
-    // Define our transition
-    pathRec.style.transition = pathRec.style.WebkitTransition =
-      'stroke-dashoffset 3s ease';
-    // Go!
-    document.getElementById("rectangleSvg").style.opacity = "1";
-    pathRec.style.strokeDashoffset = '0';
+    setTimeout(function() {
+      var pathRec = document.querySelector('.rectangleSvg path');
+      var lengthRec = pathRec.getTotalLength();
+      // Clear any previous transition
+      pathRec.style.transition = pathRec.style.WebkitTransition = 'none';
+      // Set up the starting positions
+      pathRec.style.strokeDasharray = lengthRec + ' ' + lengthRec;
+      pathRec.style.strokeDashoffset = lengthRec;
+      // Trigger a layout so styles are calculated & the browser
+      // picks up the starting position before animating
+      pathRec.getBoundingClientRect();
+      // Define our transition
+      pathRec.style.transition = pathRec.style.WebkitTransition =
+        'stroke-dashoffset 3.4s ease';
+      // Go!
+      document.getElementById("rectangleSvg").style.opacity = "1";
+      pathRec.style.strokeDashoffset = '0';
+    }, 750)
 
           
 
