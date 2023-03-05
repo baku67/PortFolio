@@ -28,7 +28,20 @@ html, body {
     -webkit-tap-highlight-color: transparent;
     }
 
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
 body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+body {
+    
     /* filter: drop-shadow(2px 4px 6px black); */
 
     position: static;
@@ -3237,7 +3250,7 @@ li.veilleLigneAjout::before {
         transform: rotateZ(75deg);
         width: 25px;
         height: 50px;
-        opacity: 0.5;
+        opacity: 0;
     }
     3% {
         offset-distance: 3%;

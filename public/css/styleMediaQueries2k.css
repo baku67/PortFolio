@@ -232,7 +232,7 @@
       #motion-demo3c {
         display: none;
         /* https://yqnn.github.io/svg-path-editor/ */
-        offset-path: path("M -66 669 C 164 477 134 100 275 -53");
+        offset-path: path("M -139.665 723.969 C 164 477 134 100 275 -53");
         offset-rotate: auto;
         position: fixed;
     
