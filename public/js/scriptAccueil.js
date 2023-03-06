@@ -110,6 +110,14 @@ window.onload = function() {
     }, 750)
 
           
+    // Rotate changeQuotation onClick
+    let changeQuot = document.getElementById("changeQuotation");
+    changeQuot.addEventListener("click", function() {
+      changeQuot.classList.add("rotateChangeQuot")
+      setTimeout(function() {
+        changeQuot.classList.remove("rotateChangeQuot");
+      }, 705)
+    })
 
 
     // Observeur pour lancer le "drawing" de l'ampoule onScrollView et le fadeIn citation

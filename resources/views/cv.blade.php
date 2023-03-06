@@ -26,6 +26,8 @@
 
         <!-- JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/698848973e.js" crossorigin="anonymous"></script>
         
         
         <style>
@@ -80,7 +82,7 @@
         <!-- Contenu Page -->
         <div id="pageContainer">
 
-            <h2 id="titleCv" class="pageTitle cvTitle">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></h2>
+            <a href="img/CV_majed.pdf" download="CV_basileKuntz"><i class="fa-solid fa-file-arrow-down"></i>Télécharger en PDF</a><h2 id="titleCv" class="pageTitle cvTitle">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></h2>
 
             <!-- </br>
 
@@ -105,7 +107,7 @@
                         <div class="separateurListe light"></div>
                         <!-- <li>2017-2018: L1 Maths-Informatiques (Faculté de Strasbourg)</li>
                         <div class="separateurListe light"></div> -->
-                        <li>2015: Baccalauréat général Scientifique (Lycée Kléber, Strasbourg)</li>
+                        <li>2015: Baccalauréat Scientifique (Lycée Kléber, Strasbourg)</li>
                         <!-- <div class="separateurListe light"></div> -->
                     </ul>
                 </div>
@@ -115,7 +117,7 @@
                     <ul>
                         <li>Plongée sous-marine (Niveau Rescue/Deep diver)</li>
                         <div class="separateurListe2"></div>
-                        <li>Photographie sous-marine ("Coup de coeur de la rédaction", Plongée Magazine)</li>
+                        <li>Photographie sous-marine ("Coup de coeur de la rédaction", Divosea Août 2014)</li>
                         <div class="separateurListe2"></div>
                         <li>Scoutisme, Camping, Randonnée</li>
                         <div class="separateurListe2"></div>
@@ -172,20 +174,18 @@
                         <li>Git, GitHub, GitLab, GitKraken</li>
                         <li>WSL2 (Ubuntu)</li>
                         <li>Photoshop / pixlr.com</li>
-                        <li>Suite Office, Teams</li>
+                        <li>Design Pattern MVC</li>
                     </ul>
                 </div>
 
                 <div class="langues">
                     <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Langues et Atouts <span class="highlightSpan">/&#x3e;</span></p>
                     <ul>
-                        <li>Anglais (intermédiaire)</li>
-                        <li>Allemand (débutant)</li>
-                        <li>Chinois (débutant)</li>
+                        <li>Anglais (B2)</li>
+                        <li>Allemand (B1)</li>
+                        <li>Chinois (notions)</li>
                     </ul>
                     
-                    <!-- <p>Curieux, Souci du détail</p> -->
-
                 </div>
 
             </div>
