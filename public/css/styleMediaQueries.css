@@ -543,6 +543,7 @@
     bottom: 30px;
 }
 .lightBulbWrapperDiv {
+    filter: drop-shadow(12px 5px 6px black);
     transform: scale(0.5);
     margin: 0px auto;
     /* bottom: 0px; */

@@ -99,6 +99,7 @@ main {
 
 /* Container du lightbulb (relativ) et des calques (absolute) */
 .lightBulbWrapperDiv {
+    filter:drop-shadow(18px 5px 4px black);
     opacity: 0;
 
     height: 250px;
@@ -4636,6 +4637,9 @@ li.veilleLigneAjout::before {
     }
 }
 
+.plezi-submit-btn {
+    font-family: 'Nunito', sans-serif;
+}
 
 .quote1, .quote2 {
     position: absolute;
@@ -4663,7 +4667,7 @@ li.veilleLigneAjout::before {
     border-right: 2px solid rgba(239, 59, 45, 0.5); */
     padding: 10px 30px;
     border-radius: 6px;
-    background-color: rgb(239 59 45 / 10%);
+    background-color: rgb(239 59 45 / 7%);
     padding-bottom: 20px;
     border-bottom-right-radius: 10px;
     /* border-bottom-style: double; */
