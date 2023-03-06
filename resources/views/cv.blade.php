@@ -82,7 +82,9 @@
         <!-- Contenu Page -->
         <div id="pageContainer">
 
-            <a href="img/CV_majed.pdf" download="CV_basileKuntz"><i class="fa-solid fa-file-arrow-down"></i>Télécharger en PDF</a><h2 id="titleCv" class="pageTitle cvTitle">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></h2>
+            <div>
+                <h2 id="titleCv" class="cvTitle"><a href="img/CV_majed.pdf" download="CV_basileKuntz" id="dlCv"><i class="fa-solid fa-file-arrow-down"></i>Télécharger en PDF</a><span id="underlineCV">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></span></h2>
+            </div>
 
             <!-- </br>
 

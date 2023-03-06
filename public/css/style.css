@@ -628,7 +628,9 @@ li::before {
 }
 
 
-
+#titleCv {
+    text-align: right;
+}
 
 
 
@@ -4721,6 +4723,41 @@ li.veilleLigneAjout::before {
     }
 }
 
+.fa-file-arrow-down {
+    margin-right: 5px;
+}
+
+#dlCv {
+    background-color: #ef3b2d;
+    padding: 5px 13px;
+    border-radius: 36px;
+
+    margin-right: 30px;
+    font-size: 0.6em;
+
+    color: #E7E8F2;
+    transition: all 0.4s;
+}
+#dlCv:hover {
+    background-color: #a62a21;
+}
+
+#underlineCV {
+    text-decoration-thickness: 3px;
+    color: #E7E8F2;
+    opacity: 0;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration-color: #ef3b2d;
+    -moz-text-decoration-color: #ef3b2d;
+    text-align: right;
+    font-size: 2.3em;
+    margin-top: 40px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+}
 
 #photoBar {
     position: absolute;

@@ -116,8 +116,15 @@
         left:0px;
         top: 7px;
     }
+
+    #dlCv {
+        font-size: 0.4em;
+    }
     
 
+    #underlineCV {
+        font-size: 1.2em;
+    }
 
     #toggleTechnique {
         position: relative;
