@@ -533,6 +533,27 @@
     }
 
 
+    .skillsSvgContainer {
+        transform: translate(151px, -114px);
+    }
+    .skillsSvgPath {
+        opacity: 0.9;
+    }
+
+    .hobbiesSvgContainer {
+        transform: translate(140px, -66px);
+    }
+    .hobbiesSvgPath {
+        opacity: 0.9;
+    }
+
+    .trainingSvgContainer {
+        transform: translate(151px, -66px);
+    }
+    .formationSvgPath {
+        opacity: 0.9;
+    }
+
 
 
 #citationAndLightBulbWrapper {

@@ -85,4 +85,16 @@
       }
 
 
+
+      .skillsSvgContainer {
+        position: absolute;
+        transform: translate(653px, -66px);
+        opacity: 0.6;
+        z-index: -99;
+    }
+
+    .hobbiesSvgContainer {
+        transform: translate(160px, -66px);
+    }
+    
 }

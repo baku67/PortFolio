@@ -4,6 +4,25 @@
         font-size: 0.7em;
     }
 
+    .skillsSvgContainer {
+        position: absolute;
+        transform: translate(585px, -66px);
+        opacity: 0.6;
+        z-index: -99;
+    }
+    
+    .skillsSvgPath {
+        opacity: 0.8;
+        transform:scale(0.8);  
+        fill: none; 
+        stroke: #ef3b2d; 
+        stroke-width: 2; 
+        stroke-linecap: round; 
+        stroke-linejoin:  miter; 
+        stroke-miterlimit: 4;
+        transition: stroke 0.4s;
+    }
+
     .galerieAccueil {
         justify-content: center;
         display: grid; 
