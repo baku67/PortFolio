@@ -915,45 +915,53 @@ li::before {
     position: relative;
     opacity: 0;
 
+}
+.formationsAnim {
     animation-name: fadeInFormation;
     animation-duration: 2s;
-    animation-delay: 0.5s;
     animation-fill-mode: forwards;
+
 }
 .hobbys {
     position: relative;
     opacity: 0;
 
+}
+.hobbiesAnim {
     animation-name: fadeInHobbys;
     animation-duration: 2s;
-    animation-delay: 1.5s;
     animation-fill-mode: forwards;
+
 }
 .langages {
     position: relative;
     opacity: 0;
 
+}
+.competencesAnim {
     animation-name: fadeIn;
     animation-duration: 2s;
-    animation-delay: 2.5s;
     animation-fill-mode: forwards;
+
 }
 .outils {
     position: relative;
     opacity: 0;
-
-    animation-name: fadeIn;
+}
+.outilsAnim {
+    animation-name: fadeInFormation;
     animation-duration: 2s;
-    animation-delay: 3.5s;
+    /* animation-delay: 3.5s; */
     animation-fill-mode: forwards;
 }
 .langues {
     position: relative;
     opacity: 0;
-
-    animation-name: fadeIn;
+}
+.langsAnim {
+    animation-name: fadeInHobbys;
     animation-duration: 2s;
-    animation-delay: 4.5s;
+    /* animation-delay: 4.5s; */
     animation-fill-mode: forwards;
 }
 

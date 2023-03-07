@@ -97,7 +97,7 @@
 
             <div class="gridContainer" style="color:#E7E8F2;">
 
-                <div class="formations">
+                <div id="formations" class="formations">
                     <p class="pageSectionTitle">
                         <span class="highlightSpan">&#x3c;</span> Formations <span class="highlightSpan">/&#x3e;</span>
                         <svg class="trainingSvgContainer" style="position:absolute;">
@@ -138,7 +138,7 @@
                     </ul>
                 </div>
 
-                <div class="hobbys">
+                <div id="hobbies" class="hobbys">
                     <p class="pageSectionTitle">
                         <span class="highlightSpan">&#x3c;</span> Hobbies <span class="highlightSpan">/&#x3e;</span>
 
@@ -189,7 +189,7 @@
                     </ul>
                 </div>
 
-                <div class="langages">
+                <div id="competences" class="langages">
 
                     <!-- Titre compétences et svg checkbox -->
                     <p class="pageSectionTitle" style="text-align: center;">
@@ -241,7 +241,7 @@
 
                 </div>
 
-                <div class="outils">
+                <div id="outils" class="outils">
                     <p class="pageSectionTitle">
                         <span class="highlightSpan">&#x3c;</span> Outils <span class="highlightSpan">/&#x3e;</span>
 
@@ -270,7 +270,7 @@
                     </ul>
                 </div>
 
-                <div class="langues">
+                <div id="langues" class="langues">
                     <p class="pageSectionTitle">
                         <span class="highlightSpan">&#x3c;</span> Langues et Atouts <span class="highlightSpan">/&#x3e;</span>
 
