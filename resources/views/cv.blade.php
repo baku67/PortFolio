@@ -272,7 +272,7 @@
 
                 <div id="langues" class="langues">
                     <p class="pageSectionTitle">
-                        <span class="highlightSpan">&#x3c;</span> Langues et Atouts <span class="highlightSpan">/&#x3e;</span>
+                        <span class="highlightSpan">&#x3c;</span> Langues<span class="highlightSpan">/&#x3e;</span>
 
                         <svg class="langsSvgContainer" style="position:absolute;">
                             <g class="langsSvg">

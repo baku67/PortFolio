@@ -1,5 +1,11 @@
 @media only screen and (min-width: 1300px) {
 
+    .hobbiesSvgPath, .outilsSvgPath, .langsSvgPath, .formationSvgPath, .skillsSvgPath {
+        stroke-width: 3 !important; 
+    }
+
+
+
     #dlCv {
         font-size: 0.7em;
     }
