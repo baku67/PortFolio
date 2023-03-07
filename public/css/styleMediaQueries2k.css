@@ -6,7 +6,10 @@
 
     .skillsSvgContainer {
         position: absolute;
-        transform: translate(585px, -66px);
+        /* transform: translate(513px, -112px); */
+        left: 50%;
+        transform: translateX(-12%) translateY(-116px);
+
         opacity: 0.6;
         z-index: -99;
     }

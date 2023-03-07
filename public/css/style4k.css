@@ -88,7 +88,7 @@
 
       .skillsSvgContainer {
         position: absolute;
-        transform: translate(653px, -66px);
+        transform: translate(-37px, -124px);
         opacity: 0.6;
         z-index: -99;
     }

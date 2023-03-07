@@ -555,6 +555,15 @@
     }
 
 
+    .langsSvgContainer {
+        transform: translate(221px, -70px);
+    }
+
+    .langages { grid-area: langages;
+        margin-bottom: 0px;
+     }
+
+
 
 #citationAndLightBulbWrapper {
     display:inline-flex;

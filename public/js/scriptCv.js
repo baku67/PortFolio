@@ -46,5 +46,30 @@ window.onload = function() {
         element.style.strokeDashoffset = '0';    
     });
 
+    // Draw clée à molette <Outils/> CV
+    var outilsPathes = document.querySelectorAll('.outilsSvg path');
+    outilsPathes.forEach(element => {
+        var lengthRec4 = element.getTotalLength();
+        element.style.transition = element.style.WebkitTransition = 'none';
+        element.style.strokeDasharray = lengthRec4 + ' ' + lengthRec4;
+        element.style.strokeDashoffset = lengthRec4;
+        element.getBoundingClientRect();
+        element.style.transition = element.style.WebkitTransition =
+        'stroke-dashoffset 2.5s 2.3s ease-in-out';
+        element.style.strokeDashoffset = '0';    
+    });
+
+    // Draw bulles discussion <Langues/> CV
+    var langsPathes = document.querySelectorAll('.langsSvg path');
+    langsPathes.forEach(element => {
+        var lengthRec5 = element.getTotalLength();
+        element.style.transition = element.style.WebkitTransition = 'none';
+        element.style.strokeDasharray = lengthRec5 + ' ' + lengthRec5;
+        element.style.strokeDashoffset = lengthRec5;
+        element.getBoundingClientRect();
+        element.style.transition = element.style.WebkitTransition =
+        'stroke-dashoffset 2.5s 2.3s ease-in-out';
+        element.style.strokeDashoffset = '0';    
+    });
 
 }

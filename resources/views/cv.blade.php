@@ -86,7 +86,7 @@
         <div id="pageContainer">
 
             <div>
-                <h2 id="titleCv" class="cvTitle"><a href="img/CV_majed.pdf" download="CV_basileKuntz" id="dlCv"><i class="fa-solid fa-file-arrow-down"></i>Télécharger en PDF</a><span id="underlineCV">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></span></h2>
+                <h2 id="titleCv" class="cvTitle"><a href="img/CV_basileKuntz.pdf" download="CV_basileKuntz" id="dlCv"><i class="fa-solid fa-file-arrow-down"></i>Télécharger en PDF</a><span id="underlineCV">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></span></h2>
             </div>
 
             <!-- </br>
@@ -162,7 +162,7 @@
                                 />
                                 <path 
                                     class="hobbiesSvgPath"
-                                    d="M 45.9585 17.6171 L 46.2434 17.7997 M 46.2357 17.8129 C 63.1493 33.4307 56.8925 63.8039 44.9971 69.2797 C 44.4845 69.5448 45.5845 69.3534 46.1081 69.1136 C 65.1073 55.5847 57.7307 25.8165 47.1014 18.1253 C 46.4469 17.6237 45.9651 17.2882 45.9794 17.594"
+                                    d="M 47.9585 17.6171 L 48.2434 17.7997 M 48.2357 17.8129 C 65.1493 33.4307 58.8925 63.8039 46.9971 69.2797 C 46.4845 69.5448 47.5845 69.3534 48.1081 69.1136 C 67.1073 55.5847 59.7307 25.8165 49.1014 18.1253 C 48.4469 17.6237 47.9651 17.2882 47.9794 17.594"
                                 />
                                 <path 
                                     class="hobbiesSvgPath"
@@ -203,7 +203,7 @@
                                 />
                                 <path 
                                     class="skillsSvgPath"
-                                    d="M 35.368 27.004 L 35.917 27.584 M 35.901 27.578 L 64.577 58.121 L 144.826 -26.452"
+                                    d="M 25.368 32.004 L 25.917 32.584 M 25.901 32.578 L 54.577 63.121 L 134.826 -21.452 L 139.207 -17.186 L 54.78 71.48 L 21.074 36.234 L 25.352 31.957"
                                 />
 
                             </g>
@@ -242,7 +242,25 @@
                 </div>
 
                 <div class="outils">
-                    <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Outils <span class="highlightSpan">/&#x3e;</span></p>
+                    <p class="pageSectionTitle">
+                        <span class="highlightSpan">&#x3c;</span> Outils <span class="highlightSpan">/&#x3e;</span>
+
+                        <svg class="outilsSvgContainer" style="position:absolute;">
+                            <g class="outilsSvg">
+                                <path 
+                                    class="outilsSvgPath"
+                                    d="M 13.3542 25.5222 C 7.1433 39.8277 17.343 51.948 30.1437 49.8375 C 33.2181 49.4253 35.5833 48.8277 38.7117 51.2559 L 83.9484 93.645 C 85.0095 95.8716 84.8961 97.8597 84.0294 101.1402 C 80.469 113.1363 93.5496 125.856 111.4236 119.3886 L 97.5636 106.4304 C 92.8233 101.7486 101.1033 92.268 107.3439 96.7086 L 121.3839 109.4283 C 126.6633 93.7089 114.0633 82.188 103.9743 84.2787 C 100.3833 84.9483 98.1036 84.5883 96.2865 83.0871 L 49.743 40.5477 C 47.1033 38.0277 48.4227 36.2277 48.7827 32.868 C 50.2227 23.148 38.583 11.0277 22.4694 16.875 L 37.503 30.348 C 41.58 34.7364 33.1803 44.0964 27.9027 39.1077 L 13.4172 25.4799 M 156.1563 113.697"
+                                />
+                                <path 
+                                    class="outilsSvgPath"
+                                    d="M 104.4778 13.3542 C 90.1723 7.1433 78.052 17.343 80.1625 30.1437 C 80.5747 33.2181 81.1723 35.5833 78.7441 38.7117 L 36.355 83.9484 C 34.1284 85.0095 32.1403 84.8961 28.8598 84.0294 C 16.8637 80.469 4.144 93.5496 10.6114 111.4236 L 23.5696 97.5636 C 28.2514 92.8233 37.732 101.1033 33.2914 107.3439 L 20.5717 121.3839 C 36.2911 126.6633 47.812 114.0633 45.7213 103.9743 C 45.0517 100.3833 45.4117 98.1036 46.9129 96.2865 L 89.4523 49.743 C 91.9723 47.1033 93.7723 48.4227 97.132 48.7827 C 106.852 50.2227 118.9723 38.583 113.125 22.4694 L 99.652 37.503 C 95.2636 41.58 85.9036 33.1803 90.8923 27.9027 L 104.5201 13.4172 M 16.303 156.1563"
+                                />
+
+                            </g>
+                        </svg>
+
+                    </p>
+
                     <ul>
                         <li>Visual Studio / Code</li>
                         <li>Git, GitHub, GitLab, GitKraken</li>
@@ -253,7 +271,23 @@
                 </div>
 
                 <div class="langues">
-                    <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Langues et Atouts <span class="highlightSpan">/&#x3e;</span></p>
+                    <p class="pageSectionTitle">
+                        <span class="highlightSpan">&#x3c;</span> Langues et Atouts <span class="highlightSpan">/&#x3e;</span>
+
+                        <svg class="langsSvgContainer" style="position:absolute;">
+                            <g class="langsSvg">
+                                <path 
+                                    class="langsSvgPath"
+                                    d="M 22.4732 17.2294 C 18.8465 17.2988 16.7454 20.727 16.7948 23.8959 L 16.7759 73.669 C 16.7759 77.6759 20.0938 80.1328 23.708 80.1906 L 38.2757 80.1906 L 38.2757 94.2638 L 52.8434 80.4374 L 100.7433 80.4374 C 104.1632 80.4331 106.9646 77.0721 107.0076 73.5924 L 107.0076 22.8795 C 107.0076 19.8923 104.7669 17.3922 101.6358 17.3261 L 22.5173 17.2347 M 155.2373 137.8209"
+                                />
+                                <path 
+                                    class="langsSvgPath"
+                                    d="M 110.658 26.643 L 110.855 26.658 M 110.87 26.656 L 118.213 26.656 C 121.533 26.645 122.85 29.227 122.886 32.331 L 122.664 83.508 C 122.641 86.706 120.428 88.761 116.767 88.737 L 101.525 88.626 L 101.425 102.761 L 88.823 88.69 L 61.027 88.626 C 58.318 88.55 55.79 87.76 55.798 84.176 L 55.793 82.73"
+                                />
+
+                            </g>
+                        </svg>
+                    </p>
                     <ul>
                         <li>Anglais (B2)</li>
                         <li>Allemand (B1)</li>
