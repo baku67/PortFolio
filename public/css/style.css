@@ -136,6 +136,26 @@ main {
     /* height: -webkit-fill-available; */
 }
 
+.trainingSvgContainer {
+    position: absolute;
+    transform: translate(163px, -66px);
+    opacity: 0.6;
+    margin-left: 25px;
+}
+
+.formationSvgPath {
+    opacity: 0.8;
+    transform:scale(0.8);  
+    fill: none; 
+    stroke: #ef3b2d; 
+    stroke-width: 2; 
+    stroke-linecap: round; 
+    stroke-linejoin:  miter; 
+    stroke-miterlimit: 4;
+    transition: stroke 0.4s;
+}
+
+
 
 
 /* LightBulb (relativ) */

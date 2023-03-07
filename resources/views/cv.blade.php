@@ -23,6 +23,7 @@
 
         <!-- ScriptJS -->
         <script type="text/javascript" src="{{ URL::asset('js/script.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/scriptCv.js') }}"></script>
 
         <!-- JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -95,7 +96,28 @@
             <div class="gridContainer" style="color:#E7E8F2;">
 
                 <div class="formations">
-                    <p class="pageSectionTitle"><span class="highlightSpan">&#x3c;</span> Formations <span class="highlightSpan">/&#x3e;</span></p>
+                    <p class="pageSectionTitle">
+                        <span class="highlightSpan">&#x3c;</span> Formations <span class="highlightSpan">/&#x3e;</span>
+                        <svg class="trainingSvgContainer" style="position:absolute;">
+                            <g class="formationSvg">
+                                <path 
+                                    class="formationSvgPath"
+                                    d="M 4.707 26.52 C 1.901 24.862 2.156 22.566 4.58 21.545 L 59.172 4.964 C 61.008 4.318 62.579 4.262 64.529 4.964 C 83.304 11.933 102.257 19.376 119.5 25.149 C 121.396 25.86 121.87 28.526 119.559 29.474 L 65.966 50.22 C 63.684 51.202 61.46 51.086 59.186 50.091 L 4.835 26.647"
+                                />
+                                <path 
+                                    class="formationSvgPath"
+                                    d="M 29.019 44.985 L 28.868 45.443 M 28.869 45.44 L 24.623 74.488 C 23.871 78.863 24.623 79.341 25.922 80.504 C 49.986 93.219 76.101 95.065 101.132 81.334 C 103.125 79.923 103.105 77.974 102.49 75.512 L 96.905 45.739"
+                                />
+                                <path 
+                                    class="formationSvgPath"
+                                    d="M 62.147 14.953 L 61.934 14.996 M 61.928 15.005 L 21.043 30.068 C 11.277 34.372 11.443 46.124 7.834 57.12 Q 4.523 72.017 1.378 75.162 Q 9.986 77.48 16.607 82.115 Q 14.124 65.065 7.999 57.12"
+                                />
+                            </g>
+                        </svg>
+                    </p>
+
+
+
                     <ul>
                         <li>2023: <span class="highlightSpan">Formation "Développeur web et web mobile"</span> à Elan Formation
                         </li>
