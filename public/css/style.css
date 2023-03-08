@@ -1471,21 +1471,39 @@ li::before {
 }
 
 .description {
-    /* margin: 0 5% 0 2%;
-    position: relative;
-    bottom: 85px;
+    color: white;
 
-    text-align:justify; 
-    color:#E7E8F2;
-
-    line-height: 1.8em;
-
-    border-top: 1px solid rgba(239, 59, 45, 0.5);
-
-    opacity: 0;
-    animation: fadeIn 1.5s ease 2.4s normal forwards running; */
 }
 
+
+#projetSkillsList {
+    list-style-type: none;
+    padding-inline-start: 20px;
+    display: inline-flex;
+}
+#projetSkillsList li {
+    list-style-type: none;
+    margin: 0 3px;
+    padding: 3px 10px;
+    border: 1px solid #ef3b2d;
+    border-radius: 100px;
+    background-color: #ef3b2d;
+    letter-spacing: 1px;
+}
+#projetSkillsList li::before {
+
+    display: none;
+}
+
+#projetDescriptionText {
+    font-size: 1.7em;
+}
+
+.projetSlideTitle {
+    color: #ef3b2d;
+    font-weight: 400;
+    font-size: 1.5em;
+}
 
 
 

@@ -87,16 +87,16 @@
         <div id="pageContainer">
 
                 <!-- SwiperJS pour naviguer entre projet (+proc load contenu page: https://codepen.io/escadesign/pen/VJKxjB "on:slideChange()") -->
-                <swiper-container id="swiper-container" navigation="true" pagination="true" pagination-clickable="true" on-slideChange="test()">
+                <swiper-container id="swiper-container" navigation="true" on-slideChange="test()">
 
                     <swiper-slide>
-                        <h3>Projet 1</h3>
-                        <p>BlackJackJo'</p>
+                        <h3 class="projetNbr">Projet 1</h3>
+                        <p class="projetSlideTitle">BlackJackJo'</p>
                     </swiper-slide>
 
                     <swiper-slide>
-                        <h3>Projet 2</h3>
-                        <p>Landing Page</p>
+                        <h3 class="projetNbr">Projet 2</h3>
+                        <p class="projetSlideTitle">Landing Page</p>
                     </swiper-slide>
 
                     <div class="swiper-button-prev"></div>
@@ -125,7 +125,26 @@
 
                     <div class="description">
                         <!-- <p class="paragrapheDescriptionProjet"></p> -->
-                        <p style="width:50%;">TESTESTE</p>
+                        <p id="projetDescriptionText">Application de BlackJack en ligne contre la banque</p> 
+                        <ul id="projetSkillsList">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>PHP</li>
+                            <li>SQL/BDD</li>
+                        </ul>
+                        <ul id="projetFuncList">
+                            <li>Système de compte (Crédits quotidien si connexion)</li>
+                            <li>Système de progression (expérience/niveaux)</li>
+                            <li>Système de Win-streak</li>
+                            <li>Affichage du top 3 sur l'accueil</li>
+                            <li>Historique et stats personnelles</li>
+                            <li>Mode invité</li>
+                            <li>Espace Admin (liste comptes, etc..)</li>
+                            <li>Mode Light/Dark</li>
+                            <li>Mode turbo (distribution plus rapide)</li>
+                            <!-- <li>Animations CSS, Responsive</li> pas une fonctionalité-->
+                        </ul>
                     </div>
 
                 </div>
