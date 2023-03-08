@@ -88,6 +88,10 @@ body:not(#flashPointCache) {
 }
 
 
+iframe html {
+    opacity: 0;
+}
+
 main {
     flex:1; /* 4 */
 }
@@ -105,8 +109,9 @@ swiper-slide {
     font-size: 1.5em;
 }
 .gridProjetHeaderContainer {
-    position: relative;
-    bottom: 50px;
+    /* position: relative;
+    bottom: 50px; */
+    margin-top: 50px;
 }
 
 .swiper-button-prev {
@@ -185,7 +190,9 @@ swiper-slide {
 
 .skillsSvgContainer {
     position: absolute;
-    transform: translate(414px, -114px);
+    /* transform: translate(414px, -114px); */
+    left: 50%;
+    transform: translateX(-12%) translateY(-116px);
     opacity: 0.6;
     z-index: -99;
 
@@ -1243,7 +1250,9 @@ li::before {
     border-radius: 50%;
     opacity: 0.7;
 
-    position:relative;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-109px);
     top: 831px;
     margin: 0 auto;
 }
@@ -1257,7 +1266,7 @@ li::before {
     opacity: 0.7;
 
     position:relative;
-    top: 104px;
+    top: 14px;
     margin: 0 auto;
 }
 #boutonMockup3{
@@ -1269,8 +1278,9 @@ li::before {
     opacity: 0.8;
     margin-left:40px;
 
-    position:relative;
-    left: 180px;
+    position:absolute;
+    /* left: 180px; */
+    right: -3px;
     top: 340px;
     margin: 0 auto;
 }
@@ -1310,9 +1320,10 @@ li::before {
     border: 2px solid #ef3b2d;
     opacity: 0.8;
 
-    position:relative;
-    left: 180px;
-    top: 190px;
+    position: absolute;
+    /* left: 180px; */
+    right: -3px;
+    top: 145px;
     margin: 0 auto;
 }
 #boutonMockup5{
@@ -1324,7 +1335,8 @@ li::before {
     opacity: 0.8;
 
     position:relative;
-    left: 180px;
+    position: absolute;
+    right: -3px;
     top: 192px;
     margin: 0 auto;
 }
@@ -1334,14 +1346,12 @@ li::before {
 
 
 .lienBJJ {
-    line-height:0; 
     position:relative; 
-    top:60px; 
-    margin:auto;
+    margin: 46px auto 60px auto;
     color:#E7E8F2; 
     text-align:center; 
     font-size:1.7em; 
-    opacity:0.6;
+    opacity:0.8;
 }
 .lienBJJ a:hover {
     /* color: #ef3b2d; */
@@ -1376,29 +1386,22 @@ li::before {
 
 /* Grid iframe + header (PROJET) */
 .gridProjetHeaderContainer {
-    display: grid; 
-    grid-template-columns: 0.7fr 1.3fr; 
-    grid-template-rows: 1.3fr 0.7fr; 
-    gap: 100px 40px; 
-    grid-template-areas: 
-      "iframe header"
-      "iframe description";
+    display: inline-flex;
+
 }
 .iframe { 
     filter: drop-shadow(10px 17px 8px black);
     position: relative;
-    /* bottom: 250px; */
     text-align: center;
 
     grid-area: iframe; 
     text-align: justify; 
-    width: 355px;
+    margin-right: 80px;
     opacity: 0;
 
     animation-name: fadeIn;
-    animation-duration: 1.5s;
-    /* FadeIn synchro avec le .pText3 ("Basile Kuntz") */
-    animation-delay: 2.2s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 .iframe iframe {
@@ -1419,10 +1422,10 @@ li::before {
     padding: 17px 6px 32px 6px; 
     border-radius: 7px;
     width: 360px;
-    height: 740px;
+    height: 745px;
 
     position: relative;
-    bottom: 30px;
+    /* bottom: 30px; */
 }
 
 #lineBreakMobile {
@@ -1432,14 +1435,9 @@ li::before {
     display: none;
 }
 
-/* #portfolioSousTitre {
-    margin-block-end: 0;
+#portfolioSousTitre {
     margin-block-start: 0;
-
-    font-size: 1.4em !important;
-    position: relative;
-    bottom: 1.2em;
-} */
+}
 
 
 /* classes headerProjet */
@@ -1473,7 +1471,7 @@ li::before {
 }
 
 .description {
-    margin: 0 5% 0 2%;
+    /* margin: 0 5% 0 2%;
     position: relative;
     bottom: 85px;
 
@@ -1482,12 +1480,10 @@ li::before {
 
     line-height: 1.8em;
 
-    /* padding: 15px 0; */
     border-top: 1px solid rgba(239, 59, 45, 0.5);
-    /* border-bottom: 1px solid rgba(239, 59, 45, 0.5); */
 
     opacity: 0;
-    animation: fadeIn 1.5s ease 2.4s normal forwards running;
+    animation: fadeIn 1.5s ease 2.4s normal forwards running; */
 }
 
 

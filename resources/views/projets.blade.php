@@ -106,22 +106,10 @@
 
                 </swiper-container>
 
-                <script>
-                    function test() {
-                        alert("test");
-                    }
-                </script>
 
 
                 <div class="gridProjetHeaderContainer">
 
-
-                    <div class="header">
-                        <!-- <p class="projetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets <span id="project1Button" class="switchProjectButton buttonProjectActif">1</span><span id="project2Button" class="switchProjectButton">2</span></p> -->
-                        <p class="projetTitle testProjetTitle"><span class="carreTitre carreTitreProjet">▪</span> Mes Projets </p>
-                        <!-- Ajouter effet glissade from gauche to droite (mais qui se genere depuis le debut du titre pas de l'écran :/ ) -->
-                        <div class="barreProjetSouligne testBarreProjetSouligne"></div>
-                    </div>
 
                     <div class="iframe">
                         <div id="boutonMockup"></div>
@@ -136,7 +124,8 @@
                     </div>
 
                     <div class="description">
-                        <p class="paragrapheDescriptionProjet"></p>
+                        <!-- <p class="paragrapheDescriptionProjet"></p> -->
+                        <p style="width:50%;">TESTESTE</p>
                     </div>
 
                 </div>

@@ -156,11 +156,11 @@
     }
 
     #boutonMockup {
-        top: 620px !important;
+        top: 736px !important;
     }
     #boutonMockup2 {
         position: relative;
-        top: -16px !important;
+        top: 14px !important;
         /* top:0; */
     }
 
@@ -202,15 +202,10 @@
 
 
     .gridProjetHeaderContainer {
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 0.9fr 2fr 0.8fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          "header"
-          "iframe"
-          "description"; 
-        overflow-wrap: anywhere;
+        width: 100%;
+        margin-top: 10px;
+        display: inline-flex;
+        flex-direction: column-reverse;
     }
     .header { 
         grid-area: header; 
@@ -221,8 +216,7 @@
         margin: 3% 0% 0% 5%;
     }
     .iframe {
-        grid-area: iframe;
-        bottom: 160px !important;
+
     }
     .description { 
         grid-area: description; 
@@ -320,11 +314,9 @@
 
     .iframe {
         margin: auto;
-        /* Pour compenser le margin-left du header qui décale tout le grid */
-        right: 15px;
     }
     .iframeElem {
-        width: 323px;
+        width: 335px;
         height: 650px;
     }
 
@@ -534,7 +526,7 @@
 
 
     .skillsSvgContainer {
-        transform: translate(130px, -70px);
+        transform: translate(-12%, -111px);
     }
     .skillsSvgPath {
         opacity: 0.9;
@@ -556,7 +548,7 @@
 
 
     .langsSvgContainer {
-        transform: translate(221px, -70px);
+        transform: translate(129px, -70px);
     }
 
     .langages { grid-area: langages;
@@ -668,6 +660,7 @@
 
     /* GRID COMPETENCES */
     .langages {
+        margin-top: 20px;
         /* margin-top: 50px; */
     }
     .gridCompetences {  
