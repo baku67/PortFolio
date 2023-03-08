@@ -40,8 +40,8 @@
 
     <body id="body">
 
-        <!-- Raie -->
-        <div id="raieAccueil1"></div>
+        <!-- Raie ajoutée en JS interval -->
+        <!-- <div id="raieAccueil1"></div> -->
 
         <!-- Header -->
         <header>

@@ -7,7 +7,8 @@
         bottom: auto; */
     
             bottom: 0;
-            position: absolute;
+            margin-top: 50px;
+            /* position: absolute; */
     }
 
     #pageContainer {
@@ -20,7 +21,7 @@
     
         offset-path: path("M 135 -145 C 209.106 906.334 1441.201 613.459 3191.72 801.977");
 
-        animation: raieAccueil1 23500ms 2000ms infinite linear;
+        animation: raieAccueil1 23500ms 2000ms 1 linear;
 
     }
     @keyframes raieAccueil1 {

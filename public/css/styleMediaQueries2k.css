@@ -131,7 +131,7 @@
     #raieAccueil1 {
         offset-path: path("M 135 -145 C 96.677 474.67 642.748 898.15 2381.245 708.698");
 
-        animation: raieAccueil1 30000ms 2000ms infinite linear;
+        animation: raieAccueil1 30000ms 2000ms 1 linear;
     }
 
     @keyframes raieAccueil1 {
@@ -522,6 +522,7 @@
     
             /* bottom: 0;
             position: absolute; */
+            margin-top: 40px;
     }
 
     .lightBulbWrapperDiv {

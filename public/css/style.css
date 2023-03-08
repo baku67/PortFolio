@@ -550,6 +550,7 @@ footer.footerAccueil {
     /* position: absolute !important; */
     /* position: relative; */
     /* bottom: auto; */
+    margin-top: 30px;
 
 }
 
@@ -2978,7 +2979,7 @@ li.veilleLigneAjout::before {
     top: -5%;
     z-index: -5;
 
-    animation: raieAccueil1 20000ms 2000ms infinite linear;
+    animation: raieAccueil1 20000ms 2000ms 1 linear;
     width: 200px;
     height: 200px;
 

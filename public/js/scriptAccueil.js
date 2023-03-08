@@ -32,18 +32,57 @@ window.onload = function() {
 
 
 
+    // Détection mobile
+    var mobileDetection;
+    if (navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+    || navigator.userAgent.match(/iPad/i)
+    || navigator.userAgent.match(/iPod/i)
+    || navigator.userAgent.match(/BlackBerry/i)
+    || navigator.userAgent.match(/Windows Phone/i)) {
+      mobileDetection = true ;
+    } else {
+      mobileDetection = false ;
+    }
+    // Fin
 
-    // Interval Raie Accueil:
+    // 
+    // Interval Raie Accueil (s'adapte à l'écran car durée de l'anim différentes):
     poissonAccueil1 = document.createElement("div");
     poissonAccueil1.id = "raieAccueil1";
     poissonAccueil1.style.display = "block";
+    document.getElementById("body").append(poissonAccueil1);
+    
+    if (window.matchMedia("(min-width: 1300px)").matches) {
+      setInterval(function() {
+        if (document.getElementById('raieAccueil1') != null ) {
+          document.getElementById('raieAccueil1').remove();
+        }
+        document.getElementById("body").append(poissonAccueil1);
+      }, 35000)
+    } else {
+      setInterval(function() {
+        if (document.getElementById('raieAccueil1') != null ) {
+          document.getElementById('raieAccueil1').remove();
+        }
+        document.getElementById("body").append(poissonAccueil1);
+      }, 22500)
+    }
+    //
 
-    setInterval(function() {
-      if (document.getElementById('raieAccueil1') != null ) {
-        document.getElementById('raieAccueil1').remove();
-      }
-      document.getElementById("body").append(poissonAccueil1);
-    }, 25000)
+
+    // Interval Raie Accueil:
+    // poissonAccueil1 = document.createElement("div");
+    // poissonAccueil1.id = "raieAccueil1";
+    // poissonAccueil1.style.display = "block";
+
+    // setInterval(function() {
+    //   if (document.getElementById('raieAccueil1') != null ) {
+    //     document.getElementById('raieAccueil1').remove();
+    //   }
+    //   document.getElementById("body").append(poissonAccueil1);
+    // }, 25000)
     // Fin interval
 
 
