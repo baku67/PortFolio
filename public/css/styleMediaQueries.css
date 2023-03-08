@@ -203,7 +203,7 @@
 
     .gridProjetHeaderContainer {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 0px !important;
         display: inline-flex;
         flex-direction: column-reverse;
     }
@@ -311,6 +311,26 @@
         margin: 2em 20px 0 0;
     }
 
+    #projetSkillsList {
+        padding-inline-start: 5px;
+        font-size: 85%;
+    }
+    swiper-container {
+        height: 19vh;
+    }
+    swiper-slide {
+        font-size: 1.1em;
+    }
+    #projetDescriptionText {
+        margin-block-start: 0;
+        text-align: justify;
+        width: 88%;
+        margin: 0 auto 15px auto;
+    }
+    #projetFuncList {
+        margin-block-start: 1.5em;
+        margin-block-end: 2em;
+    }
 
     .iframe {
         margin: auto;
