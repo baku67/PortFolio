@@ -316,7 +316,8 @@
         font-size: 85%;
     }
     swiper-container {
-        height: 19vh;
+        /* height: 19vh; */
+        height: 100%;
     }
     swiper-slide {
         font-size: 1.1em;

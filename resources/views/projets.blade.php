@@ -32,6 +32,7 @@
         </style>
 
         <!-- SwiperJS pour navigation entre projets -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     </head>
 
@@ -86,86 +87,84 @@
 
         <div id="pageContainer">
 
+                
                 <!-- SwiperJS pour naviguer entre projet (+proc load contenu page: https://codepen.io/escadesign/pen/VJKxjB "on:slideChange()") -->
-                <swiper-container id="swiper-container" navigation="true" on-slideChange="test()">
+                <div class="swiper">
+                    <swiper-container id="swiper-container" class="swiper-container" on-slideChange="test()">
 
-                    <swiper-slide>
-                        <h3 class="projetNbr">Projet 1</h3>
-                        <p class="projetSlideTitle">BlackJackJo'</p>
-                    </swiper-slide>
+                        <!-- <swiper-wrapper class="swiper-wrapper">  -->
 
-                    <swiper-slide>
-                        <h3 class="projetNbr">Projet 2</h3>
-                        <p class="projetSlideTitle">Landing Page</p>
-                    </swiper-slide>
+                            <swiper-slide>
+                                <h3 class="projetNbr">Projet 1</h3>
+                                <p class="projetSlideTitle">BlackJackJo'</p>
 
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <div class="swiper-pagination" style="background-color: #ef3b2d;"></div>
-
-                </swiper-container>
+                                <div id="projectContainer">
+                                    <div class="gridProjetHeaderContainer">
 
 
+                                        <div class="iframe">
+                                            <div id="boutonMockup"></div>
+                                            <div id="boutonMockup2"></div>
+                                            <div id="bouton3Container"><div id="boutonMockup3"></div></div>
+                                            <div id="boutonMockup4"></div>
+                                            <div id="boutonMockup5"></div>
+                                        
+                                            <iframe src="https://www.blackjackjo.com" class="iframeElem" id="iframeElement"></iframe>
 
-                <div class="gridProjetHeaderContainer">
+                                            <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                        </div>
+
+                                        <div class="description">
+                                            <p id="projetDescriptionText">Application de BlackJack en ligne contre la banque</p> 
+                                            <ul id="projetSkillsList">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Javascript</li>
+                                                <li>PHP</li>
+                                                <li>SQL/BDD</li>
+                                            </ul>
+                                            <ul id="projetFuncList">
+                                                <li>Système de compte (Crédits quotidien si connexion)</li>
+                                                <li>Système de progression (expérience/niveaux)</li>
+                                                <li>Système de Win-streak</li>
+                                                <li>Affichage du top 3 sur l'accueil</li>
+                                                <li>Historique et stats personnelles</li>
+                                                <li>Mode invité</li>
+                                                <li>Espace Admin (liste comptes, etc..)</li>
+                                                <li>Mode Light/Dark</li>
+                                                <li>Mode turbo (distribution plus rapide)</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
 
 
-                    <div class="iframe">
-                        <div id="boutonMockup"></div>
-                        <div id="boutonMockup2"></div>
-                        <div id="bouton3Container"><div id="boutonMockup3"></div></div>
-                        <div id="boutonMockup4"></div>
-                        <div id="boutonMockup5"></div>
-                    
-                        <iframe src="https://www.blackjackjo.com" class="iframeElem" id="iframeElement"></iframe>
+                            <swiper-slide>
+                                <h3 class="projetNbr">Projet 2</h3>
+                                <p class="projetSlideTitle">Landing Page</p>
+                            </swiper-slide>
 
-                        <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
-                    </div>
+                        <!-- </swiper-wrapper> -->
 
-                    <div class="description">
-                        <!-- <p class="paragrapheDescriptionProjet"></p> -->
-                        <p id="projetDescriptionText">Application de BlackJack en ligne contre la banque</p> 
-                        <ul id="projetSkillsList">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>PHP</li>
-                            <li>SQL/BDD</li>
-                        </ul>
-                        <ul id="projetFuncList">
-                            <li>Système de compte (Crédits quotidien si connexion)</li>
-                            <li>Système de progression (expérience/niveaux)</li>
-                            <li>Système de Win-streak</li>
-                            <li>Affichage du top 3 sur l'accueil</li>
-                            <li>Historique et stats personnelles</li>
-                            <li>Mode invité</li>
-                            <li>Espace Admin (liste comptes, etc..)</li>
-                            <li>Mode Light/Dark</li>
-                            <li>Mode turbo (distribution plus rapide)</li>
-                            <!-- <li>Animations CSS, Responsive</li> pas une fonctionalité-->
-                        </ul>
-                    </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
 
+                        <div class="swiper-pagination" style="background-color: #ef3b2d;"></div>
+
+                    </swiper-container>
                 </div>
+
+
+                <!-- Swiper Propre -->
         
 
         </div>
 
-
-
-
-            </div>
-        
-
-        </div>
-        
-
-            </div>
-        
-
-        </div>
         <footer>www.portfolio.basilek.ovh</footer>
+
 
 
     </body>
