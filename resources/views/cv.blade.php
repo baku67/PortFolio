@@ -121,15 +121,15 @@
 
 
                     <ul>
-                        <li>2023: <span class="highlightSpan">Formation "Développeur web et web mobile"</span> à Elan Formation
+                        <li><span class="highlightSpan" style="text-decoration:underline; text-underline-offset:2px;">En cours:</span> Formation <span class="highlightSpan">"Développeur web et web mobile"</span> à Élan Formation Strasbourg
                         </li>
                         <div class="separateurListe light"></div>
-                        <li>2020-2022: <span class="highlightSpan">BTS SIO - Option SLAM</span> (Solutions Logicielles et Applications Métiers)
+                        <li>2020-2022: <span class="highlightSpan">BTS SIO</span> - Option <span class="highlightSpan">SLAM</span> (<span class="highlightSpan">S</span>olutions <span class="highlightSpan">L</span>ogicielles et <span class="highlightSpan">A</span>pplications <span class="highlightSpan">M</span>étiers) <br>CCI campus Illkirch
                             </br>
                             <span class="highlightSpan">Alternance</span> chez Europe Tech Group (Haguenau)
                         </li>
                         <div class="separateurListe light"></div>
-                        <li>2019-2020: Volontaire en service civique (Pôle numérique du centre socio-culturel de l'Escale)</li>
+                        <li>2019-2020: Volontaire en <span class="highlightSpan">Service Civique</span> (Pôle numérique du centre socio-culturel de l'Escale)</li>
                         <div class="separateurListe light"></div>
                         <!-- <li>2017-2018: L1 Maths-Informatiques (Faculté de Strasbourg)</li>
                         <div class="separateurListe light"></div> -->

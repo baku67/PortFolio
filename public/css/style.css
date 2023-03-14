@@ -98,7 +98,7 @@ main {
 
 .socialFooter {
     margin: 0 7px;
-    font-size: 110%;
+    font-size: 130%;
     transition: all 0.4s ease;
 }
 .socialFooter:hover {
@@ -1295,8 +1295,8 @@ li::before {
 
     position:absolute;
     /* left: 180px; */
-    right: -3px;
-    top: 340px;
+    right: 14px;
+    top: 274px;
     margin: 0 auto;
 }
 /* #bouton3Container {
@@ -1337,7 +1337,7 @@ li::before {
 
     position: absolute;
     /* left: 180px; */
-    right: -3px;
+    right: 14px;
     top: 145px;
     margin: 0 auto;
 }
@@ -1351,7 +1351,7 @@ li::before {
 
     position:relative;
     position: absolute;
-    right: -3px;
+    right: 14px;
     top: 192px;
     margin: 0 auto;
 }
