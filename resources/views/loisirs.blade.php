@@ -593,7 +593,7 @@
 
         </div>
 
-        <footer class="footerLoisir">www.portfolio.basilek.ovh</footer>
+        <footer class="footerLoisir">www.portfolio.basilek.ovh - <a href="https://www.linkedin.com/in/basile-kuntz-719278267/" class="socialFooter"><i class="fa-brands fa-linkedin"></i></a><a href="https://github.com/baku67" class="socialFooter"><i class="fa-brands fa-github"></i></a></footer>
 
 
     </body>

@@ -96,6 +96,14 @@ main {
     flex:1; /* 4 */
 }
 
+.socialFooter {
+    margin: 0 7px;
+    font-size: 110%;
+    transition: all 0.4s ease;
+}
+.socialFooter:hover {
+    color: #ef3b2d;
+}
 
 :root {
     --swiper-theme-color: #ef3b2d !important;
