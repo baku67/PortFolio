@@ -155,10 +155,10 @@
         margin: 60px auto;
     }
 
-    #boutonMockup {
+    .boutonMockup {
         top: 736px !important;
     }
-    #boutonMockup2 {
+    .boutonMockup2 {
         position: relative;
         top: 14px !important;
         /* top:0; */
@@ -322,13 +322,13 @@
     swiper-slide {
         font-size: 1.1em;
     }
-    #projetDescriptionText {
+    .projetDescriptionText {
         margin-block-start: 0;
         text-align: justify;
         width: 88%;
         margin: 0 auto 15px auto;
     }
-    #projetFuncList {
+    .projetFuncList {
         margin-block-start: 1.5em;
         margin-block-end: 2em;
     }
@@ -521,14 +521,14 @@
         }
     }
 
-    #boutonMockup4 {
+    .boutonMockup4 {
         height: 0px !important;
         width: 0px !important;
 
         position: absolute;
         opacity: 0;
     }
-    #boutonMockup5 {
+    .boutonMockup5 {
         height: 0px !important;
         width: 0px !important;
 
@@ -536,7 +536,7 @@
         opacity: 0;
 
     }
-    #boutonMockup3 {
+    .boutonMockup3 {
         height: 0px !important;
         width: 0px !important;
 

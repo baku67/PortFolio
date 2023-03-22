@@ -123,7 +123,7 @@ swiper-slide {
     margin-top: 50px;
 }
 
-#projetFuncList {
+.projetFuncList {
     text-align: left;
 }
 
@@ -1256,7 +1256,7 @@ li::before {
 
 
 
-#boutonMockup{
+.boutonMockup{
     /* Bouton accueil */
     width: 23px;
     height: 23px;
@@ -1271,7 +1271,7 @@ li::before {
     top: 831px;
     margin: 0 auto;
 }
-#boutonMockup2{
+.boutonMockup2{
     /* Caméra */
     width: 7px;
     height: 7px;
@@ -1284,7 +1284,7 @@ li::before {
     top: 14px;
     margin: 0 auto;
 }
-#boutonMockup3{
+.boutonMockup3{
     /* On/Off */
     width: 4px;
     height: 40px;
@@ -1310,7 +1310,7 @@ li::before {
     top: 300px;
     margin: 0 auto; 
 } */
-#boutonMockup3:hover {
+.boutonMockup3:hover {
     animation-name: boutonMockup;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -1327,7 +1327,7 @@ li::before {
         left: 195px;
     }
 }
-#boutonMockup4{
+.boutonMockup4{
     /* Vol+ */
     width: 4px;
     height: 40px;
@@ -1341,7 +1341,7 @@ li::before {
     top: 145px;
     margin: 0 auto;
 }
-#boutonMockup5{
+.boutonMockup5{
     /* Vol- */
     width: 4px;
     height: 40px;
@@ -1491,12 +1491,12 @@ li::before {
 }
 
 
-#projetSkillsList {
+.projetSkillsList {
     list-style-type: none;
     padding-inline-start: 20px;
     display: inline-flex;
 }
-#projetSkillsList li {
+.projetSkillsList li {
     list-style-type: none;
     margin: 0 3px;
     padding: 3px 10px;
@@ -1505,12 +1505,12 @@ li::before {
     background-color: #ef3b2d;
     letter-spacing: 1px;
 }
-#projetSkillsList li::before {
+.projetSkillsList li::before {
 
     display: none;
 }
 
-#projetDescriptionText {
+.projetDescriptionText {
     font-size: 1.7em;
 }
 

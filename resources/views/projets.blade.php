@@ -106,27 +106,27 @@
 
 
                                         <div class="iframe">
-                                            <div id="boutonMockup"></div>
-                                            <div id="boutonMockup2"></div>
-                                            <div id="bouton3Container"><div id="boutonMockup3"></div></div>
-                                            <div id="boutonMockup4"></div>
-                                            <div id="boutonMockup5"></div>
+                                            <div class="boutonMockup"></div>
+                                            <div class="boutonMockup2"></div>
+                                            <div class="bouton3Container"><div class="boutonMockup3"></div></div>
+                                            <div class="boutonMockup4"></div>
+                                            <div class="boutonMockup5"></div>
                                         
-                                            <iframe src="https://www.blackjackjo.com" class="iframeElem" id="iframeElement"></iframe>
+                                            <iframe src="https://www.blackjackjo.com" class="iframeElem" class="iframeElement"></iframe>
 
                                             <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                                         </div>
 
                                         <div class="description">
-                                            <p id="projetDescriptionText">Application de BlackJack en ligne contre la banque</p> 
-                                            <ul id="projetSkillsList">
+                                            <p class="projetDescriptionText">Application de BlackJack en ligne contre la banque</p> 
+                                            <ul class="projetSkillsList">
                                                 <li>HTML</li>
                                                 <li>CSS</li>
                                                 <li>Javascript</li>
                                                 <li>PHP</li>
                                                 <li>SQL/BDD</li>
                                             </ul>
-                                            <ul id="projetFuncList">
+                                            <ul class="projetFuncList">
                                                 <li>Système de compte (Crédits quotidien si connexion)</li>
                                                 <li>Système de progression (expérience/niveaux)</li>
                                                 <li>Système de Win-streak</li>
@@ -147,6 +147,54 @@
 
                             <swiper-slide>
                                 <h3 class="projetNbr">Projet 2</h3>
+                                <p class="projetSlideTitle">Terrine</p>
+
+                                <div id="projectContainer2">
+                                    <div class="gridProjetHeaderContainer">
+
+
+                                        <div class="iframe">
+                                            <div class="boutonMockup"></div>
+                                            <div class="boutonMockup2"></div>
+                                            <div class="bouton3Container"><div class="boutonMockup3"></div></div>
+                                            <div class="boutonMockup4"></div>
+                                            <div class="boutonMockup5"></div>
+                                        
+                                            <iframe src="https://www.eneffet.basilek.ovh/index.php" class="iframeElem" class="iframeElement"></iframe>
+
+                                            <p class="lienBJJ"><a target="_blank" href="https://www.eneffet.basilek.ovh/index.php">Cliquez ici<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                        </div>
+
+                                        <div class="description">
+                                            <p class="projetDescriptionText">Site de gestion de plateforme cinématographique</p> 
+                                            <ul class="projetSkillsList">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Javascript</li>
+                                                <li>PHP</li>
+                                                <li>SQL/BDD</li>
+                                            </ul>
+                                            <ul class="projetFuncList">
+                                                <li>Pages de listing</li>
+                                                <li>Pages détaillées et liens</li>
+                                                <li>Formulaires d'ajouts d'éléments</li>
+                                                <!-- <li>Affichage du top 3 sur l'accueil</li>
+                                                <li>Historique et stats personnelles</li>
+                                                <li>Mode invité</li>
+                                                <li>Espace Admin (liste comptes, etc..)</li>
+                                                <li>Mode Light/Dark</li>
+                                                <li>Mode turbo (distribution plus rapide)</li> -->
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+
+
+                            <swiper-slide>
+                                <h3 class="projetNbr">Projet 3</h3>
                                 <p class="projetSlideTitle">Landing Page</p>
                             </swiper-slide>
 
