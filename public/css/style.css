@@ -116,6 +116,8 @@ swiper-slide {
     text-align: center;
     color: white;
     font-size: 1.5em;
+
+    margin-right: 30px;
 }
 .gridProjetHeaderContainer {
     /* position: relative;
@@ -152,6 +154,8 @@ swiper-slide {
     /* margin: 50px; */
     width: 205px;
     margin: 0 61px 0 0;
+
+    transform: scale(0.8);
     
     transition: all 0.4s;
 
@@ -318,7 +322,6 @@ swiper-slide {
     margin: 50px;
     width: 205px;
     margin: 0 auto;
-    
     transition: all 0.4s;
 }
 .lightBulbWrapperDiv:hover {
@@ -1176,6 +1179,65 @@ li::before {
     margin:0% 6%;
 }
 
+.gitHubLink {
+    cursor:pointer;
+    z-index: 999;
+    position: relative;
+    opacity: 0;
+
+    animation: fadeIn 0.6s 0.7s ease forwards;
+    transition: all 0.4s;
+}
+.gitHubLink:hover .githubLogo, .gitHubLink:hover .githubAccueil {
+    opacity: 0.5;
+}
+
+.githubAccueil {
+    position: absolute;
+    top: 38px;
+    left: -4px;
+    color: #f44336;
+    transform: rotate(352deg);
+    font-size: 1.15em;
+    opacity: 0.9;
+    margin-block-start: 0;
+    transition: all 0.4s;
+
+    animation: rotateGithubText 2.5s ease-in-out infinite;
+}
+@keyframes rotateGithubText {
+    0% {
+        transform: rotate(353deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(347deg);
+    }
+    100% {
+        transform: rotate(353deg);
+    }
+}
+
+.githubLogo {
+    width: 40px;
+    position: absolute;
+    transform: rotate(352deg);
+    opacity: 0.9;
+    transition: all 0.4s;
+
+    animation: rotateGithubLogo 2.5s ease-in-out infinite;
+}
+@keyframes rotateGithubLogo {
+    0% {
+        transform: rotate(354deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(345deg);
+    }
+    100% {
+        transform: rotate(354deg);
+    }
+}
+
 
 
 
@@ -1357,7 +1419,9 @@ li::before {
 }
 
 
-
+.projetNbr {
+    margin-block-end: 0;
+}
 
 
 .lienBJJ {
@@ -1365,7 +1429,7 @@ li::before {
     margin: 46px auto 60px auto;
     color:#E7E8F2; 
     text-align:center; 
-    font-size:1.7em; 
+    font-size:1.3em; 
     opacity:0.8;
 }
 .lienBJJ a:hover {
@@ -1493,12 +1557,15 @@ li::before {
 
 .projetSkillsList {
     list-style-type: none;
-    padding-inline-start: 20px;
+    padding-inline-start: 0px;
     display: inline-flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .projetSkillsList li {
     list-style-type: none;
-    margin: 0 3px;
+    margin: 5px 3px;
     padding: 3px 10px;
     border: 1px solid #ef3b2d;
     border-radius: 100px;
@@ -1511,13 +1578,15 @@ li::before {
 }
 
 .projetDescriptionText {
-    font-size: 1.7em;
+    font-size: 1.4em;
 }
 
 .projetSlideTitle {
     color: #ef3b2d;
     font-weight: 400;
     font-size: 1.5em;
+
+    margin-block-start: 0;
 }
 
 

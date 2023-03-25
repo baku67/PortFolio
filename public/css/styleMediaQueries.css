@@ -94,6 +94,14 @@
         margin: 0% 5% !important;
     }
 
+    #pageContainerProjet {
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 200px !important; */
+        height: fit-content;
+        margin: 0% 2% !important;
+    }
+
     /* CHANGER LE GRID pour que les elements soit sur une seule colonne */
     .gridContainer {
         gap: 0px 20px !important; 
@@ -215,9 +223,6 @@
         left: -29px;
         margin: 3% 0% 0% 5%;
     }
-    .iframe {
-
-    }
     .description { 
         grid-area: description; 
         position: relative;
@@ -311,9 +316,8 @@
         margin: 2em 20px 0 0;
     }
 
-    #projetSkillsList {
-        padding-inline-start: 5px;
-        font-size: 85%;
+    .projetSkillsList {
+        font-size: 80%;
     }
     swiper-container {
         /* height: 19vh; */
@@ -321,26 +325,54 @@
     }
     swiper-slide {
         font-size: 1.1em;
+        margin-right: 0px;
     }
     .projetDescriptionText {
         margin-block-start: 0;
         text-align: justify;
         width: 88%;
         margin: 0 auto 15px auto;
+        font-size: 1.1em;
     }
     .projetFuncList {
         margin-block-start: 1.5em;
         margin-block-end: 2em;
     }
 
+
+
     .iframe {
         margin: auto;
+        width: 95%;
     }
     .iframeElem {
-        width: 335px;
+        /* width: 335px; */
+        width: 100%;
         height: 650px;
     }
 
+
+    .githubAccueil {
+        position: absolute;
+        top: 89px;
+        left: 2px;
+        color: #f44336;
+        transform: rotate(353deg);
+        font-size: 1.1em;
+        opacity: 0.8;
+        
+        animation: rotateGithubText 2.5s ease-in-out infinite;
+    }
+    .githubLogo {
+        width: 30px;
+        position: absolute;
+        transform: rotate(354deg);
+        opacity: 0.8;
+        top: 64px;
+        left: 10px;
+
+        animation: rotateGithubLogo 2.5s ease-in-out infinite;
+    }
 
     /* Rectangle photo Accueil */
     #rectangleSvgPath {
@@ -587,7 +619,7 @@
 }
 .lightBulbWrapperDiv {
     filter: drop-shadow(12px 5px 6px black);
-    transform: scale(0.5);
+    transform: scale(0.5) !important;
     margin: 0px auto;
     /* bottom: 0px; */
 

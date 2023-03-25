@@ -73,7 +73,13 @@
 
         <main id="pageContainer">
 
-            <h2 class="pageTitle">Bienvenue sur mon portfolio</h2>
+            <div style="position:relative">
+                    <a class="gitHubLink" target="_blank" href="https://github.com/baku67">
+                        <img src="img/githubLogo.png" class="githubLogo">
+                        <span class="githubAccueil">Github</span>
+                    </a>
+                <h2 class="pageTitle">Bienvenue sur mon portfolio</h2>
+            </div>
             </br>
 
             <div class="accueilGrid">

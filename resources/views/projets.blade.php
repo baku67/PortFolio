@@ -88,7 +88,7 @@
 
 
 
-        <div id="pageContainer">
+        <div id="pageContainerProjet">
 
                 
                 <!-- SwiperJS pour naviguer entre projet (+proc load contenu page: https://codepen.io/escadesign/pen/VJKxjB "on:slideChange()") -->
@@ -127,7 +127,7 @@
                                                 <li>SQL/BDD</li>
                                             </ul>
                                             <ul class="projetFuncList">
-                                                <li>Système de compte (Crédits quotidien si connexion)</li>
+                                                <li>Système de compte (Crédits quotidiens 1ère connexion)</li>
                                                 <li>Système de progression (expérience/niveaux)</li>
                                                 <li>Système de Win-streak</li>
                                                 <li>Affichage du top 3 sur l'accueil</li>
@@ -162,7 +162,7 @@
                                         
                                             <iframe src="https://www.eneffet.basilek.ovh/index.php" class="iframeElem" class="iframeElement"></iframe>
 
-                                            <p class="lienBJJ"><a target="_blank" href="https://www.eneffet.basilek.ovh/index.php">Cliquez ici<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                            <p class="lienBJJ"><a target="_blank" href="https://www.eneffet.basilek.ovh/index.php">Voir le site<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                                         </div>
 
                                         <div class="description">
