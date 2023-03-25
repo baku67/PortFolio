@@ -1357,7 +1357,7 @@ li::before {
 
     position:absolute;
     /* left: 180px; */
-    right: 14px;
+    right: -4px;
     top: 274px;
     margin: 0 auto;
 }
@@ -1399,7 +1399,7 @@ li::before {
 
     position: absolute;
     /* left: 180px; */
-    right: 14px;
+    right: -4px;
     top: 145px;
     margin: 0 auto;
 }
@@ -1413,7 +1413,7 @@ li::before {
 
     position:relative;
     position: absolute;
-    right: 14px;
+    right: -4px;
     top: 192px;
     margin: 0 auto;
 }
@@ -1466,6 +1466,8 @@ li::before {
 /* Grid iframe + header (PROJET) */
 .gridProjetHeaderContainer {
     display: inline-flex;
+
+    width:90%;
 
 }
 .iframe { 
