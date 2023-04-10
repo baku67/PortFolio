@@ -86,7 +86,11 @@
         <div id="pageContainer">
 
             <div>
-                <h2 id="titleCv" class="cvTitle"><a href="img/cv1.png" download="CV_basileKuntz" id="dlCv"><i class="fa-solid fa-file-arrow-down"></i>Télécharger en PDF</a><span id="underlineCV">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></span></h2>
+                <h2 id="titleCv" class="cvTitle">
+                    <a href="CV.pdf" download="CV_basileKuntz" id="dlCv">
+                        <i class="fa-solid fa-file-arrow-down"></i>Télécharger en PDF
+                    </a><span id="underlineCV">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></span>
+                </h2>
             </div>
 
             <!-- </br>
@@ -272,7 +276,7 @@
 
                 <div id="langues" class="langues">
                     <p class="pageSectionTitle">
-                        <span class="highlightSpan">&#x3c;</span> Langues<span class="highlightSpan">/&#x3e;</span>
+                        <span class="highlightSpan">&#x3c;</span> Langues <span class="highlightSpan">/&#x3e;</span>
 
                         <svg class="langsSvgContainer" style="position:absolute;">
                             <g class="langsSvg">

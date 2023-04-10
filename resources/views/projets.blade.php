@@ -170,9 +170,10 @@
                                             <ul class="projetSkillsList">
                                                 <li>HTML</li>
                                                 <li>CSS</li>
-                                                <li>Javascript</li>
+                                                <li>JS</li>
                                                 <li>PHP</li>
-                                                <li>SQL/BDD</li>
+                                                <li>SQL</li>
+                                                <li>MVC</li>
                                             </ul>
                                             <ul class="projetFuncList">
                                                 <li>Pages de listing</li>
