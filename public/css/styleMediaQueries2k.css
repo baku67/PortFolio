@@ -501,6 +501,17 @@
     }
 
 
+    #traitHeader {
+        height: 2px;
+        margin-bottom: 0px;
+        width: 100%;
+        background-color: #E7E8F2;
+        opacity: 0.6;
+        background-color: #ef3b2d;
+    }
+    
+
+
     #pageContainer {
         background-size:cover;
         background-repeat:no-repeat;

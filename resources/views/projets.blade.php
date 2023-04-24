@@ -196,7 +196,43 @@
 
                             <swiper-slide>
                                 <h3 class="projetNbr">Projet 3</h3>
-                                <p class="projetSlideTitle">Landing Page</p>
+                                <p class="projetSlideTitle">Pokédia</p>
+
+                                <div id="projectContainer3">
+                                    <div class="gridProjetHeaderContainer">
+
+
+                                        <div class="iframe">
+                                            <div class="boutonMockup"></div>
+                                            <div class="boutonMockup2"></div>
+                                            <div class="bouton3Container"><div class="boutonMockup3"></div></div>
+                                            <div class="boutonMockup4"></div>
+                                            <div class="boutonMockup5"></div>
+                                        
+                                            <iframe src="https://www.poke.basilek.ovh/index.html" class="iframeElem" class="iframeElement"></iframe>
+
+                                            <p class="lienBJJ"><a target="_blank" href="https://www.poke.basilek.ovh/index.html">Voir le site<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                        </div>
+
+                                        <div class="description">
+                                            <p class="projetDescriptionText">Encyclopédie Pokémon</p> 
+                                            <ul class="projetSkillsList">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JS</li>
+                                                <li>PHP</li>
+                                                <li>API</li>
+                                            </ul>
+                                            <ul class="projetFuncList">
+                                                <li>Exploitation de l'API pokémon</li>
+                                                <li>Couleurs adaptées aux types des pokémons</li>
+                                                <li>Listing et détails</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </swiper-slide>
 
                         <!-- </swiper-wrapper> -->

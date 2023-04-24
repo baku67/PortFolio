@@ -1242,7 +1242,8 @@ li::before {
 
 
 #traitHeader {
-    height: 2px;
+    height: 1px;
+    margin-bottom: 20px;
     width: 100%;
     background-color: #E7E8F2;
     opacity: 0.6;
@@ -2081,7 +2082,8 @@ li::before {
 
     float:right;
     width: 161px;
-    height: 173px;
+    /* height: 173px; */
+    height: 164px;
     margin: 20px 30px 15px 49px;
 
     padding: 4px;
@@ -2130,7 +2132,7 @@ li::before {
 
     color: #ef3b2d;
     /* line-height: 0; */
-    padding: 21px 0px 16px 3%;
+    padding: 21px 0px 1px 3%;
     margin-block-end: 0;
     margin-block-start: 0;
 }
