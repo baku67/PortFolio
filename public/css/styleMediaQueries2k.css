@@ -470,6 +470,9 @@
         height: 210px;    
     }
 
+    body {
+        font-size: 95%;
+    }
 
 
     #motion-demo_rapid {
@@ -516,12 +519,13 @@
         background-size:cover;
         background-repeat:no-repeat;
         height: fit-content;
-        margin:0% 12%;
+        margin:2% 15%;
     }
 
 
     .gridProjetHeaderContainer {
-
+        margin-top: 40px;
+        justify-content: space-around;
     }
 
     footer.footerAccueil {

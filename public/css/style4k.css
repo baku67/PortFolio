@@ -1,5 +1,13 @@
 @media only screen and (min-width: 1700px) {
 
+
+    .barreGalerieSouligne {
+        bottom: 64px;
+    }
+    .carreTitreVeille {
+        top: 13px !important;
+    }
+
     footer.footerAccueil {
         /* position: absolute;
         bottom: 0; */
@@ -12,7 +20,7 @@
     }
 
     #pageContainer {
-        margin: 0% 26%;
+        margin: 3% 21%;
     }
 
     #raieAccueil1 {
@@ -83,6 +91,9 @@
 
       .gridProjetHeaderContainer {
         gap: 100px 70px;
+        
+        margin-top: 50px;
+        justify-content: center;
       }
 
 

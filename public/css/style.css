@@ -16,6 +16,10 @@ html {
     animation: fadeInBody 0.5s forwards ease; */
 }
 
+body {
+    font-size: 85%;
+}
+
 html, body {
     max-width: 100%;
     height: 100%;
@@ -122,7 +126,8 @@ swiper-slide {
 .gridProjetHeaderContainer {
     /* position: relative;
     bottom: 50px; */
-    margin-top: 50px;
+    margin-top: 30px;
+    justify-content: space-around;
 }
 
 .projetFuncList {
@@ -190,7 +195,7 @@ swiper-slide {
 .trainingSvgContainer {
     position: absolute;
     transform: translate(163px, -66px);
-    opacity: 0.6;
+    opacity: 0.7;
     margin-left: 25px;
 }
 
@@ -1176,7 +1181,7 @@ li::before {
     background-repeat:no-repeat;
     /* height:400px; */
     height: fit-content;
-    margin:0% 6%;
+    margin:1% 15%;
 }
 
 .gitHubLink {
@@ -1985,7 +1990,7 @@ li::before {
     animation: fadeIn 0.8s ease 0.9s normal forwards running, whiteToOrange 0.8s ease 0.9s normal forwards running;
 }
 .carreTitreVeille {
-    top: 14px !important;
+    top: 10px !important;
     /* Synchro avec .sectionSitesTitle et .sectionTipsTitle */
     animation: fadeIn 0.8s ease 0.9s normal forwards running, whiteToOrange 0.8s ease 1.6s normal forwards running, whiteToOrange 0.8s ease 2.7s normal forwards running !important;
 }
@@ -2655,7 +2660,7 @@ li::before {
     width:163px; 
     background-color:#e2e8f0; 
     position:relative; 
-    bottom:64px;
+    bottom:59px;
 
     /* margin-bottom: 70px; */
 

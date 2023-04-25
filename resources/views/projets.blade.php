@@ -118,7 +118,7 @@
                                         </div>
 
                                         <div class="description">
-                                            <p class="projetDescriptionText">Application de BlackJack en ligne contre la banque</p> 
+                                            <p class="projetDescriptionText">Application de BlackJack</p> 
                                             <ul class="projetSkillsList">
                                                 <li>HTML</li>
                                                 <li>CSS</li>
@@ -127,15 +127,15 @@
                                                 <li>SQL/BDD</li>
                                             </ul>
                                             <ul class="projetFuncList">
-                                                <li>Système de compte (Crédits quotidiens 1ère connexion)</li>
+                                                <li>Système de compte (+Crédits quotidiens)</li>
                                                 <li>Système de progression (expérience/niveaux)</li>
                                                 <li>Système de Win-streak</li>
                                                 <li>Affichage du top 3 sur l'accueil</li>
                                                 <li>Historique et stats personnelles</li>
                                                 <li>Mode invité</li>
-                                                <li>Espace Admin (liste comptes, etc..)</li>
+                                                <li>Espace Admin</li>
                                                 <li>Mode Light/Dark</li>
-                                                <li>Mode turbo (distribution plus rapide)</li>
+                                                <li>Mode turbo</li>
                                             </ul>
                                         </div>
 
@@ -177,14 +177,8 @@
                                             </ul>
                                             <ul class="projetFuncList">
                                                 <li>Pages de listing</li>
-                                                <li>Pages détaillées et liens</li>
+                                                <li>Pages détaillées et liens/relations</li>
                                                 <li>Formulaires d'ajouts d'éléments</li>
-                                                <!-- <li>Affichage du top 3 sur l'accueil</li>
-                                                <li>Historique et stats personnelles</li>
-                                                <li>Mode invité</li>
-                                                <li>Espace Admin (liste comptes, etc..)</li>
-                                                <li>Mode Light/Dark</li>
-                                                <li>Mode turbo (distribution plus rapide)</li> -->
                                             </ul>
                                         </div>
 
@@ -224,9 +218,11 @@
                                                 <li>API</li>
                                             </ul>
                                             <ul class="projetFuncList">
-                                                <li>Exploitation de l'API pokémon</li>
-                                                <li>Couleurs adaptées aux types des pokémons</li>
-                                                <li>Listing et détails</li>
+                                                <li><i class="fa-solid fa-triangle-exclamation"></i>&nbsp; Mobile first</li>
+                                                <li>Exploitation d'une API pokémon</li>
+                                                <li>Listing et détails (Pokémons, actions, items, ...)</li>
+                                                <li>Génération Pokémons aléatoires (Sans doublons)</li>
+                                                <li>Couleurs adaptées aux types des pokémons</li> 
                                             </ul>
                                         </div>
 
