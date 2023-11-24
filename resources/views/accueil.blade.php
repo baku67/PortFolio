@@ -25,6 +25,7 @@
 
         <!-- ScriptJS -->
         <script type="text/javascript" src="{{ URL::asset('js/scriptAccueil.js') }}"></script>
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
         <!-- JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -102,7 +103,7 @@
                 <p class="paragrapheAccueil" >
                     <!-- <span style="margin-left: 5px; font-size: 130%;">Bienvenue, </span>
                     <br><br> -->
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="accueilWord">Je</span> <span class="accueilWord">suis</span> <span class="accueilWord">Basile</span> <span class="accueilWord">KUNTZ,</span> <span class="accueilWord">un</span> <span class="accueilWord">jeune</span> <span class="accueilWord">en</span> <span class="accueilWord">pleine</span> <span class="accueilWord">formation</span> <span class="accueilWord">de</span> <strong><span class="accueilWord">développeur</span> <span class="accueilWord">web</span> <span class="accueilWord">et</span> <span class="accueilWord">web</span> <span class="accueilWord">mobile</span></strong> <span class="accueilWord">au</span> <span class="accueilWord">centre</span> <span class="accueilWord">Élan</span> <span class="accueilWord">Formation</span> <span class="accueilWord">à</span> <span class="accueilWord">Strasbourg.</span> <span class="accueilWord">Je</span> <span class="accueilWord">cherche</span> <span class="accueilWord">actuellement</span> <span class="accueilWord">à</span> <span class="accueilWord">mettre</span> <span class="accueilWord">à</span> <span class="accueilWord">profit</span> <span class="accueilWord">mes</span> <span class="accueilWord">compétences</span> <span class="accueilWord">et</span> <span class="accueilWord">à</span> <span class="accueilWord">m'améliorer</span> <span class="accueilWord">dans</span> <span class="accueilWord">le</span> <span class="accueilWord">cadre</span> <span class="accueilWord">d'un</span> <span class="accueilWord">stage</span> <span class="accueilWord">professionel.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="accueilWord">Je</span> <span class="accueilWord">suis</span> <span class="accueilWord">Basile</span> <span class="accueilWord">KUNTZ,</span> <span class="accueilWord">et</span> <span class="accueilWord">je</span> <span class="accueilWord">viens</span> <span class="accueilWord">d'obtenir</span> <span class="accueilWord">mon</span> <span class="accueilWord">titre</span> <span class="accueilWord">de</span> <strong><span class="accueilWord">développeur</span> <span class="accueilWord">web</span> <span class="accueilWord">et</span> <span class="accueilWord">web</span> <span class="accueilWord">mobile</span></strong> <span class="accueilWord">au</span> <span class="accueilWord">centre</span> <span class="accueilWord">Élan</span> <span class="accueilWord">Formation</span> <span class="accueilWord">à</span> <span class="accueilWord">Strasbourg.</span> <span class="accueilWord">Je</span> <span class="accueilWord">cherche</span> <span class="accueilWord">actuellement</span> <span class="accueilWord">à</span> <span class="accueilWord">mettre</span> <span class="accueilWord">à</span> <span class="accueilWord">profit</span> <span class="accueilWord">mes</span> <span class="accueilWord">compétences</span> <span class="accueilWord">et</span> <span class="accueilWord">à</span> <span class="accueilWord">m'améliorer</span> <span class="accueilWord">dans</span> <span class="accueilWord">le</span> <span class="accueilWord">cadre</span> <span class="accueilWord">d'une</span> <strong><span class="accueilWord">alternance</span> <span class="accueilWord">en</span> <span class="accueilWord">licence</span> <span class="accueilWord">CDA</span></strong>.
                     <span class="accueilWord">J’apprécie</span> <span class="accueilWord">les</span> <span class="accueilWord">choses</span> <span class="accueilWord">simples</span> <span class="accueilWord">de</span> <span class="accueilWord">la</span> <span class="accueilWord">vie,</span> <span class="accueilWord">ma</span> <span class="accueilWord">personnalité</span> <span class="accueilWord">et</span> <span class="accueilWord">ma</span> <span class="accueilWord">créativité</span> <span class="accueilWord">parleront</span> <span class="accueilWord">d’elles-même.</span>
                     <br><span class="accueilWord">Donner</span> <span class="accueilWord">vie</span> <span class="accueilWord">à</span> <span class="accueilWord">un</span> <span class="accueilWord">site</span> <span class="accueilWord">web,</span> <span class="accueilWord">c’est</span> <span class="accueilWord">surprenant,</span> <span class="accueilWord">motivant,</span> <span class="accueilWord">beau,</span> <span class="accueilWord">captivant,</span> <span class="accueilWord">fascinant,</span> <span class="accueilWord">prenant…</span> <span class="accueilWord">et</span> <span class="accueilWord">ça</span> <span class="accueilWord">j’adore</span> <span class="accueilWord">!</span> 
                     <br><span class="accueilWord">Et</span> <span class="accueilWord">si</span> <span class="accueilWord">on</span> <span class="accueilWord">se</span> <span class="accueilWord">rencontrait</span> <span class="accueilWord">pour</span> <span class="accueilWord">discuter</span> <span class="accueilWord">de</span> <span class="accueilWord">votre</span> <span class="accueilWord">projet</span> <span class="accueilWord">?</span>
@@ -175,13 +176,24 @@
                 </div>
 
 
-                </br>
+                <br>
 
+                <div class="accueilGrid2">
 
-                <!-- form https://enjoy.plezi.co -->
-                <button id="contactButton">Me contacter</button>
-                <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
-                <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>            
+                    <!-- Badge linkedIn -->
+                    <div>
+                        <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="basile-kuntz-719278267" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/basile-kuntz-719278267?trk=profile-badge"></a></div>
+                    </div>                
+
+                    <br>
+
+                    <!-- form https://enjoy.plezi.co -->
+                    <div>
+                        <button id="contactButton">Me contacter</button>
+                        <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
+                        <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>            
+                    </div>
+                </div>
 
             </div>
 

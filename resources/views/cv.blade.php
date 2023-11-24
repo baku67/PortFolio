@@ -125,7 +125,7 @@
 
 
                     <ul>
-                        <li><span class="highlightSpan" style="text-decoration:underline; text-underline-offset:2px;">En cours:</span> Formation <span class="highlightSpan">"Développeur web et web mobile"</span> à Élan Formation Strasbourg
+                        <li><span class="highlightSpan" style="text-decoration:underline; text-underline-offset:2px;">2023:</span> Formation <span class="highlightSpan">"Développeur web et web mobile"</span> à Élan Formation Strasbourg (validé)
                         </li>
                         <div class="separateurListe light"></div>
                         <li>2020-2022: <span class="highlightSpan">BTS SIO</span> - Option <span class="highlightSpan">SLAM</span> (<span class="highlightSpan">S</span>olutions <span class="highlightSpan">L</span>ogicielles et <span class="highlightSpan">A</span>pplications <span class="highlightSpan">M</span>étiers) <br>CCI campus Illkirch
@@ -266,10 +266,11 @@
                     </p>
 
                     <ul>
-                        <li>Visual Studio / Code</li>
-                        <li>Git, GitHub, GitLab, GitKraken</li>
-                        <li>WSL2 (Ubuntu)</li>
+                        <li>Visual Studio</li>
+                        <li>Git</li>
                         <li>Photoshop / pixlr.com</li>
+                        <li>Figma</li>
+                        <li>Postman/Insomnia</li>
                         <li>Design Pattern MVC</li>
                     </ul>
                 </div>
