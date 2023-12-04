@@ -1477,6 +1477,8 @@ li::before {
 
 
 .projetNbr {
+    opacity: 0.7;
+    font-weight: 100;
     margin-block-end: 0;
 }
 
@@ -1642,8 +1644,9 @@ li::before {
 
 .projetSlideTitle {
     color: #ef3b2d;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 1.5em;
+    
 
     margin-block-start: 0;
     margin-block-end: 0em;
@@ -1658,6 +1661,10 @@ li::before {
     width:50px; 
     margin-right:15px; 
     transform:scale(0.9);
+}
+
+.projectSlideLogo. {
+    
 }
 
 
