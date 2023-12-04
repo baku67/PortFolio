@@ -130,6 +130,59 @@
 
                         <!-- <swiper-wrapper class="swiper-wrapper">  -->
 
+
+
+                            <swiper-slide>
+                                <h3 class="projetNbr">Projet 1</h3>
+                                <p class="projetSlideTitle">SquadForge</p>
+
+                                <div id="projectContainer">
+                                    <div class="gridProjetHeaderContainer">
+
+
+                                        <div class="iframe">
+                                            <div class="boutonMockup"></div>
+                                            <div class="boutonMockup2"></div>
+                                            <div class="bouton3Container"><div class="boutonMockup3"></div></div>
+                                            <div class="boutonMockup4"></div>
+                                            <div class="boutonMockup5"></div>
+                                        
+                                            <iframe src="https://squadforge.ovh" class="iframeElem" class="iframeElement"></iframe>
+
+                                            <p class="lienBJJ"><a target="_blank" href="https://www.squadforge.ovh">www.squadforge.ovh<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                        </div>
+
+                                        <div class="description">
+                                            <p class="projetDescriptionText">Site communautaire "Gaming"</p> 
+                                            <ul class="projetSkillsList">
+                                                <li>HTML/CSS</li>
+                                                <li>Javascript</li>
+                                                <li>PHP / Symfony</li>
+                                                <li>Doctrine / DQL</li>
+                                                <li>Twig</li>
+                                            </ul>
+                                            <ul class="projetFuncList">
+                                                <li>Autentification</li>
+                                                <li>Système de modération (validation des public, censure, signalements)</li>
+                                                <li>Signalements à la modération</li>
+                                                <li>Publication de Topics, Médias, Commentaires</li>
+                                                <li>Upvotes et likes/dislikes</li>
+                                                <li>Création et candidatures de Teams</li>
+                                                <li>Planifications de sessions de gaming (Team)</li>
+                                                <li>Jeux favoris -> page d'accueil filtrée</li>
+                                                <li>Page de jeux personalisées</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+
+
+                            <swiper-slide>
+                                <h3 class="projetNbr">Projet 2</h3>
+                                <p class="projetSlideTitle">BlackJackJo'</p>
                         <swiper-slide>
 
                             <!-- Flèches -->
@@ -239,14 +292,10 @@
                         </swiper-slide>
 
 
-                        <swiper-slide>
 
-                            <!-- Flèches -->
-                            <!-- <button onclick="scrollToLeft();"><i class="fa-solid fa-arrow-left"></i></button>
-                            <button onclick="scrollToRight();"><i class="fa-solid fa-arrow-right"></i></button> -->
-
-                            <h3 class="projetNbr">Projet 3</h3>
-                            <p class="projetSlideTitle">Terrine</p>
+                            <swiper-slide>
+                                <h3 class="projetNbr">Projet 3</h3>
+                                <p class="projetSlideTitle">Terrine</p>
 
                             <div id="projectContainer2">
                                 <div class="gridProjetHeaderContainer">
@@ -287,10 +336,9 @@
                         </swiper-slide>
 
 
-                        <!-- <swiper-slide>
-
-                            <h3 class="projetNbr">Projet 4</h3>
-                            <p class="projetSlideTitle">Pokédia</p>
+                            <swiper-slide>
+                                <h3 class="projetNbr">Projet 4</h3>
+                                <p class="projetSlideTitle">Pokédia</p>
 
                             <div id="projectContainer3">
                                 <div class="gridProjetHeaderContainer">
