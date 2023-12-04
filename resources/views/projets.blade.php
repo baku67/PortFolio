@@ -10,10 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kavoon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kavoon&family=Righteous&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
@@ -156,7 +153,7 @@
                                         
                                             <iframe src="https://squadforge.ovh" class="iframeElem" class="iframeElement"></iframe>
 
-                                            <p class="lienBJJ"><a target="_blank" href="https://www.squadforge.ovh">www.squadforge.ovh<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                            <p class="lienBJJ"><a target="_blank" href="https://squadforge.ovh">www.squadforge.ovh<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                                         </div>
 
                                         <div class="description">
@@ -246,7 +243,11 @@
 
                             <swiper-slide>
                                 <h3 class="projetNbr">Projet 3</h3>
-                                <p class="projetSlideTitle">Terrine</p>
+                                <div class="projectTitle">
+                                    <img src="img/projects/terrine.png" class="projectSlideLogo" style="sans-serif; padding-right: 7px; width: 69px;" />
+                                    <p class="projetSlideTitle" style="font-family: 'Righteous'">Terrine</p>
+                                </div>
+
 
                                 <div id="projectContainer2">
                                     <div class="gridProjetHeaderContainer">

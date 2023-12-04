@@ -1547,7 +1547,7 @@ li::before {
 .iframe iframe {
     display: block;
     margin: 0 auto;
-    background-color: rgba(0,0,0,0.5); 
+    background-color: rgb(7, 7, 7); 
     z-index: -1;  
 }
 .header { grid-area: header; }
@@ -1654,19 +1654,36 @@ li::before {
 
 .projectTitle {
     display: inline-flex;
-
+    transform: translateX(-14px);
 }
 
+
+
+/* Effet arriere plan */
 .projectSlideLogo {
-    width:50px; 
-    margin-right:15px; 
-    transform:scale(0.9);
-}
+    width: 50px;
+    transform: scale(10);
+    z-index: -9999;
 
-.projectSlideLogo. {
+    /* margin-right: 15px; */
     
+    opacity: 0;
+
+    animation: fadeInProjectLogo 0.5s 0.5s ease forwards;
+}
+@keyframes fadeInProjectLogo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.04;
+    }
 }
 
+
+.traitHeaderProjet {
+    margin-bottom: 5px !important;
+}
 
 
 
