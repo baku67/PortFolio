@@ -273,7 +273,6 @@ window.onload = function() {
     "There are three responses to a piece of design — yes, no, and WOW! Wow is the one to aim for. <span style='color:#ef3b2d;'>– Milton Glaser</span>",
     "Writing the first 90 percent of a computer program takes 90 percent of the time. The remaining ten percent also takes 90 percent of the time and the final touches also take 90 percent of the time. <span style='color:#ef3b2d;'>– N.J. Rubenking</span>",
     "Software and cathedrals are much the same — first we build them, then we pray. <span style='color:#ef3b2d;'>- Simon Harrer</span>",
-    "Java is to JavaScript what car is to Carpet. <span style='color:#ef3b2d;'>– Chris Heilmann</span>",
   ];
 
   actualIndex = 0;

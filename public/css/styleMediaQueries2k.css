@@ -678,7 +678,8 @@
     
         width: 7px;
         background-color: #ef3b2d;
-        right: 71px;
+        /* right: 71px; */
+        right: 67px;
         z-index: 500;
         top: -6px;
         /* transform: rotateZ(180deg); */

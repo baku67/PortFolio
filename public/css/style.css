@@ -92,6 +92,51 @@ body:not(#flashPointCache) {
 }
 
 
+.swipeSymbol {
+    position: fixed;
+    right: 5%;
+    font-size: 0.8em;
+    color: var(--swiper-theme-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.7;
+
+    animation: fadePulseSwipe 3s 0s normal ease infinite;
+}
+@keyframes fadePulseSwipe {
+    0% {
+        opacity: 0.5;
+        transform: translateX(-50px);
+    }
+    37% {
+        opacity: 0.2;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateX(-50px);
+    }
+}
+.swipeImg {
+    width: 50px;
+}
+
+/* .swipeTxt {
+    animation: swipeText 2s 0s normal ease infinite;
+}
+@keyframes swipeText {
+    0% {
+        transform: translateX(-50px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-50px);
+    }
+} */
+
 iframe html {
     opacity: 0;
 }
