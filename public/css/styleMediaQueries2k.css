@@ -707,7 +707,18 @@
         }
     }
 
+    .swipeSymbol {
+        right: 8%;
+        font-size: 1em;
+    }    
 
+    .swipeImg {
+        width: 60px;
+    }
+    .swipeSymbol {
+
+        top: 151px;
+    }
 
 
 

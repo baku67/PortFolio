@@ -88,7 +88,7 @@
 
 
 
-        <div id="pageContainerProjet">
+        <div id="pageContainerProjet" style="position:relative;">
 
 
                 <!-- Symbole Swipe -->
@@ -129,8 +129,6 @@
 
 
                         <!-- <swiper-wrapper class="swiper-wrapper">  -->
-
-
 
                             <swiper-slide>
                                 <h3 class="projetNbr">Projet 1</h3>
@@ -181,203 +179,144 @@
 
 
                             <swiper-slide>
+
+                                <!-- Flèches -->
+                                <!-- <button disabled><i class="fa-solid fa-arrow-left grisedArrow"></i></button>
+                                <button onclick="scrollToRight();"><i class="fa-solid fa-arrow-right"></i></button> -->
+
                                 <h3 class="projetNbr">Projet 2</h3>
                                 <p class="projetSlideTitle">BlackJackJo'</p>
-                        <swiper-slide>
-
-                            <!-- Flèches -->
-                            <!-- <button disabled><i class="fa-solid fa-arrow-left grisedArrow"></i></button>
-                            <button onclick="scrollToRight();"><i class="fa-solid fa-arrow-right"></i></button> -->
-
-                            <h3 class="projetNbr">Projet 1</h3>
-                            <p class="projetSlideTitle">SquadForge</p>
 
 
-                            <div id="projectContainer">
-                                <div class="gridProjetHeaderContainer">
+                                <div id="projectContainer">
+                                    <div class="gridProjetHeaderContainer">
 
 
-                                    <div class="iframe">
-                                        <div class="boutonMockup"></div>
-                                        <div class="boutonMockup2"></div>
-                                        <div class="bouton3Container"><div class="boutonMockup3"></div></div>
-                                        <div class="boutonMockup4"></div>
-                                        <div class="boutonMockup5"></div>
-                                    
-                                        <iframe src="https://squadforge.ovh" class="iframeElem" class="iframeElement"></iframe>
+                                        <div class="iframe">
+                                            <div class="boutonMockup"></div>
+                                            <div class="boutonMockup2"></div>
+                                            <div class="bouton3Container"><div class="boutonMockup3"></div></div>
+                                            <div class="boutonMockup4"></div>
+                                            <div class="boutonMockup5"></div>
+                                        
+                                            <iframe src="https://www.blackjackjo.com" class="iframeElem" class="iframeElement"></iframe>
 
-                                        <p class="lienBJJ"><a target="_blank" href="https://squadforge.ovh">www.squadforge.ovh<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                            <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                        </div>
+
+                                        <div class="description">
+                                            <p class="projetDescriptionText">Application de BlackJack</p> 
+                                            <ul class="projetSkillsList">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Javascript</li>
+                                                <li>PHP</li>
+                                                <li>SQL/BDD</li>
+                                            </ul>
+                                            <ul class="projetFuncList">
+                                                <li>Système de compte (+Crédits quotidiens)</li>
+                                                <li>Système de progression (expérience/niveaux)</li>
+                                                <li>Système de Win-streak</li>
+                                                <li>Affichage du top 3 sur l'accueil</li>
+                                                <li>Historique et stats personnelles</li>
+                                                <li>Mode invité</li>
+                                                <li>Espace Admin</li>
+                                                <li>Mode Light/Dark</li>
+                                                <li>Mode turbo</li>
+                                            </ul>
+                                        </div>
+
                                     </div>
-
-                                    <div class="description">
-                                        <p class="projetDescriptionText">Site communautaire "Gaming"</p> 
-                                        <ul class="projetSkillsList">
-                                            <li>HTML/CSS</li>
-                                            <li>Javascript</li>
-                                            <li>PHP / Symfony</li>
-                                            <li>Doctrine / DQL</li>
-                                            <li>Twig</li>
-                                        </ul>
-                                        <ul class="projetFuncList">
-                                            <li>Compte utilisateur</li>
-                                            <li>Publication de Médias, Topics et commentaires</li>
-                                            <li>Upvotes, likes et dislikes</li>
-                                            <li>Filtrage du contenu selon jeux favorisés</li>
-                                            <li>Signalements de publication à la modération</li>
-                                            <li>Modération: Validation avant publications, gestion des signalements, sanctions et censures</li>
-                                            <li>Espace Administrateur</li>
-                                            <li>Création/candidature de teams</li>
-                                            <li>Système de leader de team</li>
-                                            <li>Planification de sessions de jeu et système de disponibilité</li>
-                                        </ul>
-                                    </div>
-
                                 </div>
-                            </div>
 
-                        </swiper-slide>
-
-
-                        <swiper-slide>
-
-                            <!-- Flèches -->
-                            <!-- <button disabled><i class="fa-solid fa-arrow-left grisedArrow"></i></button>
-                            <button onclick="scrollToRight();"><i class="fa-solid fa-arrow-right"></i></button> -->
-
-                            <h3 class="projetNbr">Projet 2</h3>
-                            <p class="projetSlideTitle">BlackJackJo'</p>
-
-
-                            <div id="projectContainer">
-                                <div class="gridProjetHeaderContainer">
-
-
-                                    <div class="iframe">
-                                        <div class="boutonMockup"></div>
-                                        <div class="boutonMockup2"></div>
-                                        <div class="bouton3Container"><div class="boutonMockup3"></div></div>
-                                        <div class="boutonMockup4"></div>
-                                        <div class="boutonMockup5"></div>
-                                    
-                                        <iframe src="https://www.blackjackjo.com" class="iframeElem" class="iframeElement"></iframe>
-
-                                        <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
-                                    </div>
-
-                                    <div class="description">
-                                        <p class="projetDescriptionText">Application de BlackJack</p> 
-                                        <ul class="projetSkillsList">
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>Javascript</li>
-                                            <li>PHP</li>
-                                            <li>SQL/BDD</li>
-                                        </ul>
-                                        <ul class="projetFuncList">
-                                            <li>Système de compte (+Crédits quotidiens)</li>
-                                            <li>Système de progression (expérience/niveaux)</li>
-                                            <li>Système de Win-streak</li>
-                                            <li>Affichage du top 3 sur l'accueil</li>
-                                            <li>Historique et stats personnelles</li>
-                                            <li>Mode invité</li>
-                                            <li>Espace Admin</li>
-                                            <li>Mode Light/Dark</li>
-                                            <li>Mode turbo</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </swiper-slide>
-
+                            </swiper-slide>
 
 
                             <swiper-slide>
                                 <h3 class="projetNbr">Projet 3</h3>
                                 <p class="projetSlideTitle">Terrine</p>
 
-                            <div id="projectContainer2">
-                                <div class="gridProjetHeaderContainer">
+                                <div id="projectContainer2">
+                                    <div class="gridProjetHeaderContainer">
 
 
-                                    <div class="iframe">
-                                        <div class="boutonMockup"></div>
-                                        <div class="boutonMockup2"></div>
-                                        <div class="bouton3Container"><div class="boutonMockup3"></div></div>
-                                        <div class="boutonMockup4"></div>
-                                        <div class="boutonMockup5"></div>
-                                    
-                                        <iframe src="https://www.eneffet.basilek.ovh/index.php" class="iframeElem" class="iframeElement"></iframe>
+                                        <div class="iframe">
+                                            <div class="boutonMockup"></div>
+                                            <div class="boutonMockup2"></div>
+                                            <div class="bouton3Container"><div class="boutonMockup3"></div></div>
+                                            <div class="boutonMockup4"></div>
+                                            <div class="boutonMockup5"></div>
+                                        
+                                            <iframe src="https://www.eneffet.basilek.ovh/index.php" class="iframeElem" class="iframeElement"></iframe>
 
-                                        <p class="lienBJJ"><a target="_blank" href="https://www.eneffet.basilek.ovh/index.php">Voir le site<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                            <p class="lienBJJ"><a target="_blank" href="https://www.eneffet.basilek.ovh/index.php">Voir le site<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                        </div>
+
+                                        <div class="description">
+                                            <p class="projetDescriptionText">Site de gestion de plateforme cinématographique</p> 
+                                            <ul class="projetSkillsList">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JS</li>
+                                                <li>PHP</li>
+                                                <li>SQL</li>
+                                                <li>MVC</li>
+                                            </ul>
+                                            <ul class="projetFuncList">
+                                                <li>Pages de listing</li>
+                                                <li>Pages détaillées et liens/relations</li>
+                                                <li>Formulaires d'ajouts d'éléments</li>
+                                            </ul>
+                                        </div>
+
                                     </div>
-
-                                    <div class="description">
-                                        <p class="projetDescriptionText">Site de gestion de plateforme cinématographique</p> 
-                                        <ul class="projetSkillsList">
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>JS</li>
-                                            <li>PHP</li>
-                                            <li>SQL</li>
-                                            <li>MVC</li>
-                                        </ul>
-                                        <ul class="projetFuncList">
-                                            <li>Pages de listing</li>
-                                            <li>Pages détaillées et liens/relations</li>
-                                            <li>Formulaires d'ajouts d'éléments</li>
-                                        </ul>
-                                    </div>
-
                                 </div>
-                            </div>
 
-                        </swiper-slide>
+                            </swiper-slide>
 
-
+<!-- 
                             <swiper-slide>
                                 <h3 class="projetNbr">Projet 4</h3>
                                 <p class="projetSlideTitle">Pokédia</p>
 
-                            <div id="projectContainer3">
-                                <div class="gridProjetHeaderContainer">
+                                <div id="projectContainer3">
+                                    <div class="gridProjetHeaderContainer">
 
 
-                                    <div class="iframe">
-                                        <div class="boutonMockup"></div>
-                                        <div class="boutonMockup2"></div>
-                                        <div class="bouton3Container"><div class="boutonMockup3"></div></div>
-                                        <div class="boutonMockup4"></div>
-                                        <div class="boutonMockup5"></div>
-                                    
-                                        <iframe src="https://www.poke.basilek.ovh/index.html" class="iframeElem" class="iframeElement"></iframe>
+                                        <div class="iframe">
+                                            <div class="boutonMockup"></div>
+                                            <div class="boutonMockup2"></div>
+                                            <div class="bouton3Container"><div class="boutonMockup3"></div></div>
+                                            <div class="boutonMockup4"></div>
+                                            <div class="boutonMockup5"></div>
+                                        
+                                            <iframe src="https://www.poke.basilek.ovh/index.html" class="iframeElem" class="iframeElement"></iframe>
 
-                                        <p class="lienBJJ"><a target="_blank" href="https://www.poke.basilek.ovh/index.html">Voir le site<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                            <p class="lienBJJ"><a target="_blank" href="https://www.poke.basilek.ovh/index.html">Voir le site<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
+                                        </div>
+
+                                        <div class="description">
+                                            <p class="projetDescriptionText">Encyclopédie Pokémon</p> 
+                                            <ul class="projetSkillsList">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JS</li>
+                                                <li>PHP</li>
+                                                <li>API</li>
+                                            </ul>
+                                            <ul class="projetFuncList">
+                                                <li><i class="fa-solid fa-triangle-exclamation"></i>&nbsp; Mobile first</li>
+                                                <li>Exploitation d'une API pokémon</li>
+                                                <li>Listing et détails (Pokémons, actions, items, ...)</li>
+                                                <li>Génération Pokémons aléatoires (Sans doublons)</li>
+                                                <li>Couleurs adaptées aux types des pokémons</li> 
+                                            </ul>
+                                        </div>
+
                                     </div>
-
-                                    <div class="description">
-                                        <p class="projetDescriptionText">Encyclopédie Pokémon</p> 
-                                        <ul class="projetSkillsList">
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>JS</li>
-                                            <li>PHP</li>
-                                            <li>API</li>
-                                        </ul>
-                                        <ul class="projetFuncList">
-                                            <li><i class="fa-solid fa-triangle-exclamation"></i>&nbsp; Mobile first</li>
-                                            <li>Exploitation d'une API pokémon</li>
-                                            <li>Listing et détails (Pokémons, actions, items, ...)</li>
-                                            <li>Génération Pokémons aléatoires (Sans doublons)</li>
-                                            <li>Couleurs adaptées aux types des pokémons</li> 
-                                        </ul>
-                                    </div>
-
                                 </div>
-                            </div>
 
-                        </swiper-slide> -->
+                            </swiper-slide>  -->
 
                         <!-- </swiper-wrapper> -->
 
