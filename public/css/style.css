@@ -1646,6 +1646,18 @@ li::before {
     font-size: 1.5em;
 
     margin-block-start: 0;
+    margin-block-end: 0em;
+}
+
+.projectTitle {
+    display: inline-flex;
+
+}
+
+.projectSlideLogo {
+    width:50px; 
+    margin-right:15px; 
+    transform:scale(0.9);
 }
 
 

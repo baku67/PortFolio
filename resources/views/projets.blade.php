@@ -93,7 +93,7 @@
 
                 <!-- Symbole Swipe -->
                 <div class="swipeSymbol">
-                    <img class="swipeImg" src="slideSymbol.png"/>
+                    <img class="swipeImg" src="img/projects/slideSymbol.png"/>
                     <span class="swipeTxt">Glisser</span>
                 </div>
 
@@ -132,7 +132,10 @@
 
                             <swiper-slide>
                                 <h3 class="projetNbr">Projet 1</h3>
-                                <p class="projetSlideTitle">SquadForge</p>
+                                <div class="projectTitle">
+                                    <img src="img/projects/squadforge.png" class="projectSlideLogo" />
+                                    <p class="projetSlideTitle">SquadForge</p>
+                                </div>
 
                                 <div id="projectContainer">
                                     <div class="gridProjetHeaderContainer">
