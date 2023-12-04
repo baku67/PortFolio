@@ -36,15 +36,15 @@
     }
     @keyframes fadePulseSwipe {
         0% {
-            opacity: 0.5;
+            opacity: 0.15;
             transform: translateX(-40px);
         }
         37% {
-            opacity: 0.2;
+            opacity: 0.4;
             transform: translateX(10px);
         }
         100% {
-            opacity: 0.5;
+            opacity: 0.15;
             transform: translateX(-40px);
         }
     }
