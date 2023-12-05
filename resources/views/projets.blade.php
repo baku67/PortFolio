@@ -98,7 +98,6 @@
             <div class="swiper">
                 <swiper-container id="swiper-container" class="swiper-container">
 
-
                     <!-- <swiper-wrapper class="swiper-wrapper">  -->
 
                         <swiper-slide>
@@ -120,7 +119,8 @@
                                         <div class="boutonMockup4"></div>
                                         <div class="boutonMockup5"></div>
                                     
-                                        <iframe src="https://squadforge.ovh" class="iframeElem"></iframe>
+                                        <!-- Src ajouté JS après load de la page (pour fix BJJ HS sur mobile) -->
+                                        <iframe src="" id="iframeElem1" class="iframeElem"></iframe>
 
                                         <p class="lienBJJ"><a target="_blank" href="https://squadforge.ovh">www.squadforge.ovh<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                                     </div>
@@ -172,7 +172,8 @@
                                         <div class="boutonMockup4"></div>
                                         <div class="boutonMockup5"></div>
                                     
-                                        <iframe src="https://www.blackjackjo.com" class="iframeElem"></iframe>
+                                        <!-- Src ajouté JS après load de la page (pour fix BJJ HS sur mobile) -->
+                                        <iframe src="" id="iframeElem2" class="iframeElem"></iframe>
 
                                         <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                                     </div>
@@ -250,6 +251,24 @@
                             </div>
 
                         </swiper-slide>
+
+                        <script>
+                            // Fix projet HS sur mobile 
+                            if (window.innerWidth <= 768) {
+                                window.onload = function() {
+                                    setTimeout(() => {
+                                        document.getElementById("iframeElem1").setAttribute("src", "https://squadforge.ovh");
+                                    }, 10);
+                                    setTimeout(() => {
+                                        document.getElementById("iframeElem2").setAttribute("src", "https://www.blackjackjo.com");
+                                    }, 2000);
+                                }
+                            }
+                            else {
+                                document.getElementById("iframeElem1").setAttribute("src", "https://squadforge.ovh");
+                                document.getElementById("iframeElem2").setAttribute("src", "https://www.blackjackjo.com");
+                            }
+                        </script>
 
                         <!-- 
                         <swiper-slide>

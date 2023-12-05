@@ -68,6 +68,9 @@
         margin: 0 10px;
     }
 
+    .projectSlideLogo {
+        transform: scale(9);
+    }
 
     .iframe {
         margin-right: 55px;
