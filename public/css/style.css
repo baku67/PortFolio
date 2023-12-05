@@ -1646,6 +1646,8 @@ li::before {
 }
 .projetSkillsList li {
     list-style-type: none;
+    color: #000000;
+    font-weight: 600;
     margin: 5px 3px;
     padding: 3px 10px;
     border: 1px solid #ef3b2d;

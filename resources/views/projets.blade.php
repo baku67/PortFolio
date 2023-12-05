@@ -253,16 +253,22 @@
                         </swiper-slide>
 
                         <script>
-                            // Fix projet HS sur mobile 
+                            // Fix projet BJJ HS sur mobile (TODO: enlever les cookies sur SquadForge)
                             if (window.innerWidth <= 768) {
-                                window.onload = function() {
-                                    setTimeout(() => {
-                                        document.getElementById("iframeElem1").setAttribute("src", "https://squadforge.ovh");
-                                    }, 10);
-                                    setTimeout(() => {
-                                        document.getElementById("iframeElem2").setAttribute("src", "https://www.blackjackjo.com");
-                                    }, 2000);
+
+                                // Function to load the second iframe
+                                function loadSecondIframe() {
+                                    document.getElementById("iframeElem2").setAttribute("src", "https://www.blackjackjo.com");
                                 }
+
+                                // Set the source for the first iframe
+                                document.getElementById("iframeElem1").setAttribute("src", "https://squadforge.ovh");
+
+                                // Add onload event listener to the first iframe
+                                document.getElementById("iframeElem1").onload = function() {
+                                    // After the first iframe has loaded, trigger the second one
+                                    setTimeout(loadSecondIframe, 2000);
+                                };
                             }
                             else {
                                 document.getElementById("iframeElem1").setAttribute("src", "https://squadforge.ovh");
