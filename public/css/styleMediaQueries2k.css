@@ -7,7 +7,7 @@
 
 
     #dlCv {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
     .skillsSvgContainer {
@@ -80,6 +80,14 @@
         font-size: 90%;
         padding: 13px 23px 2px 23px;
 
+    }
+
+    #underlineCV {
+        font-size: 2em;
+    }
+
+    .iframeElem {
+        width: 390px;
     }
     
     .paragrapheAccueil {

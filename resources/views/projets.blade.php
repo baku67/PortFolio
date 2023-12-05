@@ -100,7 +100,7 @@
 
                     <!-- <swiper-wrapper class="swiper-wrapper">  -->
 
-                        <swiper-slide>
+                        <swiper-slide id="projectSlide1">
 
                             <h3 class="projetNbr">Projet 1</h3>
                             <div class="projectTitle">
@@ -113,6 +113,16 @@
                                 <div class="gridProjetHeaderContainer">
 
                                     <div class="iframe">
+                                        <!-- WIP Fleche SVG pc -->
+                                        <!-- <svg class="arrowSvgContainer" style="position:absolute;">
+                                            <g class="arrowSvg">
+                                                <path 
+                                                    class="arrowSvgPath"
+                                                    d="M 106 11 L 106 11 C 90 7 47 10 23 47 L 34 46 L 22 37 L 23 47"
+                                                />
+                                            </g>
+                                        </svg> -->
+
                                         <div class="boutonMockup"></div>
                                         <div class="boutonMockup2"></div>
                                         <div class="bouton3Container"><div class="boutonMockup3"></div></div>
