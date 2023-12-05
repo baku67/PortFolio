@@ -68,6 +68,15 @@
         margin: 0 10px;
     }
 
+
+    .iframe {
+        margin-right: 55px;
+    }
+
+    .description {
+        padding: 13px 23px 2px 23px;
+
+    }
     
     .paragrapheAccueil {
         font-size: 1.3em;
@@ -503,13 +512,24 @@
         top:7px;
     }
 
+    .swiper-container {
+        margin-top: 5px;
+    }
+
+    .projetSkillsList {
+        font-size: 0.7em;
+    }
+
+    .projetFuncList {
+        font-size: 0.8em;
+    }
 
     #traitHeader {
         height: 2px;
         margin-bottom: 0px;
         width: 100%;
         background-color: #E7E8F2;
-        opacity: 0.6;
+        opacity: 0.7;
         background-color: #ef3b2d;
     }
     
@@ -525,7 +545,9 @@
 
     .gridProjetHeaderContainer {
         margin-top: 40px;
-        justify-content: space-around;
+        justify-content: center;
+
+        width: 75%;
     }
 
     footer.footerAccueil {
@@ -707,17 +729,31 @@
         }
     }
 
-    .swipeSymbol {
-        right: 8%;
-        font-size: 1em;
-    }    
 
     .swipeImg {
         width: 60px;
     }
     .swipeSymbol {
+        right: 8%;
+        font-size: 1em;
 
-        top: 151px;
+        top: 164px;
+
+        animation: fadePulseSwipe 3s 0s normal ease infinite;
+    }
+    @keyframes fadePulseSwipe {
+        0% {
+            opacity: 0.15;
+            transform: translateX(-50px);
+        }
+        37% {
+            opacity: 0.5;
+            transform: translateX(20px);
+        }
+        100% {
+            opacity: 0.15;
+            transform: translateX(-50px);
+        }
     }
 
 

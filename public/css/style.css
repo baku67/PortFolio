@@ -95,6 +95,7 @@ body:not(#flashPointCache) {
 .swipeSymbol {
     position: fixed;
     right: 5%;
+    top: 137px;
     font-size: 0.8em;
     color: var(--swiper-theme-color);
     display: flex;
@@ -107,19 +108,19 @@ body:not(#flashPointCache) {
 @keyframes fadePulseSwipe {
     0% {
         opacity: 0.15;
-        transform: translateX(-50px);
+        transform: translateX(-40px);
     }
     37% {
-        opacity: 0.4;
-        transform: translateX(20px);
+        opacity: 0.5;
+        transform: translateX(10px);
     }
     100% {
         opacity: 0.15;
-        transform: translateX(-50px);
+        transform: translateX(-40px);
     }
 }
 .swipeImg {
-    width: 50px;
+    width: 45px;
 }
 
 /* .swipeTxt {
@@ -165,6 +166,7 @@ main {
 }
 swiper-container {
     /* height: 22vh; */
+    margin-top: 3px;
     height: 100%;
 }
 swiper-slide {
@@ -182,6 +184,7 @@ swiper-slide {
 }
 
 .projetFuncList {
+    font-size: 0.8em;
     text-align: left;
 }
 
@@ -1299,7 +1302,7 @@ li::before {
 
 #traitHeader {
     height: 1px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     width: 100%;
     background-color: #E7E8F2;
     opacity: 0.6;
@@ -1526,7 +1529,7 @@ li::before {
 .gridProjetHeaderContainer {
     display: inline-flex;
 
-    width:90%;
+    width:95%;
 
 }
 .iframe { 
@@ -1536,7 +1539,7 @@ li::before {
 
     grid-area: iframe; 
     text-align: justify; 
-    margin-right: 80px;
+    margin-right: 35px;
     opacity: 0;
 
     animation-name: fadeIn;
@@ -1610,13 +1613,26 @@ li::before {
     }
 }
 
+
+.darkedHeader {
+    background-color: #0000001a;
+}
+
 .description {
     color: white;
+    z-index: 100;
 
+    color: white;
+    background-color: #151a2373;
+    padding: 13px 5px 5px 5px;
+    border-radius: 11px;
+    border: 1px solid #8080802e;
+    height: fit-content;
 }
 
 
 .projetSkillsList {
+    font-size: 0.6em;
     list-style-type: none;
     padding-inline-start: 0px;
     display: inline-flex;
@@ -1639,7 +1655,9 @@ li::before {
 }
 
 .projetDescriptionText {
-    font-size: 1.4em;
+    font-size: 1.1em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .projetSlideTitle {
@@ -1682,7 +1700,7 @@ li::before {
 
 
 .traitHeaderProjet {
-    margin-bottom: 5px !important;
+    /* margin-bottom: 5px !important; */
 }
 
 

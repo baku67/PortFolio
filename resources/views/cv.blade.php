@@ -49,7 +49,7 @@
     <body>
 
         <!-- Header -->
-        <header>
+        <header class="darkedHeader">
             <div style="width:100%;">
                 <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
                 <span  id="lineBreakMobile"></br></span>
