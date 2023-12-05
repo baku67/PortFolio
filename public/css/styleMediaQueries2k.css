@@ -109,6 +109,7 @@
     #portfolioSousTitre {
         margin-block-start: 0;
         font-size: 1.15em;
+        margin-block-end: 0.5em;
     }
 
     #contactButton {
@@ -510,7 +511,7 @@
 
     /* à rename: */
     .testH1 {
-        font-size: 2.9em !important;
+        font-size: 2.7em !important;
         padding: 12px 0px 1px 3%;
 
     }
@@ -739,6 +740,11 @@
         }
     }
 
+    .selected {
+        text-decoration-thickness: 3px;
+
+    }
+
 
     .swipeImg {
         width: 60px;
@@ -747,7 +753,7 @@
         right: 8%;
         font-size: 1em;
 
-        top: 164px;
+        top: 141px;
 
         animation: fadePulseSwipe 3s 0s normal ease infinite;
     }

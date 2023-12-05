@@ -95,7 +95,7 @@ body:not(#flashPointCache) {
 .swipeSymbol {
     position: fixed;
     right: 5%;
-    top: 137px;
+    top: 110px;
     font-size: 0.8em;
     color: var(--swiper-theme-color);
     display: flex;
@@ -179,7 +179,7 @@ swiper-slide {
 .gridProjetHeaderContainer {
     /* position: relative;
     bottom: 50px; */
-    margin-top: 30px;
+    margin-top: 8px;
     justify-content: space-around;
 }
 
@@ -1163,7 +1163,7 @@ li::before {
 
 .selected {
     font-weight: 900;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
 
     color: #ef3b2d;
     text-decoration-line: underline;
@@ -1566,12 +1566,11 @@ li::before {
     border: 2px solid #ef3b2d; 
     padding: 17px 6px 32px 6px; 
     border-radius: 7px;
-    /* width: 360px; */
+    
     width: 334px;
     height: 745px;
 
     position: relative;
-    /* bottom: 30px; */
 }
 
 #lineBreakMobile {
@@ -2243,7 +2242,7 @@ li::before {
 
 /* Fix du Header Dégueulasse (seulement sur loisirs) ET VOIR MEDIA QUERIES */
 .testH1 {
-    font-size: 2.4em;
+    font-size: 2.2em;
 
     color: #ef3b2d;
     /* line-height: 0; */
@@ -4768,7 +4767,7 @@ li.veilleLigneAjout::before {
 
     border: 2px solid rgba(239, 59, 45, 0.4);
     background-color: rgba(239, 59, 45, 0.1);
-    padding: 3px 7px;
+    padding: 2px 7px;
     border-radius: 4px; 
 
     animation: blinkeringStatus 2s infinite forwards linear;
@@ -4804,7 +4803,7 @@ li.veilleLigneAjout::before {
 
     border: 2px solid rgba(0, 255, 213, 0.4);
     background-color: rgba(0, 255, 213, 0.1);
-    padding: 3px 7px;
+    padding: 2px 7px;
     border-radius: 4px; 
 
     animation: blinkeringStatus2 2s infinite forwards linear;

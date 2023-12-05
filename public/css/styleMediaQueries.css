@@ -25,8 +25,8 @@
     .swipeSymbol {
         position: fixed;
         right: 5%;
-        top: 169px;
-        font-size: 0.75em;
+        top: 158px;
+        font-size: 0.65em;
         color: var(--swiper-theme-color);
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@
         }
     }
     .swipeImg {
-        width: 31px;
+        width: 27px;
     }
     .swipeTxt {
         transform: translateY(-4px);
