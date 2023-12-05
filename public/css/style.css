@@ -1483,6 +1483,8 @@ li::before {
     opacity: 0.7;
     font-weight: 100;
     margin-block-end: 0;
+
+    font-size: 0.9em;
 }
 
 
@@ -1529,7 +1531,7 @@ li::before {
 .gridProjetHeaderContainer {
     display: inline-flex;
 
-    width:95%;
+    width:85%;
 
 }
 .iframe { 
@@ -1564,7 +1566,8 @@ li::before {
     border: 2px solid #ef3b2d; 
     padding: 17px 6px 32px 6px; 
     border-radius: 7px;
-    width: 360px;
+    /* width: 360px; */
+    width: 334px;
     height: 745px;
 
     position: relative;
@@ -1580,6 +1583,7 @@ li::before {
 
 #portfolioSousTitre {
     margin-block-start: 0;
+    font-size:0.95em;
 }
 
 
@@ -1619,6 +1623,7 @@ li::before {
 }
 
 .description {
+    font-size: 80%;
     color: white;
     z-index: 100;
 
@@ -1663,7 +1668,7 @@ li::before {
 .projetSlideTitle {
     color: #ef3b2d;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
     
 
     margin-block-start: 0;
@@ -2168,7 +2173,7 @@ li::before {
 
 
 #menuLigneCv {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 
@@ -2242,7 +2247,7 @@ li::before {
 
     color: #ef3b2d;
     /* line-height: 0; */
-    padding: 21px 0px 1px 3%;
+    padding: 8px 0px 1px 3%;
     margin-block-end: 0;
     margin-block-start: 0;
 }

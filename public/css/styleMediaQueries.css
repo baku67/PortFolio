@@ -96,6 +96,14 @@
         margin-bottom: 20px !important;
     }
 
+    .projetNbr {
+        font-size: 1em;
+    }
+
+    .projetSlideTitle {
+        font-size: 1.5em;
+    }
+
     .accueilGrid2 {
         display: inline-flex;
         flex-direction: column;
@@ -286,6 +294,7 @@
         margin: 3% 0% 0% 5%;
     }
     .description { 
+        font-size: 100%;
         grid-area: description; 
         position: relative;
         padding: 14px 5px 0px 5px;
@@ -483,9 +492,15 @@
         text-decoration-color: rgb(239 59 45 / 92%);
     }
 
+    /* #portfolioSousTitre { */
+
+
     .testH1 {
         font-size: 2em;
         padding: 6px 0px 0px 3%;
+
+        /* Danger */
+        margin-bottom: -8px;
     }
     /* HYPER IMPORTANT ICI: */
     .testHeader {
