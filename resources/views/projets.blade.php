@@ -198,62 +198,67 @@
                                         <p class="lienBJJ"><a target="_blank" href="https://www.blackjackjo.com">www.blackjackjo.com<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                                     </div>
 
-                                    <div class="description" >
+                                    <div>
 
-                                        <h3 class="projetNbr">Projet 2</h3>
-                                        <div class="projectTitle">
-                                            <img src="img/projects/blackjackjo.png" class="projectSlideLogo" />
-                                            <p class="projetSlideTitle" style="font-family:'Kavoon', serif;">BlackJack Jo'</p>
+                                        <div class="description" >
+
+                                            <h3 class="projetNbr">Projet 2</h3>
+                                            <div class="projectTitle">
+                                                <img src="img/projects/blackjackjo.png" class="projectSlideLogo" />
+                                                <p class="projetSlideTitle" style="font-family:'Kavoon', serif;">BlackJack Jo'</p>
+                                            </div>
+
+                                            <p class="projetDescriptionText">Application de BlackJack</p> 
+
+                                            <ul class="projetSkillsList">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Javascript</li>
+                                                <li>PHP</li>
+                                                <li>SQL/BDD</li>
+                                            </ul>
+
+                                            <ul class="projetFuncList">
+                                                <li>Système de compte (+Crédits quotidiens)</li>
+                                                <li>Système de progression (expérience/niveaux)</li>
+                                                <li>Système de Win-streak</li>
+                                                <li>Affichage du top 3 sur l'accueil</li>
+                                                <li>Historique et stats personnelles</li>
+                                                <li>Mode invité</li>
+                                                <li>Espace Admin</li>
+                                                <li>Mode Light/Dark</li>
+                                                <li>Mode turbo</li>
+                                            </ul>
+
+                                            <div class="projectLinksDiv">
+                                                <a href="https://github.com/baku67/BLACKJACKJO-projet" target="_blank" class="githubProjectLink linkGithub">
+                                                    <i class="fa-brands fa-github githubLinkIcon"></i>
+                                                    <span>Projet<span>
+                                                </a>
+
+                                                <a href="https://www.blackjackjo.com" target="_blank" class="githubProjectLink linkWebsite" >
+                                                    <i class="fa-solid fa-globe githubLinkIcon"></i>
+                                                    <span>Site<span>
+                                                </a>
+                                            </div>
+
                                         </div>
 
-                                        <p class="projetDescriptionText">Application de BlackJack</p> 
-
-                                        <ul class="projetSkillsList">
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>Javascript</li>
-                                            <li>PHP</li>
-                                            <li>SQL/BDD</li>
-                                        </ul>
-
-                                        <ul class="projetFuncList">
-                                            <li>Système de compte (+Crédits quotidiens)</li>
-                                            <li>Système de progression (expérience/niveaux)</li>
-                                            <li>Système de Win-streak</li>
-                                            <li>Affichage du top 3 sur l'accueil</li>
-                                            <li>Historique et stats personnelles</li>
-                                            <li>Mode invité</li>
-                                            <li>Espace Admin</li>
-                                            <li>Mode Light/Dark</li>
-                                            <li>Mode turbo</li>
-                                        </ul>
-
-                                        <div class="projectLinksDiv">
-                                            <a href="https://github.com/baku67/BLACKJACKJO-projet" target="_blank" class="githubProjectLink linkGithub">
-                                                <i class="fa-brands fa-github githubLinkIcon"></i>
-                                                <span>Projet<span>
-                                            </a>
-
-                                            <a href="https://www.blackjackjo.com" target="_blank" class="githubProjectLink linkWebsite" >
-                                                <i class="fa-solid fa-globe githubLinkIcon"></i>
-                                                <span>Site<span>
-                                            </a>
+                                        <div style="position:relative;">
+                                            <!-- Fleche "Jouable !" -->
+                                            <svg class="arrowSvgContainer" style="position:absolute;" id="description">
+                                                <g class="arrowsSvg">
+                                                    <path 
+                                                        class="arrowSvgPath"
+                                                        d="M 12 15 C 46 26 79 32 114 29 L 111 34 C 63 34 22 21 12 15 L 21 28 L 26 11 L 12 15 L 21 24 L 23 13 L 15 16 L 20 20 L 20 15 L 25 20 C 66 31 82 31 112 32"
+                                                    />
+                                                    <!-- <path 
+                                                        class="skillsSvgPath"
+                                                        d="M 25.368 32.004 L 25.917 32.584 M 25.901 32.578 L 54.577 63.121 L 134.826 -21.452 L 139.207 -17.186 L 54.78 71.48 L 21.074 36.234 L 25.352 31.957"
+                                                    /> -->
+                                                </g>
+                                            </svg>
                                         </div>
-
-
-                                        <!-- Fleche "Jouable !" -->
-                                        <svg class="arrowSvgContainer" style="position:absolute;" id="description">
-                                            <g class="arrowsSvg">
-                                                <path 
-                                                    class="arrowSvgPath"
-                                                    d="M 12 15 C 46 26 79 32 114 29 L 111 34 C 63 34 22 21 12 15 L 21 28 L 26 11 L 12 15 L 21 24 L 23 13 L 15 16 L 20 20 L 20 15 L 25 20 C 66 31 82 31 112 32"
-                                                />
-                                                <!-- <path 
-                                                    class="skillsSvgPath"
-                                                    d="M 25.368 32.004 L 25.917 32.584 M 25.901 32.578 L 54.577 63.121 L 134.826 -21.452 L 139.207 -17.186 L 54.78 71.48 L 21.074 36.234 L 25.352 31.957"
-                                                /> -->
-                                            </g>
-                                        </svg>
 
                                     </div>
 
