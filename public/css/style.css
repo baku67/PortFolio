@@ -271,7 +271,7 @@ swiper-slide {
     /* transform: translate(414px, -114px); */
     left: 50%;
     transform: translateX(-12%) translateY(-116px);
-    opacity: 0.6;
+    opacity: 0.7;
     z-index: -99;
 
     overflow: visible;
@@ -293,10 +293,11 @@ swiper-slide {
 /* Fleche svg /projects */
 .arrowSvgContainer {
     position: absolute;
-    /* transform: translate(414px, -114px); */
-    left: 50%;
-    transform: translateX(-12%) translateY(-116px);
-    opacity: 0.6;
+    /* top: 110%; */
+    top: 100%;
+    transform: translateY(46px);
+
+    opacity: 0.8;
     z-index: -99;
 
     overflow: visible;
@@ -307,7 +308,7 @@ swiper-slide {
     transform:scale(0.8);  
     fill: none; 
     stroke: #ef3b2d; 
-    stroke-width: 2; 
+    stroke-width: 3; 
     stroke-linecap: round; 
     stroke-linejoin:  miter; 
     stroke-miterlimit: 4;
@@ -318,7 +319,7 @@ swiper-slide {
 .hobbiesSvgContainer {
     position: absolute;
     transform: translate(160px, -66px);
-    opacity: 0.6;
+    opacity: 0.7;
     z-index: -99;
 
     overflow: visible;
@@ -341,7 +342,7 @@ swiper-slide {
 .outilsSvgContainer {
     position: absolute;
     transform: translate(115px, -87px);
-    opacity: 0.6;
+    opacity: 0.7;
     z-index: -99;
 
     overflow: visible;
@@ -364,7 +365,7 @@ swiper-slide {
 .langsSvgContainer {
     position: absolute;
     transform: translate(137px, -82px) scale(1.1);
-    opacity: 0.6;
+    opacity: 0.7;
     z-index: -99;
 
     overflow: visible;
@@ -1647,6 +1648,8 @@ li::before {
 }
 
 .description {
+    overflow: hidden;
+    position: relative;
     font-size: 80%;
     color: white;
     z-index: 100;
@@ -5141,13 +5144,13 @@ li.veilleLigneAjout::before {
 
 .projectLinksDiv {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 6px;
     float: right;
     right: 10px;
     position: relative;
 
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .githubProjectLink {
@@ -5158,7 +5161,7 @@ li.veilleLigneAjout::before {
     position: relative;
     top: 5px;
 
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 .githubProjectLink:hover {
     background-color: #ef3b2d;
@@ -5176,12 +5179,13 @@ li.veilleLigneAjout::before {
     color:#ef3b2d;
 }
 
+
 .linkWebsite {
     gap: 13px;
     display: flex;
     align-items: baseline;
 
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .linkGithub {
@@ -5189,7 +5193,7 @@ li.veilleLigneAjout::before {
     align-items: baseline;
     gap: 8px;
 
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 #underlineCV {

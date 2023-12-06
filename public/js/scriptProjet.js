@@ -1,9 +1,9 @@
 
 
+window.onload = function() {
 
-
-    // Observer Arrow Projects 
-    const observerArrow = new IntersectionObserver(entries => {
+    // Observer checkbox <Compétences/> CV
+    const observerCompetences = new IntersectionObserver(entries => {
         // Loop over the entries
         entries.forEach(entry => {
             // If the element is visible
@@ -12,15 +12,15 @@
                 // document.getElementById("competences").classList.add("competencesAnim")
 
                 // Draw du checkbox <Compétences/> CV
-                var arrowPathes = document.querySelectorAll('.arrowSvg path');
-                arrowPathes.forEach(element => {
-                    var lengthArrow = element.getTotalLength();
+                var skillsPathes = document.querySelectorAll('.arrowsSvg path');
+                skillsPathes.forEach(element => {
+                    var lengthRec2 = element.getTotalLength();
                     element.style.transition = element.style.WebkitTransition = 'none';
-                    element.style.strokeDasharray = lengthArrow + ' ' + lengthArrow;
-                    element.style.strokeDashoffset = lengthArrow;
+                    element.style.strokeDasharray = lengthRec2 + ' ' + lengthRec2;
+                    element.style.strokeDashoffset = lengthRec2;
                     element.getBoundingClientRect();
                     element.style.transition = element.style.WebkitTransition =
-                    'stroke-dashoffset 2.5s 0.5s ease-in-out';
+                    'stroke-dashoffset 1s 0s ease-in-out';
                     element.style.strokeDashoffset = '0';    
                 });
 
@@ -31,9 +31,10 @@
             }
         })
     })
-    observerArrow.observe(document.querySelector('#projectSlide1'));
-    
+    observerCompetences.observe(document.querySelector('#description'));
 
+    
+}
 
 
 
