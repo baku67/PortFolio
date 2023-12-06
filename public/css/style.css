@@ -1653,7 +1653,7 @@ li::before {
 
     color: white;
     background-color: #151a2373;
-    padding: 13px 5px 5px 5px;
+    padding: 13px 5px 23px 5px;
     border-radius: 11px;
     border: 1px solid #8080802e;
     height: fit-content;
@@ -5137,6 +5137,59 @@ li.veilleLigneAjout::before {
 }
 #dlCv:hover {
     background-color: #a62a21;
+}
+
+.projectLinksDiv {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 6px;
+    float: right;
+    right: 10px;
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.githubProjectLink {
+    border: 1px solid #ef3a2de1;
+    padding: 2px 10px;
+    font-size: 0.95em;
+    border-radius: 4px;
+    position: relative;
+    top: 5px;
+
+    transition: 0.3s ease;
+}
+.githubProjectLink:hover {
+    background-color: #ef3b2d;
+    color: #151a23;
+}
+
+.githubProjectLink:hover .githubLinkIcon {
+    color: #151a23;
+
+}
+
+.githubLinkIcon {
+    position: relative;
+    top: 1px;
+    color:#ef3b2d;
+}
+
+.linkWebsite {
+    gap: 13px;
+    display: flex;
+    align-items: baseline;
+
+    transition: 0.3s ease;
+}
+
+.linkGithub {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+
+    transition: 0.3s ease;
 }
 
 #underlineCV {

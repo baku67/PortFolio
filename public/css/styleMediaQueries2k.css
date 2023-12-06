@@ -78,8 +78,12 @@
 
     .description {
         font-size: 90%;
-        padding: 13px 23px 2px 23px;
+        padding: 13px 23px 25px 23px;
 
+    }
+
+    .projectLinksDiv {
+        gap: 8px;
     }
 
     #underlineCV {

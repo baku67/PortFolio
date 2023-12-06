@@ -136,7 +136,9 @@
                                     </div>
 
                                     <div class="description">
+
                                         <p class="projetDescriptionText">Site communautaire "Gaming"</p> 
+
                                         <ul class="projetSkillsList">
                                             <li>HTML/CSS</li>
                                             <li>Javascript</li>
@@ -144,6 +146,7 @@
                                             <li>Doctrine / DQL</li>
                                             <li>Twig</li>
                                         </ul>
+
                                         <ul class="projetFuncList">
                                             <li>Autentification</li>
                                             <li>Système de modération (validation des public, censure, signalements)</li>
@@ -155,6 +158,19 @@
                                             <li>Jeux favoris -> page d'accueil filtrée</li>
                                             <li>Page de jeux personalisées</li>
                                         </ul>
+
+                                        <div class="projectLinksDiv">
+                                            <a href="https://github.com/baku67/ELAN_Projet_SquadForge" target="_blank" class="githubProjectLink linkGithub">
+                                                <i class="fa-brands fa-github githubLinkIcon"></i>
+                                                <span>Projet<span>
+                                            </a>
+
+                                            <a href="https://squadforge.ovh" target="_blank" class="githubProjectLink linkWebsite" >
+                                                <i class="fa-solid fa-globe githubLinkIcon"></i>
+                                                <span>Site<span>
+                                            </a>
+                                        </div>
+
                                     </div>
 
                                 </div>
