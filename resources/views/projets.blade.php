@@ -102,12 +102,6 @@
 
                         <swiper-slide id="projectSlide1">
 
-                            <h3 class="projetNbr">Projet 1</h3>
-                            <div class="projectTitle">
-                                <img src="img/projects/squadforge.png" class="projectSlideLogo" />
-                                <p class="projetSlideTitle" style="font-family: 'Julius Sans One', sans-serif;">SquadForge</p>
-                            </div>
-
                             <div id="projectContainer">
 
                                 <div class="gridProjetHeaderContainer">
@@ -136,6 +130,12 @@
                                     </div>
 
                                     <div class="description">
+
+                                        <h3 class="projetNbr">Projet 1</h3>
+                                        <div class="projectTitle">
+                                            <img src="img/projects/squadforge.png" class="projectSlideLogo" />
+                                            <p class="projetSlideTitle" style="font-family: 'Julius Sans One', sans-serif;">SquadForge</p>
+                                        </div>
 
                                         <p class="projetDescriptionText">Site communautaire "Gaming"</p> 
 
@@ -181,12 +181,6 @@
 
                         <swiper-slide>
 
-                            <h3 class="projetNbr">Projet 2</h3>
-                            <div class="projectTitle">
-                                <img src="img/projects/blackjackjo.png" class="projectSlideLogo" />
-                                <p class="projetSlideTitle" style="font-family:'Kavoon', serif;">BlackJack Jo'</p>
-                            </div>
-
                             <div id="projectContainer">
 
                                 <div class="gridProjetHeaderContainer">
@@ -205,7 +199,15 @@
                                     </div>
 
                                     <div class="description">
+
+                                        <h3 class="projetNbr">Projet 2</h3>
+                                        <div class="projectTitle">
+                                            <img src="img/projects/blackjackjo.png" class="projectSlideLogo" />
+                                            <p class="projetSlideTitle" style="font-family:'Kavoon', serif;">BlackJack Jo'</p>
+                                        </div>
+
                                         <p class="projetDescriptionText">Application de BlackJack</p> 
+
                                         <ul class="projetSkillsList">
                                             <li>HTML</li>
                                             <li>CSS</li>
@@ -213,6 +215,7 @@
                                             <li>PHP</li>
                                             <li>SQL/BDD</li>
                                         </ul>
+
                                         <ul class="projetFuncList">
                                             <li>Système de compte (+Crédits quotidiens)</li>
                                             <li>Système de progression (expérience/niveaux)</li>
@@ -224,6 +227,19 @@
                                             <li>Mode Light/Dark</li>
                                             <li>Mode turbo</li>
                                         </ul>
+
+                                        <div class="projectLinksDiv">
+                                            <a href="https://github.com/baku67/BLACKJACKJO-projet" target="_blank" class="githubProjectLink linkGithub">
+                                                <i class="fa-brands fa-github githubLinkIcon"></i>
+                                                <span>Projet<span>
+                                            </a>
+
+                                            <a href="https://www.blackjackjo.com" target="_blank" class="githubProjectLink linkWebsite" >
+                                                <i class="fa-solid fa-globe githubLinkIcon"></i>
+                                                <span>Site<span>
+                                            </a>
+                                        </div>
+
                                     </div>
 
                                 </div>
@@ -233,12 +249,6 @@
 
 
                         <swiper-slide>
-
-                            <h3 class="projetNbr">Projet 3</h3>
-                            <div class="projectTitle">
-                                <img src="img/projects/terrine.png" class="projectSlideLogo" style="sans-serif; padding-right: 7px; width: 69px;" />
-                                <p class="projetSlideTitle" style="font-family: 'Righteous'">Terrine</p>
-                            </div>
 
                             <div id="projectContainer2">
 
@@ -257,7 +267,15 @@
                                     </div>
 
                                     <div class="description">
+
+                                        <h3 class="projetNbr">Projet 3</h3>
+                                        <div class="projectTitle">
+                                            <img src="img/projects/terrine.png" class="projectSlideLogo" style="sans-serif; padding-right: 7px; width: 69px;" />
+                                            <p class="projetSlideTitle" style="font-family: 'Righteous'">Terrine</p>
+                                        </div>
+
                                         <p class="projetDescriptionText">Site de gestion de plateforme cinématographique</p> 
+
                                         <ul class="projetSkillsList">
                                             <li>HTML</li>
                                             <li>CSS</li>
@@ -266,11 +284,25 @@
                                             <li>SQL</li>
                                             <li>MVC</li>
                                         </ul>
+
                                         <ul class="projetFuncList">
                                             <li>Pages de listing</li>
                                             <li>Pages détaillées et liens/relations</li>
                                             <li>Formulaires d'ajouts d'éléments</li>
                                         </ul>
+
+                                        <div class="projectLinksDiv">
+                                            <a href="https://github.com/baku67/ELAN_MVC_cinema" target="_blank" class="githubProjectLink linkGithub">
+                                                <i class="fa-brands fa-github githubLinkIcon"></i>
+                                                <span>Projet<span>
+                                            </a>
+
+                                            <a href="https://eneffet.basilek.ovh" target="_blank" class="githubProjectLink linkWebsite" >
+                                                <i class="fa-solid fa-globe githubLinkIcon"></i>
+                                                <span>Site<span>
+                                            </a>
+                                        </div>
+
                                     </div>
 
                                 </div>
