@@ -53,7 +53,7 @@
             <div style="width:100%;">
                 <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
                 <span  id="lineBreakMobile"></br></span>
-                <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> En formation</span><span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span></span></h2>
+                <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> #OpenToWork</span><span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span></span></h2>
             </div>
 
             <!-- NavBarre -->
@@ -87,7 +87,7 @@
 
             <div>
                 <h2 id="titleCv" class="cvTitle">
-                    <a href="CV.pdf" download="CV_basileKuntz" id="dlCv">
+                    <a href="CV_basileKuntz_2024.pdf" download="CV_basileKuntz" id="dlCv">
                         <i class="fa-solid fa-file-arrow-down"></i>Télécharger en PDF
                     </a><span id="underlineCV">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></span>
                 </h2>

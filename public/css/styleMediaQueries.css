@@ -22,6 +22,11 @@
     }
 
 
+    .titleLoisirs {
+        padding: 6px 0px 10px 3% !important;
+    }
+
+
     .swipeSymbol {
         position: fixed;
         right: 5%;
