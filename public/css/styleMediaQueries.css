@@ -5,10 +5,40 @@
     .containerToggleLight {
         right: 0px;
         top: 12px;
+
+        gap: 11px;
     }
     .slider {
         background-color: #cccccc46;
     }
+
+    .switch {
+        width: 46px;
+        height: 22px;
+    }
+
+    .slider:before { 
+        height: 15px;
+        width: 15px;
+    }
+
+    #currentThemeIcon {
+        font-size: 1.4em;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(23px);
+    }
+
+
+
+
+
+
+
+
+
+
 
     * {
     -webkit-tap-highlight-color: transparent;

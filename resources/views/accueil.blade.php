@@ -73,7 +73,7 @@
 
             <!-- Toggle light-theme -->
             <div class="containerToggleLight">
-                <i id="currentThemeIcon" class="fa-solid fa-moon"></i>
+                <i id="currentThemeIcon" class="currentThemeIcon fa-solid fa-moon" data-theme="dark"></i>
                 <label class="switch">
                     <input type="checkbox" id="themeToggle">
                     <span class="slider"></span>
@@ -86,14 +86,17 @@
                     const body = document.body;
 
                     themeToggle.addEventListener('change', function () {
+                        console.log(themeToggle.checked);
                         if (themeToggle.checked) {
                             body.setAttribute('data-theme', 'light');
-                            document.getElementById('currentThemeIcon').className.remove('fa-sun');
-                            document.getElementById('currentThemeIcon').className.add('fa-moon');
+                            document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
+                            document.getElementById('currentThemeIcon').classList.remove('fa-moon');
+                            document.getElementById('currentThemeIcon').classList.add('fa-sun');
                         } else {
                             body.setAttribute('data-theme', 'dark');
-                            document.getElementById('currentThemeIcon').className.remove('fa-moon');
-                            document.getElementById('currentThemeIcon').className.add('fa-sun');
+                            document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
+                            document.getElementById('currentThemeIcon').classList.remove('fa-sun');
+                            document.getElementById('currentThemeIcon').classList.add('fa-moon');
                         }
                     });
                 });
