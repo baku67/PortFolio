@@ -72,49 +72,49 @@
 
 
             <!-- Toggle light-theme -->
-            <div class="containerToggleLight">
-                <i id="currentThemeIcon" class="currentThemeIcon fa-solid fa-moon" data-theme="dark"></i>
-                <label class="switch">
-                    <input type="checkbox" id="themeToggle">
-                    <span class="slider"></span>
-                </label>
-            </div>
+                <!-- <div class="containerToggleLight">
+                    <i id="currentThemeIcon" class="currentThemeIcon fa-solid fa-moon" data-theme="dark"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div> -->
 
-            <script type="text/javascript">
-                document.addEventListener('DOMContentLoaded', function () {
-                    const themeToggle = document.getElementById('themeToggle');
-                    const body = document.body;
+                <!-- <script type="text/javascript">
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const themeToggle = document.getElementById('themeToggle');
+                        const body = document.body;
 
-                    themeToggle.addEventListener('change', function () {
+                        themeToggle.addEventListener('change', function () {
 
-                        if (themeToggle.checked) {
+                            if (themeToggle.checked) {
 
-                            body.setAttribute('data-theme', 'light');
-                            document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
-                            document.getElementById('pageTitle').setAttribute('data-theme', 'light');
-                            document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
-                            document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
-                            document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
+                                body.setAttribute('data-theme', 'light');
+                                document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
+                                document.getElementById('pageTitle').setAttribute('data-theme', 'light');
+                                document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
+                                document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
+                                document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
 
-                            document.getElementById('currentThemeIcon').classList.remove('fa-moon');
-                            document.getElementById('currentThemeIcon').classList.add('fa-sun');
+                                document.getElementById('currentThemeIcon').classList.remove('fa-moon');
+                                document.getElementById('currentThemeIcon').classList.add('fa-sun');
 
-                        } else {
+                            } else {
 
-                            body.setAttribute('data-theme', 'dark');
-                            document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
-                            document.getElementById('pageTitle').setAttribute('data-theme', 'dark');
-                            document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'dark');
-                            document.getElementById('menuLigneCv').setAttribute('data-theme', 'dark');
-                            document.getElementById('headerAccueil').setAttribute('data-theme', 'dark');
+                                body.setAttribute('data-theme', 'dark');
+                                document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
+                                document.getElementById('pageTitle').setAttribute('data-theme', 'dark');
+                                document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'dark');
+                                document.getElementById('menuLigneCv').setAttribute('data-theme', 'dark');
+                                document.getElementById('headerAccueil').setAttribute('data-theme', 'dark');
 
 
-                            document.getElementById('currentThemeIcon').classList.remove('fa-sun');
-                            document.getElementById('currentThemeIcon').classList.add('fa-moon');
-                        }
+                                document.getElementById('currentThemeIcon').classList.remove('fa-sun');
+                                document.getElementById('currentThemeIcon').classList.add('fa-moon');
+                            }
+                        });
                     });
-                });
-            </script>
+                </script> -->
             <!-- Fin toggle light-theme -->
         </header>
 
