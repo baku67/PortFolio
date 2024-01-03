@@ -1,5 +1,15 @@
 @media only screen and (max-width: 600px) {
 
+
+
+    .containerToggleLight {
+        right: 0px;
+        top: 12px;
+    }
+    .slider {
+        background-color: #cccccc46;
+    }
+
     * {
     -webkit-tap-highlight-color: transparent;
     }

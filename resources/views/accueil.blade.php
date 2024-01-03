@@ -39,13 +39,13 @@
 
 
 
-    <body id="body">
+    <body id="body" data-theme="dark">
 
         <!-- Raie ajoutée en JS interval -->
         <!-- <div id="raieAccueil1"></div> -->
 
         <!-- Header -->
-        <header>
+        <header style="position:relative;">
             <div style="width:100%;">
                 <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
                 <span  id="lineBreakMobile"></br></span>
@@ -69,6 +69,36 @@
 
             <!-- Trait séparateur -->
             <div id="traitHeader"></div>
+
+
+            <!-- Toggle light-theme -->
+            <div class="containerToggleLight">
+                <i id="currentThemeIcon" class="fa-solid fa-moon"></i>
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <script type="text/javascript">
+                document.addEventListener('DOMContentLoaded', function () {
+                    const themeToggle = document.getElementById('themeToggle');
+                    const body = document.body;
+
+                    themeToggle.addEventListener('change', function () {
+                        if (themeToggle.checked) {
+                            body.setAttribute('data-theme', 'light');
+                            document.getElementById('currentThemeIcon').className.remove('fa-sun');
+                            document.getElementById('currentThemeIcon').className.add('fa-moon');
+                        } else {
+                            body.setAttribute('data-theme', 'dark');
+                            document.getElementById('currentThemeIcon').className.remove('fa-moon');
+                            document.getElementById('currentThemeIcon').className.add('fa-sun');
+                        }
+                    });
+                });
+            </script>
+            <!-- Fin toggle light-theme -->
         </header>
 
 

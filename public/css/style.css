@@ -1,8 +1,76 @@
-* {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-  }
+:root {
+    /* Body Background gradient anims */
+    --body-BgColor-dark: linear-gradient(56deg, rgba(23,25,35,1) 0%, rgba(29,36,47,1) 41%, rgba(34,46,58,1) 50%, rgba(23,25,35,0.9943339884782038) 75%, rgba(23,25,35,0.9943339884782038) 99%);
+    --body-BgColor-light: linear-gradient(56deg, rgb(246 247 249) 0%, rgb(242 244 247) 41%, rgb(244 246 247) 50%, rgb(239 239 239 / 99%) 75%, rgb(255 255 255 / 99%) 99%);
+
+    --body-filterDropShadow-dark: drop-shadow(2px 4px 6px black);
+    --body-filterDropShadow-light: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+}
+
+
+
+.containerToggleLight {
+    position: absolute;
+    right: 5px;
+    top: 116%;
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: 0px 12px;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    /* width: 60px;
+    height: 34px; */
+    width: 52px;
+    height: 27px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc8f;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    /* height: 26px;
+    width: 26px; */
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #1b202b;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
 
 strong {
     color: #ef3b2d;
@@ -41,6 +109,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
+* {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
   -ms-overflow-style: none;  /* IE and Edge */
@@ -48,14 +123,18 @@ body {
 }
 
 
+body[data-theme="light"] {
+    background: var(--body-BgColor-light);
+    /* color: var(--text-color-dark); */
+}
+
+
 body {
     
-    /* filter: drop-shadow(2px 4px 6px black); */
-
     position: static;
     font-family: 'Nunito', sans-serif;
 
-    background: linear-gradient(56deg, rgba(23,25,35,1) 0%, rgba(29,36,47,1) 41%, rgba(34,46,58,1) 50%, rgba(23,25,35,0.9943339884782038) 75%, rgba(23,25,35,0.9943339884782038) 99%);
+    background: var(--body-BgColor-dark);
     /* background: linear-gradient(56deg, rgba(23,25,35,1) 0%, rgba(29,36,47,1) 41%, rgba(54, 139, 150, 0.6) 50%, rgba(23,25,35,0.9943339884782038) 75%, rgba(23,25,35,0.9943339884782038) 99%); */
 
     background-size: 800% 800%;
@@ -63,17 +142,20 @@ body {
     /* opacity: 0; */
     animation: gradientAnimProjet 2s ease 0s normal forwards running;
 
+    transition: background-color 0.5s, color 0.5s;
+
     /* Pour footer */
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
 body:not(#flashPointCache) {
-    /* filter: drop-shadow(2px 4px 6px black) brightness(0); */
-    filter: drop-shadow(2px 4px 6px black);
-
-
+    filter: var(--body-filterDropShadow-dark);
 }
+body:not(#flashPointCache)[data-theme="light"] {
+    filter: var(--body-filterDropShadow-light);
+}
+
 @keyframes gradientAnimProjet {
     from {
         background-position: 75% 35%;
@@ -205,7 +287,7 @@ swiper-slide {
 
 /* Container du lightbulb (relativ) et des calques (absolute) */
 .lightBulbWrapperDiv {
-    filter:drop-shadow(18px 5px 4px black);
+    filter:drop-shadow(8px 5px 4px black);
     opacity: 0;
 
     height: 250px;
