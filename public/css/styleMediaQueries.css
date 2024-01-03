@@ -23,7 +23,8 @@
     }
 
     #currentThemeIcon {
-        font-size: 1.4em;
+        font-size: 1.27em;
+        align-self: auto;
     }
 
     input:checked + .slider:before {
@@ -63,7 +64,7 @@
 
 
     .titleLoisirs {
-        padding: 6px 0px 10px 3% !important;
+        padding: 2px 0px 10px 3% !important;
     }
 
 
@@ -548,7 +549,7 @@
 
     .testH1 {
         font-size: 2em;
-        padding: 6px 0px 0px 3%;
+        padding: 2px 0px 0px 3%;
 
         /* Danger */
         margin-bottom: -8px;
