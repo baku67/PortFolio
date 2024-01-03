@@ -4,9 +4,9 @@
 
     .containerToggleLight {
         right: 0px;
-        top: 12px;
+        top: 19px;
 
-        gap: 11px;
+        gap: 10px;
     }
     .slider {
         background-color: #cccccc46;
@@ -23,7 +23,7 @@
     }
 
     #currentThemeIcon {
-        font-size: 1.27em;
+        font-size: 1.1em;
         align-self: auto;
     }
 
