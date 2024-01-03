@@ -8,6 +8,8 @@
 
     --white: white;
     --black: #181c26;
+
+    --background-headerColor: #0f2737;
 }
 
 
@@ -1325,6 +1327,9 @@ li::before {
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
 }
+.pageTitle[data-theme="light"] {
+    color: var(--black);
+}
 
 #NavBarContainer {
     /*  Au dessus de la galerie */
@@ -2301,9 +2306,18 @@ li::before {
 
 #menuLigneCv {
     font-size: 1.1em;
+    color:#E7E8F2;
 
     margin-block-end: 0em !important;
 }
+#menuLigneCv[data-theme="light"] { 
+    /* color: var(--black); */
+}
+
+#headerAccueil[data-theme="light"] {
+    background-color: var(--background-headerColor);
+}
+
 
 
 #portfolioTitle {
@@ -2320,6 +2334,11 @@ li::before {
     
     font-size: 1.2em;
 }
+#paragrapheAccueil[data-theme="light"] {
+    color: var(--black);
+}
+
+
 
 .imgAccueil { 
     opacity: 0;

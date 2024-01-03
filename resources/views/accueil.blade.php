@@ -45,7 +45,7 @@
         <!-- <div id="raieAccueil1"></div> -->
 
         <!-- Header -->
-        <header style="position:relative;">
+        <header id="headerAccueil" style="position:relative;" data-theme="dark">
             <div style="width:100%;">
                 <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
                 <span  id="lineBreakMobile"></br></span>
@@ -54,7 +54,7 @@
 
             <!-- NavBarre -->
             <div id="NavBarContainer">
-                <p id="menuLigneCv" style="color:#E7E8F2;">
+                <p id="menuLigneCv" data-theme="dark">
                     <a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> 
                     &nbsp; 
                     <a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> 
@@ -86,15 +86,29 @@
                     const body = document.body;
 
                     themeToggle.addEventListener('change', function () {
-                        console.log(themeToggle.checked);
+
                         if (themeToggle.checked) {
+
                             body.setAttribute('data-theme', 'light');
                             document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
+                            document.getElementById('pageTitle').setAttribute('data-theme', 'light');
+                            document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
+                            document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
+                            document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
+
                             document.getElementById('currentThemeIcon').classList.remove('fa-moon');
                             document.getElementById('currentThemeIcon').classList.add('fa-sun');
+
                         } else {
+
                             body.setAttribute('data-theme', 'dark');
                             document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
+                            document.getElementById('pageTitle').setAttribute('data-theme', 'dark');
+                            document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'dark');
+                            document.getElementById('menuLigneCv').setAttribute('data-theme', 'dark');
+                            document.getElementById('headerAccueil').setAttribute('data-theme', 'dark');
+
+
                             document.getElementById('currentThemeIcon').classList.remove('fa-sun');
                             document.getElementById('currentThemeIcon').classList.add('fa-moon');
                         }
@@ -112,7 +126,7 @@
                         <img src="img/githubLogo.png" class="githubLogo">
                         <span class="githubAccueil">Github</span>
                     </a>
-                <h2 class="pageTitle">Bienvenue sur mon portfolio</h2>
+                <h2 id="pageTitle" class="pageTitle" data-theme="dark">Bienvenue sur mon portfolio</h2>
             </div>
             </br>
 
@@ -133,7 +147,7 @@
 
                 </div>
 
-                <p class="paragrapheAccueil" >
+                <p id="paragrapheAccueil" class="paragrapheAccueil" >
                     <!-- <span style="margin-left: 5px; font-size: 130%;">Bienvenue, </span>
                     <br><br> -->
                     &nbsp;&nbsp;&nbsp;&nbsp;<span class="accueilWord">Je</span> <span class="accueilWord">suis</span> <span class="accueilWord">Basile</span> <span class="accueilWord">KUNTZ,</span> <span class="accueilWord">et</span> <span class="accueilWord">je</span> <span class="accueilWord">viens</span> <span class="accueilWord">d'obtenir</span> <span class="accueilWord">mon</span> <span class="accueilWord">titre</span> <span class="accueilWord">de</span> <strong><span class="accueilWord">développeur</span> <span class="accueilWord">web</span> <span class="accueilWord">et</span> <span class="accueilWord">web</span> <span class="accueilWord">mobile</span></strong> <span class="accueilWord">au</span> <span class="accueilWord">centre</span> <span class="accueilWord">Élan</span> <span class="accueilWord">Formation</span> <span class="accueilWord">à</span> <span class="accueilWord">Strasbourg.</span> <span class="accueilWord">Je</span> <span class="accueilWord">cherche</span> <span class="accueilWord">actuellement</span> <span class="accueilWord">à</span> <span class="accueilWord">mettre</span> <span class="accueilWord">à</span> <span class="accueilWord">profit</span> <span class="accueilWord">mes</span> <span class="accueilWord">compétences</span> <span class="accueilWord">et</span> <span class="accueilWord">à</span> <span class="accueilWord">m'améliorer</span> <span class="accueilWord">dans</span> <span class="accueilWord">le</span> <span class="accueilWord">cadre</span> <span class="accueilWord">d'une</span> <strong><span class="accueilWord">alternance</span> <span class="accueilWord">en</span> <span class="accueilWord">licence</span> <span class="accueilWord">CDA</span></strong><span class="accueilWord">.</span>
