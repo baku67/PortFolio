@@ -53,7 +53,7 @@
     <body>
 
         <!-- Header  -->
-        <div class="darkedHeader">
+        <div class="darkedHeader" style="position:relative";>
                 
             <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
             <div style="width:100%;">

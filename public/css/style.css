@@ -5206,7 +5206,8 @@ li.veilleLigneAjout::before {
 
 #changeQuotation{
     font-family: 'Nunito', sans-serif;
-    display: flex;
+    /* display: flex; */
+    display: none;
     margin: 10px;
     font-size: 2.7em;
     color: #ef3b2d;
