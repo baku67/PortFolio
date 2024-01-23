@@ -228,9 +228,13 @@
                             <img class="imgCompetences exeptionJs" src="img/competences/javascript.png">
                             <p class="textCompetences">JavaScript</p>
                         </div>
-                        <div class="carreCompetences grid-php">
+                        <div class="carreCompetences grid-php" style="position:relative;">
                             <img class="imgCompetences" src="img/competences/php.png">
                             <p class="textCompetences">PHP</p>
+                            <!-- Symfony shape bottom right -->
+                            <div class="symfonyShapeDiv"> 
+                                <span class="symfonyShapeTxt">Symfony</span>
+                            </div>
                         </div>
                         <div class="carreCompetences grid-bdd">
                             <img class="imgCompetences" src="img/competences/sql.png">
