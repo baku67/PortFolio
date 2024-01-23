@@ -127,12 +127,12 @@
                     <ul>
                         <li>2023: Formation <span class="highlightSpan">"Développeur web et web mobile"</span> à Élan Formation Strasbourg (validé)
                             <br>
-                            <i class="fa-solid fa-arrow-right" style="margin-right:4px;"></i> <span class="highlightSpan">Stage</span> chez Hoplunch (Oberhausbergen)
+                            <i class="fa-solid fa-arrow-right" style="margin-right:4px; color:#ef3b2d;"></i> <span class="highlightSpan secondaryColorVif">Stage</span> chez Hoplunch (Oberhausbergen)
                         </li>
                         <div class="separateurListe light"></div>
-                        <li>2020-2022: <span class="highlightSpan">BTS SIO</span> - Option <span class="highlightSpan">SLAM</span> (<span class="highlightSpan">S</span>olutions <span class="highlightSpan">L</span>ogicielles et <span class="highlightSpan">A</span>pplications <span class="highlightSpan">M</span>étiers) <br>CCI campus Illkirch
+                        <li>2020-2022: <span class="highlightSpan">BTS SIO</span> - Option <span class="highlightSpan">SLAM</span> (Solutions Logicielles et Applications Métiers) <br>CCI campus Illkirch
                             </br>
-                            <i class="fa-solid fa-arrow-right" style="margin-right:4px;"></i> <span class="highlightSpan">Alternance</span> chez Europe Tech Group (Haguenau)
+                            <i class="fa-solid fa-arrow-right" style="margin-right:4px; color:#ef3b2d;"></i> <span class="highlightSpan secondaryColorVif">Alternance</span> chez Europe Tech Group (Haguenau)
                         </li>
                         <div class="separateurListe light"></div>
                         <li>2019-2020: <span class="highlightSpan">Service Civique</span> (Inclusion numérique)</li>
