@@ -1112,15 +1112,17 @@ li::before {
 	background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%);
 }
 .separateurListe2 {
-	opacity: 0.3;
+	opacity: 0.5;
 	width: 100%;
 	margin: 0 auto;
     margin-bottom: 8px;
     margin-top: 5px;
-
 	height: 1px;
+
 	background: #171923;
-	background: -webkit-linear-gradient(left, #ef3b2d 0%, #171923 100%);
+	/* background: -webkit-linear-gradient(left, #ef3b2d 0%, #171923 100%); */
+
+    background: -webkit-linear-gradient(left, #171923 0%, var(--secondaryColorVeryMat) 50%, #171923 100%);
 }
 .separateurListe.light {
     opacity: 1;
@@ -1128,7 +1130,9 @@ li::before {
     text-align: center;
 
     background: #ef3b2d;
-    background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%);
+    /* background: -webkit-linear-gradient(left, #171923 0%, #ef3b2d 50%, #171923 100%); */
+
+    background: -webkit-linear-gradient(left, #171923 0%, var(--secondaryColorVeryMat) 50%, #171923 100%);
 }
 
 
@@ -1223,6 +1227,7 @@ li::before {
 .outils {
     position: relative;
     opacity: 0;
+    
 }
 .outilsAnim {
     animation-name: fadeInFormation;
@@ -1233,6 +1238,7 @@ li::before {
 .langues {
     position: relative;
     opacity: 0;
+    margin: 0 auto;
 }
 .langsAnim {
     animation-name: fadeInHobbys;
@@ -1354,7 +1360,7 @@ li::before {
 }
 
 .pageSectionTitle {
-    font-size: 1.2em;
+    font-size: 1.38em;
     font-weight: 600;
     margin-bottom: 35px;
 }

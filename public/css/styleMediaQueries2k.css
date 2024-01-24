@@ -5,6 +5,9 @@
     }
 
 
+    .outils {
+        margin: 0 auto;
+    }
 
     #dlCv {
         font-size: 0.62em;
@@ -12,6 +15,10 @@
         padding: 5px 10px;
         color: #08090c;
 
+    }
+
+    .pageSectionTitle {
+        font-size: 1.5em;
     }
 
     .skillsSvgContainer {

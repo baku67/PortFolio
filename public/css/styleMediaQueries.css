@@ -445,6 +445,10 @@
         /* bottom: 300px; */
     }
 
+    .pageSectionTitle {
+        font-size: 1.2em;
+    }
+
     .paragrapheDescriptionProjet {
         /* margin-block-start: 1em;
         margin-block-end: 1em; */
