@@ -594,11 +594,17 @@
     }
 
     .selected {
-        color: #171923;
+        
         font-weight: bold;
-        text-decoration-color: #171923;
+
+        /* text-decoration-color: #171923;
+        color: #171923;
         text-underline-offset: 1px;
-        text-decoration-thickness: 5px;
+        text-decoration-thickness: 5px; */
+        text-decoration-color: var(--secondaryColor);
+        color: #00ffd5;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 2px;
     }
 
     #menuLigne {

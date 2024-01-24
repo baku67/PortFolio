@@ -13,6 +13,7 @@
 
     --secondaryColor: #19ddbc;
     --secondaryColorMat: #26ceb2;
+    --secondaryColorVeryMat: #42ab9a;
 }
 
 
@@ -1315,17 +1316,25 @@ li::before {
 }
 
 
+.downloadCvIcon {
+    font-size: 1.3em;
+    position: relative;
+    margin-right: 9px;
+    top: 1px;
+    margin-left: 3px;
+}
 
 
 
 .selected {
     font-weight: 900;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
 
     color: #ef3b2d;
     text-decoration-line: underline;
     text-underline-position: under;
-    text-decoration-color: #ef3b2d;
+    /* text-decoration-color: #ef3b2d; */
+    text-decoration-color: var(--secondaryColorMat);
 }
 
 .highlightSpan {
@@ -1373,12 +1382,13 @@ li::before {
 }
 
 .menuButton:hover {
+    color: var(--secondaryColor);
     animation-name: hoverMenuButton;
-    animation-duration: 1.5s;
+    animation-duration: 1.3s;
 }
 @keyframes hoverMenuButton {
     from {
-        opacity: 0.2;
+        opacity: 0.4;
     }
     to {
         opacity: 1;
@@ -1725,7 +1735,7 @@ li::before {
     margin: 60px auto 60px auto; 
     border: 2px solid #ef3b2d; 
     padding: 17px 6px 32px 6px; 
-    border-radius: 7px;
+    border-radius: 13px;
     
     width: 334px;
     height: 745px;
@@ -1792,8 +1802,13 @@ li::before {
     background-color: #151a2373;
     padding: 13px 5px 23px 5px;
     border-radius: 11px;
-    border: 1px solid #8080802e;
+    /* border: 1px solid #8080802e; */
+    border: 1px solid #02ffd66b;
     height: fit-content;
+}
+
+.mainSkill {
+    border: 2px solid var(--secondaryColor) !important;
 }
 
 
@@ -1808,10 +1823,10 @@ li::before {
 }
 .projetSkillsList li {
     list-style-type: none;
-    color: #000000;
+    color: #efe8e8;
     font-weight: 600;
     margin: 5px 3px;
-    padding: 3px 10px;
+    padding: 3px 10px 1px 10px;
     border: 1px solid #ef3b2d;
     border-radius: 100px;
     background-color: #ef3b2d;
@@ -5291,7 +5306,8 @@ li.veilleLigneAjout::before {
     transition: all 0.4s;
 }
 #dlCv:hover {
-    background-color: #a62a21;
+    background-color: #d54030;
+    color: #ebebeb;
 }
 
 .projectLinksDiv {
@@ -5306,17 +5322,18 @@ li.veilleLigneAjout::before {
 }
 
 .githubProjectLink {
-    border: 1px solid #ef3a2de1;
+    border: 1px solid var(--secondaryColorVeryMat);
     padding: 2px 10px;
     font-size: 0.95em;
     border-radius: 4px;
     position: relative;
     top: 5px;
+    background-color: #00ffd51a;
 
     transition: 0.4s ease;
 }
 .githubProjectLink:hover {
-    background-color: #ef3b2d;
+    background-color: var(--secondaryColor);
     color: #151a23;
 }
 
@@ -5328,7 +5345,7 @@ li.veilleLigneAjout::before {
 .githubLinkIcon {
     position: relative;
     top: 1px;
-    color:#ef3b2d;
+    color:var(--secondaryColor);
 }
 
 
@@ -5344,6 +5361,8 @@ li.veilleLigneAjout::before {
     display: inline-flex;
     align-items: baseline;
     gap: 8px;
+
+    /* background-color: #00ffd51a; */
 
     transition: 0.4s ease;
 }

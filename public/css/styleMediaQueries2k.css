@@ -7,7 +7,7 @@
 
 
     #dlCv {
-        font-size: 0.65em;
+        font-size: 0.62em;
         background-color: var(--secondaryColorMat);
         padding: 5px 10px;
         color: #08090c;
@@ -87,9 +87,14 @@
     }
 
     .description {
+        border: 2px solid #02ffd66b;
         font-size: 90%;
         padding: 13px 23px 25px 23px;
 
+    }
+
+    .mainSkill {
+        border: 2px solid var(--secondaryColor) !important;
     }
 
     .projectLinksDiv {
@@ -773,6 +778,15 @@
     .selected {
         text-decoration-thickness: 3px;
 
+        /* text-decoration-color: var(--secondaryColorVeryMat); */
+        color: #0cedc8;
+        text-decoration-color: #ef3b2d;
+
+    }
+
+    .downloadCvIcon {
+        margin-left: 5px;
+        top: 2px;
     }
 
 

@@ -88,7 +88,7 @@
             <div>
                 <h2 id="titleCv" class="cvTitle">
                     <a href="CV_BasileKuntz_2024_v2.pdf" download="CV_basileKuntz" id="dlCv">
-                        <i class="fa-solid fa-file-arrow-down"></i>Télécharger en PDF
+                        <i class="fa-solid fa-file-arrow-down downloadCvIcon"></i>Télécharger en PDF
                     </a><span id="underlineCV">Mon &nbsp;<span style="letter-spacing:3px;">CV</span></span>
                 </h2>
             </div>

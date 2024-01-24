@@ -142,7 +142,7 @@
                                         <ul class="projetSkillsList">
                                             <li>HTML/CSS</li>
                                             <li>Javascript</li>
-                                            <li>PHP / Symfony</li>
+                                            <li class="mainSkill">PHP / Symfony</li>
                                             <li>Doctrine / DQL</li>
                                             <li>Twig</li>
                                         </ul>
@@ -213,8 +213,8 @@
                                             <ul class="projetSkillsList">
                                                 <li>HTML</li>
                                                 <li>CSS</li>
-                                                <li>Javascript</li>
-                                                <li>PHP</li>
+                                                <li class="mainSkill">JS</li>
+                                                <li class="mainSkill">PHP</li>
                                                 <li>SQL/BDD</li>
                                             </ul>
 
@@ -300,7 +300,7 @@
                                             <li>HTML</li>
                                             <li>CSS</li>
                                             <li>JS</li>
-                                            <li>PHP</li>
+                                            <li class="mainSkill">PHP</li>
                                             <li>SQL</li>
                                             <li>MVC</li>
                                         </ul>
