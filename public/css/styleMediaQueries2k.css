@@ -7,7 +7,11 @@
 
 
     #dlCv {
-        font-size: 0.6em;
+        font-size: 0.65em;
+        background-color: var(--secondaryColorMat);
+        padding: 5px 10px;
+        color: #08090c;
+
     }
 
     .skillsSvgContainer {
@@ -18,6 +22,12 @@
 
         opacity: 0.6;
         z-index: -99;
+    }
+
+    #plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643 {
+        margin-top: 35px !important;
+        width: 45% !important;
+        padding: 15px 30px !important;
     }
     
     .skillsSvgPath {

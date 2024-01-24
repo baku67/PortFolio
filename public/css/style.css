@@ -792,6 +792,7 @@ textarea:focus, input:focus{
 }
 
 .plezi-submit-btn {
+    background-color: var(--secondaryColor) !important;
     transition: all 0.5s;
 }
 .plezi-submit-btn:hover {
@@ -805,10 +806,14 @@ textarea:focus, input:focus{
     opacity: 0;
     background-color: #1b1f2a !important;
     border-radius: 5px;
-    /* margin-top: 45px !important; */
+    margin-top: 65px !important;
+    padding: 10px 36px !important;
+    width: 65% !important;
+    background-color: #26ceb212 !important;
 
-    border-top: 1px solid rgba(239, 59, 45, 0.6);
-    border-bottom: 1px solid rgba(239, 59, 45, 0.6);
+    /* border-top: 1px solid rgba(239, 59, 45, 0.6);
+    border-bottom: 1px solid rgba(239, 59, 45, 0.6); */
+    border: 2px solid #26ceb294;
     /* height: 0px; */
     overflow: scroll;
     font-family: 'Nunito', sans-serif;
@@ -816,7 +821,7 @@ textarea:focus, input:focus{
 }
 
 .fadeInForm {
-    animation: fadeInForm 1s 0s ease-in forwards;
+    animation: fadeInForm 0.7s 0s ease-in forwards;
 }
 @keyframes fadeInForm {
     from {
@@ -5226,7 +5231,8 @@ li.veilleLigneAjout::before {
 }
 
 #inspirationTitle {
-    color:#ef3b2d;
+    /* color:#ef3b2d; */
+    color: var(--secondaryColorMat);
     font-size: 1.5em;
 }
 
@@ -5271,14 +5277,14 @@ li.veilleLigneAjout::before {
 }
 
 #dlCv {
-    background-color: rgba(239, 59, 45, 0.85);
-    padding: 3px 8px;
+    background-color: var(--secondaryColorMat);
+    padding: 5px 9px;
     border-radius: 36px;
 
     margin-right: 30px;
-    font-size: 0.45em;
+    font-size: 0.54em;
 
-    color: #E7E8F2;
+    color: #08090c;
 
     opacity: 0;
     animation: fadeIn 0.5s 0.5s ease forwards;
