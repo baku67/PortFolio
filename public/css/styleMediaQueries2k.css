@@ -17,6 +17,13 @@
 
     }
 
+    .langsSvgContainer {
+        transform: translate(171px, -82px) scale(1.1);
+    }
+    .outilsSvgContainer {
+        transform: translate(150px, -87px);
+    }
+
     .pageSectionTitle {
         font-size: 1.5em;
     }

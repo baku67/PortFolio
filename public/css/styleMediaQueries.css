@@ -633,13 +633,26 @@
         color: #161616;
         border-radius: 1px;
         height: 84px;
-        clip-path: polygon(0 0, 100% 0, 99% 23%, 51% 29%, 1% 22%);
+        clip-path: polygon(0 0, 100% 0, 100% 22%, 51% 29%, 0 21%);
     }
     .symfonyShapeTxt {
         font-size: 0.9em;
         position: relative;
         bottom: 4px;
         font-weight: 600;
+    }
+
+    .stageBandeau {
+        text-align: left;
+        background: linear-gradient(85deg, rgba(66,66,66,0) 5%, rgba(239,59,45,0.34441526610644255) 50%, rgba(66,66,66,0) 95%);
+    }
+
+    .cvSectionBgGradient {
+        background: radial-gradient(circle, rgba(12,237,200,0.12906512605042014) 0%, rgba(66,66,66,0) 57%);
+    }
+
+    .cvSectionBgGradientSkills {
+        background: radial-gradient(circle, rgba(12,237,200,0.3250875350140056) 0%, rgba(66,66,66,0) 72%);
     }
 
     #menuLigne {
@@ -1506,8 +1519,8 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 20px;
-        /* border-bottom: 3px solid rgba(239, 59, 45, 0.7);
-        border-right: 1px solid rgba(239, 59, 45, 0.7); */
+
+        padding: 10px 30px 30px 30px;
     }
     
 

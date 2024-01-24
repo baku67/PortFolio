@@ -1136,6 +1136,32 @@ li::before {
 }
 
 
+.stageBandeau {
+    padding: 2px 0;
+    margin: 5px auto;
+
+    background: rgb(66,66,66);
+    background: -moz-linear-gradient(85deg, rgba(66,66,66,0) 0%, rgba(239,59,45,0.44441526610644255) 50%, rgba(66,66,66,0) 100%);
+    background: -webkit-linear-gradient(85deg, rgba(66,66,66,0) 0%, rgba(239,59,45,0.44441526610644255) 50%, rgba(66,66,66,0) 100%);
+    background: linear-gradient(85deg, rgba(66,66,66,0) 0%, rgba(239,59,45,0.44441526610644255) 50%, rgba(66,66,66,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#424242",endColorstr="#424242",GradientType=1);
+}
+
+.cvSectionBgGradient {
+    background: rgb(12,237,200);
+    background: -moz-radial-gradient(circle, rgba(12,237,200,0.06906512605042014) 0%, rgba(66,66,66,0) 67%);
+    background: -webkit-radial-gradient(circle, rgba(12,237,200,0.06906512605042014) 0%, rgba(66,66,66,0) 67%);
+    background: radial-gradient(circle, rgba(12,237,200,0.06906512605042014) 0%, rgba(66,66,66,0) 67%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0cedc8",endColorstr="#424242",GradientType=1);
+}
+.cvSectionBgGradientSkills {
+    background: rgb(12,237,200);
+    background: -moz-radial-gradient(circle, rgba(12,237,200,0.1250875350140056) 0%, rgba(66,66,66,0) 52%);
+    background: -webkit-radial-gradient(circle, rgba(12,237,200,0.1250875350140056) 0%, rgba(66,66,66,0) 52%);
+    background: radial-gradient(circle, rgba(12,237,200,0.1250875350140056) 0%, rgba(66,66,66,0) 52%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0cedc8",endColorstr="#424242",GradientType=1);
+}
+
 
 
 /* *** GRID COMPETENCES */
@@ -5251,19 +5277,19 @@ li.veilleLigneAjout::before {
 #inspirationContainer {
     transform: scale(0.9);
     position: relative;
-    /* width: 60%; */
-    margin-bottom:50px; 
-    color:#e2e8f0;
-
-    /* border-bottom: 5px solid rgba(239, 59, 45, 0.5);
-    border-right: 2px solid rgba(239, 59, 45, 0.5); */
-    padding: 10px 30px;
+    margin-bottom: 50px; 
+    color: #e2e8f0;
+    padding: 0px 30px;
     border-radius: 6px;
-    background-color: rgb(239 59 45 / 7%);
+
+    /* background-color: rgb(239 59 45 / 7%); */
+    background-color: #00ffd40d;
+
     padding-bottom: 20px;
     border-bottom-right-radius: 10px;
-    /* border-bottom-style: double; */
     opacity: 0;
+
+    border: 1px solid #00ffd62b;
 }
 
 #quoteContent {
