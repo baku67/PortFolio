@@ -139,6 +139,7 @@
 
     .paragrapheAccueil { 
         font-size: 1.05em;
+        margin: 0px 7px 12px 7px;
         margin-bottom: 20px !important;
     }
 
@@ -603,6 +604,10 @@
 
 
         position: relative !important;
+    }
+
+    #plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643 {
+        border-radius: 7px !important;
     }
 
     .selected {

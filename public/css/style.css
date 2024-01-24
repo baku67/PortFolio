@@ -807,7 +807,7 @@ textarea:focus, input:focus{
 #plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643 {
     opacity: 0;
     background-color: #1b1f2a !important;
-    border-radius: 5px;
+    border-radius: 9px;
     margin-top: 65px !important;
     padding: 10px 36px !important;
     width: 65% !important;
@@ -861,7 +861,7 @@ textarea:focus, input:focus{
     background-color: #00ffd614;
     padding: 10px 15px;
     border: 1px solid var(--secondaryColorMat);
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
 
     margin-bottom: 45px;
@@ -1452,7 +1452,7 @@ li::before {
 }
 
 .githubLogo {
-    width: 55px;
+    width: 70px;
     position: absolute;
     transform: rotate(352deg);
     opacity: 0.95;
