@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1300px) {
 
     .hobbiesSvgPath, .outilsSvgPath, .langsSvgPath, .formationSvgPath, .skillsSvgPath {
-        stroke-width: 3 !important; 
+        stroke-width: 2px !important; 
     }
 
 
@@ -20,7 +20,7 @@
         left: 50%;
         transform: translateX(-12%) translateY(-116px);
 
-        opacity: 0.6;
+        /* opacity: 0.6; */
         z-index: -99;
     }
 
@@ -87,6 +87,9 @@
     }
 
     .description {
+        position: relative;
+        top: 7px;
+
         border: 2px solid #02ffd66b;
         font-size: 90%;
         padding: 13px 23px 25px 23px;
@@ -118,7 +121,7 @@
     }
 
     .symfonyShapeDiv {
-        height: 85px;
+        height: 98px;
     }
 
     #portfolioTitle {
@@ -562,6 +565,7 @@
     }
 
     .projetSkillsList {
+        gap: 2px;
         font-size: 0.7em;
     }
 
@@ -640,10 +644,13 @@
         background: -moz-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%);
         background: -webkit-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%);
         background: linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%); */
+
+        /* TEST Wave --secondaryColor */
         background: rgb(17,18,63);
         background: -moz-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(45,187,239,1) 100%);
         background: -webkit-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(45,187,239,1) 100%);
         background: linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(45,187,239,1) 100%);
+        /* background: linear-gradient(0deg, rgba(17,18,63,0) 0%, var(--secondaryColor)); */
     
     
         animation: fadeInWave 1.5s 1.2s forwards ease-out;
@@ -656,7 +663,7 @@
             width: 0;
         }
         to {
-            opacity: 0.7;
+            opacity: 1;
             height: 31px;
             width: 368px;
             

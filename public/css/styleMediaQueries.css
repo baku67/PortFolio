@@ -452,6 +452,7 @@
     }
 
     .projetSkillsList {
+        gap: 1px;
         width: 95%;
         font-size: 70%;
         margin-block-start: 0em;

@@ -886,12 +886,18 @@ textarea:focus, input:focus{
     font-weight: bold;
     border-radius: 4px;
 
-    clip-path: polygon(100% 0, 96% 25%, 50% 38%, 4% 26%, 0 0);
-    height: 77px;
+    /* clip-path: polygon(100% 0, 96% 25%, 50% 38%, 4% 26%, 0 0); */
+    clip-path: polygon(0 0, 100% 0, 100% 22%, 51% 29%, 0 21%);
+    height: 91px;
+
 }
 
 .secondaryColorVif {
     color: #01ffd5 !important;
+}
+
+.cvSvgPathBlue {
+    stroke: var(--secondaryColorMat) !important;
 }
 
 
@@ -1162,7 +1168,7 @@ li::before {
       border-radius: 3px;
       background-color: #ef3a2daf;
       color: #E7E8F2;
-      border: 1px solid rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--secondaryColorVeryMat);
 
       text-align: center;
       margin: auto auto;
@@ -1801,6 +1807,7 @@ li::before {
 .description {
     overflow: hidden;
     position: relative;
+    top: 6px;
     font-size: 80%;
     color: white;
     z-index: 100;
@@ -1808,7 +1815,7 @@ li::before {
     color: white;
     background-color: #151a2373;
     padding: 13px 20px 23px 20px;
-    border-radius: 11px;
+    border-radius: 12px;
     /* border: 1px solid #8080802e; */
     border: 1px solid #02ffd66b;
     height: fit-content;
@@ -1823,6 +1830,7 @@ li::before {
 
 
 .projetSkillsList {
+    gap: 1px;
     font-size: 0.6em;
     list-style-type: none;
     padding-inline-start: 0px;
