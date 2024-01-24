@@ -1471,10 +1471,13 @@
         background: -moz-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%);
         background: -webkit-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%);
         background: linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(239,59,45,1) 100%); */
-        background: rgb(17,18,63);
+
+        /* *** Save 24/01/2024 15:23 *** */
+        /* background: rgb(17,18,63);
         background: -moz-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(45,187,239,1) 100%);
         background: -webkit-linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(45,187,239,1) 100%);
-        background: linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(45,187,239,1) 100%);
+        background: linear-gradient(0deg, rgba(17,18,63,0) 0%, rgba(45,187,239,1) 100%); */
+        background: linear-gradient(0deg, #19ddbc0a 0%, var(--secondaryColorVif) 100%);
 
 
         animation: fadeInWave 1.5s 1s forwards ease-out;
@@ -1567,32 +1570,21 @@
 
 
     #scubaDiver {
-        display: none;
-        /* https://yqnn.github.io/svg-path-editor/ */
-        /* From droite to gauche, trait */
-        /* offset-path: path("M 802 -40 C 430 65 98 182 -159 297"); */
-        /* offset-path: path("M 0 63 L 27 14"); */
-        
-        /* offset-rotate: auto; */
-    
+        display: none !important;    
         position: absolute;
 
         right: -52px;
         bottom: -80px;
     
-        /* top: -5%; */
         z-index: -999;
     
-        /* animation: moveRapid 1300ms 3000ms 1 linear; */
-        animation: fadeScuba 18000ms 1200ms infinite linear, floatScuba 5s 0s infinite forwards ease-in-out;
+        /* Désactivation "diver" sur mobile: */
+        /* animation: fadeScuba 18000ms 1200ms infinite linear, floatScuba 5s 0s infinite forwards ease-in-out; */
 
         width: 90px;
-        /* height: 160px; */
     
-        /* background: cyan; */
         content:url("/img/scuba3_red.png");
         opacity: 0;
-        /* transform: rotateZ(172deg); */
 
         transform: rotateZ(47deg) rotateY(181deg);
         filter: invert(0%) blur(10px);
@@ -1620,6 +1612,10 @@
     }
 
     #scubaDiverFlash {
+
+        /* Désactivation Diver mobile */
+        display: none !important;
+
         width: 40px;
         height: 40px;
         right: -32px;
