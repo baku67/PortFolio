@@ -858,7 +858,7 @@ textarea:focus, input:focus{
     font-size: 1.3em;
     /* margin-top: 42px; */
     color: var(--secondaryColor);
-    background-color: #1b1f2a;
+    background-color: #00ffd614;
     padding: 10px 15px;
     border: 1px solid var(--secondaryColorMat);
     border-radius: 3px;
@@ -1410,7 +1410,7 @@ li::before {
     background-repeat:no-repeat;
     /* height:400px; */
     height: fit-content;
-    margin:1% 15%;
+    margin: 1% 10%;
 }
 
 .gitHubLink {
@@ -1452,10 +1452,10 @@ li::before {
 }
 
 .githubLogo {
-    width: 40px;
+    width: 55px;
     position: absolute;
     transform: rotate(352deg);
-    opacity: 0.9;
+    opacity: 0.95;
     transition: all 0.4s;
 
     animation: rotateGithubLogo 2.5s ease-in-out infinite;
@@ -1812,6 +1812,9 @@ li::before {
     /* border: 1px solid #8080802e; */
     border: 1px solid #02ffd66b;
     height: fit-content;
+
+    opacity: 0;
+    animation: fadeIn 0.45s 0.2s ease forwards;
 }
 
 .mainSkill {
@@ -2371,6 +2374,16 @@ li::before {
     background-color: var(--background-headerColor);
 }
 
+
+#headerAccueil {
+    background-color: #00f6ff0f;
+}
+#headerCv {
+    background-color: #00f6ff0f;
+}
+#headerProjets {
+    background-color: #00f6ff0f;
+}
 
 
 #portfolioTitle {

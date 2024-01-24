@@ -49,7 +49,7 @@
     <body>
 
         <!-- Header -->
-        <header class="darkedHeader" style="position:relative;">
+        <header id="headerCv" class="darkedHeader" style="position:relative;">
             <div style="width:100%;">
                 <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
                 <span  id="lineBreakMobile"></br></span>
@@ -135,7 +135,7 @@
                             <i class="fa-solid fa-arrow-right" style="margin-right:4px; color:#ef3b2d;"></i> <span class="highlightSpan secondaryColorVif">Alternance</span> chez Europe Tech Group (Haguenau)
                         </li>
                         <div class="separateurListe light"></div>
-                        <li>2019-2020: <span class="highlightSpan">Service Civique</span> (Inclusion numérique)</li>
+                        <li>2019: <span class="highlightSpan">Service Civique</span> (Inclusion numérique)</li>
                         <div class="separateurListe light"></div>
                         <!-- <li>2017-2018: L1 Maths-Informatiques (Faculté de Strasbourg)</li>
                         <div class="separateurListe light"></div> -->

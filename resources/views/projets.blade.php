@@ -53,7 +53,7 @@
     <body>
 
         <!-- Header  -->
-        <div class="darkedHeader" style="position:relative";>
+        <header id="headerProjets" class="darkedHeader" style="position:relative";>
                 
             <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
             <div style="width:100%;">
@@ -80,7 +80,7 @@
 
             <!-- Trait séparateur -->
             <div id="traitHeader" class="traitHeaderProjet"></div>
-        </div>
+        </header>
 
         
 
@@ -137,7 +137,7 @@
                                             <p class="projetSlideTitle" style="font-family: 'Julius Sans One', sans-serif;">SquadForge</p>
                                         </div>
 
-                                        <p class="projetDescriptionText">Site communautaire "Gaming"</p> 
+                                        <p class="projetDescriptionText">Plateforme communautaire "Gaming"</p> 
 
                                         <ul class="projetSkillsList">
                                             <li>HTML/CSS</li>

@@ -243,7 +243,19 @@
     }
 
     #dlCv {
-        font-size: 0.4em;
+        font-size: 0.5em;
+    }
+
+    .menuButton:hover {
+        animation-duration: 0s;
+    }
+    @keyframes hoverMenuButton {
+        from {
+            opacity: 0.1;
+        }
+        to {
+            opacity: 1;
+        }
     }
     
 
@@ -496,10 +508,10 @@
         animation: rotateGithubText 2.5s ease-in-out infinite;
     }
     .githubLogo {
-        width: 30px;
+        width: 52px;
         position: absolute;
         transform: rotate(354deg);
-        opacity: 0.8;
+        opacity: 0.93;
         top: 64px;
         left: 10px;
 
@@ -603,7 +615,7 @@
         text-decoration-thickness: 5px; */
         text-decoration-color: var(--secondaryColor) !important;
         color: #00ffd5;
-        text-underline-offset: 2px;
+        text-underline-offset: 3px;
         text-decoration-thickness: 2px;
     }
 

@@ -147,9 +147,9 @@
     }
 
     #contactButton {
-        font-size: 1.8em;
+        font-size: 1.7em;
         margin-bottom: 75px;
-
+        background-color: #00ffd614;
     }
 
     .projetNbr {
@@ -570,12 +570,19 @@
     }
 
     #traitHeader {
-        height: 2px;
+        /* height: 2px;
         margin-bottom: 0px;
         width: 100%;
         background-color: #E7E8F2;
         opacity: 0.7;
-        background-color: #ef3b2d;
+        background-color: #ef3b2d; */
+
+        height: 1px;
+        margin-bottom: 0px;
+        width: 100%;
+        background-color: #E7E8F2;
+        opacity: 1;
+        background-color: #ef3b2d8f;
     }
     
 
@@ -584,7 +591,7 @@
         background-size:cover;
         background-repeat:no-repeat;
         height: fit-content;
-        margin:2% 15%;
+        margin: 2% 12%;
     }
 
 
