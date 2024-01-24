@@ -90,7 +90,7 @@
 
             <!-- Symbole Swipe -->
             <div class="swipeSymbol">
-                <img class="swipeImg" src="img/projects/slideSymbol.png"/>
+                <img class="swipeImg" src="img/projects/slideSymbol2.png"/>
                 <span class="swipeTxt">Glisser</span>
             </div>
 

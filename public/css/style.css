@@ -12,6 +12,7 @@
     --background-headerColor: #0f2737;
 
     --secondaryColor: #19ddbc;
+    --secondaryColorVif: #00ffd5;
     --secondaryColorMat: #26ceb2;
     --secondaryColorVeryMat: #42ab9a;
 }
@@ -198,10 +199,10 @@ body:not(#flashPointCache)[data-theme="light"] {
 
 .swipeSymbol {
     position: fixed;
-    right: 5%;
-    top: 110px;
+    right: 3%;
+    top: 95px;
     font-size: 0.8em;
-    color: var(--swiper-theme-color);
+    color: var(--secondaryColorVif);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -211,7 +212,7 @@ body:not(#flashPointCache)[data-theme="light"] {
 }
 @keyframes fadePulseSwipe {
     0% {
-        opacity: 0.15;
+        opacity: 0.1;
         transform: translateX(-40px);
     }
     37% {
@@ -219,7 +220,7 @@ body:not(#flashPointCache)[data-theme="light"] {
         transform: translateX(10px);
     }
     100% {
-        opacity: 0.15;
+        opacity: 0.1;
         transform: translateX(-40px);
     }
 }
@@ -283,7 +284,7 @@ swiper-slide {
 .gridProjetHeaderContainer {
     /* position: relative;
     bottom: 50px; */
-    margin-top: 8px;
+    margin-top: 50px;
     justify-content: space-around;
 }
 
@@ -883,6 +884,7 @@ textarea:focus, input:focus{
     background-color: var(--secondaryColorMat);
     color: black;
     font-weight: bold;
+    border-radius: 4px;
 
     clip-path: polygon(100% 0, 96% 25%, 50% 38%, 4% 26%, 0 0);
     height: 77px;
@@ -1328,9 +1330,12 @@ li::before {
 
 .selected {
     font-weight: 900;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
 
-    color: #ef3b2d;
+    /* color: #ef3b2d; */
+    color: #0cedc8;
+    text-decoration-color: #ef3b2d !important;
+
     text-decoration-line: underline;
     text-underline-position: under;
     /* text-decoration-color: #ef3b2d; */
@@ -1737,7 +1742,9 @@ li::before {
     padding: 17px 6px 32px 6px; 
     border-radius: 13px;
     
-    width: 334px;
+    /* width: 334px; */
+    width: 390px;
+    
     height: 745px;
 
     position: relative;
@@ -1800,7 +1807,7 @@ li::before {
 
     color: white;
     background-color: #151a2373;
-    padding: 13px 5px 23px 5px;
+    padding: 13px 20px 23px 20px;
     border-radius: 11px;
     /* border: 1px solid #8080802e; */
     border: 1px solid #02ffd66b;

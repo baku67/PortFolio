@@ -73,7 +73,7 @@
         right: 5%;
         top: 167px;
         font-size: 0.7em;
-        color: var(--swiper-theme-color);
+        color: var(--secondaryColorVif);
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -87,7 +87,7 @@
             transform: translateX(-35px);
         }
         37% {
-            opacity: 0.72;
+            opacity: 0.75;
             transform: translateX(5px);
         }
         100% {
@@ -601,10 +601,23 @@
         color: #171923;
         text-underline-offset: 1px;
         text-decoration-thickness: 5px; */
-        text-decoration-color: var(--secondaryColor);
+        text-decoration-color: var(--secondaryColor) !important;
         color: #00ffd5;
         text-underline-offset: 2px;
         text-decoration-thickness: 2px;
+    }
+
+    .symfonyShapeDiv {
+        color: #161616;
+        border-radius: 1px;
+        height: 84px;
+        clip-path: polygon(0 0, 100% 0, 99% 23%, 51% 29%, 1% 22%);
+    }
+    .symfonyShapeTxt {
+        font-size: 0.9em;
+        position: relative;
+        bottom: 4px;
+        font-weight: 600;
     }
 
     #menuLigne {
