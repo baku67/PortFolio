@@ -128,9 +128,9 @@ html, body {
     }
 
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 
 * {
@@ -141,8 +141,9 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+    
+  /* -ms-overflow-style: none; 
+  scrollbar-width: none;   */
 }
 
 
