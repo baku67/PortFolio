@@ -964,6 +964,8 @@
 
     .imgAccueil {
 
+        border-bottom: 0px solid #19ddbc87;
+
         opacity: 0;
         width: 100px;
         /* height: 110px; */

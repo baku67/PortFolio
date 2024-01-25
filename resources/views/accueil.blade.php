@@ -135,7 +135,7 @@
 
                 <div style="position:relative;">
                     <!-- <img class="imgAccueil" src="img/basile_compressed.png"/> -->
-                    <img class="imgAccueil" src="img/portraitCarréBW.jpg"/>
+                    <img class="imgAccueil" src="img/portraits/portrait_blackAndWhite.jpg"/>
 
                     <svg id="rectangleSvg" class="rectangleSvg">
                         <path 

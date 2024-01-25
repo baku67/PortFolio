@@ -2448,6 +2448,11 @@ li::before {
 
 
 .imgAccueil { 
+
+    /* TEst  */
+    border-bottom: 5px solid #ef3b2da6;
+
+
     opacity: 0;
 
     float:right;
