@@ -867,7 +867,7 @@ textarea:focus, input:focus{
 
     margin-bottom: 45px;
 
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 #contactButton:hover {
     background-color: var(--secondaryColor);
@@ -1373,12 +1373,24 @@ li::before {
 
     /* color: #ef3b2d; */
     color: #0cedc8;
+    text-shadow: 1px 1px #1a1f29;
     text-decoration-color: #ef3b2d !important;
 
     text-decoration-line: underline;
     text-underline-position: under;
     /* text-decoration-color: #ef3b2d; */
     text-decoration-color: var(--secondaryColorMat);
+
+    /* MAJ 26/01/2024 */
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(12,237,200,0.25) 100%);
+    /* padding: 0px 9px; */
+    border-radius: 5px;
+    border-right: 1px solid #19ddbc1a;
+    border-left: 1px solid #19ddbc1a;
+    border-bottom: 1px solid var(--secondaryColor);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .highlightSpan {
@@ -1425,10 +1437,19 @@ li::before {
     bottom: 11px;
 }
 
+.menuButton {
+    padding: 0px 9px;
+    margin: 0px 2px;
+}
+
 .menuButton:hover {
     color: var(--secondaryColor);
     animation-name: hoverMenuButton;
     animation-duration: 1.3s;
+
+    background: linear-gradient(180deg, rgba(2,0,36,0) 40%, rgba(12,237,200,0.15) 100%);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 @keyframes hoverMenuButton {
     from {
@@ -1799,6 +1820,7 @@ li::before {
 #portfolioSousTitre {
     margin-block-start: 0;
     font-size:0.95em;
+    margin-block-end: 0.55em;
 }
 
 
@@ -2478,6 +2500,29 @@ li::before {
     padding: 0px;
 }
 
+.pageContainerAccueil {
+    animation: accueilGradient 1s 0.2s ease forwards;
+}
+@keyframes accueilGradient {
+    0% {
+        background: radial-gradient(circle, rgba(12,237,200,0.0) 0%, rgba(66,66,66,0) 67%);
+    }
+    100% {
+        background: radial-gradient(circle, rgba(12,237,200,0.045) 0%, rgba(66,66,66,0) 67%);
+    }
+}
+
+.lightBulbWrapperDiv {
+    animation: accueilAmpouleGradient 0.5s 0.5s ease forwards;
+}
+@keyframes accueilAmpouleGradient {
+    0% {
+        background: radial-gradient(circle, rgba(12,237,200,0.0) 0%, rgba(66,66,66,0) 67%);
+    }
+    100% {
+        background: radial-gradient(circle, rgba(12,237,200,0.16906512605042014) 0%, rgba(66,66,66,0) 67%);
+    }
+}
 
 /* 
 @keyframes imgAccueilFadeIn {

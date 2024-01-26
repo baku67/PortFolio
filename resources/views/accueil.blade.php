@@ -56,13 +56,11 @@
             <div id="NavBarContainer">
                 <p id="menuLigneCv" data-theme="dark">
                     <a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> 
-                    &nbsp; 
+                    <!-- &nbsp;  -->
                     <a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> 
-                    &nbsp; 
+                    <!-- &nbsp;  -->
                     <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
-                    &nbsp; 
-                    <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
-                    &nbsp; -->
+                    <!-- &nbsp;  -->
                     <a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a>
                 </p>
             </div>
@@ -119,7 +117,7 @@
         </header>
 
 
-        <main id="pageContainer">
+        <main id="pageContainer" class="pageContainerAccueil">
 
             <div style="position:relative">
                     <a class="gitHubLink" target="_blank" href="https://github.com/baku67">
