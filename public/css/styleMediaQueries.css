@@ -373,6 +373,7 @@
         padding: 14px 5px 21px 5px;
         margin-top: 12px;
         margin-bottom: 12px;
+        border: 2px solid #02ffd685;
 
         /* bottom: 270px; */
     }
@@ -644,9 +645,9 @@
         /* MAJ 26/01/2024 */
         /* background: rgb(2,0,36); */
         background: rgba(2,0,36,0);
-        background: radial-gradient(circle, rgba(12,237,200,0.25) 0%, rgba(2,0,36,0) 80%);
-        border-left: 2px solid var(--secondaryColor);
-        border-right: 2px solid var(--secondaryColor);
+        /* background: radial-gradient(circle, rgba(12,237,200,0.25) 0%, rgba(2,0,36,0) 50%); */
+        border-left: 1px solid #19ddbcc1;
+        border-right: 1px solid #19ddbcc1;
         border-bottom: 0px solid white;
         border-radius: 3px;
 
@@ -665,9 +666,21 @@
         font-weight: 600;
     }
 
+    .formationChevronIcon {
+        padding: 5px;
+        background-color: #19ddbc;
+        border-radius: 5px;
+        border: 1px solid #19ddbc70;
+        font-size: 1.2em;
+        color: #13151c;
+    }
+
     .stageBandeau {
         text-align: left;
         background: linear-gradient(85deg, rgba(66,66,66,0) 5%, rgba(239,59,45,0.34441526610644255) 50%, rgba(66,66,66,0) 95%);
+
+        border-left: 2px solid #ef3b2d;
+        padding-left: 15px;
     }
 
     .cvSectionBgGradient {
@@ -860,6 +873,7 @@
 
 
 #quoteContent {
+    text-align: left;
     font-size:1.1em; 
 
     left: 15px;

@@ -67,13 +67,11 @@
             <div id="NavBarContainer">
                 <p id="menuLigneCv" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
-                    &nbsp; 
+                    <!-- &nbsp;  -->
                     <a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> 
-                    &nbsp; 
+                    <!-- &nbsp;  -->
                     <a id="projetsMenu" class="menuButton selected" href="/projets">Projets</a> 
-                    &nbsp; 
-                    <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
-                    &nbsp; -->
+                    <!-- &nbsp;  -->
                     <a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a>
                 </p>
             </div>

@@ -60,13 +60,11 @@
             <div id="NavBarContainer">
                 <p id="menuLigneCv" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
-                    &nbsp; 
+                    <!-- &nbsp;  -->
                     <a id="cvMenu" class="menuButton selected" href="/cv">Mon CV</a> 
-                    &nbsp; 
+                    <!-- &nbsp;  -->
                     <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
-                    &nbsp; 
-                    <!-- <a id="veilleMenu" class="menuButton" href="/veille">Veille</a> 
-                    &nbsp; -->
+                    <!-- &nbsp;  -->
                     <a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a>
                 </p>
             </div>
@@ -125,27 +123,55 @@
                             </svg>
                         </p>
 
-                        <ul>
-                            <li>2023: Formation <span class="highlightSpan">"Développeur web et web mobile"</span> à Élan Formation Strasbourg (validé)
+                        <ul class="cvFormationsList">
+
+                            <li>
+                                2023: Formation <span class="highlightSpan">"Développeur web et web mobile"</span> à Élan Formation Strasbourg (validé)
                                 <br>
-                                <div class="stageBandeau">
-                                    <i class="fa-solid fa-arrow-right" style="margin-right:4px; color:#ef3b2d;"></i> <span class="highlightSpan secondaryColorVif">Stage</span> chez Hoplunch (Oberhausbergen)
+                                <div id="stageBandeau1" class="stageBandeau">
+
+                                    <div>
+                                        <i class="fa-solid fa-arrow-right" style="margin-right:6px; color:#ef3b2d;"></i> <span class="highlightSpan secondaryColorVif">Stage</span> chez Hoplunch (Oberhausbergen)
+                                    </div>
+                                    <div class="formationChevron">
+                                        <i class="fa-solid fa-chevron-down formationChevronIcon"></i>
+                                    </div>
+
+                                    <div id="stage1content">
+                                        <p>Test description Stage 1</p>
+                                    </div>
                                 </div>
                             </li>
+
                             <div class="separateurListe light"></div>
-                            <li>2020-2022: <span class="highlightSpan">BTS SIO</span> - Option <span class="highlightSpan">SLAM</span> (Solutions Logicielles et Applications Métiers) <br>CCI campus Illkirch
+
+                            <li>
+                                2020-2022: <span class="highlightSpan">BTS SIO</span> - Option <span class="highlightSpan">SLAM</span> (Solutions Logicielles et Applications Métiers) <br>CCI campus Illkirch
                                 </br>
-                                <div class="stageBandeau">
-                                    <i class="fa-solid fa-arrow-right" style="margin-right:4px; color:#ef3b2d;"></i> <span class="highlightSpan secondaryColorVif">Alternance</span> chez Europe Tech Group (Haguenau)
+
+                                <div id="stageBandeau2" class="stageBandeau">
+
+                                    <div>
+                                        <i class="fa-solid fa-arrow-right " style="margin-right:6px; color:#ef3b2d;"></i> <span class="highlightSpan secondaryColorVif">Alternance</span> chez Europe Tech Group (Haguenau)
+                                    </div>  
+                                    <div class="formationChevron">
+                                        <i class="fa-solid fa-chevron-down formationChevronIcon"></i>
+                                    </div>
+
+                                    <div id="stage2content">
+                                        <p>Test description Alternance 2</p>
+                                    </div>
                                 </div>
                             </li>
+
                             <div class="separateurListe light"></div>
+
                             <li>2019: <span class="highlightSpan">Service Civique</span> (Inclusion numérique)</li>
+
                             <div class="separateurListe light"></div>
-                            <!-- <li>2017-2018: L1 Maths-Informatiques (Faculté de Strasbourg)</li>
-                            <div class="separateurListe light"></div> -->
+
                             <li>2015: Baccalauréat Scientifique</li>
-                            <!-- <div class="separateurListe light"></div> -->
+
                         </ul>
 
                     </div>

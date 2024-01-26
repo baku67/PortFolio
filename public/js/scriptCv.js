@@ -7,6 +7,13 @@ window.onload = function() {
     // ScrollReveal().reveal('.outils');
     // ScrollReveal().reveal('.langues');
 
+    // TODO: Remplacer par toggle et tout
+    document.getElementById('stageBandeau1').addEventListener("click", function() {
+        document.getElementById('stage1content').style.display = "block";
+    })
+    document.getElementById('stageBandeau2').addEventListener("click", function() {
+        document.getElementById('stage2content').style.display = "block";
+    })
 
     // Observer Titre CV
     const observerTitleCv = new IntersectionObserver(entries => {

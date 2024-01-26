@@ -263,7 +263,7 @@
                         <div style="position:relative;">
                             <img class="quote1" src="img/quote1.png" />
                             <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
-                            <quote style="position:relative;"><span id="quoteContent">Digital design is like painting, except the paint never dries. <span style="color:#ef3b2d;">- Neville Brody</span></span></quote>
+                            <quote style="position:relative;"><span id="quoteContent">Digital design is like painting, except the paint never dries. <span class="quoteAuthor">- Neville Brody</span></span></quote>
                             <img class="quote2" src="img/quote2.png" />
                         </div>
                         <button id="changeQuotation"><i class="fa-solid fa-rotate"></i></button>
