@@ -134,8 +134,59 @@
 
 
                 <div style="position:relative;">
-                    <!-- <img class="imgAccueil" src="img/basile_compressed.png"/> -->
-                    <img class="imgAccueil" src="img/portraits/portrait_blackAndWhite.jpg"/>
+                    
+                    <img id="portraitAccueil" class="imgAccueil" src="img/portraits/portraits_edited/portrait4_outline.png" style="z-index:999;"/>
+                    <!-- <img class="imgAccueil" src="img/portraits/portraits_edited/portrait3_outline.jpg"/> -->
+
+                    <script>
+                        document.getElementById('portraitAccueil').addEventListener('click', function() {
+                            var srcArray = [
+                                {
+                                    url: "img/portraits/portrait_blackAndWhite.jpg",
+                                    borderColor: "var(--secondaryColor)"
+                                },
+                                {
+                                    url: "img/portraits/portraits_edited/portrait3_outline.jpg",
+                                    borderColor: "var(--secondaryColor)"
+                                },
+                                {
+                                    url: "img/portraits/portraits_edited/portrait4_outline.png",
+                                    borderColor: "var(--secondaryColor)"
+                                },
+                                {
+                                    url: "img/portraits/portraits_edited/portrait4_outlineBlue.png",
+                                    borderColor: "var(--secondaryColor)"
+                                },
+                                {
+                                    url: "img/portraits/portraits_edited/portrait5_outline.jpg",
+                                    borderColor: "var(--secondaryColor)"
+                                },
+                                {
+                                    url: "img/portraits/portraits_edited/portrait5_outlineBlue.jpg",
+                                    borderColor: "var(--secondaryColor)"
+                                },
+                                {
+                                    url: "img/portraits/portraits_edited/portrait6_outline.jpg",
+                                    borderColor: "var(--secondaryColor)"
+                                },
+                                // "img/portraits/portraits_edited/portrait3_outline.jpg",
+                                // "img/portraits/portraits_edited/portrait4_outline.png",
+                                // "img/portraits/portraits_edited/portrait5_outline.jpg",
+                                // "img/portraits/portraits_edited/portrait6_outline.jpg",
+                            ]
+                            srcArray.forEach(element => {
+                                preloadImage(element.url);
+                            });
+                            function preloadImage(url)
+                            {
+                                var img=new Image();
+                                img.src=url;
+                            }
+                            var randomPortrait = srcArray[Math.floor(Math.random()*srcArray.length)];
+                            document.getElementById('portraitAccueil').setAttribute('src', randomPortrait.url);
+                            document.getElementById('portraitAccueil').style.borderBottom = `5px solid ${randomPortrait.borderColor}`;
+                        })
+                    </script>
 
                     <svg id="rectangleSvg" class="rectangleSvg">
                         <path 
