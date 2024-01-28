@@ -1939,8 +1939,29 @@ li::before {
 }
 
 .splide__slide img {
-    border: 2px solid var(--secondaryColor);
-    padding: 1px;
+    border: 2px solid var(--secondaryColorMat);
+    padding: 2px;
+}
+
+.splide__toggle {
+    position: relative;
+    top: 26px;
+
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff2e;
+    border-radius: 50px;
+    fill: #ef3b2d;
+    border: 2px solid #ef3b2d;
+
+    align-items: center;
+    display: inline-flex;
+
+    transition: all 0.2s;
+}
+.splide__toggle:hover {
+    background-color: #ef3b2d;
+    fill: black;
 }
 
 
