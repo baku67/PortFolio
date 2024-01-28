@@ -274,6 +274,13 @@
 
                 <br>
 
+
+                <video autoplay controls class="">
+                    <source src="img\demos\projectsPreview.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+
                 <!-- <div class="accueilGrid2"> -->
 
                     <!-- Badge linkedIn -->

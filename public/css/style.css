@@ -2578,9 +2578,11 @@ li::before {
 
 #headerAccueil {
     background-color: #00f6ff0f;
+    box-shadow: 0 0 32px -11px #0ff;
 }
 #headerCv {
     background-color: #00f6ff0f;
+    box-shadow: 0 0 32px -11px #0ff;
 }
 #headerProjets {
     background-color: #00f6ff0f;
