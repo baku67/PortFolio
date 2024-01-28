@@ -100,6 +100,11 @@
         margin-right: 55px;
     }
 
+    .splide__toggle {
+        width: 32px;
+        height: 32px;
+    }
+
     .description {
         position: relative;
         top: 7px;
@@ -123,6 +128,7 @@
     }
 
     .iframeElem {
+        border-width: 0 0 64px -15px #0ff;
         width: 390px;
     }
     
@@ -595,12 +601,12 @@
         opacity: 0.7;
         background-color: #ef3b2d; */
 
-        height: 1px;
+        height: 2px;
         margin-bottom: 0px;
         width: 100%;
         background-color: #E7E8F2;
         opacity: 1;
-        background-color: #ef3b2d8f;
+        background-color: #ef3b2dcf;
     }
     
 

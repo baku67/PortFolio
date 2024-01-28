@@ -363,6 +363,11 @@ swiper-slide {
 
 
 .trainingSvgContainer {
+    /* Maj test gradient circular: */
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(239,59,45,0.15) 0%, rgba(2,0,36,0) 70%);
+
     position: absolute;
     transform: translate(163px, -66px);
     opacity: 0.85;
@@ -1838,6 +1843,7 @@ li::before {
 
 
 .iframeElem {
+    box-shadow: 0 0 64px -15px #0ff;
     /* position: relative;
     top: 50px; */
     margin: 60px auto 60px auto; 
@@ -1947,8 +1953,8 @@ li::before {
     position: relative;
     top: 26px;
 
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     background-color: #ffffff2e;
     border-radius: 50px;
     fill: #ef3b2d;
@@ -1984,6 +1990,10 @@ li::before {
     background-color: #0000001a;
 }
 
+.splide__toggle__pause, .splide__toggle__play {
+    margin: auto;
+}
+
 .description {
     overflow: hidden;
     position: relative;
@@ -1994,7 +2004,8 @@ li::before {
 
     color: white;
     background-color: #151a2373;
-    padding: 13px 20px 17px 20px;
+    padding: 13px 20px 37px 20px;
+    box-shadow: 0 0 50px -15px #ef3b2d;
     border-radius: 12px;
     /* border: 1px solid #8080802e; */
     border: 1px solid #02ffd66b;
@@ -2005,6 +2016,7 @@ li::before {
 }
 
 .mainSkill {
+    box-shadow: 0 0 30px -4px #0ff;
     border: 2px solid var(--secondaryColor) !important;
 }
 
@@ -2572,6 +2584,11 @@ li::before {
 }
 #headerProjets {
     background-color: #00f6ff0f;
+    box-shadow: 0 0 32px -11px #0ff;
+}
+
+.arrowSvgContainer {
+    opacity: 0;
 }
 
 
