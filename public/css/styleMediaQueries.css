@@ -691,6 +691,15 @@
         background: radial-gradient(circle, rgba(12,237,200,0.3250875350140056) 0%, rgba(66,66,66,0) 72%);
     }
 
+    .splide {
+        margin-top: 27px;
+    }
+
+    /* Splide max width */
+    .splide__progress {
+        margin: 0 auto;
+        width: 55%;
+    }
 
     #projectContainer {
         padding-bottom: 0px;

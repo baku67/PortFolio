@@ -1916,13 +1916,48 @@ li::before {
     margin-top: 45px;
 }
 
+.splide__arrow {
+    /* background: #ffa012; Squadforge */
+    background: #ef3b2d;
+}
+
+.splide__list li::before {
+    color: rgba(255, 0, 0, 0);
+    list-style-type: none !important;
+}
+.splide__pagination li::before {
+    color: rgba(255, 0, 0, 0);
+    list-style-type: none !important;
+
+}
+.splide__pagination__page.is-active {
+    background: #ef3b2d !important;
+}
+
+.splide__arrow svg {
+    fill: white;
+}
+
+.splide__slide img {
+    border: 2px solid var(--secondaryColor);
+    padding: 1px;
+}
+
+
 .splide__slide {
-    padding-bottom: 12px;
+    padding-bottom: 5px;
 }
 .splide__progress__bar {
-    height: 3px;
-    background: #ffa009;
-  }
+    height: 2px;
+    /* background: #ffa009; Squadforge */
+    background: #ef3b2d;
+}
+
+/* Splide max width */
+.splide__progress {
+    margin: 0 auto;
+    width: 65%;
+}
 
 .darkedHeader {
     background-color: #0000001a;
@@ -1938,7 +1973,7 @@ li::before {
 
     color: white;
     background-color: #151a2373;
-    padding: 13px 20px 23px 20px;
+    padding: 13px 20px 17px 20px;
     border-radius: 12px;
     /* border: 1px solid #8080802e; */
     border: 1px solid #02ffd66b;
@@ -1951,6 +1986,7 @@ li::before {
 .mainSkill {
     border: 2px solid var(--secondaryColor) !important;
 }
+
 
 
 .projetSkillsList {

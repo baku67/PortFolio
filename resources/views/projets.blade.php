@@ -181,20 +181,20 @@
                                         <div class="splide" role="group" aria-label="Splide Basic HTML Example">
                                             <div class="splide__slider">
                                                 <div class="splide__track">
-                                                    <ul class="splide__list">
-                                                        <li class="splide__slide">
+                                                    <ul class="splide__list" style="list-style-type:none;">
+                                                        <li class="splide__slide" style="list-style-type:none;">
                                                             <img src="img\demos\screenShots\squadforge1.png" class="carouselImgProject" />
                                                         </li>
-                                                        <li class="splide__slide">
+                                                        <li class="splide__slide" style="list-style-type:none;">
                                                             <img src="img\demos\screenShots\squadforge2.png" class="carouselImgProject" />
                                                         </li>
-                                                        <li class="splide__slide">
+                                                        <li class="splide__slide" style="list-style-type:none;">
                                                             <img src="img\demos\screenShots\squadforge3.png" class="carouselImgProject" />
                                                         </li>
-                                                        <li class="splide__slide">
+                                                        <li class="splide__slide" style="list-style-type:none;">
                                                             <img src="img\demos\screenShots\squadforge4.png" class="carouselImgProject" />
                                                         </li>
-                                                        <li class="splide__slide">
+                                                        <li class="splide__slide" style="list-style-type:none;">
                                                             <img src="img\demos\screenShots\squadforge5.png" class="carouselImgProject" />
                                                         </li>
 
@@ -232,6 +232,8 @@
                                                 var splide = new Splide( '.splide', {
                                                     autoplay: true,
                                                     type: 'loop',
+                                                    pauseOnHover: false,
+                                                    // pagination: false,
                                                 }).mount();
                                             } );
                                         </script>
