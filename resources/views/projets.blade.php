@@ -178,7 +178,7 @@
                                             <source src="img\demos\demo_squadforge_desktop(cutted).mp4" type="video/mp4">
                                             Your browser does not support the video tag.
                                         </video> -->
-                                        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                                        <div id="splideSquadforge" class="splide" role="group" aria-label="Splide Basic HTML Example">
                                             <div class="splide__slider">
                                                 <div class="splide__track">
                                                     <ul class="splide__list" style="list-style-type:none;">
@@ -226,10 +226,11 @@
                                         </div>
 
                                         <script>
+                                            // Splide caroussel screenshots des projets
                                             document.addEventListener( 'DOMContentLoaded', function() {
                                                 // var splide = new Splide( '.splide' );
                                                 // splide.mount();
-                                                var splide = new Splide( '.splide', {
+                                                var splide = new Splide( '#splideSquadforge', {
                                                     autoplay: true,
                                                     type: 'loop',
                                                     pauseOnHover: false,
@@ -308,6 +309,65 @@
                                                     <span>Site</span>
                                                 </a>
                                             </div>
+
+                                            <div id="splideBlackjackjo" class="splide" role="group" aria-label="Splide Basic HTML Example">
+
+                                                <div class="splide__slider">
+                                                    <div class="splide__track">
+                                                        <ul class="splide__list" style="list-style-type:none;">
+                                                            <li class="splide__slide" style="list-style-type:none;">
+                                                                <img src="img\demos\screenShots\blackjackjo1.png" class="carouselImgProject" />
+                                                            </li>
+                                                            <li class="splide__slide" style="list-style-type:none;">
+                                                                <img src="img\demos\screenShots\blackjackjo2.png" class="carouselImgProject" />
+                                                            </li>
+                                                            <li class="splide__slide" style="list-style-type:none;">
+                                                                <img src="img\demos\screenShots\blackjackjo3.png" class="carouselImgProject" />
+                                                            </li>
+                                                            <li class="splide__slide" style="list-style-type:none;">
+                                                                <img src="img\demos\screenShots\blackjackjo4.png" class="carouselImgProject" />
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="splide__progress">
+                                                        <div class="splide__progress__bar">
+                                                        </div>
+                                                </div>
+
+                                                <button class="splide__toggle" type="button">
+                                                    <svg
+                                                        class="splide__toggle__play"
+                                                        viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path d="m22 12-20 11v-22l10 5.5z"/>
+                                                    </svg>
+                                                    <svg
+                                                        class="splide__toggle__pause"
+                                                        viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path d="m2 1v22h7v-22zm13 0v22h7v-22z"/>
+                                                    </svg>
+                                                </button>
+
+                                            </div>
+
+                                            <script>
+                                                // Splide caroussel screenshots des projets
+                                                document.addEventListener( 'DOMContentLoaded', function() {
+                                                    // var splide = new Splide( '.splide' );
+                                                    // splide.mount();
+                                                    var splide = new Splide( '#splideBlackjackjo', {
+                                                        autoplay: true,
+                                                        type: 'loop',
+                                                        pauseOnHover: false,
+                                                        // pagination: false,
+                                                    }).mount();
+                                                } );
+                                            </script>
 
                                         </div>
 

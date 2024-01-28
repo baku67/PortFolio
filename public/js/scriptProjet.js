@@ -33,6 +33,8 @@ window.onload = function() {
     })
     observerCompetences.observe(document.querySelector('#description'));
 
+
+
     
 }
 
