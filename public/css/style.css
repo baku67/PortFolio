@@ -1897,6 +1897,32 @@ li::before {
     }
 }
 
+#projectContainer {
+    padding-bottom: 40px;
+}
+
+.demoVideo {
+    padding: 40px;
+    border-radius: 54px;
+}
+
+.carouselImgProject {
+    width: -webkit-fill-available;
+    width: 70%;
+
+    border-radius: 12px;
+}
+.splide {
+    margin-top: 45px;
+}
+
+.splide__slide {
+    padding-bottom: 12px;
+}
+.splide__progress__bar {
+    height: 3px;
+    background: #ffa009;
+  }
 
 .darkedHeader {
     background-color: #0000001a;
@@ -5475,7 +5501,8 @@ li.veilleLigneAjout::before {
     display: inline-flex;
     flex-direction: row;
     gap: 6px;
-    float: right;
+    /* Maj caroussel */
+    /* float: right; */
     right: 10px;
     position: relative;
 

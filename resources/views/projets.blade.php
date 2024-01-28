@@ -6,6 +6,10 @@
 
         <title>PortFolio - Projets</title>
 
+        <!-- Splide (caroussel captures projet) -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,6 +131,7 @@
                                         <p class="lienBJJ"><a target="_blank" href="https://squadforge.ovh">www.squadforge.ovh<img src="img/redirectionOrange.png" class="redirectionPng"></a></p>
                                     </div>
 
+
                                     <div class="description">
 
                                         <h3 class="projetNbr">Projet 1</h3>
@@ -160,14 +165,76 @@
                                         <div class="projectLinksDiv">
                                             <a href="https://github.com/baku67/ELAN_Projet_SquadForge" target="_blank" class="githubProjectLink linkGithub">
                                                 <i class="fa-brands fa-github githubLinkIcon"></i>
-                                                <span>Projet<span>
+                                                <span>Projet</span>
                                             </a>
 
                                             <a href="https://squadforge.ovh" target="_blank" class="githubProjectLink linkWebsite" >
                                                 <i class="fa-solid fa-globe githubLinkIcon"></i>
-                                                <span>Site<span>
+                                                <span>Site</span>
                                             </a>
                                         </div>
+
+                                        <!-- <video autoplay class="demoVideo">
+                                            <source src="img\demos\demo_squadforge_desktop(cutted).mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video> -->
+                                        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                                            <div class="splide__slider">
+                                                <div class="splide__track">
+                                                    <ul class="splide__list">
+                                                        <li class="splide__slide">
+                                                            <img src="img\demos\screenShots\squadforge1.png" class="carouselImgProject" />
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="img\demos\screenShots\squadforge2.png" class="carouselImgProject" />
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="img\demos\screenShots\squadforge3.png" class="carouselImgProject" />
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="img\demos\screenShots\squadforge4.png" class="carouselImgProject" />
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="img\demos\screenShots\squadforge5.png" class="carouselImgProject" />
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="splide__progress">
+                                                    <div class="splide__progress__bar">
+                                                    </div>
+                                            </div>
+
+                                            <button class="splide__toggle" type="button">
+                                                <svg
+                                                    class="splide__toggle__play"
+                                                    viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path d="m22 12-20 11v-22l10 5.5z"/>
+                                                </svg>
+                                                <svg
+                                                    class="splide__toggle__pause"
+                                                    viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path d="m2 1v22h7v-22zm13 0v22h7v-22z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <script>
+                                            document.addEventListener( 'DOMContentLoaded', function() {
+                                                // var splide = new Splide( '.splide' );
+                                                // splide.mount();
+                                                var splide = new Splide( '.splide', {
+                                                    autoplay: true,
+                                                    type: 'loop',
+                                                }).mount();
+                                            } );
+                                        </script>
 
                                     </div>
 
@@ -231,12 +298,12 @@
                                             <div class="projectLinksDiv">
                                                 <a href="https://github.com/baku67/BLACKJACKJO-projet" target="_blank" class="githubProjectLink linkGithub">
                                                     <i class="fa-brands fa-github githubLinkIcon"></i>
-                                                    <span>Projet<span>
+                                                    <span>Projet</span>
                                                 </a>
 
                                                 <a href="https://www.blackjackjo.com" target="_blank" class="githubProjectLink linkWebsite" >
                                                     <i class="fa-solid fa-globe githubLinkIcon"></i>
-                                                    <span>Site<span>
+                                                    <span>Site</span>
                                                 </a>
                                             </div>
 
@@ -312,12 +379,12 @@
                                         <div class="projectLinksDiv">
                                             <a href="https://github.com/baku67/ELAN_MVC_cinema" target="_blank" class="githubProjectLink linkGithub">
                                                 <i class="fa-brands fa-github githubLinkIcon"></i>
-                                                <span>Projet<span>
+                                                <span>Projet</span>
                                             </a>
 
                                             <a href="https://eneffet.basilek.ovh" target="_blank" class="githubProjectLink linkWebsite" >
                                                 <i class="fa-solid fa-globe githubLinkIcon"></i>
-                                                <span>Site<span>
+                                                <span>Site</span>
                                             </a>
                                         </div>
 

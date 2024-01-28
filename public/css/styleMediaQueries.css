@@ -691,6 +691,11 @@
         background: radial-gradient(circle, rgba(12,237,200,0.3250875350140056) 0%, rgba(66,66,66,0) 72%);
     }
 
+
+    #projectContainer {
+        padding-bottom: 0px;
+    }
+
     #menuLigne {
         margin-left: 17px;
         padding: 3px;
