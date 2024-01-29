@@ -977,6 +977,28 @@
     }
 
 
+    .accueilProjectsDiv {
+        flex-direction: column;
+        margin: 0px auto 33px auto;
+    }
+    .accueilVideo {
+        width: 90%;
+        border-radius: 8px;
+        margin: auto;
+    }
+    .accueilProjectsRightDiv {
+        flex-direction: row;
+        color: rgb(248, 244, 244);
+        font-size: 1.2em;
+        align-items: center;
+        display: flex;
+        margin: 25px auto;
+    }
+
+    .accueilProjectsIcon {
+        
+        width: 65px;
+    }
 
 
 

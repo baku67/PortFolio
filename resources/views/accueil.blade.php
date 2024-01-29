@@ -134,9 +134,9 @@
                 <div style="position:relative;">
                     
                     <img id="portraitAccueil" class="imgAccueil" src="img/portraits/portraits_edited/portrait4_outline.png" style="z-index:999;"/>
-                    <!-- <img class="imgAccueil" src="img/portraits/portraits_edited/portrait3_outline.jpg"/> -->
 
-                    <script>
+                    <!-- Random portrait onClick:  -->
+                    <!-- <script>
                         document.getElementById('portraitAccueil').addEventListener('click', function() {
                             var srcArray = [
                                 {
@@ -184,7 +184,7 @@
                             document.getElementById('portraitAccueil').setAttribute('src', randomPortrait.url);
                             document.getElementById('portraitAccueil').style.borderBottom = `5px solid ${randomPortrait.borderColor}`;
                         })
-                    </script>
+                    </script> -->
 
                     <svg id="rectangleSvg" class="rectangleSvg">
                         <path 
@@ -275,10 +275,23 @@
                 <br>
 
 
-                <video autoplay controls muted class="">
-                    <source src="img\demos\projectsPreview.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="accueilProjectsDiv">
+
+                    <video autoplay controls muted loop class="accueilVideo">
+                        <source src="img\demos\projectsPreview.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <a href="https://portfolio.basilek.ovh/projets" style="height:fit-content; z-index:9;">
+                        <div class="accueilProjectsRightDiv">
+                            <img src="img/projectsIcon.png" class="accueilProjectsIcon" />
+                            <span>Voir mes projets <i class="fa-solid fa-square-up-right redirectProjectsIcon"></i></span>
+                        </div>
+                    </a>
+
+                    <div class="accueilProjectsTrait"></div>
+
+                </div>
 
 
                 <!-- <div class="accueilGrid2"> -->

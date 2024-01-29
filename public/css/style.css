@@ -2440,7 +2440,30 @@ li::before {
 
 
 
+.accueilVideo {
+    position: relative;
+    z-index: 9;
+    width: 60%;
+    border-radius: 14px;
+    border: 2px solid var(--secondaryColorVeryMat);
+}
 
+.accueilProjectsTrait {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+
+    height: 3px;
+    background: rgb(66,171,154);
+    background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.7805497198879552) 50%, rgba(66,66,66,0) 100%);
+    background: -webkit-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.7805497198879552) 50%, rgba(66,66,66,0) 100%);
+    background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.7805497198879552) 50%, rgba(66,66,66,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
+    width: 125%;
+
+    transition: all 0.3s;
+}
 
 
 
@@ -2639,10 +2662,65 @@ li::before {
 
     animation: imgAccueilFadeIn 2s 2.3s ease forwards;
 }
-.imgAccueil:hover { 
+/* .imgAccueil:hover { 
     cursor: pointer;
     opacity: 0.8 !important;
     padding: 0px;
+} */
+
+.accueilProjectsDiv {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin: 60px auto 85px auto;
+    justify-content: space-around;
+}
+.accueilProjectsRightDiv {
+    position: relative;
+    z-index: 9;
+
+    background-color: #1c212c;
+
+    display: inline-flex;
+    flex-direction: column;
+
+    color: rgb(248, 244, 244);
+    font-size: 1.3em;
+    align-items: center;
+    display: flex;
+
+    border: 2px solid var(--secondaryColorVeryMat);
+    border-radius: 11px;
+    padding: 10px 13px 18px 25px;
+
+    transition: all 0.3s;
+}
+.accueilProjectsRightDiv:hover {
+    border-color: var(--secondaryColor);
+    background-color: #109f88;
+}
+/* sibling selector: */
+.accueilProjectsRightDiv:hover + .accueilProjectsTrait{
+    background: rgb(66,171,154);
+    background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,1) 50%, rgba(66,66,66,0) 100%);
+    background: -webkit-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,1) 50%, rgba(66,66,66,0) 100%);
+    background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,1) 50%, rgba(66,66,66,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
+}
+.redirectProjectsIcon {
+    color: #ef3b2d;
+    margin-left: 4px;
+}
+
+.accueilProjectsIcon {
+    opacity: 0.7;
+    width: 210px;
+
+    /* transition: all 0.3s; */
+}
+.accueilProjectsRightDiv:hover .accueilProjectsIcon {
+    opacity: 1;
+    filter: invert(1);
 }
 
 .pageContainerAccueil {
