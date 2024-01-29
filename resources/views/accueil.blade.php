@@ -287,12 +287,13 @@
                             <img src="img/projectsIcon.png" class="accueilProjectsIcon" />
                             <span class="accueilProjectsRightDivSpan">
                                 Voir mes projets 
-                                <i class="fa-solid fa-square-up-right redirectProjectsIcon"></i>
+                                <!-- <i class="fa-solid fa-square-up-right redirectProjectsIcon"></i> -->
                             </span>
                         </div>
                     </a>
 
                     <div class="accueilProjectsTrait"></div>
+                    <div class="accueilProjectsTrait2"></div>
 
                 </div>
 

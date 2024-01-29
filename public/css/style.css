@@ -2445,11 +2445,11 @@ li::before {
 .accueilVideo {
     position: relative;
     z-index: 9;
-    width: 60%;
+    width: 50%;
     border-radius: 14px;
     border: 3px solid var(--secondaryColorVeryMat);
 
-    transition: all .2s;
+    transition: all .3s;
 }
 
 .accueilProjectsTrait {
@@ -2465,6 +2465,23 @@ li::before {
     background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.7805497198879552) 50%, rgba(66,66,66,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
     width: 125%;
+
+    transition: all 0.3s;
+}
+
+.accueilProjectsTrait2 {
+    position: absolute;
+    top: 52%;
+    transform: translate(-250px, -52%);
+    z-index: 0;
+
+    height: 2px;
+    background: rgb(66,171,154);
+    background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.5) 50%, rgba(66,66,66,0) 100%);
+    background: -webkit-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.5) 50%, rgba(66,66,66,0) 100%);
+    background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.5) 50%, rgba(66,66,66,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
+    width: 75%;
 
     transition: all 0.3s;
 }
@@ -2682,6 +2699,8 @@ li::before {
 .accueilProjectsRightDiv {
     display: inline-flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .accueilProjectsRightDiv:hover {
 }
@@ -2693,7 +2712,7 @@ li::before {
     background-color: #1c212c;
 
     color: rgb(248, 244, 244);
-    font-size: 1.3em;
+    font-size: 1.2em;
     align-items: center;
     display: flex;
 
@@ -2707,6 +2726,9 @@ li::before {
     border-color: var(--secondaryColor);
     /* background-color: #109f88; */
     background-color: var(--secondaryColorVeryMat);
+
+    /* glow */
+    box-shadow: 0 0 64px -15px #0ff;
 }
 
 .accueilProjectsRightLink:hover .redirectProjectsIcon {
@@ -2716,7 +2738,10 @@ li::before {
 
 /* sibling selector trait quand rightDiv hovered: */
 .accueilProjectsRightLink:hover + .accueilProjectsTrait {
-    height: 3px;
+    /* effet glow (décalé X car rectangulaire visible pas beau) */
+    box-shadow: 40px 0 64px -15px #0ff;
+
+    height: 50px;
 
     background: rgb(66,171,154);
     background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
@@ -2724,8 +2749,34 @@ li::before {
     background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
 
-    transform: translate(300px, -50%);
+    transform: translate(210px, -50%);
 }
+
+/* MARCHE PAS (why? ça marche avec le 1er trait et c'est exactement le meme binsss) */
+/* sibling selector trait quand rightDiv hovered: */
+/* .accueilProjectsRightLink:hover + .accueilProjectsTrait2 {
+    height: 2px;
+
+    background: rgb(66,171,154);
+    background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,0.7) 50%, rgba(66,66,66,0) 100%);
+    background: -webkit-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,0.7) 50%, rgba(66,66,66,0) 100%);
+    background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,0.7) 50%, rgba(66,66,66,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
+
+    transform: translate(700px, -52%);
+}
+
+.accueilProjectsTrait2:has(+ a:hover) {
+    height: 2px;
+
+    background: rgb(66,171,154);
+    background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,0.7) 50%, rgba(66,66,66,0) 100%);
+    background: -webkit-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,0.7) 50%, rgba(66,66,66,0) 100%);
+    background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,0.7) 50%, rgba(66,66,66,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
+
+    transform: translate(700px, -52%);
+} */
 
 
 .accueilProjectsRightDivSpan {
@@ -2739,6 +2790,10 @@ li::before {
 /* Select an H1 heading that has a currently-hovered <a>nchor as a sibling */
 .accueilVideo:has(+ a:hover) {
     border: 3px solid var(--secondaryColorVif);
+    transform: translateX(20px);
+
+    /* glow: */
+    box-shadow: 0px 0 64px -15px #0ff;
 }
 
 
@@ -2757,7 +2812,7 @@ li::before {
     left: 9px;
 
     opacity: 0.7;
-    width: 170px;
+    width: 125px;
 
     transition: all 0.3s;
 }
@@ -5633,7 +5688,7 @@ li.veilleLigneAjout::before {
     /* background-color: rgb(239 59 45 / 7%); */
     background-color: #00ffd40d;
 
-    padding-bottom: 45px;
+    padding-bottom: 49px;
     border-bottom-right-radius: 10px;
     opacity: 0;
 
