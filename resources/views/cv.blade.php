@@ -261,20 +261,24 @@
 
                         <div class="gridCompetences">
                             <div class="carreCompetences grid-html5">
-                                <img class="imgCompetences" src="img/competences/html5.png">
+                                <img class="imgCompetences isDesktop" src="img/competences/html5.png">
+                                <img class="imgCompetences isMobile" src="img/competences/html5_blue.png">
                                 <br>
                                 <p class="textCompetences">HTML5</p>
                             </div>
                             <div class="carreCompetences grid-css3">
-                                <img class="imgCompetences" src="img/competences/css3.png">
+                                <img class="imgCompetences isDesktop" src="img/competences/css3.png">
+                                <img class="imgCompetences isMobile" src="img/competences/css3_blue.png">
                                 <p class="textCompetences">CSS3</p>
                             </div>
                             <div class="carreCompetences grid-javascript">
-                                <img class="imgCompetences exeptionJs" src="img/competences/javascript.png">
+                                <img class="imgCompetences exeptionJs isDesktop" src="img/competences/javascript.png">
+                                <img class="imgCompetences exeptionJs isMobile" src="img/competences/javascript_blue.png">
                                 <p class="textCompetences">JavaScript</p>
                             </div>
                             <div class="carreCompetences grid-php" style="position:relative;">
-                                <img class="imgCompetences" src="img/competences/php.png">
+                                <img class="imgCompetences isDesktop" src="img/competences/php.png">
+                                <img class="imgCompetences isMobile" src="img/competences/php_blue.png">
                                 <p class="textCompetences">PHP</p>
                                 <!-- Symfony shape bottom right -->
                                 <div class="symfonyShapeDiv"> 
@@ -282,12 +286,14 @@
                                 </div>
                             </div>
                             <div class="carreCompetences grid-bdd">
-                                <img class="imgCompetences" src="img/competences/sql.png">
+                                <img class="imgCompetences isDesktop" src="img/competences/sql.png">
+                                <img class="imgCompetences isMobile" src="img/competences/sql_blue.png">
                                 <p class="textCompetences">SQL</p>
                             </div>
                             <div class="carreCompetences grid-sql">
                                 <!-- <img src="img/competences/bdd.png"> -->
-                                <img class="imgCompetences" src="img/competences/bdd2.png">
+                                <img class="imgCompetences isDesktop" src="img/competences/bdd2.png">
+                                <img class="imgCompetences isMobile" src="img/competences/bdd2_blue.png">
                                 <p class="textCompetences">BDD</p>
                             </div>
                         </div>

@@ -19,6 +19,10 @@
             /* position: absolute; */
     }
 
+    .accueilProjectsTrait {
+        width: 165%;
+      }
+
     #pageContainer {
         margin: 3% 21%;
     }

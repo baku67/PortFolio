@@ -277,11 +277,24 @@
 
                 <div class="accueilProjectsDiv">
 
+                    <!-- Label bouton mobile -->
+                    <!-- <a href="https://portfolio.basilek.ovh/projets" style="height:fit-content; z-index:9;" class="accueilProjectsRightLink"> -->
+                    <a href="https://portfolio.basilek.ovh/projets" class="accueilProjectsLabelLink">
+                        <div class="accueilProjectsBtnLabel">
+                            <!-- <img src="img/projectsIcon.png" class="accueilProjectsIcon" /> -->
+                            <span class="accueilProjectsRightDivSpan">
+                                Voir mes projets 
+                                <!-- <i class="fa-solid fa-square-up-right redirectProjectsIcon"></i> -->
+                            </span>
+                        </div>
+                    </a>
+
                     <video autoplay controls muted loop class="accueilVideo">
                         <source src="img\demos\projectsPreview.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
 
+                    <!-- Bouton PC -->
                     <a href="https://portfolio.basilek.ovh/projets" style="height:fit-content; z-index:9;" class="accueilProjectsRightLink">
                         <div class="accueilProjectsRightDiv">
                             <img src="img/projectsIcon.png" class="accueilProjectsIcon" />
