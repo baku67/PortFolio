@@ -26,6 +26,7 @@
 
     .pageSectionTitle {
         font-size: 1.5em;
+        margin-block-start: 0em;
     }
 
     .skillsSvgContainer {

@@ -133,13 +133,13 @@
                                     <div>
                                         <i class="fa-solid fa-arrow-right" style="margin-right:6px; color:#ef3b2d;"></i> <span class="highlightSpan secondaryColorVif">Stage</span> chez Hoplunch (Oberhausbergen)
                                     </div>
-                                    <div class="formationChevron">
+                                    <!-- <div class="formationChevron">
                                         <i class="fa-solid fa-chevron-down formationChevronIcon"></i>
                                     </div>
 
                                     <div id="stage1content">
                                         <p>Test description Stage 1</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </li>
 
@@ -154,13 +154,13 @@
                                     <div>
                                         <i class="fa-solid fa-arrow-right " style="margin-right:6px; color:#ef3b2d;"></i> <span class="highlightSpan secondaryColorVif">Alternance</span> chez Europe Tech Group (Haguenau)
                                     </div>  
-                                    <div class="formationChevron">
+                                    <!-- <div class="formationChevron">
                                         <i class="fa-solid fa-chevron-down formationChevronIcon"></i>
                                     </div>
 
                                     <div id="stage2content">
                                         <p>Test description Alternance 2</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </li>
 
@@ -221,7 +221,7 @@
                         <ul>
                             <li>Plongée sous-marine</li>
                             <div class="separateurListe2"></div>
-                            <li>Photographie sous-marine ("Coup de coeur de la rédaction", Divosea Août 2014)</li>
+                            <li class="cvLineHeightMobile">Photographie sous-marine <span class="cvGrisedText">("Coup de coeur de la rédaction", Divosea Août 2014)</span></li>
                             <div class="separateurListe2"></div>
                             <li>Scoutisme, Camping, Randonnée</li>
                             <div class="separateurListe2"></div>
@@ -241,7 +241,7 @@
                     <div class="cvSectionBgGradientSkills ">
 
                         <!-- Titre compétences et svg checkbox -->
-                        <p class="pageSectionTitle" style="text-align: center;">
+                        <p class="pageSectionTitle pageSectionTitleMobile" style="text-align: center;">
                             <span class="highlightSpan">&#x3c;</span> Compétences <span class="highlightSpan">/&#x3e;</span>
 
                             <svg class="skillsSvgContainer" style="position:absolute;">
@@ -309,7 +309,7 @@
 
                     <div class="cvSectionBgGradient">
 
-                        <p class="pageSectionTitle">
+                        <p class="pageSectionTitle outilsSectionTitleMobile">
                             <span class="highlightSpan">&#x3c;</span> Outils <span class="highlightSpan">/&#x3e;</span>
 
                             <svg class="outilsSvgContainer" style="position:absolute;">

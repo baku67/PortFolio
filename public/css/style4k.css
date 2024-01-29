@@ -19,6 +19,11 @@
             /* position: absolute; */
     }
 
+    .cvSectionBgGradient {
+        background: radial-gradient(circle, rgba(12,237,200,0.06906512605042014) 0%, rgba(66,66,66,0) 40%);
+    }
+
+
     .accueilProjectsTrait {
         width: 165%;
       }
