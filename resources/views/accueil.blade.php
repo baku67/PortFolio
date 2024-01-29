@@ -275,7 +275,7 @@
                 <br>
 
 
-                <video autoplay controls class="">
+                <video autoplay controls muted class="">
                     <source src="img\demos\projectsPreview.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
