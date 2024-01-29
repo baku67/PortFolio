@@ -996,7 +996,7 @@
     }
 
     .accueilProjectsIcon {
-        
+
         width: 65px;
     }
 
@@ -1085,11 +1085,12 @@
     
 
     #lightBulbWrapperDiv:hover + #inspirationContainer {
-        color: rgba(7, 255, 223, 0.5);
+        color: rgba(7, 255, 223, 1);
         /* border-bottom: 3px solid rgba(7, 255, 223, 0.7);
         border-right: 1px solid rgba(7, 255, 223, 0.7); */
+        border: 1px solid #00ffd5;
         
-        animation: glowText 2s infinite ease;
+        /* animation: glowText 2s infinite ease; */
     }
     
 
@@ -1613,12 +1614,20 @@
 
 
     #inspirationContainer {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         margin-top: 20px;
+        margin-bottom: 5px; 
 
         padding: 10px 30px 30px 30px;
+
+        border: 1px solid #00ffd685;
     }
+
+    #lightBulbPath, #lightBulbPath2, #lightBulbPath4, #lightBulbPath5 {
+        opacity: 0.85;
+    }
+
     
 
 

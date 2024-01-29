@@ -282,10 +282,13 @@
                         Your browser does not support the video tag.
                     </video>
 
-                    <a href="https://portfolio.basilek.ovh/projets" style="height:fit-content; z-index:9;">
+                    <a href="https://portfolio.basilek.ovh/projets" style="height:fit-content; z-index:9;" class="accueilProjectsRightLink">
                         <div class="accueilProjectsRightDiv">
                             <img src="img/projectsIcon.png" class="accueilProjectsIcon" />
-                            <span>Voir mes projets <i class="fa-solid fa-square-up-right redirectProjectsIcon"></i></span>
+                            <span class="accueilProjectsRightDivSpan">
+                                Voir mes projets 
+                                <i class="fa-solid fa-square-up-right redirectProjectsIcon"></i>
+                            </span>
                         </div>
                     </a>
 

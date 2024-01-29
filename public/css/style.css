@@ -335,7 +335,7 @@ swiper-slide {
 
     z-index: 999;
 
-    bottom: -5px;
+    bottom: 14px;
 }
 
 
@@ -701,18 +701,19 @@ swiper-slide {
 } */
 
 #inspirationContainer {
-    transition: all 0.7s;
+    transition: all 0.4s;
 }
 #lightBulbWrapperDiv:hover + #inspirationContainer h3 {
-    transition: all 0.7s;
+    transition: all 0.4s;
 }
 
 #lightBulbWrapperDiv:hover + #inspirationContainer {
-    color: rgba(7, 255, 223, 0.5);
+    color: rgba(7, 255, 223, 1);
     /* border-bottom: 5px solid rgba(7, 255, 223, 0.7);
     border-right: 2px solid rgba(7, 255, 223, 0.7); */
+    background-color: #00ffd41a;
     
-    animation: glowText 2s infinite ease;
+    /* animation: glowText 2s infinite ease; */
 }
 @keyframes glowText {
     0% {
@@ -733,6 +734,7 @@ swiper-slide {
 
 
 #citationAndLightBulbWrapper {
+    align-items: center;
     display:inline-flex;
     flex-direction: row;
 
@@ -2445,13 +2447,15 @@ li::before {
     z-index: 9;
     width: 60%;
     border-radius: 14px;
-    border: 2px solid var(--secondaryColorVeryMat);
+    border: 3px solid var(--secondaryColorVeryMat);
+
+    transition: all .2s;
 }
 
 .accueilProjectsTrait {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50px, -50%);
     z-index: 0;
 
     height: 3px;
@@ -2673,55 +2677,118 @@ li::before {
     display: inline-flex;
     align-items: center;
     margin: 60px auto 85px auto;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .accueilProjectsRightDiv {
+    display: inline-flex;
+    flex-direction: column;
+}
+.accueilProjectsRightDiv:hover {
+}
+
+.accueilProjectsRightLink {
     position: relative;
     z-index: 9;
 
     background-color: #1c212c;
-
-    display: inline-flex;
-    flex-direction: column;
 
     color: rgb(248, 244, 244);
     font-size: 1.3em;
     align-items: center;
     display: flex;
 
-    border: 2px solid var(--secondaryColorVeryMat);
+    border: 3px solid var(--secondaryColorVeryMat);
     border-radius: 11px;
-    padding: 10px 13px 18px 25px;
+    padding: 5px 15px 10px 15px;
 
     transition: all 0.3s;
 }
-.accueilProjectsRightDiv:hover {
+.accueilProjectsRightLink:hover {
     border-color: var(--secondaryColor);
-    background-color: #109f88;
+    /* background-color: #109f88; */
+    background-color: var(--secondaryColorVeryMat);
 }
-/* sibling selector: */
-.accueilProjectsRightDiv:hover + .accueilProjectsTrait{
+
+.accueilProjectsRightLink:hover .redirectProjectsIcon {
+    opacity: 1;
+}
+
+
+/* sibling selector trait quand rightDiv hovered: */
+.accueilProjectsRightLink:hover + .accueilProjectsTrait {
+    height: 3px;
+
     background: rgb(66,171,154);
-    background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,1) 50%, rgba(66,66,66,0) 100%);
-    background: -webkit-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,1) 50%, rgba(66,66,66,0) 100%);
-    background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,1) 50%, rgba(66,66,66,0) 100%);
+    background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
+    background: -webkit-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
+    background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
+
+    transform: translate(300px, -50%);
 }
+
+
+.accueilProjectsRightDivSpan {
+    text-align:center;
+    display:inline-flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+
+/* Select an H1 heading that has a currently-hovered <a>nchor as a sibling */
+.accueilVideo:has(+ a:hover) {
+    border: 3px solid var(--secondaryColorVif);
+}
+
+
+
 .redirectProjectsIcon {
     color: #ef3b2d;
     margin-left: 4px;
+    opacity: 0.7;
+    
+    transition: all 0.3s;
 }
 
 .accueilProjectsIcon {
-    opacity: 0.7;
-    width: 210px;
+    /* Fix décalage png */
+    position: relative;
+    left: 9px;
 
-    /* transition: all 0.3s; */
+    opacity: 0.7;
+    width: 170px;
+
+    transition: all 0.3s;
 }
-.accueilProjectsRightDiv:hover .accueilProjectsIcon {
+
+.accueilProjectsRightLink:hover .accueilProjectsRightDiv img {
+    transform: scale(1.06);
+    opacity: 1;
+    /* filter: invert(1); */
+    /* filter: hue-rotate(180deg); */
+
+
+    /* HUE rotate */
+    /* filter: hue-rotate(0deg);*/
+    /* animation: hueRotateIcon 2s 0s ease infinite;  */
+}
+@keyframes hueRotateIcon {
+    0% {
+        filter: hue-rotate(180deg);
+    }
+    50% {
+        filter: hue-rotate(220deg);
+    }
+    100% {
+        filter: hue-rotate(180deg);
+    }
+}
+
+/* .accueilProjectsRightDiv:hover .accueilProjectsIcon {
     opacity: 1;
     filter: invert(1);
-}
+} */
 
 .pageContainerAccueil {
     animation: accueilGradient 1s 0.2s ease forwards;
@@ -5558,7 +5625,7 @@ li.veilleLigneAjout::before {
 #inspirationContainer {
     transform: scale(0.9);
     position: relative;
-    margin-bottom: 50px; 
+    margin-bottom: 0px; 
     color: #e2e8f0;
     padding: 0px 30px;
     border-radius: 6px;
@@ -5566,11 +5633,11 @@ li.veilleLigneAjout::before {
     /* background-color: rgb(239 59 45 / 7%); */
     background-color: #00ffd40d;
 
-    padding-bottom: 20px;
+    padding-bottom: 45px;
     border-bottom-right-radius: 10px;
     opacity: 0;
 
-    border: 1px solid #00ffd62b;
+    border: 1px solid #00ffd64f;
 }
 
 #quoteContent {
