@@ -130,8 +130,7 @@
 
             <div class="accueilGrid">
 
-
-                <div style="position:relative;">
+                <div class="fixScalePortraitPC" style="position:relative;">
                     
                     <img id="portraitAccueil" class="imgAccueil" src="img/portraits/portraits_edited/portrait4_outline_fix.png" style="z-index:999;"/>
 
@@ -294,7 +293,14 @@
                         </div>
                     </a>
 
-                    <video autoplay controls muted loop class="accueilVideo">
+                    <!-- PC (controls) -->
+                    <video autoplay controls muted loop id="accueilVideo" class="accueilVideo">
+                        <source src="img\demos\projectsPreview.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <!-- Mobile (pas de controls) -->
+                    <video autoplay muted loop id="accueilVideo" class="accueilVideo">
                         <source src="img\demos\projectsPreview.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>

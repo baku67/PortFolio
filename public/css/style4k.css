@@ -23,9 +23,34 @@
         background: radial-gradient(circle, rgba(12,237,200,0.06906512605042014) 0%, rgba(66,66,66,0) 40%);
     }
 
+    .accueilProjectsRightLink:hover + .accueilProjectsTrait {
+        box-shadow: 70px 0 64px -15px #0ff;
+        height: 100px;
+        background: rgb(66,171,154);
+        background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
+        background: -webkit-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
+        background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
+        transform: translate(210px, -50%);
+    }
+
+    @keyframes bandeauGrowShrink {
+        0% {
+            transform: translate(210px, -50%);
+            height: 100px;
+        }
+        50% {
+            transform: translate(245px, -50%);
+            height: 145px;
+        }
+        100% {
+            transform: translate(210px, -50%);
+            height: 100px;
+        }
+    }
 
     .accueilProjectsTrait {
-        width: 165%;
+        width: 145%;
       }
 
     #pageContainer {

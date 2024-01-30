@@ -576,7 +576,7 @@
         transform: scale(0.43);
         fill: none; 
         stroke: var(--secondaryColor);
-        stroke-width: 3; 
+        stroke-width: 4; 
         stroke-linecap: round; 
         stroke-linejoin:  miter; 
         stroke-miterlimit: 4;
@@ -586,7 +586,7 @@
         height: 250px;
 
         position: absolute;
-        right: -180px;
+        right: -169px;
         top: -4px;
         /* height: -webkit-fill-available; */
     }
@@ -1014,10 +1014,11 @@
     .accueilProjectsTrait {
         width: 150%;
         height: 0px;
-        transform: translate(-0px, -50%);
+        transform: translate(-400px, -50%);
         background: linear-gradient(85deg, rgba(66,171,154,0) 8%, rgba(66,171,154,0.08) 50%, rgba(66,66,66,0) 92%);
 
-        transition: all 0.4s;
+        /* transition: all 0.4s; */
+        transition: width 0.4s, transform 1.4s, height 0.4s, background 0.4s;
     }
     .accueilProjectsTrait2 {
         display: none;
@@ -1045,6 +1046,15 @@
         border: 2px solid #0a0a0a;
         border-radius: 11px;
         box-shadow: 0px 0 29px 7px #00ffff59;
+
+        transition: all 0.3s;
+    }
+    .accueilProjectsDiv:hover {
+        /* box-shadow: 0px 0 1px 1px #00ffff;
+        border: 2px solid var(--secondaryColor); */
+        box-shadow: 0px 0 0px 0px #ffffff;
+        border: 2px solid rgba(0,0,0,0);
+
     }
     .accueilVideo {
         width: 100%;
@@ -1091,10 +1101,11 @@
 
     .accueilProjectsDiv:hover .accueilProjectsBtnLabel {
         border-radius: 9px;
-        height: 145px;
+        height: 142px;
 
         /* background-color: #26ceb287; */
-        background-color: #26ceb200;
+        background-color: #26ceb280;
+        backdrop-filter: blur(1px);
     }
 
     .accueilProjectsDiv:hover .accueilProjectsBtnLabel .accueilProjectsRightDivSpan {
@@ -1104,11 +1115,11 @@
     }
 
     .accueilProjectsDiv:hover .accueilProjectsTrait {
-        width: 190%;
-        transform: translate(17px, -49%);
-        height: 87px !important;
+        width: 400%;
+        transform: translate(630px, -49%);
+        height: 154px !important;
 
-        background: linear-gradient(85deg, rgba(66,171,154,0) 8%, rgba(66,171,154,0.9) 71%, rgba(66,66,66,0) 92%);
+        background: linear-gradient(90deg, rgba(66,171,154,0) 8%, rgba(66,171,154,1) 50%, rgba(66,66,66,0) 92%);
     }
 
 
@@ -1165,6 +1176,7 @@
         height: 50px;
         position: relative;
         top: 27px;
+        opacity: 0.92;
     }
     .exeptionJs {
         Width: 62px;
@@ -1240,7 +1252,7 @@
 
         /* border: 1px solid rgba(239, 59, 45, 0.7); */
         padding: 2px 2px 3px 2px;
-        left: 1px;
+        left: -10px;
         animation: imgAccueilFadeIn 2s 1.8s ease forwards;
 
     }

@@ -933,7 +933,7 @@ textarea:focus, input:focus{
 }
 
 .cvSvgPathBlue {
-    stroke: var(--secondaryColorMat) !important;
+    stroke: var(--secondaryColor) !important;
 }
 
 
@@ -1220,16 +1220,16 @@ li::before {
 }
 .cvSectionBgGradient {
     background: rgb(12,237,200);
-    background: -moz-radial-gradient(circle, rgba(12,237,200,0.06906512605042014) 0%, rgba(66,66,66,0) 67%);
-    background: -webkit-radial-gradient(circle, rgba(12,237,200,0.06906512605042014) 0%, rgba(66,66,66,0) 67%);
-    background: radial-gradient(circle, rgba(12,237,200,0.06906512605042014) 0%, rgba(66,66,66,0) 67%);
+    background: -moz-radial-gradient(circle, rgba(12,237,200,0.1) 0%, rgba(66,66,66,0) 60%);
+    background: -webkit-radial-gradient(circle, rgba(12,237,200,0.1) 0%, rgba(66,66,66,0) 60%);
+    background: radial-gradient(circle, rgba(12,237,200,0.1) 0%, rgba(66,66,66,0) 60%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0cedc8",endColorstr="#424242",GradientType=1);
 }
 .cvSectionBgGradientSkills {
     background: rgb(12,237,200);
-    background: -moz-radial-gradient(circle, rgba(12,237,200,0.1250875350140056) 0%, rgba(66,66,66,0) 52%);
-    background: -webkit-radial-gradient(circle, rgba(12,237,200,0.1250875350140056) 0%, rgba(66,66,66,0) 52%);
-    background: radial-gradient(circle, rgba(12,237,200,0.1250875350140056) 0%, rgba(66,66,66,0) 52%);
+    background: -moz-radial-gradient(circle, rgba(12,237,200,0.4) 0%, rgba(66,66,66,0) 45%);
+    background: -webkit-radial-gradient(circle, rgba(12,237,200,0.4) 0%, rgba(66,66,66,0) 45%);
+    background: radial-gradient(circle, rgba(12,237,200,0.4) 0%, rgba(66,66,66,0) 45%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0cedc8",endColorstr="#424242",GradientType=1);
 }
 
@@ -1335,6 +1335,8 @@ li::before {
 .outils {
     position: relative;
     opacity: 0;
+
+    width: 275px;
     
 }
 .outilsAnim {
@@ -1347,6 +1349,8 @@ li::before {
     position: relative;
     opacity: 0;
     margin: 0 auto;
+
+    width: 220px;
 }
 .langsAnim {
     animation-name: fadeInHobbys;
@@ -2503,9 +2507,9 @@ li::before {
     width: 125%;
 
     /* transition: all 0.3s; */
-    transition: height 0.3s, transform 0.3s, background 0.3s, boxShadow 0.3s;
+    transition: height 0.1s, transform 0.3s, background 0.3s, boxShadow 0.3s;
 
-    animation: fadeInTraitProjetAccueil 2s 0s ease forwards;
+    animation: fadeInTraitProjetAccueil 1.2s 0s ease forwards;
 }
 @keyframes fadeInTraitProjetAccueil {
     from {
@@ -2517,6 +2521,8 @@ li::before {
 }
 
 .accueilProjectsTrait2 {
+    display: none;
+    
     position: absolute;
     top: 52%;
     transform: translate(-250px, -52%);
@@ -2784,11 +2790,30 @@ li::before {
     border-color: var(--secondaryColor);
     /* background-color: #109f88; */
     /* background-color: #2cc5ac; */
-    background: radial-gradient(circle, rgba(5,236,208,1) 60%, rgba(255,255,255,0) 140%);
+    background: radial-gradient(circle, rgba(5,236,208,1) 70%, rgba(255,255,255,0) 140%);
     border-left-color: #00eece;
 
     /* glow */
     box-shadow: 0 0 64px -15px #0ff;
+
+    animation: glowLinkProjects 3s 0s ease infinite;
+}
+@keyframes glowLinkProjects {
+    /* 0% {
+        background: radial-gradient(circle, rgba(5,236,208,1) 60%, rgba(255,255,255,0) 140%);
+    }
+    50% {
+        background: radial-gradient(circle, rgba(5,236,208,1) 60%, rgba(255,255,255,0) 140%);
+    }
+    100% {
+        background: radial-gradient(circle, rgba(5,236,208,1) 60%, rgba(255,255,255,0) 140%);
+    } */
+}
+
+.fixScalePortraitPC {
+    position: relative;
+    transform: scale(0.95);
+    left: 22px;
 }
 
 .accueilProjectsRightLink:hover .redirectProjectsIcon {
@@ -2799,9 +2824,9 @@ li::before {
 /* sibling selector trait quand rightDiv hovered: */
 .accueilProjectsRightLink:hover + .accueilProjectsTrait {
     /* effet glow (décalé X car rectangulaire visible pas beau) */
-    box-shadow: 40px 0 64px -15px #0ff;
+    box-shadow: 50px 0 64px -15px #0ff;
 
-    height: 100px !important;
+    height: 100px;
 
     background: rgb(66,171,154);
     background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
@@ -2809,7 +2834,23 @@ li::before {
     background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
 
-    transform: translate(210px, -50%);
+    transform: translate(80px, -50%);
+
+    animation: bandeauGrowShrink 2.1s 0s linear infinite;
+}
+@keyframes bandeauGrowShrink {
+    0% {
+        transform: translate(80px, -50%);
+        height: 110px;
+    }
+    50% {
+        transform: translate(310px, -50%);
+        height: 145px;
+    }
+    100% {
+        transform: translate(80px, -50%);
+        height: 110px;
+    }
 }
 
 /* MARCHE PAS (why? ça marche avec le 1er trait et c'est exactement le meme binsss) */
