@@ -1463,8 +1463,8 @@ li::before {
     background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(12,237,200,0.25) 100%);
     /* padding: 0px 9px; */
     border-radius: 5px;
-    border-right: 1px solid #19ddbc1a;
-    border-left: 1px solid #19ddbc1a;
+    /* border-right: 1px solid #19ddbc1a;
+    border-left: 1px solid #19ddbc1a; */
     border-bottom: 1px solid var(--secondaryColor);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2689,7 +2689,7 @@ li::before {
 .imgAccueil { 
 
     /* TEst  */
-    border-bottom: 5px solid var(--secondaryColor);
+    /* border-bottom: 5px solid var(--secondaryColor); */
 
 
     opacity: 0;
@@ -2700,7 +2700,7 @@ li::before {
     height: 159px;
     margin: 20px 30px 15px 49px;
 
-    padding: 4px;
+    padding: 4px 2px 3px 3px;
 
     vertical-align: middle;
     position: relative;

@@ -520,6 +520,7 @@
     .projectLinksDiv {
         flex-direction: row;
         float: none;
+        right: 0px;
     }
 
     .headerProjets {
@@ -675,10 +676,10 @@
         /* background: rgb(2,0,36); */
         background: rgba(2,0,36,0);
         /* background: radial-gradient(circle, rgba(12,237,200,0.25) 0%, rgba(2,0,36,0) 50%); */
-        border-left: 1px solid #19ddbcc1;
-        border-right: 1px solid #19ddbcc1;
+        /* border-left: 1px solid #19ddbcc1;
+        border-right: 1px solid #19ddbcc1; */
         border-bottom: 0px solid white;
-        border-radius: 3px;
+        /* border-radius: 3px; */
 
     }
 
@@ -1002,6 +1003,15 @@
         /* margin-block-end: 0em; */
     }
 
+    .accueilProjectsTrait {
+        width: 150%;
+        height: 75px;
+        transform: translate(-10px, -50%);
+        background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.9) 50%, rgba(66,66,66,0) 100%);
+
+        transition: all 0.2s;
+    }
+
 
     .accueilProjectsDiv {
         flex-direction: column;
@@ -1011,6 +1021,10 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+
+        border: 2px solid #0a0a0a;
+        border-radius: 11px;
+        box-shadow: 0px 0 29px 7px #00ffff59;
     }
     .accueilVideo {
         width: 100%;
@@ -1067,6 +1081,12 @@
         color: white;
         text-shadow: 2px 2px black;
         font-size: 1.5em;
+    }
+
+    .accueilProjectsDiv:hover .accueilProjectsTrait {
+        width: 190%;
+        transform: translate(48px, -50%);
+        height: 32px;
     }
 
 
@@ -1161,7 +1181,7 @@
     }
 
     .accueilProjectsBtnLabel {
-        background-color: #26ceb2;
+        background-color: var(--secondaryColor);
         width: 100%;
         height: 35px;
 
@@ -1170,7 +1190,7 @@
         /* justify-content: space-evenly; */
         gap: 14px;
 
-        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px;
 
         transition: all 0.3s;
