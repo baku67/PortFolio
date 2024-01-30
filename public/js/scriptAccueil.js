@@ -19,19 +19,6 @@ window.onload = function() {
     // observerDocumentations.observe(document.querySelector('#docuLoadContainer-wrapper'));
 
 
-
-    // FadeIn du text Présentation:
-    setTimeout(function() {
-      document.querySelectorAll(".accueilWord").forEach((elem, i) => {
-        setTimeout(() => {
-          elem.classList.add("fadeInWordPresentation");
-        }, i * 10);
-      });
-    }, 350)
-    // Fin
-
-
-
     // Détection mobile
     var mobileDetection;
     if (navigator.userAgent.match(/Android/i)
@@ -46,6 +33,38 @@ window.onload = function() {
       mobileDetection = false ;
     }
     // Fin
+    console.log("Mobile detection JS: " + mobileDetection);
+
+
+    
+    // FadeIn du text Présentation:
+    if(mobileDetection) {
+
+      setTimeout(function() {
+        document.querySelectorAll(".accueilWord").forEach((elem, i) => {
+          setTimeout(() => {
+            elem.classList.add("fadeInWordPresentation");
+          }, i * 20);
+        });
+      }, 350)
+
+    } else {
+
+      setTimeout(function() {
+        document.querySelectorAll(".accueilWord").forEach((elem, i) => {
+          setTimeout(() => {
+            elem.classList.add("fadeInWordPresentation");
+          }, i * 13);
+        });
+      }, 350)
+
+    }
+
+    // Fin
+
+
+
+
 
     // 
     // Interval Raie Accueil (s'adapte à l'écran car durée de l'anim différentes):

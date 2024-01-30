@@ -111,7 +111,7 @@
 
                             <div id="projectContainer">
 
-                                <div class="gridProjetHeaderContainer">
+                                <div class="gridProjetHeaderContainer description1boxShadow">
 
                                     <div class="iframe">
                                         <!-- WIP Fleche SVG pc -->
@@ -256,7 +256,7 @@
 
                             <div id="projectContainer">
 
-                                <div class="gridProjetHeaderContainer">
+                                <div class="gridProjetHeaderContainer description2boxShadow">
 
                                     <div class="iframe">
                                         <div class="boutonMockup"></div>
@@ -273,7 +273,7 @@
 
                                     <div>
 
-                                        <div class="description" >
+                                        <div class="description">
 
                                             <h3 class="projetNbr">Projet 2</h3>
                                             <div class="projectTitle">
@@ -404,7 +404,7 @@
 
                             <div id="projectContainer2">
 
-                                <div class="gridProjetHeaderContainer">
+                                <div class="gridProjetHeaderContainer description3boxShadow">
 
                                     <div class="iframe">
                                         <div class="boutonMockup"></div>

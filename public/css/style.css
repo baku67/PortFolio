@@ -1891,6 +1891,7 @@ li::before {
 
 }
 .iframe { 
+    z-index: 9999;
     filter: drop-shadow(10px 17px 8px black);
     position: relative;
     bottom: 50px;
@@ -6184,7 +6185,7 @@ li.veilleLigneAjout::before {
 }
 
 .fadeInWordPresentation {
-    animation: fadeInWordPresentation 0.5s 0s ease forwards;
+    animation: fadeInWordPresentation 0.8s 0s ease forwards;
 }
 @keyframes fadeInWordPresentation {
     from {
