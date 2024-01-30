@@ -301,8 +301,9 @@ swiper-slide {
 .gridProjetHeaderContainer {
     /* position: relative;
     bottom: 50px; */
-    margin-top: 50px;
+    margin-top: 22px;
     justify-content: space-around;
+    
 }
 
 .projetFuncList {
@@ -376,10 +377,25 @@ swiper-slide {
     /* background: radial-gradient(circle, rgba(239,59,45,0.15) 0%, rgba(2,0,36,0) 70%); */
 
     position: absolute;
-    transform: translate(163px, -66px);
+    transform: translate(163px, -66px) rotateX(0deg);
     opacity: 0.92;
     margin-left: 25px;
+
+    /* Drawing = 3s donc delai 3s */
+    animation: chapeauDiplome 2.8s 3s linear infinite;
 }
+@keyframes chapeauDiplome {
+    0% {
+        transform: translate(163px, -66px) rotateX(0deg);
+    }
+    50% {
+        transform: translate(163px, -66px) rotateX(25deg);
+    }
+    100% {
+        transform: translate(163px, -66px) rotateX(0deg);
+    }
+}
+
 
 .formationSvgPath {
     opacity: 0.8;
@@ -446,11 +462,28 @@ swiper-slide {
 
 .hobbiesSvgContainer {
     position: absolute;
-    transform: translate(160px, -66px);
+    transform: translate(160px, -66px) rotateY(0deg);
     opacity: 0.92;
     z-index: -99;
 
+    width: 93px;
+    height: 78px;
+
     overflow: visible;
+
+    /* Drawing = 3s donc delai 3s */
+    animation: poissonHobbies 2.8s 3s linear infinite;
+}
+@keyframes poissonHobbies {
+    0% {
+        transform: translate(160px, -66px) rotateY(0deg);
+    }
+    50% {
+        transform: translate(160px, -66px) rotateY(26deg);
+    }
+    100% {
+        transform: translate(160px, -66px) rotateY(0deg);
+    }
 }
 
 .hobbiesSvgPath {
@@ -1852,13 +1885,15 @@ li::before {
 .gridProjetHeaderContainer {
     display: inline-flex;
 
-    width:85%;
+    width: 90%;
+    position: relative;
+    right: 33px;
 
 }
 .iframe { 
     filter: drop-shadow(10px 17px 8px black);
     position: relative;
-    bottom: 28px;
+    bottom: 50px;
     text-align: center;
 
     grid-area: iframe; 
@@ -1866,11 +1901,27 @@ li::before {
     margin-right: 35px;
     opacity: 0;
 
-    animation-name: fadeIn;
+    /* animation-name: fadeIn;
     animation-duration: 1s;
     animation-delay: 0.5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
+
+    transform: perspective(1220px) rotateY(83deg) translateX(35px) scale(0.8);
+
+    animation: fadeInRotateIframe 2s 0.5s ease forwards !important;
 }
+
+@keyframes fadeInRotateIframe {
+    from {
+        opacity: 0;
+        transform: perspective(1220px) rotateY(83deg) translateX(35px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(1220px) rotateY(0deg) translateX(35px) scale(0.8);
+    }
+}
+
 .iframe iframe {
     display: block;
     margin: 0 auto;
@@ -1953,7 +2004,7 @@ li::before {
 
 .carouselImgProject {
     width: -webkit-fill-available;
-    width: 70%;
+    width: 60%;
 
     border-radius: 12px;
 }
@@ -1993,7 +2044,7 @@ li::before {
 
 .splide__toggle {
     position: absolute;
-    bottom: -7px;
+    bottom: -5px;
     right: 50%;
     transform: translateX(50%);
     width: 32px;
@@ -5879,10 +5930,10 @@ li.veilleLigneAjout::before {
 .projectLinksDiv {
     display: inline-flex;
     flex-direction: row;
-    gap: 6px;
+    gap: 15px;
     /* Maj caroussel */
     /* float: right; */
-    right: 10px;
+    right: 0px;
     position: relative;
 
     transition: 0.4s ease;

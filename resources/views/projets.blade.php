@@ -208,8 +208,8 @@
                                             </div>
 
                                             <div class="splide__progress">
-                                                    <div class="splide__progress__bar">
-                                                    </div>
+                                                <div class="splide__progress__bar">
+                                                </div>
                                             </div>
 
                                             <button class="splide__toggle" type="button">

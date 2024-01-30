@@ -100,27 +100,18 @@
     .iframe {
         margin-right: 55px;
         /* Marche: (sans le rotate 3D) */
-        /* transform: perspective(1220px) rotateY(11deg) translateX(35px) scale(0.8); */
+    
         transform: perspective(1220px) rotateY(83deg) translateX(35px) scale(0.8);
 
-        /* opacity: 0; */
-        transform: perspective(1220px) rotateY(11deg) translateX(35px) scale(0.9) rotate3d(1, 1, 1, 240deg);
-
-        /* Mettre anim fadeIn avec from rotate3D en plus 240deg to 360deg: */
-        /* from perspective(1220px) rotateY(11deg) translateX(35px) scale(0.8) rotate3d(1, 1, 1, 240deg) */
-        /* to perspective(1220px) rotateY(11deg) translateX(35px) scale(0.8) rotate3d(1, 1, 1, 360deg) */
-    
         animation: fadeInRotateIframe 2s 0.5s ease forwards !important;
     }
     @keyframes fadeInRotateIframe {
         from {
             opacity: 0;
-            /* transform: perspective(1220px) rotateY(11deg) translateX(35px) scale(0.9) rotate3d(1, 1, 1, 240deg); */
             transform: perspective(1220px) rotateY(83deg) translateX(35px) scale(0.8);
         }
         to {
             opacity: 1;
-            /* transform: perspective(1220px) rotateY(11deg) translateX(35px) scale(0.9) rotate3d(1, 1, 1, 359deg); */
             transform: perspective(1220px) rotateY(0deg) translateX(35px) scale(0.8);
         }
     }
@@ -144,16 +135,23 @@
     }
 
     .projectLinksDiv {
-        gap: 8px;
+        gap: 21px;
+        flex-direction: row;
+        float: none;
+        right: 0px;
     }
 
     #underlineCV {
         font-size: 2em;
     }
 
+    .githubProjectLink {
+        padding: 4px 13px;
+    }
+
     .iframeElem {
         border-width: 0 0 64px -15px #0ff;
-        width: 397px;
+        width: 411px;
     }
     
     .paragrapheAccueil {
@@ -676,6 +674,8 @@
         /* margin-top: 40px; */
         margin-top: 35px;
         justify-content: center;
+
+        right: 25px;
 
         width: 75%;
     }
