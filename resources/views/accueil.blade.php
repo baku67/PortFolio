@@ -282,26 +282,23 @@
                 <div id="accueilProjectsDiv" class="accueilProjectsDiv">
 
                     <!-- Label bouton mobile -->
-                    <!-- <a href="https://portfolio.basilek.ovh/projets" style="height:fit-content; z-index:9;" class="accueilProjectsRightLink"> -->
                     <a href="https://portfolio.basilek.ovh/projets" class="accueilProjectsLabelLink">
                         <div class="accueilProjectsBtnLabel">
-                            <!-- <img src="img/projectsIcon.png" class="accueilProjectsIcon" /> -->
                             <span class="accueilProjectsRightDivSpan">
                                 Voir mes projets 
-                                <!-- <i class="fa-solid fa-square-up-right redirectProjectsIcon"></i> -->
                             </span>
                         </div>
                     </a>
 
-                    <!-- PC (controls) -->
-                    <video autoplay controls muted loop id="accueilVideo" class="accueilVideo">
+                    <!-- PC (controls) video large -->
+                    <video autoplay controls muted loop id="accueilVideo" class="accueilVideo isDesktop">
                         <source src="img\demos\projectsPreview.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
 
-                    <!-- Mobile (pas de controls) -->
-                    <video autoplay muted loop id="accueilVideo" class="accueilVideo">
-                        <source src="img\demos\projectsPreview.mp4" type="video/mp4">
+                    <!-- Mobile (pas de controls) video trimmed -->
+                    <video autoplay muted loop id="accueilVideo" class="accueilVideo isMobile">
+                        <source src="img\demos\projectsPreview_trimmedMobile4.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
 
@@ -317,7 +314,9 @@
                     </a>
 
                     <div class="accueilProjectsTrait"></div>
-                    <div class="accueilProjectsTrait2"></div>
+
+                    <!-- Mobile: icones keyboard+mouse -->
+                    <img src="img/keyboard_blue.png" class="accueilKeyboardPng isMobile">
 
                 </div>
 
@@ -335,7 +334,7 @@
                     <div>
                         <button id="contactButton">
                             <i class="fa-regular fa-paper-plane"></i>
-                            <span> Me contacter</span>
+                            <span> Contactez-moi</span>
                         </button>
                         <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
                         <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>            

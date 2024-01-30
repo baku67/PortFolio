@@ -210,7 +210,7 @@
         transform: scale(0.83);
         fill: none; 
         stroke: var(--secondaryColor); 
-        stroke-width: 3; 
+        stroke-width: 4; 
         stroke-linecap: round; 
         stroke-linejoin:  miter; 
         stroke-miterlimit: 4;

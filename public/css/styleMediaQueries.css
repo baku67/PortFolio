@@ -88,8 +88,8 @@
             opacity: 0.2;
             transform: translateX(-35px);
         }
-        37% {
-            opacity: 0.75;
+        50% {
+            opacity: 0.9;
             transform: translateX(5px);
         }
         100% {
@@ -380,7 +380,7 @@
         padding: 14px 5px 35px 5px;
         border: 2px solid #02ffd685;
 
-        border-radius: 9px;
+        border-radius: 11px;
 
         /* bottom: 270px; */
     }
@@ -538,7 +538,8 @@
         /* MAJ test scroll mobile */
         /* width: 95%; */
         width: 100%;
-        transform: scale(0.85);
+        transform: scale(0.79);
+        bottom: 25px;
     }
     .iframeElem {
         /* width: 335px; */
@@ -913,6 +914,7 @@
 
     position: relative;
     bottom: 30px;
+    margin-bottom: 23px;
 }
 .lightBulbWrapperDiv {
     filter: drop-shadow(12px 5px 6px black);
@@ -1012,13 +1014,16 @@
     }
 
     .accueilProjectsTrait {
+        /* Give up du bandeau anim mobile: */
+        display: none;
+
         width: 150%;
         height: 0px;
         transform: translate(-400px, -50%);
         background: linear-gradient(85deg, rgba(66,171,154,0) 8%, rgba(66,171,154,0.08) 50%, rgba(66,66,66,0) 92%);
 
         /* transition: all 0.4s; */
-        transition: width 0.4s, transform 1.4s, height 0.4s, background 0.4s;
+        transition: width 0.4s, transform 1s, height 0.4s, background 0.4s;
     }
     .accueilProjectsTrait2 {
         display: none;
@@ -1036,16 +1041,20 @@
 
     .accueilProjectsDiv {
         flex-direction: column;
-        margin: 10px auto 42px auto;
+        margin: 0px auto 95px auto;
 
-        width: 70%;
+        /* Pourcentage contraignant pour height bouton hover mobile */
+        /* width: 70%; */
+        width: 210px;
         position: relative;
         left: 50%;
-        transform: translateX(-50%);
+
+        /* transform: translateX(-50%); */
+        transform: translate(-50%, 0px);
 
         border: 2px solid #0a0a0a;
         border-radius: 11px;
-        box-shadow: 0px 0 29px 7px #00ffff59;
+        box-shadow: 0px 0 39px 15px #00ffff59;
 
         transition: all 0.3s;
     }
@@ -1054,6 +1063,7 @@
         border: 2px solid var(--secondaryColor); */
         box-shadow: 0px 0 0px 0px #ffffff;
         border: 2px solid rgba(0,0,0,0);
+        transform: translate(-50%, 1px);
 
     }
     .accueilVideo {
@@ -1061,7 +1071,11 @@
         border-radius: 8px;
         margin: auto;
 
-        border: 6px solid var(--secondaryColor);
+        /* border: 5px solid var(--secondaryColor); */
+        border-top: 9px solid var(--secondaryColor);
+        border-bottom: 5px solid var(--secondaryColor);
+        border-right: 0px;
+        border-left: 0px;
     }
     .accueilProjectsRightDiv {
         flex-direction: row;
@@ -1076,50 +1090,90 @@
     }
 
     .accueilProjectsRightDivSpan {
-        font-size: 1.4em;
+        font-size: 1.1em;
         font-weight: bold;
-        color: #060606;
+        color: #060606e8;
         /* text-shadow: 1px 1px black; */
 
         /* border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px; */
         width: 100%;
 
+        letter-spacing: 0px;
+        animation: testLetterSpacing 1.5s 0s ease-in-out infinite;
+
         transition: all 0.3s;
+    }
+    @keyframes testLetterSpacing {
+        0% {
+            letter-spacing: 0px;
+        }
+        50% {
+            letter-spacing: 1px;
+        }
+        100% {
+            letter-spacing: 0px;
+        }
     }
 
     .accueilProjectsLabelLink {
         position: absolute;
+        /* bottom: 0px; */
         bottom: 0px;
         z-index: 25;
         width: 100%;
         text-align: center;
 
         display: block;
+        transition: all 0.3s;
+    }
 
+    .accueilProjectsDiv:hover .accueilProjectsLabelLink {
+        bottom: 0px;
     }
 
     .accueilProjectsDiv:hover .accueilProjectsBtnLabel {
         border-radius: 9px;
-        height: 142px;
+        height: 154px;
 
         /* background-color: #26ceb287; */
-        background-color: #26ceb280;
+        background-color: #30f1d1bf;
         backdrop-filter: blur(1px);
+
+        /* animation: keyboardHueRotate 4s 0s linear infinite; */
+    }
+
+    .accueilKeyboardPng {
+        position: absolute;
+        width: 250px;
+        top: 103%;
+
+        transition: all 0.3s;
+    }
+    .accueilProjectsDiv:hover .accueilKeyboardPng {
+        /* animation: keyboardHueRotate 4s 0s linear infinite; */
+    }
+    @keyframes keyboardHueRotate {
+        from {
+            filter: hue-rotate(0deg);
+        }
+        to {
+            filter: hue-rotate(360deg);
+        }
     }
 
     .accueilProjectsDiv:hover .accueilProjectsBtnLabel .accueilProjectsRightDivSpan {
         color: white;
         text-shadow: 2px 2px black;
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .accueilProjectsDiv:hover .accueilProjectsTrait {
         width: 400%;
         transform: translate(630px, -49%);
-        height: 154px !important;
+        height: 190px !important;
 
-        background: linear-gradient(90deg, rgba(66,171,154,0) 8%, rgba(66,171,154,1) 50%, rgba(66,66,66,0) 92%);
+        background: linear-gradient(90deg, rgba(66,171,154,0) 8%, rgba(66,171,154,0.8) 50%, rgba(66,66,66,0) 92%);
     }
 
 
@@ -1219,15 +1273,15 @@
     .accueilProjectsBtnLabel {
         background-color: var(--secondaryColor);
         width: 100%;
-        height: 35px;
+        height: 23px;
 
         display: inline-flex;
         flex-direction: row;
         /* justify-content: space-evenly; */
         gap: 14px;
 
-        border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 9px;
+        border-bottom-right-radius: 9px;
 
         transition: all 0.3s;
     }
