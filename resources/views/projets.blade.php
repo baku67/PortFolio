@@ -144,7 +144,7 @@
 
                                         <ul class="projetSkillsList">
                                             <li>HTML/CSS</li>
-                                            <li>Javascript</li>
+                                            <li>JS</li>
                                             <li class="mainSkill">PHP / Symfony</li>
                                             <li>Doctrine / DQL</li>
                                             <li>Twig</li>

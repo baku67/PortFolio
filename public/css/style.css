@@ -885,6 +885,9 @@ textarea:focus, input:focus{
 
 #contactButton {
     opacity: 0;
+    align-items: center;
+    gap: 11px;
+
     font-family: 'Nunito', sans-serif;
     display: flex;
     margin:0 auto;
@@ -1280,6 +1283,7 @@ li::before {
       color: var(--secondaryColor);
       font-size: large;
       font-weight: bold;
+      text-shadow: 1px 1px black;
   }
 
 
@@ -2486,15 +2490,30 @@ li::before {
     transform: translate(-50px, -50%);
     z-index: 0;
 
-    height: 3px;
-    background: rgb(66,171,154);
+    height: 4px;
+    /* background: rgb(66,171,154);
     background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.7805497198879552) 50%, rgba(66,66,66,0) 100%);
     background: -webkit-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.7805497198879552) 50%, rgba(66,66,66,0) 100%);
-    background: linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.7805497198879552) 50%, rgba(66,66,66,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42ab9a",endColorstr="#424242",GradientType=1);
+    background: linear-gradient(85deg, rgba(66,171,154,0) 15%, rgba(0, 255, 213, 0.3) 50%, rgba(66,66,66,0) 85%); */
+    background: rgb(0,255,213);
+    background: -moz-radial-gradient(circle, rgba(0,255,213,0.4) 0%, rgba(255,255,255,0) 70%);
+    background: -webkit-radial-gradient(circle, rgba(0,255,213,0.4) 0%, rgba(255,255,255,0) 70%);
+    background: radial-gradient(circle, rgba(0,255,213,0.4) 0%, rgba(255,255,255,0) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffd5",endColorstr="#ffffff",GradientType=1);
     width: 125%;
 
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
+    transition: height 0.3s, transform 0.3s, background 0.3s, boxShadow 0.3s;
+
+    animation: fadeInTraitProjetAccueil 2s 0s ease forwards;
+}
+@keyframes fadeInTraitProjetAccueil {
+    from {
+        height: 4px;
+    }
+    to {
+        height: 275px;
+    }
 }
 
 .accueilProjectsTrait2 {
@@ -2724,6 +2743,7 @@ li::before {
     margin: 60px auto 85px auto;
     justify-content: space-evenly;
 }
+
 .accueilProjectsRightDiv {
     display: inline-flex;
     flex-direction: column;
@@ -2735,6 +2755,10 @@ li::before {
     display: none;
 }
 .accueilProjectsRightDiv:hover {
+
+}
+
+.slideInProjectBtn {
 
 }
 
@@ -2759,7 +2783,9 @@ li::before {
     color: rgb(8, 8, 8);
     border-color: var(--secondaryColor);
     /* background-color: #109f88; */
-    background-color: var(--secondaryColorVeryMat);
+    /* background-color: #2cc5ac; */
+    background: radial-gradient(circle, rgba(5,236,208,1) 60%, rgba(255,255,255,0) 140%);
+    border-left-color: #00eece;
 
     /* glow */
     box-shadow: 0 0 64px -15px #0ff;
@@ -2775,7 +2801,7 @@ li::before {
     /* effet glow (décalé X car rectangulaire visible pas beau) */
     box-shadow: 40px 0 64px -15px #0ff;
 
-    height: 50px;
+    height: 100px !important;
 
     background: rgb(66,171,154);
     background: -moz-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(0,255,213,1) 50%, rgba(66,66,66,0) 100%);
@@ -2818,7 +2844,12 @@ li::before {
     display:inline-flex;
     align-items:center;
     justify-content:space-around;
+
+    font-weight: bold;
+    color: #e2ebeb;
 }
+
+
 
 
 /* Select an H1 heading that has a currently-hovered <a>nchor as a sibling */
@@ -2852,32 +2883,18 @@ li::before {
 }
 
 .accueilProjectsRightLink:hover .accueilProjectsRightDiv img {
-    transform: scale(1.06);
+    transform: scale(1.07);
     opacity: 1;
-    /* filter: invert(1); */
-    /* filter: hue-rotate(180deg); */
+    filter: drop-shadow(0px 0px 1px black);
 
-
-    /* HUE rotate */
-    /* filter: hue-rotate(0deg);*/
-    /* animation: hueRotateIcon 2s 0s ease infinite;  */
-}
-@keyframes hueRotateIcon {
-    0% {
-        filter: hue-rotate(180deg);
-    }
-    50% {
-        filter: hue-rotate(220deg);
-    }
-    100% {
-        filter: hue-rotate(180deg);
-    }
 }
 
-/* .accueilProjectsRightDiv:hover .accueilProjectsIcon {
-    opacity: 1;
-    filter: invert(1);
-} */
+
+.accueilProjectsRightLink:hover .accueilProjectsRightDiv span {
+    color: #272d2c;
+
+}
+
 
 .pageContainerAccueil {
     animation: accueilGradient 1s 0.2s ease forwards;

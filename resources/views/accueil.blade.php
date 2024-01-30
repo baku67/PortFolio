@@ -280,7 +280,7 @@
                 <br>
 
 
-                <div class="accueilProjectsDiv">
+                <div id="accueilProjectsDiv" class="accueilProjectsDiv">
 
                     <!-- Label bouton mobile -->
                     <!-- <a href="https://portfolio.basilek.ovh/projets" style="height:fit-content; z-index:9;" class="accueilProjectsRightLink"> -->
@@ -327,7 +327,10 @@
 
                     <!-- form https://enjoy.plezi.co -->
                     <div>
-                        <button id="contactButton">Me contacter</button>
+                        <button id="contactButton">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            <span> Me contacter</span>
+                        </button>
                         <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
                         <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>            
                     </div>

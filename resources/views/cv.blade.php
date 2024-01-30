@@ -263,7 +263,7 @@
                             <div class="carreCompetences grid-html5">
                                 <img class="imgCompetences isDesktop" src="img/competences/html5.png">
                                 <img class="imgCompetences isMobile" src="img/competences/html5_blue.png">
-                                <br>
+                                <!-- <br> -->
                                 <p class="textCompetences">HTML5</p>
                             </div>
                             <div class="carreCompetences grid-css3">

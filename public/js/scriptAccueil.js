@@ -253,6 +253,22 @@ window.onload = function() {
   observerContactButton.observe(document.querySelector('#contactButton'));
 
 
+  const observerProjects = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        document.getElementById("accueilProjectsDiv").classList.add("slideInProjectBtn")
+        setTimeout(function() {
+          // document.getElementById("accueilProjectsDiv").style.opacity = "1";
+          document.getElementById("accueilProjectsDiv").classList.remove("slideInProjectBtn")
+        }, 1005)
+      }
+    })
+  })
+  observerProjects.observe(document.querySelector('#accueilProjectsDiv'));
+
+
 
 
   // Apparition formulaire de contact
