@@ -1858,6 +1858,7 @@ li::before {
 .iframe { 
     filter: drop-shadow(10px 17px 8px black);
     position: relative;
+    bottom: 28px;
     text-align: center;
 
     grid-area: iframe; 
@@ -1969,6 +1970,9 @@ li::before {
     color: rgba(255, 0, 0, 0);
     list-style-type: none !important;
 }
+.splide__pagination {
+    bottom: -26px;
+}
 .splide__pagination li::before {
     color: rgba(255, 0, 0, 0);
     list-style-type: none !important;
@@ -1988,24 +1992,24 @@ li::before {
 }
 
 .splide__toggle {
-    position: relative;
-    top: 26px;
-
+    position: absolute;
+    bottom: -7px;
+    right: 50%;
+    transform: translateX(50%);
     width: 32px;
     height: 32px;
-    background-color: #ffffff2e;
+    background-color: #06060a;
     border-radius: 50px;
     fill: #ef3b2d;
-    border: 2px solid #ef3b2d;
-
+    border: 0px solid #ef3b2d94;
+    border-bottom: 2px solid #ef3b2d;
     align-items: center;
     display: inline-flex;
-
     transition: all 0.2s;
 }
 .splide__toggle:hover {
     background-color: #ef3b2d;
-    fill: black;
+    fill: #06060a;
 }
 
 
@@ -2041,7 +2045,7 @@ li::before {
     z-index: 100;
 
     color: white;
-    background-color: #151a2373;
+    background-color: #151a2330;
     padding: 13px 20px 37px 20px;
     box-shadow: 0 0 50px -15px #ef3b2d;
     border-radius: 12px;

@@ -99,18 +99,41 @@
 
     .iframe {
         margin-right: 55px;
+        /* Marche: (sans le rotate 3D) */
+        /* transform: perspective(1220px) rotateY(11deg) translateX(35px) scale(0.8); */
+        transform: perspective(1220px) rotateY(83deg) translateX(35px) scale(0.8);
+
+        /* opacity: 0; */
+        transform: perspective(1220px) rotateY(11deg) translateX(35px) scale(0.9) rotate3d(1, 1, 1, 240deg);
+
+        /* Mettre anim fadeIn avec from rotate3D en plus 240deg to 360deg: */
+        /* from perspective(1220px) rotateY(11deg) translateX(35px) scale(0.8) rotate3d(1, 1, 1, 240deg) */
+        /* to perspective(1220px) rotateY(11deg) translateX(35px) scale(0.8) rotate3d(1, 1, 1, 360deg) */
+    
+        animation: fadeInRotateIframe 2s 0.5s ease forwards !important;
+    }
+    @keyframes fadeInRotateIframe {
+        from {
+            opacity: 0;
+            /* transform: perspective(1220px) rotateY(11deg) translateX(35px) scale(0.9) rotate3d(1, 1, 1, 240deg); */
+            transform: perspective(1220px) rotateY(83deg) translateX(35px) scale(0.8);
+        }
+        to {
+            opacity: 1;
+            /* transform: perspective(1220px) rotateY(11deg) translateX(35px) scale(0.9) rotate3d(1, 1, 1, 359deg); */
+            transform: perspective(1220px) rotateY(0deg) translateX(35px) scale(0.8);
+        }
     }
 
     .splide__toggle {
-        width: 32px;
-        height: 32px;
+
     }
 
     .description {
         position: relative;
         top: 7px;
 
-        border: 2px solid #02ffd66b;
+        border: 1px solid var(--secondaryColor);
         font-size: 90%;
         padding: 13px 23px 39px 23px;
 
@@ -130,7 +153,7 @@
 
     .iframeElem {
         border-width: 0 0 64px -15px #0ff;
-        width: 390px;
+        width: 397px;
     }
     
     .paragrapheAccueil {
@@ -650,7 +673,8 @@
 
     .gridProjetHeaderContainer {
         gap: 60px;
-        margin-top: 40px;
+        /* margin-top: 40px; */
+        margin-top: 35px;
         justify-content: center;
 
         width: 75%;

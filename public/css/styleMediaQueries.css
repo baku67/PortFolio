@@ -73,7 +73,7 @@
     .swipeSymbol {
         position: fixed;
         right: 5%;
-        top: 167px;
+        top: 150px;
         font-size: 0.7em;
         color: var(--secondaryColorVif);
         display: flex;
@@ -121,7 +121,7 @@
             opacity: 0;
         }
         to {
-            opacity: 0.8;
+            opacity: 1;
         }
     }
 
@@ -348,7 +348,7 @@
 
 
     #lineBreakMobile {
-        display: block;
+        display: none;
     }
     #lineBreakMobileStatus {
         display: block;
@@ -377,20 +377,44 @@
         font-size: 100%;
         grid-area: description; 
         position: relative;
-        padding: 14px 5px 35px 5px;
-        border: 2px solid #02ffd685;
+        padding: 14px 5px 26px 5px;
+        border: 1px solid #02ffd685;
 
-        border-radius: 11px;
+        /* border-radius: 11px; */
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        background-color: #151a2314;
 
         /* bottom: 270px; */
     }
 
+    .splide__pagination {
+        display: none;
+        bottom: -24px;
+    }
+
     .splide__toggle {
-        position: relative;
-        top: 26px;
+        position: absolute;
+        bottom: -8px;
+        right: 50%;
+        transform: translateX(50%);
+        background-color: #111425;
+        border: 0px solid #ef3b2d;
+        border-bottom: 1px solid #ef3b2d;
     
         width: 32px;
         height: 32px;
+    }
+
+    .carouselImgProject {
+        border-radius: 7px;
+    }
+    .splide__slide img {
+        border: 2px solid var(--secondaryColor);
+        padding: 0px;
     }
 
 
@@ -448,12 +472,12 @@
         margin-block-start: 0.2em !important;
     }
     #portfolioSousTitre {
-        margin-block-end: 0;
+        margin-block-end: 0.5em;
         margin-block-start: 0;
 
         font-size: 1.03em !important;
         position: relative;
-        bottom: 1.2em;
+        bottom: 0em;
     }
 
     .carreTitreVeille {
@@ -734,7 +758,7 @@
     }
 
     .splide {
-        margin-top: 27px;
+        margin-top: 34px;
     }
 
     /* Splide max width */
@@ -1072,7 +1096,7 @@
         margin: auto;
 
         /* border: 5px solid var(--secondaryColor); */
-        border-top: 9px solid var(--secondaryColor);
+        border-top: 6px solid var(--secondaryColor);
         border-bottom: 5px solid var(--secondaryColor);
         border-right: 0px;
         border-left: 0px;
@@ -1134,17 +1158,20 @@
 
     .accueilProjectsDiv:hover .accueilProjectsBtnLabel {
         border-radius: 9px;
-        height: 154px;
+        height: 150px;
 
         /* background-color: #26ceb287; */
         background-color: #30f1d1bf;
         backdrop-filter: blur(1px);
+
+        border: 2px solid #9efded;
 
         /* animation: keyboardHueRotate 4s 0s linear infinite; */
     }
 
     .accueilKeyboardPng {
         position: absolute;
+        opacity: 0.9;
         width: 250px;
         top: 103%;
 
@@ -1152,6 +1179,7 @@
     }
     .accueilProjectsDiv:hover .accueilKeyboardPng {
         /* animation: keyboardHueRotate 4s 0s linear infinite; */
+        opacity: 1;
     }
     @keyframes keyboardHueRotate {
         from {

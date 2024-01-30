@@ -49,6 +49,11 @@
         }
     }
 
+    .splide {
+        width: 514px;
+        margin: 45px auto 2px auto;
+    }
+
     .accueilProjectsTrait {
         width: 145%;
       }

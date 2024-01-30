@@ -6,6 +6,11 @@
 
         <title>PortFolio - Projets</title>
 
+        <!-- Preload des iFrames -->
+        <link rel="preload" href="https://squadforge.ovh" as="document">
+        <link rel="preload" href="https://www.blackjackjo.com" as="document">
+        <link rel="preload" href="https://www.eneffet.basilek.ovh/index.php" as="document">
+
         <!-- Splide (caroussel captures projet) -->
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
