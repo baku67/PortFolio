@@ -124,7 +124,7 @@
         position: relative;
         top: 7px;
 
-        border: 1px solid var(--secondaryColor);
+        border: 0px solid var(--secondaryColor);
         font-size: 90%;
         padding: 13px 23px 39px 23px;
 
@@ -641,6 +641,7 @@
 
     .projetFuncList {
         font-size: 0.8em;
+        margin-block-start: 0.4em;
     }
 
     #traitHeader {

@@ -1935,14 +1935,15 @@ li::before {
 
 .iframeElem {
     box-shadow: 0 0 64px -15px #0ff;
-    /* position: relative;
-    top: 50px; */
     margin: 60px auto 60px auto; 
     border: 2px solid #ef3b2d; 
     padding: 17px 6px 32px 6px; 
-    border-radius: 13px;
     
-    /* width: 334px; */
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
     width: 390px;
     
     height: 745px;
@@ -2097,12 +2098,12 @@ li::before {
     z-index: 100;
 
     color: white;
-    background-color: #151a2330;
+    background-color: #ffffff00;
     padding: 13px 20px 37px 20px;
-    box-shadow: 0 0 50px -15px #ef3b2d;
+    /* box-shadow: 0 0 50px -15px #ef3b2d; */
     border-radius: 12px;
     /* border: 1px solid #8080802e; */
-    border: 1px solid #02ffd66b;
+    border: 0px solid #02ffd66b;
     height: fit-content;
 
     opacity: 0;
