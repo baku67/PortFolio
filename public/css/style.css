@@ -1144,13 +1144,31 @@ input[type=text] {
 ul {
     list-style: none;
 }
-li::before {
+.projetFuncList li::before {
     content: "•";
     color: #ef3b2d;
     display:inline-block;
     width:1em;
     margin-left:-1em;
 }
+
+.cvFormationsList li::before {
+    content: "•";
+    color: #ef3b2d;
+    display:inline-block;
+    width:1em;
+    margin-left:-1em;
+}
+
+
+.cvSectionBgGradient ul li::before {
+    content: "•";
+    color: #ef3b2d;
+    display:inline-block;
+    width:1em;
+    margin-left:-1em;
+}
+
 
 
 #titleCv {

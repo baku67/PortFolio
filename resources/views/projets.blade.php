@@ -61,6 +61,49 @@
 
     <body>
 
+
+        <!-- WIP menu-burger mobile -->
+        <div id="mySidenav" class="sidenav isMobile">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a id="accueilMenu" class="menuButton" href="/">Accueil</a> </li>
+                <li><a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> </li>
+                <li><a id="projetsMenu" class="menuButton selected" href="/projets">Projets</a> </li>
+                <li><a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+
+        <script>
+            var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+
+            openBtn.onclick = openNav;
+            closeBtn.onclick = closeNav;
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                sidenav.classList.add("active");
+                openBtn.style.display = "none";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                sidenav.classList.remove("active");
+                openBtn.style.display = "block";
+            }
+        </script>
+        <!-- FIN -->
+
+
         <!-- Header  -->
         <header id="headerProjets" class="darkedHeader" style="position:relative";>
                 
@@ -73,7 +116,7 @@
 
 
             <!-- Menu -->
-            <div id="NavBarContainer">
+            <div id="NavBarContainer" class="isDesktop">
                 <p id="menuLigneCv" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                     <!-- &nbsp;  -->
@@ -98,7 +141,7 @@
             <!-- Symbole Swipe -->
             <div class="swipeSymbol">
                 <img class="swipeImg" src="img/projects/slideSymbol2.png"/>
-                <span class="swipeTxt">Glisser</span>
+                <!-- <span class="swipeTxt">Glisser</span> -->
             </div>
 
             <!-- SwiperJS pour naviguer entre projet (+proc load contenu page: https://codepen.io/escadesign/pen/VJKxjB "on:slideChange()") -->

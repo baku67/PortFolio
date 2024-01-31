@@ -73,7 +73,7 @@
     .swipeSymbol {
         position: fixed;
         right: 5%;
-        top: 150px;
+        top: 104px;
         font-size: 0.7em;
         color: var(--secondaryColorVif);
         display: flex;
@@ -86,7 +86,7 @@
     @keyframes fadePulseSwipe {
         0% {
             opacity: 0.2;
-            transform: translateX(-35px);
+            transform: translateX(-35px) scale(0.9);
         }
         50% {
             opacity: 0.9;
@@ -94,11 +94,11 @@
         }
         100% {
             opacity: 0.2;
-            transform: translateX(-35px);
+            transform: translateX(-35px) scale(0.9);
         }
     }
     .swipeImg {
-        width: 32px;
+        width: 50px;
     }
     .swipeTxt {
         transform: translateY(-4px);
@@ -271,7 +271,9 @@
     }
 
     .menuButton:hover {
+        animation-name: none;
         animation-duration: 0s;
+        background: transparent;
     }
     @keyframes hoverMenuButton {
         from {
@@ -385,13 +387,13 @@
         font-size: 100%;
         grid-area: description; 
         position: relative;
-        padding: 14px 5px 26px 5px;
+        padding: 2px 5px 26px 5px;
         /* pas de border pour épurer */
         /* border: 1px solid #02ffd685; */
         border: 0px solid #02ffd685;
 
         /* Un truc de fou: ça montre quand y'a du contenu à slider grace à la superposition des box shadow des pages */
-        box-shadow: 0 0 57px -7px var(--secondaryColor);
+        /* box-shadow: 0 0 57px -7px var(--secondaryColor); */
 
         /* border-radius: 11px; */
         border-top-left-radius: 6px;
@@ -402,6 +404,7 @@
         
 
         background-color: #151a2314;
+        background: radial-gradient(circle, rgba(12,237,200,0.15) 0%, rgba(66,66,66,0) 70%);
 
         /* bottom: 270px; */
     }
@@ -431,8 +434,8 @@
     .description1boxShadow {
         /* Mobile: Pas de padding bottom car c'est la page projet la plus grande  */
 
-        animation: fadeIn 0.7s 0.1s ease forwards, glowProjectMobile1 2s 0.8s linear infinite;
-        box-shadow: 15px 60px 56px -3px #19ddbc8f;
+        /* animation: fadeIn 0.7s 0.1s ease forwards, glowProjectMobile1 2s 0.8s linear infinite;
+        box-shadow: 15px 60px 56px -3px #19ddbc8f; */
     }
     @keyframes glowProjectMobile1 {
         0% {
@@ -448,10 +451,10 @@
     /* C'est la 3eme valeur qui permet de gérer la superposition des shadow: */
     .description2boxShadow {
         /* Mobile: fix height différentes entres les pages projet (du coup complee avec padding) */
-        padding-bottom: 83px;
+        /* padding-bottom: 83px; */
 
-        animation: fadeIn 0.7s 0.1s ease forwards, glowProjectMobile2 2s 0.8s linear infinite;
-        box-shadow: 0px 60px 25px 5px #19ddbc8f;
+        /* animation: fadeIn 0.7s 0.1s ease forwards, glowProjectMobile2 2s 0.8s linear infinite;
+        box-shadow: 0px 60px 25px 5px #19ddbc8f; */
     }
     @keyframes glowProjectMobile2 {
         0% {
@@ -466,10 +469,10 @@
     }
     .description3boxShadow {
         /* Mobile: fix height différentes entres les pages projet (du coup complee avec padding) */
-        padding-bottom: 222px;
+        /* padding-bottom: 222px; */
         
-        animation: fadeIn 0.7s 0.1s ease forwards, glowProjectMobile3 2s 0.8s linear infinite;
-        box-shadow: -15px 60px 57px -3px #19ddbc8f;
+        /* animation: fadeIn 0.7s 0.1s ease forwards, glowProjectMobile3 2s 0.8s linear infinite;
+        box-shadow: -15px 60px 57px -3px #19ddbc8f; */
     }
     @keyframes glowProjectMobile3 {
         0% {
@@ -817,13 +820,25 @@
         text-underline-offset: 1px;
         text-decoration-thickness: 5px; */
         text-decoration-color: var(--secondaryColor) !important;
-        color: #00ffd5;
-        text-underline-offset: 3px;
-        text-decoration-thickness: 2px;
+        
+        
 
         /* MAJ 26/01/2024 */
         /* background: rgb(2,0,36); */
         background: rgba(2,0,36,0);
+
+        color: #00ffd5 !important;
+        /* color: #ef3b2d !important; */
+        background: rgb(255,255,255);
+        background: -moz-linear-gradient(85deg, rgba(255,255,255,0) 0%, rgba(25,221,188,0.3) 30%, rgba(255,255,255,0) 100%);
+        background: -webkit-linear-gradient(85deg, rgba(255,255,255,0) 0%, rgba(25,221,188,0.3) 30%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(85deg, rgba(255,255,255,0) 0%, rgba(25,221,188,0.3) 30%, rgba(255,255,255,0) 100%);
+
+        text-underline-offset: 3px;
+        text-decoration-thickness: 2px;
+
+        
+        
         /* background: radial-gradient(circle, rgba(12,237,200,0.25) 0%, rgba(2,0,36,0) 50%); */
         /* border-left: 1px solid #19ddbcc1;
         border-right: 1px solid #19ddbcc1; */
@@ -2388,7 +2403,75 @@
     
 
 
+    /* menu Burger :  */
+    .sidenav {
+        z-index: 9999;
 
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        /* background-color: #e8e8e8; */
+        background-color: #181a23;
+        padding-top: 60px;
+        transition: right 0.5s ease;
+    }
+    
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #cbcbcb;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: #ef3b2d;
+    }
+    
+    .sidenav ul {
+        width: 80%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Active class */
+    .sidenav.active {
+        right: 0;
+    }
+    
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 42px;
+        color: #ef3b2d;
+    }
+    
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: var(--secondaryColorMat);
+        margin: 6px 0;
+        border-radius: 5px;
+    }
+
+
+    #openBtn {
+        position: absolute;
+        right: 15px;
+        top: 9px;
+        width: 44px;
+        height: 59px;
+        z-index: 9999;
+    }
     
 
 
