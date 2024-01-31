@@ -379,19 +379,46 @@ swiper-slide {
     position: absolute;
     transform: translate(163px, -66px) rotateX(0deg);
     opacity: 0.92;
-    margin-left: 25px;
+    /* margin-left: 25px; */
+    margin-left: 40px;
 
-    /* Drawing = 3s donc delai 3s */
-    animation: chapeauDiplome 1.8s 0s linear infinite;
+    /* animation: chapeauDiplome 1.8s 0s linear infinite; */
+    animation: chapeauDiplome 2.5s 2s linear infinite;
 }
+/* @keyframes chapeauDiplome {
+    0% {
+        opacity: 0.92;
+        transform: translate(163px, -66px) rotateX(0deg);
+    }
+    7% {
+        transform: translate(163px, -65px) rotateX(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(163px, -80px) rotateX(28deg) rotate(5deg);
+    }
+    100% {
+        opacity: 0.92;
+        transform: translate(163px, -66px) rotateX(0deg);
+    }
+} */
 @keyframes chapeauDiplome {
     0% {
         opacity: 0.92;
         transform: translate(163px, -66px) rotateX(0deg);
     }
+    18% {
+        transform: translate(163px, -65px) rotateX(28deg);
+    }
     50% {
+        transform: translate(163px, -79px) rotateX(0deg) rotate(5deg);
+    }
+    55% {
         opacity: 1;
-        transform: translate(163px, -66px) rotateX(25deg);
+        transform: translate(163px, -80px) rotateX(0deg) rotate(5deg);
+    }
+    60% {
+        transform: translate(163px, -79px) rotateX(0deg) rotate(5deg);
     }
     100% {
         opacity: 0.92;
@@ -475,7 +502,7 @@ swiper-slide {
     overflow: visible;
 
     /* Apparemment pas besoin d'attendre la fin du drawing */
-    animation: poissonHobbies 2.8s 0s linear infinite;
+    animation: poissonHobbies 3.5s 0s linear infinite;
 }
 @keyframes poissonHobbies {
     0% {
@@ -487,14 +514,14 @@ swiper-slide {
     }
     50% {
         opacity: 1;
-        transform: translate(175px, -66px) rotateY(27deg);
+        transform: translate(200px, -66px) rotateY(28deg);
     }
     85% {
         opacity: 0.92;
     }
     100% {
         opacity: 0;
-        transform: translate(200px, -66px) rotateY(0deg);
+        transform: translate(250px, -66px) rotateY(0deg);
     }
 }
 
@@ -512,25 +539,25 @@ swiper-slide {
 
     /* Scintillement lancé que aprè drawing parce que révèle le poisson */
     /* Meme delai que le cycle du premier déplacement  */
-    animation: fillScintillement 2.8s 2.9s linear infinite;
+    animation: fillScintillement 3.5s 2.9s linear infinite;
 }
 @keyframes fillScintillement {
     0% {
         fill: rgba(255, 255, 255, 0); 
     }
-    35% {
+    25% {
         fill: rgba(255, 255, 255, 0); 
     }
-    47% {
+    /* 47% {
         fill: rgba(255, 255, 255, 0.04); 
-    }
+    } */
     50% {
-        fill: rgba(255, 255, 255, 0.2); 
+        fill: rgba(255, 255, 255, 0.07); 
     }
-    53% {
+    /* 53% {
         fill: rgba(255, 255, 255, 0.04); 
-    }
-    65% {
+    } */
+    75% {
         fill: rgba(255, 255, 255, 0); 
     }
     100% {
@@ -2131,7 +2158,8 @@ li::before {
 }
 
 .darkedHeader {
-    background-color: #0000001a;
+    /* background-color: #0000001a; */
+    background-color: #00000000; 
 }
 
 .splide__toggle__pause, .splide__toggle__play {
@@ -2786,8 +2814,8 @@ li::before {
     box-shadow: 0 0 32px -11px #0ff; */
 }
 #headerCv {
-    background-color: #00f6ff0f;
-    box-shadow: 0 0 32px -11px #0ff;
+    /* background-color: #00f6ff0f;
+    box-shadow: 0 0 32px -11px #0ff; */
 }
 #headerProjets {
     background-color: #00f6ff0f;

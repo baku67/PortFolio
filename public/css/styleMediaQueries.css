@@ -1024,14 +1024,96 @@
 
     .hobbiesSvgContainer {
         transform: translate(140px, -66px);
+
+        /* Apparemment pas besoin d'attendre la fin du drawing */
+        animation: poissonHobbies 3s 0s linear infinite;
     }
-    .hobbiesSvgPath {
-        opacity: 0.9;
+    @keyframes poissonHobbies {
+        0% {
+            opacity: 0;
+            transform: translate(150px, -66px) rotateY(0deg);
+        }
+        15% {
+            opacity: 0.92;
+        }
+        50% {
+            opacity: 1;
+            transform: translate(185px, -66px) rotateY(25deg);
+        }
+        85% {
+            opacity: 0.92;
+        }
+        100% {
+            opacity: 0;
+            transform: translate(220px, -66px) rotateY(0deg);
+        }
     }
 
-    .trainingSvgContainer {
-        transform: translate(151px, -66px);
+    
+    .hobbiesSvgPath {
+        opacity: 0.9;
+
+        animation: fillScintillement 3s 3s linear infinite;
     }
+    @keyframes fillScintillement {
+        0% {
+            fill: rgba(255, 255, 255, 0); 
+        }
+        25% {
+            fill: rgba(255, 255, 255, 0); 
+        }
+        /* 47% {
+            fill: rgba(255, 255, 255, 0.04); 
+        } */
+        50% {
+            fill: rgba(255, 255, 255, 0.09); 
+        }
+        /* 53% {
+            fill: rgba(255, 255, 255, 0.04); 
+        } */
+        75% {
+            fill: rgba(255, 255, 255, 0); 
+        }
+        100% {
+            fill: rgba(255, 255, 255, 0); 
+        }
+    }
+    
+
+    .trainingSvgContainer {
+        transform: translate(163px, -66px);
+        margin-left: 0px;
+
+        animation: chapeauDiplome 2.5s 2s linear infinite;
+    }
+    @keyframes chapeauDiplome {
+        0% {
+            opacity: 0.92;
+            transform: translate(163px, -66px) rotateX(0deg);
+        }
+        18% {
+            transform: translate(163px, -65px) rotateX(25deg);
+        }
+        50% {
+            transform: translate(163px, -74px) rotateX(0deg) rotate(5deg);
+        }
+        55% {
+            opacity: 1;
+            transform: translate(163px, -75px) rotateX(0deg) rotate(5deg);
+        }
+        60% {
+            transform: translate(163px, -74px) rotateX(0deg) rotate(5deg);
+        }
+        /* 99% {
+            transform: translate(163px, -66px) rotateX(0deg);
+        } */
+        100% {
+            opacity: 0.92;
+            transform: translate(163px, -66px) rotateX(0deg);
+        }
+    }
+
+    
     .formationSvgPath {
         opacity: 0.9;
     }
