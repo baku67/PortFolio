@@ -620,12 +620,12 @@
 
     /* à rename: */
     .testH1 {
-        font-size: 2.7em !important;
+        font-size: 3em;
         padding: 12px 0px 1px 3%;
 
     }
     #NavBarContainer {
-        top: 48px;
+        top: 12px;
     }
     .testNavBarContainer {
         margin-bottom: 0em;
@@ -675,7 +675,7 @@
     .gridProjetHeaderContainer {
         gap: 60px;
         /* margin-top: 40px; */
-        margin-top: 35px;
+        margin-top: 25px;
         justify-content: center;
 
         right: 25px;
@@ -920,11 +920,11 @@
     }
 
     .selected {
-        text-decoration-thickness: 3px;
+        text-decoration-thickness: 2px;
 
         /* text-decoration-color: var(--secondaryColorVeryMat); */
         color: #0cedc8;
-        text-decoration-color: #ef3b2d;
+        text-decoration-color: var(--secondaryColor) !important;
 
     }
 

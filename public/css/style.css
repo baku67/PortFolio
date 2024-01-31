@@ -301,7 +301,7 @@ swiper-slide {
 .gridProjetHeaderContainer {
     /* position: relative;
     bottom: 50px; */
-    margin-top: 22px;
+    margin-top: 15px;
     justify-content: space-around;
     
 }
@@ -1559,7 +1559,7 @@ li::before {
     /* color: #ef3b2d; */
     color: #0cedc8;
     text-shadow: 1px 1px #1a1f29;
-    text-decoration-color: #ef3b2d !important;
+    text-decoration-color: var(--secondaryColor) !important;
 
     text-decoration-line: underline;
     text-underline-position: under;
@@ -1573,7 +1573,7 @@ li::before {
     border-radius: 5px;
     /* border-right: 1px solid #19ddbc1a;
     border-left: 1px solid #19ddbc1a; */
-    border-bottom: 1px solid var(--secondaryColor);
+    border-bottom: 0px solid var(--secondaryColor);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
@@ -1628,7 +1628,7 @@ li::before {
     margin-right:2%;
 
     z-index: 2;
-    bottom: 11px;
+    top: 12px;
 }
 
 .menuButton {
@@ -1709,8 +1709,8 @@ li::before {
     width: 70px;
     position: absolute;
     transform: rotate(352deg);
-    opacity: 0.95;
-    transition: all 0.4s;
+    opacity: 1;
+    transition: all 0.3s;
 
     animation: rotateGithubLogo 2.5s ease-in-out infinite;
 }
@@ -2036,7 +2036,7 @@ li::before {
 
 #portfolioSousTitre {
     margin-block-start: 0;
-    font-size:0.95em;
+    font-size: 1.2em;
     margin-block-end: 0.55em;
 }
 
@@ -2623,25 +2623,19 @@ li::before {
     transition: all 0.3s;
 }
 
-/* .accueilVideoPcDiv img {
-    transition: all 0.3s;
-}
-.accueilVideoPcDiv:has(+ .accueilProjectsRightLink:hover) {
-    transform: translateY(-10px);
-} */
+
 
 
 
 .accueilVideoPcDiv {
-    /* position: relative;
-    bottom: 32px;
-    z-index: 9;
-    width: 31%; */
+
 
     border-radius: 7px;
     border: 2px solid var(--secondaryColor);
     border-bottom: 15px solid var(--secondaryColor);
     border-top: 7px solid var(--secondaryColor);
+
+    filter: drop-shadow(1px 2px 12px black);
 
     transition: all .3s;
 }
@@ -2653,7 +2647,7 @@ li::before {
     width: 29%;
     z-index: 999;
 
-    box-shadow: 0px 0 52px 20px #00ffff9e;
+    box-shadow: 0px 0 40px 10px #00ffff9e;
 
     border: 1px solid black;
     border-radius: 10px;
@@ -2677,9 +2671,9 @@ li::before {
     background: -webkit-linear-gradient(85deg, rgba(66,171,154,0) 0%, rgba(66,171,154,0.7805497198879552) 50%, rgba(66,66,66,0) 100%);
     background: linear-gradient(85deg, rgba(66,171,154,0) 15%, rgba(0, 255, 213, 0.3) 50%, rgba(66,66,66,0) 85%); */
     background: rgb(0,255,213);
-    background: -moz-radial-gradient(circle, rgba(0,255,213,0.35) 0%, rgba(255,255,255,0) 60%);
-    background: -webkit-radial-gradient(circle, rgba(0,255,213,0.35) 0%, rgba(255,255,255,0) 60%);
-    background: radial-gradient(circle, rgba(0,255,213,0.35) 0%, rgba(255,255,255,0) 60%);
+    background: -moz-radial-gradient(circle, rgba(0,255,213,0.15) 0%, rgba(255,255,255,0) 60%);
+    background: -webkit-radial-gradient(circle, rgba(0,255,213,0.15) 0%, rgba(255,255,255,0) 60%);
+    background: radial-gradient(circle, rgba(0,255,213,0.15) 0%, rgba(255,255,255,0) 60%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffd5",endColorstr="#ffffff",GradientType=1);
     width: 125%;
 
@@ -2861,8 +2855,8 @@ li::before {
     box-shadow: 0 0 32px -11px #0ff; */
 }
 #headerProjets {
-    background-color: #00f6ff0f;
-    box-shadow: 0 0 32px -11px #0ff;
+    /* background-color: #00f6ff0f;
+    box-shadow: 0 0 32px -11px #0ff; */
 }
 
 .arrowSvgContainer {
@@ -2902,7 +2896,9 @@ li::before {
 
     vertical-align: middle;
     position: relative;
+
     filter: blur(5px) grayscale(1);
+    box-shadow: 0px 0 33px 5px #00ffff6b;
 
     transition: 0.3s ease;
     animation: imgAccueilFadeIn 2s 1.3s ease forwards;
@@ -2964,6 +2960,8 @@ li::before {
     border: 2px solid var(--secondaryColorVeryMat);
     border-radius: 11px;
     padding: 9px 20px 7px 20px;
+
+    filter: drop-shadow(1px 2px 4px black);
 
     transition: all 0.3s;
 }
@@ -3182,7 +3180,7 @@ li::before {
 
 /* Fix du Header Dégueulasse (seulement sur loisirs) ET VOIR MEDIA QUERIES */
 .testH1 {
-    font-size: 2.2em;
+    font-size: 2.7em;
 
     color: #ef3b2d;
     /* line-height: 0; */

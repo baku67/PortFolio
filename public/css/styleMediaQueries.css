@@ -1361,19 +1361,20 @@
 
     .accueilProjectsDiv:hover .accueilProjectsLabelLink {
         bottom: 0px;
+
+        box-shadow: 0px 0 90px 50px #00ffff59;
     }
 
     .accueilProjectsDiv:hover .accueilProjectsBtnLabel {
         border-radius: 9px;
-        height: 150px;
-
+        height: 146px;
         /* background-color: #26ceb287; */
         background-color: #30f1d1bf;
+        position: relative;
+        bottom: 2px;
         backdrop-filter: blur(1px);
-
-        border: 2px solid #9efded;
-
-        /* animation: keyboardHueRotate 4s 0s linear infinite; */
+        border: 2px solid #0e0e0e;
+        border-bottom: 20px solid #0e0e0e;
     }
 
     .accueilKeyboardPng {
