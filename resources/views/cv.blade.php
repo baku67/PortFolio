@@ -48,16 +48,88 @@
 
     <body>
 
+
+        <!-- WIP menu-burger mobile -->
+        <div id="mySidenav" class="sidenav isMobile">
+
+            <a id="closeBtn" href="#" class="close">×</a>
+
+            <ul style="position:relative;">
+                <li><a id="accueilMenu" class="menuButton" href="/">Accueil</a> </li>
+                <li><a id="cvMenu" class="menuButton selected" href="/cv">Mon CV</a> </li>
+                <li><a id="projetsMenu" class="menuButton" href="/projets">Projets</a> </li>
+                <li><a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a></li>
+                <li class="lablelsBurgerContainer">
+                    <span id="status"> #OpenToWork</span>
+                    <span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
+                </li>
+                <li class="socialBurgerContainer">
+                    <a href="https://github.com/baku67" target="_blank" style="padding:2px">
+                        <i class="fa-brands fa-github burgerSocialBtn"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/basile-kuntz-719278267" target="_blank" style="padding:2px">
+                        <i class="fa-brands fa-linkedin burgerSocialBtn"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>  
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+
+        <script>
+            var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+
+            openBtn.onclick = openNav;
+            closeBtn.onclick = closeNav;
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                sidenav.classList.add("active");
+                openBtn.style.display = "none";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                sidenav.classList.remove("active");
+                openBtn.style.display = "block";
+            }
+        </script>
+        <!-- FIN -->
+
+
+
+
+
+
+
         <!-- Header -->
         <header id="headerCv" class="darkedHeader" style="position:relative;">
             <div style="width:100%;">
                 <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
                 <span  id="lineBreakMobile"></br></span>
-                <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> #OpenToWork</span><span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span></span></h2>
+                <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">
+                    Basile KUNTZ 
+                    <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web 
+                        <span id="lineBreakMobileStatus"></br></span>
+                        <span id="status" class="isDesktopInline"> #OpenToWork</span>
+                        <span id="status2" class="isDesktopInline">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                     Alternance CDA</span>
+                    </span>
+                </h2>
             </div>
 
             <!-- NavBarre -->
-            <div id="NavBarContainer">
+            <div id="NavBarContainer" class="isDesktop">
                 <p id="menuLigneCv" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                     <!-- &nbsp;  -->

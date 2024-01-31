@@ -73,7 +73,10 @@
         display: inline-flex;
         flex-direction: column;
         position: absolute;
-        bottom: 5%;
+
+        /*** Sinon caché par la barre de navigation du navigateur */
+        /* bottom: 5%; */
+        bottom: 15%;
 
         width: 80%;
         margin: 0 auto;
@@ -86,7 +89,11 @@
     .socialBurgerContainer {
         position: absolute;
         display: inline-flex;
-        bottom: 117px;
+
+        /*** Sinon caché par la barre de navigation du navigateur */
+        /* bottom: 117px; */
+        bottom: 26%;
+
         width: 100%;
         margin: 0 auto;
         left: 50%;
@@ -618,7 +625,13 @@
         font-size: 1.1em !important;
         position: relative;
         bottom: 0em;
+
+        margin-left: 24px !important;
+        color: #ef3b2d;
+        position: relative;
+        bottom: 3px;
     }
+
 
     .carreTitreVeille {
         top: 11px !important;
@@ -755,7 +768,7 @@
         position: absolute;
         transform: rotate(354deg);
         opacity: 0.93;
-        top: 64px;
+        top: 51px;
         left: 10px;
 
         animation: rotateGithubLogo 2.5s ease-in-out infinite;
@@ -797,11 +810,11 @@
 
 
     .pageTitle {
-        text-decoration-thickness: 3px;
+        text-decoration-thickness: 2px;
 
-        margin-block-start: 0.2em;
+        margin-block-start: 0.5em;
         margin-block-end: 0.3em;
-        font-size: 1.85em;
+        font-size: 1.75em;
 
         text-decoration-color: rgb(239 59 45 / 92%);
     }
@@ -810,8 +823,10 @@
 
 
     .testH1 {
-        font-size: 2em;
-        padding: 2px 0px 0px 3%;
+        filter: drop-shadow(1px 1px 1px black);
+
+        font-size: 2.15em;
+        padding: 2px 0px 0px 15px;
 
         /* Danger */
         margin-bottom: -8px;
@@ -970,7 +985,7 @@
     }
     
     #titleCv {
-        margin-block-start: 0.9em;
+        margin-block-start: 0.6em;
         margin-block-end: 0.1em;
     }
 
@@ -1340,7 +1355,7 @@
         /* transform: translateX(-50%); */
         transform: translate(-50%, 0px);
 
-        border: 2px solid #0a0a0a;
+        border: 1px solid #0a0a0a;
         border-radius: 11px;
         box-shadow: 0px 0 39px 15px #00ffff59;
 
@@ -1360,10 +1375,10 @@
         margin: auto;
 
         /* border: 5px solid var(--secondaryColor); */
-        border-top: 6px solid var(--secondaryColor);
+        border-top: 4px solid var(--secondaryColor);
         border-bottom: 5px solid var(--secondaryColor);
-        border-right: 2px solid var(--secondaryColor);
-        border-left: 2px solid var(--secondaryColor);
+        border-right: 4px solid var(--secondaryColor);
+        border-left: 4px solid var(--secondaryColor);
     }
     .accueilProjectsRightDiv {
         flex-direction: row;
@@ -1415,6 +1430,8 @@
         width: 100%;
         text-align: center;
 
+        border-radius: 8px;
+
         display: block;
         transition: all 0.3s;
     }
@@ -1429,12 +1446,12 @@
         border-radius: 9px;
         height: 146px;
         /* background-color: #26ceb287; */
-        background-color: #30f1d1bf;
+        background-color: #30f1d1d4;
         position: relative;
-        bottom: 2px;
+        bottom: 1px;
         backdrop-filter: blur(1px);
-        border: 2px solid #0e0e0e;
-        border-bottom: 20px solid #0e0e0e;
+        border: 3px solid #0e0e0ee6;
+        border-bottom: 14px solid #0e0e0ee6;
     }
 
     .accueilKeyboardPng {
@@ -2455,14 +2472,14 @@
     .sidenav {
         z-index: 9999;
 
-        height: 100%;
-        width: 250px;
+        height: 100vh;
+        width: 255px;
         position: fixed;
         top: 0;
         right: -250px;
         /* background-color: #e8e8e8; */
         background-color: #181a23;
-        padding-top: 60px;
+        padding-top: 77px;
         transition: right 0.5s ease;
     }
     
@@ -2505,17 +2522,18 @@
     .burger-icon span {
         display: block;
         width: 35px;
-        height: 5px;
-        background-color: var(--secondaryColorMat);
-        margin: 6px 0;
+        height: 4px;
+        background-color: #41e9cdf5;
+        margin: 7px 0;
         border-radius: 5px;
     }
 
 
     #openBtn {
+        filter: drop-shadow(1px 2px 3px black);
         position: absolute;
         right: 15px;
-        top: 9px;
+        top: 14px;
         width: 44px;
         height: 59px;
         z-index: 9999;

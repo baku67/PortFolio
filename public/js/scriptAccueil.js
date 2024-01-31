@@ -19,6 +19,45 @@ window.onload = function() {
     // observerDocumentations.observe(document.querySelector('#docuLoadContainer-wrapper'));
 
 
+    var sidenav = document.getElementById("mySidenav");
+    var openBtn = document.getElementById("openBtn");
+    var closeBtn = document.getElementById("closeBtn");
+
+    openBtn.onclick = openNav;
+    closeBtn.onclick = closeNav;
+
+
+    window.getElementById("pageContainer").addEventListener('click', function(e){   
+
+        if (document.getElementById('mySidenav').contains(e.target)){
+            // click dans nav burger
+        } else {
+            // click en dehors nav burger
+            if (sidenav.classList.contains("active")) {
+                closeNav();
+            }
+        }
+    });
+    
+
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+        sidenav.classList.add("active");
+        openBtn.style.display = "none";
+
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        sidenav.classList.remove("active");
+        openBtn.style.display = "block";
+    }
+
+
+
+
+
+
     // Détection mobile
     var mobileDetection;
     if (navigator.userAgent.match(/Android/i)
@@ -148,24 +187,24 @@ window.onload = function() {
 
 
     // Rectangle photo SVG drawing
-    setTimeout(function() {
-      var pathRec = document.querySelector('.rectangleSvg path');
-      var lengthRec = pathRec.getTotalLength();
-      // Clear any previous transition
-      pathRec.style.transition = pathRec.style.WebkitTransition = 'none';
-      // Set up the starting positions
-      pathRec.style.strokeDasharray = lengthRec + ' ' + lengthRec;
-      pathRec.style.strokeDashoffset = lengthRec;
-      // Trigger a layout so styles are calculated & the browser
-      // picks up the starting position before animating
-      pathRec.getBoundingClientRect();
-      // Define our transition
-      pathRec.style.transition = pathRec.style.WebkitTransition =
-        'stroke-dashoffset 3.4s ease';
-      // Go!
-      document.getElementById("rectangleSvg").style.opacity = "1";
-      pathRec.style.strokeDashoffset = '0';
-    }, 750)
+    // setTimeout(function() {
+    //   var pathRec = document.querySelector('.rectangleSvg path');
+    //   var lengthRec = pathRec.getTotalLength();
+    //   // Clear any previous transition
+    //   pathRec.style.transition = pathRec.style.WebkitTransition = 'none';
+    //   // Set up the starting positions
+    //   pathRec.style.strokeDasharray = lengthRec + ' ' + lengthRec;
+    //   pathRec.style.strokeDashoffset = lengthRec;
+    //   // Trigger a layout so styles are calculated & the browser
+    //   // picks up the starting position before animating
+    //   pathRec.getBoundingClientRect();
+    //   // Define our transition
+    //   pathRec.style.transition = pathRec.style.WebkitTransition =
+    //     'stroke-dashoffset 3.4s ease';
+    //   // Go!
+    //   document.getElementById("rectangleSvg").style.opacity = "1";
+    //   pathRec.style.strokeDashoffset = '0';
+    // }, 750)
 
           
     // Rotate changeQuotation onClick
