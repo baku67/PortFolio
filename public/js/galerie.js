@@ -75,8 +75,6 @@ window.onload = function() {
 
 
 
-
-
     // **********  MOBILE: Click outside nav burger si actif = closeNav
     var sidenav = document.getElementById("mySidenav");
     var openBtn = document.getElementById("openBtn");
@@ -87,8 +85,6 @@ window.onload = function() {
 
 
     document.getElementById("pageContainer").addEventListener('click', function(e){   
-
-      console.log("proc click sur la pageContainer");
 
         if (document.getElementById('mySidenav').contains(e.target)){
             // click dans nav burger
@@ -106,17 +102,24 @@ window.onload = function() {
         sidenav.classList.add("active");
         openBtn.style.display = "none";
 
+        // Blur() derrière ram sur mobile:
+        // document.getElementById("pageContainer").style.filter = "blur(2px)";
+        document.getElementById("pageContainer").style.opacity = "0.7";
     }
 
     /* Set the width of the side navigation to 0 */
     function closeNav() {
-        console.log("proc click croix burger");
         sidenav.classList.remove("active");
         openBtn.style.display = "block";
+
+        // Blur() derrière ram sur mobile:
+        // document.getElementById("pageContainer").style.filter = "blur(0px)";
+        document.getElementById("pageContainer").style.opacity = "1";
     }
     //******  */ FIN
 
 
+    
 
   // Mettre des fadeIn et fadeOut
   document.getElementById("photographieTitle").addEventListener("click", function() {

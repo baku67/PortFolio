@@ -2181,6 +2181,11 @@ ul {
 .darkedHeader {
     /* background-color: #0000001a; */
     background-color: #00000000; 
+
+    background: rgb(25,221,188); 
+    background: -moz-linear-gradient(180deg, rgba(25,221,188,0.7) 0%, rgba(255,255,255,0) 60%);
+    background: -webkit-linear-gradient(180deg, rgba(25,221,188,0.7) 0%, rgba(255,255,255,0) 60%); 
+    background: linear-gradient(180deg, rgba(25,221,188,0.07) 0%, rgba(255,255,255,0) 60%);
 }
 
 .splide__toggle__pause, .splide__toggle__play {

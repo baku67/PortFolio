@@ -54,13 +54,34 @@
         <!-- WIP menu-burger mobile -->
         <div id="mySidenav" class="sidenav isMobile">
 
-            <a id="closeBtn" href="#" class="closeBurger">×</a>
+            <a id="closeBtn" href="#" class="close">×</a>
 
             <ul style="position:relative;">
-                <li><a id="accueilMenu" class="menuButton" href="/">Accueil</a> </li>
-                <li><a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> </li>
-                <li><a id="projetsMenu" class="menuButton" href="/projets">Projets</a> </li>
-                <li><a id="contactMenu" class="menuButton selected" href="/loisirs">Loisirs</a></li>
+
+                <li>
+                    <a id="accueilMenu" class="menuButton" href="/">
+                        <i class="fa-solid fa-house homeIconFa" style="color:#ef3b2dde;"></i>
+                        <span style="margin-left:7px;">Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="cvMenu" class="menuButton burgerMenuButtonWithImg" href="/cv" style="position:relative; right:3px;">
+                        <img src="img\navBurgerImg\nav_cv_red.png" class="navBurger_cvIcon" style="opacity:0.9;" />
+                        <span>Mon CV</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="projetsMenu" class="menuButton burgerMenuButtonWithImg" href="/projets">
+                        <img src="img\navBurgerImg\nav_projets_red.png" class="navBurger_projectsIcon" style="opacity:0.9;" />
+                        <span>Projets</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="contactMenu" class="menuButton burgerMenuButtonWithImg selected" href="/loisirs">
+                        <img src="img\navBurgerImg\nav_loisirs_blue.png" class="navBurger_loisirsIcon" />
+                        <span>Loisirs</span>
+                    </a>
+                </li>
                 <li class="lablelsBurgerContainer">
                     <span id="status"> #OpenToWork</span>
                     <span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
@@ -73,18 +94,18 @@
                         <i class="fa-brands fa-linkedin burgerSocialBtn"></i>
                     </a>
                 </li>
+
             </ul>
 
-            </div>
+        </div>  
 
-            <a href="#" id="openBtn" class="openBtnLoisirs">
-                <span class="burger-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </a>
-        </div>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
         <!-- FIN -->
 
 

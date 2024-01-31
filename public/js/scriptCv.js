@@ -35,12 +35,19 @@ window.onload = function() {
         sidenav.classList.add("active");
         openBtn.style.display = "none";
 
+        // Blur() derrière ram sur mobile:
+        // document.getElementById("pageContainer").style.filter = "blur(2px)";
+        document.getElementById("pageContainer").style.opacity = "0.7";
     }
 
     /* Set the width of the side navigation to 0 */
     function closeNav() {
         sidenav.classList.remove("active");
         openBtn.style.display = "block";
+
+        // Blur() derrière ram sur mobile:
+        // document.getElementById("pageContainer").style.filter = "blur(0px)";
+        document.getElementById("pageContainer").style.opacity = "1";
     }
     //******  */ FIN
 

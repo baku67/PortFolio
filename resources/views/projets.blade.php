@@ -67,10 +67,31 @@
             <a id="closeBtn" href="#" class="close">×</a>
 
             <ul style="position:relative;">
-                <li><a id="accueilMenu" class="menuButton" href="/">Accueil</a> </li>
-                <li><a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> </li>
-                <li><a id="projetsMenu" class="menuButton selected" href="/projets">Projets</a> </li>
-                <li><a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a></li>
+
+                <li>
+                    <a id="accueilMenu" class="menuButton" href="/">
+                        <i class="fa-solid fa-house homeIconFa" style="color:#ef3b2dde;"></i>
+                        <span style="margin-left:7px;">Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="cvMenu" class="menuButton burgerMenuButtonWithImg" href="/cv" style="position:relative; right:3px;">
+                        <img src="img\navBurgerImg\nav_cv_red.png" class="navBurger_cvIcon" style="opacity:0.9;" />
+                        <span>Mon CV</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="projetsMenu" class="menuButton burgerMenuButtonWithImg selected" href="/projets">
+                        <img src="img\navBurgerImg\nav_projets_blue.png" class="navBurger_projectsIcon" />
+                        <span>Projets</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="contactMenu" class="menuButton burgerMenuButtonWithImg" href="/loisirs">
+                        <img src="img\navBurgerImg\nav_loisirs_red.png" class="navBurger_loisirsIcon" style="opacity:0.9;" />
+                        <span>Loisirs</span>
+                    </a>
+                </li>
                 <li class="lablelsBurgerContainer">
                     <span id="status"> #OpenToWork</span>
                     <span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
@@ -83,6 +104,7 @@
                         <i class="fa-brands fa-linkedin burgerSocialBtn"></i>
                     </a>
                 </li>
+
             </ul>
 
         </div>
@@ -95,6 +117,7 @@
             </span>
         </a>
 
+        
         <script>
             var sidenav = document.getElementById("mySidenav");
             var openBtn = document.getElementById("openBtn");
@@ -103,16 +126,23 @@
             openBtn.onclick = openNav;
             closeBtn.onclick = closeNav;
 
-            /* Set the width of the side navigation to 250px */
             function openNav() {
                 sidenav.classList.add("active");
                 openBtn.style.display = "none";
+
+                // Blur() derrière ram sur mobile:
+                // document.getElementById("pageContainer").style.filter = "blur(2px)";
+                document.getElementById("pageContainerProjet").style.opacity = "0.7";
             }
 
             /* Set the width of the side navigation to 0 */
             function closeNav() {
                 sidenav.classList.remove("active");
                 openBtn.style.display = "block";
+
+                // Blur() derrière ram sur mobile:
+                // document.getElementById("pageContainer").style.filter = "blur(0px)";
+                document.getElementById("pageContainerProjet").style.opacity = "1";
             }
         </script>
         <!-- FIN -->

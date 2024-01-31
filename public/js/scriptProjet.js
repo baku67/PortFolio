@@ -23,19 +23,26 @@ window.onload = function() {
             }
         }
     });
-
+    
 
     /* Set the width of the side navigation to 250px */
     function openNav() {
         sidenav.classList.add("active");
         openBtn.style.display = "none";
 
+        // Blur() derrière ram sur mobile:
+        // document.getElementById("pageContainer").style.filter = "blur(2px)";
+        document.getElementById("pageContainerProjet").style.opacity = "0.7";
     }
 
     /* Set the width of the side navigation to 0 */
     function closeNav() {
         sidenav.classList.remove("active");
         openBtn.style.display = "block";
+
+        // Blur() derrière ram sur mobile:
+        // document.getElementById("pageContainer").style.filter = "blur(0px)";
+        document.getElementById("pageContainerProjet").style.opacity = "1";
     }
     //******  */ FIN
 

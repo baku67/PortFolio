@@ -50,25 +50,25 @@
             <ul style="position:relative;">
                 <li>
                     <a id="accueilMenu" class="menuButton selected" href="/">
-                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-house homeIconFa"></i>
                         <span style="margin-left:7px;">Accueil</span>
                     </a>
                 </li>
                 <li>
-                    <a id="cvMenu" class="menuButton burgerMenuButtonWithImg" href="/cv">
-                        <img src="img\navBurgerImg\nav_cv_red.png" class="navBurger_cvIcon" />
+                    <a id="cvMenu" class="menuButton burgerMenuButtonWithImg" href="/cv" style="position:relative; right:3px;">
+                        <img src="img\navBurgerImg\nav_cv_red.png" class="navBurger_cvIcon" style="opacity:0.9;" />
                         <span>Mon CV</span>
                     </a>
                 </li>
                 <li>
                     <a id="projetsMenu" class="menuButton burgerMenuButtonWithImg" href="/projets">
-                        <img src="img\navBurgerImg\nav_projets_red.png" class="navBurger_projectsIcon" />
+                        <img src="img\navBurgerImg\nav_projets_red.png" class="navBurger_projectsIcon" style="opacity:0.9;" />
                         <span>Projets</span>
                     </a>
                 </li>
                 <li>
                     <a id="contactMenu" class="menuButton burgerMenuButtonWithImg" href="/loisirs">
-                        <img src="img\navBurgerImg\nav_loisirs_red.png" class="navBurger_loisirsIcon" />
+                        <img src="img\navBurgerImg\nav_loisirs_red.png" class="navBurger_loisirsIcon" style="opacity:0.9;" />
                         <span>Loisirs</span>
                     </a>
                 </li>
