@@ -219,7 +219,34 @@
         border-radius:3px;
     }
 
+
+    .navBurger_cvIcon {
+        width: 32px;
+        height: 36px;
+    }
+
+    .navBurger_projectsIcon {
+        width: 32px;
+        height: 31px;
+        position: relative;
+        top: -3px;
+    }
+
+    .navBurger_loisirsIcon {
+        width: 32px;
+        height: 31px;
+        position: relative;
+        top: -1px;
+    }
+
+    .burgerMenuButtonWithImg {
+        display: inline-flex !important;
+        align-items: center;
+        gap: 11px;
+    }
+
     #photographieTitle {
+        margin-top: 45px;
         font-size: 2.5em;
         -webkit-box-reflect: below -4px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
         /* opacity: 0;
@@ -2479,13 +2506,14 @@
         right: -250px;
         /* background-color: #e8e8e8; */
         background-color: #181a23;
-        padding-top: 77px;
+        padding-top: 83px;
         transition: right 0.5s ease;
+        border-left: 1px solid #80808024;
     }
     
     /* Sidenav menu links */
     .sidenav a {
-        padding: 8px 8px 8px 32px;
+        padding: 11px 8px 11px 32px;
         text-decoration: none;
         font-size: 25px;
         color: #cbcbcb;
@@ -2545,14 +2573,9 @@
         height: 59px;
         z-index: 9999;
     }
-    #openBtnLoisirs {
-        filter: drop-shadow(1px 2px 3px black);
-        position: absolute;
-        right: 10px;
-        top: 7px;
-        width: 44px;
-        height: 59px;
-        z-index: 9999;
+    .openBtnLoisirs {
+        right: 10px !important;
+        top: 7px !important;
     }
 
 

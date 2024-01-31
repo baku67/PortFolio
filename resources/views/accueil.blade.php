@@ -48,10 +48,30 @@
             <a id="closeBtn" href="#" class="close">×</a>
 
             <ul style="position:relative;">
-                <li><a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> </li>
-                <li><a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> </li>
-                <li><a id="projetsMenu" class="menuButton" href="/projets">Projets</a> </li>
-                <li><a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a></li>
+                <li>
+                    <a id="accueilMenu" class="menuButton selected" href="/">
+                        <i class="fa-solid fa-house"></i>
+                        <span style="margin-left:7px;">Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="cvMenu" class="menuButton burgerMenuButtonWithImg" href="/cv">
+                        <img src="img\navBurgerImg\nav_cv_red.png" class="navBurger_cvIcon" />
+                        <span>Mon CV</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="projetsMenu" class="menuButton burgerMenuButtonWithImg" href="/projets">
+                        <img src="img\navBurgerImg\nav_projets_red.png" class="navBurger_projectsIcon" />
+                        <span>Projets</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="contactMenu" class="menuButton burgerMenuButtonWithImg" href="/loisirs">
+                        <img src="img\navBurgerImg\nav_loisirs_red.png" class="navBurger_loisirsIcon" />
+                        <span>Loisirs</span>
+                    </a>
+                </li>
                 <li class="lablelsBurgerContainer">
                     <span id="status"> #OpenToWork</span>
                     <span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>

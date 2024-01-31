@@ -57,10 +57,10 @@
             <a id="closeBtn" href="#" class="closeBurger">×</a>
 
             <ul style="position:relative;">
-                <li><a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> </li>
+                <li><a id="accueilMenu" class="menuButton" href="/">Accueil</a> </li>
                 <li><a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> </li>
                 <li><a id="projetsMenu" class="menuButton" href="/projets">Projets</a> </li>
-                <li><a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a></li>
+                <li><a id="contactMenu" class="menuButton selected" href="/loisirs">Loisirs</a></li>
                 <li class="lablelsBurgerContainer">
                     <span id="status"> #OpenToWork</span>
                     <span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
@@ -77,7 +77,7 @@
 
             </div>
 
-            <a href="#" id="openBtn">
+            <a href="#" id="openBtn" class="openBtnLoisirs">
                 <span class="burger-icon">
                     <span></span>
                     <span></span>
