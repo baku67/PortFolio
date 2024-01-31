@@ -2,6 +2,45 @@
 
 window.onload = function() {
 
+
+    // **********  MOBILE: Click outside nav burger si actif = closeNav
+    var sidenav = document.getElementById("mySidenav");
+    var openBtn = document.getElementById("openBtn");
+    var closeBtn = document.getElementById("closeBtn");
+
+    openBtn.onclick = openNav;
+    closeBtn.onclick = closeNav;
+
+
+    document.getElementById("pageContainerProjet").addEventListener('click', function(e){   
+
+        if (document.getElementById('mySidenav').contains(e.target)){
+            // click dans nav burger
+        } else {
+            // click en dehors nav burger
+            if (sidenav.classList.contains("active")) {
+                closeNav();
+            }
+        }
+    });
+
+
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+        sidenav.classList.add("active");
+        openBtn.style.display = "none";
+
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        sidenav.classList.remove("active");
+        openBtn.style.display = "block";
+    }
+    //******  */ FIN
+
+
+
     // Observer checkbox <Compétences/> CV
     const observerCompetences = new IntersectionObserver(entries => {
         // Loop over the entries

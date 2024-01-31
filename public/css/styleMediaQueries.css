@@ -2517,6 +2517,13 @@
         font-size: 42px;
         color: #ef3b2d;
     }
+    .sidenav .closeBurger {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 42px;
+        color: #ef3b2d;
+    }
     
     /* Icône burger */
     .burger-icon span {
@@ -2538,7 +2545,15 @@
         height: 59px;
         z-index: 9999;
     }
-    
+    #openBtnLoisirs {
+        filter: drop-shadow(1px 2px 3px black);
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        width: 44px;
+        height: 59px;
+        z-index: 9999;
+    }
 
 
 

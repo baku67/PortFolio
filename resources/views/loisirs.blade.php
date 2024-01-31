@@ -49,6 +49,47 @@
 
     <body class="bodyLoisir">
 
+
+
+        <!-- WIP menu-burger mobile -->
+        <div id="mySidenav" class="sidenav isMobile">
+
+            <a id="closeBtn" href="#" class="closeBurger">×</a>
+
+            <ul style="position:relative;">
+                <li><a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> </li>
+                <li><a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> </li>
+                <li><a id="projetsMenu" class="menuButton" href="/projets">Projets</a> </li>
+                <li><a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a></li>
+                <li class="lablelsBurgerContainer">
+                    <span id="status"> #OpenToWork</span>
+                    <span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
+                </li>
+                <li class="socialBurgerContainer">
+                    <a href="https://github.com/baku67" target="_blank" style="padding:2px">
+                        <i class="fa-brands fa-github burgerSocialBtn"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/basile-kuntz-719278267" target="_blank" style="padding:2px">
+                        <i class="fa-brands fa-linkedin burgerSocialBtn"></i>
+                    </a>
+                </li>
+            </ul>
+
+            </div>
+
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+        </div>
+        <!-- FIN -->
+
+
+
+
         <!-- MODALS GALERIE -->
         <div id="myModal" class="modal">
             <span class="close">&times;</span>
@@ -88,7 +129,7 @@
             <h1 class="testH1 titleLoisirs"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
 
             <!-- Menu -->
-            <div id="NavBarContainer">
+            <div id="NavBarContainer" class="isDesktop">
                 <p id="menuLigneCv" style="color:#E7E8F2;">
                     <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
                     <!-- &nbsp;  -->
@@ -108,8 +149,8 @@
         <!-- Contenu (load JS) -->
         <div id="pageContainer">
 
-            <h3 class="galerieTitle"> Loisirs <span class="carreTitre carreTitreVeille">▪</span></h3>
-            <div class="barreGalerieSouligne"></div>
+            <h3 class="galerieTitle isDesktop"> Loisirs <span class="carreTitre carreTitreVeille">▪</span></h3>
+            <div class="barreGalerieSouligne isDesktop"></div>
 
             <h4 id="photographieTitle">
                 <span id="photoTitlePart1">Ph<img src="img/letterO_red2.png" class="letterO"/>t<img src="img/letterO_red2.png" class="letterO"/></span><span id="photoTitlePart2">graph<span id="letterIandPoint">i<div id="scubaDiver"></div><div id="scubaDiverFlash"></div><span id="flashPoint" class="flashPointAnim">.</span><span id="flashPoint2" class="flashPoint2Anim"></span><span id="photoBar"></span><span id="flashRectangle"></span></span>e</span></h4>

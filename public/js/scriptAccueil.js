@@ -18,7 +18,7 @@ window.onload = function() {
     // // Tell the observer which elements to track
     // observerDocumentations.observe(document.querySelector('#docuLoadContainer-wrapper'));
 
-
+    // **********  MOBILE: Click outside nav burger si actif = closeNav
     var sidenav = document.getElementById("mySidenav");
     var openBtn = document.getElementById("openBtn");
     var closeBtn = document.getElementById("closeBtn");
@@ -27,7 +27,7 @@ window.onload = function() {
     closeBtn.onclick = closeNav;
 
 
-    window.getElementById("pageContainer").addEventListener('click', function(e){   
+    document.getElementById("pageContainer").addEventListener('click', function(e){   
 
         if (document.getElementById('mySidenav').contains(e.target)){
             // click dans nav burger
@@ -52,6 +52,7 @@ window.onload = function() {
         sidenav.classList.remove("active");
         openBtn.style.display = "block";
     }
+    //******  */ FIN
 
 
 
