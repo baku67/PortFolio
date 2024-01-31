@@ -1523,6 +1523,14 @@ li::before {
     margin-block-start: 0em;
 }
 
+.fa-magnifying-glass {
+    font-size: 0.9em;
+}
+
+.accueilPageContent {
+    margin: 0% 12%;
+}
+
 .pageTitle {
     text-decoration-thickness: 3px;
     color:#E7E8F2;
@@ -1535,7 +1543,7 @@ li::before {
     text-align:right;
     font-size: 2.3em;
 
-    margin-top:40px;
+    margin-top:25px;
 
     animation-name: fadeIn;
     animation-duration: 1s;
@@ -1655,6 +1663,7 @@ li::before {
 
 
 #traitHeader {
+    display: none;
     height: 1px;
     /* margin-bottom: 20px; */
     width: 100%;
@@ -2733,8 +2742,8 @@ li::before {
 
 
 #headerAccueil {
-    background-color: #00f6ff0f;
-    box-shadow: 0 0 32px -11px #0ff;
+    /* background-color: #00f6ff0f;
+    box-shadow: 0 0 32px -11px #0ff; */
 }
 #headerCv {
     background-color: #00f6ff0f;

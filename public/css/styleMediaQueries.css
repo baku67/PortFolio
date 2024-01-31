@@ -216,13 +216,19 @@
         }
     }
     
+    .accueilPageContent {
+        margin: 0% 5%;
+    }
 
     #pageContainer {
         background-size: cover;
         background-repeat: no-repeat;
         /* height: 200px !important; */
         height: fit-content;
-        margin: 0% 5% !important;
+
+        /* Maj Attention affecte tout les onglets */
+        /* margin: 0% 5% !important; */
+        margin: 0% 5%;
     }
 
     #pageContainerProjet {
@@ -792,6 +798,10 @@
 
 
         position: relative !important;
+    }
+    .navBarContainerMobile {
+        /* Bandeau nav transparent sur /accueil (mobile) */
+        background-color: #ffffff00 !important;
     }
 
     #plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643 {

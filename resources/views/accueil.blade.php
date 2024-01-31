@@ -44,302 +44,313 @@
         <!-- Raie ajoutée en JS interval -->
         <!-- <div id="raieAccueil1"></div> -->
 
-        <!-- Header -->
-        <header id="headerAccueil" style="position:relative;" data-theme="dark">
-            <div style="width:100%;">
-                <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
-                <span  id="lineBreakMobile"></br></span>
-                <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> #OpenToWork</span><span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span></span></h2>
-            </div>
 
-            <!-- NavBarre -->
-            <div id="NavBarContainer">
-                <p id="menuLigneCv" data-theme="dark">
-                    <a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> 
-                    <!-- &nbsp;  -->
-                    <a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> 
-                    <!-- &nbsp;  -->
-                    <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
-                    <!-- &nbsp;  -->
-                    <a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a>
-                </p>
-            </div>
-
-            <!-- Trait séparateur -->
-            <div id="traitHeader"></div>
+        <main id="pageContainer" class="pageContainerAccueil" style="margin:0% 0%;">
 
 
-            <!-- Toggle light-theme -->
-                <!-- <div class="containerToggleLight">
-                    <i id="currentThemeIcon" class="currentThemeIcon fa-solid fa-moon" data-theme="dark"></i>
-                    <label class="switch">
-                        <input type="checkbox" id="themeToggle">
-                        <span class="slider"></span>
-                    </label>
-                </div> -->
 
-                <!-- <script type="text/javascript">
-                    document.addEventListener('DOMContentLoaded', function () {
-                        const themeToggle = document.getElementById('themeToggle');
-                        const body = document.body;
+            <!-- Header -->
+            <header id="headerAccueil" style="position:relative;" data-theme="dark">
+                <div style="width:100%;">
+                    <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
+                    <span  id="lineBreakMobile"></br></span>
+                    <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> #OpenToWork</span><span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span></span></h2>
+                </div>
 
-                        themeToggle.addEventListener('change', function () {
+                <!-- NavBarre -->
+                <div id="NavBarContainer" class="navBarContainerMobile">
+                    <p id="menuLigneCv" data-theme="dark">
+                        <a id="accueilMenu" class="menuButton selected" href="/">Accueil</a> 
+                        <!-- &nbsp;  -->
+                        <a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> 
+                        <!-- &nbsp;  -->
+                        <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
+                        <!-- &nbsp;  -->
+                        <a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a>
+                    </p>
+                </div>
 
-                            if (themeToggle.checked) {
-
-                                body.setAttribute('data-theme', 'light');
-                                document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
-                                document.getElementById('pageTitle').setAttribute('data-theme', 'light');
-                                document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
-                                document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
-                                document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
-
-                                document.getElementById('currentThemeIcon').classList.remove('fa-moon');
-                                document.getElementById('currentThemeIcon').classList.add('fa-sun');
-
-                            } else {
-
-                                body.setAttribute('data-theme', 'dark');
-                                document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
-                                document.getElementById('pageTitle').setAttribute('data-theme', 'dark');
-                                document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'dark');
-                                document.getElementById('menuLigneCv').setAttribute('data-theme', 'dark');
-                                document.getElementById('headerAccueil').setAttribute('data-theme', 'dark');
+                <!-- Trait séparateur -->
+                <div id="traitHeader"></div>
 
 
-                                document.getElementById('currentThemeIcon').classList.remove('fa-sun');
-                                document.getElementById('currentThemeIcon').classList.add('fa-moon');
-                            }
-                        });
-                    });
-                </script> -->
-            <!-- Fin toggle light-theme -->
-        </header>
+                <!-- Toggle light-theme -->
+                    <!-- <div class="containerToggleLight">
+                        <i id="currentThemeIcon" class="currentThemeIcon fa-solid fa-moon" data-theme="dark"></i>
+                        <label class="switch">
+                            <input type="checkbox" id="themeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div> -->
+
+                    <!-- <script type="text/javascript">
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const themeToggle = document.getElementById('themeToggle');
+                            const body = document.body;
+
+                            themeToggle.addEventListener('change', function () {
+
+                                if (themeToggle.checked) {
+
+                                    body.setAttribute('data-theme', 'light');
+                                    document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
+                                    document.getElementById('pageTitle').setAttribute('data-theme', 'light');
+                                    document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
+                                    document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
+                                    document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
+
+                                    document.getElementById('currentThemeIcon').classList.remove('fa-moon');
+                                    document.getElementById('currentThemeIcon').classList.add('fa-sun');
+
+                                } else {
+
+                                    body.setAttribute('data-theme', 'dark');
+                                    document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
+                                    document.getElementById('pageTitle').setAttribute('data-theme', 'dark');
+                                    document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'dark');
+                                    document.getElementById('menuLigneCv').setAttribute('data-theme', 'dark');
+                                    document.getElementById('headerAccueil').setAttribute('data-theme', 'dark');
 
 
-        <main id="pageContainer" class="pageContainerAccueil">
-
-            <div style="position:relative">
-                    <a class="gitHubLink" target="_blank" href="https://github.com/baku67">
-                        <img src="img/githubLogo2.png" class="githubLogo">
-                        <!-- <span class="githubAccueil">Github</span> -->
-                    </a>
-                <h2 id="pageTitle" class="pageTitle" data-theme="dark">Bienvenue sur mon portfolio</h2>
-            </div>
-            </br>
-
-            <div class="accueilGrid">
-
-                <div class="fixScalePortraitPC" style="position:relative;">
-                    
-                    <img id="portraitAccueil" class="imgAccueil" src="img/portraits/portraits_edited/portrait4_outline_fix.png" style="z-index:999;"/>
-
-                    <!-- Random portrait onClick:  -->
-                    <!-- <script>
-                        document.getElementById('portraitAccueil').addEventListener('click', function() {
-                            var srcArray = [
-                                {
-                                    url: "img/portraits/portrait_blackAndWhite.jpg",
-                                    borderColor: "var(--secondaryColor)"
-                                },
-                                {
-                                    url: "img/portraits/portraits_edited/portrait3_outline.jpg",
-                                    borderColor: "var(--secondaryColor)"
-                                },
-                                {
-                                    url: "img/portraits/portraits_edited/portrait4_outline.png",
-                                    borderColor: "var(--secondaryColor)"
-                                },
-                                {
-                                    url: "img/portraits/portraits_edited/portrait4_outlineBlue.png",
-                                    borderColor: "var(--secondaryColor)"
-                                },
-                                {
-                                    url: "img/portraits/portraits_edited/portrait5_outline.jpg",
-                                    borderColor: "var(--secondaryColor)"
-                                },
-                                {
-                                    url: "img/portraits/portraits_edited/portrait5_outlineBlue.jpg",
-                                    borderColor: "var(--secondaryColor)"
-                                },
-                                {
-                                    url: "img/portraits/portraits_edited/portrait6_outline.jpg",
-                                    borderColor: "var(--secondaryColor)"
-                                },
-                                // "img/portraits/portraits_edited/portrait3_outline.jpg",
-                                // "img/portraits/portraits_edited/portrait4_outline.png",
-                                // "img/portraits/portraits_edited/portrait5_outline.jpg",
-                                // "img/portraits/portraits_edited/portrait6_outline.jpg",
-                            ]
-                            srcArray.forEach(element => {
-                                preloadImage(element.url);
+                                    document.getElementById('currentThemeIcon').classList.remove('fa-sun');
+                                    document.getElementById('currentThemeIcon').classList.add('fa-moon');
+                                }
                             });
-                            function preloadImage(url)
-                            {
-                                var img=new Image();
-                                img.src=url;
-                            }
-                            var randomPortrait = srcArray[Math.floor(Math.random()*srcArray.length)];
-                            document.getElementById('portraitAccueil').setAttribute('src', randomPortrait.url);
-                            document.getElementById('portraitAccueil').style.borderBottom = `5px solid ${randomPortrait.borderColor}`;
-                        })
+                        });
                     </script> -->
+                <!-- Fin toggle light-theme -->
+            </header>
 
-                    <svg id="rectangleSvg" class="rectangleSvg">
-                        <!-- <path 
-                            id="rectangleSvgPath"
-                            d="M 38.984 31.514 L 241.997 31.942 C 251.689 32.1 258.744 39.063 258.744 46.667 C 258.8707 121.0987 258.9973 195.5303 259.124 257.962 C 259.026 271.126 254.469 274.707 242.558 274.686 L 42.728 275.046 C 29.543 275.358 23.684 269.498 23.468 257.373 L 23.667 46.068 C 23.633 37.709 31.861 31.48 38.795 31.48"
-                            fill-opacity="0"
-                        /> -->
-                        <path 
-                            id="rectangleSvgPath"
-                            d="M 38.984 31.514 L 241.997 31.942 C 251.689 32.1 258.744 39.063 258.744 46.667 C 258.8707 121.0987 258.9973 195.5303 259 248 C 259 261 254 265 243 265 L 43 265 C 29 265 23 259 23 247 L 23 46 C 23.633 37.709 31.861 31.48 38.795 31.48"
-                            fill-opacity="0"
-                        />
-                    </svg>
 
+            <div class="accueilPageContent">
+
+
+                <div style="position:relative">
+                        <a class="gitHubLink" target="_blank" href="https://github.com/baku67">
+                            <img src="img/githubLogo2.png" class="githubLogo">
+                            <!-- <span class="githubAccueil">Github</span> -->
+                        </a>
+                    <h2 id="pageTitle" class="pageTitle" data-theme="dark">Bienvenue sur mon portfolio</h2>
                 </div>
 
-                <p id="paragrapheAccueil" class="paragrapheAccueil" >
-                    <!-- <span style="margin-left: 5px; font-size: 130%;">Bienvenue, </span>
-                    <br><br> -->
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="accueilWord">Je</span> <span class="accueilWord">suis</span> <span class="accueilWord">Basile</span> <span class="accueilWord">KUNTZ,</span> <span class="accueilWord">et</span> <span class="accueilWord">je</span> <span class="accueilWord">viens</span> <span class="accueilWord">d'obtenir</span> <span class="accueilWord">mon</span> <span class="accueilWord">titre</span> <span class="accueilWord">de</span> <strong><span class="accueilWord">développeur</span> <span class="accueilWord">web</span> <span class="accueilWord">et</span> <span class="accueilWord">web</span> <span class="accueilWord">mobile</span></strong> <span class="accueilWord">au</span> <span class="accueilWord">centre</span> <span class="accueilWord">Élan</span> <span class="accueilWord">Formation</span> <span class="accueilWord">à</span> <span class="accueilWord">Strasbourg.</span> <span class="accueilWord">Je</span> <span class="accueilWord">cherche</span> <span class="accueilWord">actuellement</span> <span class="accueilWord">à</span> <span class="accueilWord">mettre</span> <span class="accueilWord">à</span> <span class="accueilWord">profit</span> <span class="accueilWord">mes</span> <span class="accueilWord">compétences</span> <span class="accueilWord">et</span> <span class="accueilWord">à</span> <span class="accueilWord">m'améliorer</span> <span class="accueilWord">dans</span> <span class="accueilWord">le</span> <span class="accueilWord">cadre</span> <span class="accueilWord">d'une</span> <strong><span class="accueilWord">alternance</span> <span class="accueilWord">en</span> <span class="accueilWord">licence</span> <span class="accueilWord">CDA</span></strong><span class="accueilWord">.</span>
-                    <span class="accueilWord">J’apprécie</span> <span class="accueilWord">les</span> <span class="accueilWord">choses</span> <span class="accueilWord">simples</span> <span class="accueilWord">de</span> <span class="accueilWord">la</span> <span class="accueilWord">vie,</span> <span class="accueilWord">ma</span> <span class="accueilWord">personnalité</span> <span class="accueilWord">et</span> <span class="accueilWord">ma</span> <span class="accueilWord">créativité</span> <span class="accueilWord">parleront</span> <span class="accueilWord">d’elles-même.</span>
-                    <br><span class="accueilWord">Donner</span> <span class="accueilWord">vie</span> <span class="accueilWord">à</span> <span class="accueilWord">un</span> <span class="accueilWord">site</span> <span class="accueilWord">web,</span> <span class="accueilWord">c’est</span> <span class="accueilWord">surprenant,</span> <span class="accueilWord">motivant,</span> <span class="accueilWord">beau,</span> <span class="accueilWord">captivant,</span> <span class="accueilWord">fascinant,</span> <span class="accueilWord">prenant…</span> <span class="accueilWord">et</span> <span class="accueilWord">ça</span> <span class="accueilWord">j’adore</span> <span class="accueilWord">!</span> 
-                    <br><span class="accueilWord">Et</span> <span class="accueilWord">si</span> <span class="accueilWord">on</span> <span class="accueilWord">se</span> <span class="accueilWord">rencontrait</span> <span class="accueilWord">pour</span> <span class="accueilWord">discuter</span> <span class="accueilWord">de</span> <span class="accueilWord">votre</span> <span class="accueilWord">projet</span> <span class="accueilWord">?</span>
-                </p>
+                </br>
 
-            </div>
+                <div class="accueilGrid">
 
-
-            </br>
-
-            <div id="contactDiv">
-
-                <div id="citationAndLightBulbWrapper">
-                    
-
-                    <!-- LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/) -->
-                    <div id="lightBulbWrapperDiv" class="lightBulbWrapperDiv">
-                        <svg class="lightBulbContainer">
-                            <path 
-                                id="lightBulbPath"
-                                d="M 344 11 C -14 10 -70 407 185 533 C 207 545 247 556 247 606 L 247 642 C 235 663 236 677 247 696 C 236 712 236 727 247 745 C 237 761 238 777 247 792 C 295 808 390 812 450 793 C 459 780 458 760 450 745 C 460 728 459 709 450 695 C 459 679 458 658 449 642 L 448 606 C 446 552 492 541 514 530 C 754 408 708 9 344 11"
-                            />
-                        </svg>
-
-                        <!-- Calque 1 (fils de cuivre) -->
-                        <svg class="lightBulbContainer2">
-                            <path 
-                                id="lightBulbPath2"
-                                d="M 294 605 L 295 603 M 295 603 C 293 536 305 335 287 196 Q 277 122 251 196 Q 228 274 342 275 Q 440 273 420 197 Q 392 117 375 197 C 358 334 383.6667 466 388 604"
-                            />
-                        </svg>
-
-                        <!-- Calque 2 (Halo lumière) -->
-                        <div class="lightBulbContainer3">
-                        </div>
-
-                        <!-- Calque 3 (effet vis) -->
-                        <svg class="lightBulbContainer4">
-                            <path 
-                                id="lightBulbPath4"
-                                d="M 265 641 L 267 642 M 267 642 C 314 661 370 661 411 649 Q 448 638 411 633 Q 249 622 270 686 Q 276 710 397 705 Q 410 705 421 701 Q 449 691 412 685 Q 247 676 269 736 Q 277 758 403 754 Q 417 752 422 750 Q 449 740 413 734 Q 246 727 272 750"
-                            />
-                        </svg>
-
+                    <div class="fixScalePortraitPC" style="position:relative;">
                         
-                        <!-- Calque 4 (Hover me text SVG) -->
-                        <svg class="lightBulbContainer5">
+                        <img id="portraitAccueil" class="imgAccueil" src="img/portraits/portraits_edited/portrait4_outline_fix.png" style="z-index:999;"/>
+
+                        <!-- Random portrait onClick:  -->
+                        <!-- <script>
+                            document.getElementById('portraitAccueil').addEventListener('click', function() {
+                                var srcArray = [
+                                    {
+                                        url: "img/portraits/portrait_blackAndWhite.jpg",
+                                        borderColor: "var(--secondaryColor)"
+                                    },
+                                    {
+                                        url: "img/portraits/portraits_edited/portrait3_outline.jpg",
+                                        borderColor: "var(--secondaryColor)"
+                                    },
+                                    {
+                                        url: "img/portraits/portraits_edited/portrait4_outline.png",
+                                        borderColor: "var(--secondaryColor)"
+                                    },
+                                    {
+                                        url: "img/portraits/portraits_edited/portrait4_outlineBlue.png",
+                                        borderColor: "var(--secondaryColor)"
+                                    },
+                                    {
+                                        url: "img/portraits/portraits_edited/portrait5_outline.jpg",
+                                        borderColor: "var(--secondaryColor)"
+                                    },
+                                    {
+                                        url: "img/portraits/portraits_edited/portrait5_outlineBlue.jpg",
+                                        borderColor: "var(--secondaryColor)"
+                                    },
+                                    {
+                                        url: "img/portraits/portraits_edited/portrait6_outline.jpg",
+                                        borderColor: "var(--secondaryColor)"
+                                    },
+                                    // "img/portraits/portraits_edited/portrait3_outline.jpg",
+                                    // "img/portraits/portraits_edited/portrait4_outline.png",
+                                    // "img/portraits/portraits_edited/portrait5_outline.jpg",
+                                    // "img/portraits/portraits_edited/portrait6_outline.jpg",
+                                ]
+                                srcArray.forEach(element => {
+                                    preloadImage(element.url);
+                                });
+                                function preloadImage(url)
+                                {
+                                    var img=new Image();
+                                    img.src=url;
+                                }
+                                var randomPortrait = srcArray[Math.floor(Math.random()*srcArray.length)];
+                                document.getElementById('portraitAccueil').setAttribute('src', randomPortrait.url);
+                                document.getElementById('portraitAccueil').style.borderBottom = `5px solid ${randomPortrait.borderColor}`;
+                            })
+                        </script> -->
+
+                        <svg id="rectangleSvg" class="rectangleSvg">
+                            <!-- <path 
+                                id="rectangleSvgPath"
+                                d="M 38.984 31.514 L 241.997 31.942 C 251.689 32.1 258.744 39.063 258.744 46.667 C 258.8707 121.0987 258.9973 195.5303 259.124 257.962 C 259.026 271.126 254.469 274.707 242.558 274.686 L 42.728 275.046 C 29.543 275.358 23.684 269.498 23.468 257.373 L 23.667 46.068 C 23.633 37.709 31.861 31.48 38.795 31.48"
+                                fill-opacity="0"
+                            /> -->
                             <path 
-                                id="lightBulbPath5"
-                                d="M 163.2212 793.6805 L 163.134 792.6843 M 139.2637 703.4251 L 163.134 792.6843 Q 146.9962 745.9128 173.0716 745.6392 Q 197.9764 743.4603 181.5772 693.7002 L 200.205 780.4067 C 204.2891 804.141 207.7144 728.5549 239.6798 726.7621 C 280.1751 719.2039 288.4306 767.6688 246.8518 774.3179 C 210.9017 776.4594 206.7182 728.642 245.5698 725.2429 Q 285.3679 709.7152 293.6983 736.0895 Q 321.4043 788.8757 319.2507 729.8387 C 321.7539 712.5548 359.8829 735.3182 385.8215 722.0069 Q 407.2523 703.067 379.6578 697.4506 Q 349.249 694.0881 343.5952 732.7279 Q 338.8504 770.2844 416.1553 747.46 C 425.9429 744.596 428.3964 715.2706 431.4599 692.9185 C 441.9448 698.0241 453.2516 701.0502 470.5355 703.5533 Q 456.625 759.168 447.13 760.848 C 397.414 767.437 367.499 783.341 368.97 802.47 Q 371.282 818.025 392.092 824.331 C 416.862 828.078 412 818.3333 433 796 Q 447 783 455 798 C 458 805 453 821.3333 452 833 C 455 805 460 797 464 793 Q 472 787 478 798 C 485 813 478 827 490 832 C 504 836 490 811 535 810 C 555 810 540 788 519 793 C 490 803 501 858 541 829"
+                                id="rectangleSvgPath"
+                                d="M 38.984 31.514 L 241.997 31.942 C 251.689 32.1 258.744 39.063 258.744 46.667 C 258.8707 121.0987 258.9973 195.5303 259 248 C 259 261 254 265 243 265 L 43 265 C 29 265 23 259 23 247 L 23 46 C 23.633 37.709 31.861 31.48 38.795 31.48"
+                                fill-opacity="0"
                             />
                         </svg>
 
-                        <!-- Poisson qui passe devant: popé depuis JS avec intervals -->
-                        <!-- <div id="poissonAcueil1"></div> -->
-
                     </div>
 
-                    <div id="inspirationContainer">
-                        <h3 id="inspirationTitle">Inspirations:</h3>
-                        <div style="position:relative;">
-                            <img class="quote1" src="img/quote1.png" />
-                            <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
-                            <quote style="position:relative;"><span id="quoteContent">Digital design is like painting, except the paint never dries. <span class="quoteAuthor">- Neville Brody</span></span></quote>
-                            <img class="quote2" src="img/quote2.png" />
-                        </div>
-                        <button id="changeQuotation"><i class="fa-solid fa-rotate"></i></button>
-                    </div>
+                    <p id="paragrapheAccueil" class="paragrapheAccueil" >
+                        <!-- <span style="margin-left: 5px; font-size: 130%;">Bienvenue, </span>
+                        <br><br> -->
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="accueilWord">Je</span> <span class="accueilWord">suis</span> <span class="accueilWord">Basile</span> <span class="accueilWord">KUNTZ,</span> <span class="accueilWord">et</span> <span class="accueilWord">je</span> <span class="accueilWord">viens</span> <span class="accueilWord">d'obtenir</span> <span class="accueilWord">mon</span> <span class="accueilWord">titre</span> <span class="accueilWord">de</span> <strong><span class="accueilWord">développeur</span> <span class="accueilWord">web</span> <span class="accueilWord">et</span> <span class="accueilWord">web</span> <span class="accueilWord">mobile</span></strong> <span class="accueilWord">au</span> <span class="accueilWord">centre</span> <span class="accueilWord">Élan</span> <span class="accueilWord">Formation</span> <span class="accueilWord">à</span> <span class="accueilWord">Strasbourg.</span> <span class="accueilWord">Je</span> <span class="accueilWord">cherche</span> <span class="accueilWord">actuellement</span> <span class="accueilWord">à</span> <span class="accueilWord">mettre</span> <span class="accueilWord">à</span> <span class="accueilWord">profit</span> <span class="accueilWord">mes</span> <span class="accueilWord">compétences</span> <span class="accueilWord">et</span> <span class="accueilWord">à</span> <span class="accueilWord">m'améliorer</span> <span class="accueilWord">dans</span> <span class="accueilWord">le</span> <span class="accueilWord">cadre</span> <span class="accueilWord">d'une</span> <strong><span class="accueilWord">alternance</span> <span class="accueilWord">en</span> <span class="accueilWord">licence</span> <span class="accueilWord">CDA</span></strong><span class="accueilWord">.</span>
+                        <span class="accueilWord">J’apprécie</span> <span class="accueilWord">les</span> <span class="accueilWord">choses</span> <span class="accueilWord">simples</span> <span class="accueilWord">de</span> <span class="accueilWord">la</span> <span class="accueilWord">vie,</span> <span class="accueilWord">ma</span> <span class="accueilWord">personnalité</span> <span class="accueilWord">et</span> <span class="accueilWord">ma</span> <span class="accueilWord">créativité</span> <span class="accueilWord">parleront</span> <span class="accueilWord">d’elles-même.</span>
+                        <br><span class="accueilWord">Donner</span> <span class="accueilWord">vie</span> <span class="accueilWord">à</span> <span class="accueilWord">un</span> <span class="accueilWord">site</span> <span class="accueilWord">web,</span> <span class="accueilWord">c’est</span> <span class="accueilWord">surprenant,</span> <span class="accueilWord">motivant,</span> <span class="accueilWord">beau,</span> <span class="accueilWord">captivant,</span> <span class="accueilWord">fascinant,</span> <span class="accueilWord">prenant…</span> <span class="accueilWord">et</span> <span class="accueilWord">ça</span> <span class="accueilWord">j’adore</span> <span class="accueilWord">!</span> 
+                        <br><span class="accueilWord">Et</span> <span class="accueilWord">si</span> <span class="accueilWord">on</span> <span class="accueilWord">se</span> <span class="accueilWord">rencontrait</span> <span class="accueilWord">pour</span> <span class="accueilWord">discuter</span> <span class="accueilWord">de</span> <span class="accueilWord">votre</span> <span class="accueilWord">projet</span> <span class="accueilWord">?</span>
+                    </p>
 
                 </div>
 
 
-                <br>
+                </br>
 
+                <div id="contactDiv">
 
-                <div id="accueilProjectsDiv" class="accueilProjectsDiv">
+                    <div id="citationAndLightBulbWrapper">
+                        
 
-                    <!-- Label bouton mobile -->
-                    <a href="https://portfolio.basilek.ovh/projets" class="accueilProjectsLabelLink">
-                        <div class="accueilProjectsBtnLabel">
-                            <span class="accueilProjectsRightDivSpan">
-                                Voir mes projets 
-                            </span>
+                        <!-- LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/) -->
+                        <div id="lightBulbWrapperDiv" class="lightBulbWrapperDiv">
+                            <svg class="lightBulbContainer">
+                                <path 
+                                    id="lightBulbPath"
+                                    d="M 344 11 C -14 10 -70 407 185 533 C 207 545 247 556 247 606 L 247 642 C 235 663 236 677 247 696 C 236 712 236 727 247 745 C 237 761 238 777 247 792 C 295 808 390 812 450 793 C 459 780 458 760 450 745 C 460 728 459 709 450 695 C 459 679 458 658 449 642 L 448 606 C 446 552 492 541 514 530 C 754 408 708 9 344 11"
+                                />
+                            </svg>
+
+                            <!-- Calque 1 (fils de cuivre) -->
+                            <svg class="lightBulbContainer2">
+                                <path 
+                                    id="lightBulbPath2"
+                                    d="M 294 605 L 295 603 M 295 603 C 293 536 305 335 287 196 Q 277 122 251 196 Q 228 274 342 275 Q 440 273 420 197 Q 392 117 375 197 C 358 334 383.6667 466 388 604"
+                                />
+                            </svg>
+
+                            <!-- Calque 2 (Halo lumière) -->
+                            <div class="lightBulbContainer3">
+                            </div>
+
+                            <!-- Calque 3 (effet vis) -->
+                            <svg class="lightBulbContainer4">
+                                <path 
+                                    id="lightBulbPath4"
+                                    d="M 265 641 L 267 642 M 267 642 C 314 661 370 661 411 649 Q 448 638 411 633 Q 249 622 270 686 Q 276 710 397 705 Q 410 705 421 701 Q 449 691 412 685 Q 247 676 269 736 Q 277 758 403 754 Q 417 752 422 750 Q 449 740 413 734 Q 246 727 272 750"
+                                />
+                            </svg>
+
+                            
+                            <!-- Calque 4 (Hover me text SVG) -->
+                            <svg class="lightBulbContainer5">
+                                <path 
+                                    id="lightBulbPath5"
+                                    d="M 163.2212 793.6805 L 163.134 792.6843 M 139.2637 703.4251 L 163.134 792.6843 Q 146.9962 745.9128 173.0716 745.6392 Q 197.9764 743.4603 181.5772 693.7002 L 200.205 780.4067 C 204.2891 804.141 207.7144 728.5549 239.6798 726.7621 C 280.1751 719.2039 288.4306 767.6688 246.8518 774.3179 C 210.9017 776.4594 206.7182 728.642 245.5698 725.2429 Q 285.3679 709.7152 293.6983 736.0895 Q 321.4043 788.8757 319.2507 729.8387 C 321.7539 712.5548 359.8829 735.3182 385.8215 722.0069 Q 407.2523 703.067 379.6578 697.4506 Q 349.249 694.0881 343.5952 732.7279 Q 338.8504 770.2844 416.1553 747.46 C 425.9429 744.596 428.3964 715.2706 431.4599 692.9185 C 441.9448 698.0241 453.2516 701.0502 470.5355 703.5533 Q 456.625 759.168 447.13 760.848 C 397.414 767.437 367.499 783.341 368.97 802.47 Q 371.282 818.025 392.092 824.331 C 416.862 828.078 412 818.3333 433 796 Q 447 783 455 798 C 458 805 453 821.3333 452 833 C 455 805 460 797 464 793 Q 472 787 478 798 C 485 813 478 827 490 832 C 504 836 490 811 535 810 C 555 810 540 788 519 793 C 490 803 501 858 541 829"
+                                />
+                            </svg>
+
+                            <!-- Poisson qui passe devant: popé depuis JS avec intervals -->
+                            <!-- <div id="poissonAcueil1"></div> -->
+
                         </div>
-                    </a>
 
-                    <!-- PC (controls) video large -->
-                    <video autoplay controls muted loop id="accueilVideo" class="accueilVideo isDesktop">
-                        <source src="img\demos\projectsPreview.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-
-                    <!-- Mobile (pas de controls) video trimmed -->
-                    <video autoplay muted loop id="accueilVideo" class="accueilVideo isMobile">
-                        <source src="img\demos\projectsPreview_trimmedMobile4.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-
-                    <!-- Bouton PC -->
-                    <a href="https://portfolio.basilek.ovh/projets" style="height:fit-content; z-index:9;" class="accueilProjectsRightLink">
-                        <div class="accueilProjectsRightDiv">
-                            <img src="img/projectsIcon.png" class="accueilProjectsIcon" />
-                            <span class="accueilProjectsRightDivSpan">
-                                Voir mes projets 
-                                <!-- <i class="fa-solid fa-square-up-right redirectProjectsIcon"></i> -->
-                            </span>
+                        <div id="inspirationContainer">
+                            <h3 id="inspirationTitle">Inspirations:</h3>
+                            <div style="position:relative;">
+                                <img class="quote1" src="img/quote1.png" />
+                                <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
+                                <quote style="position:relative;"><span id="quoteContent">Digital design is like painting, except the paint never dries. <span class="quoteAuthor">- Neville Brody</span></span></quote>
+                                <img class="quote2" src="img/quote2.png" />
+                            </div>
+                            <button id="changeQuotation"><i class="fa-solid fa-rotate"></i></button>
                         </div>
-                    </a>
 
-                    <div class="accueilProjectsTrait"></div>
+                    </div>
 
-                    <!-- Mobile: icones keyboard+mouse -->
-                    <img src="img/keyboard_blue.png" class="accueilKeyboardPng isMobile">
+
+                    <br>
+
+
+                    <div id="accueilProjectsDiv" class="accueilProjectsDiv">
+
+                        <!-- Label bouton mobile -->
+                        <a href="https://portfolio.basilek.ovh/projets" class="accueilProjectsLabelLink">
+                            <div class="accueilProjectsBtnLabel">
+                                <span class="accueilProjectsRightDivSpan">
+                                    Voir mes projets 
+                                </span>
+                            </div>
+                        </a>
+
+                        <!-- PC (controls) video large -->
+                        <video autoplay controls muted loop id="accueilVideo" class="accueilVideo isDesktop">
+                            <source src="img\demos\projectsPreview.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!-- Mobile (pas de controls) video trimmed -->
+                        <video autoplay muted loop id="accueilVideo" class="accueilVideo isMobile">
+                            <source src="img\demos\projectsPreview_trimmedMobile4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!-- Bouton PC -->
+                        <a href="https://portfolio.basilek.ovh/projets" style="height:fit-content; z-index:9;" class="accueilProjectsRightLink">
+                            <div class="accueilProjectsRightDiv">
+                                <img src="img/projectsIcon.png" class="accueilProjectsIcon" />
+                                <span class="accueilProjectsRightDivSpan">
+                                    Voir mes projets 
+                                    <!-- <i class="fa-solid fa-square-up-right redirectProjectsIcon"></i> -->
+                                </span>
+                            </div>
+                        </a>
+
+                        <div class="accueilProjectsTrait"></div>
+
+                        <!-- Mobile: icones keyboard+mouse -->
+                        <img src="img/keyboard_blue.png" class="accueilKeyboardPng isMobile">
+
+                    </div>
+
+
+                    <!-- <div class="accueilGrid2"> -->
+
+                        <!-- Badge linkedIn -->
+                        <!-- <div>
+                            <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="basile-kuntz-719278267" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/basile-kuntz-719278267?trk=profile-badge"></a></div>
+                        </div>                 -->
+
+                        <!-- <br> -->
+
+                        <!-- form https://enjoy.plezi.co -->
+                        <div>
+                            <button id="contactButton">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                <span> Contactez-moi</span>
+                            </button>
+                            <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
+                            <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>            
+                        </div>
+                    <!-- </div> -->
 
                 </div>
 
 
-                <!-- <div class="accueilGrid2"> -->
-
-                    <!-- Badge linkedIn -->
-                    <!-- <div>
-                        <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="basile-kuntz-719278267" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/basile-kuntz-719278267?trk=profile-badge"></a></div>
-                    </div>                 -->
-
-                    <!-- <br> -->
-
-                    <!-- form https://enjoy.plezi.co -->
-                    <div>
-                        <button id="contactButton">
-                            <i class="fa-regular fa-paper-plane"></i>
-                            <span> Contactez-moi</span>
-                        </button>
-                        <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
-                        <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>            
-                    </div>
-                <!-- </div> -->
 
             </div>
 
