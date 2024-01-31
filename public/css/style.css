@@ -2605,6 +2605,10 @@ li::before {
 }
 
 
+#lightBulbPath, #lightBulbPath2, #lightBulbPath4, #lightBulbPath5 {
+    opacity: 0.85;
+}
+
 
 
 .accueilKeyboardPngDesktop {
@@ -2887,28 +2891,20 @@ li::before {
 
 
 .imgAccueil { 
-
-    /* TEst  */
-    /* border-bottom: 5px solid var(--secondaryColor); */
-
-
+    background-color: #ef3b2d;
     opacity: 0;
 
-    float:right;
+    float: right;
     width: 161px;
-    /* height: 173px; */
     height: 159px;
     margin: 20px 30px 15px 49px;
-
-    padding: 4px 2px 3px 3px;
+    padding: 1px 1px 1px 1px;
 
     vertical-align: middle;
     position: relative;
-    /* right: -250px; */
     filter: blur(5px) grayscale(1);
 
     transition: 0.3s ease;
-
     animation: imgAccueilFadeIn 2s 1.3s ease forwards;
 }
 /* .imgAccueil:hover { 
@@ -2917,11 +2913,18 @@ li::before {
     padding: 0px;
 } */
 
+.testPopPortraitImg {
+    width: 147px;
+    height: 147px;
+    position: relative;
+    top: 9px;
+}
+
 .accueilProjectsDiv {
     position: relative;
     display: inline-flex;
     align-items: center;
-    margin: 60px auto 85px auto;
+    margin: 70px auto 110px auto;
 
     /* justify-content: space-evenly; */
     justify-content: center;

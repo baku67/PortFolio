@@ -687,6 +687,20 @@
 
     }
 
+    .testPopPortraitImg {
+        width: 185px;
+        height: 185px;
+        position: relative;
+        top: 8px;
+    }
+
+    .accueilProjectsDiv {
+        margin: 80px auto 120px auto;
+
+        gap: 14%;
+        right: 111px;
+    }
+
     .accueilProjectsIcon {
         width: 82px;
     }

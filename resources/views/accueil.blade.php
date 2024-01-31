@@ -128,7 +128,6 @@
                 <div style="position:relative">
                         <a class="gitHubLink" target="_blank" href="https://github.com/baku67">
                             <img src="img/githubLogo2.png" class="githubLogo">
-                            <!-- <span class="githubAccueil">Github</span> -->
                         </a>
                     <h2 id="pageTitle" class="pageTitle" data-theme="dark">Bienvenue sur mon portfolio</h2>
                 </div>
@@ -139,9 +138,14 @@
 
                     <div class="fixScalePortraitPC" style="position:relative;">
                         
-                        <img id="portraitAccueil" class="imgAccueil" src="img/portraits/portraits_edited/portrait4_outline_fix.png" style="z-index:999;"/>
+                        <!-- <img id="portraitAccueil" class="imgAccueil isMobile" src="img/portraits/portraits_edited/portrait4_outline_fix.png" style="z-index:999;"/> -->
 
-                        <!-- Random portrait onClick:  -->
+                        <div id="portraitAccueil" class="imgAccueil" style="background-color:#ef3b2d; z-index:999;">
+                            <img src="img\portraits\portraitPng.png" class="testPopPortraitImg" />
+                        </div>
+
+
+                        <!-- *** Random portrait onClick:  *** -->
                         <!-- <script>
                             document.getElementById('portraitAccueil').addEventListener('click', function() {
                                 var srcArray = [
@@ -192,18 +196,16 @@
                             })
                         </script> -->
 
-                        <svg id="rectangleSvg" class="rectangleSvg isMobile" style="display:none">
-                            <!-- <path 
-                                id="rectangleSvgPath"
-                                d="M 38.984 31.514 L 241.997 31.942 C 251.689 32.1 258.744 39.063 258.744 46.667 C 258.8707 121.0987 258.9973 195.5303 259.124 257.962 C 259.026 271.126 254.469 274.707 242.558 274.686 L 42.728 275.046 C 29.543 275.358 23.684 269.498 23.468 257.373 L 23.667 46.068 C 23.633 37.709 31.861 31.48 38.795 31.48"
-                                fill-opacity="0"
-                            /> -->
+
+
+                        <!-- *** Rectangle SVG portrait désactivé: *** -->
+                        <!-- <svg id="rectangleSvg" class="rectangleSvg isMobile">
                             <path 
                                 id="rectangleSvgPath"
                                 d="M 38.984 31.514 L 241.997 31.942 C 251.689 32.1 258.744 39.063 258.744 46.667 C 258.8707 121.0987 258.9973 195.5303 259 248 C 259 261 254 265 243 265 L 43 265 C 29 265 23 259 23 247 L 23 46 C 23.633 37.709 31.861 31.48 38.795 31.48"
                                 fill-opacity="0"
                             />
-                        </svg>
+                        </svg> -->
 
                     </div>
 
