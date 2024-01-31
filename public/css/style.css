@@ -2607,19 +2607,58 @@ li::before {
 
 
 
+.accueilKeyboardPngDesktop {
+    position: absolute;
+    opacity: 0.9;
+    width: 108%;
+    right: -8px;
+    top: 104%;
+
+    filter: drop-shadow(2px 4px 6px black);
+
+    transition: all 0.3s;
+}
+
+/* .accueilVideoPcDiv img {
+    transition: all 0.3s;
+}
+.accueilVideoPcDiv:has(+ .accueilProjectsRightLink:hover) {
+    transform: translateY(-10px);
+} */
 
 
 
-
-
-.accueilVideo {
-    position: relative;
+.accueilVideoPcDiv {
+    /* position: relative;
+    bottom: 32px;
     z-index: 9;
-    width: 50%;
-    border-radius: 14px;
-    border: 3px solid var(--secondaryColorVeryMat);
+    width: 31%; */
+
+    border-radius: 7px;
+    border: 2px solid var(--secondaryColor);
+    border-bottom: 15px solid var(--secondaryColor);
+    border-top: 7px solid var(--secondaryColor);
 
     transition: all .3s;
+}
+
+
+.accueilVideoPcDiv1 {
+    position: relative;
+    bottom: 32px;
+    width: 29%;
+    z-index: 999;
+
+    box-shadow: 0px 0 52px 20px #00ffff9e;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.accueilVideoPcVideo {
+    border-radius: 0px;
+    border: 1px solid black;
 }
 
 .accueilProjectsTrait {
@@ -2883,7 +2922,11 @@ li::before {
     display: inline-flex;
     align-items: center;
     margin: 60px auto 85px auto;
-    justify-content: space-evenly;
+
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    gap: 11%;
+    right: 62px;
 }
 
 .accueilProjectsRightDiv {
@@ -2915,9 +2958,9 @@ li::before {
     align-items: center;
     display: flex;
 
-    border: 3px solid var(--secondaryColorVeryMat);
+    border: 2px solid var(--secondaryColorVeryMat);
     border-radius: 11px;
-    padding: 5px 15px 10px 15px;
+    padding: 9px 20px 7px 20px;
 
     transition: all 0.3s;
 }
@@ -3024,6 +3067,9 @@ li::before {
 
     font-weight: bold;
     color: #e2ebeb;
+
+    line-height: 1.1em;
+    margin-top: 5px;
 }
 
 
@@ -3051,10 +3097,10 @@ li::before {
 .accueilProjectsIcon {
     /* Fix décalage png */
     position: relative;
-    left: 9px;
+    left: 5px;
 
-    opacity: 0.7;
-    width: 125px;
+    opacity: 0.9;
+    width: 60px;
 
     transition: all 0.3s;
 }
@@ -3087,7 +3133,7 @@ li::before {
 
 .lightBulbWrapperDiv {
 
-    transform: rotate(351deg) scale(0.65);
+    transform: rotate(357deg) scale(0.65);
 
     animation: accueilAmpouleGradient 0.5s 0.5s ease forwards;
 }

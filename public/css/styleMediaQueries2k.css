@@ -683,6 +683,14 @@
         width: 75%;
     }
 
+    .accueilKeyboardPngDesktop {
+
+    }
+
+    .accueilProjectsIcon {
+        width: 82px;
+    }
+
     footer.footerAccueil {
         /* position: absolute;
         bottom: 0; */
@@ -692,6 +700,14 @@
             /* bottom: 0;
             position: absolute; */
             margin-top: 40px;
+    }
+
+    /* .accueilVideoPcDiv {
+        width: 24%;
+    } */
+
+    .accueilVideoPcDiv1 {
+        width: 24%;
     }
 
 
@@ -717,7 +733,7 @@
 
     .lightBulbWrapperDiv {
 
-        transform: rotate(351deg) scale(0.8);
+        transform: rotate(356deg) scale(0.8);
 
         bottom: 18px;
     }

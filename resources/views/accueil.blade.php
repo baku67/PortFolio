@@ -297,13 +297,23 @@
                             </div>
                         </a>
 
-                        <!-- PC (controls) video large -->
-                        <video autoplay controls muted loop id="accueilVideo" class="accueilVideo isDesktop">
-                            <source src="img\demos\projectsPreview.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <!-- Desktop (avec controls) video large -->
+                        <div class="accueilVideoPcDiv1 isDesktop">
+                            <div class="accueilVideoPcDiv isDesktop">
 
-                        <!-- Mobile (pas de controls) video trimmed -->
+                                <video autoplay controls muted loop id="accueilVideo" class="accueilVideoPcVideo isDesktop">
+                                    <source src="img\demos\projectsPreview_trimmedPc2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                            </div>
+
+                            <!-- Desktop: icones keyboard+mouse PC -->
+                            <img src="img/keyboard_blue.png" class="accueilKeyboardPngDesktop isDesktop">
+
+                        </div>
+
+                        <!-- Mobile Bouton (sans controls) video trimmed -->
                         <video autoplay muted loop id="accueilVideo" class="accueilVideo isMobile">
                             <source src="img\demos\projectsPreview_trimmedMobile4.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -312,9 +322,9 @@
                         <!-- Bouton PC -->
                         <a href="https://portfolio.basilek.ovh/projets" style="height:fit-content; z-index:9;" class="accueilProjectsRightLink">
                             <div class="accueilProjectsRightDiv">
-                                <img src="img/projectsIcon.png" class="accueilProjectsIcon" />
+                                <img src="img/projectsIcon2.png" class="accueilProjectsIcon" />
                                 <span class="accueilProjectsRightDivSpan">
-                                    Voir mes projets 
+                                    Voir <br>mes projets 
                                     <!-- <i class="fa-solid fa-square-up-right redirectProjectsIcon"></i> -->
                                 </span>
                             </div>
@@ -322,7 +332,7 @@
 
                         <div class="accueilProjectsTrait"></div>
 
-                        <!-- Mobile: icones keyboard+mouse -->
+                        <!-- Mobile: icones keyboard+mouse Mobile -->
                         <img src="img/keyboard_blue.png" class="accueilKeyboardPng isMobile">
 
                     </div>
