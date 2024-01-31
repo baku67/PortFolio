@@ -3136,7 +3136,7 @@ li::before {
 
 .lightBulbWrapperDiv {
 
-    transform: rotate(357deg) scale(0.65);
+    transform: rotate(358deg) scale(0.65);
 
     animation: accueilAmpouleGradient 0.5s 0.5s ease forwards;
 }

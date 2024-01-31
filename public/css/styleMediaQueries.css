@@ -1146,12 +1146,12 @@
 }
 .lightBulbWrapperDiv {
     filter: drop-shadow(12px 5px 6px black);
-    transform: scale(0.5) rotate(7deg) !important;
+    transform: scale(0.5) rotate(2deg) !important;
     margin: 0px auto;
     /* bottom: 0px; */
 
     bottom: -116px;
-    left: 79px;
+    left: 74px;
 }
 
 
@@ -1562,7 +1562,7 @@
         position: relative;
         top: 3px;
     }
-    
+
 
     #lightBulbWrapperDiv:hover + #inspirationContainer {
         color: rgba(7, 255, 223, 1);
