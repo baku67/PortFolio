@@ -95,6 +95,8 @@
 
     .projectSlideLogo {
         transform: scale(9);
+        position: relative;
+        left: 92px;
     }
 
     .iframe {

@@ -69,11 +69,25 @@
         padding: 2px 0px 10px 3% !important;
     }
 
+    .lablelsBurgerContainer {
+        display: inline-flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 5%;
+
+        width: 80%;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+
+        gap: 14px;
+    }
+
 
     .swipeSymbol {
         position: fixed;
         right: 5%;
-        top: 104px;
+        top: 78px;
         font-size: 0.7em;
         color: var(--secondaryColorVif);
         display: flex;
@@ -110,6 +124,7 @@
 
     .projectSlideLogo {
         width: 50px;
+        left: 0;
         margin-right: 3px;
         transform: scale(1.05) translate(-4px, -5px);
         border-right: 1px solid rgb(255 255 255 / 22%);
@@ -363,6 +378,19 @@
         height: 0;
     }
 
+    #status {
+        color: white;
+        text-align: center;
+        padding: 3px 7px;
+
+        animation: none;
+        border: 2px solid rgba(239, 59, 45, 1);
+    }
+    #status2 {
+        color: white;
+        text-align: center;
+        padding: 3px 7px;
+    }
 
     .gridProjetHeaderContainer {
         width: 100%;
@@ -570,7 +598,7 @@
         margin-block-end: 0.5em;
         margin-block-start: 0;
 
-        font-size: 1.03em !important;
+        font-size: 1.1em !important;
         position: relative;
         bottom: 0em;
     }
@@ -2433,7 +2461,7 @@
     }
     
     .sidenav ul {
-        width: 80%;
+        width: 100%;
         list-style-type: none;
         padding: 0;
         margin: 0;

@@ -61,16 +61,22 @@
 
     <body>
 
-
         <!-- WIP menu-burger mobile -->
         <div id="mySidenav" class="sidenav isMobile">
+
             <a id="closeBtn" href="#" class="close">×</a>
-            <ul>
+
+            <ul style="position:relative;">
                 <li><a id="accueilMenu" class="menuButton" href="/">Accueil</a> </li>
                 <li><a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> </li>
                 <li><a id="projetsMenu" class="menuButton selected" href="/projets">Projets</a> </li>
                 <li><a id="contactMenu" class="menuButton" href="/loisirs">Loisirs</a></li>
+                <li class="lablelsBurgerContainer">
+                    <span id="status"> #OpenToWork</span>
+                    <span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
+                </li>
             </ul>
+
         </div>
 
         <a href="#" id="openBtn">
@@ -111,7 +117,14 @@
             <div style="width:100%;">
                 <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
                 <span  id="lineBreakMobile"></br></span>
-                <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">Basile KUNTZ <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web <span id="lineBreakMobileStatus"></br></span><span id="status"> #OpenToWork</span><span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span></span></h2>
+                <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">
+                    Basile KUNTZ 
+                    <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web 
+                        <span id="lineBreakMobileStatus"></br></span>
+                        <span id="status" class="isDesktop"> #OpenToWork</span>
+                        <span id="status2" class="isDesktop"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
+                    </span>
+                </h2>
             </div>
 
 

@@ -2185,7 +2185,7 @@ ul {
 }
 
 .description {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     top: 6px;
     font-size: 80%;
@@ -2263,6 +2263,8 @@ ul {
 
 /* Effet arriere plan */
 .projectSlideLogo {
+    position: relative;
+    left: 79px;
     width: 50px;
     transform: scale(7);
     z-index: -9999;
@@ -2278,7 +2280,7 @@ ul {
         opacity: 0;
     }
     to {
-        opacity: 0.03;
+        opacity: 0.04;
     }
 }
 
