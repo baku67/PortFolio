@@ -80,7 +80,23 @@
         left: 50%;
         transform: translateX(-50%);
 
-        gap: 14px;
+        gap: 6px;
+    }
+
+    .socialBurgerContainer {
+        position: absolute;
+        display: inline-flex;
+        bottom: 117px;
+        width: 100%;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        gap: 34px;
+    }
+
+    .burgerSocialBtn {
+        font-size: 1.5em;
     }
 
 
@@ -384,7 +400,8 @@
         padding: 3px 7px;
 
         animation: none;
-        border: 2px solid rgba(239, 59, 45, 1);
+        border: 0px solid rgba(239, 59, 45, 1);
+        background-color: rgba(239, 59, 45, 0);
     }
     #status2 {
         color: white;
@@ -1530,6 +1547,9 @@
     }
 
     .isDesktop {
+        display: none;
+      }
+      .isDesktopInline {
         display: none;
       }
       .isMobile {

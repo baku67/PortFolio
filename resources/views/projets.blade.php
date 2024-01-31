@@ -75,6 +75,14 @@
                     <span id="status"> #OpenToWork</span>
                     <span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
                 </li>
+                <li class="socialBurgerContainer">
+                    <a href="https://github.com/baku67" target="_blank" style="padding:2px">
+                        <i class="fa-brands fa-github burgerSocialBtn"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/basile-kuntz-719278267" target="_blank" style="padding:2px">
+                        <i class="fa-brands fa-linkedin burgerSocialBtn"></i>
+                    </a>
+                </li>
             </ul>
 
         </div>
@@ -116,13 +124,13 @@
             <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
             <div style="width:100%;">
                 <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
-                <span  id="lineBreakMobile"></br></span>
+                <span id="lineBreakMobile"></br></span>
                 <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">
                     Basile KUNTZ 
                     <span style="color:#E7E8F2; font-size:80%;"> -  Développeur Web 
                         <span id="lineBreakMobileStatus"></br></span>
-                        <span id="status" class="isDesktop"> #OpenToWork</span>
-                        <span id="status2" class="isDesktop"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
+                        <span id="status" class="isDesktopInline"> #OpenToWork</span>
+                        <span id="status2" class="isDesktopInline"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
                     </span>
                 </h2>
             </div>

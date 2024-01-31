@@ -1409,6 +1409,9 @@ ul {
   .isDesktop {
     display: block;
   }
+  .isDesktopInline {
+    display: inline;
+  }
   .isMobile {
     display: none;
   }
