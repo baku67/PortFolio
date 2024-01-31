@@ -1934,17 +1934,17 @@ li::before {
 
 
 .iframeElem {
-    box-shadow: 0 0 64px -15px #0ff;
+    box-shadow: 0 0 89px -11px #0ff;
     margin: 60px auto 60px auto; 
     border: 2px solid #ef3b2d; 
-    padding: 17px 6px 32px 6px; 
-    
+    padding: 18px 8px 35px 8px; 
+
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     
-    width: 390px;
+    width: 394px;
     
     height: 745px;
 

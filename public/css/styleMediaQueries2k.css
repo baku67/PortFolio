@@ -150,8 +150,10 @@
     }
 
     .iframeElem {
-        border-width: 0 0 64px -15px #0ff;
-        width: 411px;
+        width: 406px;
+        
+        padding: 19px 8px 38px 8px;
+
     }
     
     .paragrapheAccueil {
