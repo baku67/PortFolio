@@ -1667,6 +1667,16 @@
         transition: all 0.3s;
     }
     
+    /* Pour le menuBurger fadeOut bg */
+    #pageContainer {
+        transition: all 0.5s;
+    }
+    #pageTitleDiv {
+        transition: all 0.5s;
+    }
+    #pageContainerProjet {
+        transition: all 0.5s;
+    }
 
     #contactButton {
         margin-bottom: 0px;

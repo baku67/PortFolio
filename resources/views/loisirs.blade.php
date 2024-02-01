@@ -147,7 +147,7 @@
         <!-- Header  -->
         <div class="testHeader">
                 
-            <h1 class="testH1 titleLoisirs"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
+            <h1 id="pageTitle" class="testH1 titleLoisirs"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
 
             <!-- Menu -->
             <div id="NavBarContainer" class="isDesktop">

@@ -114,7 +114,7 @@
 
         <!-- Header -->
         <header id="headerCv" class="darkedHeader" style="position:relative;">
-            <div style="width:100%;">
+            <div id="pageTitleDiv" style="width:100%;">
                 <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
                 <span  id="lineBreakMobile"></br></span>
                 <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">

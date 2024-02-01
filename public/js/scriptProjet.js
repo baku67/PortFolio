@@ -3,48 +3,6 @@
 window.onload = function() {
 
 
-    // **********  MOBILE: Click outside nav burger si actif = closeNav
-    var sidenav = document.getElementById("mySidenav");
-    var openBtn = document.getElementById("openBtn");
-    var closeBtn = document.getElementById("closeBtn");
-
-    openBtn.onclick = openNav;
-    closeBtn.onclick = closeNav;
-
-
-    document.getElementById("pageContainerProjet").addEventListener('click', function(e){   
-
-        if (document.getElementById('mySidenav').contains(e.target)){
-            // click dans nav burger
-        } else {
-            // click en dehors nav burger
-            if (sidenav.classList.contains("active")) {
-                closeNav();
-            }
-        }
-    });
-    
-
-    /* Set the width of the side navigation to 250px */
-    function openNav() {
-        sidenav.classList.add("active");
-        openBtn.style.display = "none";
-
-        // Blur() derrière ram sur mobile:
-        // document.getElementById("pageContainer").style.filter = "blur(2px)";
-        document.getElementById("pageContainerProjet").style.opacity = "0.7";
-    }
-
-    /* Set the width of the side navigation to 0 */
-    function closeNav() {
-        sidenav.classList.remove("active");
-        openBtn.style.display = "block";
-
-        // Blur() derrière ram sur mobile:
-        // document.getElementById("pageContainer").style.filter = "blur(0px)";
-        document.getElementById("pageContainerProjet").style.opacity = "1";
-    }
-    //******  */ FIN
 
 
 

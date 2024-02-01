@@ -116,7 +116,7 @@
 
             <!-- Header -->
             <header id="headerAccueil" style="position:relative;" data-theme="dark">
-                <div style="width:100%;">
+                <div id="pageTitleDiv" style="width:100%;">
                     <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
                     <!-- oskour -->
                     <span  id="lineBreakMobile"></br></span>

@@ -132,7 +132,8 @@
 
                 // Blur() derrière ram sur mobile:
                 // document.getElementById("pageContainer").style.filter = "blur(2px)";
-                document.getElementById("pageContainerProjet").style.opacity = "0.7";
+                document.getElementById("pageContainerProjet").style.opacity = "0.6";
+                document.getElementById("pageTitleDiv").style.opacity = "0.6";
             }
 
             /* Set the width of the side navigation to 0 */
@@ -143,6 +144,7 @@
                 // Blur() derrière ram sur mobile:
                 // document.getElementById("pageContainer").style.filter = "blur(0px)";
                 document.getElementById("pageContainerProjet").style.opacity = "1";
+                document.getElementById("pageTitleDiv").style.opacity = "1";
             }
         </script>
         <!-- FIN -->
@@ -152,7 +154,7 @@
         <header id="headerProjets" class="darkedHeader" style="position:relative";>
                 
             <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
-            <div style="width:100%;">
+            <div id="pageTitleDiv" style="width:100%;">
                 <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
                 <span id="lineBreakMobile"></br></span>
                 <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">
