@@ -2778,7 +2778,7 @@ ul {
     background: -webkit-radial-gradient(circle, rgba(0,255,213,0.15) 0%, rgba(255,255,255,0) 60%);
     background: radial-gradient(circle, rgba(0,255,213,0.15) 0%, rgba(255,255,255,0) 60%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffd5",endColorstr="#ffffff",GradientType=1);
-    width: 125%;
+    width: 130%;
 
     /* transition: all 0.3s; */
     transition: height 0.1s, transform 0.3s, background 0.3s, boxShadow 0.3s;
@@ -3010,8 +3010,7 @@ ul {
     filter: blur(5px) grayscale(1);
     box-shadow: 0px 0 33px 5px #00ffff6b;
 
-    transition: 0.3s ease;
-    animation: imgAccueilFadeIn 2s 1.3s ease forwards;
+    animation: imgAccueilFadeIn 1.7s 1.3s ease forwards;
 }
 /* .imgAccueil:hover { 
     cursor: pointer;
@@ -3027,6 +3026,7 @@ ul {
     height: 147px;
     position: relative;
     top: 9px;
+    left: 3px;
 }
 
 .accueilProjectsDiv {
@@ -3133,7 +3133,7 @@ ul {
     /* animation: bandeauGrowShrink 2.1s 0s ease-in-out infinite; */
 
     /* Test anim entre-deux pour fluidité (height bandeau from height: 275px; to 110px */
-    animation: bandeauTransition 0.3s 0s linear 1, bandeauGrowShrink 2.1s 0.3s ease-in-out infinite;
+    animation: bandeauTransition 0.2s 0s linear 1, bandeauGrowShrink 2.1s 0.2s ease-in-out infinite;
 }
 @keyframes bandeauTransition {
     from {
@@ -3272,31 +3272,20 @@ ul {
     }
 }
 
-/* 
-@keyframes imgAccueilFadeIn {
-    from {
-        opacity: 0;
-        right: -250px;
-        filter: blur(5px) grayscale(1);
-    }
-    to {
-        opacity: 1;
-        right: 0px;
-        filter: blur(0px) grayscale(0);
-    }
-} */
+
 @keyframes imgAccueilFadeIn {
     from {
         border-radius: 50px;
         opacity: 0;
-        filter: blur(10px) grayscale(1);
-        border: 2px solid rgba(255, 255, 255, 0);
+        filter: blur(5px) grayscale(1);
+        border: 2px solid rgba(255, 255, 255, 1);
     }
     to {
         border-radius: 100px;
         opacity: 1;
         filter: blur(0px) grayscale(0);
-        border: 2px solid white;
+        /* border: 2px solid white; */
+        border: 2px solid rgba(255, 255, 255, 0);
     }
 }
 

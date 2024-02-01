@@ -1286,16 +1286,16 @@
     flex-direction: column;
 
     position: relative;
-    bottom: 30px;
+    bottom: 47px;
     margin-bottom: 23px;
 }
 .lightBulbWrapperDiv {
     filter: drop-shadow(12px 5px 6px black);
-    transform: scale(0.5) rotate(2deg) !important;
+    transform: scale(0.4) rotate(3deg) !important;
     margin: 0px auto;
     /* bottom: 0px; */
 
-    bottom: -116px;
+    bottom: -121px;
     left: 74px;
 }
 
@@ -1698,7 +1698,7 @@
         position: relative;
         top: 8px;
 
-        border: 1px solid var(--secondaryColor);
+        border: 1px solid #19ddbc57;
 
         opacity: 0;
         width: 100px;
@@ -1728,6 +1728,7 @@
         height: 97px;
         position: relative;
         top: 3px;
+        left: 0px;
     }
 
 

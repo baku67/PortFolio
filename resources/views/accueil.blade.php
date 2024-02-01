@@ -215,7 +215,7 @@
                         
                         <!-- <img id="portraitAccueil" class="imgAccueil isMobile" src="img/portraits/portraits_edited/portrait4_outline_fix.png" style="z-index:999;"/> -->
 
-                        <div id="portraitAccueil" class="imgAccueil" style="background-color:#ef3b2d; z-index:999;">
+                        <div id="portraitAccueil" class="imgAccueil" style="z-index:999;">
                             <img src="img\portraits\portraitPng.png" class="testPopPortraitImg" />
                         </div>
 
