@@ -94,7 +94,7 @@ window.onload = function() {
         document.querySelectorAll(".accueilWord").forEach((elem, i) => {
           setTimeout(() => {
             elem.classList.add("fadeInWordPresentation");
-          }, i * 20);
+          }, i * 50);
         });
       }, 350)
 
@@ -104,7 +104,7 @@ window.onload = function() {
         document.querySelectorAll(".accueilWord").forEach((elem, i) => {
           setTimeout(() => {
             elem.classList.add("fadeInWordPresentation");
-          }, i * 13);
+          }, i * 20);
         });
       }, 350)
 
