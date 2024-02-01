@@ -362,13 +362,26 @@ window.onload = function() {
 
   // Apparition formulaire de contact
   document.getElementById("contactButton").addEventListener("click", function() {
+
     document.getElementById("contactBtnFade").classList.add("fadeOut");
+
     setTimeout(function() {
+
       document.getElementById("contactBtnFade").remove();
       document.getElementById("plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643").style.height = "auto";
       document.getElementById("plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643").classList.add("fadeInForm");
+
+      document.getElementById("formBackBtn").style.display = "block";
+      document.getElementById("formBackBtn").classList.remove("fadeOut");
+
     }, 500)
   })
+
+  // Bouton retour arriere
+  document.getElementById("formBackBtn").addEventListener("click", function() {
+    console.log('backbackbackbackbackback')
+    document.getElementById("formBackBtn").classList.add("fadeOut");
+  });
 
 
 
