@@ -363,24 +363,32 @@ window.onload = function() {
   // Apparition formulaire de contact
   document.getElementById("contactButton").addEventListener("click", function() {
 
-    document.getElementById("contactBtnFade").classList.add("fadeOut");
+    document.getElementById("contactBtnFade").classList.add("fadeOutContact");
 
     setTimeout(function() {
 
-      document.getElementById("contactBtnFade").remove();
+      document.getElementById("contactBtnFade").style.display = "none";
       document.getElementById("plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643").style.height = "auto";
       document.getElementById("plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643").classList.add("fadeInForm");
 
       document.getElementById("formBackBtn").style.display = "block";
       document.getElementById("formBackBtn").classList.remove("fadeOut");
 
-    }, 500)
+    }, 300)
   })
 
   // Bouton retour arriere
   document.getElementById("formBackBtn").addEventListener("click", function() {
-    console.log('backbackbackbackbackback')
+
     document.getElementById("formBackBtn").classList.add("fadeOut");
+
+    document.getElementById("plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643").classList.remove("fadeInForm");
+    document.getElementById("plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643").classList.add("fadeOutForm");
+
+
+    document.getElementById("contactBtnFade").classList.remove("fadeOutContact");
+    document.getElementById("contactBtnFade").classList.add("fadeInContact");
+    
   });
 
 

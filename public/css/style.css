@@ -964,7 +964,7 @@ textarea:focus, input:focus{
 }
 
 .fadeInForm {
-    animation: fadeInForm 0.7s 0s ease-in forwards;
+    animation: fadeInForm 0.4s 0s ease-in forwards;
 }
 @keyframes fadeInForm {
     from {
@@ -977,17 +977,41 @@ textarea:focus, input:focus{
     }
 }
 
+.fadeOutForm {
+    animation: fadeOutForm 0.4s 0s ease-in forwards;
+}
+@keyframes fadeOutForm {
+    from {
+        opacity: 1;
+        /* height: 0px; */
+    }
+    to {
+        opacity: 0;
+        /* height: auto; */
+    }
+}
+
 #formBackBtn {
     display: none;
     cursor: pointer;
 
-    animation: fadeIn 0.5s 0s ease forwards;
+    /* animation: fadeIn 0.5s 0s ease forwards; */
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 2.5em;
+    font-size: 3em;
     color: var(--secondaryColor);
+    padding: 7px;
+
+    transition: all 0.4s;
 }
+#formBackBtn:hover {
+    /* opacity: 0.7; */
+    color: #19ddbcc2;
+    transform: translateX(-10px);
+   
+}
+
 
 .fadeInCitation {
     animation: fadeInCitation 1s 0s ease-in forwards;
@@ -1255,8 +1279,12 @@ ul {
         opacity: 0;
     }
 }
-
-
+.fadeOutContact {
+    animation: fadeOut 0.3s 0s ease forwards;
+}
+.fadeInContact {
+    animation: fadeIn 0.3s 0s ease forwards;
+}
 
 .paragraphe {
     color: #E7E8F2;
@@ -1340,13 +1368,13 @@ ul {
     padding: 2px 0;
     margin: 5px auto;
 
-    background: rgb(66,66,66);
-    background: -moz-linear-gradient(85deg, rgba(66,66,66,0) 0%, rgba(239,59,45,0.44441526610644255) 50%, rgba(66,66,66,0) 100%);
-    background: -webkit-linear-gradient(85deg, rgba(66,66,66,0) 0%, rgba(239,59,45,0.44441526610644255) 50%, rgba(66,66,66,0) 100%);
-    background: linear-gradient(85deg, rgba(66,66,66,0) 0%, rgba(239,59,45,0.44441526610644255) 50%, rgba(66,66,66,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#424242",endColorstr="#424242",GradientType=1);
+    background: rgba(239,59,45,0.3);
+    background: -moz-linear-gradient(90deg, rgba(239,59,45,0.3) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(239,59,45,0.3) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(239,59,45,0.3) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ef3b2d",endColorstr="#ffffff",GradientType=1);
 
-    border-left: 2px solid #ef3b2d;
+    border-left: 2px solid #ef3a2dee;
     padding-left: 11px;
 }
 
@@ -2960,7 +2988,14 @@ ul {
 
 
 .imgAccueil { 
-    background-color: #ef3b2d;
+    /* MAJ 01/02/2024 */
+    /* background-color: #ef3b2d; */
+    background: rgba(239,59,45);
+    background: -moz-linear-gradient(10deg, rgba(239,59,45,1) 0%, rgba(239,75,45,1) 21%, rgba(12,237,200,1) 100%);
+    background: -webkit-linear-gradient(10deg, rgba(239,59,45,1) 0%, rgba(239,75,45,1) 21%, rgba(12,237,200,1) 100%);
+    background: linear-gradient(10deg, rgba(239,59,45,1) 0%, rgba(239,75,45,1) 21%, rgba(12,237,200,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ef3b2d",endColorstr="#0cedc8",GradientType=1);
+
     opacity: 0;
 
     float: right;

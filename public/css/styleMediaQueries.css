@@ -1005,9 +1005,14 @@
 
     .stageBandeau {
         text-align: left;
-        background: linear-gradient(85deg, rgba(66,66,66,0) 5%, rgba(239,59,45,0.34441526610644255) 50%, rgba(66,66,66,0) 95%);
+        /* background: linear-gradient(85deg, rgba(66,66,66,0) 5%, rgba(239,59,45,0.34441526610644255) 50%, rgba(66,66,66,0) 95%); */
+        background: rgba(239,59,45,0.2);
+        background: -moz-linear-gradient(90deg, rgba(239,59,45,0.2) 0%, rgba(255,255,255,0) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(239,59,45,0.2) 0%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(90deg, rgba(239,59,45,0.2) 0%, rgba(255,255,255,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ef3b2d",endColorstr="#ffffff",GradientType=1);
 
-        border-left: 2px solid #ef3b2d;
+        border-left: 1px solid #ef3b2d;
         padding-left: 15px;
     }
 
