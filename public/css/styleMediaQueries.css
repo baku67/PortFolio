@@ -1291,11 +1291,11 @@
 }
 .lightBulbWrapperDiv {
     filter: drop-shadow(12px 5px 6px black);
-    transform: scale(0.4) rotate(3deg) !important;
+    transform: scale(0.385) rotate(3deg) !important;
     margin: 0px auto;
     /* bottom: 0px; */
 
-    bottom: -121px;
+    bottom: -125px;
     left: 74px;
 }
 
@@ -1688,13 +1688,18 @@
     }
 
     #contactBtnFade {
-        margin-top: 25px;
+        margin-top: 40px;
+        margin-bottom: 0px;
     }
     .linkedinBtn {
         padding: 13px 14px;
     }
 
     .imgAccueil {
+
+        /* Fix rouge en haut */
+        background-position-y: -3px;
+
         position: relative;
         top: 8px;
 

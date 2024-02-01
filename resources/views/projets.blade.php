@@ -59,7 +59,7 @@
 
 
 
-    <body>
+    <body id="bodyContainerProjets">
 
         <!-- WIP menu-burger mobile -->
         <div id="mySidenav" class="sidenav isMobile">
@@ -125,6 +125,20 @@
 
             openBtn.onclick = openNav;
             closeBtn.onclick = closeNav;
+
+            document.getElementById("bodyContainerProjet").addEventListener('click', function(e){   
+
+                console.log('clic nav burger');
+                if (document.getElementById('mySidenav').contains(e.target)){
+                    // click dans nav burger
+                } else {
+                    // click en dehors nav burger
+                    if (sidenav.classList.contains("active")) {
+                        console.log('clic outer nav burger');
+                        closeNav();
+                    }
+                }
+            });
 
             function openNav() {
                 sidenav.classList.add("active");
