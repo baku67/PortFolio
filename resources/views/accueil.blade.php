@@ -426,10 +426,13 @@
 
                         <!-- form https://enjoy.plezi.co -->
                         <div>
-                            <button id="contactButton">
-                                <i class="fa-regular fa-paper-plane"></i>
-                                <span> Contactez-moi</span>
-                            </button>
+                            <div id="contactBtnFade">
+                                <button id="contactButton">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                    <span> Contactez-moi</span>
+                                </button>
+                                <a href="https://www.linkedin.com/in/basile-kuntz-719278267/"><i class="fa-brands fa-linkedin-in linkedinBtn"></i></a>
+                            </div>
                             <form id="plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643"></form>
                             <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=4e67dacf-1c2f-4b24-8594-268e8604f643"></script>            
                         </div>

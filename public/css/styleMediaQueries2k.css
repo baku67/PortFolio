@@ -218,8 +218,12 @@
 
     #contactButton {
         font-size: 1.7em;
-        margin-bottom: 75px;
+        
         background-color: #00ffd614;
+    }
+
+    #contactBtnFade {
+        margin-bottom: 75px;
     }
 
     .projetNbr {

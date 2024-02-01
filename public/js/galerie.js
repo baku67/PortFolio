@@ -73,15 +73,15 @@
 
 window.onload = function() {
 
-
-
     // **********  MOBILE: Click outside nav burger si actif = closeNav
     var sidenav = document.getElementById("mySidenav");
     var openBtn = document.getElementById("openBtn");
     var closeBtn = document.getElementById("closeBtn");
 
     openBtn.onclick = openNav;
-    closeBtn.onclick = closeNav;
+    document.getElementById('closeBtn').addEventListener('click', function() {
+      closeNav();
+    })
 
 
     document.getElementById("pageContainer").addEventListener('click', function(e){   

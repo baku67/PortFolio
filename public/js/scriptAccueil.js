@@ -309,15 +309,35 @@ window.onload = function() {
     entries.forEach(entry => {
       // If the element is visible
       if (entry.isIntersecting) {
-        document.getElementById("contactButton").classList.add("fadeInForm")
+        document.getElementById("contactBtnFade").classList.add("fadeInForm")
         setTimeout(function() {
-          document.getElementById("contactButton").style.opacity = "1";
-          document.getElementById("contactButton").classList.remove("fadeInForm")
+          document.getElementById("contactBtnFade").style.opacity = "1";
+          document.getElementById("contactBtnFade").classList.remove("fadeInForm")
         }, 1005)
       }
     })
   })
-  observerContactButton.observe(document.querySelector('#contactButton'));
+  observerContactButton.observe(document.querySelector('#contactBtnFade'));
+
+  
+
+
+  const observerProjectsButton = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        document.getElementById("accueilProjectsDiv").classList.add("fadeInForm")
+        setTimeout(function() {
+          document.getElementById("accueilProjectsDiv").style.opacity = "1";
+          document.getElementById("accueilProjectsDiv").classList.remove("fadeInForm")
+        }, 1005)
+      }
+    })
+  })
+  observerProjectsButton.observe(document.querySelector('#accueilProjectsDiv'));
+
+
 
 
   const observerProjects = new IntersectionObserver(entries => {
@@ -340,9 +360,9 @@ window.onload = function() {
 
   // Apparition formulaire de contact
   document.getElementById("contactButton").addEventListener("click", function() {
-    document.getElementById("contactButton").classList.add("fadeOut");
+    document.getElementById("contactBtnFade").classList.add("fadeOut");
     setTimeout(function() {
-      document.getElementById("contactButton").remove();
+      document.getElementById("contactBtnFade").remove();
       document.getElementById("plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643").style.height = "auto";
       document.getElementById("plz-form-4e67dacf-1c2f-4b24-8594-268e8604f643").classList.add("fadeInForm");
     }, 500)

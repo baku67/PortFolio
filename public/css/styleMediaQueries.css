@@ -1670,7 +1670,13 @@
 
     #contactButton {
         margin-bottom: 0px;
+    }
+
+    #contactBtnFade {
         margin-top: 25px;
+    }
+    .linkedinBtn {
+        padding: 13px 14px;
     }
 
     .imgAccueil {
