@@ -48,6 +48,15 @@
 
     <body>
 
+        <!-- (Desktop) Lors scroll: sideNav -->
+        <ul id="sideNavDesktop">
+            <li><a href="/">Accueil -</a></li>
+            <li class="sideNavDesktopActif"><a href="/cv">CV -</a></li>
+            <li><a href="/projets">Projets -</a></li>
+            <li><a href="/loisirs">Loisirs -</a></li>
+        </ul>
+
+
 
         <!-- WIP menu-burger mobile -->
         <div id="mySidenav" class="sidenav isMobile">

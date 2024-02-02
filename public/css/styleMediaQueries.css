@@ -108,9 +108,9 @@
 
 
     .swipeSymbol {
-        position: fixed;
+        position: absolute;
         right: 5%;
-        top: 78px;
+        top: -2px;
         font-size: 0.7em;
         color: var(--secondaryColorVif);
         display: flex;
@@ -522,6 +522,10 @@
         height: 25px;
         width: 62px;
         transform: scale(0.8);
+    }
+
+    #sideNavDesktop {
+        display: none;
     }
 
 

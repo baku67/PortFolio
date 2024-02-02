@@ -1,5 +1,42 @@
 window.onload = function() {
 
+
+      // Détection mobile
+      var mobileDetection;
+      if (navigator.userAgent.match(/Android/i)
+      || navigator.userAgent.match(/webOS/i)
+      || navigator.userAgent.match(/iPhone/i)
+      || navigator.userAgent.match(/iPad/i)
+      || navigator.userAgent.match(/iPod/i)
+      || navigator.userAgent.match(/BlackBerry/i)
+      || navigator.userAgent.match(/Windows Phone/i)) {
+        mobileDetection = true ;
+      } else {
+        mobileDetection = false ;
+      }
+      // Fin
+      console.log("Mobile detection JS: " + mobileDetection);
+  
+
+    // (DESKTOP) On scrool page : sideNav
+    if(!mobileDetection) {
+      // Observer navBarre:
+      const observerContactButton = new IntersectionObserver(entries => {
+        console.log('test observer pc nav')
+        // Loop over the entries
+        entries.forEach(entry => {
+          // If the element is visible
+          if (!entry.isIntersecting) {
+            document.getElementById("sideNavDesktop").classList.add("fadeInDesktopNav")
+          }
+          else {
+            document.getElementById("sideNavDesktop").classList.remove("fadeInDesktopNav");
+          }
+        })
+      })
+      observerContactButton.observe(document.querySelector('#menuLigneCv'));
+    }
+
     // Create the observer
     //   const observerDocumentations = new IntersectionObserver(entries => {
     //     // Loop over the entries
@@ -88,21 +125,6 @@ window.onload = function() {
     })
 
 
-    // Détection mobile
-    var mobileDetection;
-    if (navigator.userAgent.match(/Android/i)
-    || navigator.userAgent.match(/webOS/i)
-    || navigator.userAgent.match(/iPhone/i)
-    || navigator.userAgent.match(/iPad/i)
-    || navigator.userAgent.match(/iPod/i)
-    || navigator.userAgent.match(/BlackBerry/i)
-    || navigator.userAgent.match(/Windows Phone/i)) {
-      mobileDetection = true ;
-    } else {
-      mobileDetection = false ;
-    }
-    // Fin
-    console.log("Mobile detection JS: " + mobileDetection);
 
 
     

@@ -124,6 +124,7 @@ html {
 }
 
 body {
+
     font-size: 85%;
 }
 
@@ -171,7 +172,8 @@ body[data-theme="light"] {
 
 body {
     
-    position: static;
+    /* position: static; */
+    position: relative;
     font-family: 'Nunito', sans-serif;
 
     background: var(--body-BgColor-dark);
@@ -189,12 +191,12 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-body:not(#flashPointCache) {
+/* body:not(#flashPointCache) {
     filter: var(--body-filterDropShadow-dark);
 }
 body:not(#flashPointCache)[data-theme="light"] {
     filter: var(--body-filterDropShadow-light);
-}
+} */
 
 @keyframes gradientAnimProjet {
     from {
@@ -215,9 +217,9 @@ body:not(#flashPointCache)[data-theme="light"] {
 
 
 .swipeSymbol {
-    position: fixed;
+    position: absolute;
     right: 3%;
-    top: 95px;
+    top: 0px;
     font-size: 0.8em;
     color: var(--secondaryColorVif);
     display: flex;
@@ -384,6 +386,44 @@ swiper-slide {
 .smileSvg {
 
 }
+
+#sideNavDesktop {
+    display: none;
+    opacity: 0;
+
+    z-index: 99999;
+    position: fixed;
+    right: 0px;
+    padding: 5px 40px;
+    font-size: 1.25em;
+    color: #ffffff94;
+    text-align: left;
+    padding-inline-start: 0px;
+    /* display: inline-flex; */
+    flex-direction: column;
+    align-items: end;
+    padding-left: 25px;
+    background: radial-gradient(circle, rgba(25,221,188,0.05) 0%, rgba(2,0,36,0) 70%);
+}
+#sideNavDesktop li {
+    transition: all 0.3s;
+    padding: 4px 10px;
+    width: -webkit-fill-available;
+    text-align: right;
+}
+#sideNavDesktop li:hover {
+    color: #ef3b2d;
+}   
+.sideNavDesktopActif {
+    color: var(--secondaryColor);
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+.fadeInDesktopNav {
+    display: inline-flex !important;
+    animation: fadeIn 0.5s 0s ease forwards;
+}
+
 #smilePath {
     transform : translateX(0px) rotateY(35deg);
     transition: all 0.4s;
@@ -1314,6 +1354,17 @@ ul {
 .langues { grid-area: langues; }
 /* Fin grid CV */
 
+.fadeOutFast {
+    animation: fadeOutFast 0.3s 0s ease forwards;
+}
+@keyframes fadeOutFast {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
 
 .fadeOut {
     animation: fadeOut 0.5s 0s ease forwards;
@@ -1715,6 +1766,7 @@ ul {
 }
 
 .pageTitle {
+    filter: drop-shadow(2px 4px 6px black);
     text-decoration-thickness: 3px;
     color:#E7E8F2;
     opacity: 0;
@@ -1776,6 +1828,7 @@ ul {
 
 /* Header Projet PC */
 #pageContainer {
+    position: relative;
     background-size:cover;
     background-repeat:no-repeat;
     /* height:400px; */
@@ -2274,6 +2327,7 @@ ul {
 }
 
 #contactBtnFade {
+    filter: drop-shadow(2px 4px 6px black);
     opacity: 0;
     display: inline-flex;
     justify-content: center;
@@ -3351,6 +3405,7 @@ ul {
 
 /* Fix du Header Dégueulasse (seulement sur loisirs) ET VOIR MEDIA QUERIES */
 .testH1 {
+    filter: drop-shadow(2px 4px 6px black);
     font-size: 2.7em;
     width: fit-content;
     position: relative;
@@ -3360,6 +3415,9 @@ ul {
     padding: 8px 0px 1px 3%;
     margin-block-end: 0;
     margin-block-start: 0;
+}
+.authorTitle {
+    filter: drop-shadow(2px 4px 6px black);
 }
 .testHeader {
     z-index: 999;
@@ -4302,7 +4360,7 @@ li.veilleLigneAjout::before {
     offset-path: path("M 135 -145 C 108.781 388.732 1171.381 539.914 2501.792 384.412");
     offset-rotate: auto;
 
-    position: fixed;
+    position: absolute;
 
     top: -5%;
     z-index: -5;
@@ -4365,9 +4423,9 @@ li.veilleLigneAjout::before {
     display: none;
     /* https://yqnn.github.io/svg-path-editor/ */
     offset-path: path("M -79 5 C 159 113 593 -33 1089 80");
-    top: 40%;
+    top: 3%;
     offset-rotate: auto;
-    position: fixed;
+    position: absolute;
 
     animation: move 6500ms 1500ms infinite ease;
     width: 80px;
@@ -6134,6 +6192,7 @@ li.veilleLigneAjout::before {
 }
 
 #inspirationContainer {
+    filter: drop-shadow(2px 4px 6px black);
     transform: scale(0.9);
     position: relative;
     margin-bottom: 0px; 

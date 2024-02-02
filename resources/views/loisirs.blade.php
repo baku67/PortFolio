@@ -47,633 +47,645 @@
 
 
 
-    <body class="bodyLoisir">
+    <body id="bodyLoisir" class="bodyLoisir" style="position:relative;">
+
+        <!-- (Desktop) Lors scroll: sideNav -->
+        <ul id="sideNavDesktop">
+            <li><a href="/">Accueil -</a></li>
+            <li><a href="/cv">CV -</a></li>
+            <li><a href="/projets">Projets -</a></li>
+            <li class="sideNavDesktopActif"><a href="/loisirs">Loisirs -</a></li>
+        </ul>
+
+
+        <!-- <div class="bodyLoisir"> -->
 
 
 
-        <!-- WIP menu-burger mobile -->
-        <div id="mySidenav" class="sidenav isMobile">
+            <!-- WIP menu-burger mobile -->
+            <div id="mySidenav" class="sidenav isMobile">
 
-            <a id="closeBtn" href="#" class="close">×</a>
+                <a id="closeBtn" href="#" class="close">×</a>
 
-            <ul style="position:relative;">
+                <ul style="position:relative;">
 
-                <li>
-                    <a id="accueilMenu" class="menuButton" href="/">
-                        <i class="fa-solid fa-house homeIconFa" style="color:#ef3b2dde;"></i>
-                        <span style="margin-left:7px;">Accueil</span>
-                    </a>
-                </li>
-                <li>
-                    <a id="cvMenu" class="menuButton burgerMenuButtonWithImg" href="/cv" style="position:relative; right:3px;">
-                        <img src="img\navBurgerImg\nav_cv_red.png" class="navBurger_cvIcon" style="opacity:0.9;" />
-                        <span>Mon CV</span>
-                    </a>
-                </li>
-                <li>
-                    <a id="projetsMenu" class="menuButton burgerMenuButtonWithImg" href="/projets">
-                        <img src="img\navBurgerImg\nav_projets_red.png" class="navBurger_projectsIcon" style="opacity:0.9;" />
-                        <span>Projets</span>
-                    </a>
-                </li>
-                <li>
-                    <a id="contactMenu" class="menuButton burgerMenuButtonWithImg selected" href="/loisirs">
-                        <img src="img\navBurgerImg\nav_loisirs_blue.png" class="navBurger_loisirsIcon" />
-                        <span>Loisirs</span>
-                    </a>
-                </li>
-                <li class="lablelsBurgerContainer">
-                    <span id="status"> #OpenToWork</span>
-                    <span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
-                </li>
-                <li class="socialBurgerContainer">
-                    <a href="https://github.com/baku67" target="_blank" style="padding:2px">
-                        <i class="fa-brands fa-github burgerSocialBtn"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/basile-kuntz-719278267" target="_blank" style="padding:2px">
-                        <i class="fa-brands fa-linkedin burgerSocialBtn"></i>
-                    </a>
-                </li>
+                    <li>
+                        <a id="accueilMenu" class="menuButton" href="/">
+                            <i class="fa-solid fa-house homeIconFa" style="color:#ef3b2dde;"></i>
+                            <span style="margin-left:7px;">Accueil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="cvMenu" class="menuButton burgerMenuButtonWithImg" href="/cv" style="position:relative; right:3px;">
+                            <img src="img\navBurgerImg\nav_cv_red.png" class="navBurger_cvIcon" style="opacity:0.9;" />
+                            <span>Mon CV</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="projetsMenu" class="menuButton burgerMenuButtonWithImg" href="/projets">
+                            <img src="img\navBurgerImg\nav_projets_red.png" class="navBurger_projectsIcon" style="opacity:0.9;" />
+                            <span>Projets</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="contactMenu" class="menuButton burgerMenuButtonWithImg selected" href="/loisirs">
+                            <img src="img\navBurgerImg\nav_loisirs_blue.png" class="navBurger_loisirsIcon" />
+                            <span>Loisirs</span>
+                        </a>
+                    </li>
+                    <li class="lablelsBurgerContainer">
+                        <span id="status"> #OpenToWork</span>
+                        <span id="status2"><i class="fa-solid fa-magnifying-glass"></i> Alternance CDA</span>
+                    </li>
+                    <li class="socialBurgerContainer">
+                        <a href="https://github.com/baku67" target="_blank" style="padding:2px">
+                            <i class="fa-brands fa-github burgerSocialBtn"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/basile-kuntz-719278267" target="_blank" style="padding:2px">
+                            <i class="fa-brands fa-linkedin burgerSocialBtn"></i>
+                        </a>
+                    </li>
 
-            </ul>
+                </ul>
 
-        </div>  
-
-        <a href="#" id="openBtn">
-            <span class="burger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </a>
-        <!-- FIN -->
-
-
-
-
-        <!-- MODALS GALERIE -->
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-image" id="modalImage">
-            <div id="caption"></div>
-
-
-            <!-- WIP alignement -->
-            <!-- <div>
-                <div id="arrowPrevious" style="font-size: 5em; color: white; z-index: 0; width: 50px;">
-                    <
-                </div> 
-                <img class="modal-image" id="modalImage">
-                <div id="arrowNext" style="font-size: 5em; color: white; z-index: 0; width: 50px;">
-                    >
-                </div>
-            </div>  -->
-            <!-- Fin WIP -->
-
-            <div id="arrowPrevious">
-                <
             </div>  
-            <div id="arrowNext">
-                >
-            </div> 
-        </div>
-        <!-- Fin modal -->
+
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+            <!-- FIN -->
 
 
 
 
+            <!-- MODALS GALERIE -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-image" id="modalImage">
+                <div id="caption"></div>
 
 
-        <!-- Header  -->
-        <div class="testHeader">
-                
-            <h1 id="titleH1" class="testH1">
-                <a href="/">
-                    Portf<span class="titleO">o</span>li<span class="titleO">o</span> 
-                    <!-- <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span> -->
-                </a>
-                <!-- Smiley -->
-                <!-- <span id="titleSmile" class="titleSmile">)</span> -->
-                <svg id="smileSvgContainer" class="smileSvgContainer" style="position:absolute;">
-                    <g class="smileSvg">
-                        <path 
-                            id="smilePath"
-                            class="smileSvgPath"
-                            d="M 0 0 C 11.556 7.704 39.804 7.704 51.36 0"
-                        />
-                    </g>
-                </svg>
-            </h1>
-            
-            <!-- Menu -->
-            <div id="NavBarContainer" class="isDesktop">
-                <p id="menuLigneCv" style="color:#E7E8F2;">
-                    <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
-                    <!-- &nbsp;  -->
-                    <a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> 
-                    <!-- &nbsp;  -->
-                    <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
-                    <!-- &nbsp;  -->
-                    <a id="contactMenu" class="menuButton selected" href="/loisirs">Loisirs</a>
-                </p>
+                <!-- WIP alignement -->
+                <!-- <div>
+                    <div id="arrowPrevious" style="font-size: 5em; color: white; z-index: 0; width: 50px;">
+                        <
+                    </div> 
+                    <img class="modal-image" id="modalImage">
+                    <div id="arrowNext" style="font-size: 5em; color: white; z-index: 0; width: 50px;">
+                        >
+                    </div>
+                </div>  -->
+                <!-- Fin WIP -->
+
+                <div id="arrowPrevious">
+                    <
+                </div>  
+                <div id="arrowNext">
+                    >
+                </div> 
             </div>
-
-            <!-- Trait séparateur -->
-            <!-- <div id="traitHeader"></div> -->
-        </div>
+            <!-- Fin modal -->
 
 
-        <!-- Contenu (load JS) -->
-        <div id="pageContainer">
-
-            <h3 class="galerieTitle isDesktop"> Loisirs <span class="carreTitre carreTitreVeille">▪</span></h3>
-            <div class="barreGalerieSouligne isDesktop"></div>
-
-            <h4 id="photographieTitle">
-                <span id="photoTitlePart1">Ph<img src="img/letterO_red2.png" class="letterO"/>t<img src="img/letterO_red2.png" class="letterO"/></span><span id="photoTitlePart2">graph<span id="letterIandPoint">i<div id="scubaDiver"></div><div id="scubaDiverFlash"></div><span id="flashPoint" class="flashPointAnim">.</span><span id="flashPoint2" class="flashPoint2Anim"></span><span id="photoBar"></span><span id="flashRectangle"></span></span>e</span></h4>
-            <!-- Wave generateur: https://css-generators.com/wavy-shapes/ -->
-            <div class="wave"></div>
-
-            <p id="messageGalerie" style="display:block"> Cliquez sur une image pour voir la version <span style="color:var(--secondaryColorMat); font-weight:bold; ">HD<span> </p>
 
 
-            <div class="galerieDiv">
-                <!-- Spinner pendant le charegement des images -->
-                <!-- <img src="img/spinner.png" id="spinnerImg" alt="chargement en cours"> -->
-                <!-- https://loading.io/css/ -->
-                <p id="messageLoadingLong"> Le chargement peut être un peu long...</p>
 
-                <div id="spinnerDiv" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
+            <!-- Header  -->
+            <div class="testHeader">
+                    
+                <h1 id="titleH1" class="testH1">
+                    <a href="/">
+                        Portf<span class="titleO">o</span>li<span class="titleO">o</span> 
+                        <!-- <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span> -->
+                    </a>
+                    <!-- Smiley -->
+                    <!-- <span id="titleSmile" class="titleSmile">)</span> -->
+                    <svg id="smileSvgContainer" class="smileSvgContainer" style="position:absolute;">
+                        <g class="smileSvg">
+                            <path 
+                                id="smilePath"
+                                class="smileSvgPath"
+                                d="M 0 0 C 11.556 7.704 39.804 7.704 51.36 0"
+                            />
+                        </g>
+                    </svg>
+                </h1>
                 
-                <div id="aquarium">
-                    <!-- Test anim poisson -->
-                    <div id="motion-demo"></div>
-                    <div id="motion-demo2"></div>
-                    <div id="motion-demo3a"></div> 
-                    <div id="motion-demo3b"></div> 
-                    <div id="motion-demo3c"></div> 
-                    <div id="motion-demo_whaleShark"></div> 
-                    <div id="motion-demo_tortoise"></div> 
-                    <div id="motion-demo_shark1"></div> 
-
-                    <!-- <div id="motion-demo_whale2Pc"></div>  -->
-
-                    <div id="motion-demo_whalePc"></div> 
-
-                    <!-- <div id="scubaDiver"></div>  -->
-
-                    <div id="coral1"></div> 
-                    <div id="coral2"></div>
-
-                    <div id="coral3"></div> 
-
-                    <div id="coral4"></div> 
-
-                    <!-- <div id="motion-demo_rapid"></div>  -->
+                <!-- Menu -->
+                <div id="NavBarContainer" class="isDesktop">
+                    <p id="menuLigneCv" style="color:#E7E8F2;">
+                        <a id="accueilMenu" class="menuButton" href="/">Accueil</a> 
+                        <!-- &nbsp;  -->
+                        <a id="cvMenu" class="menuButton" href="/cv">Mon CV</a> 
+                        <!-- &nbsp;  -->
+                        <a id="projetsMenu" class="menuButton" href="/projets">Projets</a> 
+                        <!-- &nbsp;  -->
+                        <a id="contactMenu" class="menuButton selected" href="/loisirs">Loisirs</a>
+                    </p>
                 </div>
 
-                <!-- Bulles -->
-                <!-- <div id="motion-demoBubble1" ></div> -->
+                <!-- Trait séparateur -->
+                <!-- <div id="traitHeader"></div> -->
+            </div>
 
 
-                <!-- <h3 style="font-size:170%; text-align:center; text-decoration:underline; text-underline-position:under; text-decoration-color:#ef3b2d;">Galerie: </h3> -->
-                <!-- <br> -->
+            <!-- Contenu (load JS) -->
+            <div id="pageContainer">
 
-                <div class="galerieAccueil">
+                <h3 class="galerieTitle isDesktop"> Loisirs <span class="carreTitre carreTitreVeille">▪</span></h3>
+                <div class="barreGalerieSouligne isDesktop"></div>
 
-                    <article class="location-listing images" alt="1" def="Poti poasson" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo1 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/1_preview.jpg"/>
-                        </div>
-                    </article>
+                <h4 id="photographieTitle">
+                    <span id="photoTitlePart1">Ph<img src="img/letterO_red2.png" class="letterO"/>t<img src="img/letterO_red2.png" class="letterO"/></span><span id="photoTitlePart2">graph<span id="letterIandPoint">i<div id="scubaDiver"></div><div id="scubaDiverFlash"></div><span id="flashPoint" class="flashPointAnim">.</span><span id="flashPoint2" class="flashPoint2Anim"></span><span id="photoBar"></span><span id="flashRectangle"></span></span>e</span></h4>
+                <!-- Wave generateur: https://css-generators.com/wavy-shapes/ -->
+                <div class="wave"></div>
 
-                    <article class="location-listing images" alt="2" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo2 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/2_preview.jpg"/>
-                        </div>
-                    </article>
+                <p id="messageGalerie" style="display:block"> Cliquez sur une image pour voir la version <span style="color:var(--secondaryColorMat); font-weight:bold; ">HD<span> </p>
 
-                    <article class="location-listing images" alt="3" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo3 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/3_preview.jpg"/>
-                        </div>
-                    </article>
 
-                    <article class="location-listing images" alt="4" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo4 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/4_preview.jpg"/>
-                        </div>
-                    </article>
+                <div class="galerieDiv">
+                    <!-- Spinner pendant le charegement des images -->
+                    <!-- <img src="img/spinner.png" id="spinnerImg" alt="chargement en cours"> -->
+                    <!-- https://loading.io/css/ -->
+                    <p id="messageLoadingLong"> Le chargement peut être un peu long...</p>
 
-                    <article class="location-listing images" alt="5" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo5 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/5_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="11" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo11 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/11_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="7" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo7 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/7_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="8" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo8 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/8_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="9" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo9 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/9_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="10" style="margin:auto; position:relative; cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo10 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/10_preview.jpg"/>
-                        </div>
-                    </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <article class="location-listing images" alt="6" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo6 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/6_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="12" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo12 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/12_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="13" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo13 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/13_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="14" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo14 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/14_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="15" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo15 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/15_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="16" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo16 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/16_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="17" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo17 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/17_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="18" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo18 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/18_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="19" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo19 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/19_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="20" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo20 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/20_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="21" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo21 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/21_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="22" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo22 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/22_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="23" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo23 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/23_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="24" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo24 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/24_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="25" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo25 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/25_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="26" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo26 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/26_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="27" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo27 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/27_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="28" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo28 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/28_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="29" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo29 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/29_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="30" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo30 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/30_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="31" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo31 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/31_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="32" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo32 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/32_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="33" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo33 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/33_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="34" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo34 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/34_preview.jpg"/>
-                        </div>
-                    </article>
-                    <article class="location-listing images" alt="35" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo35 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/35_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="36" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo36 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/36_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="37" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo37 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/37_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="38" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo38 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/38_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="39" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo39 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/39_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="40" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo40 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/40_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="41" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo41 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/41_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="42" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo42 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/42_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="43" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo43 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/43_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="44" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo44 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/44_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="45" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo45 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/45_preview.jpg"/>
-                        </div>
-                    </article>
-
-                    <article class="location-listing images" alt="46" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo46 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/46_preview.jpg"/>
-                        </div>
-                    </article>
+                    <div id="spinnerDiv" class="lds-ring"><div></div><div></div><div></div><div></div></div>
                     
-                    <article class="location-listing images" alt="47" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo47 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/47_preview.jpg"/>
-                        </div>
-                    </article>
+                    <div id="aquarium">
+                        <!-- Test anim poisson -->
+                        <div id="motion-demo"></div>
+                        <div id="motion-demo2"></div>
+                        <div id="motion-demo3a"></div> 
+                        <div id="motion-demo3b"></div> 
+                        <div id="motion-demo3c"></div> 
+                        <div id="motion-demo_whaleShark"></div> 
+                        <div id="motion-demo_tortoise"></div> 
+                        <div id="motion-demo_shark1"></div> 
 
-                    <article class="location-listing images" alt="48" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo48 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/48_preview.jpg"/>
-                        </div>
-                    </article>
+                        <!-- <div id="motion-demo_whale2Pc"></div>  -->
 
-                    <article class="location-listing images" alt="49" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo49 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/49_preview.jpg"/>
-                        </div>
-                    </article>
+                        <div id="motion-demo_whalePc"></div> 
 
-                    <article class="location-listing images" alt="50" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo50 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/50_preview.jpg"/>
-                        </div>
-                    </article>
+                        <!-- <div id="scubaDiver"></div>  -->
 
-                    <article class="location-listing images" alt="51" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo51 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/51_preview.jpg"/>
-                        </div>
-                    </article>
+                        <div id="coral1"></div> 
+                        <div id="coral2"></div>
 
-                    <article class="location-listing images" alt="52" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo52 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/52_preview.jpg"/>
-                        </div>
-                    </article>
+                        <div id="coral3"></div> 
 
-                    <article class="location-listing images" alt="53" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo53 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/53_preview.jpg"/>
-                        </div>
-                    </article>
+                        <div id="coral4"></div> 
 
-                    <article class="location-listing images" alt="54" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo54 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/54_preview.jpg"/>
-                        </div>
-                    </article>
+                        <!-- <div id="motion-demo_rapid"></div>  -->
+                    </div>
 
-                    <article class="location-listing images" alt="55" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo55 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/55_preview.jpg"/>
-                        </div>
-                    </article>
+                    <!-- Bulles -->
+                    <!-- <div id="motion-demoBubble1" ></div> -->
 
-                    <article class="location-listing images" alt="56" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo56 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/56_preview.jpg"/>
-                        </div>
-                    </article>
 
-                    
-                    <article class="location-listing images" alt="57" style="margin:auto; position:relative;  cursor:pointer;">
-                        <p class="loupesGalerie">Zoom</p>
-                        <div class="photosGallerie photo57 location-image" style="display:block;">
-                                <img class="imgGalleries" src="img/galerie/57_preview.jpg"/>
-                        </div>
-                    </article>
+                    <!-- <h3 style="font-size:170%; text-align:center; text-decoration:underline; text-underline-position:under; text-decoration-color:#ef3b2d;">Galerie: </h3> -->
+                    <!-- <br> -->
 
-                    
+                    <div class="galerieAccueil">
 
-                    
+                        <article class="location-listing images" alt="1" def="Poti poasson" style="margin:auto; position:relative; cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo1 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/1_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="2" style="margin:auto; position:relative; cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo2 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/2_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="3" style="margin:auto; position:relative; cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo3 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/3_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="4" style="margin:auto; position:relative; cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo4 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/4_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="5" style="margin:auto; position:relative; cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo5 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/5_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="11" style="margin:auto; position:relative; cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo11 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/11_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="7" style="margin:auto; position:relative; cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo7 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/7_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="8" style="margin:auto; position:relative; cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo8 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/8_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="9" style="margin:auto; position:relative; cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo9 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/9_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="10" style="margin:auto; position:relative; cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo10 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/10_preview.jpg"/>
+                            </div>
+                        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <article class="location-listing images" alt="6" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo6 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/6_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="12" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo12 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/12_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="13" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo13 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/13_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="14" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo14 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/14_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="15" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo15 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/15_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="16" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo16 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/16_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="17" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo17 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/17_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="18" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo18 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/18_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="19" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo19 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/19_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="20" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo20 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/20_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="21" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo21 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/21_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="22" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo22 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/22_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="23" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo23 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/23_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="24" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo24 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/24_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="25" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo25 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/25_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="26" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo26 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/26_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="27" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo27 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/27_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="28" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo28 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/28_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="29" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo29 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/29_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="30" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo30 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/30_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="31" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo31 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/31_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="32" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo32 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/32_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="33" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo33 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/33_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="34" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo34 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/34_preview.jpg"/>
+                            </div>
+                        </article>
+                        <article class="location-listing images" alt="35" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo35 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/35_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="36" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo36 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/36_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="37" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo37 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/37_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="38" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo38 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/38_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="39" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo39 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/39_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="40" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo40 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/40_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="41" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo41 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/41_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="42" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo42 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/42_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="43" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo43 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/43_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="44" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo44 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/44_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="45" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo45 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/45_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="46" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo46 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/46_preview.jpg"/>
+                            </div>
+                        </article>
+                        
+                        <article class="location-listing images" alt="47" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo47 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/47_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="48" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo48 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/48_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="49" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo49 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/49_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="50" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo50 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/50_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="51" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo51 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/51_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="52" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo52 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/52_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="53" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo53 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/53_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="54" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo54 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/54_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="55" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo55 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/55_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        <article class="location-listing images" alt="56" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo56 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/56_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        
+                        <article class="location-listing images" alt="57" style="margin:auto; position:relative;  cursor:pointer;">
+                            <p class="loupesGalerie">Zoom</p>
+                            <div class="photosGallerie photo57 location-image" style="display:block;">
+                                    <img class="imgGalleries" src="img/galerie/57_preview.jpg"/>
+                            </div>
+                        </article>
+
+                        
+
+                        
+
+                    </div>
 
                 </div>
 
+                <!--  Observeur pour pop l'anim quand scroll dessus -->
+                <!-- <iframe id="iframe" src="{{url('/iframe')}}" frameborder="0">Votre navigateur n'est pas compatible</iframe> -->
+
             </div>
 
-            <!--  Observeur pour pop l'anim quand scroll dessus -->
-            <!-- <iframe id="iframe" src="{{url('/iframe')}}" frameborder="0">Votre navigateur n'est pas compatible</iframe> -->
+            <footer class="footerLoisir">www.portfolio.basilek.ovh - <a href="https://www.linkedin.com/in/basile-kuntz-719278267/" class="socialFooter"><i class="fa-brands fa-linkedin"></i></a><a href="https://github.com/baku67" class="socialFooter"><i class="fa-brands fa-github"></i></a></footer>
 
-        </div>
-
-        <footer class="footerLoisir">www.portfolio.basilek.ovh - <a href="https://www.linkedin.com/in/basile-kuntz-719278267/" class="socialFooter"><i class="fa-brands fa-linkedin"></i></a><a href="https://github.com/baku67" class="socialFooter"><i class="fa-brands fa-github"></i></a></footer>
-
+        <!-- </div> -->
 
     </body>
 

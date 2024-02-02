@@ -441,9 +441,9 @@
         display: none;
         /* https://yqnn.github.io/svg-path-editor/ */
         offset-path: path("M -79 5 C 386 273 993 -91 1488 154");
-        top: 30%;
+        top: 3%;
         offset-rotate: auto;
-        position: fixed;
+        position: absolute;
     
         animation: move 8500ms 1500ms infinite ease;
         width: 100px;
@@ -966,7 +966,7 @@
         right: 3%;
         font-size: 1em;
 
-        top: 141px;
+        top: 0px;
 
         animation: fadePulseSwipe 3s 0s normal ease infinite;
     }

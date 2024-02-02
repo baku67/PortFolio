@@ -42,6 +42,8 @@
     <body id="body" data-theme="dark">
 
 
+
+
         <!-- WIP menu-burger mobile -->
         <div id="mySidenav" class="sidenav isMobile">
 
@@ -113,6 +115,14 @@
         <main id="pageContainer" class="pageContainerAccueil" style="margin:0% 0%;">
 
 
+            <!-- (Desktop) Lors scroll: sideNav -->
+            <ul id="sideNavDesktop">
+                <li class="sideNavDesktopActif"><a href="/">Accueil -</a></li>
+                <li><a href="/cv">CV -</a></li>
+                <li><a href="/projets">Projets -</a></li>
+                <li><a href="/loisirs">Loisirs -</a></li>
+            </ul>
+ 
 
             <!-- Header -->
             <header id="headerAccueil" style="position:relative;" data-theme="dark">
@@ -137,7 +147,7 @@
                     <!-- oskour -->
                     <span  id="lineBreakMobile"></br></span>
                     <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">
-                        Basile KUNTZ 
+                        <span class="authorTitle">Basile KUNTZ </span>
                         <span style="color:#E7E8F2; font-size:80%;">
                             -  Développeur Web <span id="lineBreakMobileStatus"></br></span>
                             <span id="status" class="isDesktopInline"> #OpenToWork</span>
