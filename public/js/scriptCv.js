@@ -22,7 +22,18 @@ window.onload = function() {
     }
     // Fin
     console.log("Mobile detection JS: " + mobileDetection);
-    
+
+
+    // Effets border navBarre Desktop
+    document.getElementById('sideNavDesktop').addEventListener('mouseenter', () => {
+    document.getElementById("sideNavDesktop").style.borderLeft = "1px solid #80808000";
+    document.getElementById("sideNavDesktop").style.paddingLeft = "20px";
+    })
+    document.getElementById('sideNavDesktop').addEventListener('mouseleave', () => {
+    document.getElementById("sideNavDesktop").style.borderLeft = "1px solid rgba(128, 128, 128, 0.3)";
+    document.getElementById("sideNavDesktop").style.paddingLeft = "0px";
+    })
+
 
     // (DESKTOP) On scrool page : sideNav
     if(!mobileDetection) {

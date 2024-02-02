@@ -114,14 +114,34 @@
 
         <main id="pageContainer" class="pageContainerAccueil" style="margin:0% 0%;">
 
-
             <!-- (Desktop) Lors scroll: sideNav -->
             <ul id="sideNavDesktop">
-                <li class="sideNavDesktopActif"><a href="/">Accueil -</a></li>
-                <li><a href="/cv">CV -</a></li>
-                <li><a href="/projets">Projets -</a></li>
-                <li><a href="/loisirs">Loisirs -</a></li>
+                <li class="sideNavDesktop sideNavDesktopActif">
+                    <a href="/">
+                        <i class="fa-solid fa-house desktopNavAccueil"></i>
+                        <span class="desktopNavSpan desktopSpanActif">Accueil</span>
+                    </a>
+                </li>
+                <li class="sideNavDesktop sideNavDesktopCv">
+                    <a href="/cv" style="position:relative;left:2px;">
+                        <img src="img/navBurgerImg/nav_cv_grey.png" class="desktopNavCv notActifNavDesktop" />
+                        <span class="desktopNavSpan desktopNavSpanCV">Mon CV</span>
+                    </a>
+                </li>
+                <li class="sideNavDesktop sideNavDesktopProjets">
+                    <a href="/projets">
+                        <img src="img/navBurgerImg/nav_projets_grey.png" class="desktopNavProjets notActifNavDesktop" />
+                        <span class="desktopNavSpan">Projets</span>
+                    </a>
+                </li>
+                <li class="sideNavDesktop sideNavDesktopLoisirs">
+                    <a href="/loisirs">
+                        <img src="img/navBurgerImg/nav_loisirs_grey.png" class="desktopNavLoisirs notActifNavDesktop" />
+                        <span class="desktopNavSpan">Loisirs</span>
+                    </a>
+                </li>
             </ul>
+            <!-- FIN -->
  
 
             <!-- Header -->

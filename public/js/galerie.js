@@ -78,6 +78,8 @@
 window.onload = function() {
 
 
+
+
     // Détection si mobile pour imageHD moins lourde
     var mobileAttribute = "";
     var mobileDetection;
@@ -98,9 +100,23 @@ window.onload = function() {
     // (DESKTOP) On scrool page : sideNav
     if(!mobileDetection) {
 
+
+
       // On eneleve l'animation finie du body (car le filter mess up les positions fixed)
       setTimeout(function() {
         document.getElementById('bodyLoisir').style.animation = "none";
+
+
+        
+        // Effets border navBarre Desktop
+        document.getElementById('sideNavDesktop').addEventListener('mouseenter', () => {
+          document.getElementById("sideNavDesktop").style.borderLeft = "1px solid #80808000";
+          document.getElementById("sideNavDesktop").style.paddingLeft = "20px";
+        })
+        document.getElementById('sideNavDesktop').addEventListener('mouseleave', () => {
+          document.getElementById("sideNavDesktop").style.borderLeft = "1px solid rgba(128, 128, 128, 0.3)";
+          document.getElementById("sideNavDesktop").style.paddingLeft = "0px";
+        })
       }, 3500)
 
       // Observer navBarre:
