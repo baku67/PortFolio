@@ -88,114 +88,14 @@
                 </li>
             </ul>
 
-            <!-- Toggle light-theme -->
-                <div class="containerToggleLight isMobile">
-                    <i id="currentThemeIcon" class="currentThemeIcon fa-solid fa-moon" data-theme="dark"></i>
-                    <label class="switch">
-                        <input type="checkbox" id="themeToggle">
-                        <span class="slider"></span>
-                    </label>
-                </div>
-
-                <script type="text/javascript">
-
-
-
-                    document.addEventListener('DOMContentLoaded', function () {
-                        const themeToggle = document.getElementById('themeToggle');
-                        const body = document.body;
-
-                        // if (localStorage.getItem('darkMode') == false) {
-
-                        //     body.setAttribute('data-theme', 'light');
-                        //     document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
-                        //     document.getElementById('pageTitle').setAttribute('data-theme', 'light');
-                        //     document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
-                        //     document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
-                        //     document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
-                        //     document.getElementById('mySidenav').setAttribute('data-theme', 'light');
-                        //     document.getElementById('githubBtnImg').setAttribute('data-theme', 'light');
-                        //     document.getElementById('portraitAccueil').setAttribute('data-theme', 'light');
-                        //     document.getElementById('portfolioSousTitre').setAttribute('data-theme', 'light');
-                        //     document.getElementById('lightBulbWrapperDiv').setAttribute('data-theme', 'light');
-                        //     document.getElementById('inspirationContainer').setAttribute('data-theme', 'light');
-                        //     document.getElementById('quoteContent').setAttribute('data-theme', 'light');
-                        //     document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'light');
-                        //     document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'light');
-                        //     [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
-                        //         elem.setAttribute('data-theme', 'light');
-                        //     });
-                        //     document.getElementById('accueilProjectsRightDivSpan').setAttribute('data-theme', 'light');
-                            
-                        //     document.getElementById('currentThemeIcon').classList.remove('fa-moon');
-                        //     document.getElementById('currentThemeIcon').classList.add('fa-sun');
-
-                        // }
-
-
-
-                        themeToggle.addEventListener('change', function () {
-
-                            if (themeToggle.checked) {
-
-                                localStorage.setItem('darkMode', "false");
-
-                                body.setAttribute('data-theme', 'light');
-                                document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
-                                document.getElementById('pageTitle').setAttribute('data-theme', 'light');
-                                document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
-                                document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
-                                document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
-                                document.getElementById('mySidenav').setAttribute('data-theme', 'light');
-                                document.getElementById('githubBtnImg').setAttribute('data-theme', 'light');
-                                document.getElementById('portraitAccueil').setAttribute('data-theme', 'light');
-                                document.getElementById('portfolioSousTitre').setAttribute('data-theme', 'light');
-                                document.getElementById('lightBulbWrapperDiv').setAttribute('data-theme', 'light');
-                                document.getElementById('inspirationContainer').setAttribute('data-theme', 'light');
-                                document.getElementById('quoteContent').setAttribute('data-theme', 'light');
-                                document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'light');
-                                document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'light');
-                                [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
-                                    elem.setAttribute('data-theme', 'light');
-                                });
-                                document.getElementById('accueilProjectsRightDivSpan').setAttribute('data-theme', 'light');
-                                
-                                document.getElementById('currentThemeIcon').classList.remove('fa-moon');
-                                document.getElementById('currentThemeIcon').classList.add('fa-sun');
-
-                            } else {
-
-                                localStorage.setItem('darkMode', "true");
-
-                                body.setAttribute('data-theme', 'dark');
-                                document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
-                                document.getElementById('pageTitle').setAttribute('data-theme', 'dark');
-                                document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'dark');
-                                document.getElementById('menuLigneCv').setAttribute('data-theme', 'dark');
-                                document.getElementById('headerAccueil').setAttribute('data-theme', 'dark');
-                                document.getElementById('mySidenav').setAttribute('data-theme', 'dark');
-                                document.getElementById('githubBtnImg').setAttribute('data-theme', 'dark');
-                                document.getElementById('portraitAccueil').setAttribute('data-theme', 'dark');
-                                document.getElementById('portfolioSousTitre').setAttribute('data-theme', 'dark');
-                                document.getElementById('lightBulbWrapperDiv').setAttribute('data-theme', 'dark');
-                                document.getElementById('inspirationContainer').setAttribute('data-theme', 'dark');
-                                document.getElementById('quoteContent').setAttribute('data-theme', 'dark');
-                                document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'dark');
-                                document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'dark');
-                                document.getElementById('accueilVideo').setAttribute('data-theme', 'dark');
-                                [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
-                                    elem.setAttribute('data-theme', 'dark');
-                                });
-                                document.getElementById('accueilProjectsRightDivSpan').setAttribute('data-theme', 'dark');
-
-
-                                document.getElementById('currentThemeIcon').classList.remove('fa-sun');
-                                document.getElementById('currentThemeIcon').classList.add('fa-moon');
-                            }
-                        });
-                    });
-                </script>
-            <!-- Fin toggle light-theme -->
+            <!-- Toggle light-theme (scriptAccueil.js) -->
+            <div class="containerToggleLight isMobile">
+                <i id="currentThemeIcon" class="currentThemeIcon fa-solid fa-moon" data-theme="dark"></i>
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
 
         </div>
 
@@ -391,7 +291,7 @@
                         </div>
 
                         <div id="inspirationContainer" data-theme="dark">
-                            <h3 id="inspirationTitle">Inspirations:</h3>
+                            <h3 id="inspirationTitle" data-theme="dark">Inspirations:</h3>
                             <div style="position:relative;">
                                 <img class="quote1" src="img/quote1.png" />
                                 <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->

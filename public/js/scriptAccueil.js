@@ -18,8 +18,11 @@ window.onload = function() {
       console.log("Mobile detection JS: " + mobileDetection);
 
 
-      // State des element avec data-theme (selon darkMode localStorage)
+
+      // *** LIGHTMODE: State des element avec data-theme (selon darkMode localStorage)
       const themeToggle = document.getElementById('themeToggle');
+      const body = document.body;
+
       if (localStorage.getItem('darkMode') == "false") {
 
         themeToggle.checked = true;
@@ -39,15 +42,89 @@ window.onload = function() {
         document.getElementById('quoteContent').setAttribute('data-theme', 'light');
         document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'light');
         document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'light');
+        document.getElementById('inspirationTitle').setAttribute('data-theme', 'light');
         [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
             elem.setAttribute('data-theme', 'light');
+        });
+        [...document.getElementsByClassName('selected')].forEach((elem) => {
+          elem.setAttribute('data-theme', 'light');
         });
         document.getElementById('accueilProjectsRightDivSpan').setAttribute('data-theme', 'light');
         
         document.getElementById('currentThemeIcon').classList.remove('fa-moon');
         document.getElementById('currentThemeIcon').classList.add('fa-sun');
         
-    }
+      }
+
+      // LIGHTMODE: changement du theme (toggle)
+      themeToggle.addEventListener('change', function () {
+
+          if (themeToggle.checked) {
+
+              localStorage.setItem('darkMode', "false");
+
+              body.setAttribute('data-theme', 'light');
+              document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
+              document.getElementById('pageTitle').setAttribute('data-theme', 'light');
+              document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
+              document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
+              document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
+              document.getElementById('mySidenav').setAttribute('data-theme', 'light');
+              document.getElementById('githubBtnImg').setAttribute('data-theme', 'light');
+              document.getElementById('portraitAccueil').setAttribute('data-theme', 'light');
+              document.getElementById('portfolioSousTitre').setAttribute('data-theme', 'light');
+              document.getElementById('lightBulbWrapperDiv').setAttribute('data-theme', 'light');
+              document.getElementById('inspirationContainer').setAttribute('data-theme', 'light');
+              document.getElementById('quoteContent').setAttribute('data-theme', 'light');
+              document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'light');
+              document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'light');
+              document.getElementById('inspirationTitle').setAttribute('data-theme', 'light');
+              [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
+                  elem.setAttribute('data-theme', 'light');
+              });
+              [...document.getElementsByClassName('selected')].forEach((elem) => {
+                elem.setAttribute('data-theme', 'light');
+              });
+              document.getElementById('accueilProjectsRightDivSpan').setAttribute('data-theme', 'light');
+              
+              document.getElementById('currentThemeIcon').classList.remove('fa-moon');
+              document.getElementById('currentThemeIcon').classList.add('fa-sun');
+
+          } else {
+
+              localStorage.setItem('darkMode', "true");
+
+              body.setAttribute('data-theme', 'dark');
+              document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
+              document.getElementById('pageTitle').setAttribute('data-theme', 'dark');
+              document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'dark');
+              document.getElementById('menuLigneCv').setAttribute('data-theme', 'dark');
+              document.getElementById('headerAccueil').setAttribute('data-theme', 'dark');
+              document.getElementById('mySidenav').setAttribute('data-theme', 'dark');
+              document.getElementById('githubBtnImg').setAttribute('data-theme', 'dark');
+              document.getElementById('portraitAccueil').setAttribute('data-theme', 'dark');
+              document.getElementById('portfolioSousTitre').setAttribute('data-theme', 'dark');
+              document.getElementById('lightBulbWrapperDiv').setAttribute('data-theme', 'dark');
+              document.getElementById('inspirationContainer').setAttribute('data-theme', 'dark');
+              document.getElementById('quoteContent').setAttribute('data-theme', 'dark');
+              document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'dark');
+              document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'dark');
+              document.getElementById('accueilVideo').setAttribute('data-theme', 'dark');
+              document.getElementById('inspirationTitle').setAttribute('data-theme', 'dark');
+              [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
+                  elem.setAttribute('data-theme', 'dark');
+              });
+              [...document.getElementsByClassName('selected')].forEach((elem) => {
+                elem.setAttribute('data-theme', 'dark');
+              });
+              document.getElementById('accueilProjectsRightDivSpan').setAttribute('data-theme', 'dark');
+
+
+              document.getElementById('currentThemeIcon').classList.remove('fa-sun');
+              document.getElementById('currentThemeIcon').classList.add('fa-moon');
+          }
+      });
+
   
 
       // Effets border navBarre Desktop
