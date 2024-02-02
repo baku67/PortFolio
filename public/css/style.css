@@ -165,7 +165,7 @@ body {
 
 
 body[data-theme="light"] {
-    background: var(--body-BgColor-light);
+    background: #f9f6f4;
     /* color: var(--text-color-dark); */
 }
 
@@ -1768,6 +1768,9 @@ ul {
     right: 2px;
     color: #5d5d5d;
 }
+.desktopNavAccueilActif {
+    color: var(--secondaryColor) !important;
+}
 .desktopNavCv {
     width: 35px;
     height: 35px;
@@ -1862,6 +1865,10 @@ ul {
     margin: 0% 12%;
 }
 
+#githubBtnImg[data-theme="light"] {
+    content: url("/img/githubLogo2_red.png");
+}
+
 .pageTitle {
     filter: drop-shadow(2px 4px 6px black);
     text-decoration-thickness: 3px;
@@ -1884,6 +1891,7 @@ ul {
 }
 .pageTitle[data-theme="light"] {
     color: var(--black);
+    filter: drop-shadow(0px 0px 0px rgb(9, 9, 9));
 }
 
 #NavBarContainer {

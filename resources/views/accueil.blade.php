@@ -45,7 +45,7 @@
 
 
         <!-- WIP menu-burger mobile -->
-        <div id="mySidenav" class="sidenav isMobile">
+        <div id="mySidenav" class="sidenav isMobile" data-theme="dark">
 
             <a id="closeBtn" href="#" class="close">×</a>
 
@@ -88,6 +88,57 @@
                 </li>
             </ul>
 
+            <!-- Toggle light-theme -->
+                <div class="containerToggleLight isMobile">
+                    <i id="currentThemeIcon" class="currentThemeIcon fa-solid fa-moon" data-theme="dark"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <script type="text/javascript">
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const themeToggle = document.getElementById('themeToggle');
+                        const body = document.body;
+
+                        themeToggle.addEventListener('change', function () {
+
+                            if (themeToggle.checked) {
+
+                                body.setAttribute('data-theme', 'light');
+                                document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
+                                document.getElementById('pageTitle').setAttribute('data-theme', 'light');
+                                document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
+                                document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
+                                document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
+                                document.getElementById('mySidenav').setAttribute('data-theme', 'light');
+                                document.getElementById('githubBtnImg').setAttribute('data-theme', 'light');
+                                
+
+                                document.getElementById('currentThemeIcon').classList.remove('fa-moon');
+                                document.getElementById('currentThemeIcon').classList.add('fa-sun');
+
+                            } else {
+
+                                body.setAttribute('data-theme', 'dark');
+                                document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
+                                document.getElementById('pageTitle').setAttribute('data-theme', 'dark');
+                                document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'dark');
+                                document.getElementById('menuLigneCv').setAttribute('data-theme', 'dark');
+                                document.getElementById('headerAccueil').setAttribute('data-theme', 'dark');
+                                document.getElementById('mySidenav').setAttribute('data-theme', 'dark');
+                                document.getElementById('githubBtnImg').setAttribute('data-theme', 'dark');
+
+
+                                document.getElementById('currentThemeIcon').classList.remove('fa-sun');
+                                document.getElementById('currentThemeIcon').classList.add('fa-moon');
+                            }
+                        });
+                    });
+                </script>
+            <!-- Fin toggle light-theme -->
+
         </div>
 
         <a href="#" id="openBtn">
@@ -118,7 +169,7 @@
             <ul id="sideNavDesktop">
                 <li class="sideNavDesktop sideNavDesktopActif">
                     <a href="/">
-                        <i class="fa-solid fa-house desktopNavAccueil"></i>
+                        <i class="fa-solid fa-house desktopNavAccueil desktopNavAccueilActif"></i>
                         <span class="desktopNavSpan desktopSpanActif">Accueil</span>
                     </a>
                 </li>
@@ -194,52 +245,6 @@
                 <!-- Trait séparateur -->
                 <div id="traitHeader"></div>
 
-
-                <!-- Toggle light-theme -->
-                    <!-- <div class="containerToggleLight">
-                        <i id="currentThemeIcon" class="currentThemeIcon fa-solid fa-moon" data-theme="dark"></i>
-                        <label class="switch">
-                            <input type="checkbox" id="themeToggle">
-                            <span class="slider"></span>
-                        </label>
-                    </div> -->
-
-                    <!-- <script type="text/javascript">
-                        document.addEventListener('DOMContentLoaded', function () {
-                            const themeToggle = document.getElementById('themeToggle');
-                            const body = document.body;
-
-                            themeToggle.addEventListener('change', function () {
-
-                                if (themeToggle.checked) {
-
-                                    body.setAttribute('data-theme', 'light');
-                                    document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
-                                    document.getElementById('pageTitle').setAttribute('data-theme', 'light');
-                                    document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
-                                    document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
-                                    document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
-
-                                    document.getElementById('currentThemeIcon').classList.remove('fa-moon');
-                                    document.getElementById('currentThemeIcon').classList.add('fa-sun');
-
-                                } else {
-
-                                    body.setAttribute('data-theme', 'dark');
-                                    document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
-                                    document.getElementById('pageTitle').setAttribute('data-theme', 'dark');
-                                    document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'dark');
-                                    document.getElementById('menuLigneCv').setAttribute('data-theme', 'dark');
-                                    document.getElementById('headerAccueil').setAttribute('data-theme', 'dark');
-
-
-                                    document.getElementById('currentThemeIcon').classList.remove('fa-sun');
-                                    document.getElementById('currentThemeIcon').classList.add('fa-moon');
-                                }
-                            });
-                        });
-                    </script> -->
-                <!-- Fin toggle light-theme -->
             </header>
 
 
@@ -248,7 +253,7 @@
 
                 <div style="position:relative">
                         <a class="gitHubLink" target="_blank" href="https://github.com/baku67">
-                            <img src="img/githubLogo2.png" class="githubLogo">
+                            <img src="img/githubLogo2.png" id="githubBtnImg" class="githubLogo" data-theme="dark">
                         </a>
                     <h2 id="pageTitle" class="pageTitle" data-theme="dark">Bienvenue sur mon portfolio</h2>
                 </div>

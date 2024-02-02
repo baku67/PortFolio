@@ -3,9 +3,8 @@
 
 
     .containerToggleLight {
-        right: 0px;
-        top: 19px;
-
+        left: 18px;
+        top: 35px;
         gap: 10px;
     }
     .slider {
@@ -2599,20 +2598,30 @@
         width: 255px;
         position: fixed;
         top: 0;
-        right: -250px;
-        /* background-color: #e8e8e8; */
+        /* Fix la barre qui dépasse un peu */
+        /* right: -250px; */
+        right: -256px;
+
         background-color: #181a23;
+        color: #cbcbcb;
+
         padding-top: 83px;
         transition: right 0.5s ease;
         border-left: 1px solid #80808024;
     }
+    .sidenav[data-theme="light"] {
+        background-color: #104858;
+        color: #f3efef;
+    }
+
+
     
     /* Sidenav menu links */
     .sidenav a {
         padding: 11px 8px 11px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #cbcbcb;
+        
         display: block;
         transition: 0.3s;
     }
@@ -2636,11 +2645,13 @@
     /* Close btn */
     .sidenav .close {
         position: absolute;
+        padding: 10px 15px;
         top: 0;
         right: 25px;
         font-size: 42px;
         /* color: #ef3b2d; */
         color: #f0f2f5;
+        z-index: 999999;
     }
     .sidenav .closeBurger {
         position: absolute;
