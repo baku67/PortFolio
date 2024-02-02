@@ -8,6 +8,27 @@ window.onload = function() {
     // ScrollReveal().reveal('.langues');
 
 
+    // Smiley titre portfolio
+    document.getElementById('titleH1').addEventListener("mouseenter", function() {
+        document.getElementById('smilePath').style.stroke = "var(--secondaryColor)";
+        document.getElementById('smilePath').classList.toggle("smilePathResp");
+        document.getElementById('smileSvgContainer').classList.toggle("smileSvgContainerResp");
+
+        [...document.getElementsByClassName('titleO')].forEach((elem) => {
+            elem.style.color = "var(--secondaryColor)";
+        });
+    })
+    document.getElementById('titleH1').addEventListener("mouseleave", function() {
+        document.getElementById('smilePath').style.stroke = "#ef3b2d";
+        document.getElementById('smilePath').classList.toggle("smilePathResp");
+        document.getElementById('smileSvgContainer').classList.toggle("smileSvgContainerResp");
+
+        [...document.getElementsByClassName('titleO')].forEach((elem) => {
+            elem.style.color = "#ef3b2d";
+        });
+    })
+
+
     // **********  MOBILE: Click outside nav burger si actif = closeNav
     var sidenav = document.getElementById("mySidenav");
     var openBtn = document.getElementById("openBtn");

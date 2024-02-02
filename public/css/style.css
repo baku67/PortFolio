@@ -368,6 +368,53 @@ swiper-slide {
     /* height: -webkit-fill-available; */
 }
 
+#smileSvgContainer {
+    transition: all 0.4s;
+}
+.smileSvgContainer {
+    position: absolute;
+    right: -12px;
+    bottom: -12px;
+    height: 25px;
+    width: 62px;
+}
+.smileSvgContainerResp {
+    right: -14px !important;
+}
+.smileSvg {
+
+}
+#smilePath {
+    transform : translateX(0px) rotateY(35deg);
+    transition: all 0.4s;
+}
+.smilePathResp {
+    transform: translateX(0px) rotateY(45deg) !important;
+}
+.smileSvgPath {
+    fill: none; 
+    stroke: #ef3b2d; 
+    stroke-width: 3; 
+    stroke-linecap: round; 
+    stroke-linejoin:  miter; 
+    stroke-miterlimit: 4;
+    transition: stroke 0.4s;
+}
+
+.bigSmiled {
+    background-color: #1a1e29;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+
+    right: 9px !important;
+    bottom: -16px !important;
+    height: 31px !important;
+    width: 53px !important;
+}
+
+.titleO {
+    transition: all 0.4s;
+}
 
 
 .trainingSvgContainer {
@@ -2686,7 +2733,17 @@ ul {
     }
 }
 
+.titleSmile {
+    position: absolute;
+    bottom: -39px;
+    right: 20px;
+    transform: rotate(90deg) scaleY(1);
+    font-size: 1.4em;
+    font-weight: 100;
+    color: #ef3b2d;
 
+    transition: all 0.3s;
+}
 
 
 
@@ -3295,6 +3352,8 @@ ul {
 /* Fix du Header Dégueulasse (seulement sur loisirs) ET VOIR MEDIA QUERIES */
 .testH1 {
     font-size: 2.7em;
+    width: fit-content;
+    position: relative;
 
     color: #ef3b2d;
     /* line-height: 0; */

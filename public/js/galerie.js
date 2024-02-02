@@ -28,6 +28,10 @@
 
 
 
+
+
+
+
     // Reprocs de l'anim rotate des "O" dans title Loisirs:"Photographie" (delai initial puis interval entre les procs de l'anim)
     setTimeout(function() {
       let array = document.querySelectorAll(".letterO");
@@ -72,6 +76,31 @@
 
 
 window.onload = function() {
+
+
+    // Smiley titre portfolio
+    document.getElementById('titleH1').addEventListener("mouseenter", function() {
+        document.getElementById('smilePath').style.stroke = "var(--secondaryColor)";
+        document.getElementById('smilePath').classList.toggle("smilePathResp");
+        document.getElementById('smileSvgContainer').classList.toggle("smileSvgContainerResp");
+
+        [...document.getElementsByClassName('titleO')].forEach((elem) => {
+            elem.style.color = "var(--secondaryColor)";
+        });
+    })
+    document.getElementById('titleH1').addEventListener("mouseleave", function() {
+        document.getElementById('smilePath').style.stroke = "#ef3b2d";
+        document.getElementById('smilePath').classList.toggle("smilePathResp");
+        document.getElementById('smileSvgContainer').classList.toggle("smileSvgContainerResp");
+
+        [...document.getElementsByClassName('titleO')].forEach((elem) => {
+            elem.style.color = "#ef3b2d";
+        });
+    })
+
+
+
+
 
     // **********  MOBILE: Click outside nav burger si actif = closeNav
     var sidenav = document.getElementById("mySidenav");

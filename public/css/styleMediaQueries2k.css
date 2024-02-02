@@ -122,6 +122,25 @@
 
     }
 
+    .smileSvgContainer {
+        position: absolute;
+        right: -3px;
+        bottom: -10px;
+        height: 25px;
+        width: 62px;
+    }
+    .smileSvgContainerResp {
+        right: -10px !important;
+    }
+
+    #smilePath {
+        transform : translateX(0px) rotateY(20deg);
+        transition: all 0.4s;
+    }
+    .smilePathResp {
+        transform: translateX(0px) rotateY(45deg) !important;
+    }
+
     .description {
         position: relative;
         top: 7px;

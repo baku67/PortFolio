@@ -169,7 +169,23 @@
                 
             <!-- Header ("Portfolio. + Basile KUNTZ - Developpeur Web") -->
             <div id="pageTitleDiv" style="width:100%;">
-                <h1 class="testH1"><a href="/">Portfolio <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span></a></h1>
+                <h1 id="titleH1" class="testH1">
+                    <a href="/">
+                        Portf<span class="titleO">o</span>li<span class="titleO">o</span> 
+                        <!-- <span style="color:#E7E8F2; position:relative; top:6px;">&#9642;</span> -->
+                    </a>
+                    <!-- Smiley -->
+                    <!-- <span id="titleSmile" class="titleSmile">)</span> -->
+                    <svg id="smileSvgContainer" class="smileSvgContainer" style="position:absolute;">
+                        <g class="smileSvg">
+                            <path 
+                                id="smilePath"
+                                class="smileSvgPath"
+                                d="M 0 0 C 11.556 7.704 39.804 7.704 51.36 0"
+                            />
+                        </g>
+                    </svg>
+                </h1>                
                 <span id="lineBreakMobile"></br></span>
                 <h2 id="portfolioSousTitre" style="margin-left:6%; color:#ef3b2d;">
                     Basile KUNTZ 

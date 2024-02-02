@@ -514,6 +514,30 @@
         box-shadow: -15px 0 57px -3px var(--secondaryColor);
     } */
     
+
+
+    .smileSvgContainer {
+        right: -10px;
+        bottom: -11px;
+        height: 25px;
+        width: 62px;
+        transform: scale(0.8);
+    }
+
+
+    .titleSmile {
+        display: none;
+        
+        position: absolute;
+        bottom: -39px;
+        right: 49px;
+        transform: rotate(90deg) scaleY(1);
+        font-size: 1.4em;
+        font-weight: 100;
+        color: #19ddbcde;
+    }
+
+
     .description1boxShadow {
         /* Mobile: Pas de padding bottom car c'est la page projet la plus grande  */
 
@@ -661,6 +685,9 @@
         color: #ef3b2d;
         position: relative;
         bottom: 3px;
+
+        /* Pour espace smile: */
+        margin-top: 5px;
     }
 
 
