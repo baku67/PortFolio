@@ -98,13 +98,47 @@
                 </div>
 
                 <script type="text/javascript">
+
+
+
                     document.addEventListener('DOMContentLoaded', function () {
                         const themeToggle = document.getElementById('themeToggle');
                         const body = document.body;
 
+                        // if (localStorage.getItem('darkMode') == false) {
+
+                        //     body.setAttribute('data-theme', 'light');
+                        //     document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
+                        //     document.getElementById('pageTitle').setAttribute('data-theme', 'light');
+                        //     document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
+                        //     document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
+                        //     document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
+                        //     document.getElementById('mySidenav').setAttribute('data-theme', 'light');
+                        //     document.getElementById('githubBtnImg').setAttribute('data-theme', 'light');
+                        //     document.getElementById('portraitAccueil').setAttribute('data-theme', 'light');
+                        //     document.getElementById('portfolioSousTitre').setAttribute('data-theme', 'light');
+                        //     document.getElementById('lightBulbWrapperDiv').setAttribute('data-theme', 'light');
+                        //     document.getElementById('inspirationContainer').setAttribute('data-theme', 'light');
+                        //     document.getElementById('quoteContent').setAttribute('data-theme', 'light');
+                        //     document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'light');
+                        //     document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'light');
+                        //     [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
+                        //         elem.setAttribute('data-theme', 'light');
+                        //     });
+                        //     document.getElementById('accueilProjectsRightDivSpan').setAttribute('data-theme', 'light');
+                            
+                        //     document.getElementById('currentThemeIcon').classList.remove('fa-moon');
+                        //     document.getElementById('currentThemeIcon').classList.add('fa-sun');
+
+                        // }
+
+
+
                         themeToggle.addEventListener('change', function () {
 
                             if (themeToggle.checked) {
+
+                                localStorage.setItem('darkMode', "false");
 
                                 body.setAttribute('data-theme', 'light');
                                 document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
@@ -114,12 +148,24 @@
                                 document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
                                 document.getElementById('mySidenav').setAttribute('data-theme', 'light');
                                 document.getElementById('githubBtnImg').setAttribute('data-theme', 'light');
+                                document.getElementById('portraitAccueil').setAttribute('data-theme', 'light');
+                                document.getElementById('portfolioSousTitre').setAttribute('data-theme', 'light');
+                                document.getElementById('lightBulbWrapperDiv').setAttribute('data-theme', 'light');
+                                document.getElementById('inspirationContainer').setAttribute('data-theme', 'light');
+                                document.getElementById('quoteContent').setAttribute('data-theme', 'light');
+                                document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'light');
+                                document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'light');
+                                [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
+                                    elem.setAttribute('data-theme', 'light');
+                                });
+                                document.getElementById('accueilProjectsRightDivSpan').setAttribute('data-theme', 'light');
                                 
-
                                 document.getElementById('currentThemeIcon').classList.remove('fa-moon');
                                 document.getElementById('currentThemeIcon').classList.add('fa-sun');
 
                             } else {
+
+                                localStorage.setItem('darkMode', "true");
 
                                 body.setAttribute('data-theme', 'dark');
                                 document.getElementById('currentThemeIcon').setAttribute('data-theme', 'dark');
@@ -129,6 +175,18 @@
                                 document.getElementById('headerAccueil').setAttribute('data-theme', 'dark');
                                 document.getElementById('mySidenav').setAttribute('data-theme', 'dark');
                                 document.getElementById('githubBtnImg').setAttribute('data-theme', 'dark');
+                                document.getElementById('portraitAccueil').setAttribute('data-theme', 'dark');
+                                document.getElementById('portfolioSousTitre').setAttribute('data-theme', 'dark');
+                                document.getElementById('lightBulbWrapperDiv').setAttribute('data-theme', 'dark');
+                                document.getElementById('inspirationContainer').setAttribute('data-theme', 'dark');
+                                document.getElementById('quoteContent').setAttribute('data-theme', 'dark');
+                                document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'dark');
+                                document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'dark');
+                                document.getElementById('accueilVideo').setAttribute('data-theme', 'dark');
+                                [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
+                                    elem.setAttribute('data-theme', 'dark');
+                                });
+                                document.getElementById('accueilProjectsRightDivSpan').setAttribute('data-theme', 'dark');
 
 
                                 document.getElementById('currentThemeIcon').classList.remove('fa-sun');
@@ -264,13 +322,13 @@
 
                     <div class="fixScalePortraitPC" style="position:relative;">
                         
-                        <div id="portraitAccueil" class="imgAccueil" style="z-index:999;">
+                        <div id="portraitAccueil" class="imgAccueil" style="z-index:999;" data-theme="dark">
                             <img src="img\portraits\portraitPng2Test.png" class="testPopPortraitImg" />
                         </div>
 
                     </div>
 
-                    <p id="paragrapheAccueil" class="paragrapheAccueil" >
+                    <p id="paragrapheAccueil" class="paragrapheAccueil" data-theme="dark"> 
                         <!-- <span style="margin-left: 5px; font-size: 130%;">Bienvenue, </span>
                         <br><br> -->
                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="accueilWord">Je</span> <span class="accueilWord">suis</span> <span class="accueilWord">Basile</span> <span class="accueilWord">KUNTZ,</span> <span class="accueilWord">et</span> <span class="accueilWord">je</span> <span class="accueilWord">viens</span> <span class="accueilWord">d'obtenir</span> <span class="accueilWord">mon</span> <span class="accueilWord">titre</span> <span class="accueilWord">de</span> <strong><span class="accueilWord">développeur</span> <span class="accueilWord">web</span> <span class="accueilWord">et</span> <span class="accueilWord">web</span> <span class="accueilWord">mobile</span></strong> <span class="accueilWord">au</span> <span class="accueilWord">centre</span> <span class="accueilWord">Élan</span> <span class="accueilWord">Formation</span> <span class="accueilWord">à</span> <span class="accueilWord">Strasbourg.</span> <span class="accueilWord">Je</span> <span class="accueilWord">cherche</span> <span class="accueilWord">actuellement</span> <span class="accueilWord">à</span> <span class="accueilWord">mettre</span> <span class="accueilWord">à</span> <span class="accueilWord">profit</span> <span class="accueilWord">mes</span> <span class="accueilWord">compétences</span> <span class="accueilWord">et</span> <span class="accueilWord">à</span> <span class="accueilWord">m'améliorer</span> <span class="accueilWord">dans</span> <span class="accueilWord">le</span> <span class="accueilWord">cadre</span> <span class="accueilWord">d'une</span> <strong><span class="accueilWord">alternance</span> <span class="accueilWord">en</span> <span class="accueilWord">licence</span> <span class="accueilWord">CDA</span></strong><span class="accueilWord">.</span>
@@ -290,7 +348,7 @@
                     <div id="citationAndLightBulbWrapper">
                         
                         <!-- LightBulb Ampoule SVG (https://jakearchibald.com/2013/animated-line-drawing-svg/) -->
-                        <div id="lightBulbWrapperDiv" class="lightBulbWrapperDiv">
+                        <div id="lightBulbWrapperDiv" class="lightBulbWrapperDiv" data-theme="dark">
                             <svg class="lightBulbContainer">
                                 <path 
                                     id="lightBulbPath"
@@ -332,12 +390,16 @@
 
                         </div>
 
-                        <div id="inspirationContainer">
+                        <div id="inspirationContainer" data-theme="dark">
                             <h3 id="inspirationTitle">Inspirations:</h3>
                             <div style="position:relative;">
                                 <img class="quote1" src="img/quote1.png" />
                                 <!-- <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a> -->
-                                <quote style="position:relative;"><span id="quoteContent">Digital design is like painting, except the paint never dries. <span class="quoteAuthor">- Neville Brody</span></span></quote>
+                                <quote style="position:relative;">
+                                    <span id="quoteContent" data-theme="dark">Digital design is like painting, except the paint never dries. 
+                                        <span class="quoteAuthor">- Neville Brody</span>
+                                    </span>
+                                </quote>
                                 <img class="quote2" src="img/quote2.png" />
                             </div>
                             <button id="changeQuotation"><i class="fa-solid fa-rotate"></i></button>
@@ -353,8 +415,8 @@
 
                         <!-- Label bouton mobile -->
                         <a href="https://portfolio.basilek.ovh/projets" class="accueilProjectsLabelLink">
-                            <div class="accueilProjectsBtnLabel">
-                                <span class="accueilProjectsRightDivSpan">
+                            <div id="accueilProjectsBtnLabel" class="accueilProjectsBtnLabel">
+                                <span id="accueilProjectsRightDivSpan" class="accueilProjectsRightDivSpan">
                                     Voir mes projets 
                                 </span>
                             </div>
@@ -364,7 +426,7 @@
                         <div class="accueilVideoPcDiv1 isDesktop">
                             <div class="accueilVideoPcDiv isDesktop">
 
-                                <video autoplay controls muted loop id="accueilVideo" class="accueilVideoPcVideo isDesktop">
+                                <video autoplay controls muted loop id="accueilVideo" class="accueilVideoPcVideo isDesktop" data-theme="dark">
                                     <source src="img\demos\projectsPreview_trimmedPc2.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
@@ -377,7 +439,7 @@
                         </div>
 
                         <!-- Mobile Bouton (sans controls) video trimmed -->
-                        <video autoplay muted loop id="accueilVideo" class="accueilVideo isMobile">
+                        <video autoplay muted loop id="accueilVideo" class="accueilVideo isMobile" data-theme="dark">
                             <source src="img\demos\projectsPreview_trimmedMobile4.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -396,7 +458,7 @@
                         <div class="accueilProjectsTrait"></div>
 
                         <!-- Mobile: icones keyboard+mouse Mobile -->
-                        <img src="img/keyboard_blue.png" class="accueilKeyboardPng isMobile">
+                        <img src="img/keyboard_blue.png" id="accueilKeyboardPng" class="accueilKeyboardPng isMobile" data-theme="dark">
 
                     </div>
 

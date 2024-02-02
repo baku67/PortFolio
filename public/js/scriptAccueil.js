@@ -16,6 +16,38 @@ window.onload = function() {
       }
       // Fin
       console.log("Mobile detection JS: " + mobileDetection);
+
+
+      // State des element avec data-theme (selon darkMode localStorage)
+      const themeToggle = document.getElementById('themeToggle');
+      if (localStorage.getItem('darkMode') == "false") {
+
+        themeToggle.checked = true;
+
+        body.setAttribute('data-theme', 'light');
+        document.getElementById('currentThemeIcon').setAttribute('data-theme', 'light');
+        document.getElementById('pageTitle').setAttribute('data-theme', 'light');
+        document.getElementById('paragrapheAccueil').setAttribute('data-theme', 'light');
+        document.getElementById('menuLigneCv').setAttribute('data-theme', 'light');
+        document.getElementById('headerAccueil').setAttribute('data-theme', 'light');
+        document.getElementById('mySidenav').setAttribute('data-theme', 'light');
+        document.getElementById('githubBtnImg').setAttribute('data-theme', 'light');
+        document.getElementById('portraitAccueil').setAttribute('data-theme', 'light');
+        document.getElementById('portfolioSousTitre').setAttribute('data-theme', 'light');
+        document.getElementById('lightBulbWrapperDiv').setAttribute('data-theme', 'light');
+        document.getElementById('inspirationContainer').setAttribute('data-theme', 'light');
+        document.getElementById('quoteContent').setAttribute('data-theme', 'light');
+        document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'light');
+        document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'light');
+        [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
+            elem.setAttribute('data-theme', 'light');
+        });
+        document.getElementById('accueilProjectsRightDivSpan').setAttribute('data-theme', 'light');
+        
+        document.getElementById('currentThemeIcon').classList.remove('fa-moon');
+        document.getElementById('currentThemeIcon').classList.add('fa-sun');
+        
+    }
   
 
       // Effets border navBarre Desktop

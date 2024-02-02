@@ -347,6 +347,10 @@ swiper-slide {
 
     bottom: 14px;
 }
+.lightBulbWrapperDiv[data-theme="light"] {
+    filter:none;
+
+}
 
 
 /* Rectangle photo Accueil */
@@ -2946,6 +2950,8 @@ ul {
 
 
 
+
+
 .accueilVideoPcDiv {
 
 
@@ -3199,6 +3205,7 @@ ul {
 }
 #paragrapheAccueil[data-theme="light"] {
     color: var(--black);
+    font-weight: 600;
 }
 
 
@@ -6316,6 +6323,10 @@ li.veilleLigneAjout::before {
 
     border: 1px solid #00ffd64f;
 }
+#inspirationContainer[data-theme="light"] {
+    background-color: #97ffed;
+    filter: drop-shadow(1px 2px 6px black);
+}
 
 #quoteContent {
     position: relative; 
@@ -6328,6 +6339,10 @@ li.veilleLigneAjout::before {
     width: 60%;
     margin: 0 auto;
     text-align: justify;
+}
+#quoteContent[data-theme="light"] {
+    color: #0e0e0e;
+    font-weight: 600;
 }
 
 #inspirationTitle {
