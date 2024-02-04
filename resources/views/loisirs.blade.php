@@ -47,7 +47,7 @@
 
 
 
-    <body id="bodyLoisir" class="bodyLoisir" style="position:relative;">
+    <body id="bodyLoisir" class="bodyLoisir" style="position:relative;" data-theme="dark">
 
         <!-- (Desktop) Lors scroll: sideNav -->
         <ul id="sideNavDesktop">
@@ -128,6 +128,15 @@
                     </li>
 
                 </ul>
+
+                <!-- Toggle light-theme (scriptAccueil.js) -->
+                <div class="containerToggleLight isMobile">
+                    <i id="currentThemeIcon" class="currentThemeIcon fa-solid fa-moon" data-theme="dark"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
 
             </div>  
 

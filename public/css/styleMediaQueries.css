@@ -226,6 +226,16 @@
         left: 2px;
     }
 
+    #navBurger_cvIcon[data-theme="light"] {
+        content: url("/img/navBurgerImg/nav_cv_white.png")
+    }
+    #navBurger_projectsIcon[data-theme="light"] {
+        content: url("/img/navBurgerImg/nav_projets_white.png")
+    }
+    #navBurger_loisirsIcon[data-theme="light"] {
+        content: url("/img/navBurgerImg/nav_loisirs_white.png")
+    }
+
     .navBurger_projectsIcon {
         width: 32px;
         height: 31px;
@@ -2657,6 +2667,10 @@
         
         display: block;
         transition: 0.3s;
+    }
+
+    .sidenav a span {
+        text-shadow: 1px 1px black;
     }
     
     .sidenav a:hover {

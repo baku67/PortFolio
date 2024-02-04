@@ -35,6 +35,38 @@ window.onload = function() {
     })
 
 
+
+    // *** LIGHTMODE: State des element avec data-theme (selon darkMode localStorage)
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    if (localStorage.getItem('darkMode') == "false") {
+
+        themeToggle.checked = true;
+
+        // body.setAttribute('data-theme', 'light');
+
+    }
+
+    // LIGHTMODE: changement du theme (toggle)
+    themeToggle.addEventListener('change', function () {
+
+        if (themeToggle.checked) {
+
+            localStorage.setItem('darkMode', "false");
+
+            // body.setAttribute('data-theme', 'light');
+        
+        } else {
+
+            localStorage.setItem('darkMode', "true");
+
+            // body.setAttribute('data-theme', 'dark');
+
+        }
+    });
+
+
     // (DESKTOP) On scrool page : sideNav
     if(!mobileDetection) {
         // Observer navBarre:

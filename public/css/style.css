@@ -57,7 +57,8 @@
     color: var(--white);
 }
 .currentThemeIcon[data-theme="light"] {
-    color: var(--black);
+    /* color: var(--black); */
+    color: white;
 }
 
 

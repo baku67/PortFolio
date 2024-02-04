@@ -43,6 +43,9 @@ window.onload = function() {
         document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'light');
         document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'light');
         document.getElementById('inspirationTitle').setAttribute('data-theme', 'light');
+        document.getElementById('navBurger_cvIcon').setAttribute('data-theme', 'light');
+        document.getElementById('navBurger_projectsIcon').setAttribute('data-theme', 'light');
+        document.getElementById('navBurger_loisirsIcon').setAttribute('data-theme', 'light');
         [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
             elem.setAttribute('data-theme', 'light');
         });
@@ -79,6 +82,9 @@ window.onload = function() {
               document.getElementById('accueilKeyboardPng').setAttribute('data-theme', 'light');
               document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'light');
               document.getElementById('inspirationTitle').setAttribute('data-theme', 'light');
+              document.getElementById('navBurger_cvIcon').setAttribute('data-theme', 'light');
+              document.getElementById('navBurger_projectsIcon').setAttribute('data-theme', 'light');
+              document.getElementById('navBurger_loisirsIcon').setAttribute('data-theme', 'light');
               [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
                   elem.setAttribute('data-theme', 'light');
               });
@@ -111,6 +117,9 @@ window.onload = function() {
               document.getElementById('accueilProjectsBtnLabel').setAttribute('data-theme', 'dark');
               document.getElementById('accueilVideo').setAttribute('data-theme', 'dark');
               document.getElementById('inspirationTitle').setAttribute('data-theme', 'dark');
+              document.getElementById('navBurger_cvIcon').setAttribute('data-theme', 'dark');
+              document.getElementById('navBurger_projectsIcon').setAttribute('data-theme', 'dark');
+              document.getElementById('navBurger_loisirsIcon').setAttribute('data-theme', 'dark');
               [...document.getElementsByClassName('accueilVideo')].forEach((elem) => {
                   elem.setAttribute('data-theme', 'dark');
               });

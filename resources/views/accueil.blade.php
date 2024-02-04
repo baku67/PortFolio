@@ -58,19 +58,19 @@
                 </li>
                 <li>
                     <a id="cvMenu" class="menuButton burgerMenuButtonWithImg" href="/cv" style="position:relative; right:3px;">
-                        <img src="img\navBurgerImg\nav_cv_red.png" class="navBurger_cvIcon" style="opacity:0.9;" />
+                        <img src="img\navBurgerImg\nav_cv_red.png" id="navBurger_cvIcon" class="navBurger_cvIcon" style="opacity:0.9;" data-theme="dark" />
                         <span>Mon CV</span>
                     </a>
                 </li>
                 <li>
                     <a id="projetsMenu" class="menuButton burgerMenuButtonWithImg" href="/projets">
-                        <img src="img\navBurgerImg\nav_projets_red.png" class="navBurger_projectsIcon" style="opacity:0.9;" />
+                        <img src="img\navBurgerImg\nav_projets_red.png" id="navBurger_projectsIcon" class="navBurger_projectsIcon" style="opacity:0.9;" data-theme="dark" />
                         <span>Projets</span>
                     </a>
                 </li>
                 <li>
                     <a id="contactMenu" class="menuButton burgerMenuButtonWithImg" href="/loisirs">
-                        <img src="img\navBurgerImg\nav_loisirs_red.png" class="navBurger_loisirsIcon" style="opacity:0.9;" />
+                        <img src="img\navBurgerImg\nav_loisirs_red.png" id="navBurger_loisirsIcon" class="navBurger_loisirsIcon" style="opacity:0.9;" data-theme="dark" />
                         <span>Loisirs</span>
                     </a>
                 </li>

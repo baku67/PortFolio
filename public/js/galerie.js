@@ -195,7 +195,8 @@ window.onload = function() {
         // Blur() derrière ram sur mobile:
         // document.getElementById("pageContainer").style.filter = "blur(2px)";
         document.getElementById("pageContainer").style.opacity = "0.6";
-        document.getElementById("pageTitle").style.opacity = "0.6";
+        document.getElementById("titleH1").style.opacity = "0.6";
+        // document.getElementById("pageTitle").style.opacity = "0.6";
     }
 
     /* Set the width of the side navigation to 0 */
@@ -206,10 +207,42 @@ window.onload = function() {
         // Blur() derrière ram sur mobile:
         // document.getElementById("pageContainer").style.filter = "blur(0px)";
         document.getElementById("pageContainer").style.opacity = "1";
-        document.getElementById("pageTitle").style.opacity = "1";
+        document.getElementById("titleH1").style.opacity = "1";
+        // document.getElementById("pageTitle").style.opacity = "1";
     }
     //******  */ FIN
 
+
+
+    // *** LIGHTMODE: State des element avec data-theme (selon darkMode localStorage)
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    if (localStorage.getItem('darkMode') == "false") {
+
+        themeToggle.checked = true;
+
+        // body.setAttribute('data-theme', 'light');
+
+    }
+
+    // LIGHTMODE: changement du theme (toggle)
+    themeToggle.addEventListener('change', function () {
+
+        if (themeToggle.checked) {
+
+            localStorage.setItem('darkMode', "false");
+
+            // body.setAttribute('data-theme', 'light');
+        
+        } else {
+
+            localStorage.setItem('darkMode', "true");
+
+            // body.setAttribute('data-theme', 'dark');
+
+        }
+    });
 
     
 
