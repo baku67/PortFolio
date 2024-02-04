@@ -48,6 +48,12 @@
 
     <body data-theme="dark">
 
+        <!-- ScrollToTop -->
+        <div id="scrollToTop" class="isMobile">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+
+
         <!-- (Desktop) Lors scroll: sideNav -->
         <ul id="sideNavDesktop">
             <li class="sideNavDesktop">

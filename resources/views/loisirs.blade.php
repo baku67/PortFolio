@@ -49,6 +49,12 @@
 
     <body id="bodyLoisir" class="bodyLoisir" style="position:relative;" data-theme="dark">
 
+        <!-- ScrollToTop -->
+        <div id="scrollToTop" class="isMobile">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+
+
         <!-- (Desktop) Lors scroll: sideNav -->
         <ul id="sideNavDesktop">
             <li class="sideNavDesktop">
@@ -186,7 +192,7 @@
 
 
             <!-- Header  -->
-            <div class="testHeader">
+            <div id="headerLoisirs" class="testHeader">
                     
                 <h1 id="titleH1" class="testH1">
                     <a href="/">

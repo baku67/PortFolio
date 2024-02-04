@@ -1463,6 +1463,22 @@
         top: 95px;
     }
 
+    #scrollToTop {
+        opacity: 0;
+
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        color: #ef3b2d;
+        /* border: 1px solid grey; */
+        padding: 9px 12px;
+        border-radius: 25px;
+        background-color: #191b25;
+        z-index: 999;
+
+        transition: 0.4s;
+    }
+
     .accueilProjectsDiv {
         flex-direction: column;
         margin: 0px auto 5px auto;

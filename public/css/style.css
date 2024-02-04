@@ -6550,7 +6550,7 @@ li.veilleLigneAjout::before {
 }
 @keyframes contrastEffect {
     0% {
-        filter: grayscale(0.);
+        filter: grayscale(0);
     }
     50% {
         /* filter: grayscale(0.9) brightness(1); */
@@ -6561,7 +6561,8 @@ li.veilleLigneAjout::before {
         filter: grayscale(1);
     }
     100% {
-        filter: drop-shadow(2px 4px 6px black);
+        /* filter: drop-shadow(2px 4px 6px black); */
+        filter: grayscale(0);
     }
 }
 
