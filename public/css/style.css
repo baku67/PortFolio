@@ -407,6 +407,7 @@ swiper-slide {
 
     z-index: 99999;
     position: fixed;
+    top: -20px;
 
     border-left: 1px solid rgba(128, 128, 128, 0.3);
     transition: all 0.25s;
@@ -3382,7 +3383,7 @@ ul {
         height: 110px;
     }
     50% {
-        transform: translate(310px, -50%);
+        transform: translate(80px, -50%);
         height: 145px;
     }
     100% {
@@ -6439,7 +6440,7 @@ li.veilleLigneAjout::before {
 }
 
 .githubProjectLink {
-    border: 1px solid var(--secondaryColorVeryMat);
+    border: 2px solid var(--secondaryColorVeryMat);
     padding: 2px 10px;
     font-size: 0.95em;
     border-radius: 4px;

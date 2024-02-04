@@ -1478,6 +1478,29 @@
 
         transition: 0.4s;
     }
+    
+    .accueilWord {
+        opacity: 0;
+        position: relative;
+        bottom: 10px;
+        filter: blur(2px);
+    }
+
+    .fadeInWordPresentation {
+        animation: fadeInWordPresentation 0.8s 0s ease forwards;
+    }
+    @keyframes fadeInWordPresentation {
+        from {
+            opacity: 0;
+            bottom: 10px;
+            filter: blur(4px);
+        }
+        to {
+            opacity: 1;
+            bottom: 0px;
+            filter: blur(0px);
+        }
+    }
 
     .accueilProjectsDiv {
         flex-direction: column;
