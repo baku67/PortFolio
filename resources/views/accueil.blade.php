@@ -126,7 +126,7 @@
             <!-- (Desktop) Lors scroll: sideNav -->
             <ul id="sideNavDesktop">
                 <li class="sideNavDesktop sideNavDesktopActif">
-                    <a href="/">
+                    <a href="/" style="position:relative; right:2px;">
                         <i class="fa-solid fa-house desktopNavAccueil desktopNavAccueilActif"></i>
                         <span class="desktopNavSpan desktopSpanActif">Accueil</span>
                     </a>
@@ -144,7 +144,7 @@
                     </a>
                 </li>
                 <li class="sideNavDesktop sideNavDesktopLoisirs">
-                    <a href="/loisirs">
+                    <a href="/loisirs"> 
                         <img src="img/navBurgerImg/nav_loisirs_grey.png" class="desktopNavLoisirs notActifNavDesktop" />
                         <span class="desktopNavSpan">Loisirs</span>
                     </a>
@@ -366,7 +366,7 @@
                     <!-- <div class="accueilGrid2"> -->
 
                         <!-- form https://enjoy.plezi.co -->
-                        <div style="position:relative;">
+                        <div class="contactBtnDiv" style="position:relative;">
                             <div id="contactBtnFade">
                                 <button id="contactButton">
                                     <i class="fa-regular fa-paper-plane"></i>

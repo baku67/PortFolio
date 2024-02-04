@@ -51,7 +51,7 @@
         <!-- (Desktop) Lors scroll: sideNav -->
         <ul id="sideNavDesktop">
             <li class="sideNavDesktop">
-                <a href="/">
+                <a href="/" style="position:relative; right:2px;">
                     <i class="fa-solid fa-house desktopNavAccueil notActifNavDesktop"></i>
                     <span class="desktopNavSpan">Accueil</span>
                 </a>

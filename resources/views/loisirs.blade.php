@@ -52,7 +52,7 @@
         <!-- (Desktop) Lors scroll: sideNav -->
         <ul id="sideNavDesktop">
             <li class="sideNavDesktop">
-                <a href="/">
+                <a href="/" style="position:relative; right:2px;">
                     <i class="fa-solid fa-house desktopNavAccueil notActifNavDesktop"></i>
                     <span class="desktopNavSpan">Accueil</span>
                 </a>
@@ -70,7 +70,7 @@
                 </a>
             </li>
             <li class="sideNavDesktop sideNavDesktopLoisirs sideNavDesktopActif">
-                <a href="/loisirs">
+                <a href="/loisirs" style="position:relative; left:2px;">
                     <img src="img/navBurgerImg/nav_loisirs_blue.png" class="desktopNavLoisirs" />
                     <span class="desktopNavSpan desktopSpanActif">Loisirs</span>
                 </a>
